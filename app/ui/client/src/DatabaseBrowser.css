@@ -1,0 +1,375 @@
+/* Minimal, sleek design for database browser */
+
+.database-browser {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.browser-header {
+  margin-bottom: 32px;
+  padding: 24px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-top h1 {
+  color: #1a1a1a;
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.back-button {
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background: #333333;
+}
+
+.search-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #525252;
+}
+
+.search-button {
+  background: #525252;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background: #404040;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  transition: border-color 0.2s ease;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #525252;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #737373;
+  margin-top: 64px;
+  padding: 48px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.cards-table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 24px;
+}
+
+.cards-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cards-table th {
+  background: #1a1a1a;
+  color: white;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  min-width: 80px;
+  border-bottom: 1px solid #333333;
+}
+
+.cards-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  max-width: 120px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #1a1a1a;
+}
+
+.cards-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.cards-table tr:hover {
+  background: #f0f0f0;
+}
+
+.cards-table input,
+.cards-table select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  font-size: 12px;
+  box-sizing: border-box;
+  background: white;
+}
+
+.cards-table input:focus,
+.cards-table select:focus {
+  outline: none;
+  border-color: #525252;
+}
+
+.readonly-field {
+  font-size: 12px;
+  color: #737373;
+  font-style: italic;
+}
+
+.actions {
+  white-space: nowrap;
+}
+
+.edit-btn, .delete-btn, .save-btn, .cancel-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background: #525252;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #404040;
+}
+
+.delete-btn {
+  background: #737373;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #525252;
+}
+
+.save-btn {
+  background: #1a1a1a;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #333333;
+}
+
+.cancel-btn {
+  background: #a3a3a3;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #737373;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.page-btn {
+  background: #525252;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #404040;
+}
+
+.page-btn:disabled {
+  background: #e5e5e5;
+  color: #a3a3a3;
+  cursor: not-allowed;
+}
+
+/* Bulk Delete Styles */
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.bulk-delete-button {
+  background: #737373;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.bulk-delete-button:hover {
+  background: #525252;
+}
+
+/* Checkbox Styles */
+table th input[type="checkbox"],
+table td input[type="checkbox"] {
+  cursor: pointer;
+  transform: scale(1.1);
+  margin: 0;
+}
+
+table th:first-child,
+table td:first-child {
+  width: 40px;
+  text-align: center;
+  padding: 8px 4px;
+}
+
+/* Selection highlighting */
+table tbody tr:has(input[type="checkbox"]:checked) {
+  background: #f0f9f0 !important;
+}
+
+table tbody tr:has(input[type="checkbox"]:checked):hover {
+  background: #e8f5e8 !important;
+}
+
+.page-info {
+  font-size: 14px;
+  color: #525252;
+  font-weight: 500;
+}
+
+@media (max-width: 1600px) {
+  .cards-table {
+    overflow-x: auto;
+  }
+  
+  .cards-table table {
+    min-width: 1400px;
+  }
+  
+  .filters {
+    flex-direction: column;
+  }
+  
+  .filter-select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards-table table {
+    min-width: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .database-browser {
+    padding: 16px;
+  }
+  
+  .search-form {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .header-top {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .cards-table th,
+  .cards-table td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+}

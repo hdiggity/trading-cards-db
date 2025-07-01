@@ -1,0 +1,167 @@
+/* Minimal, sleek design for upload drop zone */
+
+.upload-drop-zone-container {
+  margin-bottom: 32px;
+}
+
+.upload-drop-zone {
+  border: 2px dashed #e5e5e5;
+  border-radius: 8px;
+  padding: 48px 32px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-drop-zone:hover {
+  border-color: #d4d4d4;
+  background: #fafafa;
+}
+
+.upload-drop-zone.drag-over {
+  border-color: #525252;
+  background: #f0f9f0;
+  border-style: solid;
+}
+
+.upload-drop-zone.uploading {
+  border-color: #525252;
+  background: #f8f8f8;
+  cursor: not-allowed;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  color: #a3a3a3;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.upload-drop-zone.drag-over .upload-icon {
+  color: #525252;
+}
+
+.upload-content h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: -0.025em;
+}
+
+.upload-content p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #737373;
+}
+
+.supported-formats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.supported-formats span {
+  font-size: 0.8125rem;
+  color: #a3a3a3;
+}
+
+.upload-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e5e5e5;
+  border-top: 3px solid #525252;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.upload-status {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.upload-status.success {
+  background: #f0f9f0;
+  border: 1px solid #c0c0c0;
+  color: #404040;
+}
+
+.upload-status.error {
+  background: #fef8f8;
+  border: 1px solid #e5e5e5;
+  color: #737373;
+}
+
+.status-message {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.status-close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.7;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.status-close:hover {
+  opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .upload-drop-zone {
+    padding: 32px 24px;
+    min-height: 160px;
+  }
+  
+  .upload-icon {
+    font-size: 2.5rem;
+  }
+  
+  .upload-content h3 {
+    font-size: 1.125rem;
+  }
+  
+  .upload-content p {
+    font-size: 0.875rem;
+  }
+  
+  .supported-formats span {
+    font-size: 0.75rem;
+  }
+}

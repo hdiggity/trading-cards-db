@@ -1,0 +1,388 @@
+/* Minimal, sleek design for main page */
+
+.main-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 48px 32px;
+  background: white;
+  color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.main-header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.main-header p {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #525252;
+  font-weight: 400;
+}
+
+.stats-section {
+  margin-bottom: 48px;
+}
+
+.stats-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  transition: border-color 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: #d4d4d4;
+}
+
+.stat-card.pending {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+.stat-card.raw-scans {
+  background: #525252;
+  color: white;
+  border-color: #525252;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: -0.025em;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.upload-section {
+  margin-bottom: 48px;
+}
+
+.upload-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.actions-section {
+  margin-bottom: 48px;
+}
+
+.actions-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.action-button {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 24px 48px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.action-button:hover:not(:disabled) {
+  border-color: #d4d4d4;
+}
+
+.action-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button-icon {
+  font-size: 2rem;
+  min-width: 60px;
+  color: #525252;
+}
+
+.button-content {
+  flex: 1;
+}
+
+.button-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.button-content p {
+  margin: 0;
+  color: #737373;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #1a1a1a;
+  color: white;
+  border-radius: 50px;
+  min-width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0 8px;
+}
+
+.learning-section {
+  margin-bottom: 48px;
+  padding: 32px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.learning-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #1a1a1a;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.learning-stats {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.learning-stat {
+  text-align: center;
+  min-width: 200px;
+}
+
+.learning-stat .stat-number {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.learning-stat .stat-label {
+  color: #737373;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.learning-improvements {
+  flex: 1;
+}
+
+.learning-improvements h3 {
+  margin: 0 0 16px 0;
+  color: #525252;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.learning-improvements ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.learning-improvements li {
+  padding: 8px 0;
+  color: #737373;
+  font-size: 0.9375rem;
+  position: relative;
+  padding-left: 24px;
+}
+
+.learning-improvements li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #525252;
+  font-weight: bold;
+}
+
+.workflow-section {
+  background: white;
+  padding: 48px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.workflow-section h2 {
+  text-align: center;
+  margin-bottom: 48px;
+  color: #1a1a1a;
+  font-size: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+
+@media (max-width: 1024px) {
+  .main-page {
+    padding: 24px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-page {
+    padding: 16px;
+  }
+  
+  .main-header {
+    padding: 32px 24px;
+    margin-bottom: 32px;
+  }
+  
+  .main-header h1 {
+    font-size: 2rem;
+  }
+  
+  .main-header p {
+    font-size: 1rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .stat-card {
+    padding: 24px 16px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .action-button {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 24px;
+  }
+  
+  .button-icon {
+    font-size: 1.75rem;
+  }
+  
+  .learning-stats {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .learning-stat {
+    min-width: auto;
+  }
+
+  
+}
+
+/* System logs button specific styling */
+.action-button.logs {
+  border-color: #e5e5e5;
+  background: white;
+}
+
+.action-button.logs:hover:not(:disabled) {
+  border-color: #d4d4d4;
+}
+
+.action-button.logs .button-content h3 {
+  color: #1a1a1a;
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .main-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .badge {
+    top: 12px;
+    right: 12px;
+    min-width: 24px;
+    height: 24px;
+    font-size: 0.625rem;
+  }
+}

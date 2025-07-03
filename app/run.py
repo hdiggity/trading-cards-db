@@ -6,17 +6,20 @@ import time
 from pathlib import Path
 
 from .utils import gpt_extract_cards_from_image, save_cards_to_verification
+from .grid_processor import GridProcessor, save_grid_cards_to_verification
 from .logging_system import logger, LogSource, ActionType
 
 PENDING_VERIFICATION_DIR = Path("images/pending_verification")
 FAILED_PROCESSING_DIR = Path("images/failed_processing")
 
 RAW_IMAGE_DIR = Path("images/raw_scans")
+FRONT_IMAGES_DIR = Path("images/unprocessed_single_front")
+BACK_IMAGES_DIR = Path("images/unprocessed_bulk_back")
 LAST_PROCESSED_FILE = Path("last_processed.txt")
 FAILED_LOG_FILE = Path("failed_processing.log")
 
 
-def process_and_move(image_path: Path):
+def process_and_move(image_path: Path, use_grid_processing: bool = False):
     print(f"processing: {image_path.name}")
     
     # Log upload and processing start
@@ -34,18 +37,47 @@ def process_and_move(image_path: Path):
     logger.log_processing_start(image_path.name)
     
     try:
-        parsed_cards, _ = gpt_extract_cards_from_image(str(image_path))
-        processing_time = time.time() - start_time
-        
-        # use the image name (without extension) as the filename stem
-        filename_stem = image_path.stem
-        # Check if TCDB verification should be disabled
-        disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
-        save_cards_to_verification(
-            parsed_cards,
-            out_dir=PENDING_VERIFICATION_DIR,
-            filename_stem=filename_stem,
-            include_tcdb_verification=not disable_tcdb)
+        if use_grid_processing:
+            # Use enhanced grid processing for 3x3 back images
+            grid_processor = GridProcessor()
+            
+            # Check for front images to use for matching
+            front_dir = FRONT_IMAGES_DIR if FRONT_IMAGES_DIR.exists() else None
+            
+            grid_cards, raw_data = grid_processor.process_3x3_grid(
+                str(image_path), 
+                front_images_dir=front_dir
+            )
+            
+            processing_time = time.time() - start_time
+            filename_stem = image_path.stem
+            disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
+            
+            # Save grid cards with enhanced metadata
+            save_grid_cards_to_verification(
+                grid_cards,
+                out_dir=PENDING_VERIFICATION_DIR,
+                filename_stem=filename_stem,
+                include_tcdb_verification=not disable_tcdb
+            )
+            
+            card_count = len(grid_cards)
+            print(f"Grid processing completed: {card_count} cards extracted")
+        else:
+            # Use standard processing for single cards or other formats
+            parsed_cards, _ = gpt_extract_cards_from_image(str(image_path))
+            processing_time = time.time() - start_time
+            
+            filename_stem = image_path.stem
+            disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
+            save_cards_to_verification(
+                parsed_cards,
+                out_dir=PENDING_VERIFICATION_DIR,
+                filename_stem=filename_stem,
+                include_tcdb_verification=not disable_tcdb
+            )
+            
+            card_count = len(parsed_cards)
 
         # move image to pending_verification directory
         PENDING_VERIFICATION_DIR.mkdir(exist_ok=True)
@@ -68,7 +100,7 @@ def process_and_move(image_path: Path):
         # Log processing completion
         logger.log_processing_complete(
             image_path.name,
-            len(parsed_cards),
+            card_count,
             processing_time
         )
 
@@ -233,6 +265,69 @@ def process_all_raw_scans():
         process_and_move(image_path)
 
 
+def process_3x3_grid_backs():
+    """Process 3x3 grid back images with enhanced grid processing"""
+    print("processing 3x3 grid back images...")
+    
+    back_images = [
+        p
+        for p in BACK_IMAGES_DIR.glob("*")
+        if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".heic")
+    ] if BACK_IMAGES_DIR.exists() else []
+    
+    if not back_images:
+        print(f"no 3x3 grid images found in {BACK_IMAGES_DIR}")
+        return
+    
+    print(f"found {len(back_images)} grid images to process")
+    
+    for image_path in back_images:
+        print(f"processing grid image: {image_path.name}")
+        process_and_move(image_path, use_grid_processing=True)
+
+
+def process_all_images():
+    """Process all available images with appropriate methods"""
+    print("processing all available images...")
+    
+    # Process 3x3 grid backs first (most accurate with context)
+    if BACK_IMAGES_DIR.exists():
+        process_3x3_grid_backs()
+    
+    # Process any remaining raw scans
+    process_all_raw_scans()
+    
+    print("all image processing completed")
+
+
+def auto_detect_and_process():
+    """Auto-detect image types and process with appropriate methods"""
+    print("auto-detecting image types and processing...")
+    
+    # Check for 3x3 grid images
+    if BACK_IMAGES_DIR.exists():
+        back_images = list(BACK_IMAGES_DIR.glob("*.jpg")) + list(BACK_IMAGES_DIR.glob("*.png")) + list(BACK_IMAGES_DIR.glob("*.heic"))
+        if back_images:
+            print(f"detected {len(back_images)} 3x3 grid back images")
+            process_3x3_grid_backs()
+    
+    # Check for single front images
+    if FRONT_IMAGES_DIR.exists():
+        front_images = list(FRONT_IMAGES_DIR.glob("*.jpg")) + list(FRONT_IMAGES_DIR.glob("*.png")) + list(FRONT_IMAGES_DIR.glob("*.heic"))
+        if front_images:
+            print(f"detected {len(front_images)} single front images (used for matching)")
+    
+    # Process any remaining raw scans
+    raw_images = [
+        p for p in RAW_IMAGE_DIR.glob("*")
+        if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".heic")
+    ] if RAW_IMAGE_DIR.exists() else []
+    
+    if raw_images:
+        print(f"detected {len(raw_images)} raw scan images")
+        process_all_raw_scans()
+
+
 def undo_last_processing():
     """Undo the last image processing operation"""
     if not LAST_PROCESSED_FILE.exists():
@@ -287,16 +382,41 @@ def undo_last_processing():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="process trading card raw images")
-    parser.add_argument(
-        "--raw", action="store_true", help="run raw processing pipeline"
+        description="Process trading card images with enhanced accuracy"
     )
     parser.add_argument(
-        "--undo", action="store_true", help="undo last processing operation"
+        "--raw", action="store_true", 
+        help="Process raw images in images/raw_scans/"
+    )
+    parser.add_argument(
+        "--grid", action="store_true", 
+        help="Process 3x3 grid back images with enhanced processing"
+    )
+    parser.add_argument(
+        "--all", action="store_true", 
+        help="Process all available images with appropriate methods"
+    )
+    parser.add_argument(
+        "--auto", action="store_true", 
+        help="Auto-detect image types and process with optimal methods"
+    )
+    parser.add_argument(
+        "--undo", action="store_true", 
+        help="Undo last processing operation"
     )
     args = parser.parse_args()
 
     if args.raw:
         process_all_raw_scans()
+    elif args.grid:
+        process_3x3_grid_backs()
+    elif args.all:
+        process_all_images()
+    elif args.auto:
+        auto_detect_and_process()
     elif args.undo:
         undo_last_processing()
+    else:
+        # Default to auto-detect if no specific mode specified
+        print("No processing mode specified. Using auto-detection...")
+        auto_detect_and_process()

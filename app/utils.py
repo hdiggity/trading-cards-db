@@ -101,6 +101,7 @@ def build_legacy_system_prompt(include_learning: bool = True) -> str:
         - Focus on most damaged aspect to determine overall grade""",
         "is_player_card": "true if this is a player card (individual athlete), false if this is a non-player card such as a checklist, team card, or highlight card",
         "features": "comma-separated list of special features from these options: 'rookie', 'autograph', 'jersey', 'parallel', 'refractor', 'chrome', 'limited edition', 'serial numbered', 'prospect', 'hall of fame', 'insert', 'short print'. Use 'none' if no special features. Multiple features should be comma-separated like 'rookie,autograph'",
+        "notes": "optional field for any additional observations, anomalies, or important details about the card that don't fit in other fields. Use null if no special notes needed.",
     }
 
     # Use field names from fields.py to ensure consistency
@@ -810,6 +811,7 @@ def save_cards_to_verification(
                 "condition",
                 "is_player_card",
                 "features",
+                "notes",
             }
             clean_card = {
                 k: v for k,

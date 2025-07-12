@@ -266,8 +266,16 @@ def process_all_raw_scans():
 
 
 def process_3x3_grid_backs():
-    """Process 3x3 grid back images with enhanced grid processing"""
-    print("processing 3x3 grid back images...")
+    """
+    Process 3x3 grid BACK images as PRIMARY input with enhanced card detection.
+    
+    INPUT: Card backs arranged in 3x3 grids (9 cards per image)
+    PROCESSING: Enhanced image preprocessing + GPT-4 analysis optimized for card backs
+    BACKUP: Single front images used only to supplement missing data from backs
+    
+    Front images remain untouched - used only as reference for matching/supplementing.
+    """
+    print("Processing 3x3 grid BACK images (PRIMARY input source)...")
     
     back_images = [
         p
@@ -276,13 +284,24 @@ def process_3x3_grid_backs():
     ] if BACK_IMAGES_DIR.exists() else []
     
     if not back_images:
-        print(f"no 3x3 grid images found in {BACK_IMAGES_DIR}")
+        print(f"No 3x3 grid back images found in {BACK_IMAGES_DIR}")
         return
     
-    print(f"found {len(back_images)} grid images to process")
+    # Check available front images for backup matching (read-only)
+    front_count = 0
+    if FRONT_IMAGES_DIR.exists():
+        front_images = [
+            p for p in FRONT_IMAGES_DIR.glob("*")
+            if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".heic")
+        ]
+        front_count = len(front_images)
+    
+    print(f"Found {len(back_images)} grid back images to process")
+    print(f"Found {front_count} front images available for backup matching")
+    print("Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)")
     
     for image_path in back_images:
-        print(f"processing grid image: {image_path.name}")
+        print(f"Processing 3x3 grid of card backs: {image_path.name}")
         process_and_move(image_path, use_grid_processing=True)
 
 

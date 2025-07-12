@@ -13,7 +13,8 @@ const formatFieldName = (fieldName) => {
     'card_set': 'Set',
     'condition': 'Condition',
     'is_player_card': 'Player Card',
-    'features': 'Features'
+    'features': 'Features',
+    'notes': 'Notes'
   };
   return fieldMap[fieldName] || fieldName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 };
@@ -633,7 +634,18 @@ function App({ onNavigate }) {
   }
 
   if (pendingCards.length === 0) {
-    return <div className="no-cards">No pending cards for verification</div>;
+    return (
+      <div className="no-cards">
+        <h2>verification complete</h2>
+        <p>no pending cards for verification</p>
+        <button 
+          className="return-home-button" 
+          onClick={() => onNavigate('main')}
+        >
+          return to main page
+        </button>
+      </div>
+    );
   }
 
   const currentCard = pendingCards[currentIndex];

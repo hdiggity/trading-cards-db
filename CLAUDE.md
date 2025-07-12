@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Core Processing Pipeline
 - `python -m app.run --raw` - Process raw trading card images from `images/raw_scans/` using GPT-4 Vision API
-- `python -m app.run --grid` - Process 3x3 grid card back images with enhanced accuracy and front image matching
+- `python -m app.run --grid` - Process 3x3 grid card back images from `images/unprocessed_bulk_back/` with enhanced accuracy and front image matching from `images/unprocessed_single_front/`
 - `python -m app.run --auto` - Auto-detect image types and process with optimal methods (recommended)
 - `python -m app.run --all` - Process all available images with appropriate methods
 - `python -m app.run --undo` - Undo last processing operation (moves image back to raw_scans)
@@ -24,12 +24,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a trading card digitization system that uses GPT-4 Vision to extract structured data from scanned trading card images.
 
 ### Data Flow
-1. **Raw Scans** → `images/raw_scans/` - Original card images (JPG, PNG, HEIC)
-2. **3x3 Grid Backs** → `images/unprocessed_bulk_back/` - Grid images of card backs (9 cards each)
-3. **Single Front Cards** → `images/unprocessed_single_front/` - Individual front card images for matching
-4. **Enhanced GPT Processing** → `images/pending_verification/` - AI-extracted card data with enhanced accuracy
-5. **Manual Verification** → React UI for reviewing and editing card data  
-6. **Database Storage** → Direct import to SQLite database when cards pass verification
+1. **INPUT**: 3x3 Grid Backs in `images/unprocessed_bulk_back/` - **ONLY RAW INPUT TO PIPELINE**
+2. **PROCESSING**: Enhanced GPT-4 Vision extraction from grid back cards (9 cards per image)
+3. **AUTO-MATCHING**: System searches `images/unprocessed_single_front/` for corresponding front images (read-only, no files moved)
+4. **ENHANCEMENT**: Value estimation and TCDB verification
+5. **OUTPUT**: Structured JSON with extracted data, matched front files, and value estimates → `images/pending_verification/`
+6. **VERIFICATION**: React UI for manual review and editing
+7. **DATABASE**: Final import to SQLite database after verification
+
+### Processing Priority System
+1. **Primary Input**: Only 3x3 grid back images are processed as raw input
+2. **Primary Data**: Card back text (name, team, number, stats, copyright year)
+3. **Secondary Enhancement**: Front image matching (supplements missing data, no files moved)
+4. **Tertiary Verification**: TCDB confirmation (validates accuracy)
 
 ### Verification UI Workflow
 1. **View**: React UI displays card image alongside extracted data
@@ -39,13 +46,22 @@ This is a trading card digitization system that uses GPT-4 Vision to extract str
 
 ### Key Components
 
-**Enhanced Image Processing Pipeline** (`app/run.py`, `app/utils.py`, `app/grid_processor.py`)
-- Uses OpenAI GPT-4o with vision capabilities to extract card details
-- **3x3 Grid Processing**: Specialized system for 9-card grid layouts with context awareness
-- **Front-Back Matching**: Automatically matches individual front images with grid back cards
-- **Multi-source Verification**: Integrates TCDB, Baseball Reference, and Sports Reference
+**Advanced Image Processing Pipeline** (`app/run.py`, `app/utils.py`, `app/grid_processor.py`, `app/detailed_grid_processor.py`, `app/value_estimator.py`)
+- Uses OpenAI GPT-4o with vision capabilities to extract maximum detail from card backs (primary)
+- **Detailed Individual Card Processing**: 
+  - Detects and extracts each of 9 cards individually from 3x3 grid
+  - Applies single-card-level enhancement to each extracted card
+  - Advanced contrast enhancement, noise reduction, and text sharpening
+  - Optimal resizing for GPT-4 Vision analysis
+  - Each card analyzed separately for maximum detail extraction
+- **Multi-tier Processing Fallback**: Detailed → Enhanced → Standard processing with automatic fallback
+- **Front-Back Matching**: Automatically matches individual front images with grid back cards (supplemental only)
+- **GPT-Powered Value Estimation**: Real-time market value estimates using GPT-4's knowledge of current trading card markets
+- **Multi-source Verification**: Integrates TCDB, Baseball Reference, and Sports Reference (tertiary verification)
+- **Data Prioritization**: Individual card back analysis is primary source, front images supplement missing data only
 - Handles HEIC format conversion via pillow-heif
-- Generates structured JSON with enhanced accuracy and confidence scoring
+- Generates structured JSON with enhanced accuracy, confidence scoring, and value estimates
+- Optional cropped individual back image extraction
 
 **Database Layer** (`app/models.py`, `app/database.py`, `app/crud.py`)
 - SQLAlchemy-based Card model with dynamic field injection

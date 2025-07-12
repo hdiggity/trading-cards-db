@@ -161,6 +161,53 @@
   border: 1px solid #e5e5e5;
 }
 
+.no-cards h2 {
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.no-cards p {
+  margin-bottom: 24px;
+  color: #737373;
+}
+
+.return-home-button {
+  background: #f5f5f5;
+  color: #1a1a1a;
+  border: 1px solid #e5e5e5;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.return-home-button:hover {
+  background: #e5e5e5;
+}
+
+/* Notes field styling */
+.field-value textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  background: white;
+}
+
+.field-value textarea:focus {
+  outline: none;
+  border-color: #059669;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.1);
+}
+
 .card-container {
   display: flex;
   gap: 32px;

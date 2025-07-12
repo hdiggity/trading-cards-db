@@ -20,6 +20,9 @@ shared_card_field_specs = [
     ("condition", Optional[str], lambda: Column(String), None),
     ("is_player_card", Optional[bool], lambda: Column(Boolean, default=True), True),
     ("features", Optional[str], lambda: Column(String), "none"),
+    ("value_estimate", Optional[str], lambda: Column(String), None),
+    ("matched_front_file", Optional[str], lambda: Column(String), None),
+    ("notes", Optional[str], lambda: Column(String), None),
 ]
 
 # fields used only by SQLAlchemy models (not Pydantic Create)

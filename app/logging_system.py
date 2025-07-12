@@ -42,6 +42,48 @@ class LogSource(str, Enum):
 
 
 class ActionType(str, Enum):
+    # File Operations
+    FILE_UPLOAD = "file_upload"
+    FILE_MOVE = "file_move"
+    FILE_DELETE = "file_delete"
+    FILE_CREATE = "file_create"
+    
+    # Processing Operations
+    PROCESS_START = "process_start"
+    PROCESS_COMPLETE = "process_complete"
+    PROCESS_FAIL = "process_fail"
+    
+    # Grid Processing
+    GRID_PROCESS_START = "grid_process_start"
+    GRID_PROCESS_COMPLETE = "grid_process_complete"
+    GRID_PROCESS_FAIL = "grid_process_fail"
+    
+    # GPT Operations
+    GPT_VISION_REQUEST = "gpt_vision_request"
+    GPT_VISION_SUCCESS = "gpt_vision_success"
+    GPT_VISION_FAIL = "gpt_vision_fail"
+    GPT_VALUE_REQUEST = "gpt_value_request"
+    GPT_VALUE_SUCCESS = "gpt_value_success"
+    GPT_VALUE_FAIL = "gpt_value_fail"
+    
+    # Verification Operations
+    VERIFY_PASS = "verify_pass"
+    VERIFY_FAIL = "verify_fail"
+    VERIFY_EDIT = "verify_edit"
+    VERIFY_REPROCESS = "verify_reprocess"
+    
+    # Database Operations
+    DB_INSERT = "db_insert"
+    DB_UPDATE = "db_update"
+    DB_DELETE = "db_delete"
+    DB_QUERY = "db_query"
+    
+    # System Operations
+    SYSTEM_START = "system_start"
+    SYSTEM_ERROR = "system_error"
+    BACKUP_CREATE = "backup_create"
+    
+    # Legacy support
     UPLOAD = "upload"
     PROCESS = "process"
     VERIFY = "verify"
@@ -396,6 +438,177 @@ class EnhancedLogger:
             error if error else None,
             {"source_path": source_path, "dest_path": dest_path}
         )
+    
+    def log_grid_processing(
+        self,
+        filename: str,
+        stage: str,  # "start", "complete", "fail" 
+        cards_detected: Optional[int] = None,
+        processing_time: Optional[float] = None,
+        error: Optional[str] = None,
+        method: str = "enhanced"
+    ):
+        """Log grid processing operations"""
+        action_map = {
+            "start": ActionType.GRID_PROCESS_START,
+            "complete": ActionType.GRID_PROCESS_COMPLETE,
+            "fail": ActionType.GRID_PROCESS_FAIL
+        }
+        
+        level_map = {
+            "start": LogLevel.INFO,
+            "complete": LogLevel.SUCCESS,
+            "fail": LogLevel.ERROR
+        }
+        
+        message = f"Grid processing {stage}: {filename}"
+        if cards_detected is not None:
+            message += f" ({cards_detected} cards)"
+        
+        details = None
+        if error:
+            details = f"Error: {error}"
+        elif processing_time:
+            details = f"Processing time: {processing_time:.2f}s"
+        
+        meta_data = {
+            "method": method,
+            "cards_detected": cards_detected,
+            "processing_time": processing_time,
+            "stage": stage
+        }
+        
+        self.log(
+            level_map[stage],
+            LogSource.IMAGE_PROCESSING,
+            message,
+            action_map[stage],
+            details,
+            meta_data,
+            filename
+        )
+        
+        # Update upload status
+        if stage == "start":
+            self.update_upload_status(filename, "processing")
+        elif stage == "complete":
+            self.update_upload_status(filename, "pending_verification", cards_detected=cards_detected)
+        elif stage == "fail":
+            self.update_upload_status(filename, "failed", error_message=error)
+    
+    def log_gpt_operation(
+        self,
+        operation_type: str,  # "vision", "value_estimation"
+        stage: str,  # "request", "success", "fail"
+        filename: Optional[str] = None,
+        model: str = "gpt-4o",
+        tokens_used: Optional[int] = None,
+        processing_time: Optional[float] = None,
+        error: Optional[str] = None,
+        response_data: Optional[Dict] = None
+    ):
+        """Log GPT API operations"""
+        action_map = {
+            ("vision", "request"): ActionType.GPT_VISION_REQUEST,
+            ("vision", "success"): ActionType.GPT_VISION_SUCCESS,
+            ("vision", "fail"): ActionType.GPT_VISION_FAIL,
+            ("value_estimation", "request"): ActionType.GPT_VALUE_REQUEST,
+            ("value_estimation", "success"): ActionType.GPT_VALUE_SUCCESS,
+            ("value_estimation", "fail"): ActionType.GPT_VALUE_FAIL,
+        }
+        
+        level_map = {
+            "request": LogLevel.INFO,
+            "success": LogLevel.SUCCESS,
+            "fail": LogLevel.ERROR
+        }
+        
+        message = f"GPT {operation_type} {stage}"
+        if filename:
+            message += f": {filename}"
+        
+        details = None
+        if error:
+            details = f"Error: {error}"
+        elif tokens_used and processing_time:
+            details = f"Tokens: {tokens_used}, Time: {processing_time:.2f}s"
+        
+        meta_data = {
+            "operation_type": operation_type,
+            "model": model,
+            "tokens_used": tokens_used,
+            "processing_time": processing_time,
+            "stage": stage
+        }
+        
+        if response_data:
+            meta_data["response_summary"] = {
+                "cards_detected": response_data.get("cards_detected"),
+                "confidence": response_data.get("average_confidence")
+            }
+        
+        self.log(
+            level_map[stage],
+            LogSource.GPT_VISION,
+            message,
+            action_map.get((operation_type, stage), ActionType.PROCESS),
+            details,
+            meta_data,
+            filename
+        )
+    
+    def log_action_attempt(
+        self,
+        action: str,
+        source: LogSource,
+        filename: Optional[str] = None,
+        success: bool = True,
+        error: Optional[str] = None,
+        details: Optional[str] = None,
+        meta_data: Optional[Dict] = None
+    ):
+        """Log any action attempt with comprehensive error handling"""
+        try:
+            level = LogLevel.SUCCESS if success else LogLevel.ERROR
+            message = f"Action attempted: {action}"
+            if filename:
+                message += f" on {filename}"
+            
+            if not success and error:
+                message += f" - FAILED: {error}"
+            
+            # Always attempt to log, even if previous operations failed
+            self.log(
+                level,
+                source,
+                message,
+                ActionType.SYSTEM_ERROR if not success else ActionType.PROCESS,
+                error or details,
+                meta_data or {},
+                filename
+            )
+            
+        except Exception as log_error:
+            # Fallback logging to file if database logging fails
+            try:
+                fallback_log = {
+                    "timestamp": datetime.now().isoformat(),
+                    "level": "ERROR" if not success else "SUCCESS",
+                    "source": source.value,
+                    "action": action,
+                    "filename": filename,
+                    "success": success,
+                    "error": error,
+                    "details": details,
+                    "log_error": str(log_error)
+                }
+                
+                with open("logs/fallback_actions.log", "a") as f:
+                    f.write(json.dumps(fallback_log) + "\n")
+                    
+            except Exception:
+                # Ultimate fallback - print to stderr
+                print(f"[LOGGING FAILED] {datetime.now()}: {action} on {filename} - Success: {success}, Error: {error}", file=sys.stderr)
     
     def get_recent_logs(self, limit: int = 100, level: Optional[LogLevel] = None) -> List[Dict[str, Any]]:
         """Get recent log entries"""

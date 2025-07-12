@@ -20,8 +20,10 @@ const storage = multer.diskStorage({
   },
   filename: function (req, file, cb) {
     // Keep original filename with timestamp prefix to avoid conflicts
+    // Remove problematic characters from timestamp and filename
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-    cb(null, `${timestamp}_${file.originalname}`);
+    const sanitizedFilename = file.originalname.replace(/['"\\]/g, '_');
+    cb(null, `${timestamp}_${sanitizedFilename}`);
   }
 });
 
@@ -159,19 +161,27 @@ app.get('/api/pending-cards', async (req, res) => {
 });
 
 // Upload raw scan images endpoint
-app.post('/api/upload-raw-scans', upload.array('images'), async (req, res) => {
+app.post('/api/upload-raw-scans', async (req, res) => {
+  // Ensure raw_scans directory exists BEFORE multer processes files
+  const rawScansPath = path.join(__dirname, '../../images/raw_scans');
   try {
-    if (!req.files || req.files.length === 0) {
-      return res.status(400).json({ error: 'No files uploaded' });
-    }
+    await fs.access(rawScansPath);
+  } catch {
+    await fs.mkdir(rawScansPath, { recursive: true });
+  }
 
-    // Ensure raw_scans directory exists
-    const rawScansPath = path.join(__dirname, '../../images/raw_scans');
-    try {
-      await fs.access(rawScansPath);
-    } catch {
-      await fs.mkdir(rawScansPath, { recursive: true });
+  upload.array('images')(req, res, async (err) => {
+    if (err) {
+      console.error('Multer upload error:', err);
+      return res.status(400).json({ 
+        error: 'Upload failed: ' + err.message 
+      });
     }
+    
+    try {
+      if (!req.files || req.files.length === 0) {
+        return res.status(400).json({ error: 'No files uploaded' });
+      }
 
     const uploadedFiles = req.files.map(file => ({
       originalName: file.originalname,
@@ -180,23 +190,25 @@ app.post('/api/upload-raw-scans', upload.array('images'), async (req, res) => {
       size: file.size
     }));
 
-    // Log the upload using the logging system
+    // Log the upload using the logging system (simplified to avoid string escaping issues)
     try {
-      const pythonProcess = spawn('python', ['-c', `
+      const fileCount = uploadedFiles.length;
+      const totalSize = uploadedFiles.reduce((sum, file) => sum + file.size, 0);
+      const pythonCode = `
 import sys
 sys.path.append('${path.join(__dirname, '..').replace(/\\/g, '/')}')
 from logging_system import logger, LogSource, ActionType
 
-files_info = [f"{file['originalName']} ({file['size']} bytes)" for file in ${JSON.stringify(uploadedFiles).replace(/'/g, "\\'")}]
 logger.log_action(
     source=LogSource.UI,
     action=ActionType.FILE_UPLOAD,
-    message=f"Uploaded {len(files_info)} raw scan image(s) via drag & drop",
-    details=f"Files: {', '.join(files_info)}",
+    message="Uploaded ${fileCount} raw scan image(s) via drag & drop",
+    details="Total size: ${Math.round(totalSize / 1024)} KB",
     file_path="${rawScansPath.replace(/\\/g, '/')}"
 )
 print("Logged upload action")
-      `], {
+      `;
+      const pythonProcess = spawn('python', ['-c', pythonCode], {
         cwd: path.join(__dirname, '../..'),
         stdio: ['pipe', 'pipe', 'pipe']
       });
@@ -227,12 +239,13 @@ print("Logged upload action")
       files: uploadedFiles
     });
 
-  } catch (error) {
-    console.error('Upload error:', error);
-    res.status(500).json({ 
-      error: error.message || 'Failed to upload files'
-    });
-  }
+    } catch (error) {
+      console.error('Upload error:', error);
+      res.status(500).json({ 
+        error: error.message || 'Failed to upload files'
+      });
+    }
+  });
 });
 
 // Handle Pass action for single card

@@ -16,6 +16,9 @@ from io import BytesIO
 from .utils import convert_image_to_supported_format, client, build_system_prompt
 from .accuracy import CardValidator, ConfidenceScorer, detect_card_era_and_type
 from .tcdb_scraper import search_tcdb_cards
+from .value_estimator import add_value_estimation
+from .enhanced_grid_processor import process_enhanced_3x3_grid
+from .detailed_grid_processor import process_detailed_3x3_grid
 
 @dataclass
 class GridCard:
@@ -119,61 +122,82 @@ Return JSON array with 9 objects:
   "card_set": "set name",
   "condition": "condition assessment",
   "is_player_card": true/false,
-  "features": "none or comma-separated features"
+  "features": "none or comma-separated features",
+  "notes": "any additional observations or null"
 }}
 
 ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistency helps validate individual card accuracy."""
 
     def process_3x3_grid(self, image_path: str, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
         """
-        Process a 3x3 grid of card backs with optional front image matching
+        Process a 3x3 grid of card backs (PRIMARY) with optional front image matching (BACKUP)
+        
+        Data Priority:
+        1. PRIMARY: 3x3 grid back extraction (enhanced preprocessing + GPT analysis)  
+        2. BACKUP: Front image matching to supplement missing data only
+        3. CONTEXT: Apply grid consistency patterns
+        
         Returns: (grid_cards, raw_data)
         """
-        print(f"Processing 3x3 grid: {image_path}", file=sys.stderr)
+        print(f"Processing 3x3 grid as PRIMARY input: {image_path}", file=sys.stderr)
         
-        # Convert image for GPT-4 Vision
-        encoded_image, mime_type = convert_image_to_supported_format(image_path, apply_preprocessing=True)
+        # STEP 1: Detailed individual card processing (PRIMARY data source)
+        print("Using detailed individual card processing for maximum detail extraction...", file=sys.stderr)
+        try:
+            detailed_data, _ = process_detailed_3x3_grid(image_path)
+            raw_data = detailed_data
+            print(f"Detailed processing extracted {len(raw_data)} cards", file=sys.stderr)
+        except Exception as e:
+            print(f"Detailed processing failed, trying enhanced processing: {e}", file=sys.stderr)
+            try:
+                enhanced_data, _ = process_enhanced_3x3_grid(image_path)
+                raw_data = enhanced_data
+                print(f"Enhanced processing extracted {len(raw_data)} cards", file=sys.stderr)
+            except Exception as e2:
+                print(f"Enhanced processing also failed, falling back to standard: {e2}", file=sys.stderr)
+            # Fallback to standard processing
+            encoded_image, mime_type = convert_image_to_supported_format(image_path, apply_preprocessing=True)
+            grid_prompt = self.build_grid_prompt()
+            
+            messages = [
+                {"role": "system", "content": grid_prompt},
+                {
+                    "role": "user", 
+                    "content": [
+                        {
+                            "type": "image_url",
+                            "image_url": {"url": f"data:{mime_type};base64,{encoded_image}"}
+                        }
+                    ]
+                }
+            ]
+            
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=messages,
+                max_tokens=4000,
+                temperature=0.1
+            )
+            
+            raw_response = response.choices[0].message.content.strip()
+            raw_data = self._parse_grid_response(raw_response)
         
-        # Initial extraction with grid-specific prompt
-        grid_prompt = self.build_grid_prompt()
-        
-        messages = [
-            {"role": "system", "content": grid_prompt},
-            {
-                "role": "user", 
-                "content": [
-                    {
-                        "type": "image_url",
-                        "image_url": {"url": f"data:{mime_type};base64,{encoded_image}"}
-                    }
-                ]
-            }
-        ]
-        
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            messages=messages,
-            max_tokens=3000,
-            temperature=0.1
-        )
-        
-        # Parse response
-        raw_response = response.choices[0].message.content.strip()
-        raw_data = self._parse_grid_response(raw_response)
-        
+        # Ensure exactly 9 cards (3x3 grid requirement)
         if len(raw_data) != 9:
-            print(f"Warning: Expected 9 cards, got {len(raw_data)}", file=sys.stderr)
-            # Pad or trim to 9 cards
+            print(f"Adjusting card count: Expected 9 cards, got {len(raw_data)}", file=sys.stderr)
             while len(raw_data) < 9:
                 raw_data.append(self._create_default_card(len(raw_data)))
             raw_data = raw_data[:9]
         
-        # Apply context-based enhancements
+        # STEP 2: Apply context-based enhancements (grid consistency)
         enhanced_data = self._apply_grid_context_enhancement(raw_data)
         
-        # Validate and score cards
+        # Validate and score cards (prioritizing back data)
         validated_data = self.validator.validate_and_correct(enhanced_data)
         scored_data = self.scorer.score_extraction(validated_data)
+        
+        # Add value estimation to each card
+        scored_data = [add_value_estimation(card) for card in scored_data]
         
         # Create GridCard objects
         grid_cards = []
@@ -187,9 +211,12 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
             )
             grid_cards.append(grid_card)
         
-        # Match with front images if provided
+        # STEP 4: Match with front images as BACKUP data source (supplements missing info only)
         if front_images_dir and front_images_dir.exists():
+            print(f"Using front images as BACKUP to supplement missing data from backs...", file=sys.stderr)
             grid_cards = self._match_front_images(grid_cards, front_images_dir)
+        else:
+            print("No front images directory provided - using back data only", file=sys.stderr)
         
         print(f"Grid processing completed: {len(grid_cards)} cards processed", file=sys.stderr)
         return grid_cards, raw_data
@@ -246,7 +273,8 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
             "card_set": "unknown",
             "condition": "very_good",
             "is_player_card": True,
-            "features": "none"
+            "features": "none",
+            "notes": None
         }
     
     def _apply_grid_context_enhancement(self, cards: List[Dict]) -> List[Dict]:
@@ -326,6 +354,7 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
         for front_img in front_images:
             try:
                 front_info = self._extract_front_card_info(front_img)
+                front_info['_filename'] = front_img.name  # Store filename for reference
                 front_cards_info.append({
                     'path': front_img,
                     'info': front_info
@@ -470,33 +499,47 @@ Focus on information that would help match this front with a corresponding back.
         return 0.0
     
     def _merge_front_back_data(self, back_data: Dict, front_info: Dict) -> Dict:
-        """Merge front card info with back card data to improve accuracy"""
+        """
+        Merge front card info with back card data with back data as primary source
+        Back data takes priority - front data only supplements missing information
+        """
         merged = back_data.copy()
         
-        # Enhance name if back data is unclear
+        # PRIORITY 1: Back data is primary - only supplement if truly missing
         back_name = str(back_data.get('name', '')).lower()
         front_name = front_info.get('name', '')
         
-        if (back_name in ['unknown', 'unidentified', 'n/a', ''] and 
-            front_name and front_name != 'unknown'):
+        # Only use front name if back name is completely missing/unclear
+        if (back_name in ['unknown', 'unidentified', 'n/a', '', 'none'] and 
+            front_name and front_name not in ['unknown', 'unidentified']):
             merged['name'] = front_name
-            print(f"Enhanced name from front image: {front_name}")
+            merged['_name_source'] = 'front_supplemented'
+            print(f"Supplemented name from front image: {front_name}")
+        else:
+            merged['_name_source'] = 'back_primary'
         
-        # Enhance team if missing
+        # Only use front team if back team is missing
         back_team = str(back_data.get('team', '')).lower()
         front_team = front_info.get('team', '')
         
-        if (back_team in ['unknown', 'n/a', ''] and 
-            front_team and front_team != 'unknown'):
+        if (back_team in ['unknown', 'n/a', '', 'none'] and 
+            front_team and front_team not in ['unknown', 'unidentified']):
             merged['team'] = front_team
-            print(f"Enhanced team from front image: {front_team}")
+            merged['_team_source'] = 'front_supplemented'
+            print(f"Supplemented team from front image: {front_team}")
+        else:
+            merged['_team_source'] = 'back_primary'
         
-        # Add supplemental matching info
+        # Record matched front file (always add if matched)
+        merged['matched_front_file'] = front_info.get('_filename')
+        
+        # Add supplemental matching metadata (for verification/debugging)
         merged['_front_match'] = {
             'matched_file': True,
             'front_name': front_info.get('name'),
             'front_team': front_info.get('team'),
-            'uniform_number': front_info.get('uniform_number')
+            'uniform_number': front_info.get('uniform_number'),
+            'data_priority': 'back_primary_front_supplemental'
         }
         
         return merged
@@ -506,7 +549,9 @@ def save_grid_cards_to_verification(
     grid_cards: List[GridCard],
     out_dir: Path,
     filename_stem: str = None,
-    include_tcdb_verification: bool = True
+    include_tcdb_verification: bool = True,
+    save_cropped_backs: bool = False,
+    original_image_path: str = None
 ):
     """Save grid cards to verification with enhanced metadata"""
     out_dir.mkdir(exist_ok=True)
@@ -544,5 +589,54 @@ def save_grid_cards_to_verification(
     with open(filename, "w") as f:
         json.dump(cards_data, f, indent=2)
     
+    # Optionally save cropped individual back images
+    if save_cropped_backs and original_image_path:
+        try:
+            cropped_dir = out_dir / "cropped_backs"
+            cropped_dir.mkdir(exist_ok=True)
+            _extract_and_save_individual_backs(original_image_path, grid_cards, cropped_dir, filename_stem)
+        except Exception as e:
+            print(f"Failed to save cropped backs: {e}", file=sys.stderr)
+    
     print(f"Saved {len(cards_data)} grid cards to {filename}")
     return filename.stem
+
+
+def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCard], 
+                                     output_dir: Path, filename_stem: str):
+    """Extract and save individual card backs from 3x3 grid"""
+    try:
+        # Load original image
+        img = Image.open(image_path)
+        width, height = img.size
+        
+        # Calculate grid dimensions (3x3)
+        card_width = width // 3
+        card_height = height // 3
+        
+        for grid_card in grid_cards:
+            # Calculate crop coordinates
+            col = grid_card.col
+            row = grid_card.row
+            
+            left = col * card_width
+            top = row * card_height
+            right = left + card_width
+            bottom = top + card_height
+            
+            # Crop individual card
+            cropped_card = img.crop((left, top, right, bottom))
+            
+            # Generate filename
+            card_name = grid_card.data.get('name', 'unknown').replace(' ', '_')
+            card_number = grid_card.data.get('number', 'no_num')
+            crop_filename = f"{filename_stem}_pos{grid_card.position}_{card_name}_{card_number}.png"
+            
+            # Save cropped image
+            crop_path = output_dir / crop_filename
+            cropped_card.save(crop_path, "PNG")
+            
+            print(f"Saved cropped back: {crop_filename}")
+            
+    except Exception as e:
+        print(f"Error extracting individual backs: {e}", file=sys.stderr)

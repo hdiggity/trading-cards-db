@@ -1,0 +1,32 @@
+[
+  {
+    "name": "John Cuts And Hauls Christmas Trees In The Off-Season",
+    "sport": "baseball",
+    "brand": "n/a",
+    "number": "n/a",
+    "copyright_year": "n/a",
+    "team": "n/a",
+    "card_set": "n/a",
+    "condition": "excellent",
+    "is_player_card": true,
+    "features": "none",
+    "value_estimate": "n/a",
+    "matched_front_file": "n/a",
+    "notes": "Cartoon illustration with text.",
+    "_confidence": {
+      "name": 0.6,
+      "copyright_year": 0.3,
+      "condition": 0.8,
+      "brand": 0.6,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.5700000000000002,
+    "_tcdb_verification": {
+      "search_query": "",
+      "results": [],
+      "verified": false,
+      "best_match": null,
+      "error": "Cannot verify unidentified or incomplete card data"
+    }
+  }
+]

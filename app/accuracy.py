@@ -55,6 +55,43 @@ class CardValidator:
         
         # Validate and correct sport
         corrected['sport'] = self._validate_sport(corrected.get('sport'))
+
+        # Normalize card set naming using brand + year for base sets
+        set_value, inferred_year = self._validate_card_set(
+            corrected.get('card_set'), corrected.get('brand'), corrected.get('copyright_year'), corrected.get('name')
+        )
+        corrected['card_set'] = set_value
+        # If year is still unknown, but we inferred from set/name, fill it
+        if (corrected.get('copyright_year') in (None, '', 'unknown', 'n/a') and inferred_year):
+            corrected['copyright_year'] = inferred_year
+        # If brand unknown but can be inferred from normalized set, fill it
+        if corrected.get('brand') in (None, '', 'unknown', 'n/a') and isinstance(set_value, str):
+            lower = set_value.lower()
+            brand_from_set = None
+            if 'topps' in lower:
+                brand_from_set = 'topps'
+            elif 'upper deck' in lower:
+                brand_from_set = 'upper deck'
+            elif 'donruss' in lower:
+                brand_from_set = 'donruss'
+            elif 'fleer' in lower:
+                brand_from_set = 'fleer'
+            elif 'bowman' in lower:
+                brand_from_set = 'bowman'
+            elif 'leaf' in lower:
+                brand_from_set = 'leaf'
+            elif 'score' in lower:
+                brand_from_set = 'score'
+            elif 'pinnacle' in lower:
+                brand_from_set = 'pinnacle'
+            elif 'select' in lower:
+                brand_from_set = 'select'
+            elif 'panini' in lower:
+                brand_from_set = 'panini'
+            elif 'o-pee-chee' in lower or 'opc' in lower:
+                brand_from_set = 'o-pee-chee'
+            if brand_from_set:
+                corrected['brand'] = brand_from_set
         
         # Validate player card field
         corrected['is_player_card'] = self._validate_player_card(corrected)
@@ -217,6 +254,113 @@ class CardValidator:
                 return standard
                 
         return sport_str if sport_str in self.sports else "baseball"
+
+    def _validate_card_set(self, card_set: Any, brand: Any, year_hint: Any, name_hint: Any) -> Tuple[str, Optional[str]]:
+        """Normalize card_set to '<year> <Brand>' for base sets.
+
+        - If brand is a major base brand (e.g., Topps, Upper Deck, Donruss, Fleer, Bowman, Leaf,
+          Score, Pinnacle, Panini, O-Pee-Chee) and there is no clear subset indicator, coerce the
+          set to '<year> <BrandTitleCase>'.
+        - If subset keywords are present (e.g., Heritage, Chrome, Finest, Stadium Club, Archives,
+          Allen & Ginter, Gypsy Queen, Traded, Update, Tiffany, Mini, Gold Label, Turkey Red,
+          SP, SPx, MVP, Ultra, Platinum, Showcase, Prizm, Optic, Mosaic, Contenders, Draft,
+          Prospects, Chrome, etc.), keep the provided set text.
+        - Return tuple of (normalized_set, inferred_year or None).
+        """
+        # Normalize inputs
+        set_str = (str(card_set).strip().lower() if card_set else '')
+        brand_str = (str(brand).strip().lower() if brand else '')
+        name_str = (str(name_hint).strip().lower() if name_hint else '')
+
+        # Helper: extract a plausible 4-digit year
+        def extract_year(*texts) -> Optional[str]:
+            for t in texts:
+                if not t:
+                    continue
+                m = re.findall(r"\b(19[6-9]\d|20[0-4]\d)\b", str(t))
+                if m:
+                    # Prefer the last match (often production year appears after stats)
+                    try:
+                        y = int(m[-1])
+                        if 1960 <= y <= self.current_year:
+                            return str(y)
+                    except Exception:
+                        pass
+            return None
+
+        # Canonical brand title mapping
+        title_map = {
+            'topps': 'Topps',
+            'upper deck': 'Upper Deck',
+            'ud': 'Upper Deck',
+            'donruss': 'Donruss',
+            'fleer': 'Fleer',
+            'bowman': 'Bowman',
+            'leaf': 'Leaf',
+            'score': 'Score',
+            'pinnacle': 'Pinnacle',
+            'select': 'Select',
+            'panini': 'Panini',
+            'opc': 'O-Pee-Chee',
+            'o-pee-chee': 'O-Pee-Chee',
+        }
+
+        # Subset indicators that should prevent coercion to base set
+        subset_keywords = [
+            'heritage', 'archives', 'stadium club', 'chrome', 'finest', 'gypsy queen',
+            'allen', 'ginter', 'a&g', 'traded', 'update', 'tiffany', 'mini', 'gold label',
+            'turkey red', 'gallery', 'bazooka', 'sp ', ' sp', 'spx', 'mvp', 'ovation',
+            'black diamond', "collector's choice", 'ultra', 'platinum', 'flare', 'showcase',
+            'prizm', 'optic', 'mosaic', 'contenders', 'immaculate', 'flawless', 'threads',
+            'draft', 'prospect', 'prospects', 'bowman chrome', 'bowman draft'
+        ]
+
+        # First, try to determine a year
+        year_text = year_hint if year_hint not in (None, '', 'unknown', 'n/a') else ''
+        inferred_year = extract_year(year_text) or extract_year(set_str) or extract_year(name_str)
+
+        # If set looks like a card title (leaders/checklist/etc.), treat as unknown
+        title_like = False
+        if set_str:
+            for kw in ['leaders', 'checklist', 'rookie first', 'highlights', 'all-star', 'batting leaders', 'pitching leaders']:
+                if kw in set_str:
+                    title_like = True
+                    break
+
+        # Decide if we should coerce to base set naming
+        # Try to infer brand from set/name if missing
+        brand_guess = brand_str
+        if not brand_guess:
+            for k in title_map.keys():
+                if k in set_str or k in name_str:
+                    brand_guess = k
+                    break
+        brand_is_known = brand_guess in title_map
+        has_subset_kw = any(kw in set_str for kw in subset_keywords) if set_str else False
+
+        # Build normalized set when appropriate
+        if brand_is_known and not has_subset_kw and not title_like and inferred_year:
+            normalized = f"{inferred_year} {title_map[brand_guess]}"
+            return normalized, inferred_year
+
+        # If brand is known and set is missing/unknown, but we have year: coerce to base
+        if brand_is_known and (not set_str or set_str in {'unknown', 'n/a', 'none'}) and inferred_year:
+            normalized = f"{inferred_year} {title_map[brand_guess]}"
+            return normalized, inferred_year
+
+        # If set already contains brand but lacks year, append inferred year
+        if set_str and brand_is_known and title_map[brand_guess].lower() in set_str and inferred_year and not re.search(r"\b(19[6-9]\d|20[0-4]\d)\b", set_str):
+            return f"{inferred_year} {title_map[brand_guess]}", inferred_year
+
+        # Otherwise, pass through the original (standardized capitalization where easy)
+        if set_str:
+            # Capitalize known brand within set if present
+            for k, v in title_map.items():
+                if k in set_str and v.lower() not in set_str:
+                    set_str = set_str.replace(k, v.lower())
+            return set_str, inferred_year
+
+        return 'unknown', inferred_year
     
     def _validate_player_card(self, card: Dict[str, Any]) -> bool:
         """Validate is_player_card field"""

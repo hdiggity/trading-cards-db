@@ -178,17 +178,18 @@ def build_system_prompt(include_learning: bool = True) -> str:
     
     return (
         "Extract trading card data from the image. Count visible cards and analyze each one.\n\n"
-        "Return JSON array with one object per card:\n"
+        "Return a JSON object with key 'cards' that contains an array of card objects. Each object must include the fields below:\n"
         "{\n" f"{joined_fields}\n" "}\n\n"
         "Key requirements:\n"
         "- name: SPECIFIC card title/subject (e.g., '1973 Rookie First Basemen', 'Al Rosen', 'NL Batting Leaders'). For multi-player cards, use the card's title, not individual names.\n"
-        "- card_set: The ACTUAL trading card set/series (e.g., '1973 Topps', '1975 Topps', '1989 Upper Deck'). This is usually the main brand + year, NOT specialty subsets.\n"
+        "- card_set: Use BASE SET naming: '<year> <brand>' (e.g., '1973 Topps', '1989 Upper Deck'). Do NOT include subset names unless explicitly printed (e.g., 'Topps Heritage', 'Stadium Club', 'Chrome'). Never use card titles (like 'Rookie First Basemen') as the set.\n"
         "- copyright_year: Find actual production year (© symbol, brand marks), not player stats years\n"
         "- condition: Assess corners, edges, surface damage. Use: gem_mint/mint/near_mint/excellent/very_good/good/fair/poor\n"
         "- is_player_card: true for individual athletes, false for team/checklist/leaders cards\n"
         "- features: Use 'none' or comma-separated values like 'rookie,autograph'\n\n"
         "IMPORTANT: Distinguish card NAME (what's on the card) from card SET (the product line it belongs to).\n"
-        "Use 'n/a' for missing values. Never use 'unspecified' or 'unidentified'. Be accurate and specific for each card."
+        "Use 'n/a' for missing values. Never use 'unspecified' or 'unidentified'. Be accurate and specific for each card.\n\n"
+        "Output format must be EXACTLY: {\"cards\": [ {..fields..}, ... ] }"
     )
 
 
@@ -210,7 +211,7 @@ Count cards visible and analyze each one separately:
 - Brand (Topps, Panini, etc.)
 - Condition (corners, edges, surface)
 
-Return JSON array with one object per card:
+Return a JSON object with key 'cards' that contains an array of card objects. Each object must include these fields:
 {{"name": "SPECIFIC card title/subject (e.g., '1973 Rookie First Basemen', 'Al Rosen', 'NL Batting Leaders')",
   "sport": "baseball/basketball/football/hockey", 
   "brand": "card brand",
@@ -249,17 +250,136 @@ def extract_json_array(text: str) -> str:
 
 
 def safe_parse_json_array(raw: str) -> list:
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        # try to salvage a partial list
-        raw = raw.rstrip(", \n\r\t")
-        while raw and raw[-1] != "}":
-            raw = raw[:-1]
+    """Best-effort parse of a JSON array from possibly noisy/truncated text.
+
+    Handles cases where the model returns:
+    - Valid JSON array
+    - A single JSON object
+    - A JSON array that's truncated (missing trailing "]")
+    - Extra prose before/after JSON
+    - Multiple objects without enclosing array
+    """
+
+    def _strip_fences(s: str) -> str:
+        s = s.strip()
+        s = re.sub(r"^```(?:json)?\n?", "", s)
+        s = re.sub(r"\n?```$", "", s)
+        return s.strip()
+
+    def _remove_trailing_commas(s: str) -> str:
+        # Remove trailing commas before ] or }
+        s = re.sub(r",\s*(\])", r"\1", s)
+        s = re.sub(r",\s*(\})", r"\1", s)
+        return s
+
+    def _parse_if_json(s: str):
         try:
-            return json.loads(raw + "]")
-        except Exception as inner:
-            raise ValueError("Could not recover truncated JSON") from inner
+            obj = json.loads(s)
+            if isinstance(obj, list):
+                return obj
+            if isinstance(obj, dict):
+                return [obj]
+        except Exception:
+            return None
+
+    def _extract_objects_from_array_text(s: str) -> list:
+        """Extract balanced JSON objects from an array-like text.
+
+        Example inputs handled:
+        - "[ {..}, {..}, {.."  (truncated)
+        - "some text... [ {..}, {..}, {..} more text"
+        """
+        if "{" not in s:
+            return []
+        objs = []
+        start_idx = None
+        depth = 0
+        in_str = False
+        escape = False
+        for i, ch in enumerate(s):
+            if in_str:
+                if escape:
+                    escape = False
+                elif ch == "\\":
+                    escape = True
+                elif ch == '"':
+                    in_str = False
+                continue
+            else:
+                if ch == '"':
+                    in_str = True
+                    continue
+                if ch == '{':
+                    if depth == 0:
+                        start_idx = i
+                    depth += 1
+                elif ch == '}':
+                    if depth > 0:
+                        depth -= 1
+                        if depth == 0 and start_idx is not None:
+                            objs.append(s[start_idx:i+1])
+                            start_idx = None
+        parsed = []
+        for o in objs:
+            o_clean = _remove_trailing_commas(_strip_fences(o))
+            try:
+                parsed_obj = json.loads(o_clean)
+                if isinstance(parsed_obj, dict):
+                    parsed.append(parsed_obj)
+            except Exception:
+                # Skip unparseable fragments
+                continue
+        return parsed
+
+    # Normalize input
+    raw = _strip_fences(raw)
+
+    # Fast path: try as-is
+    parsed = _parse_if_json(raw)
+    if parsed is not None:
+        return parsed
+
+    # If there is an array start, try to salvage from first '['
+    if '[' in raw:
+        arr_start = raw.find('[')
+        candidate = raw[arr_start:]
+        candidate = _remove_trailing_commas(candidate.rstrip())
+
+        # Try simple trailing bracket fix for truncated arrays
+        simple = candidate
+        # Trim any trailing whitespace/commas after last '}'
+        simple = simple.rstrip()
+        # If it looks like "[ {...}, {...}" then append closing bracket
+        if simple.count('[') >= 1 and simple.count(']') < simple.count('['):
+            # Cut to last complete object if possible
+            objects = _extract_objects_from_array_text(simple)
+            if objects:
+                try:
+                    return json.loads('[' + ','.join(json.dumps(o) for o in objects) + ']')
+                except Exception:
+                    pass
+            # Fallback: best-effort close array
+            tail = simple
+            # Remove trailing characters until last brace is '}'
+            tail = tail.rstrip(', \n\r\t')
+            while tail and tail[-1] != '}':
+                tail = tail[:-1]
+            fixed = tail + ']'
+            parsed = _parse_if_json(fixed)
+            if parsed is not None:
+                return parsed
+
+        # If bracket counts match but JSON still invalid, attempt to extract objects
+        objs = _extract_objects_from_array_text(candidate)
+        if objs:
+            return objs
+
+    # No '[' or failed above: scan entire text for balanced objects
+    objs = _extract_objects_from_array_text(raw)
+    if objs:
+        return objs
+
+    raise ValueError("Could not recover truncated JSON")
 
 
 def convert_image_to_supported_format(
@@ -358,7 +478,11 @@ def gpt_extract_cards_from_image(
     ]
 
     response = client.chat.completions.create(
-        model="gpt-4o", messages=messages, max_tokens=2000, temperature=0.1
+        model="gpt-4o",
+        messages=messages,
+        max_tokens=2000,
+        temperature=0.1,
+        response_format={"type": "json_object"},
     )
 
     try:
@@ -371,12 +495,24 @@ def gpt_extract_cards_from_image(
         if raw_response.endswith("```"):
             raw_response = raw_response[:-3].strip()
 
+        # Prefer strict JSON object with 'cards' (due to response_format)
+        parsed = None
         try:
-            raw_json = extract_json_array(raw_response)
-        except ValueError:
-            # fallback to using entire response for parsing
-            raw_json = raw_response
-        parsed = safe_parse_json_array(raw_json)
+            obj = json.loads(raw_response)
+            if isinstance(obj, dict) and isinstance(obj.get("cards"), list):
+                parsed = obj["cards"]
+            elif isinstance(obj, list):
+                parsed = obj
+        except Exception:
+            parsed = None
+
+        if parsed is None:
+            try:
+                raw_json = extract_json_array(raw_response)
+            except ValueError:
+                # fallback to using entire response for parsing
+                raw_json = raw_response
+            parsed = safe_parse_json_array(raw_json)
 
         if isinstance(parsed, dict):
             parsed = [parsed]
@@ -512,13 +648,24 @@ def gpt_extract_cards_from_image(
                     messages=reprocess_messages,
                     max_tokens=2500,
                     temperature=0.1,
+                    response_format={"type": "json_object"},
                 )
 
-                reprocess_content = reprocess_response.choices[
-                    0
-                ].message.content.strip()
-                reprocess_json = extract_json_array(reprocess_content)
-                reprocess_parsed = safe_parse_json_array(reprocess_json)
+                reprocess_content = reprocess_response.choices[0].message.content.strip()
+                # Prefer strict JSON object with 'cards'
+                reprocess_parsed = None
+                try:
+                    obj = json.loads(reprocess_content)
+                    if isinstance(obj, dict) and isinstance(obj.get("cards"), list):
+                        reprocess_parsed = obj["cards"]
+                    elif isinstance(obj, list):
+                        reprocess_parsed = obj
+                except Exception:
+                    reprocess_parsed = None
+
+                if reprocess_parsed is None:
+                    reprocess_json = extract_json_array(reprocess_content)
+                    reprocess_parsed = safe_parse_json_array(reprocess_json)
 
                 if isinstance(reprocess_parsed, dict):
                     reprocess_parsed = [reprocess_parsed]

@@ -190,7 +190,8 @@ For each of the 9 positions (0-8), extract:
 - Condition assessment of that specific card
 - Any special features visible
 
-Return a JSON array with exactly 9 objects, one for each grid position:
+Return a JSON array with exactly 9 objects, one for each grid position. For card_set, use BASE SET naming '<year> <brand>' (e.g., '1975 Topps'); only include subset names if clearly printed (e.g., 'Topps Heritage', 'Stadium Club', 'Chrome'). Do not confuse card titles like 'Rookie First Basemen' with set names.
+Return exactly this object shape for each card:
 {{
   "grid_position": 0-8,
   "name": "player name from card back",

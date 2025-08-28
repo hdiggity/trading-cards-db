@@ -669,7 +669,7 @@ app.post('/api/reprocess/:id', async (req, res) => {
     const jsonPath = path.join(PENDING_VERIFICATION_DIR, jsonFile);
     const previousData = JSON.parse(await fs.readFile(jsonPath, 'utf8'));
     
-    // Re-run AI extraction with improved prompt and previous context
+    // Re-run extraction with grid-aware logic: detect 3x3 grid and use GridProcessor when appropriate
     const pythonProcess = spawn('python', ['-c', `
 import sys
 import json
@@ -677,6 +677,8 @@ import os
 sys.path.append("${path.join(__dirname, '../..')}")
 from app.utils import gpt_extract_cards_from_image, save_cards_to_verification
 from pathlib import Path
+from app.run import _is_probable_3x3_grid
+from app.grid_processor import GridProcessor
 
 try:
     image_path = "${imagePath.replace(/\\/g, '\\\\')}"
@@ -731,11 +733,32 @@ try:
     except Exception as e:
         print(f"Diagnostic failed: {e}", file=sys.stderr)
     
-    # Extract cards using enhanced reprocessing prompt with previous data context
-    print(f"Starting GPT extraction with reprocessing context...", file=sys.stderr)
-    parsed_cards, validated_cards = gpt_extract_cards_from_image(image_path, previous_data)
-    
-    print(f"Re-processing completed: {len(parsed_cards)} cards extracted", file=sys.stderr)
+    # Decide processing path
+    is_grid = False
+    try:
+        is_grid = _is_probable_3x3_grid(Path(image_path))
+        print(f"Grid detection: {is_grid}", file=sys.stderr)
+    except Exception as e:
+        print(f"Grid detection failed (continuing with standard): {e}", file=sys.stderr)
+
+    if is_grid:
+        print("Detected probable 3x3 grid. Using GridProcessor for 9-card extraction...", file=sys.stderr)
+        gp = GridProcessor()
+        grid_cards, raw = gp.process_3x3_grid(image_path)
+        
+        # Convert GridCard objects to plain dicts
+        parsed_cards = []
+        for gc in grid_cards:
+            d = gc.data.copy() if isinstance(gc.data, dict) else dict(gc.data)
+            d.setdefault('_grid_metadata', {"position": gc.position, "row": gc.row, "col": gc.col, "confidence": getattr(gc, 'confidence', None)})
+            parsed_cards.append(d)
+        print(f"Grid processing completed: {len(parsed_cards)} cards extracted", file=sys.stderr)
+    else:
+        # Extract cards using enhanced reprocessing prompt with previous data context
+        print(f"Starting GPT extraction with reprocessing context...", file=sys.stderr)
+        parsed_cards, validated_cards = gpt_extract_cards_from_image(image_path, previous_data)
+        
+        print(f"Re-processing completed: {len(parsed_cards)} cards extracted", file=sys.stderr)
     
     # Debug: Check if we're getting the same data back
     names = [card.get('name', 'unknown') for card in parsed_cards]
@@ -789,7 +812,7 @@ try:
     
     print(f"Returning {len(result_cards)} cards with full metadata", file=sys.stderr)
     print(json.dumps(result_cards, indent=2))
-    
+
 except Exception as e:
     print(f"Re-processing error: {e}", file=sys.stderr)
     import traceback

@@ -399,7 +399,7 @@ Analyze all 9 cards and return a JSON array with exactly 9 objects:
     "number": "card number if visible",
     "copyright_year": "production year (© symbol)",
     "team": "team name from text/uniform/logo",
-    "card_set": "set name if identifiable",
+    "card_set": "BASE SET naming '<year> <brand>' (e.g., '1973 Topps'). Only include subset names if explicitly printed (e.g., 'Topps Heritage', 'Stadium Club', 'Chrome'). Do NOT use card titles like 'Rookie First Basemen', 'Leaders', or 'Checklist' as set names.",
     "condition": "mint/near_mint/excellent/very_good/good/fair/poor",
     "is_player_card": true,
     "features": "rookie/autograph/jersey/parallel/none",

@@ -13,13 +13,35 @@ function MainPage({ onNavigate }) {
   const [pendingCount, setPendingCount] = useState(0);
   const [rawScanCount, setRawScanCount] = useState(0);
   const [processing, setProcessing] = useState(false);
+  const [bgProcessing, setBgProcessing] = useState(false);
+  const [bgProgress, setBgProgress] = useState(0);
+  const [bgLogFile, setBgLogFile] = useState(null);
+  const [rawStart, setRawStart] = useState(0);
+  const [pendingStart, setPendingStart] = useState(0);
   const [learningInsights, setLearningInsights] = useState(null);
+  const rawStartRef = React.useRef(0);
 
   useEffect(() => {
     fetchStats();
     fetchPendingCount();
     fetchRawScanCount();
     fetchLearningInsights();
+    // Detect background processing if page reloads mid-run
+    (async () => {
+      try {
+        const r = await fetch('http://localhost:3001/api/processing-status');
+        const s = await r.json();
+        if (s.active) {
+          setBgProcessing(true);
+          setBgLogFile(s.logFile || null);
+          setBgProgress(10);
+          // Seed baselines for progress approximation
+          const base = (await fetchRawScanCount()) || 1;
+          rawStartRef.current = base;
+          setRawStart(prev => prev || base);
+        }
+      } catch {}
+    })();
   }, []);
 
   const fetchStats = async () => {
@@ -37,8 +59,10 @@ function MainPage({ onNavigate }) {
       const response = await fetch('http://localhost:3001/api/pending-cards');
       const data = await response.json();
       setPendingCount(data.length);
+      return data.length;
     } catch (error) {
       console.error('Error fetching pending count:', error);
+      return pendingCount;
     }
   };
 
@@ -47,8 +71,10 @@ function MainPage({ onNavigate }) {
       const response = await fetch('http://localhost:3001/api/raw-scan-count');
       const data = await response.json();
       setRawScanCount(data.count);
+      return data.count;
     } catch (error) {
       console.error('Error fetching raw scan count:', error);
+      return rawScanCount;
     }
   };
 
@@ -70,19 +96,38 @@ function MainPage({ onNavigate }) {
 
     setProcessing(true);
     try {
-      const response = await fetch('http://localhost:3001/api/process-raw-scans', {
-        method: 'POST'
-      });
-      
+      const response = await fetch('http://localhost:3001/api/process-raw-scans', { method: 'POST', headers: { 'Content-Type': 'application/json' } });
       const result = await response.json();
-      
       if (response.ok) {
-        alert(`Processing completed successfully!\n\n${result.output}`);
-        // Refresh counts after processing
-        fetchPendingCount();
-        fetchRawScanCount();
+        setBgProcessing(true);
+        setBgProgress(8);
+        setBgLogFile(result.logFile || null);
+        const startRaw = rawScanCount || (await fetchRawScanCount()) || 1;
+        rawStartRef.current = startRaw;
+        setRawStart(startRaw);
+        setPendingStart(pendingCount);
+        // Poll counts for progress for ~2 minutes or until raw scan count hits 0
+        const start = Date.now();
+        const poll = async () => {
+          const _ = await fetchPendingCount();
+          const currentRaw = await fetchRawScanCount();
+          // progress heuristic based on raw scans remaining
+          const base = rawStartRef.current || rawStart || 1;
+          const done = Math.max(0, base - currentRaw);
+          const pct = Math.min(100, Math.max(10, Math.round((done / base) * 100)));
+          setBgProgress(pct);
+          const timedOut = Date.now() - start >= 120000;
+          const finished = currentRaw === 0;
+          if (!timedOut && !finished) {
+            setTimeout(poll, 4000);
+          } else {
+            setBgProcessing(false);
+            setBgProgress(100);
+          }
+        };
+        setTimeout(poll, 3000);
       } else {
-        alert(`Processing failed: ${result.error}\n\nDetails: ${result.details || 'No additional details'}`);
+        alert(`Processing failed to start: ${result.error}\n\nDetails: ${result.details || 'No additional details'}`);
       }
     } catch (error) {
       console.error('Error processing raw scans:', error);
@@ -91,6 +136,21 @@ function MainPage({ onNavigate }) {
     setProcessing(false);
   };
 
+  // Update progress reactively as counts change
+  useEffect(() => {
+    if (!bgProcessing) return;
+    if (rawStart > 0) {
+      rawStartRef.current = rawStart;
+      const done = Math.max(0, rawStart - rawScanCount);
+      const pct = Math.min(100, Math.max(10, Math.round((done / rawStart) * 100)));
+      setBgProgress(pct);
+    }
+    if (rawScanCount === 0 && bgProcessing) {
+      setBgProcessing(false);
+      setBgProgress(100);
+    }
+  }, [rawScanCount, bgProcessing, rawStart]);
+
   const handleUploadComplete = (fileCount) => {
     // Refresh raw scan count after upload
     fetchRawScanCount();
@@ -98,6 +158,19 @@ function MainPage({ onNavigate }) {
 
   return (
     <div className="main-page">
+      {/* Top drop-down progress bar */}
+      <div 
+        className={`top-progress ${bgProcessing ? 'show' : ''}`}
+        role="status"
+        aria-live="polite"
+      >
+        <div className="top-progress-inner">
+          <div className="top-progress-title">Processing raw scans… {bgProgress}%</div>
+          <div className="progress-track top">
+            <div className="progress-bar" style={{ width: `${bgProgress}%` }} />
+          </div>
+        </div>
+      </div>
       <header className="main-header">
         <h1>Trading Cards Database</h1>
       </header>
@@ -135,11 +208,12 @@ function MainPage({ onNavigate }) {
           <button 
             className="action-button process"
             onClick={handleProcessRawScans}
-            disabled={rawScanCount === 0 || processing}
+            disabled={rawScanCount === 0 || processing || bgProcessing}
           >
             <div className="button-content">
               <h3>process raw scans {rawScanCount > 0 && `(${rawScanCount})`}</h3>
             </div>
+            {(processing || bgProcessing) && <div className="spinner" />}
           </button>
 
           <button 
@@ -180,6 +254,7 @@ function MainPage({ onNavigate }) {
           </button>
         </div>
       </div>
+      {/* Old inline banner removed in favor of top drop-down */}
 
       {learningInsights && learningInsights.total_corrections > 0 && (
         <div className="learning-section">

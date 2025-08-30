@@ -14,22 +14,66 @@ const formatFieldName = (fieldName) => {
     'condition': 'Condition',
     'is_player_card': 'Player Card',
     'features': 'Features',
+    'value_estimate': 'Price Estimate',
     'notes': 'Notes'
   };
   return fieldMap[fieldName] || fieldName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 };
 
+// Utility helpers for display normalization
+const toTitleCase = (str) => {
+  if (!str) return '';
+  const smallWords = new Set(['and', 'or', 'the', 'of', 'a', 'an', 'for', 'to', 'in', 'on']);
+  return str
+    .toLowerCase()
+    .split(/([\s-]+)/) // keep separators
+    .map((token, idx, arr) => {
+      // Skip separators
+      if (/^[\s-]+$/.test(token)) return token;
+      if (idx !== 0 && smallWords.has(token)) return token; // keep small words lower unless first
+      return token.charAt(0).toUpperCase() + token.slice(1);
+    })
+    .join('')
+    .replace(/\bMlb\b/g, 'MLB')
+    .replace(/\bNba\b/g, 'NBA')
+    .replace(/\bNfl\b/g, 'NFL')
+    .replace(/\bNhl\b/g, 'NHL');
+};
+
+const normalizeCondition = (val) => {
+  if (!val) return '';
+  return String(val).replace(/_/g, ' ').trim().toLowerCase();
+};
+
 // Utility function to format field values for display
 const formatFieldValue = (fieldName, value) => {
   if (value === null || value === undefined) return 'N/A';
-  
+
+  const raw = typeof value === 'string' ? value : String(value);
+  const noUnderscore = raw.replace(/_/g, ' ').trim();
+
   switch (fieldName) {
     case 'is_player_card':
-      return value ? 'Yes' : 'No';
-    case 'features':
-      return value === 'none' || !value ? 'None' : value;
+      return value ? 'yes' : 'no';
+    case 'features': {
+      if (!noUnderscore || noUnderscore.toLowerCase() === 'none') return 'none';
+      return noUnderscore
+        .split(',')
+        .map((f) => f.trim().replace(/_/g, ' ').toLowerCase())
+        .filter(Boolean)
+        .join(', ');
+    }
+    case 'sport':
+      return noUnderscore.toLowerCase();
+    case 'brand':
+    case 'team':
+      return toTitleCase(noUnderscore);
+    case 'card_set':
+      return toTitleCase(noUnderscore);
+    case 'condition':
+      return normalizeCondition(noUnderscore);
     default:
-      return value || 'N/A';
+      return noUnderscore || 'N/A';
   }
 };
 
@@ -296,7 +340,7 @@ function FeaturesSelector({ value, availableFeatures, onChange }) {
               checked={selectedFeatures.includes(feature)}
               onChange={() => handleFeatureToggle(feature)}
             />
-            <span>{feature}</span>
+            <span>{formatFieldValue('features', feature)}</span>
           </label>
         ))}
       </div>
@@ -524,9 +568,20 @@ function App({ onNavigate }) {
     const newData = [...editedData];
     // Convert text fields to lowercase for consistency
     const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
-    const processedValue = textFields.includes(field) && typeof value === 'string' 
+    let processedValue = textFields.includes(field) && typeof value === 'string' 
       ? value.toLowerCase() 
       : value;
+
+    if (field === 'condition' && typeof processedValue === 'string') {
+      processedValue = normalizeCondition(processedValue);
+    }
+    if (field === 'features' && typeof processedValue === 'string') {
+      processedValue = processedValue
+        .split(',')
+        .map((f) => f.trim().replace(/_/g, ' ').toLowerCase())
+        .filter(Boolean)
+        .join(',');
+    }
     newData[cardIndex] = { ...newData[cardIndex], [field]: processedValue };
     setEditedData(newData);
     
@@ -550,7 +605,7 @@ function App({ onNavigate }) {
       team: '',
       is_player_card: true,
       features: 'none',
-      condition: 'near_mint',
+      condition: 'near mint',
       card_set: ''
     };
     const newData = [...editedData, newCard];
@@ -820,8 +875,8 @@ function App({ onNavigate }) {
                           value={card.is_player_card} 
                           onChange={(e) => updateCardField(index, 'is_player_card', e.target.value === 'true')}
                         >
-                          <option value={true}>Yes</option>
-                          <option value={false}>No</option>
+                          <option value={true}>yes</option>
+                          <option value={false}>no</option>
                         </select>
                       </div>
                       <div className="field-group">
@@ -835,17 +890,17 @@ function App({ onNavigate }) {
                       <div className="field-group">
                         <label><strong>{formatFieldName('condition')}:</strong></label>
                         <select 
-                          value={card.condition} 
-                          onChange={(e) => updateCardField(index, 'condition', e.target.value)}
+                          value={normalizeCondition(card.condition)} 
+                          onChange={(e) => updateCardField(index, 'condition', normalizeCondition(e.target.value))}
                         >
-                          <option value="gem_mint">Gem Mint (10)</option>
-                          <option value="mint">Mint (9)</option>
-                          <option value="near_mint">Near Mint (8)</option>
-                          <option value="excellent">Excellent (7)</option>
-                          <option value="very_good">Very Good (6)</option>
-                          <option value="good">Good (5)</option>
-                          <option value="fair">Fair (4)</option>
-                          <option value="poor">Poor (3)</option>
+                          <option value="gem mint">gem mint (10)</option>
+                          <option value="mint">mint (9)</option>
+                          <option value="near mint">near mint (8)</option>
+                          <option value="excellent">excellent (7)</option>
+                          <option value="very good">very good (6)</option>
+                          <option value="good">good (5)</option>
+                          <option value="fair">fair (4)</option>
+                          <option value="poor">poor (3)</option>
                         </select>
                       </div>
                       <div className="field-group">
@@ -854,6 +909,15 @@ function App({ onNavigate }) {
                           type="text" 
                           value={card.card_set} 
                           onChange={(e) => updateCardField(index, 'card_set', e.target.value)}
+                        />
+                      </div>
+                      <div className="field-group">
+                        <label><strong>{formatFieldName('value_estimate')}:</strong></label>
+                        <input 
+                          type="text" 
+                          value={card.value_estimate || ''} 
+                          onChange={(e) => updateCardField(index, 'value_estimate', e.target.value)}
+                          placeholder="$1-5 or $12.34"
                         />
                       </div>
                     </>
@@ -909,6 +973,12 @@ function App({ onNavigate }) {
                         <span>{formatFieldValue('features', card.features)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.features} fieldName="features" />
                       </p>
+                      {card.value_estimate !== undefined && (
+                        <p>
+                          <strong>{formatFieldName('value_estimate')}:</strong> 
+                          <span>{formatFieldValue('value_estimate', card.value_estimate)}</span>
+                        </p>
+                      )}
                     </>
                   )}
                 </div>

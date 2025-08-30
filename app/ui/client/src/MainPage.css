@@ -144,6 +144,23 @@
   max-width: 400px;
 }
 
+.action-button .spinner {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #e5e5e5;
+  border-top-color: #16a34a;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: translateY(-50%) rotate(360deg); }
+}
+
 .action-button:hover:not(:disabled) {
   border-color: #d4d4d4;
 }
@@ -201,6 +218,61 @@
   background: white;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
+}
+
+/* Background processing banner */
+.progress-track {
+  position: relative;
+  height: 8px;
+  background: #f3f4f6;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  width: 0%;
+  transition: width 0.6s ease;
+}
+
+.processing-meta {
+  margin-top: 8px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Top drop-down progress bar */
+.top-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+  z-index: 1000;
+}
+
+.top-progress.show {
+  transform: translateY(0);
+}
+
+.top-progress-inner {
+  background: #ffffffcc; /* slightly translucent */
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 16px 14px;
+}
+
+.top-progress-title {
+  font-size: 0.875rem;
+  color: #111827;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.progress-track.top {
+  height: 6px;
 }
 
 .learning-section h2 {

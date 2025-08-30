@@ -98,6 +98,9 @@ class CardValidator:
         
         # Smart name correction
         corrected['name'] = self._validate_name(corrected.get('name'))
+
+        # Enforce naming rules for multi-player/non-player cards
+        corrected = self._enforce_title_naming_rules(corrected)
         
         return corrected
     
@@ -365,17 +368,20 @@ class CardValidator:
     def _validate_player_card(self, card: Dict[str, Any]) -> bool:
         """Validate is_player_card field"""
         name = str(card.get('name', '')).lower()
+        notes = str(card.get('notes', '')).lower()
         
         # Non-player indicators
         non_player_indicators = [
             'checklist', 'team leaders', 'rookie prospects',
             'draft picks', 'highlights', 'stadium', 'logo',
             'puzzle', 'subset', 'all-star game', 'world series',
-            'team card', 'league leaders', 'statistical leaders'
+            'team card', 'league leaders', 'statistical leaders',
+            'field leaders', 'rookie first basemen', 'rookie stars',
+            'leaders'
         ]
         
         for indicator in non_player_indicators:
-            if indicator in name:
+            if indicator in name or indicator in notes:
                 return False
         
         # Look for additional context clues to determine if it's a player card
@@ -383,8 +389,14 @@ class CardValidator:
         position_indicators = ['pitcher', 'catcher', 'outfield', 'infield', 'shortstop', 'first base', 'second base', 'third base']
         features = str(card.get('features', '')).lower()
         
-        # If it has rookie feature, likely a player card
-        if 'rookie' in features:
+        # Explicit multi-player hints in notes -> non-player
+        multi_hints = ['multiple players', 'three players', 'two players', 'featuring multiple players', 'features three players', 'dual player', 'trio']
+        if any(h in notes for h in multi_hints):
+            return False
+
+        # If it has rookie feature, it could still be a non-player combo card; only
+        # treat as definite player card when no multi-player or title indicators exist
+        if 'rookie' in features and not any(h in name for h in ['rookie first', 'rookie stars']):
             return True
             
         # Don't automatically assume unknown name = non-player card
@@ -663,6 +675,82 @@ class CardValidator:
         return None
 
 
+    def _enforce_title_naming_rules(self, card: Dict[str, Any]) -> Dict[str, Any]:
+        """Ensure name follows rules:
+        - If non-player (leaders/rookie/checklist/team/multi-player), name must be the card title
+        - If player card, name should be the player's name
+        Attempts to derive a reasonable title from notes/name/team/year when needed.
+        """
+        result = card.copy()
+        is_player = result.get('is_player_card', True)
+        name = str(result.get('name', '')).strip()
+        notes = str(result.get('notes', '')).lower()
+        team = str(result.get('team', '')).strip()
+        year = str(result.get('copyright_year', '')).strip()
+
+        def looks_like_person(n: str) -> bool:
+            n = n.strip()
+            if not n:
+                return False
+            # Contains commas or multiple distinct names
+            if ',' in n or ' and ' in n.lower():
+                return True
+            parts = [p for p in re.split(r"\s+", n) if p]
+            # Typical person name 2-4 tokens of letters
+            if 2 <= len(parts) <= 4 and all(re.match(r"^[A-Za-z\-']+$", p) for p in parts):
+                return True
+            return False
+
+        def build_title() -> str:
+            base = []
+            # Year prefix if looks valid
+            if re.match(r'^(19[6-9]\d|20[0-4]\d)$', year):
+                base.append(year)
+
+            text = (name + ' ' + notes).lower()
+            title = None
+            # Leaders variants
+            if 'field leaders' in text:
+                title = 'Field Leaders'
+            elif 'league leaders' in text or 'leaders' in text:
+                title = 'League Leaders'
+            # Rookie variants
+            elif 'rookie first base' in text or 'rookie first basemen' in text or 'first basemen' in text:
+                title = 'Rookie First Basemen'
+            elif 'rookie' in text:
+                title = 'Rookie Stars'
+            # Checklist / team
+            elif 'checklist' in text:
+                title = 'Checklist'
+            elif 'team card' in text or 'team' in text:
+                title = 'Team Card'
+
+            if title:
+                if team and team.lower() not in ['unknown', 'n/a', 'none'] and 'leaders' in title.lower():
+                    base.append(team)
+                base.append(title)
+                return ' '.join(base).strip()
+
+            # Fallback: if we can't infer specific title, use any non-person words from existing name
+            # or just year + 'Special'
+            if not looks_like_person(name) and name:
+                return ' '.join(base + [name]) if base else name
+            return ' '.join(base + ['Special']) if base else 'Special'
+
+        if not is_player:
+            # Ensure name is a card title, not a person
+            if looks_like_person(name) or not name:
+                result['name'] = build_title()
+
+        else:
+            # Player card: if multiple names present, downgrade to non-player and title
+            if ',' in name or ' and ' in name.lower():
+                result['is_player_card'] = False
+                result['name'] = build_title()
+
+        return result
+
+
 class ConfidenceScorer:
     """Scores confidence in extracted data"""
     
@@ -735,6 +823,81 @@ class ConfidenceScorer:
             return 0.4
         
         return 0.2
+
+    def _enforce_title_naming_rules(self, card: Dict[str, Any]) -> Dict[str, Any]:
+        """Ensure name follows rules:
+        - If non-player (leaders/rookie/checklist/team/multi-player), name must be the card title
+        - If player card, name should be the player's name
+        Attempts to derive a reasonable title from notes/name/team/year when needed.
+        """
+        result = card.copy()
+        is_player = result.get('is_player_card', True)
+        name = str(result.get('name', '')).strip()
+        notes = str(result.get('notes', '')).lower()
+        team = str(result.get('team', '')).strip()
+        year = str(result.get('copyright_year', '')).strip()
+
+        def looks_like_person(n: str) -> bool:
+            n = n.strip()
+            if not n:
+                return False
+            # Contains commas or multiple distinct names
+            if ',' in n or ' and ' in n.lower():
+                return True
+            parts = [p for p in re.split(r"\s+", n) if p]
+            # Typical person name 2-4 tokens of letters
+            if 2 <= len(parts) <= 4 and all(re.match(r"^[A-Za-z\-']+$", p) for p in parts):
+                return True
+            return False
+
+        def build_title() -> str:
+            base = []
+            # Year prefix if looks valid
+            if re.match(r'^(19[6-9]\d|20[0-4]\d)$', year):
+                base.append(year)
+
+            text = (name + ' ' + notes).lower()
+            title = None
+            # Leaders variants
+            if 'field leaders' in text:
+                title = 'Field Leaders'
+            elif 'league leaders' in text or 'leaders' in text:
+                title = 'League Leaders'
+            # Rookie variants
+            elif 'rookie first base' in text or 'rookie first basemen' in text or 'first basemen' in text:
+                title = 'Rookie First Basemen'
+            elif 'rookie' in text:
+                title = 'Rookie Stars'
+            # Checklist / team
+            elif 'checklist' in text:
+                title = 'Checklist'
+            elif 'team card' in text or 'team' in text:
+                title = 'Team Card'
+
+            if title:
+                if team and team.lower() not in ['unknown', 'n/a', 'none'] and 'leaders' in title.lower():
+                    base.append(team)
+                base.append(title)
+                return ' '.join(base).strip()
+
+            # Fallback: if we can't infer specific title, use any non-person words from existing name
+            # or just year + 'Special'
+            if not looks_like_person(name) and name:
+                return ' '.join(base + [name]) if base else name
+            return ' '.join(base + ['Special']) if base else 'Special'
+
+        if not is_player:
+            # Ensure name is a card title, not a person
+            if looks_like_person(name) or not name:
+                result['name'] = build_title()
+
+        else:
+            # Player card: if multiple names present, downgrade to non-player and title
+            if ',' in name or ' and ' in name.lower():
+                result['is_player_card'] = False
+                result['name'] = build_title()
+
+        return result
     
     def _year_confidence(self, year: Any) -> float:
         """Calculate confidence in copyright year"""

@@ -19,6 +19,74 @@ LAST_PROCESSED_FILE = Path("last_processed.txt")
 FAILED_LOG_FILE = Path("failed_processing.log")
 
 
+def _is_probable_3x3_grid(image_path: Path) -> bool:
+    """Lightweight detection for 3x3 grid backs using OpenCV if available.
+
+    Returns True if we can confidently detect 3 horizontal and 3 vertical separators
+    forming a 3x3 grid; False otherwise.
+    """
+    try:
+        import cv2  # type: ignore
+        import numpy as np  # type: ignore
+    except Exception:
+        # OpenCV not available; cannot reliably detect grid
+        return False
+
+    try:
+        img = cv2.imread(str(image_path))
+        if img is None:
+            # Try via PIL for HEIC, then convert
+            from PIL import Image
+            pil_img = Image.open(str(image_path))
+            img = cv2.cvtColor(np.array(pil_img), cv2.COLOR_RGB2BGR)
+
+        # Resize moderately to keep processing quick
+        h, w = img.shape[:2]
+        max_dim = max(h, w)
+        if max_dim > 1600:
+            scale = 1600.0 / max_dim
+            img = cv2.resize(img, (int(w * scale), int(h * scale)), interpolation=cv2.INTER_AREA)
+
+        # Preprocess for line detection
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        gray = clahe.apply(gray)
+        blur = cv2.GaussianBlur(gray, (3, 3), 0)
+        edges = cv2.Canny(blur, 50, 150)
+
+        # Detect horizontal and vertical lines
+        lines = cv2.HoughLinesP(edges, 1, np.pi/180, threshold=120, minLineLength=100, maxLineGap=20)
+        if lines is None:
+            return False
+
+        horiz = []
+        vert = []
+        for ln in lines:
+            x1, y1, x2, y2 = ln[0]
+            if abs(y2 - y1) < 10:  # horizontal-ish
+                horiz.append((y1 + y2) // 2)
+            if abs(x2 - x1) < 10:  # vertical-ish
+                vert.append((x1 + x2) // 2)
+
+        # Deduplicate positions with tolerance
+        def dedup(vals, tol=20):
+            vals = sorted(vals)
+            out = []
+            for v in vals:
+                if not out or abs(v - out[-1]) > tol:
+                    out.append(v)
+            return out
+
+        horiz_u = dedup(horiz)
+        vert_u = dedup(vert)
+
+        # We expect at least 2 internal separators in each direction (plus borders)
+        # Empirically, requiring >=2 gives a strong hint of 3x3 layout
+        return len(horiz_u) >= 2 and len(vert_u) >= 2
+    except Exception:
+        return False
+
+
 def process_and_move(image_path: Path, use_grid_processing: bool = False):
     print(f"processing: {image_path.name}")
     
@@ -37,12 +105,19 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
     logger.log_processing_start(image_path.name)
     
     try:
+        # Auto-detect 3x3 grid if not explicitly requested
+        if not use_grid_processing and _is_probable_3x3_grid(image_path):
+            use_grid_processing = True
+
         if use_grid_processing:
             # Use enhanced grid processing for 3x3 back images
             grid_processor = GridProcessor()
             
-            # Check for front images to use for matching
-            front_dir = FRONT_IMAGES_DIR if FRONT_IMAGES_DIR.exists() else None
+            # Check for front images to use for matching, gated by env
+            disable_front = os.getenv("DISABLE_FRONT_MATCH", "false").lower() == "true"
+            front_dir = None
+            if not disable_front and FRONT_IMAGES_DIR.exists():
+                front_dir = FRONT_IMAGES_DIR
             
             grid_cards, raw_data = grid_processor.process_3x3_grid(
                 str(image_path), 
@@ -57,6 +132,7 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             save_grid_cards_to_verification(
                 grid_cards,
                 out_dir=PENDING_VERIFICATION_DIR,
+                # Keep JSON basename identical to image basename for UI association
                 filename_stem=filename_stem,
                 include_tcdb_verification=not disable_tcdb
             )
@@ -262,7 +338,11 @@ def process_all_raw_scans():
         print("no images found.")
     for image_path in images:
         print(f"found image: {image_path.name}")
-        process_and_move(image_path)
+        # Try to detect 3x3 grid backs and route accordingly for better performance
+        use_grid = _is_probable_3x3_grid(image_path)
+        if use_grid:
+            print(f"detected probable 3x3 grid layout for {image_path.name}")
+        process_and_move(image_path, use_grid_processing=use_grid)
 
 
 def process_3x3_grid_backs():

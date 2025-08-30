@@ -1,0 +1,65 @@
+looking for images to process...
+found image: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+detected probable 3x3 grid layout for 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+processing: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+2025-08-29 17:41:01,772 - trading_cards - INFO - [filesystem] File uploaded: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+2025-08-29 17:41:01,775 - trading_cards - INFO - [system] Upload status changed: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC -> processing
+2025-08-29 17:41:01,776 - trading_cards - INFO - [image_processing] Started processing: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Processing 3x3 grid as PRIMARY input: images/raw_scans/2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: images/raw_scans/2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Extracting individual cards from grid...
+Grid detection failed, using simple division
+Extracted 9 individual cards
+Converting cards to base64 for analysis...
+Analyzing each card with GPT-4 Vision...
+2025-08-29 17:41:34,414 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-29 17:41:34,430 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC (9 cards)
+2025-08-29 17:41:34,433 - trading_cards - INFO - [system] Upload status changed: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=None, brand=Topps, sport=baseball, set=None
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from images/unprocessed_single_front
+Found 1194 front images for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+2025-08-29 17:41:43,023 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:41:49,787 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:41:57,345 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:42:05,905 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:42:15,961 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:42:27,833 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:42:38,978 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:42:49,835 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:42:59,693 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:43:13,297 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:43:21,239 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:43:31,921 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:43:45,643 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:43:55,951 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:44:07,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:44:19,197 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:44:29,831 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement

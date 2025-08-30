@@ -1,0 +1,46 @@
+looking for images to process...
+found image: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+detected probable 3x3 grid layout for 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+processing: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+2025-08-29 17:42:48,137 - trading_cards - INFO - [filesystem] File uploaded: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+2025-08-29 17:42:48,140 - trading_cards - INFO - [system] Upload status changed: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC -> processing
+2025-08-29 17:42:48,140 - trading_cards - INFO - [image_processing] Started processing: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Processing 3x3 grid as PRIMARY input: images/raw_scans/2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: images/raw_scans/2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Extracting individual cards from grid...
+Grid detection failed, using simple division
+Extracted 9 individual cards
+Converting cards to base64 for analysis...
+Analyzing each card with GPT-4 Vision...
+2025-08-29 17:43:26,877 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-29 17:43:26,894 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC (9 cards)
+2025-08-29 17:43:26,903 - trading_cards - INFO - [system] Upload status changed: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=© T.C.G. PRTD. IN U.S.A., brand=Topps, sport=baseball, set=None
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from images/unprocessed_single_front
+Found 1194 front images for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+Applied grid year context: © T.C.G. PRTD. IN U.S.A.
+Applied grid brand context: Topps
+Applied grid year context: © T.C.G. PRTD. IN U.S.A.
+Applied grid brand context: Topps
+Applied grid year context: © T.C.G. PRTD. IN U.S.A.
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+2025-08-29 17:43:35,962 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:43:46,483 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:43:54,368 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:44:07,379 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:44:17,839 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-29 17:44:30,191 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement

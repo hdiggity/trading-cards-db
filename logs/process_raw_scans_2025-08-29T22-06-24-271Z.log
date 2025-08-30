@@ -1,0 +1,9 @@
+looking for images to process...
+found image: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+detected probable 3x3 grid layout for 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+processing: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+2025-08-29 18:06:26,004 - trading_cards - INFO - [filesystem] File uploaded: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+2025-08-29 18:06:26,008 - trading_cards - INFO - [system] Upload status changed: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC -> processing
+2025-08-29 18:06:26,009 - trading_cards - INFO - [image_processing] Started processing: 2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Processing 3x3 grid as PRIMARY input: images/raw_scans/2025-08-29T21-20-56-310Z_IMG_2068.HEIC
+Using detailed individual card processing for maximum detail extraction...

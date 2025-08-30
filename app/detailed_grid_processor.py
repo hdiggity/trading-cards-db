@@ -13,7 +13,7 @@ from typing import List, Tuple, Dict, Any
 import json
 import os
 
-from .utils import client
+from .utils import client, llm_chat
 from .logging_system import logger, LogSource, ActionType
 
 # Optimal settings for GPT-4 Vision analysis of individual cards
@@ -388,6 +388,7 @@ CONTEXT CLUES:
 - Apply baseball historical knowledge to validate identifications
 
 RETURN FORMAT:
+NAMING RULE: If a back is a multi-player/Leaders/Checklist/Team card, set is_player_card=false and set name to the printed title (e.g., '1973 Rookie First Basemen', 'Brewers Field Leaders'). If it is a single-player back, set is_player_card=true and set name to the player's name.
 Analyze all 9 cards and return a JSON array with exactly 9 objects:
 
 [
@@ -504,12 +505,11 @@ def analyze_cards_with_gpt(base64_images: List[str], filename: str) -> List[Dict
             }
         ]
         
-        # Send to GPT-4 Vision
-        response = client.chat.completions.create(
-            model="gpt-4o",
+        # Send to LLM (model configurable via OPENAI_MODEL)
+        response = llm_chat(
             messages=messages,
             max_tokens=4000,
-            temperature=0.1
+            temperature=0.1,
         )
         
         # Parse response

@@ -1,16 +1,16 @@
 # Trading Cards Database
 
-A trading card digitization system that uses GPT-4 Vision to extract structured data from scanned trading card images.
+A trading card digitization system that uses OpenAI vision models to extract structured data from scanned trading card images.
 
 ## Quick Start
 
 ### 1. Environment Setup
 ```bash
-# Activate conda environment
+# Activate conda environment (recommended)
 conda activate trading_cards_db
 
 # Install Python dependencies (if needed)
-pip install openai python-dotenv pillow-heif sqlalchemy pydantic
+pip install openai python-dotenv pillow-heif sqlalchemy pydantic opencv-python-headless
 
 # Install Node.js dependencies for UI
 cd app/ui && npm install
@@ -22,6 +22,15 @@ cd ../../..
 Create a `.env` file in the project root:
 ```
 OPENAI_API_KEY=your-openai-api-key-here
+# Choose the OpenAI model (defaults to gpt-4o); when available, set to gpt-5
+OPENAI_MODEL=gpt-4o
+# Speed/quality knobs (optional)
+# Use fast heuristic price ranges during extraction (no extra API calls)
+VALUE_ESTIMATE_MODE=heuristic   # gpt|heuristic|off
+# Reduce reprocessing on strong first-pass results
+FAST_MODE=true                  # true|false
+# Limit front-image matching to cap API calls (per run)
+FRONT_MATCH_MAX=60              # integer; omit to use default 60
 ```
 
 ### 3. Initialize Database
@@ -34,7 +43,7 @@ python -c "from app.database import init_db; init_db()"
 ### Process Trading Card Images
 ```bash
 # Add images to images/raw_scans/ directory first
-# Then process them with GPT-4 Vision
+# Then process them with the configured OpenAI model
 python -m app.run --raw
 
 # Undo last processing (if needed)
@@ -49,6 +58,20 @@ npm run dev
 # Backend: http://localhost:3001
 # Frontend: http://localhost:3000
 ```
+
+### Backfill Price Estimates
+```bash
+# Populate value_estimate for existing rows (safe, fast heuristic by default)
+python -m app.scripts.backfill_price_estimates
+
+# Use GPT valuations instead (slower, higher quality)
+VALUE_ESTIMATE_MODE=gpt python -m app.scripts.backfill_price_estimates
+```
+
+Notes:
+- 3×3 back-grid photos placed in `images/raw_scans/` are auto-detected and processed with the enhanced 3×3 pipeline.
+- The JSON saved to `images/pending_verification/` now uses the same basename as the source image so the UI associates them (e.g., `IMG_1234.jpg` → `IMG_1234.json`).
+- TCDB lookups are used only to fill clear gaps (e.g., missing team/set) and are optional; set `DISABLE_TCDB_VERIFICATION=true` in `.env` to skip for maximum speed.
 
 ### Verification Process
 1. Open http://localhost:3000 in your browser
@@ -87,7 +110,7 @@ images/
 ```
 
 ## Features
-- **GPT-4 Vision Integration**: Automatic card data extraction
+- **Model-Configurable Vision Integration**: Automatic card data extraction (set `OPENAI_MODEL` to use newer models like gpt-5 when available)
 - **HEIC Support**: Full support for iPhone/Apple HEIC images with automatic conversion
 - **Web UI**: Visual verification with editing capabilities  
 - **Duplicate Detection**: Automatically increments quantity for existing cards

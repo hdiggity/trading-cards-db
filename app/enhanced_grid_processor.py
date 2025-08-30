@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import List, Tuple
 import os
 
-from .utils import convert_image_to_supported_format, client
+from .utils import convert_image_to_supported_format, client, llm_chat
 from .logging_system import logger, LogSource, ActionType
 
 
@@ -180,6 +180,7 @@ GRID CONSISTENCY ANALYSIS:
 - If 8 cards clearly show "1975 Topps", assume the 9th is also 1975 Topps
 
 INDIVIDUAL CARD EXTRACTION FOCUS:
+NAMING RULE: If a card shows multiple players or is a Leaders/Checklist/Team card, set is_player_card=false and set name to the printed title header (e.g., '1973 Rookie First Basemen', 'Brewers Field Leaders', 'NL Batting Leaders'). Only for single-player cards set is_player_card=true and use the player's name.
 For each of the 9 positions (0-8), extract:
 - Player name from the card back text
 - Team (from uniform, text, or team colors)
@@ -249,11 +250,12 @@ def process_enhanced_3x3_grid(image_path: str) -> Tuple[List[dict], str]:
             }
         ]
         
-        response = client.chat.completions.create(
-            model="gpt-4o",
+        import os
+        MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
+        response = llm_chat(
             messages=messages,
             max_tokens=4000,  # Increased for 9 cards
-            temperature=0.1
+            temperature=0.1,
         )
         
         # Parse response

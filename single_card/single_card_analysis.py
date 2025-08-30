@@ -13,7 +13,7 @@ INPUT_DIR = "/Users/harlan/Downloads"
 OUTPUT_DIR = "/Users/harlan/Downloads"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Optimal settings for ChatGPT-4o analysis
+# Optimal settings for LLM analysis
 TARGET_WIDTH = 1024  # Good balance of detail and file size for AI analysis
 TARGET_HEIGHT = 1400  # Standard trading card aspect ratio (roughly 2.5:3.5)
 
@@ -62,7 +62,7 @@ def color_correct(img):
 
 
 def resize_for_analysis(img):
-    """Resize to optimal dimensions for ChatGPT-4o analysis"""
+    """Resize to optimal dimensions for LLM analysis"""
     h, w = img.shape[:2]
     aspect_ratio = w / h
 
@@ -171,7 +171,7 @@ def four_point_transform(image, pts):
 
 
 def process_image(filepath):
-    """Complete image processing pipeline optimized for ChatGPT-4o analysis"""
+    """Complete image processing pipeline optimized for LLM analysis"""
     # Handle HEIC files
     if filepath.lower().endswith('.heic'):
         try:
@@ -325,7 +325,7 @@ def main():
     print(f"Successfully processed: {processed_count} images")
     print(f"Failed: {failed_count} images")
     print(f"Optimized images saved to: {OUTPUT_DIR}")
-    print(f"Images are now ready for ChatGPT-4o analysis with:")
+    print(f"Images are now ready for LLM analysis with:")
     print(f"- Optimal resolution ({TARGET_WIDTH}x{TARGET_HEIGHT} target)")
     print(f"- Enhanced contrast and sharpness for text recognition")
     print(f"- Noise reduction and color correction")

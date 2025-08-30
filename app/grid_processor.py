@@ -13,7 +13,9 @@ from PIL import Image
 import base64
 from io import BytesIO
 
-from .utils import convert_image_to_supported_format, client, build_system_prompt
+from .utils import convert_image_to_supported_format, client, build_system_prompt, llm_chat
+import os
+MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
 from .accuracy import CardValidator, ConfidenceScorer, detect_card_era_and_type
 from .tcdb_scraper import search_tcdb_cards
 from .value_estimator import add_value_estimation
@@ -172,11 +174,10 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
                 }
             ]
             
-            response = client.chat.completions.create(
-                model="gpt-4o",
+            response = llm_chat(
                 messages=messages,
                 max_tokens=4000,
-                temperature=0.1
+                temperature=0.1,
             )
             
             raw_response = response.choices[0].message.content.strip()
@@ -341,13 +342,38 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
     def _match_front_images(self, grid_cards: List[GridCard], front_images_dir: Path) -> List[GridCard]:
         """Match grid cards with front images using AI vision comparison"""
         print(f"Matching front images from {front_images_dir}", file=sys.stderr)
+        import os
+        if os.getenv("DISABLE_FRONT_MATCH", "false").lower() == "true":
+            print("Front matching disabled via DISABLE_FRONT_MATCH", file=sys.stderr)
+            return grid_cards
         
-        front_images = list(front_images_dir.glob("*.jpg")) + list(front_images_dir.glob("*.png")) + list(front_images_dir.glob("*.heic"))
+        # Collect candidate front images
+        front_images = (
+            list(front_images_dir.glob("*.jpg"))
+            + list(front_images_dir.glob("*.png"))
+            + list(front_images_dir.glob("*.heic"))
+        )
         if not front_images:
             print("No front images found for matching", file=sys.stderr)
             return grid_cards
         
-        print(f"Found {len(front_images)} front images for matching", file=sys.stderr)
+        # Limit matching set to avoid excessive API calls; default 60
+        try:
+            max_candidates = int(os.getenv("FRONT_MATCH_MAX", "60"))
+        except Exception:
+            max_candidates = 60
+        
+        total_front = len(front_images)
+        if total_front > max_candidates:
+            # Heuristic: prefer most recently modified files (likely recent uploads)
+            front_images.sort(key=lambda p: p.stat().st_mtime, reverse=True)
+            front_images = front_images[:max_candidates]
+            print(
+                f"Found {total_front} front images; limiting to {len(front_images)} most recent for matching",
+                file=sys.stderr,
+            )
+        else:
+            print(f"Found {total_front} front images for matching", file=sys.stderr)
         
         # Process front images to extract basic info
         front_cards_info = []
@@ -406,11 +432,10 @@ Focus on information that would help match this front with a corresponding back.
             }
         ]
         
-        response = client.chat.completions.create(
-            model="gpt-4o",
+        response = llm_chat(
             messages=messages,
             max_tokens=500,
-            temperature=0.1
+            temperature=0.1,
         )
         
         try:
@@ -581,9 +606,9 @@ def save_grid_cards_to_verification(
         except Exception as e:
             print(f"TCDB verification failed: {e}", file=sys.stderr)
     
-    # Save to file
+    # Save to file using SAME basename as source image so UI associates JSON↔image
     filename = out_dir / (
-        f"{filename_stem}_grid.json" if filename_stem else f"grid_{len(cards_data)}_cards.json"
+        f"{filename_stem}.json" if filename_stem else f"grid_{len(cards_data)}_cards.json"
     )
     
     with open(filename, "w") as f:

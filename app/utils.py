@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sys
+import time
 import uuid
 from io import BytesIO
 from pathlib import Path
@@ -21,6 +22,7 @@ from app.accuracy import (
 from app.database import SessionLocal
 from app.fields import shared_card_field_specs
 from app.learning import generate_learning_prompt_enhancements
+from app.value_estimator import add_value_estimation
 from app.models import Card
 from app.schemas import CardCreate  # make sure this import exists
 from app.tcdb_scraper import search_tcdb_cards
@@ -39,7 +41,66 @@ except ImportError:
 load_dotenv()
 register_heif_opener()
 
+# Centralized OpenAI client and model selection
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
+
+# Unified LLM chat helper with retries/backoff
+def _is_retryable_error(exc: Exception) -> bool:
+    code = getattr(exc, "status_code", None) or getattr(getattr(exc, "response", None), "status_code", None)
+    if code is not None:
+        try:
+            c = int(code)
+            if c == 429 or 500 <= c < 600:
+                return True
+        except Exception:
+            pass
+    text = str(exc).lower()
+    retry_tokens = [
+        "timeout", "timed out", "temporar", "connection reset",
+        "connection aborted", "server error", "service unavailable",
+        "gateway timeout", "rate limit", "too many requests",
+    ]
+    return any(t in text for t in retry_tokens)
+
+def llm_chat(
+    *,
+    messages,
+    model: str | None = None,
+    max_tokens: int | None = None,
+    temperature: float | None = 0.1,
+    response_format: dict | None = None,
+    retries: int = 3,
+    backoff_seconds: float = 1.5,
+    client_override=None,
+):
+    """Central wrapper for chat.completions with retries/backoff.
+
+    Returns the OpenAI response object.
+    """
+    use_model = model or MODEL
+    attempt = 0
+    while True:
+        try:
+            _client = client_override or client
+            return _client.chat.completions.create(
+                model=use_model,
+                messages=messages,
+                max_tokens=max_tokens,
+                temperature=temperature,
+                response_format=response_format,
+            )
+        except Exception as e:
+            attempt += 1
+            if attempt > retries or not _is_retryable_error(e):
+                print(f"LLM call failed (final): {e}", file=sys.stderr)
+                raise
+            sleep_for = min(backoff_seconds ** attempt, 30)
+            print(
+                f"LLM call error (attempt {attempt}/{retries}): {e} — retrying in {sleep_for:.1f}s",
+                file=sys.stderr,
+            )
+            time.sleep(sleep_for)
 
 
 def build_legacy_system_prompt(include_learning: bool = True) -> str:
@@ -181,7 +242,8 @@ def build_system_prompt(include_learning: bool = True) -> str:
         "Return a JSON object with key 'cards' that contains an array of card objects. Each object must include the fields below:\n"
         "{\n" f"{joined_fields}\n" "}\n\n"
         "Key requirements:\n"
-        "- name: SPECIFIC card title/subject (e.g., '1973 Rookie First Basemen', 'Al Rosen', 'NL Batting Leaders'). For multi-player cards, use the card's title, not individual names.\n"
+        "- name: SPECIFIC card title/subject (e.g., '1973 Rookie First Basemen', 'Al Rosen', 'NL Batting Leaders').\n"
+        "  NAMING RULE: If the card is a multi-player/Leaders/Checklist/Team card → set is_player_card=false and set name to the printed TITLE on the card (not individual names). If the card is a single player card → set is_player_card=true and set name to the player's name.\n"
         "- card_set: Use BASE SET naming: '<year> <brand>' (e.g., '1973 Topps', '1989 Upper Deck'). Do NOT include subset names unless explicitly printed (e.g., 'Topps Heritage', 'Stadium Club', 'Chrome'). Never use card titles (like 'Rookie First Basemen') as the set.\n"
         "- copyright_year: Find actual production year (© symbol, brand marks), not player stats years\n"
         "- condition: Assess corners, edges, surface damage. Use: gem_mint/mint/near_mint/excellent/very_good/good/fair/poor\n"
@@ -477,8 +539,7 @@ def gpt_extract_cards_from_image(
         },
     ]
 
-    response = client.chat.completions.create(
-        model="gpt-4o",
+    response = llm_chat(
         messages=messages,
         max_tokens=2000,
         temperature=0.1,
@@ -568,6 +629,9 @@ def gpt_extract_cards_from_image(
         needs_reprocessing = []
         final_cards = []
 
+        import os
+        fast_mode = os.getenv("FAST_MODE", "false").lower() in ("1", "true", "yes")
+
         for card in scored_cards:
             overall_confidence = card.get("_overall_confidence", 0.5)
             confidence_scores = card.get("_confidence", {})
@@ -575,11 +639,14 @@ def gpt_extract_cards_from_image(
             # Flag cards with very low confidence in critical fields
             # Be less aggressive about reprocessing for names since they're
             # often unclear in vintage cards
+            name_thresh = 0.25 if not fast_mode else 0.20
+            year_thresh = 0.50 if not fast_mode else 0.40
+            overall_thresh = 0.35 if not fast_mode else 0.30
+
             critical_low_confidence = (
-                # Lower threshold for names
-                confidence_scores.get("name", 1.0) < 0.25
-                or confidence_scores.get("copyright_year", 1.0) < 0.5
-                or overall_confidence < 0.35  # Lower overall threshold
+                confidence_scores.get("name", 1.0) < name_thresh
+                or confidence_scores.get("copyright_year", 1.0) < year_thresh
+                or overall_confidence < overall_thresh
             )
 
             if (
@@ -643,8 +710,7 @@ def gpt_extract_cards_from_image(
             ]
 
             try:
-                reprocess_response = client.chat.completions.create(
-                    model="gpt-4o",
+                reprocess_response = llm_chat(
                     messages=reprocess_messages,
                     max_tokens=2500,
                     temperature=0.1,
@@ -710,6 +776,9 @@ def gpt_extract_cards_from_image(
                 final_cards.extend(needs_reprocessing)
         else:
             final_cards.extend(needs_reprocessing)  # Add any remaining cards
+
+        # Add value estimation to each final card
+        final_cards = [add_value_estimation(card) for card in final_cards]
 
         # Final cleanup and prepare CardCreate objects
         clean_cards = []

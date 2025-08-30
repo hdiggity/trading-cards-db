@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs').promises;
+const fsSync = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
 const multer = require('multer');
@@ -258,6 +259,12 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
     const pendingFiles = await fs.readdir(PENDING_VERIFICATION_DIR);
     
     const jsonFile = pendingFiles.find(file => path.parse(file).name === id && file.endsWith('.json'));
+    // Find corresponding image file early so we can pass it to learning process
+    const imageFileEarly = pendingFiles.find(file => {
+      const imgBaseName = path.parse(file).name;
+      const imgExt = path.parse(file).ext.toLowerCase();
+      return imgBaseName === id && ['.jpg', '.jpeg', '.png', '.heic'].includes(imgExt);
+    });
     
     if (!jsonFile) {
       return res.status(404).json({ error: 'Card data file not found' });
@@ -337,10 +344,10 @@ with get_session() as session:
                 print(f"Updated quantity for existing card: {card_info.get('name')}")
             else:
                 # Create new card
-                new_card = Card(**card_create.model_dump())
-                session.add(new_card)
-                print(f"Added new card: {card_info.get('name')}")
-                
+            new_card = Card(**card_create.model_dump())
+            session.add(new_card)
+            print(f"Added new card: {card_info.get('name')}")
+            
         except Exception as e:
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
             continue
@@ -355,7 +362,7 @@ print("Database import completed successfully")
     const learningData = {
       card_data: processedCardData,
       original_data: allCardData.length === 1 ? [allCardData[parseInt(cardIndex)]] : null,
-      image_filename: imageFile
+      image_filename: imageFileEarly || null
     };
     
     // Send card data and learning context to Python process
@@ -702,6 +709,7 @@ try:
     import os
     
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
     encoded_image, mime_type = convert_image_to_supported_format(image_path, apply_preprocessing=False)
     
     diagnostic_messages = [
@@ -726,7 +734,7 @@ try:
     
     try:
         diagnostic_response = client.chat.completions.create(
-            model="gpt-4o", messages=diagnostic_messages, max_tokens=500, temperature=0.1
+            model=MODEL, messages=diagnostic_messages, max_tokens=500, temperature=0.1
         )
         diagnostic_result = diagnostic_response.choices[0].message.content.strip()
         print(f"AI DIAGNOSTIC - What it sees: {diagnostic_result}", file=sys.stderr)
@@ -1065,6 +1073,7 @@ with get_session() as session:
                 "condition": card.condition,
                 "is_player_card": card.is_player_card,
                 "features": card.features,
+                "value_estimate": card.value_estimate,
                 "quantity": card.quantity,
                 "last_price": card.last_price,
                 "date_added": card.date_added.isoformat() if card.date_added else None
@@ -1240,42 +1249,83 @@ with get_session() as session:
 });
 
 // Trigger raw scan processing
+const STATUS_FILE = path.join(__dirname, '../../logs/processing_status.json');
+
+function writeStatus(status) {
+  try {
+    fsSync.mkdirSync(path.dirname(STATUS_FILE), { recursive: true });
+    fsSync.writeFileSync(STATUS_FILE, JSON.stringify(status, null, 2));
+  } catch (e) {
+    console.error('Failed to write status file:', e);
+  }
+}
+
+function readStatus() {
+  try {
+    if (fsSync.existsSync(STATUS_FILE)) {
+      return JSON.parse(fsSync.readFileSync(STATUS_FILE, 'utf8'));
+    }
+  } catch {}
+  return { active: false };
+}
+
+// Process status endpoint
+app.get('/api/processing-status', async (req, res) => {
+  try {
+    const status = readStatus();
+    // If a PID exists, check if it's still alive
+    if (status.pid) {
+      try {
+        process.kill(status.pid, 0);
+        status.active = true;
+      } catch {
+        status.active = false;
+      }
+    }
+    res.json(status);
+  } catch (e) {
+    res.status(500).json({ active: false, error: 'Failed to read status' });
+  }
+});
+
 app.post('/api/process-raw-scans', async (req, res) => {
   try {
-    const pythonProcess = spawn('python', ['-m', 'app.run', '--raw'], {
+    // Ensure logs directory exists and create a per-run log file
+    const logsDir = path.join(__dirname, '../../logs');
+    try { await fs.mkdir(logsDir, { recursive: true }); } catch {}
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const logFile = path.join(logsDir, `process_raw_scans_${stamp}.log`);
+    const logStream = fsSync.createWriteStream(logFile, { flags: 'a' });
+
+    const child = spawn('python', ['-m', 'app.run', '--raw'], {
       cwd: path.join(__dirname, '../..'),
-      stdio: ['pipe', 'pipe', 'pipe']
+      detached: true,
+      stdio: ['ignore', 'pipe', 'pipe']
     });
-    
-    let output = '';
-    let error = '';
-    
-    pythonProcess.stdout.on('data', (data) => {
-      output += data.toString();
+
+    // Pipe output to the log file so we don't block or lose diagnostics
+    child.stdout.pipe(logStream);
+    child.stderr.pipe(logStream);
+    // Persist status so the client can discover processing after reloads
+    const status = { active: true, pid: child.pid, logFile: logFile.replace(/\\/g, '/'), startedAt: new Date().toISOString() };
+    writeStatus(status);
+
+    child.on('close', (code, signal) => {
+      const finished = { ...status, active: false, finishedAt: new Date().toISOString(), exitCode: code ?? null, signal: signal ?? null };
+      writeStatus(finished);
     });
-    
-    pythonProcess.stderr.on('data', (data) => {
-      error += data.toString();
+
+    child.unref();
+
+    res.status(202).json({
+      success: true,
+      message: 'Raw scan processing started in the background',
+      pid: child.pid,
+      logFile: logFile.replace(/\\/g, '/')
     });
-    
-    pythonProcess.on('close', (code) => {
-      if (code === 0) {
-        res.json({ 
-          success: true, 
-          message: 'Raw scan processing completed successfully',
-          output: output.trim()
-        });
-      } else {
-        res.status(500).json({ 
-          error: 'Raw scan processing failed', 
-          details: error.trim() 
-        });
-      }
-    });
-    
   } catch (error) {
     console.error('Error triggering raw scan processing:', error);
-    res.status(500).json({ error: 'Failed to trigger raw scan processing' });
+    res.status(500).json({ error: 'Failed to trigger raw scan processing', details: String(error) });
   }
 });
 
@@ -1484,6 +1534,42 @@ with get_session() as session:
   } catch (error) {
     console.error('Error getting database stats:', error);
     res.status(500).json({ error: 'Failed to get database stats' });
+  }
+});
+
+// Backfill price estimates for existing cards
+app.post('/api/backfill-price-estimates', async (req, res) => {
+  try {
+    const { dryRun = false } = req.body || {};
+    const pythonProcess = spawn('python', ['-c', `
+from app.scripts.backfill_price_estimates import backfill
+import json
+result = backfill(dry_run=${dryRun ? 'True' : 'False'})
+print(json.dumps(result))
+    `], {
+      cwd: path.join(__dirname, '../..'),
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+
+    let output = '';
+    let error = '';
+
+    pythonProcess.stdout.on('data', (d) => output += d.toString());
+    pythonProcess.stderr.on('data', (d) => error += d.toString());
+    pythonProcess.on('close', (code) => {
+      if (code === 0) {
+        try {
+          const result = JSON.parse(output);
+          res.json({ success: true, ...result });
+        } catch (e) {
+          res.json({ success: true, message: output.trim() });
+        }
+      } else {
+        res.status(500).json({ error: 'Backfill failed', details: error.trim() });
+      }
+    });
+  } catch (e) {
+    res.status(500).json({ error: 'Failed to start backfill', details: String(e) });
   }
 });
 

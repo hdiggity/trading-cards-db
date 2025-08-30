@@ -15,6 +15,7 @@ const formatFieldName = (fieldName) => {
     'is_player_card': 'Player Card',
     'features': 'Features',
     'quantity': 'Qty',
+    'value_estimate': 'Price Estimate',
     'last_price': 'Last Price',
     'date_added': 'Date Added',
     'last_updated': 'Last Updated'
@@ -22,22 +23,53 @@ const formatFieldName = (fieldName) => {
   return fieldMap[fieldName] || fieldName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 };
 
+// Utility helpers for display normalization
+const toTitleCase = (str) => {
+  if (!str) return '';
+  const smallWords = new Set(['and', 'or', 'the', 'of', 'a', 'an', 'for', 'to', 'in', 'on']);
+  return str
+    .toLowerCase()
+    .split(/([\s-]+)/)
+    .map((token, idx) => (/^[\s-]+$/.test(token) ? token : (idx !== 0 && smallWords.has(token) ? token : token.charAt(0).toUpperCase() + token.slice(1))))
+    .join('')
+    .replace(/\bMlb\b/g, 'MLB')
+    .replace(/\bNba\b/g, 'NBA')
+    .replace(/\bNfl\b/g, 'NFL')
+    .replace(/\bNhl\b/g, 'NHL');
+};
+
+const normalizeCondition = (val) => (val ? String(val).replace(/_/g, ' ').trim().toLowerCase() : '');
+
 // Utility function to format field values for display
 const formatFieldValue = (fieldName, value) => {
   if (value === null || value === undefined) return 'N/A';
+
+  const raw = typeof value === 'string' ? value : String(value);
+  const noUnderscore = raw.replace(/_/g, ' ').trim();
   
   switch (fieldName) {
     case 'is_player_card':
-      return value ? 'Yes' : 'No';
+      return value ? 'yes' : 'no';
     case 'features':
-      return value === 'none' || !value ? 'None' : value;
+      return !noUnderscore || noUnderscore.toLowerCase() === 'none'
+        ? 'none'
+        : noUnderscore.split(',').map((f) => f.trim().replace(/_/g, ' ').toLowerCase()).join(', ');
     case 'last_price':
       return value ? `$${parseFloat(value).toFixed(2)}` : 'N/A';
     case 'date_added':
     case 'last_updated':
       return value ? new Date(value).toLocaleDateString() : 'N/A';
+    case 'sport':
+      return noUnderscore.toLowerCase();
+    case 'brand':
+    case 'team':
+      return toTitleCase(noUnderscore);
+    case 'card_set':
+      return toTitleCase(noUnderscore);
+    case 'condition':
+      return normalizeCondition(noUnderscore);
     default:
-      return value || 'N/A';
+      return noUnderscore || 'N/A';
   }
 };
 
@@ -106,9 +138,10 @@ function DatabaseBrowser({ onNavigate }) {
       copyright_year: card.copyright_year || '',
       team: card.team || '',
       card_set: card.card_set || '',
-      condition: card.condition || 'near_mint',
+      condition: normalizeCondition(card.condition || 'near mint'),
       is_player_card: card.is_player_card !== undefined ? card.is_player_card : true,
       features: card.features || '',
+      value_estimate: card.value_estimate || '',
       quantity: card.quantity || 1,
       last_price: card.last_price || ''
     };
@@ -180,7 +213,7 @@ function DatabaseBrowser({ onNavigate }) {
       : value;
     setEditFormData(prev => ({
       ...prev,
-      [field]: processedValue
+      [field]: field === 'condition' ? normalizeCondition(processedValue) : processedValue
     }));
   };
 
@@ -307,14 +340,14 @@ function DatabaseBrowser({ onNavigate }) {
               className="filter-select"
             >
               <option value="">All Conditions</option>
-              <option value="gem_mint">Gem Mint (10)</option>
-              <option value="mint">Mint (9)</option>
-              <option value="near_mint">Near Mint (8)</option>
-              <option value="excellent">Excellent (7)</option>
-              <option value="very_good">Very Good (6)</option>
-              <option value="good">Good (5)</option>
-              <option value="fair">Fair (4)</option>
-              <option value="poor">Poor (3)</option>
+              <option value="gem mint">gem mint (10)</option>
+              <option value="mint">mint (9)</option>
+              <option value="near mint">near mint (8)</option>
+              <option value="excellent">excellent (7)</option>
+              <option value="very good">very good (6)</option>
+              <option value="good">good (5)</option>
+              <option value="fair">fair (4)</option>
+              <option value="poor">poor (3)</option>
             </select>
           </div>
         </div>
@@ -346,6 +379,7 @@ function DatabaseBrowser({ onNavigate }) {
                   <th>Condition</th>
                   <th>Player Card</th>
                   <th>Features</th>
+                  <th>Price Estimate</th>
                   <th>Qty</th>
                   <th>Last Price</th>
                   <th>Date Added</th>
@@ -372,15 +406,15 @@ function DatabaseBrowser({ onNavigate }) {
                         <td><input type="text" value={editFormData.team} onChange={(e) => updateFormField('team', e.target.value)} /></td>
                         <td><input type="text" value={editFormData.card_set} onChange={(e) => updateFormField('card_set', e.target.value)} /></td>
                         <td>
-                          <select value={editFormData.condition} onChange={(e) => updateFormField('condition', e.target.value)}>
-                            <option value="gem_mint">Gem Mint (10)</option>
-                            <option value="mint">Mint (9)</option>
-                            <option value="near_mint">Near Mint (8)</option>
-                            <option value="excellent">Excellent (7)</option>
-                            <option value="very_good">Very Good (6)</option>
-                            <option value="good">Good (5)</option>
-                            <option value="fair">Fair (4)</option>
-                            <option value="poor">Poor (3)</option>
+                          <select value={normalizeCondition(editFormData.condition)} onChange={(e) => updateFormField('condition', e.target.value)}>
+                            <option value="gem mint">gem mint (10)</option>
+                            <option value="mint">mint (9)</option>
+                            <option value="near mint">near mint (8)</option>
+                            <option value="excellent">excellent (7)</option>
+                            <option value="very good">very good (6)</option>
+                            <option value="good">good (5)</option>
+                            <option value="fair">fair (4)</option>
+                            <option value="poor">poor (3)</option>
                           </select>
                         </td>
                         <td>
@@ -390,6 +424,7 @@ function DatabaseBrowser({ onNavigate }) {
                           </select>
                         </td>
                         <td><input type="text" value={editFormData.features || ''} onChange={(e) => updateFormField('features', e.target.value)} placeholder="e.g., rookie, autograph" /></td>
+                        <td><input type="text" value={editFormData.value_estimate || ''} onChange={(e) => updateFormField('value_estimate', e.target.value)} placeholder="$1-5 or $12.34" /></td>
                         <td><input type="number" value={editFormData.quantity} onChange={(e) => updateFormField('quantity', parseInt(e.target.value))} /></td>
                         <td><input type="text" value={editFormData.last_price || ''} onChange={(e) => updateFormField('last_price', e.target.value)} placeholder="0.00" /></td>
                         <td><span className="readonly-field">{formatFieldValue('date_added', card.date_added)}</span></td>
@@ -417,6 +452,7 @@ function DatabaseBrowser({ onNavigate }) {
                         <td>{formatFieldValue('condition', card.condition)}</td>
                         <td>{formatFieldValue('is_player_card', card.is_player_card)}</td>
                         <td>{formatFieldValue('features', card.features)}</td>
+                        <td>{formatFieldValue('value_estimate', card.value_estimate)}</td>
                         <td>{formatFieldValue('quantity', card.quantity)}</td>
                         <td>{formatFieldValue('last_price', card.last_price)}</td>
                         <td>{formatFieldValue('date_added', card.date_added)}</td>

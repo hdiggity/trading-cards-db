@@ -1,0 +1,816 @@
+
+> trading-cards-ui@1.0.0 dev
+> concurrently --names "API,WEB" --prefix-colors "blue,green" "nodemon server.js" "cd client && npm start"
+
+[API] [33m[nodemon] 3.1.10[39m
+[API] [33m[nodemon] to restart at any time, enter `rs`[39m
+[API] [33m[nodemon] watching path(s): *.*[39m
+[API] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] 
+[WEB] > client@0.1.0 start
+[WEB] > react-scripts start
+[WEB] 
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] (node:7961) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[WEB] (Use `node --trace-deprecation ...` to show where the warning was created)
+[WEB] (node:7961) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+[WEB] Starting the development server...
+[WEB] 
+[WEB] Compiled successfully!
+[WEB] 
+[WEB] You can now view client in the browser.
+[WEB] 
+[WEB]   Local:            http://localhost:3000
+[WEB]   On Your Network:  http://192.168.1.240:3000
+[WEB] 
+[WEB] Note that the development build is not optimized.
+[WEB] To create a production build, use npm run build.
+[WEB] 
+[WEB] webpack compiled successfully
+[API] Re-processing Python exit code: 0
+[API] Raw output length: 13296
+[API] First 300 chars of output: 2025-08-29 17:02:51,498 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[API] Starting detailed 3x3 grid processing: /Users/harlan/Documents/personal/code/programs/trading_cards_db/images/pending_verification/2025-07-12T12-51-19-989Z_IMG_E2119.HEIC
+[API] Extracti
+[API] Error output: Re-processing image with previous context: /Users/harlan/Documents/personal/code/programs/trading_cards_db/images/pending_verification/2025-07-12T12-51-19-989Z_IMG_E2119.HEIC
+[API] Previous data had 9 cards
+[API] Previous card 1: Michael David Hedlund (1973) - Royals
+[API] Previous card 2: 1973 Rookie First Basemen (1973) - Various
+[API] Previous card 3: 1973 Brewers Field Leaders (1973) - Brewers
+[API] AI DIAGNOSTIC - What it sees: There are nine cards in the image. 
+[API] 
+[API] 1. **Top Left Card**: Features a player with a cartoon illustration and statistics in a yellow and black color scheme.
+[API] 2. **Top Middle Card**: Titled "1973 Rookie First Basemen," listing three players with their details in a yellow and black color scheme.
+[API] 3. **Top Right Card**: Titled "Brewers Field Leaders," listing a manager and players with their details in a yellow and black color scheme.
+[API] 4. **Middle Left Card**: Green and black card with player statistics and a small cartoon illustration.
+[API] 5. **Middle Middle Card**: Green and black card with player statistics and a small cartoon illustration.
+[API] 6. **Middle Right Card**: Green and black card with player statistics and a small cartoon illustration.
+[API] 7. **Bottom Left Card**: Green and black card with player statistics and a small cartoon illustration.
+[API] 8. **Bottom Middle Card**: Green and black card with player statistics and a small cartoon illustration.
+[API] 9. **Bottom Right Card**: Green and black card with player statistics and a small cartoon illustration.
+[API] Grid detection: True
+[API] Detected probable 3x3 grid. Using GridProcessor for 9-card extraction...
+[API] Processing 3x3 grid as PRIMARY input: /Users/harlan/Documents/personal/code/programs/trading_cards_db/images/pending_verification/2025-07-12T12-51-19-989Z_IMG_E2119.HEIC
+[API] Using detailed individual card processing for maximum detail extraction...
+[API] Detailed processing extracted 9 cards
+[API] Grid context: year=1973, brand=Topps, sport=baseball, set=1973 Topps
+[API] No front images directory provided - using back data only
+[API] Grid processing completed: 9 cards processed
+[API] Grid processing completed: 9 cards extracted
+[API] Names extracted: {'1973 Rookie First Basemen', '1973 Special', '1973 Brewers Field Leaders', 'Michael David Hedlund', 'Michael Dennis Kekich', 'John Charles Ellis', 'Allen Kent Berry', 'Don Edward Baylor', 'Roger Henry Metzger'}
+[API] Years extracted: {'1973'}
+[API] Teams extracted: {'Yankees', 'Orioles', 'Multiple', 'Astros', 'White Sox', 'Cubs', 'Brewers', 'Royals'}
+[API] Card 1: Michael David Hedlund - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 2: 1973 Rookie First Basemen - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 3: 1973 Brewers Field Leaders - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 4: 1973 Special - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 5: John Charles Ellis - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 6: Allen Kent Berry - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 7: Don Edward Baylor - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 8: Michael Dennis Kekich - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 9: Roger Henry Metzger - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Returning 9 cards with full metadata
+[API] Successfully parsed 9 cards from re-processing
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled successfully!
+[WEB] webpack compiled successfully
+[API] [32m[nodemon] restarting due to changes...[39m
+[WEB] Compiling...
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled successfully!
+[WEB] webpack compiled successfully
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled successfully!
+[WEB] webpack compiled successfully
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 90:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] Error processing single card pass action: ReferenceError: imageFile is not defined
+[API]     at /Users/harlan/Documents/personal/code/programs/trading_cards_db/app/ui/server.js:358:23
+[API] [32m[nodemon] restarting due to changes...[39m
+[WEB] Compiling...
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] Error processing single card pass action: ReferenceError: imageFile is not defined
+[API]     at /Users/harlan/Documents/personal/code/programs/trading_cards_db/app/ui/server.js:358:23
+[API] Error processing single card pass action: ReferenceError: imageFile is not defined
+[API]     at /Users/harlan/Documents/personal/code/programs/trading_cards_db/app/ui/server.js:358:23
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] Re-processing Python exit code: 0
+[API] Raw output length: 13583
+[API] First 300 chars of output: 2025-08-29 17:15:24,548 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[API] Starting detailed 3x3 grid processing: /Users/harlan/Documents/personal/code/programs/trading_cards_db/images/pending_verification/2025-07-12T12-51-19-989Z_IMG_E2119.HEIC
+[API] Extracti
+[API] Error output: Re-processing image with previous context: /Users/harlan/Documents/personal/code/programs/trading_cards_db/images/pending_verification/2025-07-12T12-51-19-989Z_IMG_E2119.HEIC
+[API] Previous data had 9 cards
+[API] Previous card 1: Michael David Hedlund (1973) - Royals
+[API] Previous card 2: 1973 Rookie First Basemen (1973) - Multiple
+[API] Previous card 3: 1973 Brewers Field Leaders (1973) - Brewers
+[API] AI DIAGNOSTIC - What it sees: There are nine cards in the image. Here's a brief description of each:
+[API] 
+[API] 1. **Top Left Card**: Features a player named Michael David Hedlund with a black and yellow color scheme. Includes a pitching record and a cartoon illustration.
+[API] 
+[API] 2. **Top Middle Card**: Titled "1973 Rookie First Basemen" with a list of players. It has a black and yellow color scheme.
+[API] 
+[API] 3. **Top Right Card**: Titled "Brewers Field Leaders" with a list of names. It has a black and yellow color scheme.
+[API] 
+[API] 4. **Middle Left Card**: Green and white card with player statistics and a cartoon illustration.
+[API] 
+[API] 5. **Middle Middle Card**: Green and white card with player statistics and a cartoon illustration.
+[API] 
+[API] 6. **Middle Right Card**: Green and white card with player statistics and a cartoon illustration.
+[API] 
+[API] 7. **Bottom Left Card**: Green and white card with player statistics and a cartoon illustration.
+[API] 
+[API] 8. **Bottom Middle Card**: Green and white card with player statistics and a cartoon illustration.
+[API] 
+[API] 9. **Bottom Right Card**: Green and white card with player statistics and a cartoon illustration.
+[API] Grid detection: True
+[API] Detected probable 3x3 grid. Using GridProcessor for 9-card extraction...
+[API] Processing 3x3 grid as PRIMARY input: /Users/harlan/Documents/personal/code/programs/trading_cards_db/images/pending_verification/2025-07-12T12-51-19-989Z_IMG_E2119.HEIC
+[API] Using detailed individual card processing for maximum detail extraction...
+[API] Detailed processing extracted 9 cards
+[API] Grid context: year=1973, brand=Topps, sport=baseball, set=1973 Topps
+[API] No front images directory provided - using back data only
+[API] Grid processing completed: 9 cards processed
+[API] Grid processing completed: 9 cards extracted
+[API] Names extracted: {'1973 Rookie First Basemen', '1973 Brewers Field Leaders', 'Michael David Hedlund', 'Don Edward Baylor', 'Billy Leo Williams', 'Allen Kent Berry', 'Roger Henry Metzger', 'Michael Dennis Kekich', 'John Charles Ellis'}
+[API] Years extracted: {'1973'}
+[API] Teams extracted: {'Yankees', 'Cubs', 'Brewers', 'Royals', 'multiple', 'White Sox', 'Astros', 'Orioles'}
+[API] Card 1: Michael David Hedlund - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 2: 1973 Rookie First Basemen - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 3: 1973 Brewers Field Leaders - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 4: Billy Leo Williams - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 5: John Charles Ellis - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 6: Allen Kent Berry - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 7: Don Edward Baylor - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 8: Michael Dennis Kekich - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Card 9: Roger Henry Metzger - has confidence: True
+[API]   Confidence keys: ['name', 'copyright_year', 'condition', 'brand', 'features']
+[API] Returning 9 cards with full metadata
+[API] Successfully parsed 9 cards from re-processing
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 91:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] Failed to log upload action: Traceback (most recent call last):
+[API]   File "<string>", line 6, in <module>
+[API] AttributeError: 'EnhancedLogger' object has no attribute 'log_action'
+[API] 
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiling...
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used  no-unused-vars
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used  no-unused-vars
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used  no-unused-vars
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used  no-unused-vars
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[WEB] Compiling...
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:  'bgLogFile' is assigned a value but never used                                                                                                                                                                                                no-unused-vars
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:  'bgLogFile' is assigned a value but never used                                                                                                                                                                                                no-unused-vars
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:  'bgLogFile' is assigned a value but never used                                                                                                                                                                                                no-unused-vars
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:  'bgLogFile' is assigned a value but never used                                                                                                                                                                                                no-unused-vars
+[WEB]   Line 20:10:  'pendingStart' is assigned a value but never used                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 42:6:   React Hook useEffect has a missing dependency: 'rawScanCount'. Either include it or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:   'bgLogFile' is assigned a value but never used                                                                                                                                                                                                                                                no-unused-vars
+[WEB]   Line 20:10:   'pendingStart' is assigned a value but never used                                                                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 43:6:    React Hook useEffect has missing dependencies: 'fetchPendingCount', 'fetchRawScanCount', and 'rawScanCount'. Either include them or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB]   Line 110:17:  '_' is assigned a value but never used                                                                                                                                                                                                                                                        no-unused-vars
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:   'bgLogFile' is assigned a value but never used                                                                                                                                                                                                                                                no-unused-vars
+[WEB]   Line 20:10:   'pendingStart' is assigned a value but never used                                                                                                                                                                                                                                             no-unused-vars
+[WEB]   Line 43:6:    React Hook useEffect has missing dependencies: 'fetchPendingCount', 'fetchRawScanCount', and 'rawScanCount'. Either include them or remove the dependency array. You can also replace multiple useState variables with useReducer if 'setRawStart' needs the current value of 'rawScanCount'  react-hooks/exhaustive-deps
+[WEB]   Line 110:17:  '_' is assigned a value but never used                                                                                                                                                                                                                                                        no-unused-vars
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[WEB] Compiling...
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[WEB] Compiled with warnings.
+[WEB] 
+[WEB] [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:   'bgLogFile' is assigned a value but never used                                                                                                  no-unused-vars
+[WEB]   Line 20:10:   'pendingStart' is assigned a value but never used                                                                                               no-unused-vars
+[WEB]   Line 45:6:    React Hook useEffect has missing dependencies: 'fetchPendingCount' and 'fetchRawScanCount'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[WEB]   Line 112:17:  '_' is assigned a value but never used                                                                                                          no-unused-vars
+[WEB] 
+[WEB] Search for the keywords to learn more about each warning.
+[WEB] To ignore, add // eslint-disable-next-line to the line before.
+[WEB] 
+[WEB] WARNING in [eslint] 
+[WEB] src/DatabaseBrowser.js
+[WEB]   Line 5:7:   'formatFieldName' is assigned a value but never used                                                           no-unused-vars
+[WEB]   Line 92:6:  React Hook useEffect has a missing dependency: 'fetchCards'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+[WEB] 
+[WEB] src/MainPage.js
+[WEB]   Line 18:10:   'bgLogFile' is assigned a value but never used                                                                                                  no-unused-vars
+[WEB]   Line 20:10:   'pendingStart' is assigned a value but never used                                                                                               no-unused-vars
+[WEB]   Line 45:6:    React Hook useEffect has missing dependencies: 'fetchPendingCount' and 'fetchRawScanCount'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+[WEB]   Line 112:17:  '_' is assigned a value but never used                                                                                                          no-unused-vars
+[WEB] 
+[WEB] webpack compiled with 1 warning
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000
+[API] [32m[nodemon] restarting due to changes...[39m
+[API] [32m[nodemon] starting `node server.js`[39m
+[API] 🚀 API Server running on http://localhost:3001
+[API] 📁 Frontend available at http://localhost:3000

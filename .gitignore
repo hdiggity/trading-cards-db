@@ -2,3 +2,10 @@
 app/__pycache__/
 node_modules/
 */node_modules/
+logs/
+app/cache/
+__pycache__/
+*.pyc
+*.db
+*.log
+*.pid

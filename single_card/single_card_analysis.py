@@ -1,7 +1,9 @@
 import cv2
 import os
+import sys
 import numpy as np
 import argparse
+from pathlib import Path
 from PIL import Image
 from pillow_heif import register_heif_opener
 
@@ -12,6 +14,12 @@ register_heif_opener()
 INPUT_DIR = "/Users/harlan/Downloads"
 OUTPUT_DIR = "/Users/harlan/Downloads"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# Allowed image extensions (lowercase)
+ALLOWED_IMAGE_EXTS = {
+    ".jpg", ".jpeg", ".png", ".heic", ".heif", ".gif",
+    ".webp", ".tif", ".tiff", ".bmp"
+}
 
 # Optimal settings for LLM analysis
 TARGET_WIDTH = 1024  # Good balance of detail and file size for AI analysis
@@ -172,21 +180,16 @@ def four_point_transform(image, pts):
 
 def process_image(filepath):
     """Complete image processing pipeline optimized for LLM analysis"""
-    # Handle HEIC files
-    if filepath.lower().endswith('.heic'):
+    # Robust read: try OpenCV first, then PIL fallback (covers HEIC/HEIF)
+    original = cv2.imread(filepath)
+    if original is None:
         try:
-            # Open HEIC with PIL and convert to RGB
             pil_image = Image.open(filepath)
             if pil_image.mode != 'RGB':
                 pil_image = pil_image.convert('RGB')
-            # Convert PIL to OpenCV format (BGR)
             original = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
         except Exception as e:
-            print(f"Error reading HEIC file {filepath}: {e}")
-            return None
-    else:
-        original = cv2.imread(filepath)
-        if original is None:
+            print(f"Error reading image {filepath}: {e}")
             return None
 
     # Step 1: Initial noise reduction
@@ -212,6 +215,37 @@ def process_image(filepath):
     final_image = resize_for_analysis(sharpened)
 
     return final_image
+
+
+def is_image_file(path: str) -> bool:
+    """Check by extension that path is an allowed image file."""
+    return Path(path).suffix.lower() in ALLOWED_IMAGE_EXTS
+
+
+def iter_image_paths(input_path: str, recursive: bool = False):
+    """Yield absolute paths to allowed image files under input_path.
+
+    - If input_path is a file, yield it only if it is an image.
+    - If input_path is a directory, iterate its immediate files (or recursively
+      if recursive=True) and yield images only.
+    """
+    p = Path(input_path)
+    if p.is_file():
+        if is_image_file(str(p)):
+            yield str(p.resolve())
+        return
+
+    if not p.is_dir():
+        return
+
+    if recursive:
+        for child in p.rglob('*'):
+            if child.is_file() and is_image_file(str(child)):
+                yield str(child.resolve())
+    else:
+        for child in p.iterdir():
+            if child.is_file() and is_image_file(str(child)):
+                yield str(child.resolve())
 
 
 def undo_processing():
@@ -274,6 +308,20 @@ def main():
         "--undo",
         action="store_true",
         help="Undo processing by restoring original images")
+    parser.add_argument(
+        "input",
+        nargs="?",
+        default=None,
+        help=(
+            "Path to an image file or a directory containing images. "
+            "Defaults to /Users/harlan/Downloads"
+        ),
+    )
+    parser.add_argument(
+        "--recursive",
+        action="store_true",
+        help="If input is a directory, also process images in subdirectories",
+    )
     args = parser.parse_args()
 
     if args.undo:
@@ -284,8 +332,11 @@ def main():
     processed_count = 0
     failed_count = 0
 
-    if not os.path.exists(INPUT_DIR):
-        print(f"Input directory {INPUT_DIR} does not exist")
+    # Determine effective input path
+    effective_input = args.input if args.input else INPUT_DIR
+    effective_input = os.path.expanduser(effective_input)
+    if not os.path.exists(effective_input):
+        print(f"Input path does not exist: {effective_input}")
         return
 
     # Use existing single_processed.txt log file
@@ -294,32 +345,46 @@ def main():
             os.path.dirname(__file__)),
         "single_processed.txt")
 
-    for filename in os.listdir(INPUT_DIR):
-        if filename.lower().endswith((".jpg", ".jpeg", ".png", ".heic")):
-            full_path = os.path.join(INPUT_DIR, filename)
-            print(f"Processing: {filename}")
+    # Build list of image paths to process
+    image_paths = list(iter_image_paths(effective_input, recursive=args.recursive))
+    if not image_paths:
+        # If a file was passed and it is not an allowed image
+        if os.path.isfile(effective_input) and not is_image_file(effective_input):
+            print(
+                f"Input file is not a supported image type: {effective_input}\n"
+                f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}"
+            )
+        else:
+            print("No images found to process.")
+        return
 
-            result = process_image(full_path)
-            if result is not None:
-                # Save as PNG for best quality preservation
-                base_name = os.path.splitext(filename)[0]
-                out_path = os.path.join(
-                    OUTPUT_DIR, f"{base_name}_optimized.png")
+    for full_path in image_paths:
+        filename = os.path.basename(full_path)
+        print(f"Processing: {filename}")
 
-                # Use high quality PNG compression settings
-                cv2.imwrite(out_path, result, [cv2.IMWRITE_PNG_COMPRESSION, 1])
+        result = process_image(full_path)
+        if result is not None:
+            # Save as PNG for best quality preservation
+            base_name = os.path.splitext(filename)[0]
+            out_path = os.path.join(OUTPUT_DIR, f"{base_name}_optimized.png")
 
-                # Log the processing for undo functionality
-                with open(log_file, 'a') as f:
-                    f.write(f"{filename} -> {base_name}_optimized.png\n")
+            # Use high quality PNG compression settings
+            cv2.imwrite(out_path, result, [cv2.IMWRITE_PNG_COMPRESSION, 1])
 
-                # Move file by removing from source after copying
+            # Log the processing for undo functionality
+            with open(log_file, 'a') as f:
+                f.write(f"{filename} -> {base_name}_optimized.png\n")
+
+            # Move file by removing from source after copying
+            try:
                 os.remove(full_path)
-                processed_count += 1
-                print(f"✓ Optimized: {filename} -> {base_name}_optimized.png")
-            else:
-                print(f"✗ Failed to process: {filename}")
-                failed_count += 1
+            except Exception as e:
+                print(f"Warning: could not remove source file {full_path}: {e}")
+            processed_count += 1
+            print(f"✓ Optimized: {filename} -> {base_name}_optimized.png")
+        else:
+            print(f"✗ Failed to process: {filename}")
+            failed_count += 1
 
     print(f"\nProcessing complete!")
     print(f"Successfully processed: {processed_count} images")

@@ -1177,8 +1177,19 @@ def save_cards_to_verification(
     )
 
     try:
+        # Write grouped JSON for compatibility with existing UI
         with open(filename, "w") as f:
             json.dump(card_dicts, f, indent=2)
+
+        # Also write split-per-card JSON files for each card
+        try:
+            base = filename_stem or filename.stem
+            for idx, c in enumerate(card_dicts, start=1):
+                per_name = f"{base}__c{idx}.json"
+                with open(out_dir / per_name, "w") as pf:
+                    json.dump([c], pf, indent=2)
+        except Exception as e:
+            print(f"Per-card JSON split failed: {e}", file=sys.stderr)
     except (TypeError, ValueError) as e:
         print(
             f"JSON serialization error, saving without metadata: {e}",

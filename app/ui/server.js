@@ -110,13 +110,14 @@ except Exception as e:
 
 // Base paths
 const PENDING_VERIFICATION_DIR = path.join(__dirname, '../../images/pending_verification');
-const VERIFIED_DIR = path.join(__dirname, '../../images/verified');
+// New folder for verified images (no spaces for path safety)
+const VERIFIED_IMAGES_DIR = path.join(__dirname, '../../images/verified_images');
 
 // Ensure directories exist
 async function ensureDirectories() {
   try {
     await fs.mkdir(PENDING_VERIFICATION_DIR, { recursive: true });
-    await fs.mkdir(VERIFIED_DIR, { recursive: true });
+    await fs.mkdir(VERIFIED_IMAGES_DIR, { recursive: true });
   } catch (error) {
     console.error('Error creating directories:', error);
   }
@@ -353,9 +354,18 @@ with get_session() as session:
                 print(f"Updated quantity for existing card: {card_info.get('name')}")
             else:
                 # Create new card
-            new_card = Card(**card_create.model_dump())
-            session.add(new_card)
-            print(f"Added new card: {card_info.get('name')}")
+                new_card = Card(**card_create.model_dump())
+                # Initialize last_price from value_estimate if possible
+                try:
+                    import re
+                    ve = card_info.get('value_estimate') or ''
+                    nums = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", ve)]
+                    if nums:
+                        new_card.last_price = sum(nums) / len(nums)
+                except Exception:
+                    pass
+                session.add(new_card)
+                print(f"Added new card: {card_info.get('name')}")
             
         except Exception as e:
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
@@ -412,14 +422,25 @@ print("Database import completed successfully")
           });
           
           try {
-            // Move JSON file to verified folder
-            await fs.rename(jsonPath, path.join(VERIFIED_DIR, path.basename(jsonPath)));
+            // Move grouped JSON file to verified_images folder
+            await fs.rename(jsonPath, path.join(VERIFIED_IMAGES_DIR, path.basename(jsonPath)));
+            // Move any per-card JSON split files for this image
+            const baseNameRoot = path.parse(jsonPath).name;
+            const root = baseNameRoot.split('__c')[0];
+            const dirFiles = await fs.readdir(PENDING_VERIFICATION_DIR);
+            const perCard = dirFiles.filter(f => f.startsWith(root + '__c') && f.endsWith('.json'));
+            for (const pc of perCard) {
+              await fs.rename(
+                path.join(PENDING_VERIFICATION_DIR, pc),
+                path.join(VERIFIED_IMAGES_DIR, pc)
+              );
+            }
             
-            // Move image file to verified folder
+            // Move image file to verified_images folder
             if (imageFile) {
               await fs.rename(
                 path.join(PENDING_VERIFICATION_DIR, imageFile),
-                path.join(VERIFIED_DIR, imageFile)
+                path.join(VERIFIED_IMAGES_DIR, imageFile)
               );
             }
             
@@ -540,6 +561,15 @@ with get_session() as session:
             else:
                 # Create new card
                 new_card = Card(**card_create.model_dump())
+                # Initialize last_price from value_estimate if possible
+                try:
+                    import re
+                    ve = card_info.get('value_estimate') or ''
+                    nums = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", ve)]
+                    if nums:
+                        new_card.last_price = sum(nums) / len(nums)
+                except Exception:
+                    pass
                 session.add(new_card)
                 print(f"Added new card: {card_info.get('name')}")
                 
@@ -1315,12 +1345,33 @@ app.post('/api/process-raw-scans', async (req, res) => {
     // Pipe output to the log file so we don't block or lose diagnostics
     child.stdout.pipe(logStream);
     child.stderr.pipe(logStream);
-    // Persist status so the client can discover processing after reloads
-    const status = { active: true, pid: child.pid, logFile: logFile.replace(/\\/g, '/'), startedAt: new Date().toISOString() };
+    // Compute initial total raw scans to drive progress and persist status so the client can discover processing after reloads
+    const RAW_SCANS_DIR = path.join(__dirname, '../../images/raw_scans');
+    let initialCount = 0;
+    try {
+      const files = await fs.readdir(RAW_SCANS_DIR);
+      initialCount = files.filter((f) => ['.jpg', '.jpeg', '.png', '.heic'].includes(path.extname(f).toLowerCase())).length;
+    } catch {}
+
+    const status = { active: true, pid: child.pid, logFile: logFile.replace(/\\/g, '/'), startedAt: new Date().toISOString(), total: initialCount, remaining: initialCount, progress: initialCount === 0 ? 100 : 10 };
     writeStatus(status);
 
+    // Periodically update remaining count and computed progress while process is active
+    const progressTimer = setInterval(async () => {
+      try {
+        const files = await fs.readdir(RAW_SCANS_DIR).catch(() => []);
+        const remaining = files.filter((f) => ['.jpg', '.jpeg', '.png', '.heic'].includes(path.extname(f).toLowerCase())).length;
+        const total = status.total || initialCount || 1;
+        const done = Math.max(0, total - remaining);
+        const pct = Math.min(99, Math.max(10, Math.round((done / Math.max(total, 1)) * 100)));
+        writeStatus({ ...status, active: true, remaining, progress: pct });
+      } catch {}
+    }, 4000);
+
     child.on('close', (code, signal) => {
-      const finished = { ...status, active: false, finishedAt: new Date().toISOString(), exitCode: code ?? null, signal: signal ?? null };
+      clearInterval(progressTimer);
+      // Finalize progress to 100%
+      const finished = { ...status, active: false, remaining: 0, progress: 100, finishedAt: new Date().toISOString(), exitCode: code ?? null, signal: signal ?? null };
       writeStatus(finished);
     });
 

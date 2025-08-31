@@ -24,19 +24,7 @@ const formatFieldName = (fieldName) => {
 };
 
 // Utility helpers for display normalization
-const toTitleCase = (str) => {
-  if (!str) return '';
-  const smallWords = new Set(['and', 'or', 'the', 'of', 'a', 'an', 'for', 'to', 'in', 'on']);
-  return str
-    .toLowerCase()
-    .split(/([\s-]+)/)
-    .map((token, idx) => (/^[\s-]+$/.test(token) ? token : (idx !== 0 && smallWords.has(token) ? token : token.charAt(0).toUpperCase() + token.slice(1))))
-    .join('')
-    .replace(/\bMlb\b/g, 'MLB')
-    .replace(/\bNba\b/g, 'NBA')
-    .replace(/\bNfl\b/g, 'NFL')
-    .replace(/\bNhl\b/g, 'NHL');
-};
+const toTitleCase = (str) => (str ? String(str) : '');
 
 const normalizeCondition = (val) => (val ? String(val).replace(/_/g, ' ').trim().toLowerCase() : '');
 
@@ -61,13 +49,15 @@ const formatFieldValue = (fieldName, value) => {
       return value ? new Date(value).toLocaleDateString() : 'N/A';
     case 'sport':
       return noUnderscore.toLowerCase();
+    case 'name':
+      return noUnderscore.toLowerCase();
     case 'brand':
     case 'team':
-      return toTitleCase(noUnderscore);
+      return noUnderscore.toLowerCase();
     case 'card_set':
-      return toTitleCase(noUnderscore);
+      return noUnderscore.toLowerCase();
     case 'condition':
-      return normalizeCondition(noUnderscore);
+      return noUnderscore.toLowerCase();
     default:
       return noUnderscore || 'N/A';
   }
@@ -84,6 +74,7 @@ function DatabaseBrowser({ onNavigate }) {
   const [filterCondition, setFilterCondition] = useState('');
   const [editingCard, setEditingCard] = useState(null);
   const [editFormData, setEditFormData] = useState({});
+  const [fieldOptions, setFieldOptions] = useState({ sports: [], brands: [], conditions: [] });
   const [selectedCards, setSelectedCards] = useState(new Set());
   const [selectAll, setSelectAll] = useState(false);
 
@@ -96,6 +87,23 @@ function DatabaseBrowser({ onNavigate }) {
     setSelectedCards(new Set());
     setSelectAll(false);
   }, [currentPage, searchTerm, filterSport, filterBrand, filterCondition]);
+
+  // Fetch distinct options for dropdowns
+  useEffect(() => {
+    (async () => {
+      try {
+        const r = await fetch('http://localhost:3001/api/field-options');
+        const data = await r.json();
+        setFieldOptions({
+          sports: (data.sports || []).map((s) => String(s).toLowerCase()),
+          brands: (data.brands || []).map((s) => String(s).toLowerCase()),
+          conditions: (data.conditions || []).map((s) => String(s).toLowerCase()),
+        });
+      } catch (e) {
+        setFieldOptions({ sports: [], brands: [], conditions: [] });
+      }
+    })();
+  }, []);
 
   const fetchCards = async () => {
     setLoading(true);
@@ -315,11 +323,10 @@ function DatabaseBrowser({ onNavigate }) {
               onChange={(e) => setFilterSport(e.target.value)}
               className="filter-select"
             >
-              <option value="">All Sports</option>
-              <option value="baseball">Baseball</option>
-              <option value="basketball">Basketball</option>
-              <option value="football">Football</option>
-              <option value="hockey">Hockey</option>
+              <option value="">all sports</option>
+              {fieldOptions.sports.map((s) => (
+                <option key={s} value={s}>{s}</option>
+              ))}
             </select>
             
             <select 
@@ -327,11 +334,10 @@ function DatabaseBrowser({ onNavigate }) {
               onChange={(e) => setFilterBrand(e.target.value)}
               className="filter-select"
             >
-              <option value="">All Brands</option>
-              <option value="topps">Topps</option>
-              <option value="panini">Panini</option>
-              <option value="upper deck">Upper Deck</option>
-              <option value="bowman">Bowman</option>
+              <option value="">all brands</option>
+              {fieldOptions.brands.map((b) => (
+                <option key={b} value={b}>{b}</option>
+              ))}
             </select>
             
             <select 
@@ -339,16 +345,30 @@ function DatabaseBrowser({ onNavigate }) {
               onChange={(e) => setFilterCondition(e.target.value)}
               className="filter-select"
             >
-              <option value="">All Conditions</option>
-              <option value="gem mint">gem mint (10)</option>
-              <option value="mint">mint (9)</option>
-              <option value="near mint">near mint (8)</option>
-              <option value="excellent">excellent (7)</option>
-              <option value="very good">very good (6)</option>
-              <option value="good">good (5)</option>
-              <option value="fair">fair (4)</option>
-              <option value="poor">poor (3)</option>
+              <option value="">all conditions</option>
+              {fieldOptions.conditions.map((c) => (
+                <option key={c} value={c}>{c}</option>
+              ))}
             </select>
+            <button 
+              className="search-button"
+              type="button"
+              onClick={async () => {
+                try {
+                  const r = await fetch('http://localhost:3001/api/backfill-price-estimates', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ dryRun: false }) });
+                  if (r.ok) {
+                    alert('Re-valued all cards');
+                    fetchCards();
+                  } else {
+                    alert('Re-value failed');
+                  }
+                } catch (e) {
+                  alert('Re-value failed');
+                }
+              }}
+            >
+              re‑value all
+            </button>
           </div>
         </div>
       </header>

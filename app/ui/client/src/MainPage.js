@@ -34,7 +34,8 @@ function MainPage({ onNavigate }) {
         if (s.active) {
           setBgProcessing(true);
           setBgLogFile(s.logFile || null);
-          setBgProgress(10);
+          if (typeof s.progress === 'number') setBgProgress(s.progress);
+          else setBgProgress(10);
           // Seed baselines for progress approximation
           const base = (await fetchRawScanCount()) || 1;
           rawStartRef.current = base;
@@ -112,11 +113,12 @@ function MainPage({ onNavigate }) {
           const _ = await fetchPendingCount();
           const currentRaw = await fetchRawScanCount();
           // Also check server process status
-          let active = true;
+          let active = true; let serverProgress = null;
           try {
             const rs = await fetch('http://localhost:3001/api/processing-status');
             const st = await rs.json();
             active = !!st.active;
+            if (typeof st.progress === 'number') serverProgress = st.progress;
           } catch {}
 
           // progress heuristic based on raw scans remaining
@@ -129,7 +131,7 @@ function MainPage({ onNavigate }) {
           // Climb smoothly up to ~97% over ~15 minutes while active
           const pctTime = Math.min(97, 10 + Math.round((elapsedSec / 900) * 87));
 
-          const pct = Math.max(pctCount, pctTime);
+          const pct = serverProgress !== null ? serverProgress : Math.max(pctCount, pctTime);
           setBgProgress(pct);
 
           const finished = currentRaw === 0;
@@ -161,7 +163,7 @@ function MainPage({ onNavigate }) {
       rawStartRef.current = rawStart;
       const done = Math.max(0, rawStart - rawScanCount);
       const pct = Math.min(100, Math.max(10, Math.round((done / rawStart) * 100)));
-      setBgProgress(pct);
+      setBgProgress((cur) => Math.max(cur, pct));
     }
     if (rawScanCount === 0 && bgProcessing) {
       setBgProcessing(false);

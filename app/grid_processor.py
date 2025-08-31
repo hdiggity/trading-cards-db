@@ -642,6 +642,16 @@ def save_grid_cards_to_verification(
     
     with open(filename, "w") as f:
         json.dump(cards_data, f, indent=2)
+
+    # Also write split-per-card JSON files
+    try:
+        base = filename_stem or filename.stem
+        for idx, c in enumerate(cards_data, start=1):
+            per_name = f"{base}__c{idx}.json"
+            with open(out_dir / per_name, "w") as pf:
+                json.dump([c], pf, indent=2)
+    except Exception as e:
+        print(f"Per-card JSON split failed: {e}", file=sys.stderr)
     
     # Optionally save cropped individual back images
     if save_cropped_backs and original_image_path:

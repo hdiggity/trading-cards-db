@@ -829,7 +829,7 @@
 }
 
 .card-image {
-  transition: transform 0.3s ease;
+  transition: transform 0.18s ease-out;
   user-select: none;
   display: block;
   width: 100%;
@@ -837,8 +837,11 @@
 }
 
 .card-image.zoomed {
-  transition: none;
+  /* keep smooth unless dragging */
 }
+
+.card-image.smooth-zoom { transition: transform 0.18s ease-out; }
+.card-image.no-transition { transition: none !important; }
 
 .zoom-controls {
   position: absolute;
@@ -881,6 +884,29 @@
   border-radius: 4px;
   font-size: 12px;
   font-weight: 500;
+}
+
+.zoom-controls input[type="range"] {
+  -webkit-appearance: none;
+  width: 140px;
+  height: 4px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 2px;
+}
+.zoom-controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+.zoom-controls input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
 }
 
 .zoom-hint {

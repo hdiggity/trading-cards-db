@@ -217,6 +217,18 @@ function ZoomableImage({ src, alt, className }) {
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const imgRef = useRef(null);
   const pinchRef = useRef(null); // { initialDist, initialZoom, centerX, centerY }
+
+  // Clamp panning so image stays reasonably in view when zoomed
+  const clampPosition = (pos, z, rect) => {
+    if (!rect) return pos;
+    // Max pan relative to center based on extra size at current zoom
+    const maxX = Math.max(0, (rect.width * (z - 1)) / 2);
+    const maxY = Math.max(0, (rect.height * (z - 1)) / 2);
+    return {
+      x: Math.min(maxX, Math.max(-maxX, pos.x)),
+      y: Math.min(maxY, Math.max(-maxY, pos.y)),
+    };
+  };
   
   const handleImageClick = (e) => {
     if (!isZoomed) {
@@ -254,7 +266,7 @@ function ZoomableImage({ src, alt, className }) {
     e.preventDefault();
 
     const prevZoom = zoomLevel;
-    const sensitivity = isPinch ? 0.0035 : 0.0020;
+    const sensitivity = isPinch ? 0.0030 : 0.0018;
     let nextZoom = prevZoom + (-dy * sensitivity);
     nextZoom = Math.max(1, Math.min(5, nextZoom));
 
@@ -264,7 +276,7 @@ function ZoomableImage({ src, alt, className }) {
       const cx = e.clientX - rect.left - rect.width / 2;
       const cy = e.clientY - rect.top - rect.height / 2;
       const factor = (nextZoom - prevZoom) / nextZoom;
-      setPosition((p) => ({ x: p.x - cx * factor, y: p.y - cy * factor }));
+      setPosition((p) => clampPosition({ x: p.x - cx * factor, y: p.y - cy * factor }, nextZoom, rect));
     }
 
     setZoomLevel(nextZoom);
@@ -284,10 +296,9 @@ function ZoomableImage({ src, alt, className }) {
   
   const handleMouseMove = (e) => {
     if (isDragging) {
-      setPosition({
-        x: e.clientX - dragStart.x,
-        y: e.clientY - dragStart.y
-      });
+      const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+      const newPos = { x: e.clientX - dragStart.x, y: e.clientY - dragStart.y };
+      setPosition(clampPosition(newPos, zoomLevel, rect));
     }
   };
   
@@ -325,7 +336,8 @@ function ZoomableImage({ src, alt, className }) {
       let nextZoom = Math.max(1, Math.min(5, initialZoom * (d / Math.max(1, initialDist))));
       if (imgRef.current && nextZoom !== zoomLevel) {
         const factor = (nextZoom - zoomLevel) / nextZoom;
-        setPosition((p) => ({ x: p.x - centerX * factor, y: p.y - centerY * factor }));
+        const rect = imgRef.current.getBoundingClientRect();
+        setPosition((p) => clampPosition({ x: p.x - centerX * factor, y: p.y - centerY * factor }, nextZoom, rect));
       }
       setZoomLevel(nextZoom);
       if (nextZoom === 1) {
@@ -333,10 +345,9 @@ function ZoomableImage({ src, alt, className }) {
         setPosition({ x: 0, y: 0 });
       }
     } else if (isDragging && e.touches.length === 1) {
-      setPosition({
-        x: e.touches[0].clientX - dragStart.x,
-        y: e.touches[0].clientY - dragStart.y,
-      });
+      const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+      const newPos = { x: e.touches[0].clientX - dragStart.x, y: e.touches[0].clientY - dragStart.y };
+      setPosition(clampPosition(newPos, zoomLevel, rect));
     }
   };
 
@@ -345,18 +356,77 @@ function ZoomableImage({ src, alt, className }) {
     setIsDragging(false);
   };
 
+  // Double-click to toggle zoom at cursor
+  const handleDoubleClick = (e) => {
+    const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+    if (!rect) return;
+    if (!isZoomed || zoomLevel === 1) {
+      const next = 2;
+      const cx = e.clientX - rect.left - rect.width / 2;
+      const cy = e.clientY - rect.top - rect.height / 2;
+      const factor = (next - 1) / next;
+      setIsZoomed(true);
+      setZoomLevel(next);
+      setPosition((p) => clampPosition({ x: p.x - cx * factor, y: p.y - cy * factor }, next, rect));
+    } else {
+      // If already zoomed, step up to max or reset if near max
+      if (zoomLevel < 4.8) {
+        const next = Math.min(5, zoomLevel + 0.6);
+        const cx = e.clientX - rect.left - rect.width / 2;
+        const cy = e.clientY - rect.top - rect.height / 2;
+        const factor = (next - zoomLevel) / next;
+        setZoomLevel(next);
+        setPosition((p) => clampPosition({ x: p.x - cx * factor, y: p.y - cy * factor }, next, rect));
+      } else {
+        setIsZoomed(false);
+        setZoomLevel(1);
+        setPosition({ x: 0, y: 0 });
+      }
+    }
+  };
+
+  // Keyboard shortcuts for zooming
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.isComposing)) return;
+      if (e.key === '+' || e.key === '=' ) {
+        e.preventDefault();
+        const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+        const next = Math.min(5, (isZoomed ? zoomLevel : 1) + 0.2);
+        setIsZoomed(true);
+        if (rect) {
+          const cx = rect.width * 0.0; // center
+          const cy = rect.height * 0.0;
+          const factor = (next - zoomLevel) / Math.max(next, 1);
+          setPosition((p) => clampPosition({ x: p.x - cx * factor, y: p.y - cy * factor }, next, rect));
+        }
+        setZoomLevel(next);
+      } else if (e.key === '-' || e.key === '_') {
+        e.preventDefault();
+        const next = Math.max(1, zoomLevel - 0.2);
+        setZoomLevel(next);
+        if (next === 1) { setIsZoomed(false); setPosition({ x: 0, y: 0 }); }
+      } else if (e.key.toLowerCase() === 'r') {
+        setIsZoomed(false); setZoomLevel(1); setPosition({ x: 0, y: 0 });
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isZoomed, zoomLevel]);
+
   return (
     <div className="zoomable-image-container">
       <img 
         src={src}
         alt={alt}
-        className={`${className} ${isZoomed ? 'zoomed' : ''}`}
+        className={`${className} ${isZoomed ? 'zoomed' : ''} ${isDragging ? 'no-transition' : 'smooth-zoom'}`}
         style={{
           transform: `scale(${zoomLevel}) translate(${position.x / zoomLevel}px, ${position.y / zoomLevel}px)`,
           cursor: isZoomed ? (isDragging ? 'grabbing' : 'grab') : 'zoom-in'
         }}
         ref={imgRef}
         onClick={handleImageClick}
+        onDoubleClick={handleDoubleClick}
         onWheel={handleWheel}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
@@ -372,6 +442,26 @@ function ZoomableImage({ src, alt, className }) {
           <span>{Math.round(zoomLevel * 100)}%</span>
           <button onClick={() => setZoomLevel(Math.max(1, zoomLevel - 0.5))}>-</button>
           <button onClick={handleZoomOut}>Reset</button>
+          <input
+            type="range"
+            min={100}
+            max={500}
+            step={10}
+            value={Math.round(zoomLevel * 100)}
+            onChange={(e) => {
+              const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+              const next = Math.max(1, Math.min(5, Number(e.target.value) / 100));
+              if (!isZoomed && next > 1) setIsZoomed(true);
+              if (rect) {
+                // keep current center; no position change on slider to avoid jumps
+                setPosition((p) => clampPosition(p, next, rect));
+              }
+              setZoomLevel(next);
+              if (next === 1) { setIsZoomed(false); setPosition({ x: 0, y: 0 }); }
+            }}
+            style={{ marginLeft: 8 }}
+            aria-label="Zoom level"
+          />
         </div>
       )}
       {!isZoomed && (

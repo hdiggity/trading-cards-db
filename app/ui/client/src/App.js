@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 // Utility function to format field names for display
@@ -215,6 +215,8 @@ function ZoomableImage({ src, alt, className }) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const imgRef = useRef(null);
+  const pinchRef = useRef(null); // { initialDist, initialZoom, centerX, centerY }
   
   const handleImageClick = (e) => {
     if (!isZoomed) {
@@ -230,16 +232,46 @@ function ZoomableImage({ src, alt, className }) {
   };
   
   const handleWheel = (e) => {
-    if (isZoomed) {
-      e.preventDefault();
-      const delta = e.deltaY > 0 ? -0.2 : 0.2;
-      const newZoom = Math.max(1, Math.min(5, zoomLevel + delta));
-      setZoomLevel(newZoom);
-      
-      if (newZoom === 1) {
-        setIsZoomed(false);
-        setPosition({ x: 0, y: 0 });
-      }
+    // Smooth trackpad/mouse wheel zoom; support pinch via ctrlKey
+    const normalizeDeltaY = (event) => {
+      let dy = event.deltaY;
+      if (event.deltaMode === 1) dy *= 16; // lines -> pixels
+      else if (event.deltaMode === 2) dy *= 100; // pages -> pixels
+      return dy;
+    };
+
+    const dy = normalizeDeltaY(e);
+    const isPinch = e.ctrlKey === true;
+
+    if (!isZoomed && isPinch) {
+      // Enter zoom mode on pinch gesture
+      setIsZoomed(true);
+      setZoomLevel(1.1);
+    }
+
+    if (!isZoomed) return;
+
+    e.preventDefault();
+
+    const prevZoom = zoomLevel;
+    const sensitivity = isPinch ? 0.0035 : 0.0020;
+    let nextZoom = prevZoom + (-dy * sensitivity);
+    nextZoom = Math.max(1, Math.min(5, nextZoom));
+
+    // Anchor zoom around cursor for better control
+    const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+    if (rect && nextZoom !== prevZoom) {
+      const cx = e.clientX - rect.left - rect.width / 2;
+      const cy = e.clientY - rect.top - rect.height / 2;
+      const factor = (nextZoom - prevZoom) / nextZoom;
+      setPosition((p) => ({ x: p.x - cx * factor, y: p.y - cy * factor }));
+    }
+
+    setZoomLevel(nextZoom);
+
+    if (nextZoom === 1) {
+      setIsZoomed(false);
+      setPosition({ x: 0, y: 0 });
     }
   };
   
@@ -263,6 +295,56 @@ function ZoomableImage({ src, alt, className }) {
     setIsDragging(false);
   };
   
+  // Touch helpers
+  const distance = (t1, t2) => {
+    const dx = t1.clientX - t2.clientX;
+    const dy = t1.clientY - t2.clientY;
+    return Math.hypot(dx, dy);
+  };
+
+  const handleTouchStart = (e) => {
+    if (e.touches.length === 2) {
+      const d = distance(e.touches[0], e.touches[1]);
+      const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+      const centerX = rect ? ((e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left - rect.width / 2) : 0;
+      const centerY = rect ? ((e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top - rect.height / 2) : 0;
+      pinchRef.current = { initialDist: d, initialZoom: zoomLevel, centerX, centerY };
+      if (!isZoomed) setIsZoomed(true);
+      e.preventDefault();
+    } else if (e.touches.length === 1 && isZoomed && zoomLevel > 1) {
+      setIsDragging(true);
+      setDragStart({ x: e.touches[0].clientX - position.x, y: e.touches[0].clientY - position.y });
+    }
+  };
+
+  const handleTouchMove = (e) => {
+    if (pinchRef.current && e.touches.length === 2) {
+      e.preventDefault();
+      const d = distance(e.touches[0], e.touches[1]);
+      const { initialDist, initialZoom, centerX, centerY } = pinchRef.current;
+      let nextZoom = Math.max(1, Math.min(5, initialZoom * (d / Math.max(1, initialDist))));
+      if (imgRef.current && nextZoom !== zoomLevel) {
+        const factor = (nextZoom - zoomLevel) / nextZoom;
+        setPosition((p) => ({ x: p.x - centerX * factor, y: p.y - centerY * factor }));
+      }
+      setZoomLevel(nextZoom);
+      if (nextZoom === 1) {
+        setIsZoomed(false);
+        setPosition({ x: 0, y: 0 });
+      }
+    } else if (isDragging && e.touches.length === 1) {
+      setPosition({
+        x: e.touches[0].clientX - dragStart.x,
+        y: e.touches[0].clientY - dragStart.y,
+      });
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (pinchRef.current) pinchRef.current = null;
+    setIsDragging(false);
+  };
+
   return (
     <div className="zoomable-image-container">
       <img 
@@ -273,12 +355,16 @@ function ZoomableImage({ src, alt, className }) {
           transform: `scale(${zoomLevel}) translate(${position.x / zoomLevel}px, ${position.y / zoomLevel}px)`,
           cursor: isZoomed ? (isDragging ? 'grabbing' : 'grab') : 'zoom-in'
         }}
+        ref={imgRef}
         onClick={handleImageClick}
         onWheel={handleWheel}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       />
       {isZoomed && (
         <div className="zoom-controls">

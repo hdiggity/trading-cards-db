@@ -798,6 +798,8 @@
   overflow: hidden;
   border-radius: 8px;
   background: #000;
+  /* Allow JS to handle touch gestures (pinch/pan) */
+  touch-action: none;
 }
 
 .card-image {

@@ -802,6 +802,32 @@
   touch-action: none;
 }
 
+/* Paired front/back images layout */
+.paired-images {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.paired-image-block {
+  background: #0a0a0a;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.paired-image-title {
+  color: #e5e5e5;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .paired-images {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card-image {
   transition: transform 0.3s ease;
   user-select: none;

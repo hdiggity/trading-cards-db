@@ -134,7 +134,9 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
                 out_dir=PENDING_VERIFICATION_DIR,
                 # Keep JSON basename identical to image basename for UI association
                 filename_stem=filename_stem,
-                include_tcdb_verification=not disable_tcdb
+                include_tcdb_verification=not disable_tcdb,
+                save_cropped_backs=True,
+                original_image_path=str(image_path)
             )
             
             card_count = len(grid_cards)

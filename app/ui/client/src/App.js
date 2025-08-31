@@ -845,6 +845,47 @@ function App({ onNavigate }) {
             alt="Trading card"
             className="card-image"
           />
+
+          {/* Paired view: show cropped back and matched front for fast verification */}
+          {verificationMode === 'single' && currentCard?.data?.length > 0 && (
+            (() => {
+              const sel = currentCard.data[Math.min(currentCardIndex, currentCard.data.length - 1)] || {};
+              const stem = (currentCard.imageFile || '').replace(/\.[^.]+$/, '');
+              const croppedAlias = sel?._grid_metadata?.cropped_back_alias; // e.g., cropped_backs/<stem>_posX.png
+              const backCropUrl = croppedAlias 
+                ? `http://localhost:3001/images/pending_verification/${croppedAlias}` 
+                : null;
+              const frontFile = sel?.matched_front_file; // filename under images/unprocessed_single_front
+              const frontUrl = frontFile 
+                ? `http://localhost:3001/images/unprocessed_single_front/${frontFile}` 
+                : null;
+              if (!backCropUrl && !frontUrl) return null;
+              return (
+                <div className="paired-images">
+                  {backCropUrl && (
+                    <div className="paired-image-block">
+                      <div className="paired-image-title">Back (cropped)</div>
+                      <ZoomableImage 
+                        src={backCropUrl}
+                        alt="Card back (cropped)"
+                        className="card-image"
+                      />
+                    </div>
+                  )}
+                  {frontUrl && (
+                    <div className="paired-image-block">
+                      <div className="paired-image-title">Front (matched)</div>
+                      <ZoomableImage 
+                        src={frontUrl}
+                        alt="Card front (matched)"
+                        className="card-image"
+                      />
+                    </div>
+                  )}
+                </div>
+              );
+            })()
+          )}
         </div>
 
         <div className="data-section">

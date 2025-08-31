@@ -587,13 +587,17 @@ def save_grid_cards_to_verification(
         card_dict = grid_card.data.copy()
         
         # Add grid-specific metadata
-        card_dict['_grid_metadata'] = {
+        meta = {
             'position': grid_card.position,
             'row': grid_card.row,
             'col': grid_card.col,
             'confidence': grid_card.confidence,
             'matched_front': grid_card.matched_front
         }
+        # Add deterministic cropped-back alias path for UI (created if save_cropped_backs=True)
+        if filename_stem is not None:
+            meta['cropped_back_alias'] = f"cropped_backs/{filename_stem}_pos{grid_card.position}.png"
+        card_dict['_grid_metadata'] = meta
         
         cards_data.append(card_dict)
     
@@ -660,6 +664,14 @@ def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCar
             # Save cropped image
             crop_path = output_dir / crop_filename
             cropped_card.save(crop_path, "PNG")
+            
+            # Also save a deterministic alias for easy UI linking
+            try:
+                alias_name = f"{filename_stem}_pos{grid_card.position}.png"
+                alias_path = output_dir / alias_name
+                cropped_card.save(alias_path, "PNG")
+            except Exception as _:
+                pass
             
             print(f"Saved cropped back: {crop_filename}")
             

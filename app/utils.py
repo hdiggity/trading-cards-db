@@ -43,6 +43,8 @@ register_heif_opener()
 
 # Centralized OpenAI client and model selection
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Model selection: default to a high-quality multimodal model.
+# Override via OPENAI_MODEL to target a specific snapshot.
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
 
 # Unified LLM chat helper with retries/backoff
@@ -232,27 +234,66 @@ def build_legacy_system_prompt(include_learning: bool = True) -> str:
 
 
 def build_system_prompt(include_learning: bool = True) -> str:
-    """Build concise system prompt for card extraction"""
-    field_names = [field_spec[0] for field_spec in shared_card_field_specs]
-    field_lines = [f'  "{field}": ...' for field in field_names]
-    joined_fields = "\n".join(field_lines)
-    
-    return (
-        "Extract trading card data from the image. Count visible cards and analyze each one.\n\n"
-        "Return a JSON object with key 'cards' that contains an array of card objects. Each object must include the fields below:\n"
-        "{\n" f"{joined_fields}\n" "}\n\n"
-        "Key requirements:\n"
-        "- name: SPECIFIC card title/subject (e.g., '1973 Rookie First Basemen', 'Al Rosen', 'NL Batting Leaders').\n"
-        "  NAMING RULE: If the card is a multi-player/Leaders/Checklist/Team card → set is_player_card=false and set name to the printed TITLE on the card (not individual names). If the card is a single player card → set is_player_card=true and set name to the player's name.\n"
-        "- card_set: Use BASE SET naming: '<year> <brand>' (e.g., '1973 Topps', '1989 Upper Deck'). Do NOT include subset names unless explicitly printed (e.g., 'Topps Heritage', 'Stadium Club', 'Chrome'). Never use card titles (like 'Rookie First Basemen') as the set.\n"
-        "- copyright_year: Find actual production year (© symbol, brand marks), not player stats years\n"
-        "- condition: Assess corners, edges, surface damage. Use: gem_mint/mint/near_mint/excellent/very_good/good/fair/poor\n"
-        "- is_player_card: true for individual athletes, false for team/checklist/leaders cards\n"
-        "- features: Use 'none' or comma-separated values like 'rookie,autograph'\n\n"
-        "IMPORTANT: Distinguish card NAME (what's on the card) from card SET (the product line it belongs to).\n"
-        "Use 'n/a' for missing values. Never use 'unspecified' or 'unidentified'. Be accurate and specific for each card.\n\n"
-        "Output format must be EXACTLY: {\"cards\": [ {..fields..}, ... ] }"
+    """Build a strict, high-signal system prompt for card extraction.
+
+    Emphasizes precise field definitions, consistent naming, and strict JSON output.
+    Allows optional metadata keys prefixed with '_' for evidence/confidence.
+    """
+
+    # Explicit schema guidance for the model
+    schema_block = (
+        "{\n"
+        "  \"cards\": [\n"
+        "    {\n"
+        "      \"name\": \"string\",\n"
+        "      \"sport\": \"baseball|basketball|football|hockey|soccer\",\n"
+        "      \"brand\": \"string or 'unknown'\",\n"
+        "      \"number\": \"string or 'n/a'\",\n"
+        "      \"copyright_year\": \"YYYY or 'unknown'\",\n"
+        "      \"team\": \"string or 'n/a'\",\n"
+        "      \"card_set\": \"'<year> <brand>' base set naming (e.g., '1975 Topps')\",\n"
+        "      \"condition\": \"gem_mint|mint|near_mint|excellent|very_good|good|fair|poor\",\n"
+        "      \"is_player_card\": true,\n"
+        "      \"features\": \"'none' or CSV from {rookie,autograph,jersey,serial numbered,refractor,chrome,parallel,insert,short print}\",\n"
+        "      \"notes\": \"string or 'n/a'\"\n"
+        "      /* Optional metadata to aid verification (allowed): */\n"
+        "      /* _field_confidence: { name:0-1, brand:0-1, ... } */\n"
+        "      /* _field_evidence: { name:\"where found\", year:\"© year bottom edge\", ... } */\n"
+        "    }\n"
+        "  ]\n"
+        "}"
     )
+
+    rules = (
+        "Extract trading card data from the image. Count visible cards and analyze each one.\n\n"
+        "Naming rules and distinctions:\n"
+        "- NAME: Use the exact printed title/subject on the card.\n"
+        "  • If it's a Leaders/Checklist/Team/Multi-player card → set is_player_card=false and NAME to the printed TITLE (not individual names).\n"
+        "  • If it's a single player card → set is_player_card=true and NAME to the player’s name.\n"
+        "- SET: Use BASE SET naming '<year> <brand>' (e.g., '1973 Topps'). Do not use the card title here.\n"
+        "- YEAR: Use the production/copyright year (©, fine print), not stats years.\n"
+        "- CONDITION: Evaluate corners/edges/surface carefully and map to the 8-level scale.\n"
+        "- FEATURES: Use 'none' or CSV from the allowed list; include 'serial numbered' if a numbering like '/299' is visible.\n\n"
+        "Output requirements:\n"
+        "- Strict JSON object with top-level key 'cards'.\n"
+        "- Each element must follow this schema (optional '_' metadata allowed):\n"
+        f"{schema_block}\n\n"
+        "Conventions:\n"
+        "- Use 'n/a' for truly missing values (except booleans).\n"
+        "- Use lowercase for brand, condition, and features.\n"
+        "- Be precise and avoid placeholders like 'unspecified' or 'unknown' unless truly unknown.\n"
+    )
+
+    # Append learning enhancements if available
+    if include_learning:
+        try:
+            learning_enhancements = generate_learning_prompt_enhancements()
+            if learning_enhancements:
+                rules = rules + "\n" + learning_enhancements
+        except Exception as e:
+            print(f"Warning: Could not load learning enhancements: {e}", file=sys.stderr)
+
+    return rules
 
 
 SYSTEM_PROMPT = build_system_prompt()
@@ -541,7 +582,7 @@ def gpt_extract_cards_from_image(
 
     response = llm_chat(
         messages=messages,
-        max_tokens=2000,
+        max_tokens=2500,
         temperature=0.1,
         response_format={"type": "json_object"},
     )

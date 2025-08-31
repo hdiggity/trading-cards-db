@@ -1,11 +1,14 @@
 import cv2
 import os
 import sys
+import json
+import base64
 import numpy as np
 import argparse
 from pathlib import Path
 from PIL import Image
 from pillow_heif import register_heif_opener
+from openai import OpenAI
 
 # Register HEIF opener for PIL
 register_heif_opener()
@@ -248,6 +251,95 @@ def iter_image_paths(input_path: str, recursive: bool = False):
                 yield str(child.resolve())
 
 
+def _encode_image_for_llm(filepath: str) -> tuple[str, str]:
+    """Load image (incl. HEIC), convert to PNG bytes, return (b64, mime)."""
+    try:
+        pil = Image.open(filepath)
+        if pil.mode != 'RGB':
+            pil = pil.convert('RGB')
+        from io import BytesIO
+        buf = BytesIO()
+        pil.save(buf, format='PNG', optimize=True)
+        data = buf.getvalue()
+        return base64.b64encode(data).decode('utf-8'), 'image/png'
+    except Exception as e:
+        raise RuntimeError(f"Failed to encode image {filepath}: {e}")
+
+
+def _build_llm_prompt() -> str:
+    """Detailed, self-contained prompt for extracting card data from an image."""
+    return (
+        "Extract all trading card data you can from the provided image. If more than one card is visible, return one entry per card.\n\n"
+        "Return a strict JSON object with key 'cards' whose value is an array of card objects.\n\n"
+        "Each card object must include: {\n"
+        "  \"name\": \"printed card title/subject or player name\",\n"
+        "  \"sport\": \"baseball|basketball|football|hockey|soccer\",\n"
+        "  \"brand\": \"card brand (e.g., topps, panini) or 'unknown'\",\n"
+        "  \"number\": \"card number or 'n/a'\",\n"
+        "  \"copyright_year\": \"YYYY production year (©), not stats years, or 'unknown'\",\n"
+        "  \"team\": \"team name or 'n/a'\",\n"
+        "  \"card_set\": \"'<year> <brand>' base set naming (e.g., '1975 topps')\",\n"
+        "  \"condition\": \"gem_mint|mint|near_mint|excellent|very_good|good|fair|poor\",\n"
+        "  \"is_player_card\": true/false,\n"
+        "  \"features\": \"'none' or CSV from {rookie,autograph,jersey,serial numbered,refractor,chrome,parallel,insert,short print}\",\n"
+        "  \"notes\": \"optional notes or 'n/a'\"\n"
+        "}\n\n"
+        "Rules: Distinguish NAME (title on card) from SET (product line). Use copyright marks and tiny fine print for year. Use 'n/a' only if truly missing.\n"
+        "Output must be valid JSON with exactly this shape: {\"cards\": [ {..fields..}, ... ] }."
+    )
+
+
+def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.1, max_tokens: int = 2000) -> dict:
+    """Send the image to ChatGPT and return parsed JSON object with 'cards'."""
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    use_model = model or os.getenv("OPENAI_MODEL", "gpt-4o")
+    b64, mime = _encode_image_for_llm(image_path)
+    messages = [
+        {"role": "system", "content": _build_llm_prompt()},
+        {
+            "role": "user",
+            "content": [
+                {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}},
+            ],
+        },
+    ]
+    resp = client.chat.completions.create(
+        model=use_model,
+        messages=messages,
+        temperature=temperature,
+        max_tokens=max_tokens,
+        response_format={"type": "json_object"},
+    )
+    content = resp.choices[0].message.content.strip()
+    try:
+        data = json.loads(content)
+        # Normalize category-like fields to lowercase for matching
+        def norm(card: dict) -> dict:
+            out = dict(card)
+            for k in ("sport", "brand", "team", "card_set", "condition"):
+                if isinstance(out.get(k), str):
+                    out[k] = out[k].lower().strip()
+            if isinstance(out.get("features"), str):
+                feats = [t.strip().lower().replace("_", " ") for t in out["features"].split(",")]
+                out["features"] = ",".join(sorted(set([t for t in feats if t]))) if feats else "none"
+            return out
+        if isinstance(data, dict) and isinstance(data.get("cards"), list):
+            data["cards"] = [norm(c) if isinstance(c, dict) else c for c in data["cards"]]
+            return data
+    except Exception:
+        pass
+    # Fallback: wrap into expected shape if model returned an array/object
+    try:
+        obj = json.loads(content)
+        if isinstance(obj, list):
+            return {"cards": obj}
+        if isinstance(obj, dict):
+            return {"cards": [obj]}
+    except Exception as e:
+        raise RuntimeError(f"LLM returned non-JSON content: {content[:200]}...") from e
+
+
+
 def undo_processing():
     """Undo processing by moving optimized images back to raw directory"""
     restored_count = 0
@@ -303,7 +395,7 @@ def undo_processing():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Process trading card images for AI analysis")
+        description="Process trading card images. Either optimize locally or send to ChatGPT for extraction.")
     parser.add_argument(
         "--undo",
         action="store_true",
@@ -322,6 +414,16 @@ def main():
         action="store_true",
         help="If input is a directory, also process images in subdirectories",
     )
+    parser.add_argument(
+        "--llm",
+        action="store_true",
+        help="Use ChatGPT to extract card data (no DB, no TCDB). Saves <image>.json next to the image or --out dir.",
+    )
+    parser.add_argument(
+        "--out",
+        default=None,
+        help="Optional output directory for JSON or optimized images (defaults to image directory).",
+    )
     args = parser.parse_args()
 
     if args.undo:
@@ -339,11 +441,8 @@ def main():
         print(f"Input path does not exist: {effective_input}")
         return
 
-    # Use existing single_processed.txt log file
-    log_file = os.path.join(
-        os.path.dirname(
-            os.path.dirname(__file__)),
-        "single_processed.txt")
+    # Output directory (optional override)
+    out_dir = os.path.expanduser(args.out) if args.out else None
 
     # Build list of image paths to process
     image_paths = list(
@@ -352,11 +451,10 @@ def main():
             recursive=args.recursive))
     if not image_paths:
         # If a file was passed and it is not an allowed image
-        if os.path.isfile(effective_input) and not is_image_file(effective_input):
-            print(
-                f"Input file is not a supported image type: {effective_input}\n"
-                f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}"
-            )
+        if os.path.isfile(effective_input) and not is_image_file(
+                effective_input):
+            print(f"Input file is not a supported image type: {
+                effective_input}\n" f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}")
         else:
             print("No images found to process.")
         return
@@ -365,40 +463,41 @@ def main():
         filename = os.path.basename(full_path)
         print(f"Processing: {filename}")
 
-        result = process_image(full_path)
-        if result is not None:
-            # Save as PNG for best quality preservation
-            base_name = os.path.splitext(filename)[0]
-            out_path = os.path.join(OUTPUT_DIR, f"{base_name}_optimized.png")
-
-            # Use high quality PNG compression settings
-            cv2.imwrite(out_path, result, [cv2.IMWRITE_PNG_COMPRESSION, 1])
-
-            # Log the processing for undo functionality
-            with open(log_file, 'a') as f:
-                f.write(f"{filename} -> {base_name}_optimized.png\n")
-
-            # Move file by removing from source after copying
+        if args.llm:
             try:
-                os.remove(full_path)
+                data = analyze_with_llm(full_path)
+                base = os.path.splitext(os.path.basename(full_path))[0]
+                target_dir = out_dir or os.path.dirname(full_path) or '.'
+                os.makedirs(target_dir, exist_ok=True)
+                json_path = os.path.join(target_dir, f"{base}.json")
+                with open(json_path, 'w') as f:
+                    json.dump(data.get('cards', []), f, indent=2)
+                processed_count += 1
+                print(f"✓ Extracted JSON -> {json_path}")
             except Exception as e:
-                print(
-                    f"Warning: could not remove source file {full_path}: {e}")
-            processed_count += 1
-            print(f"✓ Optimized: {filename} -> {base_name}_optimized.png")
+                print(f"✗ LLM extraction failed for {filename}: {e}")
+                failed_count += 1
         else:
-            print(f"✗ Failed to process: {filename}")
-            failed_count += 1
+            result = process_image(full_path)
+            if result is not None:
+                base_name = os.path.splitext(filename)[0]
+                target_dir = out_dir or os.path.dirname(full_path) or OUTPUT_DIR
+                os.makedirs(target_dir, exist_ok=True)
+                out_path = os.path.join(target_dir, f"{base_name}_optimized.png")
+                cv2.imwrite(out_path, result, [cv2.IMWRITE_PNG_COMPRESSION, 1])
+                processed_count += 1
+                print(f"✓ Optimized: {filename} -> {out_path}")
+            else:
+                print(f"✗ Failed to process: {filename}")
+                failed_count += 1
 
     print(f"\nProcessing complete!")
     print(f"Successfully processed: {processed_count} images")
     print(f"Failed: {failed_count} images")
-    print(f"Optimized images saved to: {OUTPUT_DIR}")
-    print(f"Images are now ready for LLM analysis with:")
-    print(f"- Optimal resolution ({TARGET_WIDTH}x{TARGET_HEIGHT} target)")
-    print(f"- Enhanced contrast and sharpness for text recognition")
-    print(f"- Noise reduction and color correction")
-    print(f"- Perspective correction for straight card viewing")
+    if args.llm:
+        print(f"JSON files saved next to images or in --out directory")
+    else:
+        print(f"Optimized images saved next to originals or in --out directory")
 
 
 if __name__ == "__main__":

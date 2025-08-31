@@ -250,6 +250,26 @@ def iter_image_paths(input_path: str, recursive: bool = False):
                 yield str(child.resolve())
 
 
+def cleanup_processed_heics(root_path: str) -> int:
+    """Remove HEIC/HEIF files that already have a matching *_optimized.png next to them.
+    Returns number of files removed.
+    """
+    removed = 0
+    for r, _dirs, files in os.walk(root_path):
+        for fname in files:
+            low = fname.lower()
+            if low.endswith('.heic') or low.endswith('.heif'):
+                stem, _ = os.path.splitext(fname)
+                opt = os.path.join(r, f"{stem}_optimized.png")
+                if os.path.isfile(opt):
+                    try:
+                        os.remove(os.path.join(r, fname))
+                        removed += 1
+                    except Exception:
+                        pass
+    return removed
+
+
 def _encode_image_for_llm(filepath: str) -> tuple[str, str]:
     """Load image (incl. HEIC), convert to PNG bytes, return (b64, mime)."""
     try:
@@ -444,6 +464,16 @@ def main():
         default=None,
         help="Optional output directory for JSON or optimized images (defaults to image directory).",
     )
+    parser.add_argument(
+        "--remove-originals",
+        action="store_true",
+        help="After successful optimization, remove original HEIC/HEIF file (only if optimized PNG exists)",
+    )
+    parser.add_argument(
+        "--cleanup",
+        action="store_true",
+        help="Before and after processing, remove any HEIC/HEIF files that already have matching *_optimized.png",
+    )
     args = parser.parse_args()
 
     if args.undo:
@@ -463,6 +493,12 @@ def main():
 
     # Output directory (optional override)
     out_dir = os.path.expanduser(args.out) if args.out else None
+
+    # Optional pre-cleanup
+    if args.cleanup and os.path.isdir(effective_input):
+        pre = cleanup_processed_heics(effective_input)
+        if pre:
+            print(f"Pre-cleanup removed {pre} already-processed HEIC/HEIF files.")
 
     # Build list of image paths to process
     image_paths = list(
@@ -505,6 +541,13 @@ def main():
                 os.makedirs(target_dir, exist_ok=True)
                 out_path = os.path.join(target_dir, f"{base_name}_optimized.png")
                 cv2.imwrite(out_path, result, [cv2.IMWRITE_PNG_COMPRESSION, 1])
+                # Optionally remove original HEIC/HEIF
+                if args.remove_originals and filename.lower().endswith((".heic", ".heif")) and os.path.isfile(out_path):
+                    try:
+                        os.remove(full_path)
+                        print(f"- Removed original HEIC: {filename}")
+                    except Exception as e:
+                        print(f"Warning: could not remove source file {full_path}: {e}")
                 processed_count += 1
                 print(f"✓ Optimized: {filename} -> {out_path}")
             else:
@@ -518,6 +561,11 @@ def main():
         print(f"JSON files saved next to images or in --out directory")
     else:
         print(f"Optimized images saved next to originals or in --out directory")
+    # Optional post-cleanup
+    if args.cleanup and os.path.isdir(effective_input):
+        post = cleanup_processed_heics(effective_input)
+        if post:
+            print(f"Post-cleanup removed {post} already-processed HEIC/HEIF files.")
 
 
 if __name__ == "__main__":

@@ -133,82 +133,7 @@ function ConfidenceIndicator({ confidence, fieldName }) {
   );
 }
 
-// TCDB Verification display component
-function TCDBVerification({ tcdbData, card }) {
-  if (!tcdbData || !tcdbData.verified) {
-    return (
-      <div className="tcdb-verification">
-        <h4>🔍 TCDB Verification</h4>
-        <p style={{ color: '#dc2626', fontSize: '0.875rem' }}>
-          {tcdbData?.error ? `${tcdbData.error}` : 'No matches found in TCDB'}
-        </p>
-      </div>
-    );
-  }
-
-  const { best_match, results, enhanced_fields } = tcdbData;
-  
-  return (
-    <div className="tcdb-verification">
-      <h4>✅ TCDB Verification</h4>
-      
-      {/* Show enhanced fields */}
-      {enhanced_fields && enhanced_fields.length > 0 && (
-        <div className="tcdb-enhancements">
-          <p style={{ color: '#059669', fontSize: '0.875rem', fontWeight: '500' }}>
-            ✨ Enhanced from TCDB: {enhanced_fields.join(', ')}
-          </p>
-        </div>
-      )}
-      
-      {/* Show year discrepancy warning */}
-      {card._year_discrepancy && (
-        <div className="tcdb-warning">
-          <p style={{ color: '#d97706', fontSize: '0.875rem', fontWeight: '500' }}>
-            ⚠️ Year mismatch: Extracted {card._year_discrepancy.extracted}, TCDB shows {card._year_discrepancy.tcdb}
-          </p>
-          <p style={{ color: '#6b7280', fontSize: '0.8125rem' }}>
-            {card._year_discrepancy.note}
-          </p>
-        </div>
-      )}
-      
-      <div className="tcdb-best-match">
-        <h5>Best Match:</h5>
-        <div className="tcdb-match-card">
-          <a href={best_match.tcdb_url} target="_blank" rel="noopener noreferrer" className="tcdb-link">
-            <strong>{best_match.title}</strong>
-          </a>
-          <div className="tcdb-match-details">
-            <span>Set: {best_match.set}</span>
-            {best_match.year && <span> • Year: {best_match.year}</span>}
-            {best_match.team && <span> • Team: {best_match.team}</span>}
-          </div>
-        </div>
-      </div>
-      
-      {results.length > 1 && (
-        <details className="tcdb-all-matches">
-          <summary>View all {results.length} matches</summary>
-          <div className="tcdb-matches-list">
-            {results.slice(1).map((match, index) => (
-              <div key={index} className="tcdb-match-item">
-                <a href={match.tcdb_url} target="_blank" rel="noopener noreferrer" className="tcdb-link">
-                  {match.title}
-                </a>
-                <div className="tcdb-match-details">
-                  <span>{match.set}</span>
-                  {match.year && <span> • {match.year}</span>}
-                  {match.team && <span> • {match.team}</span>}
-                </div>
-              </div>
-            ))}
-          </div>
-        </details>
-      )}
-    </div>
-  );
-}
+// TCDB verification removed
 
 // Zoomable image component
 function ZoomableImage({ src, alt, className }) {
@@ -1149,12 +1074,12 @@ function App({ onNavigate }) {
                       </p>
                       <p>
                         <strong>{formatFieldName('sport')}:</strong> 
-                        <span>{formatFieldValue('sport', card.sport)}</span>
+                        <span>{(card.sport || '').toString().toLowerCase()}</span>
                         <ConfidenceIndicator confidence={card._confidence?.sport} fieldName="sport" />
                       </p>
                       <p>
                         <strong>{formatFieldName('brand')}:</strong> 
-                        <span>{formatFieldValue('brand', card.brand)}</span>
+                        <span>{(card.brand || '').toString().toLowerCase()}</span>
                         <ConfidenceIndicator confidence={card._confidence?.brand} fieldName="brand" />
                       </p>
                       <p>
@@ -1169,17 +1094,17 @@ function App({ onNavigate }) {
                       </p>
                       <p>
                         <strong>{formatFieldName('team')}:</strong> 
-                        <span>{formatFieldValue('team', card.team)}</span>
+                        <span>{(card.team || '').toString().toLowerCase()}</span>
                         <ConfidenceIndicator confidence={card._confidence?.team} fieldName="team" />
                       </p>
                       <p>
                         <strong>{formatFieldName('card_set')}:</strong> 
-                        <span>{formatFieldValue('card_set', card.card_set)}</span>
+                        <span>{(card.card_set || '').toString().toLowerCase()}</span>
                         <ConfidenceIndicator confidence={card._confidence?.card_set} fieldName="card_set" />
                       </p>
                       <p>
                         <strong>{formatFieldName('condition')}:</strong> 
-                        <span>{formatFieldValue('condition', card.condition)}</span>
+                        <span>{(card.condition || '').toString().toLowerCase()}</span>
                         <ConfidenceIndicator confidence={card._confidence?.condition} fieldName="condition" />
                       </p>
                       <p>
@@ -1189,7 +1114,7 @@ function App({ onNavigate }) {
                       </p>
                       <p>
                         <strong>{formatFieldName('features')}:</strong> 
-                        <span>{formatFieldValue('features', card.features)}</span>
+                        <span>{(card.features || 'none').toString().toLowerCase()}</span>
                         <ConfidenceIndicator confidence={card._confidence?.features} fieldName="features" />
                       </p>
                       {card.value_estimate !== undefined && (
@@ -1202,10 +1127,7 @@ function App({ onNavigate }) {
                   )}
                 </div>
                 
-                {/* TCDB Verification Section */}
-                {card._tcdb_verification && (
-                  <TCDBVerification tcdbData={card._tcdb_verification} card={card} />
-                )}
+                {/* TCDB verification removed */}
               </div>
             ))}
           </div>

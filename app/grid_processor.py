@@ -17,7 +17,6 @@ from .utils import convert_image_to_supported_format, client, build_system_promp
 import os
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
 from .accuracy import CardValidator, ConfidenceScorer, detect_card_era_and_type
-from .tcdb_scraper import search_tcdb_cards
 from .value_estimator import add_value_estimation
 from .enhanced_grid_processor import process_enhanced_3x3_grid
 from .detailed_grid_processor import process_detailed_3x3_grid
@@ -601,14 +600,7 @@ def save_grid_cards_to_verification(
         
         cards_data.append(card_dict)
     
-    # Apply TCDB verification if requested
-    if include_tcdb_verification:
-        try:
-            print("Adding TCDB verification to grid cards...", file=sys.stderr)
-            from .utils import verify_cards_with_tcdb
-            cards_data = verify_cards_with_tcdb(cards_data)
-        except Exception as e:
-            print(f"TCDB verification failed: {e}", file=sys.stderr)
+    # TCDB verification removed per user request
     
     # Standardize category-like fields to lowercase for matching consistency
     def _standardize_categories(card: dict) -> dict:

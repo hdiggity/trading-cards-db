@@ -1105,15 +1105,7 @@ def save_cards_to_verification(
 ):
     out_dir.mkdir(exist_ok=True)
 
-    # Add TCDB verification if requested
-    if include_tcdb_verification:
-        try:
-            print("Adding TCDB verification to cards...", file=sys.stderr)
-            cards = verify_cards_with_tcdb(cards)
-        except Exception as e:
-            print(
-                f"TCDB verification failed, continuing without it: {e}",
-                file=sys.stderr)
+    # TCDB verification removed per user request
 
     # Helper: standardize category-like fields to lowercase for easier matching
     def _standardize_categories(card: dict) -> dict:

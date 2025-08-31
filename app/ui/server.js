@@ -285,7 +285,7 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
     // Convert selected text fields to lowercase for consistency (exclude 'name')
     const processedCardData = cardToImport.map(card => {
       const processedCard = { ...card };
-      const textFields = ['sport', 'brand', 'team', 'card_set'];
+      const textFields = ['sport', 'brand', 'team', 'card_set', 'features', 'condition'];
       textFields.forEach(field => {
         if (processedCard[field] && typeof processedCard[field] === 'string') {
           processedCard[field] = processedCard[field].toLowerCase();
@@ -318,7 +318,7 @@ if original_data and image_filename:
         print(f"Warning: Could not store learning data: {e}", file=sys.stderr)
 
 # Convert selected text fields to lowercase for consistency (exclude 'name')
-text_fields = ['sport', 'brand', 'team', 'card_set']
+text_fields = ['sport', 'brand', 'team', 'card_set', 'features', 'condition']
 for card_info in card_data:
     for field in text_fields:
         if field in card_info and isinstance(card_info[field], str):
@@ -626,7 +626,7 @@ app.post('/api/save-progress/:id', async (req, res) => {
     // Convert selected text fields to lowercase for consistency (exclude 'name')
     const processedData = data.map(card => {
       const processedCard = { ...card };
-      const textFields = ['sport', 'brand', 'team', 'card_set'];
+      const textFields = ['sport', 'brand', 'team', 'card_set', 'features', 'condition'];
       textFields.forEach(field => {
         if (processedCard[field] && typeof processedCard[field] === 'string') {
           processedCard[field] = processedCard[field].toLowerCase();

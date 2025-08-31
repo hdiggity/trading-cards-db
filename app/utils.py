@@ -265,6 +265,7 @@ def build_system_prompt(include_learning: bool = True) -> str:
 
     rules = (
         "Extract trading card data from the image. Count visible cards and analyze each one.\n\n"
+        "You may receive multiple views/variants of the same image (e.g., high-contrast). Use ALL provided images to read tiny fine print (copyright year, brand marks).\n\n"
         "Naming rules and distinctions:\n"
         "- NAME: Use the exact printed title/subject on the card.\n"
         "  • If it's a Leaders/Checklist/Team/Multi-player card → set is_player_card=false and NAME to the printed TITLE (not individual names).\n"
@@ -551,11 +552,26 @@ def gpt_extract_cards_from_image(
     validator = CardValidator()
     scorer = ConfidenceScorer()
 
-    # Convert image to supported format for GPT-4 vision (initially without
-    # era-specific preprocessing)
+    # Convert image to supported format for GPT vision with preprocessing
     encoded_image, mime_type = convert_image_to_supported_format(
         image_path, apply_preprocessing=True
     )
+
+    # Provide an additional high-contrast variant to help the model read fine print
+    # (copyright lines, tiny brand marks, card numbers)
+    high_contrast_b64 = None
+    try:
+        from PIL import Image
+        buf = BytesIO()
+        img = Image.open(image_path)
+        if img.mode != "RGB":
+            img = img.convert("RGB")
+        img.save(buf, format="PNG")
+        base_bytes = buf.getvalue()
+        hc_bytes = create_high_contrast_version(base_bytes)  # uses OpenCV if available
+        high_contrast_b64 = base64.b64encode(hc_bytes).decode("utf-8")
+    except Exception as _:
+        high_contrast_b64 = None
 
     # Use enhanced prompt if this is a reprocessing with previous data
     if previous_data:
@@ -566,17 +582,23 @@ def gpt_extract_cards_from_image(
         prompt_to_use = SYSTEM_PROMPT
 
     # First pass: Initial extraction
+    user_content = [
+        {
+            "type": "image_url",
+            "image_url": {"url": f"data:{mime_type};base64,{encoded_image}"},
+        }
+    ]
+    if high_contrast_b64:
+        user_content.append(
+            {
+                "type": "image_url",
+                "image_url": {"url": f"data:image/png;base64,{high_contrast_b64}"},
+            }
+        )
+
     messages = [
         {"role": "system", "content": prompt_to_use},
-        {
-            "role": "user",
-            "content": [
-                {
-                    "type": "image_url",
-                    "image_url": {"url": f"data:{mime_type};base64,{encoded_image}"},
-                }
-            ],
-        },
+        {"role": "user", "content": user_content},
     ]
 
     response = llm_chat(
@@ -847,39 +869,111 @@ def gpt_extract_cards_from_image(
 
 def _enhance_card_with_tcdb_data(card: dict, tcdb_match: dict) -> dict:
     """
-    Enhance extracted card data with information from TCDB match.
-    This fills in missing fields and corrects likely errors.
+    Enhance extracted card data with information from a TCDB match.
+
+    Goals:
+    - Prefer GPT-extracted fields but FILL CLEAR GAPS from TCDB
+    - Soft-correct likely issues (e.g., obvious year mismatch)
+
+    Fields we may fill from TCDB when missing/unknown:
+      team, copyright_year, card_set, brand (derived from set), number, name
     """
+    import re
+
     enhanced_card = card.copy()
-    enhanced_fields = []
+    enhanced_fields: list[str] = []
 
-    # Extract team from TCDB title if missing or seems wrong
-    if not card.get("team") or card.get("team") in ["n/a", "unknown"]:
-        if tcdb_match.get("team"):
-            enhanced_card["team"] = tcdb_match["team"]
-            enhanced_fields.append("team")
+    tcdb_title = str(tcdb_match.get("title", ""))
+    tcdb_set = str(tcdb_match.get("set", ""))
+    tcdb_year = str(tcdb_match.get("year", "")).strip()
+    tcdb_team = str(tcdb_match.get("team", "")).strip()
 
-    # Cross-check year - if extracted year doesn't match TCDB, flag it
-    if card.get("copyright_year") and tcdb_match.get("year"):
-        extracted_year = str(card["copyright_year"]).strip()
-        tcdb_year = str(tcdb_match["year"]).strip()
+    # Helper: parse brand from TCDB set (e.g., "1979 Topps" → brand "Topps")
+    def _brand_from_set(set_text: str) -> str | None:
+        m = re.match(r"\s*(?:19|20)\d{2}\s+([A-Za-z][A-Za-z &'-]+)", set_text)
+        if m:
+            return m.group(1).strip().lower()
+        # If no year prefix, still try to take the first token
+        parts = set_text.strip().split()
+        if parts:
+            return parts[0].strip().lower()
+        return None
 
-        # Allow for 1-year difference (common with card production timing)
-        if abs(int(extracted_year) - int(tcdb_year)) > 1:
-            enhanced_card["_year_discrepancy"] = {
-                "extracted": extracted_year,
-                "tcdb": tcdb_year,
-                "note": "Year mismatch with TCDB - verify copyright vs. stats year",
-            }
+    # Helper: parse number and player name from TCDB title
+    # Examples: "Nolan Ryan #500 California Angels" → name "Nolan Ryan", number "500"
+    def _parse_title(title_text: str) -> tuple[str | None, str | None]:
+        name, number = None, None
+        # Find card number like #123 or #A-23
+        num_match = re.search(r"#\s*([A-Za-z0-9-]+)", title_text)
+        if num_match:
+            number = num_match.group(1).strip()
+        # Name is often before the number
+        if number:
+            pre = title_text.split('#', 1)[0].strip()
+            # Remove trailing separators/commas
+            name = re.sub(r"[-–|/:]+$", "", pre).strip()
+        else:
+            # Fall back: take up to first team-like token
+            name = title_text.strip()
+        # Basic cleanup
+        if name:
+            name = re.sub(r"\s{2,}", " ", name)
+        return (name or None, number)
 
-    # Enhance set information if missing
-    if not card.get("card_set") or card.get("card_set") in ["n/a", "unknown"]:
-        if tcdb_match.get("set"):
-            enhanced_card["card_set"] = tcdb_match["set"]
+    # 1) Team backfill
+    if (not enhanced_card.get("team") or str(enhanced_card.get("team")).lower() in {"n/a", "unknown", ""}) and tcdb_team:
+        enhanced_card["team"] = tcdb_team
+        enhanced_fields.append("team")
+
+    # 2) Year: backfill if missing; otherwise flag mismatch
+    if enhanced_card.get("copyright_year") in (None, "", "n/a", "unknown"):
+        if tcdb_year:
+            enhanced_card["copyright_year"] = tcdb_year
+            enhanced_fields.append("copyright_year")
+    elif tcdb_year:
+        try:
+            extracted_year = int(str(enhanced_card["copyright_year"]).strip())
+            tcdb_year_int = int(tcdb_year)
+            if abs(extracted_year - tcdb_year_int) > 1:
+                enhanced_card["_year_discrepancy"] = {
+                    "extracted": str(extracted_year),
+                    "tcdb": str(tcdb_year_int),
+                    "note": "Year mismatch with TCDB - verify copyright vs. stats year",
+                }
+        except Exception:
+            # If extracted year isn't parseable but TCDB has a year, use it
+            enhanced_card["copyright_year"] = tcdb_year
+            enhanced_fields.append("copyright_year")
+
+    # 3) Set backfill
+    if not enhanced_card.get("card_set") or str(enhanced_card.get("card_set")).lower() in {"n/a", "unknown", ""}:
+        if tcdb_set:
+            enhanced_card["card_set"] = tcdb_set
             enhanced_fields.append("card_set")
 
+    # 4) Brand backfill (derived from set)
+    if not enhanced_card.get("brand") or str(enhanced_card.get("brand")).lower() in {"n/a", "unknown", ""}:
+        brand = _brand_from_set(tcdb_set)
+        if brand:
+            enhanced_card["brand"] = brand
+            enhanced_fields.append("brand")
+
+    # 5) Number backfill (from title)
+    if not enhanced_card.get("number") or str(enhanced_card.get("number")).lower() in {"n/a", "unknown", ""}:
+        _, parsed_number = _parse_title(tcdb_title)
+        if parsed_number:
+            enhanced_card["number"] = parsed_number
+            enhanced_fields.append("number")
+
+    # 6) Name backfill if GPT totally missed it
+    if not enhanced_card.get("name") or str(enhanced_card.get("name")).lower() in {"unidentified", "unknown", "n/a", ""}:
+        parsed_name, _ = _parse_title(tcdb_title)
+        if parsed_name:
+            enhanced_card["name"] = parsed_name
+            enhanced_fields.append("name")
+
     # Add TCDB metadata for reference
-    enhanced_card["_tcdb_title"] = tcdb_match.get("title", "")
+    enhanced_card["_tcdb_title"] = tcdb_title
     enhanced_card["_enhanced_fields"] = enhanced_fields
 
     return enhanced_card
@@ -932,6 +1026,12 @@ def verify_cards_with_tcdb(cards: list) -> list:
                     file=sys.stderr)
                 verified_cards.append(card_with_tcdb)
                 continue
+
+            # Enrich the TCDB query with number and set when available
+            if card.get("number") and str(card["number"]).strip() not in ("", "n/a", "unknown"):
+                query_parts.append(f"#{card['number']}")
+            if card.get("card_set") and card["card_set"] not in ("n/a", "unknown"):
+                query_parts.append(card["card_set"])
 
             search_query = " ".join(query_parts)
             print(f"Searching TCDB for: {search_query}", file=sys.stderr)
@@ -1015,6 +1115,22 @@ def save_cards_to_verification(
                 f"TCDB verification failed, continuing without it: {e}",
                 file=sys.stderr)
 
+    # Helper: standardize category-like fields to lowercase for easier matching
+    def _standardize_categories(card: dict) -> dict:
+        def _lower(v):
+            return v.lower().strip() if isinstance(v, str) else v
+        standardized = dict(card)
+        for key in ("sport", "brand", "team", "card_set", "condition"):
+            if key in standardized and standardized[key] is not None:
+                standardized[key] = _lower(standardized[key])
+        # features as comma-separated, lowercased tokens
+        if "features" in standardized and standardized["features"] is not None:
+            if isinstance(standardized["features"], str):
+                feats = [t.strip().lower().replace("_", " ") for t in standardized["features"].split(",")]
+                feats = [t for t in feats if t]
+                standardized["features"] = ",".join(sorted(set(feats))) if feats else "none"
+        return standardized
+
     # Handle cards that might include confidence data
     card_dicts = []
     for card in cards:
@@ -1028,7 +1144,7 @@ def save_cards_to_verification(
                 # Save the full dict with all metadata
                 clean_card = {k: v for k,
                               v in card.items() if not k.startswith("_")}
-                card_create = CardCreate(**clean_card)
+                card_create = CardCreate(**_standardize_categories(clean_card))
                 card_dict = card_create.model_dump()
                 # Add metadata back
                 if "_confidence" in card:
@@ -1037,14 +1153,14 @@ def save_cards_to_verification(
                     card_dict["_overall_confidence"] = card["_overall_confidence"]
                 if "_tcdb_verification" in card:
                     card_dict["_tcdb_verification"] = card["_tcdb_verification"]
-                card_dicts.append(card_dict)
+                card_dicts.append(_standardize_categories(card_dict))
             else:
                 # Regular card without metadata
-                card_create = CardCreate(**card)
-                card_dicts.append(card_create.model_dump())
+                card_create = CardCreate(**_standardize_categories(card))
+                card_dicts.append(_standardize_categories(card_create.model_dump()))
         else:
             # CardCreate instance
-            card_dicts.append(card.model_dump())
+            card_dicts.append(_standardize_categories(card.model_dump()))
 
     filename = out_dir / (
         f"{filename_stem}.json" if filename_stem else f"{uuid.uuid4()}.json"

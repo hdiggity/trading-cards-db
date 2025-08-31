@@ -610,6 +610,22 @@ def save_grid_cards_to_verification(
         except Exception as e:
             print(f"TCDB verification failed: {e}", file=sys.stderr)
     
+    # Standardize category-like fields to lowercase for matching consistency
+    def _standardize_categories(card: dict) -> dict:
+        def _lower(v):
+            return v.lower().strip() if isinstance(v, str) else v
+        out = dict(card)
+        for key in ("sport", "brand", "team", "card_set", "condition"):
+            if key in out and out[key] is not None:
+                out[key] = _lower(out[key])
+        if "features" in out and out["features"] is not None:
+            if isinstance(out["features"], str):
+                feats = [t.strip().lower().replace("_", " ") for t in out["features"].split(",")]
+                feats = [t for t in feats if t]
+                out["features"] = ",".join(sorted(set(feats))) if feats else "none"
+        return out
+    cards_data = [_standardize_categories(c) for c in cards_data]
+    
     # Save to file using SAME basename as source image so UI associates JSON↔image
     filename = out_dir / (
         f"{filename_stem}.json" if filename_stem else f"grid_{len(cards_data)}_cards.json"

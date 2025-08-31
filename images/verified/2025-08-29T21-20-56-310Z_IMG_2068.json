@@ -1,0 +1,37 @@
+[
+  {
+    "grid_position": 0,
+    "name": "robert raymond pfeil",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "99",
+    "copyright_year": "1970",
+    "team": "new york yankees",
+    "card_set": "n/a",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "Includes minor league stats and a cartoon.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.3,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.6975000000000001,
+    "value_estimate": "$1-5",
+    "_value_details": {
+      "value_range": "$1-5",
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.6975000000000001
+    }
+  }
+]

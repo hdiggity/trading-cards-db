@@ -1,5 +1,5 @@
 from contextlib import contextmanager
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
 
 from app.models import Base
@@ -8,6 +8,23 @@ DATABASE_URL = "sqlite:///./trading_cards.db"
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(bind=engine)
+
+
+# Strengthen SQLite durability and integrity
+@event.listens_for(engine, "connect")
+def _set_sqlite_pragma(dbapi_connection, connection_record):
+    try:
+        cursor = dbapi_connection.cursor()
+        # Write-Ahead Logging improves crash safety for concurrent readers
+        cursor.execute("PRAGMA journal_mode=WAL;")
+        # FULL sync for maximum durability on power loss
+        cursor.execute("PRAGMA synchronous=FULL;")
+        # Enforce foreign key constraints
+        cursor.execute("PRAGMA foreign_keys=ON;")
+        cursor.close()
+    except Exception:
+        # If not SQLite or PRAGMAs fail, continue without raising
+        pass
 
 
 def init_db():

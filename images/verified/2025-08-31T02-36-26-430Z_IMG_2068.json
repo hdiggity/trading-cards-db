@@ -1,13 +1,13 @@
 [
   {
     "grid_position": 0,
-    "name": "Robert Raymond Pfeil",
+    "name": "robert raymond pfeil",
     "sport": "baseball",
     "brand": "topps",
     "number": "99",
-    "copyright_year": "unknown",
-    "team": "unknown",
-    "card_set": "unknown",
+    "copyright_year": "1970",
+    "team": "new york yankees",
+    "card_set": "n/a",
     "condition": "very_good",
     "is_player_card": true,
     "features": "none",
@@ -32,10 +32,11 @@
       "row": 0,
       "col": 0,
       "confidence": 0.6975000000000001,
-      "matched_front": null
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos0.png"
     },
     "_tcdb_verification": {
-      "search_query": "Robert Raymond Pfeil unknown unknown topps",
+      "search_query": "Robert Raymond Pfeil unknown unknown topps #99",
       "results": [],
       "verified": false,
       "best_match": null,
@@ -44,14 +45,14 @@
   },
   {
     "grid_position": 1,
-    "name": "Kenneth Raymond Suarez",
+    "name": "kenneth raymond suarez",
     "sport": "baseball",
     "brand": "topps",
     "number": "209",
-    "copyright_year": "unknown",
-    "team": "unknown",
-    "card_set": "unknown",
-    "condition": "very_good",
+    "copyright_year": "1970",
+    "team": "cleveland indians",
+    "card_set": "n/a",
+    "condition": "good",
     "is_player_card": true,
     "features": "none",
     "notes": "Includes major and minor league batting record.",
@@ -75,10 +76,11 @@
       "row": 0,
       "col": 1,
       "confidence": 0.6975000000000001,
-      "matched_front": null
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos1.png"
     },
     "_tcdb_verification": {
-      "search_query": "Kenneth Raymond Suarez unknown unknown topps",
+      "search_query": "Kenneth Raymond Suarez unknown unknown topps #209",
       "results": [],
       "verified": false,
       "best_match": null,
@@ -87,13 +89,13 @@
   },
   {
     "grid_position": 2,
-    "name": "Kenneth Smith Harrelson",
+    "name": "kenneth smith harrelson",
     "sport": "baseball",
     "brand": "topps",
     "number": "545",
-    "copyright_year": "unknown",
-    "team": "unknown",
-    "card_set": "unknown",
+    "copyright_year": "1970",
+    "team": "cleveland indians",
+    "card_set": "n/a",
     "condition": "very_good",
     "is_player_card": true,
     "features": "none",
@@ -118,10 +120,11 @@
       "row": 0,
       "col": 2,
       "confidence": 0.6975000000000001,
-      "matched_front": null
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos2.png"
     },
     "_tcdb_verification": {
-      "search_query": "Kenneth Smith Harrelson unknown unknown topps",
+      "search_query": "Kenneth Smith Harrelson unknown unknown topps #545",
       "results": [],
       "verified": false,
       "best_match": null,
@@ -130,14 +133,14 @@
   },
   {
     "grid_position": 3,
-    "name": "Rich Hand",
+    "name": "rich hand",
     "sport": "baseball",
     "brand": "topps",
     "number": "24",
-    "copyright_year": "unknown",
-    "team": "Cleveland Indians",
-    "card_set": "unknown",
-    "condition": "very_good",
+    "copyright_year": "1971",
+    "team": "cleveland indians",
+    "card_set": "n/a",
+    "condition": "good",
     "is_player_card": true,
     "features": "none",
     "notes": "Includes major league pitching record.",
@@ -156,25 +159,16 @@
       "reasoning": "Heuristic estimate (fast mode)",
       "source": "heuristic"
     },
-    "_name_source": "back_primary",
-    "_team_source": "back_primary",
-    "matched_front_file": "IMG_4065_optimized.png",
-    "_front_match": {
-      "matched_file": true,
-      "front_name": "Tony Bernazard",
-      "front_team": "Cleveland Indians",
-      "uniform_number": null,
-      "data_priority": "back_primary_front_supplemental"
-    },
     "_grid_metadata": {
       "position": 3,
       "row": 1,
       "col": 0,
       "confidence": 0.6975000000000001,
-      "matched_front": "images/unprocessed_single_front/IMG_4065_optimized.png"
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos3.png"
     },
     "_tcdb_verification": {
-      "search_query": "Rich Hand unknown Cleveland Indians topps",
+      "search_query": "Rich Hand unknown Cleveland Indians topps #24",
       "results": [],
       "verified": false,
       "best_match": null,
@@ -183,14 +177,14 @@
   },
   {
     "grid_position": 4,
-    "name": "Ted Ford",
+    "name": "ted ford",
     "sport": "baseball",
     "brand": "topps",
     "number": "24",
-    "copyright_year": "unknown",
-    "team": "Cleveland",
-    "card_set": "unknown",
-    "condition": "very_good",
+    "copyright_year": "1972",
+    "team": "cleveland indians",
+    "card_set": "n/a",
+    "condition": "good",
     "is_player_card": true,
     "features": "none",
     "notes": "Includes major and minor league batting record.",
@@ -209,25 +203,16 @@
       "reasoning": "Heuristic estimate (fast mode)",
       "source": "heuristic"
     },
-    "_name_source": "back_primary",
-    "_team_source": "back_primary",
-    "matched_front_file": "IMG_4065_optimized.png",
-    "_front_match": {
-      "matched_file": true,
-      "front_name": "Tony Bernazard",
-      "front_team": "Cleveland Indians",
-      "uniform_number": null,
-      "data_priority": "back_primary_front_supplemental"
-    },
     "_grid_metadata": {
       "position": 4,
       "row": 1,
       "col": 1,
       "confidence": 0.6975000000000001,
-      "matched_front": "images/unprocessed_single_front/IMG_4065_optimized.png"
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos4.png"
     },
     "_tcdb_verification": {
-      "search_query": "Ted Ford unknown Cleveland topps",
+      "search_query": "Ted Ford unknown Cleveland topps #24",
       "results": [],
       "verified": false,
       "best_match": null,
@@ -236,14 +221,14 @@
   },
   {
     "grid_position": 5,
-    "name": "Ray Corbin",
+    "name": "ray corbin",
     "sport": "baseball",
     "brand": "topps",
     "number": "86",
-    "copyright_year": "unknown",
-    "team": "Minnesota",
-    "card_set": "unknown",
-    "condition": "very_good",
+    "copyright_year": "1972",
+    "team": "minnesota twins",
+    "card_set": "n/a",
+    "condition": "good",
     "is_player_card": true,
     "features": "none",
     "notes": "Includes major and minor league pitching record.",
@@ -262,25 +247,16 @@
       "reasoning": "Heuristic estimate (fast mode)",
       "source": "heuristic"
     },
-    "_name_source": "back_primary",
-    "_team_source": "back_primary",
-    "matched_front_file": "IMG_4110_optimized.png",
-    "_front_match": {
-      "matched_file": true,
-      "front_name": "Frank Viola",
-      "front_team": "Minnesota Twins",
-      "uniform_number": null,
-      "data_priority": "back_primary_front_supplemental"
-    },
     "_grid_metadata": {
       "position": 5,
       "row": 1,
       "col": 2,
       "confidence": 0.6975000000000001,
-      "matched_front": "images/unprocessed_single_front/IMG_4110_optimized.png"
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos5.png"
     },
     "_tcdb_verification": {
-      "search_query": "Ray Corbin unknown Minnesota topps",
+      "search_query": "Ray Corbin unknown Minnesota topps #86",
       "results": [],
       "verified": false,
       "best_match": null,
@@ -289,13 +265,13 @@
   },
   {
     "grid_position": 6,
-    "name": "Ray Corbin",
+    "name": "ray corbin",
     "sport": "baseball",
     "brand": "topps",
-    "number": "86",
-    "copyright_year": "unknown",
-    "team": "Minnesota",
-    "card_set": "unknown",
+    "number": "66",
+    "copyright_year": "1972",
+    "team": "minnesota twins",
+    "card_set": "n/a",
     "condition": "very_good",
     "is_player_card": true,
     "features": "none",
@@ -315,25 +291,16 @@
       "reasoning": "Heuristic estimate (fast mode)",
       "source": "heuristic"
     },
-    "_name_source": "back_primary",
-    "_team_source": "back_primary",
-    "matched_front_file": "IMG_4110_optimized.png",
-    "_front_match": {
-      "matched_file": true,
-      "front_name": "Frank Viola",
-      "front_team": "Minnesota Twins",
-      "uniform_number": null,
-      "data_priority": "back_primary_front_supplemental"
-    },
     "_grid_metadata": {
       "position": 6,
       "row": 2,
       "col": 0,
       "confidence": 0.6975000000000001,
-      "matched_front": "images/unprocessed_single_front/IMG_4110_optimized.png"
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos6.png"
     },
     "_tcdb_verification": {
-      "search_query": "Ray Corbin unknown Minnesota topps",
+      "search_query": "Ray Corbin unknown Minnesota topps #86",
       "results": [],
       "verified": false,
       "best_match": null,
@@ -342,14 +309,14 @@
   },
   {
     "grid_position": 7,
-    "name": "Vince Colbert",
+    "name": "vince colbert",
     "sport": "baseball",
     "brand": "topps",
-    "number": "unknown",
-    "copyright_year": "unknown",
-    "team": "Cleveland",
-    "card_set": "unknown",
-    "condition": "very_good",
+    "number": "84",
+    "copyright_year": "1972",
+    "team": "cleveland indians",
+    "card_set": "n/a",
+    "condition": "good",
     "is_player_card": true,
     "features": "none",
     "notes": "Includes major and minor league pitching record.",
@@ -368,22 +335,13 @@
       "reasoning": "Heuristic estimate (fast mode)",
       "source": "heuristic"
     },
-    "_name_source": "back_primary",
-    "_team_source": "back_primary",
-    "matched_front_file": "IMG_4065_optimized.png",
-    "_front_match": {
-      "matched_file": true,
-      "front_name": "Tony Bernazard",
-      "front_team": "Cleveland Indians",
-      "uniform_number": null,
-      "data_priority": "back_primary_front_supplemental"
-    },
     "_grid_metadata": {
       "position": 7,
       "row": 2,
       "col": 1,
       "confidence": 0.6975000000000001,
-      "matched_front": "images/unprocessed_single_front/IMG_4065_optimized.png"
+      "matched_front": null,
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos7.png"
     },
     "_tcdb_verification": {
       "search_query": "Vince Colbert unknown Cleveland topps",
@@ -395,17 +353,17 @@
   },
   {
     "grid_position": 8,
-    "name": "1971 League Leaders",
+    "name": "1971 american league batting leaders",
     "sport": "baseball",
     "brand": "topps",
     "number": "86",
-    "copyright_year": "1971",
-    "team": "Blue Jays",
-    "card_set": "1971 Topps",
+    "copyright_year": "1972",
+    "team": "multiple",
+    "card_set": "n/a",
     "condition": "very_good",
     "is_player_card": false,
     "features": "none",
-    "notes": "Lists top batting averages for 1971.",
+    "notes": "Lists top 10 batting leaders.",
     "_confidence": {
       "name": 0.4,
       "copyright_year": 0.95,
@@ -422,13 +380,13 @@
       "source": "heuristic"
     },
     "_name_source": "back_primary",
-    "_team_source": "front_supplemented",
-    "matched_front_file": "IMG_4103_optimized.png",
+    "_team_source": "back_primary",
+    "matched_front_file": "IMG_4457_optimized.png",
     "_front_match": {
       "matched_file": true,
-      "front_name": "Damaso Garcia",
-      "front_team": "Blue Jays",
-      "uniform_number": null,
+      "front_name": "Ed Jurak",
+      "front_team": "Red Sox",
+      "uniform_number": "",
       "data_priority": "back_primary_front_supplemental"
     },
     "_grid_metadata": {
@@ -436,7 +394,8 @@
       "row": 2,
       "col": 2,
       "confidence": 0.8100000000000002,
-      "matched_front": "images/unprocessed_single_front/IMG_4103_optimized.png"
+      "matched_front": "images/unprocessed_single_front/IMG_4457_optimized.png",
+      "cropped_back_alias": "cropped_backs/2025-08-31T02-36-26-430Z_IMG_2068_pos8.png"
     },
     "_year_discrepancy": {
       "extracted": "1971",
@@ -446,7 +405,7 @@
     "_tcdb_title": "Nolan Ryan #500 California Angels",
     "_enhanced_fields": [],
     "_tcdb_verification": {
-      "search_query": "1971 League Leaders 1971 Blue Jays topps",
+      "search_query": "1971 multiple League Leaders 1971 multiple topps #86 1971 Topps",
       "results": [
         {
           "title": "Nolan Ryan #500 California Angels",

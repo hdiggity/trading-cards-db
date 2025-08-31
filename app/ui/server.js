@@ -282,10 +282,10 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
     // Import only the specific card to database
     const cardToImport = [allCardData[parseInt(cardIndex)]];
     
-    // Convert selected text fields to lowercase for consistency (exclude 'name')
+    // Convert selected text fields to lowercase for consistency (include 'name')
     const processedCardData = cardToImport.map(card => {
       const processedCard = { ...card };
-      const textFields = ['sport', 'brand', 'team', 'card_set', 'features', 'condition'];
+      const textFields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition'];
       textFields.forEach(field => {
         if (processedCard[field] && typeof processedCard[field] === 'string') {
           processedCard[field] = processedCard[field].toLowerCase();
@@ -302,12 +302,21 @@ from app.database import get_session
 from app.models import Card
 from app.schemas import CardCreate
 from app.learning import store_user_corrections
+from app.db_backup import backup_database
+import os
 
 # Read data from stdin
 input_data = json.loads(sys.stdin.read())
 card_data = input_data['card_data']
 original_data = input_data.get('original_data')
 image_filename = input_data.get('image_filename')
+
+# Before writing, create a timestamped DB backup for safety
+try:
+    backup_path = backup_database(os.getenv('DB_PATH', 'trading_cards.db'), os.getenv('DB_BACKUP_DIR', 'backups'))
+    print(f"DB backup created: {backup_path}", file=sys.stderr)
+except Exception as e:
+    print(f"Warning: DB backup failed: {e}", file=sys.stderr)
 
 # Store learning data if we have original data for comparison
 if original_data and image_filename:
@@ -317,8 +326,8 @@ if original_data and image_filename:
     except Exception as e:
         print(f"Warning: Could not store learning data: {e}", file=sys.stderr)
 
-# Convert selected text fields to lowercase for consistency (exclude 'name')
-text_fields = ['sport', 'brand', 'team', 'card_set', 'features', 'condition']
+# Convert selected text fields to lowercase for consistency (include 'name')
+text_fields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition']
 for card_info in card_data:
     for field in text_fields:
         if field in card_info and isinstance(card_info[field], str):
@@ -623,10 +632,10 @@ app.post('/api/save-progress/:id', async (req, res) => {
       return res.status(404).json({ error: 'Card data file not found' });
     }
     
-    // Convert selected text fields to lowercase for consistency (exclude 'name')
+    // Convert selected text fields to lowercase for consistency (include 'name')
     const processedData = data.map(card => {
       const processedCard = { ...card };
-      const textFields = ['sport', 'brand', 'team', 'card_set', 'features', 'condition'];
+      const textFields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition'];
       textFields.forEach(field => {
         if (processedCard[field] && typeof processedCard[field] === 'string') {
           processedCard[field] = processedCard[field].toLowerCase();
@@ -1734,66 +1743,7 @@ except Exception as e:
   }
 });
 
-// Upload history endpoint
-app.get('/api/upload-history', async (req, res) => {
-  try {
-    const { limit = 50 } = req.query;
-    
-    const pythonProcess = spawn('python', ['-c', `
-from app.logging_system import logger
-import json
-
-try:
-    history = logger.get_upload_history(limit=${parseInt(limit)})
-    print(json.dumps({
-        "history": history,
-        "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.%fZ)"
-    }))
-except Exception as e:
-    print(f"Error getting upload history: {e}", file=sys.stderr)
-    sys.exit(1)
-    `], {
-      cwd: path.join(__dirname, '../..')
-    });
-    
-    let output = '';
-    let error = '';
-    
-    pythonProcess.stdout.on('data', (data) => {
-      output += data.toString();
-    });
-    
-    pythonProcess.stderr.on('data', (data) => {
-      error += data.toString();
-    });
-    
-    pythonProcess.on('close', (code) => {
-      if (code === 0) {
-        try {
-          const result = JSON.parse(output);
-          res.json(result);
-        } catch (parseError) {
-          res.status(500).json({ 
-            error: 'Failed to parse upload history',
-            details: parseError.message
-          });
-        }
-      } else {
-        res.status(500).json({ 
-          error: 'Failed to get upload history', 
-          details: error.trim() 
-        });
-      }
-    });
-    
-  } catch (error) {
-    console.error('Error fetching upload history:', error);
-    res.status(500).json({ 
-      error: 'Failed to fetch upload history',
-      details: error.message
-    });
-  }
-});
+// Upload history endpoint removed
 
 // Initialize and start server
 ensureDirectories().then(() => {

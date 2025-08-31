@@ -262,14 +262,7 @@ function MainPage({ onNavigate }) {
             </div>
           </button>
 
-          <button 
-            className="action-button upload-history"
-            onClick={() => onNavigate('upload-history')}
-          >
-            <div className="button-content">
-              <h3>upload history</h3>
-            </div>
-          </button>
+          {/* Upload history removed for streamlined UI */}
         </div>
       </div>
       {/* Old inline banner removed in favor of top drop-down */}

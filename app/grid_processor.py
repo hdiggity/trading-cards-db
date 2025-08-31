@@ -607,7 +607,7 @@ def save_grid_cards_to_verification(
         def _lower(v):
             return v.lower().strip() if isinstance(v, str) else v
         out = dict(card)
-        for key in ("sport", "brand", "team", "card_set", "condition"):
+        for key in ("name", "sport", "brand", "team", "card_set", "condition"):
             if key in out and out[key] is not None:
                 out[key] = _lower(out[key])
         if "features" in out and out["features"] is not None:
@@ -615,6 +615,23 @@ def save_grid_cards_to_verification(
                 feats = [t.strip().lower().replace("_", " ") for t in out["features"].split(",")]
                 feats = [t for t in feats if t]
                 out["features"] = ",".join(sorted(set(feats))) if feats else "none"
+        # If card_set is only brand/year, set to 'n/a'
+        try:
+            cs = out.get("card_set") or ""
+            br = out.get("brand") or ""
+            if isinstance(cs, str):
+                import re
+                leftovers = cs
+                brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc"]
+                for bt in brand_tokens + ([br] if br else []):
+                    if bt:
+                        leftovers = leftovers.replace(bt, "")
+                leftovers = re.sub(r"\b(19\d{2}|20\d{2})\b", "", leftovers)
+                leftovers = re.sub(r"[^a-z]+", " ", leftovers)
+                if leftovers.strip() == "":
+                    out["card_set"] = "n/a"
+        except Exception:
+            pass
         return out
     cards_data = [_standardize_categories(c) for c in cards_data]
     

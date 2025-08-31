@@ -1112,7 +1112,7 @@ def save_cards_to_verification(
         def _lower(v):
             return v.lower().strip() if isinstance(v, str) else v
         standardized = dict(card)
-        for key in ("sport", "brand", "team", "card_set", "condition"):
+        for key in ("name", "sport", "brand", "team", "card_set", "condition"):
             if key in standardized and standardized[key] is not None:
                 standardized[key] = _lower(standardized[key])
         # features as comma-separated, lowercased tokens
@@ -1121,6 +1121,24 @@ def save_cards_to_verification(
                 feats = [t.strip().lower().replace("_", " ") for t in standardized["features"].split(",")]
                 feats = [t for t in feats if t]
                 standardized["features"] = ",".join(sorted(set(feats))) if feats else "none"
+        # If card_set is not a specific subset beyond the brand/year, set to 'n/a'
+        try:
+            cs = standardized.get("card_set") or ""
+            br = standardized.get("brand") or ""
+            if isinstance(cs, str):
+                import re
+                # Remove brand tokens and years from card_set to see what's left
+                leftovers = cs
+                brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc"]
+                for bt in brand_tokens + ([br] if br else []):
+                    if bt:
+                        leftovers = leftovers.replace(bt, "")
+                leftovers = re.sub(r"\b(19\d{2}|20\d{2})\b", "", leftovers)
+                leftovers = re.sub(r"[^a-z]+", " ", leftovers)
+                if leftovers.strip() == "":
+                    standardized["card_set"] = "n/a"
+        except Exception:
+            pass
         return standardized
 
     # Handle cards that might include confidence data

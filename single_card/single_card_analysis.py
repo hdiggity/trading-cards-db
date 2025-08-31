@@ -316,12 +316,29 @@ def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.
         # Normalize category-like fields to lowercase for matching
         def norm(card: dict) -> dict:
             out = dict(card)
-            for k in ("sport", "brand", "team", "card_set", "condition"):
+            for k in ("name", "sport", "brand", "team", "card_set", "condition"):
                 if isinstance(out.get(k), str):
                     out[k] = out[k].lower().strip()
             if isinstance(out.get("features"), str):
                 feats = [t.strip().lower().replace("_", " ") for t in out["features"].split(",")]
                 out["features"] = ",".join(sorted(set([t for t in feats if t]))) if feats else "none"
+            # If set is only brand/year, mark as n/a
+            try:
+                cs = out.get("card_set") or ""
+                br = out.get("brand") or ""
+                if isinstance(cs, str):
+                    import re
+                    leftovers = cs
+                    brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc"]
+                    for bt in brand_tokens + ([br] if br else []):
+                        if bt:
+                            leftovers = leftovers.replace(bt, "")
+                    leftovers = re.sub(r"\b(19\d{2}|20\d{2})\b", "", leftovers)
+                    leftovers = re.sub(r"[^a-z]+", " ", leftovers)
+                    if leftovers.strip() == "":
+                        out["card_set"] = "n/a"
+            except Exception:
+                pass
             return out
         if isinstance(data, dict) and isinstance(data.get("cards"), list):
             data["cards"] = [norm(c) if isinstance(c, dict) else c for c in data["cards"]]

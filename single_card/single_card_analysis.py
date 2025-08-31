@@ -346,14 +346,16 @@ def main():
         "single_processed.txt")
 
     # Build list of image paths to process
-    image_paths = list(iter_image_paths(effective_input, recursive=args.recursive))
+    image_paths = list(
+        iter_image_paths(
+            effective_input,
+            recursive=args.recursive))
     if not image_paths:
         # If a file was passed and it is not an allowed image
-        if os.path.isfile(effective_input) and not is_image_file(effective_input):
-            print(
-                f"Input file is not a supported image type: {effective_input}\n"
-                f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}"
-            )
+        if os.path.isfile(effective_input) and not is_image_file(
+                effective_input):
+            print(f"Input file is not a supported image type: {
+                effective_input}\n" f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}")
         else:
             print("No images found to process.")
         return
@@ -379,7 +381,8 @@ def main():
             try:
                 os.remove(full_path)
             except Exception as e:
-                print(f"Warning: could not remove source file {full_path}: {e}")
+                print(
+                    f"Warning: could not remove source file {full_path}: {e}")
             processed_count += 1
             print(f"✓ Optimized: {filename} -> {base_name}_optimized.png")
         else:

@@ -111,21 +111,34 @@ function MainPage({ onNavigate }) {
         const poll = async () => {
           const _ = await fetchPendingCount();
           const currentRaw = await fetchRawScanCount();
+          // Also check server process status
+          let active = true;
+          try {
+            const rs = await fetch('http://localhost:3001/api/processing-status');
+            const st = await rs.json();
+            active = !!st.active;
+          } catch {}
+
           // progress heuristic based on raw scans remaining
           const base = rawStartRef.current || rawStart || 1;
           const done = Math.max(0, base - currentRaw);
-          // Count-based progress
           const pctCount = Math.min(100, Math.max(10, Math.round((done / base) * 100)));
+
           // Time-based smoothing so single-file runs don’t appear stuck at 10%
           const elapsedSec = (Date.now() - start) / 1000;
-          const pctTime = Math.min(90, 10 + Math.round((elapsedSec / 90) * 80)); // up to ~90% over ~90s
+          // Climb smoothly up to ~97% over ~15 minutes while active
+          const pctTime = Math.min(97, 10 + Math.round((elapsedSec / 900) * 87));
+
           const pct = Math.max(pctCount, pctTime);
           setBgProgress(pct);
-          const timedOut = Date.now() - start >= 120000;
+
           const finished = currentRaw === 0;
-          if (!timedOut && !finished) {
+          const longTimeout = Date.now() - start >= 30 * 60 * 1000; // 30 minutes safety cap
+
+          if (!finished && active && !longTimeout) {
             setTimeout(poll, 4000);
           } else {
+            // If process ended (either finished or inactive), finalize the UI
             setBgProcessing(false);
             setBgProgress(100);
           }

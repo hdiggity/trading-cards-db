@@ -8,7 +8,6 @@ import argparse
 from pathlib import Path
 from PIL import Image
 from pillow_heif import register_heif_opener
-from openai import OpenAI
 
 # Register HEIF opener for PIL
 register_heif_opener()
@@ -291,6 +290,10 @@ def _build_llm_prompt() -> str:
 
 def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.1, max_tokens: int = 2000) -> dict:
     """Send the image to ChatGPT and return parsed JSON object with 'cards'."""
+    try:
+        from openai import OpenAI
+    except ImportError as e:
+        raise RuntimeError("openai package not installed; install `openai` or run without --llm") from e
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     use_model = model or os.getenv("OPENAI_MODEL", "gpt-4o")
     b64, mime = _encode_image_for_llm(image_path)

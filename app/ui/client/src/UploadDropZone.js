@@ -122,14 +122,76 @@ function UploadDropZone({ onUploadComplete }) {
     setIsUploading(false);
   };
 
-  const handleDrop = useCallback((e) => {
+  // Traverse DataTransferItemList to support dragging folders
+  const collectFilesFromItems = async (items) => {
+    const collected = [];
+
+    const traverseEntry = async (entry) => {
+      return new Promise((resolve) => {
+        if (entry.isFile) {
+          entry.file((file) => {
+            // Preserve relative path if available
+            const relPath = entry.fullPath || file.webkitRelativePath || file.name;
+            const f = new File([file], relPath, { type: file.type });
+            collected.push(f);
+            resolve();
+          }, () => resolve());
+        } else if (entry.isDirectory) {
+          const reader = entry.createReader();
+          const readBatch = () => {
+            reader.readEntries(async (entries) => {
+              if (!entries.length) return resolve();
+              for (const ent of entries) {
+                await traverseEntry(ent);
+              }
+              readBatch();
+            }, () => resolve());
+          };
+          readBatch();
+        } else {
+          resolve();
+        }
+      });
+    };
+
+    const promises = [];
+    for (const item of items) {
+      const entry = item.webkitGetAsEntry ? item.webkitGetAsEntry() : null;
+      if (entry) {
+        promises.push(traverseEntry(entry));
+      } else {
+        const file = item.getAsFile && item.getAsFile();
+        if (file) collected.push(file);
+      }
+    }
+    await Promise.all(promises);
+    return collected;
+  };
+
+  const handleDrop = useCallback(async (e) => {
     e.preventDefault();
     e.stopPropagation();
     setIsDragOver(false);
 
-    const files = Array.from(e.dataTransfer.files);
-    if (files.length > 0) {
-      uploadFiles(files);
+    const dt = e.dataTransfer;
+    try {
+      if (dt.items && dt.items.length) {
+        const files = await collectFilesFromItems(Array.from(dt.items));
+        if (files.length > 0) {
+          uploadFiles(files);
+        } else if (dt.files && dt.files.length) {
+          uploadFiles(Array.from(dt.files));
+        } else {
+          setUploadStatus({ success: false, message: 'No files found in dropped items' });
+        }
+      } else if (dt.files && dt.files.length) {
+        uploadFiles(Array.from(dt.files));
+      } else {
+        setUploadStatus({ success: false, message: 'No files to upload' });
+      }
+    } catch (err) {
+      console.error('Drop handling error:', err);
+      setUploadStatus({ success: false, message: `Upload failed: ${err.message || 'drop error'}` });
     }
   }, []);
 
@@ -159,6 +221,9 @@ function UploadDropZone({ onUploadComplete }) {
           id="file-input"
           type="file"
           multiple
+          // Allow selecting a folder in Chromium-based browsers
+          webkitdirectory=""
+          directory=""
           accept={supportedExtensions.join(',')}
           onChange={handleFileInput}
           style={{ display: 'none' }}

@@ -55,6 +55,8 @@ const formatFieldValue = (fieldName, value) => {
   switch (fieldName) {
     case 'is_player_card':
       return value ? 'yes' : 'no';
+    case 'name':
+      return toTitleCase(noUnderscore);
     case 'features': {
       if (!noUnderscore || noUnderscore.toLowerCase() === 'none') return 'none';
       return noUnderscore
@@ -742,8 +744,8 @@ function App({ onNavigate }) {
 
   const updateCardField = (cardIndex, field, value) => {
     const newData = [...editedData];
-    // Convert text fields to lowercase for consistency
-    const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
+    // Convert certain text fields to lowercase for consistency (exclude name)
+    const textFields = ['sport', 'brand', 'team', 'card_set'];
     let processedValue = textFields.includes(field) && typeof value === 'string' 
       ? value.toLowerCase() 
       : value;

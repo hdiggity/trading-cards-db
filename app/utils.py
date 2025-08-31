@@ -22,7 +22,6 @@ from app.accuracy import (
 from app.database import SessionLocal
 from app.fields import shared_card_field_specs
 from app.learning import generate_learning_prompt_enhancements
-from app.value_estimator import add_value_estimation
 from app.models import Card
 from app.schemas import CardCreate  # make sure this import exists
 from app.tcdb_scraper import search_tcdb_cards
@@ -818,8 +817,12 @@ def gpt_extract_cards_from_image(
         else:
             final_cards.extend(needs_reprocessing)  # Add any remaining cards
 
-        # Add value estimation to each final card
-        final_cards = [add_value_estimation(card) for card in final_cards]
+        # Add value estimation to each final card (lazy import to avoid circular deps)
+        try:
+            from app.value_estimator import add_value_estimation
+            final_cards = [add_value_estimation(card) for card in final_cards]
+        except Exception as e:
+            print(f"Value estimation unavailable, skipping: {e}", file=sys.stderr)
 
         # Final cleanup and prepare CardCreate objects
         clean_cards = []

@@ -352,10 +352,11 @@ def main():
             recursive=args.recursive))
     if not image_paths:
         # If a file was passed and it is not an allowed image
-        if os.path.isfile(effective_input) and not is_image_file(
-                effective_input):
-            print(f"Input file is not a supported image type: {
-                effective_input}\n" f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}")
+        if os.path.isfile(effective_input) and not is_image_file(effective_input):
+            print(
+                f"Input file is not a supported image type: {effective_input}\n"
+                f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}"
+            )
         else:
             print("No images found to process.")
         return

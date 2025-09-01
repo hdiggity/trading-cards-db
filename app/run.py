@@ -5,7 +5,8 @@ import os
 import time
 from pathlib import Path
 
-from .utils import gpt_extract_cards_from_image, save_cards_to_verification
+import os
+from .utils import gpt_extract_cards_from_image, gpt_extract_cards_single_pass, save_cards_to_verification
 from .grid_processor import GridProcessor, save_grid_cards_to_verification
 from .logging_system import logger, LogSource, ActionType
 
@@ -142,8 +143,12 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             card_count = len(grid_cards)
             print(f"Grid processing completed: {card_count} cards extracted")
         else:
-            # Use standard processing for single cards or other formats
-            parsed_cards, _ = gpt_extract_cards_from_image(str(image_path))
+            # Fast single-pass extraction with compact high-accuracy prompt
+            fast_mode = os.getenv("FAST_SINGLE_PASS", "true").lower() != "false"
+            if fast_mode:
+                parsed_cards, _ = gpt_extract_cards_single_pass(str(image_path))
+            else:
+                parsed_cards, _ = gpt_extract_cards_from_image(str(image_path))
             processing_time = time.time() - start_time
             
             filename_stem = image_path.stem
@@ -170,6 +175,17 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             dest_path=new_path,
             success=True
         )
+
+        # If this came from 3x3 backs (or grid processing), also archive a copy
+        # to verified/images immediately so originals don't linger in unprocessed_bulk_back
+        try:
+            if use_grid_processing or (BACK_IMAGES_DIR / Path(old_path).name).exists():
+                from shutil import copy2
+                verified_images_dir = Path("images/verified/images")
+                verified_images_dir.mkdir(parents=True, exist_ok=True)
+                copy2(PENDING_VERIFICATION_DIR / Path(new_path).name, verified_images_dir / Path(new_path).name)
+        except Exception:
+            pass
 
         # track last processed file
         with open(LAST_PROCESSED_FILE, "w") as f:
@@ -250,7 +266,11 @@ def retry_failed_image(filename: str):
 
     try:
         # Try processing again
-        parsed_cards, _ = gpt_extract_cards_from_image(str(failed_image_path))
+        fast_mode = os.getenv("FAST_SINGLE_PASS", "true").lower() != "false"
+        if fast_mode:
+            parsed_cards, _ = gpt_extract_cards_single_pass(str(failed_image_path))
+        else:
+            parsed_cards, _ = gpt_extract_cards_from_image(str(failed_image_path))
         filename_stem = failed_image_path.stem
         # Check if TCDB verification should be disabled
         disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"

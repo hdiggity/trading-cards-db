@@ -56,7 +56,7 @@ const formatFieldValue = (fieldName, value) => {
     case 'is_player_card':
       return value ? 'yes' : 'no';
     case 'name':
-      return toTitleCase(noUnderscore);
+      return noUnderscore.toLowerCase();
     case 'features': {
       if (!noUnderscore || noUnderscore.toLowerCase() === 'none') return 'none';
       return noUnderscore
@@ -73,8 +73,6 @@ const formatFieldValue = (fieldName, value) => {
     case 'card_set':
       return noUnderscore.toLowerCase();
     case 'condition':
-      return noUnderscore.toLowerCase();
-    case 'name':
       return noUnderscore.toLowerCase();
     default:
       return noUnderscore || 'N/A';
@@ -170,6 +168,26 @@ function ZoomableImage({ src, alt, className }) {
     setIsZoomed(false);
     setZoomLevel(1);
     setPosition({ x: 0, y: 0 });
+  };
+
+  const stepZoom = (delta) => {
+    const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+    const prev = zoomLevel;
+    const next = Math.max(1, Math.min(5, prev + delta));
+    if (next > 1 && !isZoomed) setIsZoomed(true);
+    if (rect && next !== prev) {
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+      const factor = (next - prev) / Math.max(next, 1);
+      setPosition((p) => clampPosition({ x: p.x - cx * factor, y: p.y - cy * factor }, next, rect));
+    }
+    setZoomLevel(next);
+    if (next === 1) setIsZoomed(false);
+  };
+
+  const fitToView = () => {
+    // For now, fit means reset to 1 and center
+    handleZoomOut();
   };
   
   const handleWheel = (e) => {
@@ -365,34 +383,30 @@ function ZoomableImage({ src, alt, className }) {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       />
-      {isZoomed && (
-        <div className="zoom-controls">
-          <button onClick={() => setZoomLevel(Math.min(5, zoomLevel + 0.5))}>+</button>
-          <span>{Math.round(zoomLevel * 100)}%</span>
-          <button onClick={() => setZoomLevel(Math.max(1, zoomLevel - 0.5))}>-</button>
-          <button onClick={handleZoomOut}>Reset</button>
-          <input
-            type="range"
-            min={100}
-            max={500}
-            step={10}
-            value={Math.round(zoomLevel * 100)}
-            onChange={(e) => {
-              const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
-              const next = Math.max(1, Math.min(5, Number(e.target.value) / 100));
-              if (!isZoomed && next > 1) setIsZoomed(true);
-              if (rect) {
-                // keep current center; no position change on slider to avoid jumps
-                setPosition((p) => clampPosition(p, next, rect));
-              }
-              setZoomLevel(next);
-              if (next === 1) { setIsZoomed(false); setPosition({ x: 0, y: 0 }); }
-            }}
-            style={{ marginLeft: 8 }}
-            aria-label="Zoom level"
-          />
-        </div>
-      )}
+      <div className="zoom-controls">
+        <button onClick={() => stepZoom(-0.5)} title="Zoom out">−</button>
+        <span className="zoom-readout">{Math.round(zoomLevel * 100)}%</span>
+        <button onClick={() => stepZoom(0.5)} title="Zoom in">+</button>
+        <button onClick={() => { setIsZoomed(true); setZoomLevel(2); }} title="1:1 (2x)">1:1</button>
+        <button onClick={fitToView} title="Fit to view">Fit</button>
+        <button onClick={handleZoomOut} title="Reset">Reset</button>
+        <input
+          type="range"
+          min={100}
+          max={500}
+          step={10}
+          value={Math.round(zoomLevel * 100)}
+          onChange={(e) => {
+            const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+            const next = Math.max(1, Math.min(5, Number(e.target.value) / 100));
+            if (!isZoomed && next > 1) setIsZoomed(true);
+            if (rect) setPosition((p) => clampPosition(p, next, rect));
+            setZoomLevel(next);
+            if (next === 1) { setIsZoomed(false); setPosition({ x: 0, y: 0 }); }
+          }}
+          aria-label="Zoom level"
+        />
+      </div>
       {!isZoomed && (
         <div className="zoom-hint">Click to zoom, wheel to zoom in/out when zoomed</div>
       )}
@@ -483,6 +497,7 @@ function App({ onNavigate }) {
   const [loading, setLoading] = useState(true);
   const [processing, setProcessing] = useState(false);
   const [reprocessing, setReprocessing] = useState(false);
+  const reprocessControllerRef = useRef(null);
   const [isEditing, setIsEditing] = useState(false);
   const [editedData, setEditedData] = useState([]);
   const [lastSaved, setLastSaved] = useState(null);
@@ -737,6 +752,8 @@ function App({ onNavigate }) {
     
     setReprocessing(true);
     const currentCard = pendingCards[currentIndex];
+    const controller = new AbortController();
+    reprocessControllerRef.current = controller;
     
     try {
       const response = await fetch(`http://localhost:3001/api/reprocess/${currentCard.id}`, {
@@ -744,6 +761,7 @@ function App({ onNavigate }) {
         headers: {
           'Content-Type': 'application/json',
         },
+        signal: controller.signal,
       });
       
       const result = await response.json();
@@ -770,6 +788,15 @@ function App({ onNavigate }) {
       alert('Error re-processing card');
     }
     
+    setReprocessing(false);
+  };
+
+  const cancelReprocess = async () => {
+    try {
+      const currentCard = pendingCards[currentIndex];
+      await fetch(`http://localhost:3001/api/cancel-reprocess/${currentCard.id}`, { method: 'POST' });
+    } catch (_) {}
+    try { reprocessControllerRef.current?.abort(); } catch (_) {}
     setReprocessing(false);
   };
 
@@ -819,9 +846,21 @@ function App({ onNavigate }) {
 
   return (
     <div className="App">
+      {/* Reprocess progress bar at top */}
+      <div className={`verify-progress ${reprocessing ? 'show' : ''}`} role="status" aria-live="polite">
+        <div className="verify-progress-inner">
+          <div className="verify-progress-title">Re-processing card data…</div>
+          <div className="verify-progress-actions">
+            <button className="cancel-processing" type="button" onClick={cancelReprocess} title="Cancel re-processing">cancel</button>
+          </div>
+          <div className="progress-track top">
+            <div className="progress-bar indeterminate" />
+          </div>
+        </div>
+      </div>
       <header className="App-header">
         <div className="header-top">
-          <h1>Trading Card Verification</h1>
+          <h1>trading card verification</h1>
           <button 
             className="back-button" 
             onClick={() => onNavigate('main')}
@@ -908,7 +947,7 @@ function App({ onNavigate }) {
         </div>
 
         <div className="data-section">
-          <h3>Extracted Card Data:</h3>
+          <h3>extracted card data:</h3>
           {!isEditing && (
             <div className="top-controls">
               <button onClick={startEditing} className="edit-button">
@@ -1076,12 +1115,12 @@ function App({ onNavigate }) {
                       </p>
                       <p>
                         <strong>{formatFieldName('sport')}:</strong> 
-                        <span>{(card.sport || '').toString().toLowerCase()}</span>
+                        <span>{formatFieldValue('sport', card.sport)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.sport} fieldName="sport" />
                       </p>
                       <p>
                         <strong>{formatFieldName('brand')}:</strong> 
-                        <span>{(card.brand || '').toString().toLowerCase()}</span>
+                        <span>{formatFieldValue('brand', card.brand)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.brand} fieldName="brand" />
                       </p>
                       <p>
@@ -1096,17 +1135,17 @@ function App({ onNavigate }) {
                       </p>
                       <p>
                         <strong>{formatFieldName('team')}:</strong> 
-                        <span>{(card.team || '').toString().toLowerCase()}</span>
+                        <span>{formatFieldValue('team', card.team)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.team} fieldName="team" />
                       </p>
                       <p>
                         <strong>{formatFieldName('card_set')}:</strong> 
-                        <span>{(card.card_set || '').toString().toLowerCase()}</span>
+                        <span>{formatFieldValue('card_set', card.card_set)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.card_set} fieldName="card_set" />
                       </p>
                       <p>
                         <strong>{formatFieldName('condition')}:</strong> 
-                        <span>{(card.condition || '').toString().toLowerCase()}</span>
+                        <span>{formatFieldValue('condition', card.condition)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.condition} fieldName="condition" />
                       </p>
                       <p>
@@ -1116,7 +1155,7 @@ function App({ onNavigate }) {
                       </p>
                       <p>
                         <strong>{formatFieldName('features')}:</strong> 
-                        <span>{(card.features || 'none').toString().toLowerCase()}</span>
+                        <span>{formatFieldValue('features', card.features || 'none')}</span>
                         <ConfidenceIndicator confidence={card._confidence?.features} fieldName="features" />
                       </p>
                       {card.value_estimate !== undefined && (

@@ -22,6 +22,7 @@ from app.accuracy import (
 from app.database import SessionLocal
 from app.fields import shared_card_field_specs
 from app.learning import generate_learning_prompt_enhancements
+from app.team_map import canonicalize_team
 from app.models import Card
 from app.schemas import CardCreate  # make sure this import exists
 from app.tcdb_scraper import search_tcdb_cards
@@ -105,118 +106,12 @@ def llm_chat(
 
 
 def build_legacy_system_prompt(include_learning: bool = True) -> str:
-    # generate system prompt with field descriptions from fields.py
-    description_map = {
-        "name": "player's full name. if multiple people appear on the card, include each as separate entries with identical card details.",
-        "sport": "what sport the individual played in the year that the trading card is from, or detect based on the card",
-        "brand": "e.g., 'Topps', 'Donruss', 'Upper Deck', 'Panini', 'Leaf', and common card brands",
-        "number": "card number if available",
-        "copyright_year": "CRITICAL: Find the TRUE copyright/production year, NOT statistics years. Look ONLY for: 1) Copyright symbol (©) followed by year - this is ALWAYS the production year, 2) Fine print text at card edges/corners with year, 3) Brand logo with year (like 'Topps 1975'), 4) Set identifier year. IGNORE all other years including: player career stats, birth years, team years, statistical data years. The copyright year is typically much smaller text and may be on edges/borders. For vintage cards, copyright is often tiny text at bottom edge. If you see both '© 1975' and '1974 stats', use 1975. If uncertain, look for the smallest, least prominent year - that's usually copyright.",
-        "team": "mlb team from the year that the card is from, inferred from card text or player history if not directly visible. never leave blank—make your best guess based on the image.",
-        "card_set": "set name or series, default to N/A, but the card_set is the subset of the brand",
-        "condition": """CRITICAL: Perform a detailed, systematic condition assessment using professional grading standards. Examine the card under good lighting and look for ALL defects:
+    """Deprecated: retained as a thin wrapper for backward compatibility.
 
-        CORNERS (Most Important):
-        - Sharp, pointed corners = Mint level
-        - Slightly touched corners = Near Mint
-        - Light rounding/fuzzing = Excellent
-        - Moderate rounding = Very Good
-        - Heavy rounding/chipping = Good or lower
-
-        EDGES:
-        - Smooth, clean edges = Mint level
-        - Minor roughness = Near Mint/Excellent
-        - Visible nicks, cuts = Very Good or lower
-        - Severe edge damage = Fair/Poor
-
-        SURFACE:
-        - Pristine, scratch-free = Mint level
-        - Minor print spots = Near Mint
-        - Light scratches/scuffs = Excellent/Very Good
-        - Heavy scratches, stains = Good or lower
-        - Writing, tape residue = Fair/Poor
-
-        CENTERING:
-        - Perfectly centered = Mint level
-        - Slightly off-center = Near Mint
-        - Noticeably off-center = Excellent/Very Good
-        - Severely off-center = Good or lower
-
-        PRINT QUALITY:
-        - Sharp, vibrant colors = Higher grades
-        - Slight color fade = Lower by 1-2 grades
-        - Print defects, spots = Significant grade reduction
-
-        GRADING SCALE (Be conservative - err on lower side):
-        - 'gem_mint' (10): PERFECT in all aspects - extremely rare for vintage cards
-        - 'mint' (9): Near perfect, only microscopic flaws allowed
-        - 'near_mint' (8): Slight wear visible but overall excellent condition
-        - 'excellent' (7): Light wear on corners/edges, minor surface issues
-        - 'very_good' (6): Moderate wear visible, still attractive card
-        - 'good' (5): Obvious wear but card is intact and displayable
-        - 'fair' (4): Heavy wear, creases, but card is complete
-        - 'poor' (3): Extensive damage, major creases, writing, or missing pieces
-
-        VINTAGE CARD CONSIDERATIONS:
-        - Cards from 1970s-1980s rarely grade above Very Good due to printing/storage
-        - Consider age when assessing - slight age-related wear is normal
-        - Focus on most damaged aspect to determine overall grade""",
-        "is_player_card": "true if this is a player card (individual athlete), false if this is a non-player card such as a checklist, team card, or highlight card",
-        "features": "comma-separated list of special features from these options: 'rookie', 'autograph', 'jersey', 'parallel', 'refractor', 'chrome', 'limited edition', 'serial numbered', 'prospect', 'hall of fame', 'insert', 'short print'. Use 'none' if no special features. Multiple features should be comma-separated like 'rookie,autograph'",
-        "notes": "optional field for any additional observations, anomalies, or important details about the card that don't fit in other fields. Use null if no special notes needed.",
-    }
-
-    # Use field names from fields.py to ensure consistency
-    field_names = [field_spec[0] for field_spec in shared_card_field_specs]
-    field_lines = [
-        f'  "{field}": ...,  # {description_map.get(field, "field description")}'
-        for field in field_names
-    ]
-    joined_fields = "\n".join(field_lines)
-    return (
-        "You are an expert sports card analyst extracting data from trading cards in an image. The cards may show fronts, backs, or a mix of both.\n"
-        "CRITICAL: First, carefully count how many cards are visible in the image and output exactly that number of JSON objects.\n"
-        "CRITICAL: Each card is a DIFFERENT player with DIFFERENT details - do not use identical values for all cards.\n"
-        "Analyze each card individually using whatever information is visible (names, uniforms, logos, text, etc.).\n"
-        "If a card features multiple players, output one object per player with identical card details.\n"
-        "Scan the grid systematically (top-left to bottom-right), ensuring you analyze every card present.\n\n"
-        "CRITICAL ACCURACY REQUIREMENTS:\n\n"
-        "COPYRIGHT YEAR DETECTION (MOST IMPORTANT):\n"
-        "- Find ONLY the copyright/production year, ignore ALL statistics years\n"
-        "- Look for copyright symbol (©) + year - this is ALWAYS correct\n"
-        "- Check card edges/borders for tiny copyright text\n"
-        "- Brand logos often include production year (e.g., 'Topps 1975')\n"
-        "- Copyright year is usually the SMALLEST, least prominent date\n"
-        "- NEVER use years from: player stats, career highlights, team rosters\n"
-        "- Example: If card shows '1974 batting average' but has '© 1975', use 1975\n"
-        "- For vintage cards: copyright is often microscopic text at bottom\n"
-        "- When multiple years visible, the copyright is typically 1 year LATER than stats\n\n"
-        "CONDITION ASSESSMENT PRIORITY:\n"
-        "Perform professional-grade condition assessment. Be systematic and thorough:\n"
-        "- Examine ALL FOUR CORNERS individually for sharpness/rounding\n"
-        "- Check ALL FOUR EDGES for nicks, cuts, or roughness\n"
-        "- Scan entire surface for scratches, stains, print defects\n"
-        "- Assess centering by comparing border widths on all sides\n"
-        "- Look for creases, bends, or other structural damage\n"
-        "- Consider card age - vintage cards rarely achieve mint grades\n"
-        "- When in doubt, grade conservatively (lower grade)\n\n"
-        "return a JSON array with one object per card (or per player-card combination) with these fields:\n\n"
-        "{\n" f"{joined_fields}\n" "}\n\n"
-        "ACCURACY MANDATE:\n"
-        "- Use ALL available visual information in the image\n"
-        "- Read ALL text visible on each card, including microscopic fine print\n"
-        "- Cross-reference multiple clues to determine correct information\n"
-        "- For copyright year: ONLY use copyright symbols, brand marks, or production indicators\n"
-        "- COMPLETELY IGNORE statistics years, player career years, team years\n"
-        "- The copyright year determines when the card was MADE, not when the player played\n"
-        "- Look at card borders, edges, and corners for tiny copyright text\n"
-        "- For condition: examine every aspect systematically, be conservative in grading\n"
-        "- If uncertain about copyright year, look for the least prominent, smallest year visible\n\n"
-        "OUTPUT FORMAT:\n"
-        "Only return valid JSON. If a value is missing or unreadable, infer it if possible; otherwise use 'n/a' (as a string). Never leave fields blank.\n"
-        "Be conservative with condition grading - err on the side of lower grades when in doubt.\n"
-        "CRITICAL: copyright_year must be the card production year (from © symbol or brand mark), never player statistics years.\n\n"
-        "⚠️  FINAL REMINDER: DO NOT use identical values for different cards. Each card represents a different player!")
+    The legacy prompt has been removed to reduce maintenance. We now defer to
+    build_system_prompt, which is the canonical multi-pass prompt.
+    """
+    return build_system_prompt(include_learning)
 
     # Add learning enhancements if requested
     if include_learning:
@@ -250,7 +145,7 @@ def build_system_prompt(include_learning: bool = True) -> str:
         "      \"number\": \"string or 'n/a'\",\n"
         "      \"copyright_year\": \"YYYY or 'unknown'\",\n"
         "      \"team\": \"string or 'n/a'\",\n"
-        "      \"card_set\": \"'<year> <brand>' base set naming (e.g., '1975 Topps')\",\n"
+        "      \"card_set\": \"'n/a' for base set; only specify a subset/insert/parallel beyond brand+year\",\n"
         "      \"condition\": \"gem_mint|mint|near_mint|excellent|very_good|good|fair|poor\",\n"
         "      \"is_player_card\": true,\n"
         "      \"features\": \"'none' or CSV from {rookie,autograph,jersey,serial numbered,refractor,chrome,parallel,insert,short print}\",\n"
@@ -270,9 +165,10 @@ def build_system_prompt(include_learning: bool = True) -> str:
         "- NAME: Use the exact printed title/subject on the card.\n"
         "  • If it's a Leaders/Checklist/Team/Multi-player card → set is_player_card=false and NAME to the printed TITLE (not individual names).\n"
         "  • If it's a single player card → set is_player_card=true and NAME to the player’s name.\n"
-        "- SET: Use BASE SET naming '<year> <brand>' (e.g., '1973 Topps'). Do not use the card title here.\n"
+        "- SET: Use 'n/a' for regular/base cards. Only specify a subset/insert/parallel beyond brand+year (e.g., 'all-star', 'leaders', 'chrome refractor').\n"
         "- YEAR: Use the production/copyright year (©, fine print), not stats years.\n"
         "- CONDITION: Evaluate corners/edges/surface carefully and map to the 8-level scale.\n"
+        "- TEAM: Use city + team name (e.g., 'cleveland indians').\n"
         "- FEATURES: Use 'none' or CSV from the allowed list; include 'serial numbered' if a numbering like '/299' is visible.\n\n"
         "Output requirements:\n"
         "- Strict JSON object with top-level key 'cards'.\n"
@@ -297,6 +193,43 @@ def build_system_prompt(include_learning: bool = True) -> str:
 
 
 SYSTEM_PROMPT = build_system_prompt()
+
+def build_single_pass_prompt(include_learning: bool = True) -> str:
+    """A compact, high-precision prompt for a single LLM pass.
+
+    Focuses on: exact NAME vs SET distinction, true copyright year, brand, number,
+    and a normalized schema. Keeps guidance terse to reduce tokens while preserving
+    accuracy. Output must be a JSON object with key 'cards'.
+    """
+
+    rules = (
+        "You are an expert trading card cataloger. Extract precise data for each card in the image.\n"
+        "Rules:\n"
+        "- NAME: Use the printed title/subject on the card. For multi-player/leaders/checklist/team cards → set is_player_card=false and NAME to the card title (not individuals). For a single player → is_player_card=true and NAME is the player name.\n"
+        "- SET: Use 'n/a' for regular/base cards. Only specify a subset/insert/parallel beyond brand+year.\n"
+        "- TEAM: Use city + team name (e.g., 'cleveland indians').\n"
+        "- YEAR: Use the true production/copyright year (© fine print or brand imprint), not stats years.\n"
+        "- BRAND: The manufacturer (e.g., topps, panini).\n"
+        "- NUMBER: Card number if present; else 'n/a'.\n"
+        "- CONDITION: gem_mint|mint|near_mint|excellent|very_good|good|fair|poor.\n"
+        "- FEATURES: 'none' or CSV from {rookie,autograph,jersey,serial numbered,refractor,chrome,parallel,insert,short print}.\n\n"
+        "Output JSON object: { 'cards': [ {\n"
+        "  'name': str, 'sport': 'baseball|basketball|football|hockey|soccer', 'brand': str, 'number': str|'n/a',\n"
+        "  'copyright_year': 'YYYY', 'team': str|'n/a', 'card_set': str, 'condition': str, 'is_player_card': bool, 'features': str\n"
+        "} ] }\n"
+        "Conventions: lowercase brand/condition/features; 'n/a' for missing strings; avoid placeholders.\n"
+    )
+
+    if include_learning:
+        try:
+            enh = generate_learning_prompt_enhancements()
+            if enh:
+                rules += "\n" + enh
+        except Exception:
+            pass
+    return rules
+
+SINGLE_PASS_PROMPT = build_single_pass_prompt()
 
 
 def build_reprocessing_prompt(_previous_data):
@@ -867,6 +800,93 @@ def gpt_extract_cards_from_image(
         raise ValueError(f"failed to parse GPT response: {str(e)}") from e
 
 
+def gpt_extract_cards_single_pass(image_path: str) -> tuple[list, list[CardCreate]]:
+    """Fast path: single high-accuracy LLM pass using a compact prompt.
+
+    Keeps high-contrast variant for better OCR of fine print. Skips
+    reprocessing, TCDB lookups, and value estimation to reduce latency.
+    """
+    # Convert image and optional high-contrast variant
+    encoded_image, mime_type = convert_image_to_supported_format(
+        image_path, apply_preprocessing=True
+    )
+    high_contrast_b64 = None
+    try:
+        from PIL import Image
+        buf = BytesIO()
+        img = Image.open(image_path)
+        if img.mode != "RGB":
+            img = img.convert("RGB")
+        img.save(buf, format="PNG")
+        base_bytes = buf.getvalue()
+        hc_bytes = create_high_contrast_version(base_bytes) if CV2_AVAILABLE else base_bytes
+        high_contrast_b64 = base64.b64encode(hc_bytes).decode("utf-8")
+    except Exception:
+        high_contrast_b64 = None
+
+    user_content = [
+        {"type": "image_url", "image_url": {"url": f"data:{mime_type};base64,{encoded_image}"}},
+    ]
+    if high_contrast_b64:
+        user_content.append({"type": "image_url", "image_url": {"url": f"data:image/png;base64,{high_contrast_b64}"}})
+
+    messages = [
+        {"role": "system", "content": SINGLE_PASS_PROMPT},
+        {"role": "user", "content": user_content},
+    ]
+
+    response = llm_chat(
+        messages=messages,
+        max_tokens=1800,
+        temperature=0.0,
+        response_format={"type": "json_object"},
+    )
+
+    raw_response = response.choices[0].message.content.strip()
+    if raw_response.startswith("```json"):
+        raw_response = raw_response[7:].strip()
+    elif raw_response.startswith("```"):
+        raw_response = raw_response[3:].strip()
+    if raw_response.endswith("```"):
+        raw_response = raw_response[:-3].strip()
+
+    parsed = None
+    try:
+        obj = json.loads(raw_response)
+        if isinstance(obj, dict) and isinstance(obj.get("cards"), list):
+            parsed = obj["cards"]
+        elif isinstance(obj, list):
+            parsed = obj
+    except Exception:
+        parsed = None
+    if parsed is None:
+        try:
+            raw_json = extract_json_array(raw_response)
+        except ValueError:
+            raw_json = raw_response
+        parsed = safe_parse_json_array(raw_json)
+    if isinstance(parsed, dict):
+        parsed = [parsed]
+
+    # Minimal cleanup
+    for item in parsed:
+        if isinstance(item, dict):
+            if item.get("features") in (None, "null", ""):
+                item["features"] = "none"
+            if item.get("is_player_card") in (None, "null"):
+                item["is_player_card"] = True
+
+    # Optionally add value estimation now so initial processing carries pricing
+    try:
+        from app.value_estimator import add_value_estimation
+        parsed = [add_value_estimation(card) for card in parsed]
+    except Exception as e:
+        print(f"Value estimation unavailable in single-pass: {e}", file=sys.stderr)
+
+    clean_cards = [{k: v for k, v in d.items() if isinstance(d, dict) and not k.startswith("_")} for d in parsed]
+    return parsed, [CardCreate(**c) for c in clean_cards if isinstance(c, dict)]
+
+
 def _enhance_card_with_tcdb_data(card: dict, tcdb_match: dict) -> dict:
     """
     Enhance extracted card data with information from a TCDB match.
@@ -1115,6 +1135,9 @@ def save_cards_to_verification(
         for key in ("name", "sport", "brand", "team", "card_set", "condition"):
             if key in standardized and standardized[key] is not None:
                 standardized[key] = _lower(standardized[key])
+        # canonicalize team to "city team" format when possible
+        if standardized.get("team"):
+            standardized["team"] = canonicalize_team(standardized["team"], standardized.get("sport"))
         # features as comma-separated, lowercased tokens
         if "features" in standardized and standardized["features"] is not None:
             if isinstance(standardized["features"], str):

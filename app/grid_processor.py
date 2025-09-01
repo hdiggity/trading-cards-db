@@ -610,6 +610,13 @@ def save_grid_cards_to_verification(
         for key in ("name", "sport", "brand", "team", "card_set", "condition"):
             if key in out and out[key] is not None:
                 out[key] = _lower(out[key])
+        # Canonicalize team to "city team" form when possible
+        try:
+            from app.team_map import canonicalize_team
+            if out.get("team"):
+                out["team"] = canonicalize_team(out["team"], out.get("sport"))
+        except Exception:
+            pass
         if "features" in out and out["features"] is not None:
             if isinstance(out["features"], str):
                 feats = [t.strip().lower().replace("_", " ") for t in out["features"].split(",")]

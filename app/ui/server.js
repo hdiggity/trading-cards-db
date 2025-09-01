@@ -13,6 +13,62 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+// Canonicalize team names (JS side) for reprocess normalization
+const TEAM_CANON = {
+  // MLB
+  'indians': 'cleveland indians', 'guardians': 'cleveland guardians', 'rangers': 'texas rangers', 'twins': 'minnesota twins',
+  'athletics': 'oakland athletics', "a's": 'oakland athletics', 'angels': 'california angels', 'royals': 'kansas city royals',
+  'yankees': 'new york yankees', 'mets': 'new york mets', 'dodgers': 'los angeles dodgers', 'giants': 'san francisco giants',
+  'padres': 'san diego padres', 'phillies': 'philadelphia phillies', 'pirates': 'pittsburgh pirates', 'cardinals': 'st. louis cardinals',
+  'cubs': 'chicago cubs', 'white sox': 'chicago white sox', 'red sox': 'boston red sox', 'brewers': 'milwaukee brewers',
+  'braves': 'atlanta braves', 'reds': 'cincinnati reds', 'orioles': 'baltimore orioles', 'mariners': 'seattle mariners',
+  'blue jays': 'toronto blue jays', 'expos': 'montreal expos', 'nationals': 'washington nationals', 'rockies': 'colorado rockies',
+  'diamondbacks': 'arizona diamondbacks', 'tigers': 'detroit tigers', 'marlins': 'miami marlins', 'rays': 'tampa bay rays',
+  // NBA
+  'lakers': 'los angeles lakers', 'clippers': 'los angeles clippers', 'celtics': 'boston celtics', 'knicks': 'new york knicks',
+  'bulls': 'chicago bulls', 'warriors': 'golden state warriors',
+  // NFL
+  'patriots': 'new england patriots', 'giants': 'new york giants', 'jets': 'new york jets', 'cowboys': 'dallas cowboys',
+  'packers': 'green bay packers', 'browns': 'cleveland browns',
+  // NHL
+  'canadiens': 'montreal canadiens', 'maple leafs': 'toronto maple leafs', 'red wings': 'detroit red wings', 'bruins': 'boston bruins',
+  'rangers_nhl': 'new york rangers'
+};
+
+function canonicalizeTeamJS(team, sport) {
+  if (!team || typeof team !== 'string') return team;
+  let t = team.trim().toLowerCase().replace('st.louis', 'st. louis');
+  if (t.includes(' ')) return t; // already city + team form
+  // NHL rangers disambiguation is limited; prefer MLB by default
+  if (t === 'rangers' && sport && sport.toLowerCase() === 'hockey') return TEAM_CANON['rangers_nhl'];
+  return TEAM_CANON[t] || t;
+}
+
+function normalizeCardJS(card) {
+  const out = { ...card };
+  const lower = (v) => typeof v === 'string' ? v.toLowerCase().trim() : v;
+  for (const k of ['name','sport','brand','team','card_set','condition']) {
+    if (out[k] != null) out[k] = lower(out[k]);
+  }
+  if (out.team) out.team = canonicalizeTeamJS(out.team, out.sport);
+  if (typeof out.features === 'string') {
+    const feats = out.features.split(',').map(s => s.trim().toLowerCase().replace('_',' ')).filter(Boolean);
+    out.features = feats.length ? Array.from(new Set(feats)).join(',') : 'none';
+  }
+  // card_set: set to 'n/a' if it only contains brand/year tokens
+  try {
+    const cs = (out.card_set || '').toLowerCase();
+    const br = (out.brand || '').toLowerCase();
+    if (cs) {
+      let leftovers = cs.replace(br, '');
+      leftovers = leftovers.replace(/\b(19\d{2}|20\d{2})\b/g, '');
+      leftovers = leftovers.replace(/[^a-z]+/g, ' ').trim();
+      if (leftovers === '') out.card_set = 'n/a';
+    }
+  } catch (_) {}
+  return out;
+}
+
 // Configure multer for file uploads
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -25,6 +81,36 @@ const storage = multer.diskStorage({
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     const sanitizedFilename = file.originalname.replace(/['"\\]/g, '_');
     cb(null, `${timestamp}_${sanitizedFilename}`);
+  }
+});
+
+// Reprocess status endpoint
+app.get('/api/reprocess-status/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const active = REPROCESS_JOBS.has(id);
+    res.json({ active });
+  } catch (e) {
+    res.status(500).json({ active: false, error: 'Failed to get reprocess status' });
+  }
+});
+
+// Cancel active reprocess
+app.post('/api/cancel-reprocess/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const child = REPROCESS_JOBS.get(id);
+    if (!child) return res.status(400).json({ error: 'No active reprocess for this id' });
+    let terminated = false;
+    try { process.kill(-child.pid, 'SIGTERM'); terminated = true; } catch (e1) {
+      try { process.kill(child.pid, 'SIGTERM'); terminated = true; } catch (e2) {
+        try { process.kill(child.pid, 'SIGKILL'); terminated = true; } catch (_) {}
+      }
+    }
+    try { REPROCESS_JOBS.delete(id); } catch (_) {}
+    res.json({ success: true, terminated });
+  } catch (e) {
+    res.status(500).json({ error: 'Failed to cancel reprocess' });
   }
 });
 
@@ -111,15 +197,36 @@ except Exception as e:
 // Base paths
 const PENDING_VERIFICATION_DIR = path.join(__dirname, '../../images/pending_verification');
 // New folder for verified images (no spaces for path safety)
-const VERIFIED_IMAGES_DIR = path.join(__dirname, '../../images/verified_images');
+// Standardized verified directories
+const VERIFIED_ROOT_DIR = path.join(__dirname, '../../images/verified');
+const VERIFIED_IMAGES_DIR = path.join(VERIFIED_ROOT_DIR, 'images'); // verified image files live here
+const VERIFIED_LEGACY_DIR = path.join(VERIFIED_ROOT_DIR, 'legacy');
+const AUDIT_LOG = path.join(__dirname, '../../logs/audit.log');
 
 // Ensure directories exist
 async function ensureDirectories() {
   try {
     await fs.mkdir(PENDING_VERIFICATION_DIR, { recursive: true });
+    await fs.mkdir(VERIFIED_ROOT_DIR, { recursive: true });
     await fs.mkdir(VERIFIED_IMAGES_DIR, { recursive: true });
+    await fs.mkdir(VERIFIED_LEGACY_DIR, { recursive: true });
+    await fs.mkdir(path.dirname(AUDIT_LOG), { recursive: true });
   } catch (error) {
     console.error('Error creating directories:', error);
+  }
+}
+
+// Lightweight audit logger (JSON Lines)
+async function audit(action, payload = {}) {
+  try {
+    const entry = {
+      ts: new Date().toISOString(),
+      action,
+      ...payload,
+    };
+    await fs.appendFile(AUDIT_LOG, JSON.stringify(entry) + '\n');
+  } catch (e) {
+    // avoid failing API for audit errors
   }
 }
 
@@ -192,49 +299,37 @@ app.post('/api/upload-raw-scans', async (req, res) => {
       size: file.size
     }));
 
-    // Log the upload using the logging system (simplified to avoid string escaping issues)
+    // Log each upload into UploadHistory + system logs
     try {
-      const fileCount = uploadedFiles.length;
-      const totalSize = uploadedFiles.reduce((sum, file) => sum + file.size, 0);
       const pythonCode = `
-import sys
-sys.path.append('${path.join(__dirname, '..').replace(/\\/g, '/')}')
-from logging_system import logger, LogSource, ActionType
-
-logger.log_action(
-    source=LogSource.UI,
-    action=ActionType.FILE_UPLOAD,
-    message="Uploaded ${fileCount} raw scan image(s) via drag & drop",
-    details="Total size: ${Math.round(totalSize / 1024)} KB",
-    file_path="${rawScansPath.replace(/\\/g, '/')}"
-)
-print("Logged upload action")
+import sys, json
+from app.logging_system import logger
+files = json.loads(sys.stdin.read())
+for f in files:
+    try:
+        logger.log_upload(
+            filename=f.get('filename') or f.get('originalName'),
+            original_path=f.get('path'),
+            file_size=f.get('size'),
+            file_type=(f.get('filename') or '').split('.')[-1]
+        )
+    except Exception as e:
+        print(f"Upload log failed: {e}", file=sys.stderr)
+print("OK")
       `;
       const pythonProcess = spawn('python', ['-c', pythonCode], {
         cwd: path.join(__dirname, '../..'),
         stdio: ['pipe', 'pipe', 'pipe']
       });
-
-      let output = '';
-      let error = '';
-      
-      pythonProcess.stdout.on('data', (data) => {
-        output += data.toString();
-      });
-      
-      pythonProcess.stderr.on('data', (data) => {
-        error += data.toString();
-      });
-      
-      pythonProcess.on('close', (code) => {
-        if (code !== 0) {
-          console.error('Failed to log upload action:', error);
-        }
-      });
+      pythonProcess.stdin.write(JSON.stringify(uploadedFiles));
+      pythonProcess.stdin.end();
+      pythonProcess.stderr.on('data', (d) => console.error('upload log err:', d.toString()));
     } catch (logError) {
       console.error('Error logging upload action:', logError);
     }
 
+    // Audit
+    try { await audit('upload_raw_scans', { count: req.files.length }); } catch {}
     res.json({
       success: true,
       message: `Successfully uploaded ${req.files.length} file(s)`,
@@ -302,7 +397,9 @@ import sys
 from app.database import get_session
 from app.models import Card
 from app.schemas import CardCreate
+from app.per_card_export import write_per_card_file
 from app.learning import store_user_corrections
+from app.per_card_export import write_per_card_file
 from app.db_backup import backup_database
 import os
 
@@ -352,20 +449,19 @@ with get_session() as session:
                 # Update quantity for duplicate
                 existing.quantity += 1
                 print(f"Updated quantity for existing card: {card_info.get('name')}")
+                try:
+                    write_per_card_file(existing)
+                except Exception as _:
+                    pass
             else:
                 # Create new card
                 new_card = Card(**card_create.model_dump())
-                # Initialize last_price from value_estimate if possible
-                try:
-                    import re
-                    ve = card_info.get('value_estimate') or ''
-                    nums = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", ve)]
-                    if nums:
-                        new_card.last_price = sum(nums) / len(nums)
-                except Exception:
-                    pass
                 session.add(new_card)
                 print(f"Added new card: {card_info.get('name')}")
+                try:
+                    write_per_card_file(new_card)
+                except Exception as _:
+                    pass
             
         except Exception as e:
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
@@ -376,6 +472,7 @@ print("Database import completed successfully")
       cwd: path.join(__dirname, '../..'),
       stdio: ['pipe', 'pipe', 'pipe']
     });
+    try { REPROCESS_JOBS.set(id, pythonProcess); } catch (_) {}
     
     // Prepare data with learning context
     const learningData = {
@@ -400,6 +497,7 @@ print("Database import completed successfully")
     });
     
     pythonProcess.on('close', async (code) => {
+      try { REPROCESS_JOBS.delete(id); } catch (_) {}
       if (code === 0) {
         // Remove the imported card from the array
         allCardData.splice(parseInt(cardIndex), 1);
@@ -407,6 +505,13 @@ print("Database import completed successfully")
         // Update the JSON file with remaining cards
         if (allCardData.length > 0) {
           await fs.writeFile(jsonPath, JSON.stringify(allCardData, null, 2));
+          // Log verification action (single card)
+          try {
+            const py = `from app.logging_system import logger\nlogger.log_verification_action(filename='${(imageFileEarly||'').replace(/'/g,"\'")}', action='pass', card_index=${parseInt(cardIndex)})`;
+            const p = spawn('python', ['-c', py], { cwd: path.join(__dirname, '../..') });
+            p.on('error', ()=>{});
+          } catch(_) {}
+          try { await audit('verify_card_passed', { id, scope: 'single', remaining: allCardData.length }); } catch {}
           res.json({ 
             success: true, 
             message: 'Card verified and imported to database successfully. Remaining cards updated.',
@@ -422,8 +527,8 @@ print("Database import completed successfully")
           });
           
           try {
-            // Move grouped JSON file to verified_images folder
-            await fs.rename(jsonPath, path.join(VERIFIED_IMAGES_DIR, path.basename(jsonPath)));
+            // Move grouped JSON file to legacy folder (we keep per-card files as canonical)
+            await fs.rename(jsonPath, path.join(VERIFIED_LEGACY_DIR, path.basename(jsonPath)));
             // Move any per-card JSON split files for this image
             const baseNameRoot = path.parse(jsonPath).name;
             const root = baseNameRoot.split('__c')[0];
@@ -436,7 +541,7 @@ print("Database import completed successfully")
               );
             }
             
-            // Move image file to verified_images folder
+            // Move image file to verified/images folder
             if (imageFile) {
               await fs.rename(
                 path.join(PENDING_VERIFICATION_DIR, imageFile),
@@ -444,12 +549,19 @@ print("Database import completed successfully")
               );
             }
             
+            // Log verification action (all from this image processed)
+            try {
+              const py = `from app.logging_system import logger\nlogger.log_verification_action(filename='${(imageFileEarly||'').replace(/'/g,"\'")}', action='pass')`;
+              const p = spawn('python', ['-c', py], { cwd: path.join(__dirname, '../..') });
+              p.on('error', ()=>{});
+            } catch(_) {}
             res.json({ 
               success: true, 
               message: 'Last card verified and imported. All cards from this image processed and archived.',
               remainingCards: 0,
               output: output.trim()
             });
+            try { await audit('verify_image_archived', { id, scope: 'all' }); } catch {}
           } catch (moveError) {
             console.error('Error moving files to verified folder:', moveError);
             res.json({ 
@@ -558,20 +670,19 @@ with get_session() as session:
                 # Update quantity for duplicate
                 existing.quantity += 1
                 print(f"Updated quantity for existing card: {card_info.get('name')}")
+                try:
+                    write_per_card_file(existing)
+                except Exception as _:
+                    pass
             else:
                 # Create new card
                 new_card = Card(**card_create.model_dump())
-                # Initialize last_price from value_estimate if possible
-                try:
-                    import re
-                    ve = card_info.get('value_estimate') or ''
-                    nums = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", ve)]
-                    if nums:
-                        new_card.last_price = sum(nums) / len(nums)
-                except Exception:
-                    pass
                 session.add(new_card)
                 print(f"Added new card: {card_info.get('name')}")
+                try:
+                    write_per_card_file(new_card)
+                except Exception as _:
+                    pass
                 
         except Exception as e:
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
@@ -609,17 +720,85 @@ print("Database import completed successfully")
       if (code === 0) {
         // Database import successful, now move files to verified folder
         try {
-          // Move JSON file to verified folder
+          // Move grouped JSON file to legacy folder
           await fs.rename(
             path.join(PENDING_VERIFICATION_DIR, jsonFile),
-            path.join(VERIFIED_DIR, jsonFile)
+            path.join(VERIFIED_LEGACY_DIR, jsonFile)
           );
           
-          // Move image file to verified folder
+          // Move image file to verified/images folder
           await fs.rename(
             path.join(PENDING_VERIFICATION_DIR, imageFile),
-            path.join(VERIFIED_DIR, imageFile)
+            path.join(VERIFIED_IMAGES_DIR, imageFile)
           );
+
+          // Log verification action (pass all)
+          try {
+            const py = `from app.logging_system import logger\nlogger.log_verification_action(filename='${(imageFile||'').replace(/'/g,"\'")}', action='pass')`;
+            const p = spawn('python', ['-c', py], { cwd: path.join(__dirname, '../..') });
+            p.on('error', ()=>{});
+          } catch(_) {}
+
+          // Also move any per-card JSONs if they exist; otherwise, create standardized per-card files
+          try {
+            const baseNameRoot = path.parse(jsonFile).name;
+            const root = baseNameRoot.split('__c')[0];
+            const dirFiles = await fs.readdir(PENDING_VERIFICATION_DIR);
+            const perCard = dirFiles.filter(f => f.startsWith(root + '__c') && f.endsWith('.json'));
+            if (perCard.length > 0) {
+              for (const pc of perCard) {
+                // Standardize naming by re-writing via Python exporter
+                try {
+                  const pcPath = path.join(PENDING_VERIFICATION_DIR, pc);
+                  const python = `
+import json
+from app.per_card_export import write_per_card_file
+
+data = json.load(open(r'''${pcPath.replace(/\\/g,'/')}''','r'))
+card = data[0] if isinstance(data, list) and data else data
+try:
+    # Build a lightweight object to mimic Card attributes for exporter
+    class Obj: pass
+    o = Obj()
+    for k in ['name','sport','brand','number','copyright_year','team','card_set','condition','features','quantity','last_price','value_estimate']:
+        setattr(o, k, card.get(k))
+    p = write_per_card_file(o)
+    print(str(p))
+except Exception as e:
+    print('err:' + str(e))
+                  `;
+                  await new Promise((resolve) => {
+                    const proc = spawn('python', ['-c', python], { cwd: path.join(__dirname, '../..') });
+                    proc.on('close', () => resolve());
+                  });
+                } catch (_) {}
+                // Remove the old pending per-card file
+                try { await fs.unlink(path.join(PENDING_VERIFICATION_DIR, pc)); } catch {}
+              }
+            } else {
+              // Create standardized per-card files directly from grouped JSON via Python
+              const groupedPath = path.join(VERIFIED_LEGACY_DIR, jsonFile);
+              const python = `
+import json
+from app.per_card_export import write_per_card_file
+
+arr = json.load(open(r'''${groupedPath.replace(/\\/g,'/')}''','r'))
+if isinstance(arr, list):
+    for card in arr:
+        class Obj: pass
+        o = Obj()
+        for k in ['name','sport','brand','number','copyright_year','team','card_set','condition','features','quantity','last_price','value_estimate']:
+            setattr(o, k, card.get(k))
+        write_per_card_file(o)
+              `;
+              await new Promise((resolve) => {
+                const proc = spawn('python', ['-c', python], { cwd: path.join(__dirname, '../..') });
+                proc.on('close', () => resolve());
+              });
+            }
+          } catch (e) {
+            console.error('Per-card JSON move/split error:', e);
+          }
           
           res.json({ 
             success: true, 
@@ -912,7 +1091,7 @@ except Exception as e:
             throw new Error('No JSON output found in Python response');
           }
           
-          const newCardData = JSON.parse(jsonOutput.trim());
+          let newCardData = JSON.parse(jsonOutput.trim());
           
           if (!Array.isArray(newCardData)) {
             throw new Error('Expected array of cards, got: ' + typeof newCardData);
@@ -921,6 +1100,7 @@ except Exception as e:
           console.log('Successfully parsed', newCardData.length, 'cards from re-processing');
           
           // Update the JSON file with new extraction
+          newCardData = newCardData.map(normalizeCardJS);
           const jsonPath = path.join(PENDING_VERIFICATION_DIR, jsonFile);
           await fs.writeFile(jsonPath, JSON.stringify(newCardData, null, 2));
           
@@ -1053,14 +1233,14 @@ app.post('/api/fail/:id', async (req, res) => {
 // Get all cards from database with pagination and filtering
 app.get('/api/cards', async (req, res) => {
   try {
-    const { page = 1, limit = 20, search = '', sport = '', brand = '', condition = '' } = req.query;
+    const { page = 1, limit = 20, search = '', sport = '', brand = '', condition = '', sortBy = '', sortDir = 'asc' } = req.query;
     
     const pythonProcess = spawn('python', ['-c', `
 import json
 import sys
 from app.database import get_session
 from app.models import Card
-from sqlalchemy import func, or_, and_
+from sqlalchemy import func, or_, and_, asc, desc
 
 page = ${parseInt(page)}
 limit = ${parseInt(limit)}
@@ -1068,6 +1248,8 @@ search = "${search}"
 sport = "${sport}"
 brand = "${brand}"
 condition = "${condition}"
+sort_by = "${(req.query.sortBy || '').toString()}"
+sort_dir = "${(req.query.sortDir || 'asc').toString()}".lower()
 
 with get_session() as session:
     query = session.query(Card)
@@ -1089,6 +1271,29 @@ with get_session() as session:
     
     if filters:
         query = query.filter(and_(*filters))
+
+    # Sorting (whitelist columns)
+    valid_cols = {
+        'name': Card.name,
+        'sport': Card.sport,
+        'brand': Card.brand,
+        'number': Card.number,
+        'copyright_year': Card.copyright_year,
+        'team': Card.team,
+        'card_set': Card.card_set,
+        'condition': Card.condition,
+        'is_player_card': Card.is_player_card,
+        'features': Card.features,
+        'value_estimate': Card.value_estimate,
+        'quantity': Card.quantity,
+        'date_added': Card.date_added,
+    }
+    col = valid_cols.get(sort_by)
+    if col is not None:
+        if sort_dir == 'desc':
+            query = query.order_by(desc(col))
+        else:
+            query = query.order_by(asc(col))
     
     # Get total count
     total = query.count()
@@ -1114,7 +1319,6 @@ with get_session() as session:
                 "features": card.features,
                 "value_estimate": card.value_estimate,
                 "quantity": card.quantity,
-                "last_price": card.last_price,
                 "date_added": card.date_added.isoformat() if card.date_added else None
             }
             for card in cards
@@ -1289,6 +1493,8 @@ with get_session() as session:
 
 // Trigger raw scan processing
 const STATUS_FILE = path.join(__dirname, '../../logs/processing_status.json');
+// Track active reprocess jobs in-memory by pending verification id
+const REPROCESS_JOBS = new Map();
 
 function writeStatus(status) {
   try {
@@ -1324,6 +1530,47 @@ app.get('/api/processing-status', async (req, res) => {
     res.json(status);
   } catch (e) {
     res.status(500).json({ active: false, error: 'Failed to read status' });
+  }
+});
+
+// Cancel background raw scan processing
+app.post('/api/cancel-processing', async (req, res) => {
+  try {
+    const status = readStatus();
+    if (!status || !status.active || !status.pid) {
+      return res.status(400).json({ error: 'No active processing to cancel' });
+    }
+
+    const pid = parseInt(status.pid, 10);
+    let terminated = false;
+    try {
+      // Kill the entire process group if possible (child was spawned detached)
+      process.kill(-pid, 'SIGTERM');
+      terminated = true;
+    } catch (e1) {
+      try {
+        process.kill(pid, 'SIGTERM');
+        terminated = true;
+      } catch (e2) {
+        // last resort
+        try { process.kill(pid, 'SIGKILL'); terminated = true; } catch (_) {}
+      }
+    }
+
+    // Update status file
+    const newStatus = {
+      ...status,
+      active: false,
+      canceled: true,
+      progress: status.progress ?? 0,
+      finishedAt: new Date().toISOString(),
+    };
+    writeStatus(newStatus);
+
+    return res.json({ success: true, terminated });
+  } catch (error) {
+    console.error('Error cancelling processing:', error);
+    return res.status(500).json({ error: 'Failed to cancel processing' });
   }
 });
 
@@ -1410,6 +1657,43 @@ app.get('/api/raw-scan-count', async (req, res) => {
   } catch (error) {
     console.error('Error getting raw scan count:', error);
     res.status(500).json({ error: 'Failed to get raw scan count' });
+  }
+});
+
+// List raw scans with basic metadata (for preview before processing)
+app.get('/api/raw-scans', async (req, res) => {
+  try {
+    const RAW_SCANS_DIR = path.join(__dirname, '../../images/raw_scans');
+    let files;
+    try {
+      files = await fs.readdir(RAW_SCANS_DIR);
+    } catch {
+      return res.json({ files: [], count: 0 });
+    }
+
+    const imageFiles = files.filter((file) => ['.jpg', '.jpeg', '.png', '.heic', '.heif'].includes(path.extname(file).toLowerCase()));
+    const enriched = await Promise.all(
+      imageFiles.map(async (name) => {
+        const p = path.join(RAW_SCANS_DIR, name);
+        try {
+          const st = await fs.stat(p);
+          return {
+            name,
+            size: st.size,
+            mtime: st.mtime,
+            url: `/images/raw_scans/${name}`
+          };
+        } catch {
+          return { name, size: null, mtime: null, url: `/images/raw_scans/${name}` };
+        }
+      })
+    );
+    // Sort newest first
+    enriched.sort((a, b) => new Date(b.mtime) - new Date(a.mtime));
+    res.json({ files: enriched, count: enriched.length });
+  } catch (error) {
+    console.error('Error listing raw scans:', error);
+    res.status(500).json({ error: 'Failed to list raw scans' });
   }
 });
 
@@ -1550,13 +1834,53 @@ with get_session() as session:
     unique_players = session.query(func.count(func.distinct(Card.name))).scalar()
     unique_years = session.query(func.count(func.distinct(Card.copyright_year))).scalar()
     unique_brands = session.query(func.count(func.distinct(Card.brand))).scalar()
+    unique_sports = session.query(func.count(func.distinct(Card.sport))).scalar()
+    
+    # Compute total value from value_estimate only (last_price removed)
+    cards = session.query(Card.name, Card.quantity, Card.value_estimate).all()
+    def parse_estimate(s: str):
+        try:
+            import re
+            nums = [float(x) for x in re.findall(r"\\d+(?:\\.\\d+)?", s or '')]
+            if nums:
+                return sum(nums)/len(nums)
+        except Exception:
+            pass
+        return 0.0
+    total_value = 0.0
+    for name, qty, ve in cards:
+        v = parse_estimate(ve)
+        q = qty or 1
+        total_value += float(v) * float(q)
+    
+    # Summaries for tooltips (top 10)
+    years_counts = session.query(Card.copyright_year, func.count(Card.id)).group_by(Card.copyright_year).all()
+    brands_counts = session.query(Card.brand, func.count(Card.id)).group_by(Card.brand).all()
+    sports_counts = session.query(Card.sport, func.count(Card.id)).group_by(Card.sport).all()
+    years_summary = [
+        {"year": str(y or ''), "count": int(c)} for (y, c) in sorted(years_counts, key=lambda t: (t[0] or '')) if y is not None
+    ]
+    brands_summary = [
+        {"brand": (b or ''), "count": int(c)} for (b, c) in sorted(brands_counts, key=lambda t: (t[1]), reverse=True)
+    ]
+    sports_summary = [
+        {"sport": (s or ''), "count": int(c)} for (s, c) in sorted(sports_counts, key=lambda t: (t[1]), reverse=True)
+    ]
+    years_summary = years_summary[:10]
+    brands_summary = brands_summary[:10]
+    sports_summary = sports_summary[:10]
     
     result = {
         "total_cards": total_cards,
         "total_quantity": total_quantity,
         "unique_players": unique_players,
         "unique_years": unique_years,
-        "unique_brands": unique_brands
+        "unique_brands": unique_brands,
+        "unique_sports": unique_sports,
+        "total_value": round(total_value, 2),
+        "years_summary": years_summary,
+        "brands_summary": brands_summary,
+        "sports_summary": sports_summary
     }
     
     print(json.dumps(result))
@@ -1633,164 +1957,95 @@ print(json.dumps(result))
   }
 });
 
-// Enhanced system logs endpoint with database integration
+// System logs: simplified, database-only
 app.get('/api/system-logs', async (req, res) => {
   try {
-    const { limit = 100, level, source } = req.query;
-    
-    const pythonProcess = spawn('python', ['-c', `
-from app.logging_system import logger
+    const { limit = 200 } = req.query;
+    const python = `
+from app.logging_system import logger, init_logging_tables, UploadHistory
+from app.database import get_session
+from app.models import Card
 import json
-import sys
+from datetime import datetime, timezone
 
 try:
-    # Get logs from enhanced logging system
-    logs = logger.get_recent_logs(limit=${parseInt(limit)})
-    
-    # Add system status checks
-    import os
-    from pathlib import Path
-    
-    status_logs = []
-    
-    # Check OpenAI API key
-    if not os.getenv("OPENAI_API_KEY"):
-        status_logs.append({
-            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.%fZ)",
-            "level": "error",
-            "source": "configuration",
-            "action": None,
-            "message": "OPENAI_API_KEY environment variable not set",
-            "details": "This will cause card processing to fail. Set OPENAI_API_KEY in your .env file.",
-            "metadata": None,
-            "image_filename": None
-        })
-    else:
-        status_logs.append({
-            "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.%fZ)",
-            "level": "success",
-            "source": "configuration", 
-            "action": None,
-            "message": "OPENAI_API_KEY is configured",
-            "details": "API key is available for GPT-4 Vision processing",
-            "metadata": None,
-            "image_filename": None
-        })
-    
-    # Check required directories
-    required_dirs = [
-        "images/raw_scans",
-        "images/pending_verification", 
-        "images/verified"
-    ]
-    
-    for dir_path in required_dirs:
-        if Path(dir_path).exists():
-            status_logs.append({
-                "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.%fZ)",
-                "level": "success",
-                "source": "filesystem",
-                "action": None,
-                "message": f"Directory exists: {Path(dir_path).name}",
-                "details": f"Path: {dir_path}",
-                "metadata": None,
-                "image_filename": None
-            })
+    # Ensure tables exist
+    init_logging_tables()
+except Exception:
+    pass
+
+def norm(ts: str) -> str:
+    try:
+        # Support timestamps with/without timezone and microseconds
+        if ts.endswith('Z'):
+            dt = datetime.fromisoformat(ts.replace('Z', '+00:00'))
         else:
-            status_logs.append({
-                "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.%fZ)",
-                "level": "warning",
-                "source": "filesystem",
-                "action": None,
-                "message": f"Directory missing: {Path(dir_path).name}",
-                "details": f"Expected path: {dir_path}. This directory will be created automatically when needed.",
-                "metadata": None,
-                "image_filename": None
-            })
-    
-    # Combine logs and sort
-    all_logs = logs + status_logs
-    all_logs.sort(key=lambda x: x["timestamp"], reverse=True)
-    
-    result = {
-        "logs": all_logs[:${parseInt(limit)}],
-        "totalLogs": len(all_logs),
-        "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%S.%fZ)"
+            dt = datetime.fromisoformat(ts)
+        dt = dt.replace(tzinfo=timezone.utc)
+        # RFC3339 with milliseconds (3 digits) to satisfy Safari/JS Date
+        return dt.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
+    except Exception:
+        # Fallback to current time if unparseable
+        return datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.000Z')
+
+logs = logger.get_recent_logs(limit=${parseInt(limit)})
+for log in logs:
+    if 'timestamp' in log and isinstance(log['timestamp'], str):
+        log['timestamp'] = norm(log['timestamp'])
+
+# Compute totals
+uploads_total = 0
+uploads_verified = 0
+uploads_failed = 0
+uploads_pending = 0
+cards_total = 0
+try:
+    with get_session() as session:
+        uploads_total = session.query(UploadHistory).count()
+        uploads_verified = session.query(UploadHistory).filter(UploadHistory.status=='verified').count()
+        uploads_failed = session.query(UploadHistory).filter(UploadHistory.status=='failed').count()
+        uploads_pending = session.query(UploadHistory).filter(UploadHistory.status=='pending_verification').count()
+        cards_total = session.query(Card).count()
+except Exception:
+    pass
+
+print(json.dumps({
+    'logs': logs,
+    'totalLogs': len(logs),
+    'timestamp': norm(datetime.utcnow().isoformat()),
+    'totals': {
+        'uploadsTotal': uploads_total,
+        'uploadsVerified': uploads_verified,
+        'uploadsFailed': uploads_failed,
+        'uploadsPending': uploads_pending,
+        'cardsTotal': cards_total
     }
-    
-    print(json.dumps(result))
-    
-except Exception as e:
-    print(f"Error getting enhanced logs: {e}", file=sys.stderr)
-    sys.exit(1)
-    `], {
+}))
+`;
+
+    const pythonProcess = spawn('python', ['-c', python], {
       cwd: path.join(__dirname, '../..')
     });
-    
+
     let output = '';
     let error = '';
-    
-    pythonProcess.stdout.on('data', (data) => {
-      output += data.toString();
-    });
-    
-    pythonProcess.stderr.on('data', (data) => {
-      error += data.toString();
-    });
-    
+
+    pythonProcess.stdout.on('data', (d) => (output += d.toString()));
+    pythonProcess.stderr.on('data', (d) => (error += d.toString()));
     pythonProcess.on('close', (code) => {
       if (code === 0) {
         try {
-          const result = JSON.parse(output);
+          const result = JSON.parse(output || '{}');
           res.json(result);
-        } catch (parseError) {
-          // Fallback to basic logs if enhanced system fails
-          res.json({
-            logs: [{
-              timestamp: new Date().toISOString(),
-              level: 'warning',
-              source: 'system',
-              message: 'Enhanced logging system unavailable, using fallback',
-              details: `Parse error: ${parseError.message}`,
-              metadata: null
-            }],
-            totalLogs: 1,
-            timestamp: new Date().toISOString()
-          });
+        } catch (e) {
+          res.status(500).json({ error: 'Failed to parse system logs', details: e.message });
         }
       } else {
-        // Fallback to basic system check
-        res.json({
-          logs: [{
-            timestamp: new Date().toISOString(),
-            level: 'error',
-            source: 'system',
-            message: 'Enhanced logging system failed to initialize',
-            details: error.trim() || 'Unknown error',
-            metadata: null
-          }],
-          totalLogs: 1,
-          timestamp: new Date().toISOString()
-        });
+        res.status(500).json({ error: 'Failed to fetch system logs', details: error.trim() });
       }
     });
-    
-  } catch (error) {
-    console.error('Error fetching enhanced system logs:', error);
-    res.status(500).json({ 
-      error: 'Failed to fetch system logs',
-      details: error.message,
-      logs: [{
-        timestamp: new Date().toISOString(),
-        level: 'error',
-        source: 'api',
-        message: 'Failed to fetch system logs',
-        details: `Error: ${error.message}`,
-        metadata: null
-      }],
-      totalLogs: 1,
-      timestamp: new Date().toISOString()
-    });
+  } catch (e) {
+    res.status(500).json({ error: 'Failed to fetch system logs', details: String(e) });
   }
 });
 

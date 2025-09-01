@@ -146,6 +146,10 @@
   border-bottom: 1px solid #333333;
 }
 
+.cards-table th.sortable { cursor: pointer; user-select: none; }
+.cards-table th.sorted { background: #242424; }
+.cards-table td.sorted-cell { background: #f3f4f6; }
+
 .cards-table td {
   padding: 10px 8px;
   border-bottom: 1px solid #f0f0f0;

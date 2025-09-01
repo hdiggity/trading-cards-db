@@ -3,6 +3,7 @@ import MainPage from './MainPage';
 import App from './App';
 import DatabaseBrowser from './DatabaseBrowser';
 import SystemLogs from './SystemLogs';
+import RawScanPreview from './RawScanPreview';
 
 function AppRouter() {
   const [currentView, setCurrentView] = useState('main');
@@ -18,6 +19,8 @@ function AppRouter() {
       return <DatabaseBrowser onNavigate={handleNavigate} />;
     case 'logs':
       return <SystemLogs onNavigate={handleNavigate} />;
+    case 'raw-preview':
+      return <RawScanPreview onNavigate={handleNavigate} />;
     case 'main':
     default:
       return <MainPage onNavigate={handleNavigate} />;

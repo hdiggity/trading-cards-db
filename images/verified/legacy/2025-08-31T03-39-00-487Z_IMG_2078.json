@@ -1,0 +1,313 @@
+[
+  {
+    "grid_position": 0,
+    "name": "american league e.r.a. leaders",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "92",
+    "copyright_year": "1972",
+    "team": "multiple",
+    "card_set": "n/a",
+    "condition": "very_good",
+    "is_player_card": false,
+    "features": "none",
+    "notes": "Lists top 10 ERA leaders in the American League for 1971.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-30",
+    "_value_details": {
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.8925000000000002
+    }
+  },
+  {
+    "grid_position": 1,
+    "name": "american league e.r.a. leaders",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "92",
+    "copyright_year": "1972",
+    "team": "multiple",
+    "card_set": "n/a",
+    "condition": "very_good",
+    "is_player_card": false,
+    "features": "none",
+    "notes": "Duplicate of card in grid position 0.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-30",
+    "_value_details": {
+      "value_range": "$5-30",
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.8925000000000002
+    }
+  },
+  {
+    "grid_position": 2,
+    "name": "bill grief, james rodney richard, ray busse",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "101",
+    "copyright_year": "1972",
+    "team": "multiple",
+    "card_set": "n/a",
+    "condition": "good",
+    "is_player_card": false,
+    "features": "none",
+    "notes": "Includes minor league pitching record.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-30",
+    "_value_details": {
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.8925000000000002
+    }
+  },
+  {
+    "grid_position": 3,
+    "name": "ron hunt",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "110",
+    "copyright_year": "1972",
+    "team": "montreal expos",
+    "card_set": "n/a",
+    "condition": "excellent",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "Notable for being hit by pitched balls 50 times in 1971.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-45",
+    "_value_details": {
+      "value_range": "$5-45",
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.8925000000000002
+    }
+  },
+  {
+    "grid_position": 4,
+    "name": "charlie fox",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "129",
+    "copyright_year": "1972",
+    "team": "san francisco giants",
+    "card_set": "n/a",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "Managerial record included.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-30",
+    "_value_details": {
+      "value_range": "$5-30",
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.8925000000000002
+    }
+  },
+  {
+    "grid_position": 5,
+    "name": "ron bombero",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "203",
+    "copyright_year": "1972",
+    "team": "new york",
+    "card_set": "n/a",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "Highlights a significant game against Kansas City.",
+    "_confidence": {
+      "name": 0.4,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8100000000000002,
+    "value_estimate": "$5-30",
+    "_value_details": {
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.8100000000000002
+    }
+  },
+  {
+    "grid_position": 6,
+    "name": "gary sutherland",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "211",
+    "copyright_year": "1972",
+    "team": "montreal expos",
+    "card_set": "n/a",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "Mentions family connections in baseball.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-30",
+    "_value_details": {
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.8925000000000002
+    }
+  },
+  {
+    "grid_position": 7,
+    "name": "alex johnson",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "215",
+    "copyright_year": "1972",
+    "team": "cleveland indians",
+    "card_set": "n/a",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "Lifetime .300 average noted.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-45",
+    "_value_details": {
+      "value_range": "$5-45",
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.8925000000000002
+    }
+  },
+  {
+    "grid_position": 8,
+    "name": "alex johnson",
+    "sport": "baseball",
+    "brand": "topps",
+    "number": "215",
+    "copyright_year": "1972",
+    "team": "cleveland indians",
+    "card_set": "n/a",
+    "condition": "excellent",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "Duplicate of card in grid position 7.",
+    "_confidence": {
+      "name": 0.95,
+      "copyright_year": 0.95,
+      "condition": 0.8,
+      "brand": 0.9,
+      "features": 0.8
+    },
+    "_overall_confidence": 0.8925000000000002,
+    "value_estimate": "$5-45",
+    "_value_details": {
+      "value_range": "$5-45",
+      "confidence": "low",
+      "reasoning": "Heuristic estimate (fast mode)",
+      "source": "heuristic"
+    },
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.8925000000000002
+    }
+  }
+]

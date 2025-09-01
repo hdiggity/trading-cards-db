@@ -16,7 +16,6 @@ const formatFieldName = (fieldName) => {
     'features': 'Features',
     'quantity': 'Qty',
     'value_estimate': 'Price Estimate',
-    'last_price': 'Last Price',
     'date_added': 'Date Added',
     'last_updated': 'Last Updated'
   };
@@ -42,8 +41,7 @@ const formatFieldValue = (fieldName, value) => {
       return !noUnderscore || noUnderscore.toLowerCase() === 'none'
         ? 'none'
         : noUnderscore.split(',').map((f) => f.trim().replace(/_/g, ' ').toLowerCase()).join(', ');
-    case 'last_price':
-      return value ? `$${parseFloat(value).toFixed(2)}` : 'N/A';
+    // last_price removed
     case 'date_added':
     case 'last_updated':
       return value ? new Date(value).toLocaleDateString() : 'N/A';
@@ -77,10 +75,12 @@ function DatabaseBrowser({ onNavigate }) {
   const [fieldOptions, setFieldOptions] = useState({ sports: [], brands: [], conditions: [] });
   const [selectedCards, setSelectedCards] = useState(new Set());
   const [selectAll, setSelectAll] = useState(false);
+  const [sortBy, setSortBy] = useState('');
+  const [sortDir, setSortDir] = useState('asc');
 
   useEffect(() => {
     fetchCards();
-  }, [currentPage, searchTerm, filterSport, filterBrand, filterCondition]);
+  }, [currentPage, searchTerm, filterSport, filterBrand, filterCondition, sortBy, sortDir]);
 
   // Clear selections when page changes or filters change
   useEffect(() => {
@@ -114,7 +114,9 @@ function DatabaseBrowser({ onNavigate }) {
         ...(searchTerm && { search: searchTerm }),
         ...(filterSport && { sport: filterSport }),
         ...(filterBrand && { brand: filterBrand }),
-        ...(filterCondition && { condition: filterCondition })
+        ...(filterCondition && { condition: filterCondition }),
+        ...(sortBy && { sortBy }),
+        ...(sortBy && { sortDir })
       });
 
       const response = await fetch(`http://localhost:3001/api/cards?${params}`);
@@ -151,7 +153,7 @@ function DatabaseBrowser({ onNavigate }) {
       features: card.features || '',
       value_estimate: card.value_estimate || '',
       quantity: card.quantity || 1,
-      last_price: card.last_price || ''
+      // last_price removed
     };
     
     // Convert text fields to lowercase
@@ -286,7 +288,7 @@ function DatabaseBrowser({ onNavigate }) {
     <div className="database-browser">
       <header className="browser-header">
         <div className="header-top">
-          <h1>Database Browser</h1>
+          <h1>database browser</h1>
           <div className="header-buttons">
             {selectedCards.size > 0 && (
               <button 
@@ -350,25 +352,7 @@ function DatabaseBrowser({ onNavigate }) {
                 <option key={c} value={c}>{c}</option>
               ))}
             </select>
-            <button 
-              className="search-button"
-              type="button"
-              onClick={async () => {
-                try {
-                  const r = await fetch('http://localhost:3001/api/backfill-price-estimates', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ dryRun: false }) });
-                  if (r.ok) {
-                    alert('Re-valued all cards');
-                    fetchCards();
-                  } else {
-                    alert('Re-value failed');
-                  }
-                } catch (e) {
-                  alert('Re-value failed');
-                }
-              }}
-            >
-              re‑value all
-            </button>
+            {/* re-value all removed; values are set during initial processing */}
           </div>
         </div>
       </header>
@@ -389,20 +373,34 @@ function DatabaseBrowser({ onNavigate }) {
                       title="Select All"
                     />
                   </th>
-                  <th>Name</th>
-                  <th>Sport</th>
-                  <th>Brand</th>
-                  <th>Number</th>
-                  <th>Year</th>
-                  <th>Team</th>
-                  <th>Set</th>
-                  <th>Condition</th>
-                  <th>Player Card</th>
-                  <th>Features</th>
-                  <th>Price Estimate</th>
-                  <th>Qty</th>
-                  <th>Last Price</th>
-                  <th>Date Added</th>
+                  {[
+                    ['name','Name'],
+                    ['sport','Sport'],
+                    ['brand','Brand'],
+                    ['number','Number'],
+                    ['copyright_year','Year'],
+                    ['team','Team'],
+                    ['card_set','Set'],
+                    ['condition','Condition'],
+                    ['is_player_card','Player Card'],
+                    ['features','Features'],
+                    ['value_estimate','Price Estimate'],
+                    ['quantity','Qty'],
+                    ['date_added','Date Added'],
+                  ].map(([key,label]) => (
+                    <th
+                      key={key}
+                      className={`sortable ${sortBy===key ? 'sorted' : ''}`}
+                      onClick={() => {
+                        if (sortBy === key) setSortDir(sortDir === 'asc' ? 'desc' : 'asc');
+                        else { setSortBy(key); setSortDir('asc'); }
+                        setCurrentPage(1);
+                      }}
+                      title={`Sort by ${label}${sortBy===key ? (sortDir==='asc'?' (asc)':' (desc)') : ''}`}
+                    >
+                      {label}{sortBy===key ? (sortDir==='asc' ? ' ▲' : ' ▼') : ''}
+                    </th>
+                  ))}
                   <th>Actions</th>
                 </tr>
               </thead>
@@ -446,7 +444,6 @@ function DatabaseBrowser({ onNavigate }) {
                         <td><input type="text" value={editFormData.features || ''} onChange={(e) => updateFormField('features', e.target.value)} placeholder="e.g., rookie, autograph" /></td>
                         <td><input type="text" value={editFormData.value_estimate || ''} onChange={(e) => updateFormField('value_estimate', e.target.value)} placeholder="$1-5 or $12.34" /></td>
                         <td><input type="number" value={editFormData.quantity} onChange={(e) => updateFormField('quantity', parseInt(e.target.value))} /></td>
-                        <td><input type="text" value={editFormData.last_price || ''} onChange={(e) => updateFormField('last_price', e.target.value)} placeholder="0.00" /></td>
                         <td><span className="readonly-field">{formatFieldValue('date_added', card.date_added)}</span></td>
                         <td className="actions">
                           <button onClick={() => handleSave(card.id)} className="save-btn">Save</button>
@@ -462,20 +459,19 @@ function DatabaseBrowser({ onNavigate }) {
                             onChange={() => handleSelectCard(card.id)}
                           />
                         </td>
-                        <td>{formatFieldValue('name', card.name)}</td>
-                        <td>{formatFieldValue('sport', card.sport)}</td>
-                        <td>{formatFieldValue('brand', card.brand)}</td>
-                        <td>{formatFieldValue('number', card.number)}</td>
-                        <td>{formatFieldValue('copyright_year', card.copyright_year)}</td>
-                        <td>{formatFieldValue('team', card.team)}</td>
-                        <td>{formatFieldValue('card_set', card.card_set)}</td>
-                        <td>{formatFieldValue('condition', card.condition)}</td>
-                        <td>{formatFieldValue('is_player_card', card.is_player_card)}</td>
-                        <td>{formatFieldValue('features', card.features)}</td>
-                        <td>{formatFieldValue('value_estimate', card.value_estimate)}</td>
-                        <td>{formatFieldValue('quantity', card.quantity)}</td>
-                        <td>{formatFieldValue('last_price', card.last_price)}</td>
-                        <td>{formatFieldValue('date_added', card.date_added)}</td>
+                        <td className={`${sortBy==='name'?'sorted-cell':''}`}>{formatFieldValue('name', card.name)}</td>
+                        <td className={`${sortBy==='sport'?'sorted-cell':''}`}>{formatFieldValue('sport', card.sport)}</td>
+                        <td className={`${sortBy==='brand'?'sorted-cell':''}`}>{formatFieldValue('brand', card.brand)}</td>
+                        <td className={`${sortBy==='number'?'sorted-cell':''}`}>{formatFieldValue('number', card.number)}</td>
+                        <td className={`${sortBy==='copyright_year'?'sorted-cell':''}`}>{formatFieldValue('copyright_year', card.copyright_year)}</td>
+                        <td className={`${sortBy==='team'?'sorted-cell':''}`}>{formatFieldValue('team', card.team)}</td>
+                        <td className={`${sortBy==='card_set'?'sorted-cell':''}`}>{formatFieldValue('card_set', card.card_set)}</td>
+                        <td className={`${sortBy==='condition'?'sorted-cell':''}`}>{formatFieldValue('condition', card.condition)}</td>
+                        <td className={`${sortBy==='is_player_card'?'sorted-cell':''}`}>{formatFieldValue('is_player_card', card.is_player_card)}</td>
+                        <td className={`${sortBy==='features'?'sorted-cell':''}`}>{formatFieldValue('features', card.features)}</td>
+                        <td className={`${sortBy==='value_estimate'?'sorted-cell':''}`}>{formatFieldValue('value_estimate', card.value_estimate)}</td>
+                        <td className={`${sortBy==='quantity'?'sorted-cell':''}`}>{formatFieldValue('quantity', card.quantity)}</td>
+                        <td className={`${sortBy==='date_added'?'sorted-cell':''}`}>{formatFieldValue('date_added', card.date_added)}</td>
                         <td className="actions">
                           <button onClick={() => handleEdit(card)} className="edit-btn">Edit</button>
                           <button onClick={() => handleDelete(card.id)} className="delete-btn">Delete</button>

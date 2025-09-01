@@ -747,17 +747,19 @@
 
 .zoom-controls {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
   display: flex;
-  gap: 5px;
+  gap: 8px;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.75);
   padding: 8px 12px;
-  border-radius: 6px;
+  border-radius: 9999px;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   z-index: 10;
+  backdrop-filter: blur(6px) saturate(160%);
 }
 
 .zoom-controls button {
@@ -778,6 +780,11 @@
 
 .zoom-controls button:hover {
   background: rgba(255, 255, 255, 0.3);
+}
+
+.zoom-controls .zoom-readout {
+  min-width: 44px;
+  text-align: center;
 }
 
 .zoom-controls button:last-child {
@@ -837,8 +844,9 @@
   }
   
   .zoom-controls {
-    top: 5px;
-    right: 5px;
+    left: 50%;
+    bottom: 6px;
+    transform: translateX(-50%);
     padding: 6px 8px;
     font-size: 12px;
   }
@@ -876,6 +884,60 @@
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
+
+/* Verification reprocess progress (top drop-down) */
+.verify-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: transform 0.35s ease;
+  z-index: 1000;
+}
+.verify-progress.show { transform: translateY(0); }
+.verify-progress-inner {
+  background: #ffffffcc;
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 16px 14px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 12px;
+}
+.verify-progress-title { font-size: 0.875rem; color: #111827; margin-bottom: 6px; font-weight: 600; }
+.verify-progress-actions { display: flex; align-items: center; }
+.progress-track.top { height: 6px; grid-column: 1 / -1; }
+.progress-bar.indeterminate {
+  position: relative;
+  overflow: hidden;
+}
+.progress-bar.indeterminate::before {
+  content: '';
+  position: absolute;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  animation: indeterminate 1.2s infinite;
+}
+@keyframes indeterminate {
+  0% { left: -40%; }
+  50% { left: 60%; }
+  100% { left: 100%; }
+}
+
+.cancel-processing {
+  background: #f9fafb;
+  border: 1px solid #e5e5e5;
+  color: #374151;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+.cancel-processing:hover { border-color: #d1d5db; background: #f3f4f6; }
 
 .system-log-button:hover {
   background: #404040;

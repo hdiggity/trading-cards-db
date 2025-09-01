@@ -7,6 +7,7 @@ function SystemLogs({ onNavigate }) {
   const [error, setError] = useState(null);
   const [selectedLog, setSelectedLog] = useState(null);
   const [autoRefresh, setAutoRefresh] = useState(false);
+  const [totals, setTotals] = useState(null);
 
   useEffect(() => {
     fetchLogs();
@@ -33,6 +34,7 @@ function SystemLogs({ onNavigate }) {
       
       const data = await response.json();
       setLogs(data.logs || []);
+      setTotals(data.totals || null);
       setError(null);
     } catch (err) {
       console.error('Error fetching logs:', err);
@@ -99,7 +101,7 @@ function SystemLogs({ onNavigate }) {
     return (
       <div className="system-logs">
         <div className="logs-header">
-          <h2>System Logs</h2>
+          <h2>system logs</h2>
           <button onClick={() => onNavigate('main')} className="back-button">
             ← Back to Main
           </button>
@@ -112,7 +114,7 @@ function SystemLogs({ onNavigate }) {
   return (
     <div className="system-logs">
       <div className="logs-header">
-        <h2>System Logs</h2>
+        <h2>system logs</h2>
         <div className="logs-controls">
           <label>
             <input
@@ -146,6 +148,22 @@ function SystemLogs({ onNavigate }) {
             <span className="stats-label">Total Logs:</span>
             <span className="stats-value">{logs.length}</span>
           </div>
+          {totals && (
+            <>
+              <div className="stats-item">
+                <span className="stats-label">Uploads in DB:</span>
+                <span className="stats-value">{totals.uploadsTotal}</span>
+              </div>
+              <div className="stats-item">
+                <span className="stats-label">Verified:</span>
+                <span className="stats-value">{totals.uploadsVerified}</span>
+              </div>
+              <div className="stats-item">
+                <span className="stats-label">Pending:</span>
+                <span className="stats-value">{totals.uploadsPending}</span>
+              </div>
+            </>
+          )}
           <div className="stats-item">
             <span className="stats-label">Errors:</span>
             <span className="stats-value error-count">
@@ -208,7 +226,7 @@ function SystemLogs({ onNavigate }) {
       </div>
 
       <div className="logs-help">
-        <h3>How to Use System Logs</h3>
+        <h3>how to use system logs</h3>
         <ul>
           <li><strong>For Claude:</strong> Copy error logs and paste them when reporting issues for more accurate debugging</li>
           <li><strong>Debug Processing:</strong> Check logs when card processing fails to understand what went wrong</li>

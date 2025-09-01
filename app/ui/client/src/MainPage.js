@@ -8,7 +8,12 @@ function MainPage({ onNavigate }) {
     total_quantity: 0,
     unique_players: 0,
     unique_years: 0,
-    unique_brands: 0
+    unique_brands: 0,
+    unique_sports: 0,
+    total_value: 0,
+    years_summary: [],
+    brands_summary: [],
+    sports_summary: []
   });
   const [pendingCount, setPendingCount] = useState(0);
   const [rawScanCount, setRawScanCount] = useState(0);
@@ -186,55 +191,137 @@ function MainPage({ onNavigate }) {
       >
         <div className="top-progress-inner">
           <div className="top-progress-title">Processing raw scans… {bgProgress}%</div>
+          <div className="top-progress-actions">
+            <button 
+              className="cancel-processing"
+              type="button"
+              onClick={async () => {
+                try {
+                  const r = await fetch('http://localhost:3001/api/cancel-processing', { method: 'POST' });
+                  if (!r.ok) throw new Error('request failed');
+                } catch (e) {
+                  console.error('cancel failed', e);
+                }
+                setBgProcessing(false);
+                setProcessing(false);
+              }}
+              title="Cancel background processing"
+            >
+              cancel
+            </button>
+          </div>
           <div className="progress-track top">
             <div className="progress-bar" style={{ width: `${bgProgress}%` }} />
           </div>
         </div>
       </div>
       <header className="main-header">
-        <h1>Trading Cards Database</h1>
+        <h1>trading cards database</h1>
       </header>
 
       <div className="stats-section">
-        <h2>Collection</h2>
+        <h2>collection totals</h2>
         <div className="stats-grid">
           <div className="stat-card">
             <div className="stat-number">{stats.total_cards}</div>
             <div className="stat-label">cards</div>
           </div>
-          <div className="stat-card">
+          <div className="stat-card hoverable">
             <div className="stat-number">{stats.unique_years}</div>
             <div className="stat-label">years</div>
+            {Array.isArray(stats.years_summary) && stats.years_summary.length > 0 && (
+              <div className="hover-preview" role="tooltip" aria-label="top years">
+                <div className="hover-title">top years</div>
+                <ul>
+                  {stats.years_summary.map((y, idx) => (
+                    <li key={idx}>
+                      <span className="hover-key">{y.year}</span>
+                      <span className="hover-dot" />
+                      <span className="hover-value">{y.count}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
-          <div className="stat-card">
+          <div className="stat-card hoverable">
             <div className="stat-number">{stats.unique_brands}</div>
             <div className="stat-label">brands</div>
+            {Array.isArray(stats.brands_summary) && stats.brands_summary.length > 0 && (
+              <div className="hover-preview" role="tooltip" aria-label="top brands">
+                <div className="hover-title">top brands</div>
+                <ul>
+                  {stats.brands_summary.map((b, idx) => (
+                    <li key={idx}>
+                      <span className="hover-key">{b.brand || 'unknown'}</span>
+                      <span className="hover-dot" />
+                      <span className="hover-value">{b.count}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className="stat-card hoverable">
+            <div className="stat-number">{stats.unique_sports}</div>
+            <div className="stat-label">sports</div>
+            {Array.isArray(stats.sports_summary) && stats.sports_summary.length > 0 && (
+              <div className="hover-preview" role="tooltip" aria-label="top sports">
+                <div className="hover-title">top sports</div>
+                <ul>
+                  {stats.sports_summary.map((s, idx) => (
+                    <li key={idx}>
+                      <span className="hover-key">{s.sport || 'unknown'}</span>
+                      <span className="hover-dot" />
+                      <span className="hover-value">{s.count}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
           <div className="stat-card">
             <div className="stat-number">{stats.total_quantity}</div>
-            <div className="stat-label">quantity</div>
+            <div className="stat-label">total quantity</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">${stats.total_value?.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+            <div className="stat-label">total value</div>
           </div>
         </div>
       </div>
 
       <div className="upload-section">
-        <h2>Upload Photos</h2>
+        <h2>upload photos</h2>
         <UploadDropZone onUploadComplete={handleUploadComplete} />
       </div>
 
       <div className="actions-section">
-        <h2>Actions</h2>
+        <h2>actions</h2>
         <div className="action-buttons">
-          <button 
-            className="action-button process"
-            onClick={handleProcessRawScans}
-            disabled={rawScanCount === 0 || processing || bgProcessing}
-          >
-            <div className="button-content">
-              <h3>process raw scans {rawScanCount > 0 && `(${rawScanCount})`}</h3>
-            </div>
-            {(processing || bgProcessing) && <div className="spinner" />}
-          </button>
+          <div className="process-row">
+            <button 
+              className="action-button process"
+              onClick={handleProcessRawScans}
+              disabled={rawScanCount === 0 || processing || bgProcessing}
+            >
+              <div className="button-content">
+                <h3>process raw scans {rawScanCount > 0 && `(${rawScanCount})`}</h3>
+              </div>
+              {(processing || bgProcessing) && <div className="spinner" />}
+            </button>
+          </div>
+          <div className="sub-actions">
+            <button 
+              className="secondary-button"
+              type="button"
+              onClick={() => onNavigate('raw-preview')}
+              disabled={rawScanCount === 0}
+              title={rawScanCount === 0 ? 'no raw scans to preview' : 'preview raw scans before processing'}
+            >
+              preview
+            </button>
+          </div>
 
           <button 
             className="action-button verify"

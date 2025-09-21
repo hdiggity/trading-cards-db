@@ -14,7 +14,7 @@ register_heif_opener()
 
 # Settings
 INPUT_DIR = "/Users/harlan/Downloads"
-OUTPUT_DIR = "/Users/harlan/Downloads"
+OUTPUT_DIR = "/Users/harlan/Documents/personal/code/programs/trading_cards_db/images/unprocessed_single_front"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Allowed image extensions (lowercase)
@@ -304,28 +304,31 @@ def _build_llm_prompt() -> str:
         "  \"notes\": \"optional notes or 'n/a'\"\n"
         "}\n\n"
         "Rules: Distinguish NAME (title on card) from SET (product line). Use copyright marks and tiny fine print for year. Use 'n/a' only if truly missing.\n"
-        "Output must be valid JSON with exactly this shape: {\"cards\": [ {..fields..}, ... ] }."
-    )
+        "Output must be valid JSON with exactly this shape: {\"cards\": [ {..fields..}, ... ] }.")
 
 
-def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.1, max_tokens: int = 2000) -> dict:
+def analyze_with_llm(
+        image_path: str,
+        model: str = None,
+        temperature: float = 0.1,
+        max_tokens: int = 2000) -> dict:
     """Send the image to ChatGPT and return parsed JSON object with 'cards'."""
     try:
         from openai import OpenAI
     except ImportError as e:
-        raise RuntimeError("openai package not installed; install `openai` or run without --llm") from e
+        raise RuntimeError(
+            "openai package not installed; install `openai` or run without --llm") from e
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
     use_model = model or os.getenv("OPENAI_MODEL", "gpt-4o")
     b64, mime = _encode_image_for_llm(image_path)
-    messages = [
-        {"role": "system", "content": _build_llm_prompt()},
-        {
-            "role": "user",
-            "content": [
-                {"type": "image_url", "image_url": {"url": f"data:{mime};base64,{b64}"}},
-            ],
-        },
-    ]
+    messages = [{"role": "system",
+                 "content": _build_llm_prompt()},
+                {"role": "user",
+                 "content": [{"type": "image_url",
+                              "image_url": {"url": f"data:{mime};base64,{b64}"}},
+                             ],
+                 },
+                ]
     resp = client.chat.completions.create(
         model=use_model,
         messages=messages,
@@ -337,14 +340,23 @@ def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.
     try:
         data = json.loads(content)
         # Normalize category-like fields to lowercase for matching
+
         def norm(card: dict) -> dict:
             out = dict(card)
-            for k in ("name", "sport", "brand", "team", "card_set", "condition"):
+            for k in (
+                "name",
+                "sport",
+                "brand",
+                "team",
+                "card_set",
+                    "condition"):
                 if isinstance(out.get(k), str):
                     out[k] = out[k].lower().strip()
             if isinstance(out.get("features"), str):
-                feats = [t.strip().lower().replace("_", " ") for t in out["features"].split(",")]
-                out["features"] = ",".join(sorted(set([t for t in feats if t]))) if feats else "none"
+                feats = [t.strip().lower().replace("_", " ")
+                         for t in out["features"].split(",")]
+                out["features"] = ",".join(
+                    sorted(set([t for t in feats if t]))) if feats else "none"
             # If set is only brand/year, mark as n/a
             try:
                 cs = out.get("card_set") or ""
@@ -352,7 +364,19 @@ def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.
                 if isinstance(cs, str):
                     import re
                     leftovers = cs
-                    brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc"]
+                    brand_tokens = [
+                        "topps",
+                        "panini",
+                        "upper deck",
+                        "donruss",
+                        "fleer",
+                        "bowman",
+                        "leaf",
+                        "score",
+                        "pinnacle",
+                        "select",
+                        "o-pee-chee",
+                        "opc"]
                     for bt in brand_tokens + ([br] if br else []):
                         if bt:
                             leftovers = leftovers.replace(bt, "")
@@ -364,7 +388,9 @@ def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.
                 pass
             return out
         if isinstance(data, dict) and isinstance(data.get("cards"), list):
-            data["cards"] = [norm(c) if isinstance(c, dict) else c for c in data["cards"]]
+            data["cards"] = [
+                norm(c) if isinstance(
+                    c, dict) else c for c in data["cards"]]
             return data
     except Exception:
         pass
@@ -376,8 +402,8 @@ def analyze_with_llm(image_path: str, model: str = None, temperature: float = 0.
         if isinstance(obj, dict):
             return {"cards": [obj]}
     except Exception as e:
-        raise RuntimeError(f"LLM returned non-JSON content: {content[:200]}...") from e
-
+        raise RuntimeError(
+            f"LLM returned non-JSON content: {content[:200]}...") from e
 
 
 def undo_processing():
@@ -466,9 +492,17 @@ def main():
     )
     parser.add_argument(
         "--remove-originals",
-        action="store_true",
-        help="After successful optimization, remove original HEIC/HEIF file (only if optimized PNG exists)",
+        dest="keep_originals",
+        action="store_false",
+        help="Remove original HEIC/HEIF files after processing (default).",
     )
+    parser.add_argument(
+        "--keep-originals",
+        dest="keep_originals",
+        action="store_true",
+        help="Retain original HEIC/HEIF files after processing.",
+    )
+    parser.set_defaults(keep_originals=False)
     parser.add_argument(
         "--cleanup",
         action="store_true",
@@ -498,7 +532,8 @@ def main():
     if args.cleanup and os.path.isdir(effective_input):
         pre = cleanup_processed_heics(effective_input)
         if pre:
-            print(f"Pre-cleanup removed {pre} already-processed HEIC/HEIF files.")
+            print(
+                f"Pre-cleanup removed {pre} already-processed HEIC/HEIF files.")
 
     # Build list of image paths to process
     image_paths = list(
@@ -509,8 +544,10 @@ def main():
         # If a file was passed and it is not an allowed image
         if os.path.isfile(effective_input) and not is_image_file(
                 effective_input):
-            print(f"Input file is not a supported image type: {
-                effective_input}\n" f"Allowed: {sorted(ALLOWED_IMAGE_EXTS)}")
+            print(
+                "Input file is not a supported image type: "
+                f"{effective_input}\nAllowed: {sorted(ALLOWED_IMAGE_EXTS)}"
+            )
         else:
             print("No images found to process.")
         return
@@ -537,17 +574,21 @@ def main():
             result = process_image(full_path)
             if result is not None:
                 base_name = os.path.splitext(filename)[0]
-                target_dir = out_dir or os.path.dirname(full_path) or OUTPUT_DIR
+                target_dir = out_dir or os.path.dirname(
+                    full_path) or OUTPUT_DIR
                 os.makedirs(target_dir, exist_ok=True)
-                out_path = os.path.join(target_dir, f"{base_name}_optimized.png")
+                out_path = os.path.join(
+                    target_dir, f"{base_name}_optimized.png")
                 cv2.imwrite(out_path, result, [cv2.IMWRITE_PNG_COMPRESSION, 1])
-                # Optionally remove original HEIC/HEIF
-                if args.remove_originals and filename.lower().endswith((".heic", ".heif")) and os.path.isfile(out_path):
+                # Remove original HEIC/HEIF unless the user opts to keep
+                if (not args.keep_originals and filename.lower().endswith(
+                        (".heic", ".heif")) and os.path.isfile(out_path)):
                     try:
                         os.remove(full_path)
                         print(f"- Removed original HEIC: {filename}")
                     except Exception as e:
-                        print(f"Warning: could not remove source file {full_path}: {e}")
+                        print(
+                            f"Warning: could not remove source file {full_path}: {e}")
                 processed_count += 1
                 print(f"✓ Optimized: {filename} -> {out_path}")
             else:
@@ -565,7 +606,8 @@ def main():
     if args.cleanup and os.path.isdir(effective_input):
         post = cleanup_processed_heics(effective_input)
         if post:
-            print(f"Post-cleanup removed {post} already-processed HEIC/HEIF files.")
+            print(
+                f"Post-cleanup removed {post} already-processed HEIC/HEIF files.")
 
 
 if __name__ == "__main__":

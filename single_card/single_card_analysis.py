@@ -141,19 +141,21 @@ def four_point_transform(image, pts):
     rect[1] = pts[np.argmin(diff)]  # top-right
     rect[3] = pts[np.argmax(diff)]  # bottom-left
 
-    # Add padding to avoid overcropping
-    padding = 20  # pixels
     h, w = image.shape[:2]
 
-    # Expand the rectangle outward by padding amount
-    rect[0][0] = max(0, rect[0][0] - padding)  # top-left x
-    rect[0][1] = max(0, rect[0][1] - padding)  # top-left y
-    rect[1][0] = min(w, rect[1][0] + padding)  # top-right x
-    rect[1][1] = max(0, rect[1][1] - padding)  # top-right y
-    rect[2][0] = min(w, rect[2][0] + padding)  # bottom-right x
-    rect[2][1] = min(h, rect[2][1] + padding)  # bottom-right y
-    rect[3][0] = max(0, rect[3][0] - padding)  # bottom-left x
-    rect[3][1] = min(h, rect[3][1] + padding)  # bottom-left y
+    # Expand the detected quadrilateral so card borders stay in frame.
+    center = rect.mean(axis=0)
+    padding_ratio = 0.06  # expand ~6% relative to card size
+    rect = (rect - center) * (1 + padding_ratio) + center
+
+    padding_px = max(12, int(0.01 * min(h, w)))
+    vectors = rect - center
+    norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+    norms[norms == 0] = 1.0
+    rect = rect + (vectors / norms) * padding_px
+
+    rect[:, 0] = np.clip(rect[:, 0], 0, w - 1)
+    rect[:, 1] = np.clip(rect[:, 1], 0, h - 1)
 
     (tl, tr, br, bl) = rect
 
@@ -177,6 +179,15 @@ def four_point_transform(image, pts):
     # Apply perspective transform
     M = cv2.getPerspectiveTransform(rect, dst)
     warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
+
+    border = max(8, int(0.005 * min(maxHeight, maxWidth)))
+    warped = cv2.copyMakeBorder(
+        warped,
+        border,
+        border,
+        border,
+        border,
+        cv2.BORDER_REPLICATE)
     return warped
 
 

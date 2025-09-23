@@ -3,6 +3,7 @@ import os
 import sys
 import json
 import base64
+import shutil
 import numpy as np
 import argparse
 from pathlib import Path
@@ -14,7 +15,7 @@ register_heif_opener()
 
 # Settings
 INPUT_DIR = "/Users/harlan/Downloads"
-OUTPUT_DIR = "/Users/harlan/Documents/personal/code/programs/trading_cards_db/images/unprocessed_single_front"
+OUTPUT_DIR = INPUT_DIR  # Default output stays in Downloads
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Allowed image extensions (lowercase)
@@ -124,7 +125,30 @@ def detect_card_border(image):
             approx = cv2.approxPolyDP(hull, 0.02 * peri, True)
 
         if len(approx) == 4:
-            return np.squeeze(approx)
+            pts = np.squeeze(approx).astype("float32")
+            if pts.shape != (4, 2):
+                return None
+
+            # Skip dubious detections; err on the side of keeping full image.
+            if not cv2.isContourConvex(approx):
+                return None
+
+            poly_area = cv2.contourArea(pts)
+            total_area = width * height
+            if total_area <= 0:
+                return None
+            area_ratio = poly_area / total_area
+            if area_ratio < 0.45 or area_ratio > 0.98:
+                return None
+
+            x, y, w_box, h_box = cv2.boundingRect(pts)
+            if w_box == 0 or h_box == 0:
+                return None
+            aspect = max(w_box, h_box) / min(w_box, h_box)
+            if aspect < 1.05 or aspect > 1.8:
+                return None
+
+            return pts
 
     return None
 
@@ -145,10 +169,10 @@ def four_point_transform(image, pts):
 
     # Expand the detected quadrilateral so card borders stay in frame.
     center = rect.mean(axis=0)
-    padding_ratio = 0.06  # expand ~6% relative to card size
+    padding_ratio = 0.1  # expand ~10% relative to card size
     rect = (rect - center) * (1 + padding_ratio) + center
 
-    padding_px = max(12, int(0.01 * min(h, w)))
+    padding_px = max(16, int(0.015 * min(h, w)))
     vectors = rect - center
     norms = np.linalg.norm(vectors, axis=1, keepdims=True)
     norms[norms == 0] = 1.0
@@ -168,19 +192,23 @@ def four_point_transform(image, pts):
     heightB = np.linalg.norm(tl - bl)
     maxHeight = int(max(heightA, heightB))
 
-    # Destination rectangle
+    # Destination rectangle with generous safety margin
+    dst_margin = max(16, int(0.04 * min(maxHeight, maxWidth)))
     dst = np.array([
-        [0, 0],
-        [maxWidth - 1, 0],
-        [maxWidth - 1, maxHeight - 1],
-        [0, maxHeight - 1]
+        [dst_margin, dst_margin],
+        [maxWidth - 1 + dst_margin, dst_margin],
+        [maxWidth - 1 + dst_margin, maxHeight - 1 + dst_margin],
+        [dst_margin, maxHeight - 1 + dst_margin]
     ], dtype="float32")
 
-    # Apply perspective transform
+    # Apply perspective transform with expanded canvas
     M = cv2.getPerspectiveTransform(rect, dst)
-    warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
+    warped = cv2.warpPerspective(
+        image,
+        M,
+        (maxWidth + 2 * dst_margin, maxHeight + 2 * dst_margin))
 
-    border = max(8, int(0.005 * min(maxHeight, maxWidth)))
+    border = max(6, int(0.003 * min(warped.shape[0], warped.shape[1])))
     warped = cv2.copyMakeBorder(
         warped,
         border,
@@ -279,6 +307,58 @@ def cleanup_processed_heics(root_path: str) -> int:
                     except Exception:
                         pass
     return removed
+
+
+def mirror_output(src_path: str, mirror_dir: str | None) -> str | None:
+    """Copy src_path into mirror_dir, returning destination path if successful."""
+    if not mirror_dir:
+        return None
+
+    try:
+        os.makedirs(mirror_dir, exist_ok=True)
+    except Exception as exc:
+        print(f"Warning: could not create mirror dir {mirror_dir}: {exc}")
+        return None
+
+    dest_path = os.path.join(mirror_dir, os.path.basename(src_path))
+
+    try:
+        if os.path.exists(dest_path) and os.path.samefile(src_path, dest_path):
+            return dest_path
+    except FileNotFoundError:
+        # samefile may raise if either side missing; safe to continue
+        pass
+
+    try:
+        shutil.copy2(src_path, dest_path)
+        return dest_path
+    except Exception as exc:
+        print(f"Warning: failed to mirror {src_path} to {mirror_dir}: {exc}")
+    return None
+
+
+def remove_source_file(source_path: str, generated_path: str, keep_originals: bool) -> bool:
+    """Remove the original image when allowed. Returns True if removed."""
+    if keep_originals:
+        return False
+
+    suffix = Path(source_path).suffix.lower()
+    if suffix not in ALLOWED_IMAGE_EXTS:
+        return False
+
+    try:
+        if os.path.exists(generated_path) and os.path.samefile(source_path, generated_path):
+            return False
+    except FileNotFoundError:
+        # Either side missing; continue attempting removal.
+        pass
+
+    try:
+        os.remove(source_path)
+        return True
+    except Exception as exc:
+        print(f"Warning: could not remove source file {source_path}: {exc}")
+    return False
 
 
 def _encode_image_for_llm(filepath: str) -> tuple[str, str]:
@@ -499,7 +579,20 @@ def main():
     parser.add_argument(
         "--out",
         default=None,
-        help="Optional output directory for JSON or optimized images (defaults to image directory).",
+        help=(
+            "Optional output directory for JSON or optimized images "
+            "(defaults to ~/Downloads)."
+        ),
+    )
+    parser.add_argument(
+        "--mirror-dir",
+        default=None,
+        help="Optional secondary directory to copy optimized images into.",
+    )
+    parser.add_argument(
+        "--no-mirror",
+        action="store_true",
+        help="Skip mirroring optimized images to a secondary directory.",
     )
     parser.add_argument(
         "--remove-originals",
@@ -538,6 +631,9 @@ def main():
 
     # Output directory (optional override)
     out_dir = os.path.expanduser(args.out) if args.out else None
+    mirror_dir = None
+    if not args.no_mirror and args.mirror_dir:
+        mirror_dir = os.path.expanduser(args.mirror_dir)
 
     # Optional pre-cleanup
     if args.cleanup and os.path.isdir(effective_input):
@@ -585,23 +681,33 @@ def main():
             result = process_image(full_path)
             if result is not None:
                 base_name = os.path.splitext(filename)[0]
-                target_dir = out_dir or os.path.dirname(
-                    full_path) or OUTPUT_DIR
+
+                if out_dir:
+                    target_dir = out_dir
+                else:
+                    target_dir = OUTPUT_DIR
+
                 os.makedirs(target_dir, exist_ok=True)
                 out_path = os.path.join(
                     target_dir, f"{base_name}_optimized.png")
                 cv2.imwrite(out_path, result, [cv2.IMWRITE_PNG_COMPRESSION, 1])
-                # Remove original HEIC/HEIF unless the user opts to keep
-                if (not args.keep_originals and filename.lower().endswith(
-                        (".heic", ".heif")) and os.path.isfile(out_path)):
-                    try:
-                        os.remove(full_path)
-                        print(f"- Removed original HEIC: {filename}")
-                    except Exception as e:
-                        print(
-                            f"Warning: could not remove source file {full_path}: {e}")
+                if remove_source_file(full_path, out_path, args.keep_originals):
+                    print(f"- Removed original: {filename}")
                 processed_count += 1
                 print(f"✓ Optimized: {filename} -> {out_path}")
+
+                if mirror_dir:
+                    try:
+                        target_real = os.path.realpath(target_dir)
+                        mirror_real = os.path.realpath(mirror_dir)
+                    except FileNotFoundError:
+                        target_real = target_dir
+                        mirror_real = mirror_dir
+
+                    if target_real != mirror_real:
+                        mirrored = mirror_output(out_path, mirror_dir)
+                        if mirrored and mirrored != out_path:
+                            print(f"  ↳ Mirrored copy -> {mirrored}")
             else:
                 print(f"✗ Failed to process: {filename}")
                 failed_count += 1
@@ -610,9 +716,9 @@ def main():
     print(f"Successfully processed: {processed_count} images")
     print(f"Failed: {failed_count} images")
     if args.llm:
-        print(f"JSON files saved next to images or in --out directory")
+        print("JSON files saved to the specified output directory (default ~/Downloads)")
     else:
-        print(f"Optimized images saved next to originals or in --out directory")
+        print("Optimized images saved to the specified output directory (default ~/Downloads)")
     # Optional post-cleanup
     if args.cleanup and os.path.isdir(effective_input):
         post = cleanup_processed_heics(effective_input)

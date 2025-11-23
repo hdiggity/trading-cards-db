@@ -493,6 +493,16 @@ function App({ onNavigate }) {
   useEffect(() => {
     fetchPendingCards();
     fetchFieldOptions();
+
+    // Poll for newly processed cards every 10 seconds
+    const pollInterval = setInterval(() => {
+      // Only poll if not currently processing an action
+      if (!processing && !reprocessing) {
+        fetchPendingCards();
+      }
+    }, 10000);
+
+    return () => clearInterval(pollInterval);
   }, []);
 
   // Auto-start editing when card changes (isEditing intentionally excluded to prevent loops)

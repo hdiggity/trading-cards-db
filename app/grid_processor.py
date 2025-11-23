@@ -484,17 +484,25 @@ Focus on information that would help match this front with a corresponding back.
         score = 0.0
         matches = 0
         total_checks = 0
-        
-        # Name matching (if both have names)
+
+        # Name matching (REQUIRED if both have names)
         back_name = str(back_data.get('name', '')).lower().strip()
         front_name = str(front_info.get('name', '')).lower().strip()
-        
+
+        name_match = False
+        name_checked = False
         if back_name and front_name and back_name != 'unknown' and front_name != 'unknown':
+            name_checked = True
             total_checks += 1
             if back_name in front_name or front_name in back_name:
                 score += 0.4
                 matches += 1
-        
+                name_match = True
+
+        # If names were available but didn't match, return 0 (require name match)
+        if name_checked and not name_match:
+            return 0.0
+
         # Team matching
         back_team = str(back_data.get('team', '')).lower().strip()
         front_team = str(front_info.get('team', '')).lower().strip()

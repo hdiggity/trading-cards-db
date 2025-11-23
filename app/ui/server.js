@@ -504,6 +504,10 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
     const { id, cardIndex } = req.params;
     const { modifiedData } = req.body;
 
+    // Lock to prevent save-progress race condition
+    PASS_IN_PROGRESS.add(id);
+    console.log(`[pass-card] Locked ${id} for processing`);
+
     // Find the files - JSONs in pending root, images in bulk back subdirectory
     const pendingFiles = await fs.readdir(PENDING_VERIFICATION_DIR);
     let bulkBackFiles = [];
@@ -610,7 +614,7 @@ card_data = json.loads(sys.stdin.read())
 
 # Before writing, create a timestamped DB backup for safety
 try:
-    backup_path = backup_database(os.getenv('DB_PATH', 'trading_cards.db'), os.getenv('DB_BACKUP_DIR', 'backups'))
+    backup_path = backup_database(os.getenv('DB_PATH', 'cards/verified/trading_cards.db'), os.getenv('DB_BACKUP_DIR', 'backups'))
     print(f"DB backup created: {backup_path}", file=sys.stderr)
 except Exception as e:
     print(f"Warning: DB backup failed: {e}", file=sys.stderr)
@@ -715,13 +719,19 @@ print("Database import completed successfully")
           try {
             await fs.writeFile(jsonPath, JSON.stringify(allCardData, null, 2));
             console.log(`[pass-card] JSON updated successfully: ${jsonPath}`);
+            // Release lock after JSON is safely written
+            PASS_IN_PROGRESS.delete(id);
+            console.log(`[pass-card] Unlocked ${id}`);
           } catch (writeErr) {
             console.error(`[pass-card] CRITICAL: Failed to update JSON file: ${writeErr.message}`);
             // Card is already in DB but JSON wasn't updated - try again
             try {
               await fs.writeFile(jsonPath, JSON.stringify(allCardData, null, 2));
               console.log(`[pass-card] JSON retry succeeded`);
+              PASS_IN_PROGRESS.delete(id);
+              console.log(`[pass-card] Unlocked ${id} after retry`);
             } catch (retryErr) {
+              PASS_IN_PROGRESS.delete(id);
               console.error(`[pass-card] CRITICAL: JSON retry failed: ${retryErr.message}`);
               return res.status(500).json({
                 error: 'Card added to database but failed to update pending list. Please refresh.',
@@ -775,15 +785,20 @@ print("Database import completed successfully")
           });
         } else {
           // No cards left, move files to verified folder
+          // NOTE: Keep lock held until JSON is deleted to prevent save-progress from recreating it
+
           const imageFile = bulkBackFiles.find(file => {
             const imgBaseName = path.parse(file).name;
             const imgExt = path.parse(file).ext.toLowerCase();
             return imgBaseName === id && ['.jpg', '.jpeg', '.png', '.heic'].includes(imgExt);
           });
-          
+
           try {
-            // Delete grouped JSON file (data is now in database)
+            // Delete grouped JSON file FIRST (data is now in database)
             await fs.unlink(jsonPath);
+            // NOW release the lock - after JSON is deleted
+            PASS_IN_PROGRESS.delete(id);
+            console.log(`[pass-card] Unlocked ${id} - all cards done, JSON deleted`);
 
             // Copy image file to verified folder with verified_ prefix (keep original in pending)
             if (imageFile) {
@@ -802,6 +817,14 @@ print("Database import completed successfully")
                 );
                 console.log(`[pass-card] Copied image to verified: ${verifiedImageName}`);
               }
+
+              // Delete the original from pending after successful copy to verified
+              try {
+                await fs.unlink(path.join(PENDING_BULK_BACK_DIR, imageFile));
+                console.log(`[pass-card] Deleted original from pending: ${imageFile}`);
+              } catch (delErr) {
+                console.error(`[pass-card] Warning: Failed to delete original: ${delErr.message}`);
+              }
             }
 
             // Log verification action (all from this image processed)
@@ -818,6 +841,7 @@ print("Database import completed successfully")
             });
             try { await audit('verify_image_archived', { id, scope: 'all' }); } catch {}
           } catch (moveError) {
+            PASS_IN_PROGRESS.delete(id);
             console.error('Error moving files to verified folder:', moveError);
             res.json({
               success: true,
@@ -828,14 +852,18 @@ print("Database import completed successfully")
           }
         }
       } else {
-        res.status(500).json({ 
-          error: 'Failed to import card to database', 
-          details: error.trim() 
+        PASS_IN_PROGRESS.delete(id);
+        res.status(500).json({
+          error: 'Failed to import card to database',
+          details: error.trim()
         });
       }
     });
-    
+
   } catch (error) {
+    // Always release lock on error
+    const id = req.params?.id;
+    if (id) PASS_IN_PROGRESS.delete(id);
     console.error('Error processing single card pass action:', error);
     res.status(500).json({ error: 'Failed to process single card pass action' });
   }
@@ -1055,6 +1083,12 @@ app.post('/api/save-progress/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const { data, cardIndex } = req.body;
+
+    // Skip if pass-card is currently processing this file (prevents race condition)
+    if (PASS_IN_PROGRESS.has(id)) {
+      console.log(`[save-progress] Skipping - pass-card in progress for ${id}`);
+      return res.json({ success: true, message: 'Skipped - pass in progress', skipped: true });
+    }
 
     // Find the JSON file in pending verification directory
     const pendingFiles = await fs.readdir(PENDING_VERIFICATION_DIR);
@@ -1847,6 +1881,8 @@ const STATUS_FILE = path.join(__dirname, '../../logs/processing_status.json');
 const PYTHON_PROGRESS_FILE = path.join(__dirname, '../../logs/processing_progress.json');
 // Track active reprocess jobs in-memory by pending verification id
 const REPROCESS_JOBS = new Map();
+// Track active pass-card operations to prevent save-progress race conditions
+const PASS_IN_PROGRESS = new Set();
 
 function writeStatus(status) {
   try {

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/harlan/Documents/personal/code/programs/trading_cards_db/app/run.py", line 9, in <module>
+    from .utils import gpt_extract_cards_from_image, gpt_extract_cards_single_pass, save_cards_to_verification
+  File "/Users/harlan/Documents/personal/code/programs/trading_cards_db/app/utils.py", line 16, in <module>
+    from app.accuracy import (
+  File "/Users/harlan/Documents/personal/code/programs/trading_cards_db/app/accuracy.py", line 8, in <module>
+    from app.learning import get_learning_insights
+ModuleNotFoundError: No module named 'app.learning'

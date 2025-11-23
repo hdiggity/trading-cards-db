@@ -4,10 +4,10 @@ from typing import List, Optional
 from sqlmodel import select
 
 from app.database import get_session
-from app.logging_system import logger, LogSource, ActionType, LogLevel
+from app.logging_system import ActionType, LogLevel, LogSource, logger
 from app.models import Card
-from app.schemas import CardCreate
 from app.per_card_export import write_per_card_file
+from app.schemas import CardCreate
 
 
 def upsert_card(card_data: CardCreate, image_path: str = None):
@@ -32,10 +32,7 @@ def upsert_card(card_data: CardCreate, image_path: str = None):
             try:
                 rec = f"{existing.name} #{existing.number or ''} {existing.brand or ''} {existing.copyright_year or ''}".strip()
                 logger.log_database_operation(
-                    operation="update",
-                    table="cards",
-                    record_info=rec,
-                    success=True
+                    operation="update", table="cards", record_info=rec, success=True
                 )
                 # Update per-unique-card JSON snapshot
                 try:
@@ -53,10 +50,7 @@ def upsert_card(card_data: CardCreate, image_path: str = None):
         try:
             rec = f"{new_card.name} #{new_card.number or ''} {new_card.brand or ''} {new_card.copyright_year or ''}".strip()
             logger.log_database_operation(
-                operation="insert",
-                table="cards",
-                record_info=rec,
-                success=True
+                operation="insert", table="cards", record_info=rec, success=True
             )
             # Create per-unique-card JSON snapshot
             try:
@@ -69,9 +63,7 @@ def upsert_card(card_data: CardCreate, image_path: str = None):
 
 
 def list_cards() -> List[Card]:
-    """
-    Retrieve all cards in the database.
-    """
+    """Retrieve all cards in the database."""
     with get_session() as sess:
         rows = sess.exec(select(Card)).all()
         try:
@@ -80,7 +72,7 @@ def list_cards() -> List[Card]:
                 LogSource.DATABASE,
                 "List cards",
                 ActionType.DB_QUERY,
-                details=f"returned={len(rows)}"
+                details=f"returned={len(rows)}",
             )
         except Exception:
             pass
@@ -88,9 +80,7 @@ def list_cards() -> List[Card]:
 
 
 def get_card_by_id(card_id: int) -> Optional[Card]:
-    """
-    Fetch a single Card by its primary key.
-    """
+    """Fetch a single Card by its primary key."""
     with get_session() as sess:
         row = sess.get(Card, card_id)
         try:
@@ -99,7 +89,7 @@ def get_card_by_id(card_id: int) -> Optional[Card]:
                 LogSource.DATABASE,
                 f"Get card by id {card_id}",
                 ActionType.DB_QUERY,
-                details="found" if row else "not_found"
+                details="found" if row else "not_found",
             )
         except Exception:
             pass

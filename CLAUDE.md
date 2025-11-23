@@ -5,8 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ### Core Processing Pipeline
-- `python -m app.run --raw` - Process raw trading card images from `images/raw_scans/` using GPT-4 Vision API
-- `python -m app.run --grid` - Process 3x3 grid card back images from `images/unprocessed_bulk_back/` with enhanced accuracy and front image matching from `images/unprocessed_single_front/`
+- `python -m app.run --raw` - Process raw trading card images from `cards/raw_scans/` using GPT-4 Vision API
+- `python -m app.run --grid` - Process 3x3 grid card back images from `cards/unprocessed_bulk_back/` with enhanced accuracy and front image matching from `cards/unprocessed_single_front/`
 - `python -m app.run --auto` - Auto-detect image types and process with optimal methods (recommended)
 - `python -m app.run --all` - Process all available images with appropriate methods
 - `python -m app.run --undo` - Undo last processing operation (moves image back to raw_scans)
@@ -24,11 +24,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a trading card digitization system that uses GPT-4 Vision to extract structured data from scanned trading card images.
 
 ### Data Flow
-1. **INPUT**: 3x3 Grid Backs in `images/unprocessed_bulk_back/` - **ONLY RAW INPUT TO PIPELINE**
+1. **INPUT**: 3x3 Grid Backs in `cards/unprocessed_bulk_back/` - **ONLY RAW INPUT TO PIPELINE**
 2. **PROCESSING**: Enhanced GPT-4 Vision extraction from grid back cards (9 cards per image)
-3. **AUTO-MATCHING**: System searches `images/unprocessed_single_front/` for corresponding front images (read-only, no files moved)
+3. **AUTO-MATCHING**: System searches `cards/unprocessed_single_front/` for corresponding front images (read-only, no files moved)
 4. **ENHANCEMENT**: Value estimation and TCDB verification
-5. **OUTPUT**: Structured JSON with extracted data, matched front files, and value estimates → `images/pending_verification/`
+5. **OUTPUT**: Structured JSON with extracted data, matched front files, and value estimates → `cards/pending_verification/`
 6. **VERIFICATION**: React UI for manual review and editing
 7. **DATABASE**: Final import to SQLite database after verification
 

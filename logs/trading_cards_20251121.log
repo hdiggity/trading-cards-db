@@ -1,0 +1,281 @@
+2025-11-21 13:34:38,792 - trading_cards - INFO - [filesystem] File uploaded: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+2025-11-21 13:34:38,794 - trading_cards - INFO - [system] Upload status changed: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC -> processing
+2025-11-21 13:34:38,794 - trading_cards - INFO - [image_processing] Started processing: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+2025-11-21 13:35:16,349 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:35:16,377 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC (9 cards)
+2025-11-21 13:35:16,380 - trading_cards - INFO - [system] Upload status changed: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC -> pending_verification
+2025-11-21 13:35:17,408 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 13:35:29,495 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:35:30,528 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 13:35:42,910 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:35:49,479 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:35:58,265 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:36:16,500 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:36:24,484 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:36:31,083 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:36:37,995 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:36:45,729 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:36:49,674 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:36:55,500 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:37:02,020 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:37:08,469 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:37:30,067 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:37:30,192 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 13:37:38,753 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:42:50,940 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 13:42:50,942 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 13:42:50,942 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 13:43:43,313 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:43:43,337 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2068.HEIC (9 cards)
+2025-11-21 13:43:43,348 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+2025-11-21 13:43:43,696 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 13:44:55,683 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 13:44:55,685 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 13:44:55,685 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 13:45:28,005 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:45:28,018 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2068.HEIC (9 cards)
+2025-11-21 13:45:28,022 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+2025-11-21 13:45:28,168 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 13:45:34,289 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:45:34,424 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 13:48:41,739 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 13:48:41,741 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 13:48:41,742 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 13:49:16,873 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 13:49:16,875 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 13:49:16,875 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 13:49:53,835 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 13:49:53,836 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 13:49:53,837 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 13:50:26,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:50:26,072 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2068.HEIC (9 cards)
+2025-11-21 13:50:26,075 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+2025-11-21 13:50:26,431 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 13:55:52,985 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 13:55:52,987 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 13:55:52,987 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 14:01:29,640 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 14:01:29,642 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 14:01:29,642 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 14:03:20,061 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:03:20,083 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2068.HEIC (9 cards)
+2025-11-21 14:03:20,088 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+2025-11-21 14:03:20,525 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:03:27,216 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:03:27,621 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:03:34,379 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:03:42,079 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:03:50,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:03:57,506 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:05,782 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:14,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:23,432 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:30,862 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:35,393 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:42,299 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:49,678 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:04:57,442 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:04,854 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:05,002 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:05:12,551 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:19,441 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:25,586 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:33,634 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:33,748 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:05:33,910 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:05:34,045 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:05:40,619 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:48,428 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:05:56,531 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:05,015 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:12,331 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:16,591 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:16,752 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:16,862 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:23,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:23,868 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:30,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:30,815 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:37,844 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:37,957 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:38,124 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:38,260 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:38,375 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:06:44,061 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:06:44,070 - trading_cards - ERROR - [system] Upload status changed: IMG_2068.HEIC -> failed
+2025-11-21 14:06:54,948 - trading_cards - INFO - [filesystem] File uploaded: IMG_2078.HEIC
+2025-11-21 14:06:54,951 - trading_cards - INFO - [system] Upload status changed: IMG_2078.HEIC -> processing
+2025-11-21 14:06:54,951 - trading_cards - INFO - [image_processing] Started processing: IMG_2078.HEIC
+2025-11-21 14:07:08,697 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:07:08,710 - trading_cards - ERROR - [image_processing] Grid processing fail: IMG_2078.HEIC
+2025-11-21 14:07:08,713 - trading_cards - ERROR - [system] Upload status changed: IMG_2078.HEIC -> failed
+2025-11-21 14:07:08,867 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:07:15,772 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:07:15,940 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:07:22,920 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:07:29,086 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:07:35,638 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:07:41,994 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:07:51,143 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:07:58,262 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:05,652 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:13,005 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:17,662 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:24,530 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:31,046 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:38,266 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:45,862 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:08:45,998 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:08:53,160 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:09:00,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:09:08,664 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:09:15,550 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:09:15,674 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:09:15,798 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:09:16,003 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:09:22,966 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:09:29,758 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:09:36,882 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:10:24,637 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 14:10:24,639 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 14:10:24,639 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 14:11:37,421 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 14:11:37,423 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 14:11:37,424 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 14:16:12,768 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 14:16:12,770 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 14:16:12,770 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+2025-11-21 14:17:14,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:17:14,222 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2068.HEIC (9 cards)
+2025-11-21 14:17:14,225 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+2025-11-21 14:17:14,418 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:17:21,386 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:17:21,725 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:17:28,114 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:20:22,490 - trading_cards - INFO - [filesystem] File uploaded: IMG_2088.HEIC
+2025-11-21 14:20:22,492 - trading_cards - INFO - [system] Upload status changed: IMG_2088.HEIC -> processing
+2025-11-21 14:20:22,493 - trading_cards - INFO - [image_processing] Started processing: IMG_2088.HEIC
+2025-11-21 14:21:15,117 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:21:15,139 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2088.HEIC (9 cards)
+2025-11-21 14:21:15,143 - trading_cards - INFO - [system] Upload status changed: IMG_2088.HEIC -> pending_verification
+2025-11-21 14:21:15,355 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:21:21,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:21:22,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 14:21:28,299 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:21:35,117 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:21:41,447 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:21:46,812 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:21:54,108 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:22:01,396 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:22:08,983 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 14:22:17,823 - trading_cards - SUCCESS - [filesystem] File move: images/unprocessed_bulk_back/IMG_2088.HEIC -> images/pending_verification/IMG_2088.HEIC
+2025-11-21 14:22:17,828 - trading_cards - INFO - [system] Upload status changed: IMG_2088.HEIC -> pending_verification
+2025-11-21 14:22:17,828 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2088.HEIC
+2025-11-21 14:26:43,733 - trading_cards - INFO - [system] Upload status changed: IMG_2088.HEIC -> verified
+2025-11-21 14:26:43,734 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2088.HEIC
+2025-11-21 15:06:09,603 - trading_cards - INFO - [system] Upload status changed: IMG_2088.HEIC -> verified
+2025-11-21 15:06:09,604 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2088.HEIC
+2025-11-21 15:10:06,789 - trading_cards - INFO - [filesystem] File uploaded: verified_IMG_2088.HEIC
+2025-11-21 15:10:06,790 - trading_cards - INFO - [system] Upload status changed: verified_IMG_2088.HEIC -> processing
+2025-11-21 15:10:06,791 - trading_cards - INFO - [image_processing] Started processing: verified_IMG_2088.HEIC
+2025-11-21 15:11:01,944 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:11:01,959 - trading_cards - SUCCESS - [image_processing] Grid processing complete: verified_IMG_2088.HEIC (9 cards)
+2025-11-21 15:11:01,962 - trading_cards - INFO - [system] Upload status changed: verified_IMG_2088.HEIC -> pending_verification
+2025-11-21 15:11:02,138 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 15:11:09,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:11:09,354 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 15:11:18,666 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:11:25,770 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:11:32,514 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:11:40,962 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:11:53,357 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:12:01,965 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:12:09,505 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:12:18,710 - trading_cards - SUCCESS - [filesystem] File move: cards/unprocessed_bulk_back/verified_IMG_2088.HEIC -> cards/pending_verification/verified_IMG_2088.HEIC
+2025-11-21 15:12:18,714 - trading_cards - INFO - [system] Upload status changed: verified_IMG_2088.HEIC -> pending_verification
+2025-11-21 15:12:18,714 - trading_cards - SUCCESS - [image_processing] Processing completed: verified_IMG_2088.HEIC
+2025-11-21 15:13:42,524 - trading_cards - INFO - [system] Upload status changed: verified_IMG_2088.HEIC -> verified
+2025-11-21 15:13:42,526 - trading_cards - SUCCESS - [verification] All cards passed: verified_IMG_2088.HEIC
+2025-11-21 21:10:48,759 - trading_cards - INFO - [filesystem] File uploaded: IMG_2098.HEIC
+2025-11-21 21:11:43,827 - trading_cards - INFO - [filesystem] File uploaded: IMG_2098.HEIC
+2025-11-21 21:11:49,034 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2098.HEIC', 'File size: 4666893 bytes, Type: .heic', None, 'session_20251121_211143_64447', None, 'IMG_2098.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-21 21:11:49,034 - trading_cards - INFO - [filesystem] File uploaded: IMG_2098.HEIC
+2025-11-21 21:11:49,041 - trading_cards - INFO - [system] Upload status changed: IMG_2098.HEIC -> processing
+2025-11-21 21:11:49,045 - trading_cards - INFO - [image_processing] Started processing: IMG_2098.HEIC
+2025-11-21 21:14:26,606 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:14:31,847 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251121_211426_68978', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-21 21:14:31,847 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:14:31,852 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-21 21:14:31,856 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:15:43,248 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:15:43,272 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-21 21:15:43,279 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-21 21:15:44,247 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 21:16:02,621 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:16:02,758 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 21:16:20,049 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:16:40,163 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:17:02,798 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:17:13,168 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:17:20,880 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:17:32,962 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:17:38,176 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251121_211732_69939', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-21 21:17:38,176 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:17:38,186 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-21 21:17:38,196 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:18:32,464 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:18:32,475 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-21 21:18:32,478 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-21 21:18:32,668 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 21:18:56,851 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:18:57,825 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 21:19:13,057 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:19:24,137 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:19:29,408 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251121_211924_70609', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-21 21:19:29,408 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:19:29,411 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-21 21:19:29,412 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:21:12,288 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:21:12,309 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-21 21:21:12,313 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-21 21:21:12,628 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 21:29:42,566 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:29:47,794 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251121_212942_75810', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-21 21:29:47,794 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:29:47,799 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-21 21:29:47,803 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:30:30,988 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:30:31,044 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-21 21:30:31,048 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-21 21:30:31,472 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 21:30:41,420 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:30:41,549 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-21 21:30:50,542 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:30:58,642 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:31:03,894 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:31:09,835 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:31:16,146 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:31:33,683 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:31:48,199 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 21:31:48,427 - trading_cards - ERROR - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> failed
+2025-11-21 21:35:23,310 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> verified
+2025-11-21 21:35:23,313 - trading_cards - SUCCESS - [verification] All cards passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-21 21:48:17,320 - trading_cards - SUCCESS - [verification] Single card passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (card 0)
+2025-11-21 21:48:27,506 - trading_cards - SUCCESS - [verification] Single card passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (card 0)
+2025-11-21 21:48:54,887 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> verified
+2025-11-21 21:48:54,892 - trading_cards - SUCCESS - [verification] All cards passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg

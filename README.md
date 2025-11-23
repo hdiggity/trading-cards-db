@@ -42,7 +42,7 @@ python -c "from app.database import init_db; init_db()"
 
 ### Process Trading Card Images
 ```bash
-# Add images to images/raw_scans/ directory first
+# Add images to cards/raw_scans/ directory first
 # Then process them with the configured OpenAI model
 python -m app.run --raw
 
@@ -69,8 +69,8 @@ VALUE_ESTIMATE_MODE=gpt python -m app.scripts.backfill_price_estimates
 ```
 
 Notes:
-- 3×3 back-grid photos placed in `images/raw_scans/` are auto-detected and processed with the enhanced 3×3 pipeline.
-- The JSON saved to `images/pending_verification/` now uses the same basename as the source image so the UI associates them (e.g., `IMG_1234.jpg` → `IMG_1234.json`).
+- 3×3 back-grid photos placed in `cards/raw_scans/` are auto-detected and processed with the enhanced 3×3 pipeline.
+- The JSON saved to `cards/pending_verification/` now uses the same basename as the source image so the UI associates them (e.g., `IMG_1234.jpg` → `IMG_1234.json`).
 - TCDB lookups are used only to fill clear gaps (e.g., missing team/set) and are optional; set `DISABLE_TCDB_VERIFICATION=true` in `.env` to skip for maximum speed.
 
 ### Verification Process

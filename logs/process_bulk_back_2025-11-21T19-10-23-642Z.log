@@ -1,0 +1,12 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3001 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2068.HEIC
+processing: IMG_2068.HEIC
+2025-11-21 14:10:24,637 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 14:10:24,639 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 14:10:24,639 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+Processing 3x3 grid as PRIMARY input: images/unprocessed_bulk_back/IMG_2068.HEIC
+Using detailed individual card processing for maximum detail extraction...

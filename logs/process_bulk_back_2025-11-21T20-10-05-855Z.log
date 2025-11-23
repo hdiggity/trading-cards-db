@@ -1,0 +1,77 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3001 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: verified_IMG_2088.HEIC
+processing: verified_IMG_2088.HEIC
+2025-11-21 15:10:06,789 - trading_cards - INFO - [filesystem] File uploaded: verified_IMG_2088.HEIC
+2025-11-21 15:10:06,790 - trading_cards - INFO - [system] Upload status changed: verified_IMG_2088.HEIC -> processing
+2025-11-21 15:10:06,791 - trading_cards - INFO - [image_processing] Started processing: verified_IMG_2088.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/verified_IMG_2088.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/verified_IMG_2088.HEIC
+Extracting individual cards from grid...
+Hough detection incomplete, trying smart edge detection...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+2025-11-21 15:11:01,944 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 15:11:01,959 - trading_cards - SUCCESS - [image_processing] Grid processing complete: verified_IMG_2088.HEIC (9 cards)
+2025-11-21 15:11:01,962 - trading_cards - INFO - [system] Upload status changed: verified_IMG_2088.HEIC -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=1973, brand=Topps, sport=baseball, set=n/a
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2292 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-11-21 15:11:02,138 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+LLM call failed (final): Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Error processing front image cards/unprocessed_single_front/IMG_3158_optimized.png: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Applied general image enhancement
+2025-11-21 15:11:09,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-21 15:11:09,354 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+LLM call failed (final): Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Error processing front image cards/unprocessed_single_front/IMG_2323_optimized.png: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Applied general image enhancement
+2025-11-21 15:11:18,666 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-21 15:11:25,770 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-21 15:11:32,514 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-21 15:11:40,962 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-21 15:11:53,357 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-21 15:12:01,965 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-21 15:12:09,505 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Matched grid position 0 with IMG_6263_optimized.png
+Matched grid position 1 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Matched grid position 2 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Matched grid position 3 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Matched grid position 4 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Matched grid position 5 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Supplemented team from front image: Expos
+Matched grid position 6 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Matched grid position 7 with IMG_6333_optimized.png
+Matched grid position 8 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Saved cropped back: verified_IMG_2088_pos0_Boots_Day_254.png
+Saved cropped back: verified_IMG_2088_pos1_Dick_Dietz_295.png
+Saved cropped back: verified_IMG_2088_pos2_Earl_Williams_360.png
+Saved cropped back: verified_IMG_2088_pos3_Eliseo_Rodriguez_Delgado_45.png
+Saved cropped back: verified_IMG_2088_pos4_Eliseo_Rodriguez_Delgado_45.png
+Saved cropped back: verified_IMG_2088_pos5_Jonathan_Trumpbour_Matlack_55.png
+Saved cropped back: verified_IMG_2088_pos6_1973_League_Leaders_64.png
+Saved cropped back: verified_IMG_2088_pos7_Buford_Billy_Champion_74.png
+Saved cropped back: verified_IMG_2088_pos8_David_Wayne_Roberts_133.png
+Saved 9 grid cards to cards/pending_verification/verified_IMG_2088.json
+Grid processing completed: 9 cards extracted
+2025-11-21 15:12:18,710 - trading_cards - SUCCESS - [filesystem] File move: cards/unprocessed_bulk_back/verified_IMG_2088.HEIC -> cards/pending_verification/verified_IMG_2088.HEIC
+2025-11-21 15:12:18,714 - trading_cards - INFO - [system] Upload status changed: verified_IMG_2088.HEIC -> pending_verification
+2025-11-21 15:12:18,714 - trading_cards - SUCCESS - [image_processing] Processing completed: verified_IMG_2088.HEIC
+completed: verified_IMG_2088.HEIC

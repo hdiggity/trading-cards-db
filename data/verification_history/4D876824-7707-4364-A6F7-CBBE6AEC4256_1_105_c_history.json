@@ -1,0 +1,956 @@
+[
+  {
+    "timestamp": "2025-11-23T07:56:54.940Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "jesse jefferson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "144",
+        "copyright_year": "1984",
+        "team": "blue jays",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Jesse Jefferson",
+          "brand": "topps",
+          "team": "Blue Jays",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "144",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "joe altobelli",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "21",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Altobelli",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "21",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "1984 checklist",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "426",
+        "copyright_year": "1984",
+        "team": "baltimore orioles",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7263_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Jose Bautista",
+          "front_team": "Orioles",
+          "uniform_number": "48",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8100000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7263_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "1984 Checklist",
+          "brand": "topps",
+          "team": "Orioles",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "426",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "1984 checklist",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "426",
+        "copyright_year": "1984",
+        "team": "baltimore orioles",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7263_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Jose Bautista",
+          "front_team": "Orioles",
+          "uniform_number": "48",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7263_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "1984 Checklist",
+          "brand": "topps",
+          "team": "Orioles",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "426",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "mike brown",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "643",
+        "copyright_year": "1984",
+        "team": "california angels",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Brown",
+          "brand": "topps",
+          "team": "Angels",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "643",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "mark bradley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "316",
+        "copyright_year": "1984",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Mark Bradley",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "316",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rollie fingers",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "495",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rollie Fingers",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "495",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "quisenberry sets record with th save",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Quisenberry Sets Record With Th Save",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "3",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:57:28.045Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "jesse jefferson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "144",
+        "copyright_year": "1978",
+        "team": "blue jays",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Jesse Jefferson",
+          "brand": "topps",
+          "team": "Blue Jays",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "144",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "joe altobelli",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "21",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Altobelli",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "21",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "1984 checklist",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "426",
+        "copyright_year": "1984",
+        "team": "baltimore orioles",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7263_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Jose Bautista",
+          "front_team": "Orioles",
+          "uniform_number": "48",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8100000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7263_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "1984 Checklist",
+          "brand": "topps",
+          "team": "Orioles",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "426",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "1984 checklist",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "426",
+        "copyright_year": "1984",
+        "team": "baltimore orioles",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7263_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Jose Bautista",
+          "front_team": "Orioles",
+          "uniform_number": "48",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7263_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "1984 Checklist",
+          "brand": "topps",
+          "team": "Orioles",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "426",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "mike brown",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "643",
+        "copyright_year": "1984",
+        "team": "california angels",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Brown",
+          "brand": "topps",
+          "team": "Angels",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "643",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "mark bradley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "316",
+        "copyright_year": "1984",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Mark Bradley",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "316",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rollie fingers",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "495",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rollie Fingers",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "495",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "quisenberry sets record with th save",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/4D876824-7707-4364-A6F7-CBBE6AEC4256_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Quisenberry Sets Record With Th Save",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "3",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

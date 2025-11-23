@@ -10,14 +10,31 @@ from .utils import gpt_extract_cards_from_image, gpt_extract_cards_single_pass, 
 from .grid_processor import GridProcessor, save_grid_cards_to_verification
 from .logging_system import logger, LogSource, ActionType
 
-PENDING_VERIFICATION_DIR = Path("images/pending_verification")
-FAILED_PROCESSING_DIR = Path("images/failed_processing")
+PENDING_VERIFICATION_DIR = Path("cards/pending_verification")
+PENDING_BULK_BACK_DIR = Path("cards/pending_verification/pending_verification_bulk_back")
 
-RAW_IMAGE_DIR = Path("images/raw_scans")
-FRONT_IMAGES_DIR = Path("images/unprocessed_single_front")
-BACK_IMAGES_DIR = Path("images/unprocessed_bulk_back")
-LAST_PROCESSED_FILE = Path("last_processed.txt")
-FAILED_LOG_FILE = Path("failed_processing.log")
+RAW_IMAGE_DIR = Path("cards/raw_scans")
+FRONT_IMAGES_DIR = Path("cards/unprocessed_single_front")
+BACK_IMAGES_DIR = Path("cards/unprocessed_bulk_back")
+PROGRESS_FILE = Path("logs/processing_progress.json")
+
+
+def update_progress(current: int, total: int, current_file: str = "", status: str = "processing"):
+    """Write progress to file for UI to read"""
+    try:
+        PROGRESS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        progress_data = {
+            "current": current,
+            "total": total,
+            "percent": int((current / max(total, 1)) * 100),
+            "current_file": current_file,
+            "status": status,
+            "timestamp": datetime.datetime.now().isoformat()
+        }
+        with open(PROGRESS_FILE, "w") as f:
+            json.dump(progress_data, f)
+    except Exception:
+        pass
 
 
 def _is_probable_3x3_grid(image_path: Path) -> bool:
@@ -113,23 +130,23 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
         if use_grid_processing:
             # Use enhanced grid processing for 3x3 back images
             grid_processor = GridProcessor()
-            
+
             # Check for front images to use for matching, gated by env
             disable_front = os.getenv("DISABLE_FRONT_MATCH", "false").lower() == "true"
             front_dir = None
             if not disable_front and FRONT_IMAGES_DIR.exists():
                 front_dir = FRONT_IMAGES_DIR
-            
+
             grid_cards, raw_data = grid_processor.process_3x3_grid(
-                str(image_path), 
+                str(image_path),
                 front_images_dir=front_dir
             )
-            
+
             processing_time = time.time() - start_time
             filename_stem = image_path.stem
             disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
-            
-            # Save grid cards with enhanced metadata
+
+            # Save grid cards with enhanced metadata to pending_verification
             save_grid_cards_to_verification(
                 grid_cards,
                 out_dir=PENDING_VERIFICATION_DIR,
@@ -139,9 +156,33 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
                 save_cropped_backs=True,
                 original_image_path=str(image_path)
             )
-            
+
             card_count = len(grid_cards)
             print(f"Grid processing completed: {card_count} cards extracted")
+
+            # Move bulk back image to pending_verification/bulk back
+            PENDING_BULK_BACK_DIR.mkdir(parents=True, exist_ok=True)
+            old_path = str(image_path)
+            new_path = str(PENDING_BULK_BACK_DIR / image_path.name)
+            image_path.rename(PENDING_BULK_BACK_DIR / image_path.name)
+
+            # Log file move
+            logger.log_file_operation(
+                operation="move",
+                source_path=old_path,
+                dest_path=new_path,
+                success=True
+            )
+
+            # Log processing completion
+            logger.log_processing_complete(
+                image_path.name,
+                card_count,
+                processing_time
+            )
+
+            print(f"completed: {image_path.name} (moved to pending_verification/bulk back)")
+            return  # Early return since we handled the move differently
         else:
             # Fast single-pass extraction with compact high-accuracy prompt
             fast_mode = os.getenv("FAST_SINGLE_PASS", "true").lower() != "false"
@@ -176,21 +217,6 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             success=True
         )
 
-        # If this came from 3x3 backs (or grid processing), also archive a copy
-        # to verified/images immediately so originals don't linger in unprocessed_bulk_back
-        try:
-            if use_grid_processing or (BACK_IMAGES_DIR / Path(old_path).name).exists():
-                from shutil import copy2
-                verified_images_dir = Path("images/verified/images")
-                verified_images_dir.mkdir(parents=True, exist_ok=True)
-                copy2(PENDING_VERIFICATION_DIR / Path(new_path).name, verified_images_dir / Path(new_path).name)
-        except Exception:
-            pass
-
-        # track last processed file
-        with open(LAST_PROCESSED_FILE, "w") as f:
-            f.write(image_path.name)
-        
         # Log processing completion
         logger.log_processing_complete(
             image_path.name,
@@ -206,147 +232,7 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             "failed",
             error_message=str(e)
         )
-        move_to_failed(image_path, str(e))
-
-
-def move_to_failed(image_path: Path, error_message: str):
-    """Move a failed image to the failed processing directory and log the error"""
-    try:
-        FAILED_PROCESSING_DIR.mkdir(exist_ok=True)
-
-        # Move image to failed directory
-        failed_image_path = FAILED_PROCESSING_DIR / image_path.name
-        image_path.rename(failed_image_path)
-
-        # Log the failure
-        log_failure(image_path.name, error_message)
-
-        print(f"moved failed image to: {failed_image_path}")
-    except Exception as e:
-        print(f"error moving failed image {image_path.name}: {e}")
-
-
-def log_failure(filename: str, error_message: str):
-    """Log failure details to the failed processing log"""
-    import json
-    from datetime import datetime
-
-    failure_entry = {
-        "filename": filename,
-        "error": error_message,
-        "timestamp": datetime.now().isoformat(),
-        "retry_count": 0,
-    }
-
-    # Read existing failures
-    failures = []
-    if FAILED_LOG_FILE.exists():
-        try:
-            with open(FAILED_LOG_FILE, "r") as f:
-                failures = json.load(f)
-        except json.JSONDecodeError:
-            failures = []
-
-    # Add new failure
-    failures.append(failure_entry)
-
-    # Write back to file
-    with open(FAILED_LOG_FILE, "w") as f:
-        json.dump(failures, f, indent=2)
-
-
-def retry_failed_image(filename: str):
-    """Retry processing a specific failed image"""
-    failed_image_path = FAILED_PROCESSING_DIR / filename
-
-    if not failed_image_path.exists():
-        raise FileNotFoundError(f"Failed image {filename} not found")
-
-    print(f"retrying: {filename}")
-
-    try:
-        # Try processing again
-        fast_mode = os.getenv("FAST_SINGLE_PASS", "true").lower() != "false"
-        if fast_mode:
-            parsed_cards, _ = gpt_extract_cards_single_pass(str(failed_image_path))
-        else:
-            parsed_cards, _ = gpt_extract_cards_from_image(str(failed_image_path))
-        filename_stem = failed_image_path.stem
-        # Check if TCDB verification should be disabled
-        disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
-        save_cards_to_verification(
-            parsed_cards,
-            out_dir=PENDING_VERIFICATION_DIR,
-            filename_stem=filename_stem,
-            include_tcdb_verification=not disable_tcdb)
-
-        # Move to pending verification
-        PENDING_VERIFICATION_DIR.mkdir(exist_ok=True)
-        failed_image_path.rename(PENDING_VERIFICATION_DIR / filename)
-
-        # Remove from failed log
-        remove_from_failed_log(filename)
-
-        print(f"retry successful: {filename}")
-        return True
-    except Exception as e:
-        print(f"retry failed: {filename}: {e}")
-        # Update retry count in log
-        update_retry_count(filename, str(e))
-        return False
-
-
-def remove_from_failed_log(filename: str):
-    """Remove a file from the failed processing log"""
-    if not FAILED_LOG_FILE.exists():
-        return
-
-    try:
-        with open(FAILED_LOG_FILE, "r") as f:
-            failures = json.load(f)
-
-        # Remove the file entry
-        failures = [f for f in failures if f.get("filename") != filename]
-
-        with open(FAILED_LOG_FILE, "w") as f:
-            json.dump(failures, f, indent=2)
-    except (json.JSONDecodeError, KeyError):
-        pass
-
-
-def update_retry_count(filename: str, error_message: str):
-    """Update the retry count for a failed file"""
-    if not FAILED_LOG_FILE.exists():
-        return
-
-    try:
-        with open(FAILED_LOG_FILE, "r") as f:
-            failures = json.load(f)
-
-        # Find and update the file entry
-        for failure in failures:
-            if failure.get("filename") == filename:
-                failure["retry_count"] = failure.get("retry_count", 0) + 1
-                failure["last_retry"] = datetime.now().isoformat()
-                failure["last_error"] = error_message
-                break
-
-        with open(FAILED_LOG_FILE, "w") as f:
-            json.dump(failures, f, indent=2)
-    except (json.JSONDecodeError, KeyError):
-        pass
-
-
-def get_failed_images():
-    """Get list of failed images with their error details"""
-    if not FAILED_LOG_FILE.exists():
-        return []
-
-    try:
-        with open(FAILED_LOG_FILE, "r") as f:
-            return json.load(f)
-    except json.JSONDecodeError:
-        return []
+        # Image stays in unprocessed folder for retry
 
 
 def process_all_raw_scans():
@@ -367,28 +253,46 @@ def process_all_raw_scans():
         process_and_move(image_path, use_grid_processing=use_grid)
 
 
-def process_3x3_grid_backs():
+def process_3x3_grid_backs(file_list_path=None):
     """
     Process 3x3 grid BACK images as PRIMARY input with enhanced card detection.
-    
+
     INPUT: Card backs arranged in 3x3 grids (9 cards per image)
     PROCESSING: Enhanced image preprocessing + GPT-4 analysis optimized for card backs
     BACKUP: Single front images used only to supplement missing data from backs
-    
+
     Front images remain untouched - used only as reference for matching/supplementing.
+
+    Args:
+        file_list_path: Optional path to JSON file containing list of specific filenames to process
     """
     print("Processing 3x3 grid BACK images (PRIMARY input source)...")
-    
-    back_images = [
-        p
-        for p in BACK_IMAGES_DIR.glob("*")
-        if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".heic")
-    ] if BACK_IMAGES_DIR.exists() else []
-    
+
+    # If a file list is provided, only process those specific files
+    if file_list_path:
+        try:
+            with open(file_list_path, 'r') as f:
+                file_list = json.load(f)
+            back_images = [
+                BACK_IMAGES_DIR / filename
+                for filename in file_list
+                if (BACK_IMAGES_DIR / filename).exists()
+            ]
+            print(f"Processing {len(back_images)} images from provided file list")
+        except Exception as e:
+            print(f"Error reading file list: {e}")
+            return
+    else:
+        back_images = [
+            p
+            for p in BACK_IMAGES_DIR.glob("*")
+            if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".heic")
+        ] if BACK_IMAGES_DIR.exists() else []
+
     if not back_images:
         print(f"No 3x3 grid back images found in {BACK_IMAGES_DIR}")
         return
-    
+
     # Check available front images for backup matching (read-only)
     front_count = 0
     if FRONT_IMAGES_DIR.exists():
@@ -397,14 +301,21 @@ def process_3x3_grid_backs():
             if p.suffix.lower() in (".jpg", ".jpeg", ".png", ".heic")
         ]
         front_count = len(front_images)
-    
-    print(f"Found {len(back_images)} grid back images to process")
+
+    total = len(back_images)
+    print(f"Found {total} grid back images to process")
     print(f"Found {front_count} front images available for backup matching")
     print("Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)")
-    
-    for image_path in back_images:
-        print(f"Processing 3x3 grid of card backs: {image_path.name}")
+
+    update_progress(0, total, "", "starting")
+
+    for i, image_path in enumerate(back_images):
+        update_progress(i, total, image_path.name, "processing")
+        print(f"[{i+1}/{total}] Processing: {image_path.name}")
         process_and_move(image_path, use_grid_processing=True)
+        update_progress(i + 1, total, image_path.name, "completed")
+
+    update_progress(total, total, "", "done")
 
 
 def process_all_images():
@@ -450,27 +361,39 @@ def auto_detect_and_process():
 
 
 def undo_last_processing():
-    """Undo the last image processing operation"""
-    if not LAST_PROCESSED_FILE.exists():
-        print("no processing history found.")
-        return
-
-    with open(LAST_PROCESSED_FILE, "r") as f:
-        last_filename = f.read().strip()
+    """Undo the last image processing operation using system_logs"""
+    last_filename = logger.get_last_processed_filename()
 
     if not last_filename:
-        print("no processing history found.")
+        print("no processing history found in system logs.")
         return
 
-    # paths for the files to undo
+    # paths for the files to undo - check both locations
+    pending_bulk_back_image = PENDING_BULK_BACK_DIR / last_filename
     pending_image = PENDING_VERIFICATION_DIR / last_filename
     json_file = PENDING_VERIFICATION_DIR / f"{Path(last_filename).stem}.json"
-    original_location = RAW_IMAGE_DIR / last_filename
 
+    # Determine original location based on where the image is now
+    # If in pending_verification/bulk back, it was a bulk back -> move back to unprocessed_bulk_back
+    # If in pending_verification root, it was a raw scan -> move back to raw_scans
     success = True
+    image_found = False
 
-    # move image back to raw_scans
-    if pending_image.exists():
+    # Check pending_verification/bulk back first (bulk back images)
+    if pending_bulk_back_image.exists():
+        image_found = True
+        original_location = BACK_IMAGES_DIR / last_filename
+        try:
+            BACK_IMAGES_DIR.mkdir(exist_ok=True)
+            pending_bulk_back_image.rename(original_location)
+            print(f"moved {last_filename} back to unprocessed_bulk_back/")
+        except Exception as e:
+            print(f"error moving image: {e}")
+            success = False
+    # Check pending_verification root (raw scans)
+    elif pending_image.exists():
+        image_found = True
+        original_location = RAW_IMAGE_DIR / last_filename
         try:
             RAW_IMAGE_DIR.mkdir(exist_ok=True)
             pending_image.rename(original_location)
@@ -478,7 +401,8 @@ def undo_last_processing():
         except Exception as e:
             print(f"error moving image: {e}")
             success = False
-    else:
+
+    if not image_found:
         print(f"image {last_filename} not found in pending_verification/")
         success = False
 
@@ -493,9 +417,7 @@ def undo_last_processing():
     else:
         print(f"JSON file {json_file.name} not found")
 
-    # clear the last processed file if successful
     if success:
-        LAST_PROCESSED_FILE.unlink()
         print(f"undo completed for {last_filename}")
     else:
         print("undo operation had errors")
@@ -506,31 +428,35 @@ if __name__ == "__main__":
         description="Process trading card images with enhanced accuracy"
     )
     parser.add_argument(
-        "--raw", action="store_true", 
-        help="Process raw images in images/raw_scans/"
+        "--raw", action="store_true",
+        help="Process raw images in cards/raw_scans/"
     )
     parser.add_argument(
-        "--grid", action="store_true", 
+        "--grid", action="store_true",
         help="Process 3x3 grid back images with enhanced processing"
     )
     parser.add_argument(
-        "--all", action="store_true", 
+        "--all", action="store_true",
         help="Process all available images with appropriate methods"
     )
     parser.add_argument(
-        "--auto", action="store_true", 
+        "--auto", action="store_true",
         help="Auto-detect image types and process with optimal methods"
     )
     parser.add_argument(
-        "--undo", action="store_true", 
+        "--undo", action="store_true",
         help="Undo last processing operation"
+    )
+    parser.add_argument(
+        "--file-list", type=str,
+        help="Path to JSON file containing list of specific files to process"
     )
     args = parser.parse_args()
 
     if args.raw:
         process_all_raw_scans()
     elif args.grid:
-        process_3x3_grid_backs()
+        process_3x3_grid_backs(file_list_path=args.file_list)
     elif args.all:
         process_all_images()
     elif args.auto:

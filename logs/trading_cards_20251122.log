@@ -1,0 +1,83 @@
+2025-11-22 00:13:08,368 - trading_cards - SUCCESS - [verification] Single card passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (card 0)
+2025-11-22 00:13:48,115 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> verified
+2025-11-22 00:13:48,118 - trading_cards - SUCCESS - [verification] All cards passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 15:21:45,254 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> verified
+2025-11-22 15:21:45,272 - trading_cards - SUCCESS - [verification] All cards passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 16:08:39,186 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> verified
+2025-11-22 16:08:39,189 - trading_cards - SUCCESS - [verification] All cards passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:06:18,738 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:06:23,963 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251122_180618_30377', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-22 18:06:23,964 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:06:23,973 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-22 18:06:23,984 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:06:52,847 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:06:52,874 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-22 18:06:52,882 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-22 18:06:54,342 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-22 18:07:00,069 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:00,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-22 18:07:05,566 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:11,011 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:16,157 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:21,644 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:27,419 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:32,674 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:37,429 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:07:37,584 - trading_cards - INFO - [filesystem] File move: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:07:37,586 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-22 18:07:37,587 - trading_cards - SUCCESS - [image_processing] Processing completed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:09:37,573 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> verified
+2025-11-22 18:09:37,576 - trading_cards - SUCCESS - [verification] All cards passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:21:29,856 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:21:35,058 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251122_182129_36523', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-22 18:21:35,058 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:21:35,065 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-22 18:21:35,070 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:22:06,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:06,440 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-22 18:22:06,447 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-22 18:22:06,665 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-22 18:22:12,298 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:12,634 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-22 18:22:18,152 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:23,827 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:29,108 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:34,400 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:40,830 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:46,355 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:51,908 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:52,053 - trading_cards - INFO - [filesystem] File move: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:22:52,055 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-22 18:22:52,056 - trading_cards - SUCCESS - [image_processing] Processing completed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:23:17,917 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> verified
+2025-11-22 18:23:17,920 - trading_cards - SUCCESS - [verification] All cards passed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:28:59,127 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:29:04,374 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251122_182859_39554', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-22 18:29:04,374 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:29:04,378 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-22 18:29:04,381 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:29:29,795 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:29:29,808 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-22 18:29:29,812 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-22 18:29:30,208 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-22 18:29:35,342 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:29:35,457 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2025-11-22 18:29:40,970 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:29:46,605 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:29:52,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:29:57,289 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:30:03,601 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:30:08,262 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:30:13,914 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:30:14,024 - trading_cards - INFO - [filesystem] File move: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:30:14,026 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-22 18:30:14,028 - trading_cards - SUCCESS - [image_processing] Processing completed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg

@@ -20,6 +20,13 @@ from .accuracy import CardValidator, ConfidenceScorer, detect_card_era_and_type
 from .value_estimator import add_value_estimation
 from .enhanced_grid_processor import process_enhanced_3x3_grid
 from .detailed_grid_processor import process_detailed_3x3_grid
+from .accuracy_boost import enhance_cards_batch, seed_common_checklists, generate_prompt_enhancements_from_learning
+
+# Initialize checklists database on module load
+try:
+    seed_common_checklists()
+except Exception as e:
+    print(f"Warning: Failed to seed checklists: {e}", file=sys.stderr)
 
 @dataclass
 class GridCard:
@@ -103,7 +110,7 @@ CARD BACK IDENTIFICATION TECHNIQUES:
 For each card in the grid (position 0-8), analyze:
 - Position in grid (0=top-left, 1=top-center, ..., 8=bottom-right)
 - Player name (make maximum effort using all available clues)
-- Team (consistent with year and known team histories)
+- Team (CRITICAL - find from: stats header abbreviations like CHC/NYY/LAD, biographical text, position lines, career summaries, trade info. Common: ATL=Braves, BOS=Red Sox, CHC=Cubs, CWS=White Sox, CLE=Indians, DET=Tigers, HOU=Astros, KC=Royals, LAA=Angels, LAD=Dodgers, MIL=Brewers, MIN=Twins, NYM=Mets, NYY=Yankees, OAK=A's, PHI=Phillies, PIT=Pirates, SD=Padres, SF=Giants, SEA=Mariners, STL=Cardinals, TEX=Rangers, TOR=Blue Jays)
 - Copyright year (look for © symbol, ignore stats years)
 - Brand (should be consistent across grid)
 - Card number
@@ -127,7 +134,8 @@ Return JSON array with 9 objects:
   "notes": "any additional observations or null"
 }}
 
-ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistency helps validate individual card accuracy."""
+ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistency helps validate individual card accuracy.
+{generate_prompt_enhancements_from_learning()}"""
 
     def process_3x3_grid(self, image_path: str, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
         """
@@ -198,7 +206,14 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
         
         # Add value estimation to each card
         scored_data = [add_value_estimation(card) for card in scored_data]
-        
+
+        # Apply accuracy enhancements (learned corrections, player validation, checklist validation)
+        try:
+            scored_data = enhance_cards_batch(scored_data)
+            print(f"Applied accuracy enhancements to {len(scored_data)} cards", file=sys.stderr)
+        except Exception as e:
+            print(f"Warning: Accuracy enhancement failed: {e}", file=sys.stderr)
+
         # Create GridCard objects
         grid_cards = []
         for i, card_data in enumerate(scored_data):
@@ -358,9 +373,9 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
         
         # Limit matching set to avoid excessive API calls; default 60
         try:
-            max_candidates = int(os.getenv("FRONT_MATCH_MAX", "60"))
+            max_candidates = int(os.getenv("FRONT_MATCH_MAX", "10"))
         except Exception:
-            max_candidates = 60
+            max_candidates = 10
         
         total_front = len(front_images)
         if total_front > max_candidates:
@@ -584,7 +599,7 @@ def save_grid_cards_to_verification(
     cards_data = []
     for grid_card in grid_cards:
         card_dict = grid_card.data.copy()
-        
+
         # Add grid-specific metadata
         meta = {
             'position': grid_card.position,
@@ -595,9 +610,16 @@ def save_grid_cards_to_verification(
         }
         # Add deterministic cropped-back alias path for UI (created if save_cropped_backs=True)
         if filename_stem is not None:
-            meta['cropped_back_alias'] = f"cropped_backs/{filename_stem}_pos{grid_card.position}.png"
+            meta['cropped_back_alias'] = f"pending_verification_cropped_backs/{filename_stem}_pos{grid_card.position}.png"
         card_dict['_grid_metadata'] = meta
-        
+
+        # Store original AI extraction for learning system comparison
+        # This captures what the AI extracted before any user edits
+        learning_fields = ['name', 'brand', 'team', 'card_set', 'copyright_year', 'number', 'condition', 'sport']
+        card_dict['_original_extraction'] = {
+            field: card_dict.get(field) for field in learning_fields
+        }
+
         cards_data.append(card_dict)
     
     # TCDB verification removed per user request
@@ -650,20 +672,10 @@ def save_grid_cards_to_verification(
     with open(filename, "w") as f:
         json.dump(cards_data, f, indent=2)
 
-    # Also write split-per-card JSON files
-    try:
-        base = filename_stem or filename.stem
-        for idx, c in enumerate(cards_data, start=1):
-            per_name = f"{base}__c{idx}.json"
-            with open(out_dir / per_name, "w") as pf:
-                json.dump([c], pf, indent=2)
-    except Exception as e:
-        print(f"Per-card JSON split failed: {e}", file=sys.stderr)
-    
     # Optionally save cropped individual back images
     if save_cropped_backs and original_image_path:
         try:
-            cropped_dir = out_dir / "cropped_backs"
+            cropped_dir = out_dir / "pending_verification_cropped_backs"
             cropped_dir.mkdir(exist_ok=True)
             _extract_and_save_individual_backs(original_image_path, grid_cards, cropped_dir, filename_stem)
         except Exception as e:
@@ -706,15 +718,7 @@ def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCar
             # Save cropped image
             crop_path = output_dir / crop_filename
             cropped_card.save(crop_path, "PNG")
-            
-            # Also save a deterministic alias for easy UI linking
-            try:
-                alias_name = f"{filename_stem}_pos{grid_card.position}.png"
-                alias_path = output_dir / alias_name
-                cropped_card.save(alias_path, "PNG")
-            except Exception as _:
-                pass
-            
+
             print(f"Saved cropped back: {crop_filename}")
             
     except Exception as e:

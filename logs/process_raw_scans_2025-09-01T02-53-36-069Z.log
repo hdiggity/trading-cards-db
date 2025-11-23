@@ -1,0 +1,170 @@
+looking for images to process...
+found image: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+detected probable 3x3 grid layout for 2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+processing: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+2025-08-31 22:53:37,862 - trading_cards - INFO - [filesystem] File uploaded: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+2025-08-31 22:53:37,865 - trading_cards - INFO - [system] Upload status changed: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC -> processing
+2025-08-31 22:53:37,866 - trading_cards - INFO - [image_processing] Started processing: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+Processing 3x3 grid as PRIMARY input: images/raw_scans/2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: images/raw_scans/2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+Extracting individual cards from grid...
+Grid detection failed, using simple division
+Extracted 9 individual cards
+Converting cards to base64 for analysis...
+Analyzing each card with GPT-4 Vision...
+2025-08-31 22:54:03,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-31 22:54:03,181 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC (9 cards)
+2025-08-31 22:54:03,185 - trading_cards - INFO - [system] Upload status changed: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=None, brand=Topps, sport=baseball, set=1972 Topps
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from images/unprocessed_single_front
+Found 1817 front images; limiting to 60 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-08-31 22:54:05,285 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:12,127 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:18,648 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:21,692 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:24,451 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:32,513 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:38,887 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:45,443 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:51,688 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:54:54,346 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:00,392 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:06,583 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:12,169 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:18,440 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:24,865 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:31,017 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:33,580 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:39,629 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:42,170 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:47,905 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:53,483 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:55:56,029 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:02,271 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:08,704 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:15,158 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:20,799 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:28,529 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:34,915 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:37,584 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:42,970 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:50,499 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:57,153 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:56:59,384 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:05,633 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:08,087 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:10,546 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:16,424 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:19,145 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:24,942 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:31,301 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:37,263 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:42,548 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:48,552 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:57:54,872 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:01,235 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:07,026 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:13,014 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:19,485 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:25,134 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:31,561 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:37,375 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:42,824 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:49,014 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:52,053 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:55,243 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:58:57,960 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:59:00,583 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:59:06,631 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:59:12,689 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-31 22:59:15,170 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Matched grid position 0 with IMG_5080_optimized.png
+Matched grid position 1 with IMG_5080_optimized.png
+Supplemented team from front image: Astros
+Matched grid position 2 with IMG_5080_optimized.png
+Matched grid position 3 with IMG_5080_optimized.png
+Matched grid position 4 with IMG_5080_optimized.png
+Matched grid position 5 with IMG_5080_optimized.png
+Matched grid position 6 with IMG_5080_optimized.png
+Matched grid position 7 with IMG_5080_optimized.png
+Matched grid position 8 with IMG_5080_optimized.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos0_American_League_E.R.A._Leaders_92.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos1_American_League_E.R.A._Leaders_92.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos2_James_Rodney_Richard_101.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos3_Ron_Hunt_110.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos4_Charlie_Fox_129.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos5_1972_Special_203.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos6_Gary_Sutherland_211.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos7_Alex_Johnson_215.png
+Saved cropped back: 2025-08-31T03-39-00-487Z_IMG_2078_pos8_Alex_Johnson_215.png
+Saved 9 grid cards to images/pending_verification/2025-08-31T03-39-00-487Z_IMG_2078.json
+Grid processing completed: 9 cards extracted
+2025-08-31 22:59:27,322 - trading_cards - SUCCESS - [filesystem] File move: images/raw_scans/2025-08-31T03-39-00-487Z_IMG_2078.HEIC -> images/pending_verification/2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+2025-08-31 22:59:27,327 - trading_cards - INFO - [system] Upload status changed: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC -> pending_verification
+2025-08-31 22:59:27,328 - trading_cards - SUCCESS - [image_processing] Processing completed: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC
+completed: 2025-08-31T03-39-00-487Z_IMG_2078.HEIC

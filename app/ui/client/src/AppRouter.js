@@ -7,23 +7,26 @@ import RawScanPreview from './RawScanPreview';
 
 function AppRouter() {
   const [currentView, setCurrentView] = useState('main');
+  const [navKey, setNavKey] = useState(0);
 
   const handleNavigate = (view) => {
     setCurrentView(view);
+    // Increment key to force remount and data refresh when navigating back
+    setNavKey(k => k + 1);
   };
 
   switch (currentView) {
     case 'verify':
-      return <App onNavigate={handleNavigate} />;
+      return <App key={`verify-${navKey}`} onNavigate={handleNavigate} />;
     case 'database':
-      return <DatabaseBrowser onNavigate={handleNavigate} />;
+      return <DatabaseBrowser key={`db-${navKey}`} onNavigate={handleNavigate} />;
     case 'logs':
-      return <SystemLogs onNavigate={handleNavigate} />;
+      return <SystemLogs key={`logs-${navKey}`} onNavigate={handleNavigate} />;
     case 'raw-preview':
-      return <RawScanPreview onNavigate={handleNavigate} />;
+      return <RawScanPreview key={`raw-${navKey}`} onNavigate={handleNavigate} />;
     case 'main':
     default:
-      return <MainPage onNavigate={handleNavigate} />;
+      return <MainPage key={`main-${navKey}`} onNavigate={handleNavigate} />;
   }
 }
 

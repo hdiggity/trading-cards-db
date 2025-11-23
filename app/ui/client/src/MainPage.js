@@ -17,20 +17,23 @@ function MainPage({ onNavigate }) {
   });
   const [pendingCount, setPendingCount] = useState(0);
   const [rawScanCount, setRawScanCount] = useState(0);
+  const [processCount, setProcessCount] = useState('');
   const [processing, setProcessing] = useState(false);
   const [bgProcessing, setBgProcessing] = useState(false);
   const [bgProgress, setBgProgress] = useState(0);
-  const [bgLogFile, setBgLogFile] = useState(null);
+  const [bgCurrentFile, setBgCurrentFile] = useState('');
+  const [bgCurrent, setBgCurrent] = useState(0);
+  const [bgTotal, setBgTotal] = useState(0);
+  const [bgLogFile, setBgLogFile] = useState(null); // eslint-disable-line no-unused-vars
+  const [bgSubstep, setBgSubstep] = useState('');
   const [rawStart, setRawStart] = useState(0);
-  const [pendingStart, setPendingStart] = useState(0);
-  const [learningInsights, setLearningInsights] = useState(null);
+  const [pendingStart, setPendingStart] = useState(0); // eslint-disable-line no-unused-vars
   const rawStartRef = React.useRef(0);
 
   useEffect(() => {
     fetchStats();
     fetchPendingCount();
     fetchRawScanCount();
-    fetchLearningInsights();
     // Detect background processing if page reloads mid-run
     (async () => {
       try {
@@ -84,25 +87,22 @@ function MainPage({ onNavigate }) {
     }
   };
 
-  const fetchLearningInsights = async () => {
-    try {
-      const response = await fetch('http://localhost:3001/api/learning-insights');
-      const data = await response.json();
-      setLearningInsights(data);
-    } catch (error) {
-      console.error('Error fetching learning insights:', error);
-    }
-  };
 
   const handleProcessRawScans = async () => {
     if (rawScanCount === 0) {
-      alert('No raw scans found to process. Please add images to the images/raw_scans/ directory.');
+      alert('No raw scans found to process. Please add images to the cards/unprocessed_bulk_back/ directory.');
       return;
     }
 
+    const countToProcess = processCount ? parseInt(processCount, 10) : null;
+
     setProcessing(true);
     try {
-      const response = await fetch('http://localhost:3001/api/process-raw-scans', { method: 'POST', headers: { 'Content-Type': 'application/json' } });
+      const response = await fetch('http://localhost:3001/api/process-raw-scans', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ count: countToProcess })
+      });
       const result = await response.json();
       if (response.ok) {
         setBgProcessing(true);
@@ -112,45 +112,54 @@ function MainPage({ onNavigate }) {
         rawStartRef.current = startRaw;
         setRawStart(startRaw);
         setPendingStart(pendingCount);
-        // Poll counts for progress for ~2 minutes or until raw scan count hits 0
+        // Poll for progress updates
         const start = Date.now();
+        setBgTotal(result.count || rawScanCount);
         const poll = async () => {
-          const _ = await fetchPendingCount();
-          const currentRaw = await fetchRawScanCount();
-          // Also check server process status
-          let active = true; let serverProgress = null;
+          await fetchPendingCount();
+          await fetchRawScanCount();
+          // Check server process status with real-time progress
+          let active = true;
+          let serverProgress = null;
+          let currentFile = '';
+          let current = 0;
+          let total = 0;
+          let substep = '';
           try {
-            const rs = await fetch('http://localhost:3001/api/processing-status');
+            const rs = await fetch('/api/processing-status');
             const st = await rs.json();
             active = !!st.active;
             if (typeof st.progress === 'number') serverProgress = st.progress;
+            if (st.currentFile) currentFile = st.currentFile;
+            if (typeof st.current === 'number') current = st.current;
+            if (typeof st.total === 'number') total = st.total;
+            if (st.substep) substep = st.substepDetail ? `${st.substep}: ${st.substepDetail}` : st.substep;
           } catch {}
 
-          // progress heuristic based on raw scans remaining
-          const base = rawStartRef.current || rawStart || 1;
-          const done = Math.max(0, base - currentRaw);
-          const pctCount = Math.min(100, Math.max(10, Math.round((done / base) * 100)));
+          // Update progress from server
+          if (serverProgress !== null) {
+            setBgProgress(serverProgress);
+          }
+          setBgCurrentFile(currentFile);
+          setBgCurrent(current);
+          setBgSubstep(substep);
+          if (total > 0) setBgTotal(total);
 
-          // Time-based smoothing so single-file runs don’t appear stuck at 10%
-          const elapsedSec = (Date.now() - start) / 1000;
-          // Climb smoothly up to ~97% over ~15 minutes while active
-          const pctTime = Math.min(97, 10 + Math.round((elapsedSec / 900) * 87));
+          const longTimeout = Date.now() - start >= 60 * 60 * 1000; // 60 min safety cap
 
-          const pct = serverProgress !== null ? serverProgress : Math.max(pctCount, pctTime);
-          setBgProgress(pct);
-
-          const finished = currentRaw === 0;
-          const longTimeout = Date.now() - start >= 30 * 60 * 1000; // 30 minutes safety cap
-
-          if (!finished && active && !longTimeout) {
-            setTimeout(poll, 4000);
+          if (active && !longTimeout) {
+            setTimeout(poll, 2000); // Poll every 2 seconds for smoother updates
           } else {
-            // If process ended (either finished or inactive), finalize the UI
+            // Process ended
             setBgProcessing(false);
             setBgProgress(100);
+            setBgCurrentFile('');
+            setBgSubstep('');
+            fetchRawScanCount(); // Refresh count
+            fetchPendingCount();
           }
         };
-        setTimeout(poll, 3000);
+        setTimeout(poll, 1000);
       } else {
         alert(`Processing failed to start: ${result.error}\n\nDetails: ${result.details || 'No additional details'}`);
       }
@@ -184,13 +193,24 @@ function MainPage({ onNavigate }) {
   return (
     <div className="main-page">
       {/* Top drop-down progress bar */}
-      <div 
+      <div
         className={`top-progress ${bgProcessing ? 'show' : ''}`}
         role="status"
         aria-live="polite"
       >
         <div className="top-progress-inner">
-          <div className="top-progress-title">Processing raw scans… {bgProgress}%</div>
+          <div className="top-progress-title">
+            {bgTotal > 0 ? (
+              <>Processing {bgCurrent} of {bgTotal} ({bgProgress}%)</>
+            ) : (
+              <>Processing raw scans… {bgProgress}%</>
+            )}
+          </div>
+          {(bgCurrentFile || bgSubstep) && (
+            <div className="top-progress-file">
+              {bgCurrentFile}{bgCurrentFile && bgSubstep ? ' — ' : ''}{bgSubstep}
+            </div>
+          )}
           <div className="top-progress-actions">
             <button 
               className="cancel-processing"
@@ -291,39 +311,67 @@ function MainPage({ onNavigate }) {
         </div>
       </div>
 
-      <div className="upload-section">
-        <h2>upload photos</h2>
-        <UploadDropZone onUploadComplete={handleUploadComplete} />
-      </div>
-
       <div className="actions-section">
         <h2>actions</h2>
         <div className="action-buttons">
-          <div className="process-row">
-            <button 
-              className="action-button process"
-              onClick={handleProcessRawScans}
-              disabled={rawScanCount === 0 || processing || bgProcessing}
-            >
-              <div className="button-content">
-                <h3>process raw scans {rawScanCount > 0 && `(${rawScanCount})`}</h3>
-              </div>
-              {(processing || bgProcessing) && <div className="spinner" />}
-            </button>
-          </div>
-          <div className="sub-actions">
-            <button 
-              className="secondary-button"
-              type="button"
-              onClick={() => onNavigate('raw-preview')}
-              disabled={rawScanCount === 0}
-              title={rawScanCount === 0 ? 'no raw scans to preview' : 'preview raw scans before processing'}
-            >
-              preview
-            </button>
+          <div className="process-section">
+            <div className="process-header">
+              <h3>process scans</h3>
+              <span className="process-available">{rawScanCount} available (oldest first)</span>
+            </div>
+            <div className="process-quick-select">
+              {[1, 5, 10, 25].map(n => (
+                <button
+                  key={n}
+                  className={`quick-btn ${processCount === String(n) ? 'active' : ''}`}
+                  onClick={() => setProcessCount(String(n))}
+                  disabled={rawScanCount < n || processing || bgProcessing}
+                >
+                  {n}
+                </button>
+              ))}
+              <button
+                className={`quick-btn ${processCount === '' ? 'active' : ''}`}
+                onClick={() => setProcessCount('')}
+                disabled={rawScanCount === 0 || processing || bgProcessing}
+              >
+                all
+              </button>
+              <input
+                type="number"
+                className="process-count-input"
+                placeholder="custom"
+                min="1"
+                max={rawScanCount}
+                value={processCount}
+                onChange={(e) => setProcessCount(e.target.value)}
+                disabled={rawScanCount === 0 || processing || bgProcessing}
+              />
+            </div>
+            <div className="process-actions">
+              <button
+                className="process-main-btn"
+                onClick={handleProcessRawScans}
+                disabled={rawScanCount === 0 || processing || bgProcessing}
+              >
+                {(processing || bgProcessing) ? (
+                  <>processing... <div className="spinner-sm" /></>
+                ) : (
+                  <>start processing {processCount || rawScanCount} image{(processCount || rawScanCount) !== '1' && (processCount || rawScanCount) !== 1 ? 's' : ''}</>
+                )}
+              </button>
+              <button
+                className="process-preview-btn"
+                type="button"
+                onClick={() => onNavigate('raw-preview')}
+                disabled={rawScanCount === 0}
+              >
+                preview
+              </button>
+            </div>
           </div>
 
-          <button 
+          <button
             className="action-button verify"
             onClick={() => onNavigate('verify')}
             disabled={pendingCount === 0}
@@ -333,7 +381,7 @@ function MainPage({ onNavigate }) {
             </div>
           </button>
 
-          <button 
+          <button
             className="action-button database"
             onClick={() => onNavigate('database')}
           >
@@ -342,7 +390,7 @@ function MainPage({ onNavigate }) {
             </div>
           </button>
 
-          <button 
+          <button
             className="action-button logs"
             onClick={() => onNavigate('logs')}
           >
@@ -354,39 +402,13 @@ function MainPage({ onNavigate }) {
           {/* Upload history removed for streamlined UI */}
         </div>
       </div>
+
+      <div className="upload-section">
+        <h2>upload photos</h2>
+        <UploadDropZone onUploadComplete={handleUploadComplete} />
+      </div>
       {/* Old inline banner removed in favor of top drop-down */}
 
-      {learningInsights && learningInsights.total_corrections > 0 && (
-        <div className="learning-section">
-          <h2>AI Learning Progress</h2>
-          <div className="learning-stats">
-            <div className="learning-stat">
-              <div className="stat-number">{learningInsights.total_corrections}</div>
-              <div className="stat-label">user corrections learned</div>
-            </div>
-            <div className="learning-improvements">
-              <h3>recent improvements:</h3>
-              <ul>
-                {learningInsights.year_corrections?.length > 0 && (
-                  <li>improved copyright year detection accuracy</li>
-                )}
-                {learningInsights.name_corrections?.length > 0 && (
-                  <li>better player name identification</li>
-                )}
-                {learningInsights.condition_corrections?.length > 0 && (
-                  <li>more accurate condition assessment</li>
-                )}
-                {learningInsights.features_patterns?.length > 0 && (
-                  <li>enhanced feature recognition</li>
-                )}
-                {Object.keys(learningInsights.brand_specific_issues || {}).length > 0 && (
-                  <li>brand-specific accuracy improvements</li>
-                )}
-              </ul>
-            </div>
-          </div>
-        </div>
-      )}
 
     </div>
   );

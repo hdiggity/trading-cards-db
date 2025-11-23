@@ -1,0 +1,38 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 325 images from provided file list
+Found 325 grid back images to process
+Found 3001 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+Processing 3x3 grid of card backs: IMG_2068.HEIC
+processing: IMG_2068.HEIC
+2025-11-21 13:42:50,940 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-21 13:42:50,942 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-21 13:42:50,942 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+Processing 3x3 grid as PRIMARY input: images/unprocessed_bulk_back/IMG_2068.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: images/unprocessed_bulk_back/IMG_2068.HEIC
+Extracting individual cards from grid...
+Grid detection failed, using simple division
+Extracted 9 individual cards
+Converting cards to base64 for analysis...
+Analyzing each card with GPT-4 Vision...
+2025-11-21 13:43:43,313 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-21 13:43:43,337 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2068.HEIC (9 cards)
+2025-11-21 13:43:43,348 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=None, brand=Topps, sport=baseball, set=None
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from images/unprocessed_single_front
+Found 2292 front images; limiting to 60 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+2025-11-21 13:43:43,696 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+LLM call failed (final): Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Error processing front image images/unprocessed_single_front/IMG_3158_optimized.png: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Applied general image enhancement

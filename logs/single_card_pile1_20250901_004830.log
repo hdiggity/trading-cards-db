@@ -1,0 +1,4 @@
+usage: single_card_analysis.py [-h] [--undo] [--recursive] [--llm] [--out OUT]
+                               [--remove-originals] [--cleanup]
+                               [input]
+single_card_analysis.py: error: unrecognized arguments: --input

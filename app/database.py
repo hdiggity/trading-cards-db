@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 from app.models import Base
 
-DATABASE_URL = "sqlite:///./trading_cards.db"
+DATABASE_URL = "sqlite:///./cards/verified/trading_cards.db"
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(bind=engine)

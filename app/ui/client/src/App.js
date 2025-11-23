@@ -21,25 +21,6 @@ const formatFieldName = (fieldName) => {
 };
 
 // Utility helpers for display normalization
-const toTitleCase = (str) => {
-  if (!str) return '';
-  const smallWords = new Set(['and', 'or', 'the', 'of', 'a', 'an', 'for', 'to', 'in', 'on']);
-  return str
-    .toLowerCase()
-    .split(/([\s-]+)/) // keep separators
-    .map((token, idx, arr) => {
-      // Skip separators
-      if (/^[\s-]+$/.test(token)) return token;
-      if (idx !== 0 && smallWords.has(token)) return token; // keep small words lower unless first
-      return token.charAt(0).toUpperCase() + token.slice(1);
-    })
-    .join('')
-    .replace(/\bMlb\b/g, 'MLB')
-    .replace(/\bNba\b/g, 'NBA')
-    .replace(/\bNfl\b/g, 'NFL')
-    .replace(/\bNhl\b/g, 'NHL');
-};
-
 const normalizeCondition = (val) => {
   if (!val) return '';
   return String(val).replace(/_/g, ' ').trim().toLowerCase();
@@ -408,7 +389,7 @@ function ZoomableImage({ src, alt, className }) {
         />
       </div>
       {!isZoomed && (
-        <div className="zoom-hint">Click to zoom, wheel to zoom in/out when zoomed</div>
+        <div className="zoom-hint">Click to zoom</div>
       )}
     </div>
   );
@@ -503,13 +484,49 @@ function App({ onNavigate }) {
   const [lastSaved, setLastSaved] = useState(null);
   const [autoSaving, setAutoSaving] = useState(false);
   const [fieldOptions, setFieldOptions] = useState(null);
-  const [verificationMode, setVerificationMode] = useState('entire'); // 'entire' or 'single'
+  const [verificationMode, setVerificationMode] = useState('single'); // 'single' or 'entire'
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const [cardSuggestions, setCardSuggestions] = useState({}); // { cardIndex: [suggestions] }
+  const [showSuggestions, setShowSuggestions] = useState({}); // { cardIndex: true/false }
+  const suggestionTimeoutRef = useRef(null);
 
   useEffect(() => {
     fetchPendingCards();
     fetchFieldOptions();
   }, []);
+
+  // Auto-start editing when card changes (isEditing intentionally excluded to prevent loops)
+  useEffect(() => {
+    if (pendingCards.length > 0 && !isEditing) {
+      const currentCard = pendingCards[currentIndex];
+      if (currentCard && currentCard.data) {
+        if (verificationMode === 'single') {
+          const processedCard = { ...currentCard.data[currentCardIndex] };
+          const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
+          textFields.forEach(field => {
+            if (processedCard[field] && typeof processedCard[field] === 'string') {
+              processedCard[field] = processedCard[field].toLowerCase();
+            }
+          });
+          setEditedData([processedCard]);
+        } else {
+          const processedData = currentCard.data.map(card => {
+            const processedCard = { ...card };
+            const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
+            textFields.forEach(field => {
+              if (processedCard[field] && typeof processedCard[field] === 'string') {
+                processedCard[field] = processedCard[field].toLowerCase();
+              }
+            });
+            return processedCard;
+          });
+          setEditedData(processedData);
+        }
+        setIsEditing(true);
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pendingCards, currentIndex, currentCardIndex, verificationMode]);
 
   const fetchFieldOptions = async () => {
     try {
@@ -521,10 +538,61 @@ function App({ onNavigate }) {
     }
   };
 
+  // Auto-lookup team for cards with unknown team
+  const lookupTeamForCard = async (card, cardIndex) => {
+    const team = card.team || '';
+    if (team.toLowerCase() === 'unknown' || team === '') {
+      try {
+        const response = await fetch('http://localhost:3001/api/team-lookup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: card.name,
+            copyright_year: card.copyright_year,
+            sport: card.sport
+          })
+        });
+        const result = await response.json();
+        if (result.team) {
+          // Update the card with the looked up team
+          setEditedData(prev => {
+            const newData = [...prev];
+            if (newData[cardIndex]) {
+              newData[cardIndex] = {
+                ...newData[cardIndex],
+                team: result.team.toLowerCase(),
+                _team_auto_filled: true,
+                _team_source: result.source
+              };
+            }
+            return newData;
+          });
+          console.log(`[team-lookup] Auto-filled team for ${card.name}: ${result.team} (${result.source})`);
+        }
+      } catch (error) {
+        console.error('Error looking up team:', error);
+      }
+    }
+  };
+
+  // Effect to auto-lookup teams when editing starts
+  useEffect(() => {
+    if (isEditing && editedData.length > 0) {
+      editedData.forEach((card, index) => {
+        const team = card.team || '';
+        if (team.toLowerCase() === 'unknown' || team === '') {
+          lookupTeamForCard(card, index);
+        }
+      });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isEditing, editedData.length]);
+
   const fetchPendingCards = async () => {
     try {
       const response = await fetch('http://localhost:3001/api/pending-cards');
       const data = await response.json();
+      console.log('[fetchPendingCards] Loaded', data.length, 'pending images. Cards per image:', data.map(d => d.data?.length || 0));
       setPendingCards(data);
       setLoading(false);
     } catch (error) {
@@ -533,18 +601,73 @@ function App({ onNavigate }) {
     }
   };
 
-  const handleAction = async (action) => {
+  const fetchCardSuggestions = async (cardIndex, searchParams) => {
+    // Only search if we have some meaningful criteria
+    const { name, brand, number, copyright_year } = searchParams;
+    if (!name && !brand && !number && !copyright_year) {
+      setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
+      return;
+    }
+    // Need at least 2 chars for name search
+    if (name && name.length < 2 && !brand && !number && !copyright_year) {
+      setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:3001/api/card-suggestions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(searchParams)
+      });
+      const data = await response.json();
+      if (data.suggestions && data.suggestions.length > 0) {
+        setCardSuggestions(prev => ({ ...prev, [cardIndex]: data.suggestions }));
+        setShowSuggestions(prev => ({ ...prev, [cardIndex]: true }));
+      } else {
+        setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
+        setShowSuggestions(prev => ({ ...prev, [cardIndex]: false }));
+      }
+    } catch (error) {
+      console.error('Error fetching card suggestions:', error);
+    }
+  };
+
+  const applySuggestion = (cardIndex, suggestion) => {
+    const newData = [...editedData];
+    newData[cardIndex] = {
+      ...newData[cardIndex],
+      name: suggestion.name || newData[cardIndex].name,
+      brand: suggestion.brand || newData[cardIndex].brand,
+      number: suggestion.number || newData[cardIndex].number,
+      copyright_year: suggestion.copyright_year || newData[cardIndex].copyright_year,
+      team: suggestion.team || newData[cardIndex].team,
+      card_set: suggestion.card_set || newData[cardIndex].card_set,
+      sport: suggestion.sport || newData[cardIndex].sport,
+      features: suggestion.features || newData[cardIndex].features,
+      is_player_card: suggestion.is_player_card !== undefined ? suggestion.is_player_card : newData[cardIndex].is_player_card
+    };
+    setEditedData(newData);
+    setShowSuggestions(prev => ({ ...prev, [cardIndex]: false }));
+    // Trigger auto-save
+    setTimeout(() => autoSaveProgress(newData), 500);
+  };
+
+  const handleAction = async (action, mode = null) => {
     if (pendingCards.length === 0) return;
-    
+
+    // Use passed mode or current verificationMode
+    const actionMode = mode || verificationMode;
+
     setProcessing(true);
     const currentCard = pendingCards[currentIndex];
-    
+
     try {
       let endpoint, requestBody;
-      
-      if (verificationMode === 'single') {
+
+      if (actionMode === 'single') {
         // Single card verification
-        const modifiedCardData = isEditing ? editedData[currentCardIndex] : currentCard.data[currentCardIndex];
+        const modifiedCardData = isEditing ? editedData[0] : currentCard.data[currentCardIndex];
         endpoint = `http://localhost:3001/api/${action}-card/${currentCard.id}/${currentCardIndex}`;
         requestBody = action === 'pass' && isEditing ? { modifiedData: modifiedCardData } : {};
       } else {
@@ -552,47 +675,54 @@ function App({ onNavigate }) {
         endpoint = `http://localhost:3001/api/${action}/${currentCard.id}`;
         requestBody = action === 'pass' && isEditing ? { modifiedData: editedData } : {};
       }
-      
+
       const response = await fetch(endpoint, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestBody),
       });
-      
+
       if (response.ok) {
-        const result = await response.json();
-        
-        if (verificationMode === 'single' && result.remainingCards > 0) {
-          // Update the current card data and reset to first card if we removed one
-          const updatedCards = [...pendingCards];
-          updatedCards[currentIndex].data.splice(currentCardIndex, 1);
-          setPendingCards(updatedCards);
-          
-          // Reset to first card if current index is out of bounds
-          if (currentCardIndex >= updatedCards[currentIndex].data.length) {
+        await response.json();
+
+        // Re-fetch pending cards from server to ensure sync
+        const refreshResponse = await fetch('http://localhost:3001/api/pending-cards');
+        if (refreshResponse.ok) {
+          const freshData = await refreshResponse.json();
+          setPendingCards(freshData);
+
+          if (actionMode === 'single') {
+            // Find the same image in fresh data
+            const sameImage = freshData.find(c => c.id === currentCard.id);
+            if (sameImage && sameImage.data.length > 0) {
+              // Image still has cards, stay on it
+              const newCardIndex = currentCardIndex >= sameImage.data.length ? 0 : currentCardIndex;
+              setCurrentCardIndex(newCardIndex);
+              const nextCard = { ...sameImage.data[newCardIndex] };
+              const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
+              textFields.forEach(field => {
+                if (nextCard[field] && typeof nextCard[field] === 'string') {
+                  nextCard[field] = nextCard[field].toLowerCase();
+                }
+              });
+              setEditedData([nextCard]);
+            } else {
+              // Image done or removed, move to next
+              const newIndex = currentIndex >= freshData.length ? Math.max(0, freshData.length - 1) : currentIndex;
+              setCurrentIndex(newIndex);
+              setCurrentCardIndex(0);
+              setIsEditing(false);
+              setEditedData([]);
+            }
+          } else {
+            // Entire photo mode - image should be removed
+            const newIndex = currentIndex >= freshData.length ? Math.max(0, freshData.length - 1) : currentIndex;
+            setCurrentIndex(newIndex);
             setCurrentCardIndex(0);
+            setIsEditing(false);
+            setEditedData([]);
           }
-          
-          alert(result.message);
-        } else {
-          // Remove the entire card entry or move to next
-          const newCards = pendingCards.filter((_, index) => index !== currentIndex);
-          setPendingCards(newCards);
-          
-          // Adjust current index if necessary
-          if (currentIndex >= newCards.length) {
-            setCurrentIndex(Math.max(0, newCards.length - 1));
-          }
-          
-          setCurrentCardIndex(0);
-          alert(result.message || 'Card processed successfully');
         }
-        
-        // Reset edit state
-        setIsEditing(false);
-        setEditedData([]);
       } else {
         const errorResult = await response.json();
         alert(`Error processing card: ${errorResult.error}`);
@@ -605,59 +735,28 @@ function App({ onNavigate }) {
     setProcessing(false);
   };
 
-  const startEditing = () => {
-    const currentCard = pendingCards[currentIndex];
-    
-    if (verificationMode === 'single') {
-      // Edit only the current card
-      const processedCard = { ...currentCard.data[currentCardIndex] };
-      const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
-      textFields.forEach(field => {
-        if (processedCard[field] && typeof processedCard[field] === 'string') {
-          processedCard[field] = processedCard[field].toLowerCase();
-        }
-      });
-      setEditedData([processedCard]);
-    } else {
-      // Edit all cards
-      const processedData = currentCard.data.map(card => {
-        const processedCard = { ...card };
-        const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
-        textFields.forEach(field => {
-          if (processedCard[field] && typeof processedCard[field] === 'string') {
-            processedCard[field] = processedCard[field].toLowerCase();
-          }
-        });
-        return processedCard;
-      });
-      setEditedData(processedData);
-    }
-    setIsEditing(true);
-  };
-
-  const cancelEditing = () => {
-    setIsEditing(false);
-    setEditedData([]);
-    setLastSaved(null);
-  };
-
   const autoSaveProgress = async (dataToSave = null) => {
     if (pendingCards.length === 0) return;
-    
+
     const currentCard = pendingCards[currentIndex];
     const saveData = dataToSave || editedData;
-    
+
     if (saveData.length === 0) return;
-    
+
     setAutoSaving(true);
-    
+
     try {
+      // In single card mode, send cardIndex so server knows which card to update
+      const requestBody = verificationMode === 'single'
+        ? { data: saveData, cardIndex: currentCardIndex }
+        : { data: saveData };
+
       const response = await fetch(`http://localhost:3001/api/save-progress/${currentCard.id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ data: saveData }),
+        body: JSON.stringify(requestBody),
       });
       
       if (response.ok) {
@@ -713,6 +812,24 @@ function App({ onNavigate }) {
     autoSaveTimeoutRef.current = setTimeout(() => {
       autoSaveProgress(newData);
     }, 2000);
+
+    // Trigger suggestions when name changes (debounced)
+    const suggestionFields = ['name', 'brand', 'number', 'copyright_year'];
+    if (suggestionFields.includes(field)) {
+      if (suggestionTimeoutRef.current) {
+        clearTimeout(suggestionTimeoutRef.current);
+      }
+      suggestionTimeoutRef.current = setTimeout(() => {
+        const card = newData[cardIndex];
+        fetchCardSuggestions(cardIndex, {
+          name: card.name,
+          brand: card.brand,
+          number: card.number,
+          copyright_year: card.copyright_year,
+          sport: card.sport
+        });
+      }, 500);
+    }
   };
 
   const addNewCard = () => {
@@ -747,20 +864,21 @@ function App({ onNavigate }) {
     setTimeout(() => autoSaveProgress(newData), 500);
   };
 
-  const handleReprocess = async () => {
+  const handleReprocess = async (mode = 'remaining') => {
     if (pendingCards.length === 0) return;
-    
+
     setReprocessing(true);
     const currentCard = pendingCards[currentIndex];
     const controller = new AbortController();
     reprocessControllerRef.current = controller;
-    
+
     try {
       const response = await fetch(`http://localhost:3001/api/reprocess/${currentCard.id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
+        body: JSON.stringify({ mode }),
         signal: controller.signal,
       });
       
@@ -801,18 +919,20 @@ function App({ onNavigate }) {
   };
 
   const goToPrevious = () => {
-    if (isEditing || reprocessing) {
-      alert('Please save or cancel your edits first');
+    if (reprocessing) {
+      alert('Please wait for re-processing to complete');
       return;
     }
+    setIsEditing(false); // Reset edit state to trigger re-init for new card
     setCurrentIndex(Math.max(0, currentIndex - 1));
   };
 
   const goToNext = () => {
-    if (isEditing || reprocessing) {
-      alert('Please save or cancel your edits first');
+    if (reprocessing) {
+      alert('Please wait for re-processing to complete');
       return;
     }
+    setIsEditing(false); // Reset edit state to trigger re-init for new card
     setCurrentIndex(Math.min(pendingCards.length - 1, currentIndex + 1));
   };
 
@@ -893,29 +1013,33 @@ function App({ onNavigate }) {
             )}
           </div>
         </div>
-        {isEditing && <p className="edit-mode">EDIT MODE</p>}
       </header>
 
       <div className="card-container">
         <div className="image-section">
-          <ZoomableImage 
-            src={`http://localhost:3001/images/pending_verification/${currentCard.imageFile}`}
-            alt="Trading card"
-            className="card-image"
-          />
+          <div className="main-image-block">
+            <div className="main-image-title">Original Scan</div>
+            <ZoomableImage
+              src={`http://localhost:3001/api/bulk-back-image/${currentCard.imageFile}`}
+              alt="Trading card"
+              className="card-image"
+            />
+          </div>
 
           {/* Paired view: show cropped back and matched front for fast verification */}
           {verificationMode === 'single' && currentCard?.data?.length > 0 && (
             (() => {
               const sel = currentCard.data[Math.min(currentCardIndex, currentCard.data.length - 1)] || {};
               const stem = (currentCard.imageFile || '').replace(/\.[^.]+$/, '');
-              const croppedAlias = sel?._grid_metadata?.cropped_back_alias; // e.g., cropped_backs/<stem>_posX.png
-              const backCropUrl = croppedAlias 
-                ? `http://localhost:3001/images/pending_verification/${croppedAlias}` 
-                : null;
-              const frontFile = sel?.matched_front_file; // filename under images/unprocessed_single_front
-              const frontUrl = frontFile 
-                ? `http://localhost:3001/images/unprocessed_single_front/${frontFile}` 
+              // Build cropped back filename: stem_posN_Name_Number.png
+              const pos = sel?._grid_metadata?.position ?? sel?.grid_position ?? currentCardIndex;
+              const cardName = (sel?.name || 'unknown').replace(/\s+/g, '_');
+              const cardNumber = sel?.number || 'no_num';
+              const croppedFilename = `${stem}_pos${pos}_${cardName}_${cardNumber}.png`;
+              const backCropUrl = `http://localhost:3001/api/cropped-back-image/${croppedFilename}`;
+              const frontFile = sel?.matched_front_file; // filename under cards/unprocessed_single_front
+              const frontUrl = frontFile
+                ? `http://localhost:3001/api/front-image/${frontFile}`
                 : null;
               if (!backCropUrl && !frontUrl) return null;
               return (
@@ -948,39 +1072,33 @@ function App({ onNavigate }) {
 
         <div className="data-section">
           <h3>extracted card data:</h3>
-          {!isEditing && (
-            <div className="top-controls">
-              <button onClick={startEditing} className="edit-button">
-                Edit Data
-              </button>
-              <button 
-                onClick={handleReprocess} 
-                className="reprocess-button"
-                disabled={reprocessing}
-              >
-                {reprocessing ? 'Re-processing...' : 'Re-process'}
-              </button>
+          <div className="edit-controls-top">
+            <button onClick={addNewCard} className="add-card-button">
+              + Add Card
+            </button>
+            <button
+              onClick={() => handleReprocess('remaining')}
+              className="reprocess-button"
+              disabled={reprocessing}
+            >
+              {reprocessing ? 'Re-processing...' : 'Re-process Remaining'}
+            </button>
+            <button
+              onClick={() => handleReprocess('all')}
+              className="reprocess-button reprocess-all"
+              disabled={reprocessing}
+            >
+              Re-process All
+            </button>
+            <div className="save-status">
+              {autoSaving && <span className="saving">Saving...</span>}
+              {!autoSaving && lastSaved && (
+                <span className="saved">
+                  Saved {new Date(lastSaved).toLocaleTimeString()}
+                </span>
+              )}
             </div>
-          )}
-          
-          {isEditing && (
-            <div className="edit-controls-top">
-              <button onClick={addNewCard} className="add-card-button">
-                + Add Card
-              </button>
-              <div className="save-status">
-                {autoSaving && <span className="saving">Saving...</span>}
-                {!autoSaving && lastSaved && (
-                  <span className="saved">
-                    Saved {new Date(lastSaved).toLocaleTimeString()}
-                  </span>
-                )}
-                {!autoSaving && !lastSaved && isEditing && (
-                  <span className="unsaved">Unsaved changes</span>
-                )}
-              </div>
-            </div>
-          )}
+          </div>
           
           <div className="card-data">
             {displayData.map((card, index) => (
@@ -1008,12 +1126,68 @@ function App({ onNavigate }) {
                     <>
                       <div className="field-group">
                         <label><strong>{formatFieldName('name')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.name} 
+                        <input
+                          type="text"
+                          value={card.name}
                           onChange={(e) => updateCardField(index, 'name', e.target.value)}
+                          onFocus={() => {
+                            if (cardSuggestions[index]?.length > 0) {
+                              setShowSuggestions(prev => ({ ...prev, [index]: true }));
+                            }
+                          }}
                         />
                       </div>
+                      {showSuggestions[index] && cardSuggestions[index]?.length > 0 && (
+                        <div className="suggestions-container" style={{
+                          backgroundColor: '#2a2a2a',
+                          border: '1px solid #444',
+                          borderRadius: '4px',
+                          marginBottom: '10px',
+                          maxHeight: '150px',
+                          overflowY: 'auto'
+                        }}>
+                          <div style={{
+                            padding: '5px 10px',
+                            borderBottom: '1px solid #444',
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center'
+                          }}>
+                            <span style={{ fontSize: '11px', color: '#888' }}>
+                              Matching cards from database ({cardSuggestions[index].length})
+                            </span>
+                            <button
+                              onClick={() => setShowSuggestions(prev => ({ ...prev, [index]: false }))}
+                              style={{
+                                background: 'none',
+                                border: 'none',
+                                color: '#888',
+                                cursor: 'pointer',
+                                fontSize: '12px'
+                              }}
+                            >
+                              hide
+                            </button>
+                          </div>
+                          {cardSuggestions[index].map((suggestion, sIdx) => (
+                            <div
+                              key={sIdx}
+                              onClick={() => applySuggestion(index, suggestion)}
+                              style={{
+                                padding: '8px 10px',
+                                borderBottom: '1px solid #333',
+                                cursor: 'pointer',
+                                fontSize: '12px'
+                              }}
+                              onMouseEnter={(e) => e.target.style.backgroundColor = '#3a3a3a'}
+                              onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
+                            >
+                              <strong>{suggestion.name}</strong> - {suggestion.brand} #{suggestion.number} ({suggestion.copyright_year})
+                              {suggestion.team && suggestion.team !== 'unknown' && ` - ${suggestion.team}`}
+                            </div>
+                          ))}
+                        </div>
+                      )}
                       <div className="field-group">
                         <label><strong>{formatFieldName('sport')}:</strong></label>
                         <input 
@@ -1179,80 +1353,102 @@ function App({ onNavigate }) {
         <div className="navigation">
           {verificationMode === 'single' && currentCard.data.length > 1 && (
             <>
-              <button 
-                onClick={() => setCurrentCardIndex(Math.max(0, currentCardIndex - 1))} 
-                disabled={currentCardIndex === 0 || isEditing || reprocessing}
+              <button
+                onClick={() => {
+                  setIsEditing(false);
+                  setCurrentCardIndex(Math.max(0, currentCardIndex - 1));
+                }}
+                disabled={currentCardIndex === 0 || reprocessing}
                 className="nav-button"
               >
                 ← Previous Card
               </button>
-              <button 
-                onClick={() => setCurrentCardIndex(Math.min(currentCard.data.length - 1, currentCardIndex + 1))} 
-                disabled={currentCardIndex === currentCard.data.length - 1 || isEditing || reprocessing}
+              <button
+                onClick={() => {
+                  setIsEditing(false);
+                  setCurrentCardIndex(Math.min(currentCard.data.length - 1, currentCardIndex + 1));
+                }}
+                disabled={currentCardIndex === currentCard.data.length - 1 || reprocessing}
                 className="nav-button"
               >
                 Next Card →
               </button>
             </>
           )}
-          
-          <button 
-            onClick={goToPrevious} 
-            disabled={currentIndex === 0 || isEditing || reprocessing}
+
+          <button
+            onClick={goToPrevious}
+            disabled={currentIndex === 0 || reprocessing}
             className="nav-button"
           >
             ← Previous Photo
           </button>
-          <button 
-            onClick={goToNext} 
-            disabled={currentIndex === pendingCards.length - 1 || isEditing || reprocessing}
+          <button
+            onClick={goToNext}
+            disabled={currentIndex === pendingCards.length - 1 || reprocessing}
             className="nav-button"
           >
             Next Photo →
           </button>
         </div>
 
-        {isEditing ? (
-          <div className="edit-controls">
-            <button 
-              onClick={cancelEditing}
-              className="cancel-button"
-            >
-              Cancel
-            </button>
-            <button 
-              onClick={() => handleAction('fail')}
-              disabled={processing || reprocessing}
-              className="fail-button"
-            >
-              {processing ? 'Processing...' : 'Fail'}
-            </button>
-            <button 
-              onClick={() => handleAction('pass')}
-              disabled={processing || reprocessing}
-              className="pass-button"
-            >
-              {processing ? 'Processing...' : 'Save & Pass'}
-            </button>
-          </div>
-        ) : (
-          <div className="action-buttons">
-            <button 
-              onClick={() => handleAction('fail')}
-              disabled={processing || reprocessing}
-              className="fail-button"
-            >
-              {processing ? 'Processing...' : 'Fail'}
-            </button>
-            <button 
-              onClick={() => handleAction('pass')}
-              disabled={processing || reprocessing}
-              className="pass-button"
-            >
-              {processing ? 'Processing...' : 'Pass'}
-            </button>
-          </div>
-        )}
+        <div className="action-buttons">
+          {verificationMode === 'single' ? (
+            <>
+              <div className="action-group">
+                <span className="action-label">Card:</span>
+                <button
+                  onClick={() => handleAction('fail')}
+                  disabled={processing || reprocessing}
+                  className="fail-button"
+                >
+                  {processing ? '...' : 'Fail Card'}
+                </button>
+                <button
+                  onClick={() => handleAction('pass')}
+                  disabled={processing || reprocessing}
+                  className="pass-button"
+                >
+                  {processing ? '...' : 'Pass Card'}
+                </button>
+              </div>
+              <div className="action-group">
+                <span className="action-label">Image:</span>
+                <button
+                  onClick={() => handleAction('fail', 'entire')}
+                  disabled={processing || reprocessing}
+                  className="fail-button"
+                >
+                  {processing ? '...' : 'Fail All'}
+                </button>
+                <button
+                  onClick={() => handleAction('pass', 'entire')}
+                  disabled={processing || reprocessing}
+                  className="pass-button"
+                >
+                  {processing ? '...' : 'Pass All'}
+                </button>
+              </div>
+            </>
+          ) : (
+            <>
+              <button
+                onClick={() => handleAction('fail')}
+                disabled={processing || reprocessing}
+                className="fail-button"
+              >
+                {processing ? 'Processing...' : 'Fail All'}
+              </button>
+              <button
+                onClick={() => handleAction('pass')}
+                disabled={processing || reprocessing}
+                className="pass-button"
+              >
+                {processing ? 'Processing...' : 'Pass All'}
+              </button>
+            </>
+          )}
+        </div>
         
         <div className="system-controls">
           <button 

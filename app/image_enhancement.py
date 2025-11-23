@@ -1,14 +1,12 @@
 """
 Image enhancement module for trading card processing.
-Adapted from single_card/single_card_analysis.py for integration with the main pipeline.
-Keeps the single_card folder separate while reusing the core image processing logic.
 """
 
 import cv2
 import numpy as np
 
 
-# Optimal settings for AI analysis (from single_card_analysis.py)
+# Optimal settings for AI analysis
 TARGET_WIDTH = 1024
 TARGET_HEIGHT = 1400
 
@@ -134,8 +132,8 @@ def four_point_transform(image, pts):
 
 def process_image_opencv(img_array):
     """
-    Core image processing pipeline from single_card_analysis.py
-    Takes OpenCV image array, returns processed image array
+    Core image processing pipeline.
+    Takes OpenCV image array, returns processed image array.
     """
     # Step 1: Initial noise reduction
     denoised = reduce_noise(img_array)

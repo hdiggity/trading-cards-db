@@ -111,6 +111,33 @@
   border-color: #525252;
 }
 
+.refresh-prices-button {
+  padding: 6px 10px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.refresh-prices-button:hover:not(:disabled) {
+  background: #333;
+}
+
+.refresh-prices-button:disabled {
+  background: #737373;
+  cursor: not-allowed;
+}
+
+.refresh-result {
+  font-size: 13px;
+  color: #525252;
+  margin-left: 8px;
+}
+
 .loading {
   text-align: center;
   font-size: 18px;
@@ -356,24 +383,347 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   .database-browser {
     padding: 16px;
   }
-  
+
   .search-form {
     flex-direction: column;
   }
-  
+
   .search-input {
     width: 100%;
   }
-  
+
   .header-top {
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
   }
-  
+
   .cards-table th,
   .cards-table td {
     padding: 8px 6px;
     font-size: 12px;
   }
+}
+
+/* Clickable rows */
+.clickable-row {
+  cursor: pointer;
+}
+
+/* Card Modal Styles */
+.card-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.card-modal {
+  background: white;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #737373;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background-color 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #525252;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 24px;
+}
+
+.modal-image-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.modal-card-image {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.modal-loading,
+.modal-no-image {
+  color: #737373;
+  font-size: 14px;
+  text-align: center;
+  padding: 40px;
+}
+
+.modal-details-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.modal-details-section h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.modal-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-row {
+  display: flex;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.detail-label {
+  color: #737373;
+  min-width: 100px;
+  font-weight: 500;
+}
+
+.modal-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.modal-actions .edit-btn,
+.modal-actions .delete-btn,
+.modal-actions .save-btn,
+.modal-actions .cancel-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* Modal Edit Form */
+.modal-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-edit-form .form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.modal-edit-form label {
+  min-width: 80px;
+  font-size: 14px;
+  color: #737373;
+  font-weight: 500;
+}
+
+.modal-edit-form input,
+.modal-edit-form select {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+.modal-edit-form input:focus,
+.modal-edit-form select:focus {
+  outline: none;
+  border-color: #525252;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+  }
+
+  .modal-image-section {
+    max-width: 100%;
+    min-width: auto;
+  }
+
+  .modal-details-section {
+    min-width: auto;
+  }
+}
+
+/* Individual cards section in modal */
+.individual-cards-section {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.individual-cards-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #525252;
+}
+
+.individual-card-entry {
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.individual-card-entry:last-child {
+  margin-bottom: 0;
+}
+
+
+.individual-card-entry .detail-row {
+  font-size: 12px;
+  padding: 2px 0;
+}
+
+.individual-card-image {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cropped-back-thumbnail {
+  max-width: 150px;
+  max-height: 200px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  object-fit: contain;
+}
+
+/* Individual card header with edit button */
+.individual-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 13px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.copy-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-copy-btn,
+.delete-copy-btn {
+  font-size: 11px;
+  padding: 3px 8px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.edit-copy-btn {
+  background: #737373;
+}
+
+.edit-copy-btn:hover {
+  background: #525252;
+}
+
+.delete-copy-btn {
+  background: #dc2626;
+}
+
+.delete-copy-btn:hover {
+  background: #b91c1c;
+}
+
+/* Copy edit form */
+.copy-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.copy-edit-form .form-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-edit-form label {
+  min-width: 70px;
+  font-size: 12px;
+  color: #737373;
+  font-weight: 500;
+}
+
+.copy-edit-form input,
+.copy-edit-form select {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  font-size: 12px;
+  background: white;
+}
+
+.copy-edit-form input:focus,
+.copy-edit-form select:focus {
+  outline: none;
+  border-color: #525252;
+}
+
+.copy-edit-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.copy-edit-actions .save-btn,
+.copy-edit-actions .cancel-btn {
+  font-size: 11px;
+  padding: 5px 12px;
 }

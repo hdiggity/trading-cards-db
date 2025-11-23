@@ -1,12 +1,13 @@
-.env
+# caches
 app/__pycache__/
+app/cache/
+
+# local setup
+.env
+.claude
+.ruff_cache
+.vscode
+
+# node
 node_modules/
 */node_modules/
-logs/
-app/cache/
-__pycache__/
-*.pyc
-*.db
-backups/
-*.log
-*.pid

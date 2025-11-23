@@ -1,0 +1,75 @@
+Seeded common Topps checklists
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3001 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:21:29,856 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:21:35,058 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg', 'File size: 447886 bytes, Type: .jpeg', None, 'session_20251122_182129_36523', None, '3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-22 18:21:35,058 - trading_cards - INFO - [filesystem] File uploaded: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:21:35,065 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> processing
+2025-11-22 18:21:35,070 - trading_cards - INFO - [image_processing] Started processing: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+Extracting individual cards from grid...
+Hough detection incomplete, trying smart edge detection...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+2025-11-22 18:22:06,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-22 18:22:06,440 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (9 cards)
+2025-11-22 18:22:06,447 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=1984, brand=Topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2292 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-11-22 18:22:06,665 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+LLM call failed (final): Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Error processing front image cards/unprocessed_single_front/IMG_3158_optimized.png: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Applied general image enhancement
+2025-11-22 18:22:12,298 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-22 18:22:12,634 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+LLM call failed (final): Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Error processing front image cards/unprocessed_single_front/IMG_2323_optimized.png: Error code: 400 - {'error': {'message': "You uploaded an unsupported image. Please make sure your image has of one the following formats: ['png', 'jpeg', 'gif', 'webp'].", 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_image_format'}}
+Applied general image enhancement
+2025-11-22 18:22:18,152 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-22 18:22:23,827 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-22 18:22:29,108 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-22 18:22:34,400 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-22 18:22:40,830 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-22 18:22:46,355 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-22 18:22:51,908 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Matched grid position 2 with 592F13D7-1F9D-443C-98A8-6CB7D6AB2065_1_105_c_optimized.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos0_Rick_Sutcliffe_245.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos1_Doug_Bird_82.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos2_Warren_Cromartie_287.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos3_Mike_Smithson_89.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos4_Dave_Stewart_352.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos5_Jim_Sundberg_779.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos6_Mike_Richardt_641.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos7_Mike_Hargrove_64.png
+Saved cropped back: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c_pos8_Vance_Law_667.png
+Saved 9 grid cards to cards/pending_verification/3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.json
+Grid processing completed: 9 cards extracted
+2025-11-22 18:22:52,053 - trading_cards - INFO - [filesystem] File move: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+2025-11-22 18:22:52,055 - trading_cards - INFO - [system] Upload status changed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg -> pending_verification
+2025-11-22 18:22:52,056 - trading_cards - SUCCESS - [image_processing] Processing completed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg
+completed: 3FA426BB-188D-4E91-9FCB-BCB3EEB46E9F_1_105_c.jpeg (moved to pending_verification/bulk back)

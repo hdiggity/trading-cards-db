@@ -1,0 +1,222 @@
+looking for images to process...
+found image: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+detected probable 3x3 grid layout for 2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+processing: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+2025-08-30 22:47:44,591 - trading_cards - INFO - [filesystem] File uploaded: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+2025-08-30 22:47:44,593 - trading_cards - INFO - [system] Upload status changed: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC -> processing
+2025-08-30 22:47:44,594 - trading_cards - INFO - [image_processing] Started processing: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+Processing 3x3 grid as PRIMARY input: images/raw_scans/2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: images/raw_scans/2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+Extracting individual cards from grid...
+Grid detection failed, using simple division
+Extracted 9 individual cards
+Converting cards to base64 for analysis...
+Analyzing each card with GPT-4 Vision...
+2025-08-30 22:48:05,549 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-30 22:48:05,573 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC (9 cards)
+2025-08-30 22:48:05,577 - trading_cards - INFO - [system] Upload status changed: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=None, brand=Topps, sport=baseball, set=None
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from images/unprocessed_single_front
+Found 1502 front images; limiting to 60 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+Applied grid brand context: Topps
+2025-08-30 22:48:12,889 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:48:21,591 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:48:27,633 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:48:34,247 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:48:40,174 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:48:46,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:48:51,907 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:48:58,246 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:04,603 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:10,533 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:16,727 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:22,390 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:27,055 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:32,886 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:38,595 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:44,975 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:51,599 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:49:58,123 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:03,784 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:10,043 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:11,593 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:17,845 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:24,083 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:29,801 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:31,025 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:38,191 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:39,726 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:45,899 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:51,285 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:50:57,750 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:04,112 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:10,448 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:16,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:22,476 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:28,161 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:35,185 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:41,390 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:47,885 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:51:54,340 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:00,146 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:07,643 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:13,624 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:19,046 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:24,578 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:31,329 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:37,915 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:43,877 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:50,411 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:52:57,150 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:03,273 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:09,100 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:14,570 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:22,013 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:27,304 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:32,648 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:39,124 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:45,079 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:50,602 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:53:56,355 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-08-30 22:54:02,694 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Adding TCDB verification to grid cards...
+Searching TCDB for: Robert Raymond Pfeil unknown unknown topps #99
+Matched grid position 8 with IMG_4457_optimized.png
+2025-08-30 22:54:03,930 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Robert+Raymond+Pfeil+unknown+unknown+topps+%2399&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:04,204 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Robert Raymond Pfeil
+Searching TCDB for: Kenneth Raymond Suarez unknown unknown topps #209
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Robert Raymond Pfeil unknown unknown topps #99
+2025-08-30 22:54:05,406 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Kenneth+Raymond+Suarez+unknown+unknown+topps+%23209&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:05,558 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Kenneth Raymond Suarez
+Searching TCDB for: Kenneth Smith Harrelson unknown unknown topps #545
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Kenneth Raymond Suarez unknown unknown topps #209
+2025-08-30 22:54:06,838 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Kenneth+Smith+Harrelson+unknown+unknown+topps+%23545&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:07,004 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Kenneth Smith Harrelson
+Searching TCDB for: Rich Hand unknown Cleveland Indians topps #24
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Kenneth Smith Harrelson unknown unknown topps #545
+2025-08-30 22:54:08,458 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Rich+Hand+unknown+Cleveland+Indians+topps+%2324&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:08,618 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Rich Hand
+Searching TCDB for: Ted Ford unknown Cleveland topps #24
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Rich Hand unknown Cleveland Indians topps #24
+2025-08-30 22:54:10,060 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Ted+Ford+unknown+Cleveland+topps+%2324&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:10,221 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Ted Ford
+Searching TCDB for: Ray Corbin unknown Minnesota topps #86
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Ted Ford unknown Cleveland topps #24
+2025-08-30 22:54:11,582 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Ray+Corbin+unknown+Minnesota+topps+%2386&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:11,733 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Ray Corbin
+Searching TCDB for: Ray Corbin unknown Minnesota topps #86
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Ray Corbin unknown Minnesota topps #86
+2025-08-30 22:54:13,059 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Ray+Corbin+unknown+Minnesota+topps+%2386&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:13,229 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Ray Corbin
+Searching TCDB for: Vince Colbert unknown Cleveland topps
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Ray Corbin unknown Minnesota topps #86
+2025-08-30 22:54:14,705 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=Vince+Colbert+unknown+Cleveland+topps&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:14,930 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+No TCDB matches found for Vince Colbert
+Searching TCDB for: 1971 multiple League Leaders 1971 multiple topps #86 1971 Topps
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: Vince Colbert unknown Cleveland topps
+2025-08-30 22:54:16,184 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/Search.cfm?search=1971+multiple+League+Leaders+1971+multiple+topps+%2386+1971+Topps&type=cards "HTTP/1.1 302 Found"
+2025-08-30 22:54:16,337 - httpx - INFO - HTTP Request: GET https://www.tcdb.com/ "HTTP/1.1 200 OK"
+Found 3 TCDB matches for 1971 multiple League Leaders
+TCDB blocked request - got redirected to: https://www.tcdb.com/
+TCDB unavailable, using mock data for: 1971 multiple League Leaders 1971 multiple topps #86 1971 Topps
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos0_Robert_Raymond_Pfeil_99.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos1_Kenneth_Raymond_Suarez_209.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos2_Kenneth_Smith_Harrelson_545.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos3_Rich_Hand_24.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos4_Ted_Ford_24.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos5_Ray_Corbin_86.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos6_Ray_Corbin_86.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos7_Vince_Colbert_unknown.png
+Saved cropped back: 2025-08-31T02-36-26-430Z_IMG_2068_pos8_1971_multiple_League_Leaders_86.png
+Saved 9 grid cards to images/pending_verification/2025-08-31T02-36-26-430Z_IMG_2068.json
+Grid processing completed: 9 cards extracted
+2025-08-30 22:54:28,255 - trading_cards - SUCCESS - [filesystem] File move: images/raw_scans/2025-08-31T02-36-26-430Z_IMG_2068.HEIC -> images/pending_verification/2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+2025-08-30 22:54:28,265 - trading_cards - INFO - [system] Upload status changed: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC -> pending_verification
+2025-08-30 22:54:28,266 - trading_cards - SUCCESS - [image_processing] Processing completed: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC
+completed: 2025-08-31T02-36-26-430Z_IMG_2068.HEIC

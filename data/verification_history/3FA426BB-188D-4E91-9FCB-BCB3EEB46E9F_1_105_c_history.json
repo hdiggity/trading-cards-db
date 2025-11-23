@@ -1,0 +1,2614 @@
+[
+  {
+    "timestamp": "2025-11-23T07:30:24.002Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "Rick Sutcliffe",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "245",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "Doug Bird",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "82",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "Warren Cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:30:28.109Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "rick sutcliffe",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "245",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "Doug Bird",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "82",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "Warren Cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:30:29.624Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "rick sutcliffe",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "245",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "Doug Bird",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "82",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "Warren Cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:31:39.961Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "Doug Bird",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "82",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "Warren Cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:31:46.069Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "doug bird",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "82",
+        "copyright_year": "1984",
+        "team": "boston red sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "Warren Cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:31:48.596Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "doug bird",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "82",
+        "copyright_year": "1984",
+        "team": "boston red sox",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "Warren Cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:36:40.593Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "Warren Cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:36:44.850Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "warren cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "bo",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:36:55.652Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "warren cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "bos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:36:58.687Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "warren cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:36:58.808Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "warren cromartie",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "287",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:37:13.703Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "Mike Smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:37:17.856Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "mike smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:37:18.418Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "Dave Stewart",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "352",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 4
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:37:46.616Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "mike smithson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "89",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 3
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:38:17.954Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "Jim Sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:38:21.948Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:38:22.135Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 5
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:39:44.971Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "Mike Richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:39:48.722Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "mike richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "other",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:39:49.629Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "mike richardt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "641",
+        "copyright_year": "1984",
+        "team": "other",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 6
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:39:59.376Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "Mike Hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:40:04.728Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "mike hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "764",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:40:08.539Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "mike hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "764",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:40:09.591Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "Vance Law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 8
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:46:16.928Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "mike hargrove",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "764",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:46:20.931Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "vance law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "764",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:46:27.706Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "vance law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T07:46:32.994Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "vance law",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "667",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_grid_metadata": {
+          "position": 7
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

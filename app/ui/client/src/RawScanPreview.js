@@ -28,7 +28,7 @@ function RawScanPreview({ onNavigate }) {
       {loading ? (
         <div className="loading">Loading raw scans…</div>
       ) : files.length === 0 ? (
-        <div className="empty">No raw scans found in images/raw_scans</div>
+        <div className="empty">No raw scans found in cards/raw_scans</div>
       ) : (
         <div className="grid">
           {files.map((f, idx) => (

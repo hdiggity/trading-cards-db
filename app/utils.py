@@ -27,7 +27,7 @@ from app.models import Card
 from app.schemas import CardCreate  # make sure this import exists
 from app.tcdb_scraper import search_tcdb_cards
 
-# Import image enhancement functions from single_card analysis
+# Import image enhancement functions
 try:
     import cv2
     import numpy as np

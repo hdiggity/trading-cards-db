@@ -164,7 +164,8 @@ def build_system_prompt(include_learning: bool = True) -> str:
         "Naming rules and distinctions:\n"
         "- NAME: Use the exact printed title/subject on the card.\n"
         "  • If it's a Leaders/Checklist/Team/Multi-player card → set is_player_card=false and NAME to the printed TITLE (not individual names).\n"
-        "  • If it's a single player card → set is_player_card=true and NAME to the player’s name.\n"
+        "  • If it's a single player card → set is_player_card=true and NAME to the player's name.\n"
+        "  • CRITICAL: For card backs, the player name is at the VERY TOP in the LARGEST text (e.g., 'DAVE GOLTZ'). DO NOT confuse with team names, positions, or biographical text.\n"
         "- SET: Use 'n/a' for regular/base cards. Only specify a subset/insert/parallel beyond brand+year (e.g., 'all-star', 'leaders', 'chrome refractor').\n"
         "- YEAR: Use the production/copyright year (©, fine print), not stats years.\n"
         "- CONDITION: Evaluate corners/edges/surface carefully and map to the 8-level scale.\n"
@@ -240,7 +241,7 @@ def build_reprocessing_prompt(_previous_data):
 Analyze each trading card individually in this image.
 
 Count cards visible and analyze each one separately:
-- Player name (check text, jersey, nameplate)
+- Player name: CRITICAL - For card backs, look at the VERY TOP for the LARGEST text, which is the player's FULL NAME (e.g., "DAVE GOLTZ", "JIM HOLT"). For card fronts, check text, jersey, nameplate. DO NOT confuse player names with team names, positions, or stats.
 - Team (logos, colors, text)
 - Year (© symbol, small print)
 - Card number
@@ -1150,10 +1151,10 @@ def save_cards_to_verification(
             br = standardized.get("brand") or ""
             if isinstance(cs, str):
                 import re
-                # Remove brand tokens and years from card_set to see what's left
-                leftovers = cs
-                brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc"]
-                for bt in brand_tokens + ([br] if br else []):
+                # Remove brand tokens and years from card_set to see what's left (case-insensitive)
+                leftovers = cs.lower()
+                brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc", "baseball"]
+                for bt in brand_tokens + ([br.lower()] if br else []):
                     if bt:
                         leftovers = leftovers.replace(bt, "")
                 leftovers = re.sub(r"\b(19\d{2}|20\d{2})\b", "", leftovers)

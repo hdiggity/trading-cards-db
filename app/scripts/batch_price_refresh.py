@@ -52,17 +52,20 @@ def batch_estimate_prices(cards_data: list[dict], client: OpenAI) -> dict:
 
     cards_text = "\n".join(card_summaries)
 
-    prompt = f"""You are a trading card price appraiser. Estimate current market values for these cards.
-Consider: player significance, year/vintage, brand, condition, features (rookie, autograph, etc).
+    prompt = f"""You are a trading card price appraiser. Give CONSERVATIVE single-number estimates.
 
 Cards to price:
 {cards_text}
 
-Return ONLY a JSON object with card index as key and price range as value.
-Example: {{"0": "$1-5", "1": "$10-25", "2": "$50-100"}}
+Return ONLY a JSON object with card index as key and single price as value.
+Example: {{"0": "$1", "1": "$3", "2": "$15"}}
 
-Be realistic and conservative. Common base cards from 1980s-2000s are typically $1-5.
-Rookies of stars: $5-25. Hall of Famers vintage: $10-50. Autographs vary widely."""
+IMPORTANT: Most common cards are worth $1-3. Be conservative:
+- Common base cards (1980s-2000s): $1
+- Minor stars: $2-3
+- Hall of Famers base: $3-5
+- Rookies of stars: $5-10
+- Only true premium cards (autographs, key rookies): $15+"""
 
     try:
         response = client.chat.completions.create(

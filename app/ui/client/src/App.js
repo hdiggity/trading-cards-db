@@ -12,7 +12,7 @@ const formatFieldName = (fieldName) => {
     'team': 'Team',
     'card_set': 'Set',
     'condition': 'Condition',
-    'is_player_card': 'Player Card',
+    'is_player': 'Player Card',
     'features': 'Features',
     'value_estimate': 'Price Estimate',
     'notes': 'Notes'
@@ -34,7 +34,7 @@ const formatFieldValue = (fieldName, value) => {
   const noUnderscore = raw.replace(/_/g, ' ').trim();
 
   switch (fieldName) {
-    case 'is_player_card':
+    case 'is_player':
       return value ? 'yes' : 'no';
     case 'name':
       return noUnderscore.toLowerCase();
@@ -116,20 +116,22 @@ function ConfidenceIndicator({ confidence, fieldName }) {
 
 // TCDB verification removed
 
-// Zoomable image component
-function ZoomableImage({ src, alt, className }) {
+// Zoomable image component - simplified for intuitive use
+function ZoomableImage({ src, alt, className, onError }) {
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [mouseDownPos, setMouseDownPos] = useState({ x: 0, y: 0 });
+  const [hasDraggedEnough, setHasDraggedEnough] = useState(false);
   const imgRef = useRef(null);
-  const pinchRef = useRef(null); // { initialDist, initialZoom, centerX, centerY }
+  const pinchRef = useRef(null);
+  const DRAG_THRESHOLD = 5; // pixels to move before considering it a drag
 
-  // Clamp panning so image stays reasonably in view when zoomed
+  // Clamp panning so image stays in view
   const clampPosition = (pos, z, rect) => {
     if (!rect) return pos;
-    // Max pan relative to center based on extra size at current zoom
     const maxX = Math.max(0, (rect.width * (z - 1)) / 2);
     const maxY = Math.max(0, (rect.height * (z - 1)) / 2);
     return {
@@ -137,14 +139,28 @@ function ZoomableImage({ src, alt, className }) {
       y: Math.min(maxY, Math.max(-maxY, pos.y)),
     };
   };
-  
+
+  // Single click = toggle between 1x and 2x zoom
   const handleImageClick = (e) => {
-    if (!isZoomed) {
+    if (hasDraggedEnough) return; // Don't toggle if we dragged
+    if (isZoomed) {
+      // Zoom out
+      setIsZoomed(false);
+      setZoomLevel(1);
+      setPosition({ x: 0, y: 0 });
+    } else {
+      // Zoom in to 2x centered on click point
+      const rect = imgRef.current?.getBoundingClientRect();
+      if (rect) {
+        const cx = e.clientX - rect.left - rect.width / 2;
+        const cy = e.clientY - rect.top - rect.height / 2;
+        setPosition({ x: -cx * 0.5, y: -cy * 0.5 });
+      }
       setIsZoomed(true);
       setZoomLevel(2);
     }
   };
-  
+
   const handleZoomOut = () => {
     setIsZoomed(false);
     setZoomLevel(1);
@@ -152,86 +168,85 @@ function ZoomableImage({ src, alt, className }) {
   };
 
   const stepZoom = (delta) => {
-    const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
-    const prev = zoomLevel;
-    const next = Math.max(1, Math.min(5, prev + delta));
+    const rect = imgRef.current?.getBoundingClientRect();
+    const next = Math.max(1, Math.min(5, zoomLevel + delta));
     if (next > 1 && !isZoomed) setIsZoomed(true);
-    if (rect && next !== prev) {
-      const cx = rect.width / 2;
-      const cy = rect.height / 2;
-      const factor = (next - prev) / Math.max(next, 1);
-      setPosition((p) => clampPosition({ x: p.x - cx * factor, y: p.y - cy * factor }, next, rect));
-    }
+    if (rect) setPosition((p) => clampPosition(p, next, rect));
     setZoomLevel(next);
-    if (next === 1) setIsZoomed(false);
+    if (next === 1) { setIsZoomed(false); setPosition({ x: 0, y: 0 }); }
   };
 
-  const fitToView = () => {
-    // For now, fit means reset to 1 and center
-    handleZoomOut();
-  };
-  
+  const fitToView = () => handleZoomOut();
+
+  // Scroll wheel = zoom in/out (works always, not just when zoomed)
   const handleWheel = (e) => {
-    // Smooth trackpad/mouse wheel zoom; support pinch via ctrlKey
-    const normalizeDeltaY = (event) => {
-      let dy = event.deltaY;
-      if (event.deltaMode === 1) dy *= 16; // lines -> pixels
-      else if (event.deltaMode === 2) dy *= 100; // pages -> pixels
-      return dy;
-    };
+    e.preventDefault();
+    const dy = e.deltaY;
 
-    const dy = normalizeDeltaY(e);
-    const isPinch = e.ctrlKey === true;
-
-    if (!isZoomed && isPinch) {
-      // Enter zoom mode on pinch gesture
-      setIsZoomed(true);
-      setZoomLevel(1.1);
+    // Adaptive sensitivity based on input device
+    // Mousepad typically has smaller deltaY values and benefits from higher sensitivity
+    // Mouse wheel has larger deltaY values
+    let sensitivity;
+    if (Math.abs(dy) < 5) {
+      // Very small delta = mousepad/trackpad with fine control
+      sensitivity = e.ctrlKey ? 0.015 : 0.01;
+    } else if (Math.abs(dy) < 50) {
+      // Small to medium delta = mousepad/trackpad
+      sensitivity = e.ctrlKey ? 0.008 : 0.005;
+    } else {
+      // Large delta = mouse wheel
+      sensitivity = e.ctrlKey ? 0.003 : 0.002;
     }
 
-    if (!isZoomed) return;
+    const rect = imgRef.current?.getBoundingClientRect();
+    let nextZoom = Math.max(1, Math.min(5, zoomLevel - dy * sensitivity));
 
-    e.preventDefault();
-
-    const prevZoom = zoomLevel;
-    const sensitivity = isPinch ? 0.0030 : 0.0018;
-    let nextZoom = prevZoom + (-dy * sensitivity);
-    nextZoom = Math.max(1, Math.min(5, nextZoom));
-
-    // Anchor zoom around cursor for better control
-    const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
-    if (rect && nextZoom !== prevZoom) {
+    // Anchor zoom around cursor for smooth zoom-to-point
+    if (rect && nextZoom !== zoomLevel) {
       const cx = e.clientX - rect.left - rect.width / 2;
       const cy = e.clientY - rect.top - rect.height / 2;
-      const factor = (nextZoom - prevZoom) / nextZoom;
+      const factor = (nextZoom - zoomLevel) / nextZoom;
       setPosition((p) => clampPosition({ x: p.x - cx * factor, y: p.y - cy * factor }, nextZoom, rect));
     }
 
+    if (nextZoom > 1 && !isZoomed) setIsZoomed(true);
     setZoomLevel(nextZoom);
-
-    if (nextZoom === 1) {
-      setIsZoomed(false);
-      setPosition({ x: 0, y: 0 });
-    }
+    if (nextZoom === 1) { setIsZoomed(false); setPosition({ x: 0, y: 0 }); }
   };
   
   const handleMouseDown = (e) => {
     if (isZoomed && zoomLevel > 1) {
-      setIsDragging(true);
+      setMouseDownPos({ x: e.clientX, y: e.clientY });
       setDragStart({ x: e.clientX - position.x, y: e.clientY - position.y });
+      setHasDraggedEnough(false);
     }
   };
-  
+
   const handleMouseMove = (e) => {
-    if (isDragging) {
-      const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
-      const newPos = { x: e.clientX - dragStart.x, y: e.clientY - dragStart.y };
-      setPosition(clampPosition(newPos, zoomLevel, rect));
+    if (isZoomed && zoomLevel > 1 && mouseDownPos.x !== 0) {
+      // Calculate distance moved since mouse down
+      const dx = Math.abs(e.clientX - mouseDownPos.x);
+      const dy = Math.abs(e.clientY - mouseDownPos.y);
+      const distanceMoved = Math.sqrt(dx * dx + dy * dy);
+
+      // Only start dragging if moved beyond threshold
+      if (distanceMoved > DRAG_THRESHOLD) {
+        if (!isDragging) {
+          setIsDragging(true);
+        }
+        setHasDraggedEnough(true);
+
+        const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+        const newPos = { x: e.clientX - dragStart.x, y: e.clientY - dragStart.y };
+        setPosition(clampPosition(newPos, zoomLevel, rect));
+      }
     }
   };
-  
+
   const handleMouseUp = () => {
     setIsDragging(false);
+    setMouseDownPos({ x: 0, y: 0 });
+    // hasDraggedEnough persists for click handler to check
   };
   
   // Touch helpers
@@ -251,8 +266,9 @@ function ZoomableImage({ src, alt, className }) {
       if (!isZoomed) setIsZoomed(true);
       e.preventDefault();
     } else if (e.touches.length === 1 && isZoomed && zoomLevel > 1) {
-      setIsDragging(true);
+      setMouseDownPos({ x: e.touches[0].clientX, y: e.touches[0].clientY });
       setDragStart({ x: e.touches[0].clientX - position.x, y: e.touches[0].clientY - position.y });
+      setHasDraggedEnough(false);
     }
   };
 
@@ -344,7 +360,7 @@ function ZoomableImage({ src, alt, className }) {
 
   return (
     <div className="zoomable-image-container">
-      <img 
+      <img
         src={src}
         alt={alt}
         className={`${className} ${isZoomed ? 'zoomed' : ''} ${isDragging ? 'no-transition' : 'smooth-zoom'}`}
@@ -363,6 +379,7 @@ function ZoomableImage({ src, alt, className }) {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
+        onError={onError}
       />
       <div className="zoom-controls">
         <button onClick={() => stepZoom(-0.5)} title="Zoom out">−</button>
@@ -389,7 +406,163 @@ function ZoomableImage({ src, alt, className }) {
         />
       </div>
       {!isZoomed && (
-        <div className="zoom-hint">Click to zoom</div>
+        <div className="zoom-hint">Click or scroll to zoom</div>
+      )}
+    </div>
+  );
+}
+
+// Autocomplete input component with real-time suggestions
+function AutocompleteInput({ field, value, onChange, placeholder, className, onAutofill }) {
+  const [suggestions, setSuggestions] = useState([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const timeoutRef = useRef(null);
+  const inputRef = useRef(null);
+
+  const fetchSuggestions = async (query) => {
+    if (!query || query.length < 1) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const response = await fetch('http://localhost:3001/api/field-autocomplete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ field, query, limit: 8 })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.suggestions && data.suggestions.length > 0) {
+          setSuggestions(data.suggestions);
+          setShowSuggestions(true);
+        } else {
+          setSuggestions([]);
+          setShowSuggestions(false);
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching autocomplete suggestions:', error);
+    }
+    setLoading(false);
+  };
+
+  const handleInputChange = (e) => {
+    const newValue = e.target.value;
+    onChange(newValue);
+
+    // Debounce autocomplete requests
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+
+    timeoutRef.current = setTimeout(() => {
+      fetchSuggestions(newValue);
+    }, 300);
+  };
+
+  const handleSuggestionClick = async (suggestion) => {
+    onChange(suggestion);
+    setShowSuggestions(false);
+    setSuggestions([]);
+
+    // If this is the name field and we have an autofill callback, fetch card data
+    if (field === 'name' && onAutofill) {
+      try {
+        const response = await fetch('http://localhost:3001/api/card-by-name', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name: suggestion })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          if (data.card) {
+            onAutofill(data.card);
+          }
+        }
+      } catch (error) {
+        console.error('Error fetching card data for autofill:', error);
+      }
+    }
+  };
+
+  const handleBlur = () => {
+    // Delay hiding to allow clicking on suggestions
+    setTimeout(() => {
+      setShowSuggestions(false);
+    }, 200);
+  };
+
+  return (
+    <div className="autocomplete-wrapper" style={{ position: 'relative' }}>
+      <input
+        ref={inputRef}
+        type="text"
+        value={value || ''}
+        onChange={handleInputChange}
+        onFocus={() => {
+          if (suggestions.length > 0) {
+            setShowSuggestions(true);
+          }
+        }}
+        onBlur={handleBlur}
+        placeholder={placeholder}
+        className={className}
+      />
+      {loading && (
+        <div style={{
+          position: 'absolute',
+          right: '8px',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          fontSize: '10px',
+          color: '#999'
+        }}>
+          ...
+        </div>
+      )}
+      {showSuggestions && suggestions.length > 0 && (
+        <div className="autocomplete-suggestions" style={{
+          position: 'absolute',
+          top: '100%',
+          left: 0,
+          right: 0,
+          backgroundColor: '#fff',
+          border: '1px solid #4a90e2',
+          borderRadius: '4px',
+          maxHeight: '150px',
+          overflowY: 'auto',
+          zIndex: 1000,
+          boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+          marginTop: '2px'
+        }}>
+          {suggestions.map((suggestion, idx) => (
+            <div
+              key={idx}
+              onClick={() => handleSuggestionClick(suggestion)}
+              style={{
+                padding: '8px 12px',
+                cursor: 'pointer',
+                borderBottom: idx < suggestions.length - 1 ? '1px solid #eee' : 'none',
+                fontSize: '13px',
+                transition: 'background-color 0.15s'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#f0f7ff';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#fff';
+              }}
+            >
+              {suggestion}
+            </div>
+          ))}
+        </div>
       )}
     </div>
   );
@@ -403,28 +576,29 @@ function FeaturesSelector({ value, availableFeatures, onChange }) {
   });
   const [customFeature, setCustomFeature] = useState('');
   const [showCustomInput, setShowCustomInput] = useState(false);
+  const [addedCustomFeatures, setAddedCustomFeatures] = useState([]);
 
   const predefinedFeatures = [
     'rookie', 'autograph', 'jersey', 'parallel', 'refractor', 'chrome',
     'limited edition', 'serial numbered', 'prospect', 'hall of fame', 'insert', 'short print'
   ];
 
-  const allFeatures = [...new Set([...predefinedFeatures, ...availableFeatures])];
+  // Include selected features and custom added features so they show up in the checkbox list
+  const allFeatures = [...new Set([...predefinedFeatures, ...availableFeatures, ...selectedFeatures, ...addedCustomFeatures])];
 
   const handleFeatureToggle = (feature) => {
     const newSelected = selectedFeatures.includes(feature)
       ? selectedFeatures.filter(f => f !== feature)
       : [...selectedFeatures, feature];
-    
+
     setSelectedFeatures(newSelected);
     onChange(newSelected.length === 0 ? 'none' : newSelected.join(','));
   };
 
   const addCustomFeature = () => {
-    if (customFeature.trim() && !selectedFeatures.includes(customFeature.trim())) {
-      const newSelected = [...selectedFeatures, customFeature.trim()];
-      setSelectedFeatures(newSelected);
-      onChange(newSelected.join(','));
+    const trimmed = customFeature.trim();
+    if (trimmed && !allFeatures.includes(trimmed)) {
+      setAddedCustomFeatures(prev => [...prev, trimmed]);
       setCustomFeature('');
       setShowCustomInput(false);
     }
@@ -502,7 +676,17 @@ function App({ onNavigate }) {
       }
     }, 10000);
 
-    return () => clearInterval(pollInterval);
+    // Add global unhandled rejection handler for debugging
+    const handleUnhandledRejection = (event) => {
+      event.preventDefault();
+      console.warn('Suppressed unhandled rejection:', event.reason);
+    };
+    window.addEventListener('unhandledrejection', handleUnhandledRejection);
+
+    return () => {
+      clearInterval(pollInterval);
+      window.removeEventListener('unhandledrejection', handleUnhandledRejection);
+    };
   }, []);
 
   // Auto-start editing when card changes (isEditing intentionally excluded to prevent loops)
@@ -541,8 +725,12 @@ function App({ onNavigate }) {
   const fetchFieldOptions = async () => {
     try {
       const response = await fetch('http://localhost:3001/api/field-options');
-      const data = await response.json();
-      setFieldOptions(data);
+      if (response.ok) {
+        try {
+          const data = await response.json();
+          setFieldOptions(data);
+        } catch (_) {}
+      }
     } catch (error) {
       console.error('Error fetching field options:', error);
     }
@@ -562,8 +750,12 @@ function App({ onNavigate }) {
             sport: card.sport
           })
         });
-        const result = await response.json();
-        if (result.team) {
+        if (!response.ok) return;
+        let result;
+        try {
+          result = await response.json();
+        } catch (_) { return; }
+        if (result && result.team) {
           // Update the card with the looked up team
           setEditedData(prev => {
             const newData = [...prev];
@@ -591,7 +783,7 @@ function App({ onNavigate }) {
       editedData.forEach((card, index) => {
         const team = card.team || '';
         if (team.toLowerCase() === 'unknown' || team === '') {
-          lookupTeamForCard(card, index);
+          lookupTeamForCard(card, index).catch(err => console.error('Team lookup failed:', err));
         }
       });
     }
@@ -601,9 +793,13 @@ function App({ onNavigate }) {
   const fetchPendingCards = async () => {
     try {
       const response = await fetch('http://localhost:3001/api/pending-cards');
-      const data = await response.json();
-      console.log('[fetchPendingCards] Loaded', data.length, 'pending images. Cards per image:', data.map(d => d.data?.length || 0));
-      setPendingCards(data);
+      if (response.ok) {
+        try {
+          const data = await response.json();
+          console.log('[fetchPendingCards] Loaded', data.length, 'pending images. Cards per image:', data.map(d => d.data?.length || 0));
+          setPendingCards(data);
+        } catch (_) {}
+      }
       setLoading(false);
     } catch (error) {
       console.error('Error fetching pending cards:', error);
@@ -630,13 +826,17 @@ function App({ onNavigate }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(searchParams)
       });
-      const data = await response.json();
-      if (data.suggestions && data.suggestions.length > 0) {
-        setCardSuggestions(prev => ({ ...prev, [cardIndex]: data.suggestions }));
-        setShowSuggestions(prev => ({ ...prev, [cardIndex]: true }));
-      } else {
-        setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
-        setShowSuggestions(prev => ({ ...prev, [cardIndex]: false }));
+      if (response.ok) {
+        try {
+          const data = await response.json();
+          if (data.suggestions && data.suggestions.length > 0) {
+            setCardSuggestions(prev => ({ ...prev, [cardIndex]: data.suggestions }));
+            setShowSuggestions(prev => ({ ...prev, [cardIndex]: true }));
+          } else {
+            setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
+            setShowSuggestions(prev => ({ ...prev, [cardIndex]: false }));
+          }
+        } catch (_) {}
       }
     } catch (error) {
       console.error('Error fetching card suggestions:', error);
@@ -655,7 +855,7 @@ function App({ onNavigate }) {
       card_set: suggestion.card_set || newData[cardIndex].card_set,
       sport: suggestion.sport || newData[cardIndex].sport,
       features: suggestion.features || newData[cardIndex].features,
-      is_player_card: suggestion.is_player_card !== undefined ? suggestion.is_player_card : newData[cardIndex].is_player_card
+      is_player: suggestion.is_player !== undefined ? suggestion.is_player : newData[cardIndex].is_player
     };
     setEditedData(newData);
     setShowSuggestions(prev => ({ ...prev, [cardIndex]: false }));
@@ -665,6 +865,12 @@ function App({ onNavigate }) {
 
   const handleAction = async (action, mode = null) => {
     if (pendingCards.length === 0) return;
+
+    // Cancel any pending auto-save to prevent race condition
+    if (autoSaveTimeoutRef.current) {
+      clearTimeout(autoSaveTimeoutRef.current);
+      autoSaveTimeoutRef.current = null;
+    }
 
     // Use passed mode or current verificationMode
     const actionMode = mode || verificationMode;
@@ -693,49 +899,57 @@ function App({ onNavigate }) {
       });
 
       if (response.ok) {
-        await response.json();
+        try { await response.json(); } catch (_) {}
 
         // Re-fetch pending cards from server to ensure sync
-        const refreshResponse = await fetch('http://localhost:3001/api/pending-cards');
-        if (refreshResponse.ok) {
-          const freshData = await refreshResponse.json();
-          setPendingCards(freshData);
+        try {
+          const refreshResponse = await fetch('http://localhost:3001/api/pending-cards');
+          if (refreshResponse.ok) {
+            const freshData = await refreshResponse.json();
+            setPendingCards(freshData);
 
-          if (actionMode === 'single') {
-            // Find the same image in fresh data
-            const sameImage = freshData.find(c => c.id === currentCard.id);
-            if (sameImage && sameImage.data.length > 0) {
-              // Image still has cards, stay on it
-              const newCardIndex = currentCardIndex >= sameImage.data.length ? 0 : currentCardIndex;
-              setCurrentCardIndex(newCardIndex);
-              const nextCard = { ...sameImage.data[newCardIndex] };
-              const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
-              textFields.forEach(field => {
-                if (nextCard[field] && typeof nextCard[field] === 'string') {
-                  nextCard[field] = nextCard[field].toLowerCase();
-                }
-              });
-              setEditedData([nextCard]);
+            if (actionMode === 'single') {
+              // Find the same image in fresh data
+              const sameImage = freshData.find(c => c.id === currentCard.id);
+              if (sameImage && sameImage.data.length > 0) {
+                // Image still has cards, stay on it
+                const newCardIndex = currentCardIndex >= sameImage.data.length ? 0 : currentCardIndex;
+                setCurrentCardIndex(newCardIndex);
+                const nextCard = { ...sameImage.data[newCardIndex] };
+                const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
+                textFields.forEach(field => {
+                  if (nextCard[field] && typeof nextCard[field] === 'string') {
+                    nextCard[field] = nextCard[field].toLowerCase();
+                  }
+                });
+                setEditedData([nextCard]);
+              } else {
+                // Image done or removed, move to next
+                const newIndex = currentIndex >= freshData.length ? Math.max(0, freshData.length - 1) : currentIndex;
+                setCurrentIndex(newIndex);
+                setCurrentCardIndex(0);
+                setIsEditing(false);
+                setEditedData([]);
+              }
             } else {
-              // Image done or removed, move to next
+              // Entire photo mode - image should be removed
               const newIndex = currentIndex >= freshData.length ? Math.max(0, freshData.length - 1) : currentIndex;
               setCurrentIndex(newIndex);
               setCurrentCardIndex(0);
               setIsEditing(false);
               setEditedData([]);
             }
-          } else {
-            // Entire photo mode - image should be removed
-            const newIndex = currentIndex >= freshData.length ? Math.max(0, freshData.length - 1) : currentIndex;
-            setCurrentIndex(newIndex);
-            setCurrentCardIndex(0);
-            setIsEditing(false);
-            setEditedData([]);
           }
+        } catch (refreshErr) {
+          console.error('Error refreshing cards:', refreshErr);
         }
       } else {
-        const errorResult = await response.json();
-        alert(`Error processing card: ${errorResult.error}`);
+        let errorMsg = 'Unknown error';
+        try {
+          const errorResult = await response.json();
+          errorMsg = errorResult.error || errorMsg;
+        } catch (_) {}
+        alert(`Error processing card: ${errorMsg}`);
       }
     } catch (error) {
       console.error('Error processing action:', error);
@@ -747,6 +961,8 @@ function App({ onNavigate }) {
 
   const autoSaveProgress = async (dataToSave = null) => {
     if (pendingCards.length === 0) return;
+    // Don't auto-save during pass/fail actions to prevent race condition
+    if (processing) return;
 
     const currentCard = pendingCards[currentIndex];
     const saveData = dataToSave || editedData;
@@ -770,9 +986,13 @@ function App({ onNavigate }) {
       });
       
       if (response.ok) {
-        const result = await response.json();
-        setLastSaved(new Date(result.timestamp));
-        
+        try {
+          const result = await response.json();
+          setLastSaved(new Date(result.timestamp));
+        } catch (_) {
+          setLastSaved(new Date());
+        }
+
         // Update the current card's data in the local state
         const updatedCards = [...pendingCards];
         updatedCards[currentIndex] = {
@@ -786,7 +1006,7 @@ function App({ onNavigate }) {
     } catch (error) {
       console.error('Error auto-saving progress:', error);
     }
-    
+
     setAutoSaving(false);
   };
 
@@ -797,8 +1017,8 @@ function App({ onNavigate }) {
     const newData = [...editedData];
     // Convert text fields to lowercase for consistency (include name)
     const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
-    let processedValue = textFields.includes(field) && typeof value === 'string' 
-      ? value.toLowerCase() 
+    let processedValue = textFields.includes(field) && typeof value === 'string'
+      ? value.toLowerCase()
       : value;
 
     if (field === 'condition' && typeof processedValue === 'string') {
@@ -813,12 +1033,12 @@ function App({ onNavigate }) {
     }
     newData[cardIndex] = { ...newData[cardIndex], [field]: processedValue };
     setEditedData(newData);
-    
+
     // Auto-save with debouncing (save 2 seconds after last edit)
     if (autoSaveTimeoutRef.current) {
       clearTimeout(autoSaveTimeoutRef.current);
     }
-    
+
     autoSaveTimeoutRef.current = setTimeout(() => {
       autoSaveProgress(newData);
     }, 2000);
@@ -837,9 +1057,31 @@ function App({ onNavigate }) {
           number: card.number,
           copyright_year: card.copyright_year,
           sport: card.sport
-        });
+        }).catch(err => console.error('Suggestion fetch failed:', err));
       }, 500);
     }
+  };
+
+  const handleAutofill = (cardIndex, cardData) => {
+    // Autofill all fields from the database card except the name (already set)
+    const newData = [...editedData];
+    const fieldsToAutofill = ['sport', 'brand', 'team', 'card_set', 'number', 'copyright_year', 'condition', 'is_player', 'features'];
+
+    fieldsToAutofill.forEach(field => {
+      if (cardData[field] !== null && cardData[field] !== undefined) {
+        newData[cardIndex] = { ...newData[cardIndex], [field]: cardData[field] };
+      }
+    });
+
+    setEditedData(newData);
+
+    // Auto-save after autofill
+    if (autoSaveTimeoutRef.current) {
+      clearTimeout(autoSaveTimeoutRef.current);
+    }
+    autoSaveTimeoutRef.current = setTimeout(() => {
+      autoSaveProgress(newData);
+    }, 2000);
   };
 
   const addNewCard = () => {
@@ -850,7 +1092,7 @@ function App({ onNavigate }) {
       number: '',
       copyright_year: '',
       team: '',
-      is_player_card: true,
+      is_player: true,
       features: 'none',
       condition: 'near mint',
       card_set: ''
@@ -891,9 +1133,17 @@ function App({ onNavigate }) {
         body: JSON.stringify({ mode }),
         signal: controller.signal,
       });
-      
-      const result = await response.json();
-      
+
+      let result;
+      try {
+        result = await response.json();
+      } catch (parseError) {
+        console.error('Failed to parse reprocess response:', parseError);
+        alert('Re-processing failed: Server returned invalid response');
+        setReprocessing(false);
+        return;
+      }
+
       if (response.ok) {
         // Update the current card's data with the re-processed result
         const updatedCards = [...pendingCards];
@@ -902,18 +1152,22 @@ function App({ onNavigate }) {
           data: result.data
         };
         setPendingCards(updatedCards);
-        
+
         // Reset edit state
         setIsEditing(false);
         setEditedData([]);
-        
+
         alert('Card data re-processed successfully! Please review the updated information.');
       } else {
-        alert(`Re-processing failed: ${result.error}\n\nDetails: ${result.details || 'No additional details'}`);
+        alert(`Re-processing failed: ${result.error || 'Unknown error'}\n\nDetails: ${result.details || 'No additional details'}`);
       }
     } catch (error) {
-      console.error('Error re-processing card:', error);
-      alert('Error re-processing card');
+      if (error.name === 'AbortError') {
+        console.log('Reprocess was cancelled');
+      } else {
+        console.error('Error re-processing card:', error);
+        alert('Error re-processing card: ' + (error.message || 'Unknown error'));
+      }
     }
     
     setReprocessing(false);
@@ -1043,10 +1297,22 @@ function App({ onNavigate }) {
               const stem = (currentCard.imageFile || '').replace(/\.[^.]+$/, '');
               // Build cropped back filename: stem_posN_Name_Number.png
               const pos = sel?._grid_metadata?.position ?? sel?.grid_position ?? currentCardIndex;
-              const cardName = (sel?.name || 'unknown').replace(/\s+/g, '_');
-              const cardNumber = sel?.number || 'no_num';
-              const croppedFilename = `${stem}_pos${pos}_${cardName}_${cardNumber}.png`;
-              const backCropUrl = `http://localhost:3001/api/cropped-back-image/${croppedFilename}`;
+              // Use cropped_back_file or cropped_back_alias from data if available
+              let croppedFilename = sel?.cropped_back_file || sel?._grid_metadata?.cropped_back_alias;
+              if (croppedFilename) {
+                // Remove directory prefix if present (e.g., "pending_verification_cropped_backs/file.png" -> "file.png")
+                croppedFilename = croppedFilename.split('/').pop();
+              }
+              if (!croppedFilename) {
+                // Construct filename - use title case to match how files are saved
+                const cardName = (sel?.name || 'unknown')
+                  .split(' ')
+                  .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+                  .join('_');
+                const cardNumber = (sel?.number || 'no_num').replace(/[^a-zA-Z0-9]/g, '_');
+                croppedFilename = `${stem}_pos${pos}_${cardName}_${cardNumber}.png`;
+              }
+              const backCropUrl = croppedFilename ? `http://localhost:3001/api/cropped-back-image/${croppedFilename}` : null;
               const frontFile = sel?.matched_front_file; // filename under cards/unprocessed_single_front
               const frontUrl = frontFile
                 ? `http://localhost:3001/api/front-image/${frontFile}`
@@ -1056,8 +1322,8 @@ function App({ onNavigate }) {
                 <div className="paired-images">
                   {backCropUrl && (
                     <div className="paired-image-block">
-                      <div className="paired-image-title">Back (cropped)</div>
-                      <ZoomableImage 
+                      <div className="paired-image-title">BACK (CROPPED)</div>
+                      <ZoomableImage
                         src={backCropUrl}
                         alt="Card back (cropped)"
                         className="card-image"
@@ -1066,8 +1332,8 @@ function App({ onNavigate }) {
                   )}
                   {frontUrl && (
                     <div className="paired-image-block">
-                      <div className="paired-image-title">Front (matched)</div>
-                      <ZoomableImage 
+                      <div className="paired-image-title">FRONT (MATCHED)</div>
+                      <ZoomableImage
                         src={frontUrl}
                         alt="Card front (matched)"
                         className="card-image"
@@ -1101,11 +1367,14 @@ function App({ onNavigate }) {
               Re-process All
             </button>
             <div className="save-status">
-              {autoSaving && <span className="saving">Saving...</span>}
-              {!autoSaving && lastSaved && (
+              {autoSaving ? (
+                <span className="saving">Saving...</span>
+              ) : lastSaved ? (
                 <span className="saved">
                   Saved {new Date(lastSaved).toLocaleTimeString()}
                 </span>
+              ) : (
+                <span className="unsaved">Auto-save enabled</span>
               )}
             </div>
           </div>
@@ -1136,34 +1405,33 @@ function App({ onNavigate }) {
                     <>
                       <div className="field-group">
                         <label><strong>{formatFieldName('name')}:</strong></label>
-                        <input
-                          type="text"
+                        <AutocompleteInput
+                          field="name"
                           value={card.name}
-                          onChange={(e) => updateCardField(index, 'name', e.target.value)}
-                          onFocus={() => {
-                            if (cardSuggestions[index]?.length > 0) {
-                              setShowSuggestions(prev => ({ ...prev, [index]: true }));
-                            }
-                          }}
+                          onChange={(value) => updateCardField(index, 'name', value)}
+                          onAutofill={(cardData) => handleAutofill(index, cardData)}
+                          placeholder="player name"
                         />
                       </div>
                       {showSuggestions[index] && cardSuggestions[index]?.length > 0 && (
                         <div className="suggestions-container" style={{
-                          backgroundColor: '#2a2a2a',
-                          border: '1px solid #444',
-                          borderRadius: '4px',
-                          marginBottom: '10px',
-                          maxHeight: '150px',
-                          overflowY: 'auto'
+                          backgroundColor: '#f8f9fa',
+                          border: '2px solid #4a90e2',
+                          borderRadius: '8px',
+                          marginBottom: '15px',
+                          maxHeight: '200px',
+                          overflowY: 'auto',
+                          boxShadow: '0 2px 8px rgba(74, 144, 226, 0.2)'
                         }}>
                           <div style={{
-                            padding: '5px 10px',
-                            borderBottom: '1px solid #444',
+                            padding: '8px 12px',
+                            borderBottom: '2px solid #e0e0e0',
                             display: 'flex',
                             justifyContent: 'space-between',
-                            alignItems: 'center'
+                            alignItems: 'center',
+                            backgroundColor: '#4a90e2'
                           }}>
-                            <span style={{ fontSize: '11px', color: '#888' }}>
+                            <span style={{ fontSize: '12px', color: '#fff', fontWeight: '600' }}>
                               Matching cards from database ({cardSuggestions[index].length})
                             </span>
                             <button
@@ -1171,12 +1439,13 @@ function App({ onNavigate }) {
                               style={{
                                 background: 'none',
                                 border: 'none',
-                                color: '#888',
+                                color: '#fff',
                                 cursor: 'pointer',
-                                fontSize: '12px'
+                                fontSize: '12px',
+                                fontWeight: '500'
                               }}
                             >
-                              hide
+                              ✕
                             </button>
                           </div>
                           {cardSuggestions[index].map((suggestion, sIdx) => (
@@ -1184,42 +1453,60 @@ function App({ onNavigate }) {
                               key={sIdx}
                               onClick={() => applySuggestion(index, suggestion)}
                               style={{
-                                padding: '8px 10px',
-                                borderBottom: '1px solid #333',
+                                padding: '10px 12px',
+                                borderBottom: sIdx < cardSuggestions[index].length - 1 ? '1px solid #e0e0e0' : 'none',
                                 cursor: 'pointer',
-                                fontSize: '12px'
+                                fontSize: '13px',
+                                backgroundColor: '#fff',
+                                transition: 'all 0.2s'
                               }}
-                              onMouseEnter={(e) => e.target.style.backgroundColor = '#3a3a3a'}
-                              onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.backgroundColor = '#e3f2fd';
+                                e.currentTarget.style.transform = 'translateX(4px)';
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.backgroundColor = '#fff';
+                                e.currentTarget.style.transform = 'translateX(0)';
+                              }}
                             >
-                              <strong>{suggestion.name}</strong> - {suggestion.brand} #{suggestion.number} ({suggestion.copyright_year})
-                              {suggestion.team && suggestion.team !== 'unknown' && ` - ${suggestion.team}`}
+                              <div style={{ color: '#2c3e50', fontWeight: '600', marginBottom: '4px' }}>
+                                {suggestion.name}
+                              </div>
+                              <div style={{ fontSize: '11px', color: '#7f8c8d' }}>
+                                {suggestion.brand} #{suggestion.number} ({suggestion.copyright_year})
+                                {suggestion.team && suggestion.team !== 'unknown' && (
+                                  <span style={{ color: '#e67e22', marginLeft: '8px' }}>{suggestion.team}</span>
+                                )}
+                              </div>
                             </div>
                           ))}
                         </div>
                       )}
                       <div className="field-group">
                         <label><strong>{formatFieldName('sport')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.sport} 
-                          onChange={(e) => updateCardField(index, 'sport', e.target.value)}
+                        <AutocompleteInput
+                          field="sport"
+                          value={card.sport}
+                          onChange={(value) => updateCardField(index, 'sport', value)}
+                          placeholder="baseball, basketball, etc."
                         />
                       </div>
                       <div className="field-group">
                         <label><strong>{formatFieldName('brand')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.brand} 
-                          onChange={(e) => updateCardField(index, 'brand', e.target.value)}
+                        <AutocompleteInput
+                          field="brand"
+                          value={card.brand}
+                          onChange={(value) => updateCardField(index, 'brand', value)}
+                          placeholder="topps, upper deck, etc."
                         />
                       </div>
                       <div className="field-group">
                         <label><strong>{formatFieldName('number')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.number} 
-                          onChange={(e) => updateCardField(index, 'number', e.target.value)}
+                        <AutocompleteInput
+                          field="number"
+                          value={card.number}
+                          onChange={(value) => updateCardField(index, 'number', value)}
+                          placeholder="card number"
                         />
                       </div>
                       <div className="field-group">
@@ -1232,17 +1519,18 @@ function App({ onNavigate }) {
                       </div>
                       <div className="field-group">
                         <label><strong>{formatFieldName('team')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.team} 
-                          onChange={(e) => updateCardField(index, 'team', e.target.value)}
+                        <AutocompleteInput
+                          field="team"
+                          value={card.team}
+                          onChange={(value) => updateCardField(index, 'team', value)}
+                          placeholder="team name"
                         />
                       </div>
                       <div className="field-group">
-                        <label><strong>{formatFieldName('is_player_card')}:</strong></label>
+                        <label><strong>{formatFieldName('is_player')}:</strong></label>
                         <select 
-                          value={card.is_player_card} 
-                          onChange={(e) => updateCardField(index, 'is_player_card', e.target.value === 'true')}
+                          value={card.is_player} 
+                          onChange={(e) => updateCardField(index, 'is_player', e.target.value === 'true')}
                         >
                           <option value={true}>yes</option>
                           <option value={false}>no</option>
@@ -1274,19 +1562,30 @@ function App({ onNavigate }) {
                       </div>
                       <div className="field-group">
                         <label><strong>{formatFieldName('card_set')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.card_set} 
-                          onChange={(e) => updateCardField(index, 'card_set', e.target.value)}
+                        <AutocompleteInput
+                          field="card_set"
+                          value={card.card_set}
+                          onChange={(value) => updateCardField(index, 'card_set', value)}
+                          placeholder="set name"
                         />
                       </div>
                       <div className="field-group">
                         <label><strong>{formatFieldName('value_estimate')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.value_estimate || ''} 
+                        <input
+                          type="text"
+                          value={card.value_estimate || ''}
                           onChange={(e) => updateCardField(index, 'value_estimate', e.target.value)}
                           placeholder="$1-5 or $12.34"
+                        />
+                      </div>
+                      <div className="field-group">
+                        <label><strong>{formatFieldName('notes')}:</strong></label>
+                        <textarea
+                          value={card.notes || ''}
+                          onChange={(e) => updateCardField(index, 'notes', e.target.value)}
+                          placeholder="Additional notes about the card"
+                          rows={2}
+                          style={{ resize: 'vertical', width: '100%' }}
                         />
                       </div>
                     </>
@@ -1333,9 +1632,9 @@ function App({ onNavigate }) {
                         <ConfidenceIndicator confidence={card._confidence?.condition} fieldName="condition" />
                       </p>
                       <p>
-                        <strong>{formatFieldName('is_player_card')}:</strong> 
-                        <span>{formatFieldValue('is_player_card', card.is_player_card)}</span>
-                        <ConfidenceIndicator confidence={card._confidence?.is_player_card} fieldName="is_player_card" />
+                        <strong>{formatFieldName('is_player')}:</strong> 
+                        <span>{formatFieldValue('is_player', card.is_player)}</span>
+                        <ConfidenceIndicator confidence={card._confidence?.is_player} fieldName="is_player" />
                       </p>
                       <p>
                         <strong>{formatFieldName('features')}:</strong> 
@@ -1344,14 +1643,20 @@ function App({ onNavigate }) {
                       </p>
                       {card.value_estimate !== undefined && (
                         <p>
-                          <strong>{formatFieldName('value_estimate')}:</strong> 
+                          <strong>{formatFieldName('value_estimate')}:</strong>
                           <span>{formatFieldValue('value_estimate', card.value_estimate)}</span>
+                        </p>
+                      )}
+                      {card.notes && (
+                        <p>
+                          <strong>{formatFieldName('notes')}:</strong>
+                          <span>{formatFieldValue('notes', card.notes)}</span>
                         </p>
                       )}
                     </>
                   )}
                 </div>
-                
+
                 {/* TCDB verification removed */}
               </div>
             ))}
@@ -1361,15 +1666,16 @@ function App({ onNavigate }) {
 
       <div className="controls">
         <div className="navigation">
-          {verificationMode === 'single' && currentCard.data.length > 1 && (
+          {verificationMode === 'single' && (
             <>
               <button
                 onClick={() => {
                   setIsEditing(false);
                   setCurrentCardIndex(Math.max(0, currentCardIndex - 1));
                 }}
-                disabled={currentCardIndex === 0 || reprocessing}
+                disabled={currentCardIndex === 0 || reprocessing || currentCard.data.length <= 1}
                 className="nav-button"
+                style={{ visibility: currentCard.data.length <= 1 ? 'hidden' : 'visible' }}
               >
                 ← Previous Card
               </button>
@@ -1378,8 +1684,9 @@ function App({ onNavigate }) {
                   setIsEditing(false);
                   setCurrentCardIndex(Math.min(currentCard.data.length - 1, currentCardIndex + 1));
                 }}
-                disabled={currentCardIndex === currentCard.data.length - 1 || reprocessing}
+                disabled={currentCardIndex === currentCard.data.length - 1 || reprocessing || currentCard.data.length <= 1}
                 className="nav-button"
+                style={{ visibility: currentCard.data.length <= 1 ? 'hidden' : 'visible' }}
               >
                 Next Card →
               </button>
@@ -1388,15 +1695,17 @@ function App({ onNavigate }) {
 
           <button
             onClick={goToPrevious}
-            disabled={currentIndex === 0 || reprocessing}
+            disabled={currentIndex === 0 || reprocessing || pendingCards.length <= 1}
             className="nav-button"
+            style={{ visibility: pendingCards.length <= 1 ? 'hidden' : 'visible' }}
           >
             ← Previous Photo
           </button>
           <button
             onClick={goToNext}
-            disabled={currentIndex === pendingCards.length - 1 || reprocessing}
+            disabled={currentIndex === pendingCards.length - 1 || reprocessing || pendingCards.length <= 1}
             className="nav-button"
+            style={{ visibility: pendingCards.length <= 1 ? 'hidden' : 'visible' }}
           >
             Next Photo →
           </button>

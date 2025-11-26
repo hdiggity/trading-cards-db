@@ -1,0 +1,3642 @@
+[
+  {
+    "timestamp": "2025-11-24T01:57:30.248Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 0",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 1",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 2",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 3",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 4",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 5",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 6",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 7",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 8",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:57:33.455Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "mike walters",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 0",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 1",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 2",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 3",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 4",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 5",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 6",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 7",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 8",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:57:45.204Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "mike walters",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "673",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 0",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 1",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 2",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 3",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 4",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 5",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 6",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 7",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 8",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:57:50.771Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "mike walters",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "673",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 0",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 1",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 2",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 3",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 4",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 5",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 6",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 7",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 8",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:57:53.065Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "mike walters",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "673",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 0",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 1",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 2",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 3",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 4",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 5",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 6",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 7",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "unidentified",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": null,
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "unknown",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "detailed processing failed at position 8",
+        "_confidence": {
+          "name": 0.3,
+          "copyright_year": 0.3,
+          "condition": 0.8,
+          "brand": 0.6,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.5250000000000002,
+        "value_estimate": "$1",
+        "_value_details": {
+          "value_range": "$1",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "brand: unknown -> topps",
+          "team: unknown -> texas rangers",
+          "copyright_year: unknown -> 1984"
+        ],
+        "_player_validated": false,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.5250000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/BF64A022-5162-4F4A-ACEB-89B2437E80FA_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Unidentified",
+          "brand": "topps",
+          "team": "texas rangers",
+          "card_set": "unknown",
+          "copyright_year": "1984",
+          "number": null,
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:14:44.614Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "jack fimple",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "263",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:14:50.289Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "jack fimple",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "263",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:15:05.218Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "jack fimple",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "263",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:15:08.486Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "jack fimple",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "263",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:15:35.300Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jack fimple",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "263",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:15:37.070Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jack fimple",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "263",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:16:18.925Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:16:33.862Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "3",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "record breaker",
+        "notes": "1983 highlight - 39th save of season",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:16:46.779Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "matt young",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "235",
+        "copyright_year": "1984",
+        "team": "seattle mariners",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:16:58.946Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "george bjorkman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "116",
+        "copyright_year": "1984",
+        "team": "houston astros",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:17:09.380Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "jim sundberg",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "779",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:17:19.683Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "wayne tolleson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "557",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "1984 topps",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

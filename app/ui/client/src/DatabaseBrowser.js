@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './DatabaseBrowser.css';
 
 // Utility function to format field names for display
@@ -12,7 +12,7 @@ const formatFieldName = (fieldName) => {
     'team': 'Team',
     'card_set': 'Set',
     'condition': 'Condition',
-    'is_player_card': 'Player Card',
+    'is_player': 'Player Card',
     'features': 'Features',
     'quantity': 'Qty',
     'value_estimate': 'Price Estimate',
@@ -29,13 +29,19 @@ const normalizeCondition = (val) => (val ? String(val).replace(/_/g, ' ').trim()
 
 // Utility function to format field values for display
 const formatFieldValue = (fieldName, value) => {
+  // Price estimate: return empty string for null/empty, not N/A
+  if (fieldName === 'value_estimate') {
+    if (value === null || value === undefined || value === '' || value === 'n/a') return '';
+    return String(value).trim();
+  }
+
   if (value === null || value === undefined) return 'N/A';
 
   const raw = typeof value === 'string' ? value : String(value);
   const noUnderscore = raw.replace(/_/g, ' ').trim();
-  
+
   switch (fieldName) {
-    case 'is_player_card':
+    case 'is_player':
       return value ? 'yes' : 'no';
     case 'features':
       return !noUnderscore || noUnderscore.toLowerCase() === 'none'
@@ -66,13 +72,21 @@ function DatabaseBrowser({ onNavigate }) {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const [totalCards, setTotalCards] = useState(0);
   const [searchTerm, setSearchTerm] = useState('');
   const [filterSport, setFilterSport] = useState('');
   const [filterBrand, setFilterBrand] = useState('');
   const [filterCondition, setFilterCondition] = useState('');
+  const [filterTeam, setFilterTeam] = useState('');
+  const [filterYear, setFilterYear] = useState('');
+  const [filterSet, setFilterSet] = useState('');
+  const [filterName, setFilterName] = useState('');
+  const [filterNumber, setFilterNumber] = useState('');
+  const [filterFeatures, setFilterFeatures] = useState('');
+  const [filterIsPlayer, setFilterIsPlayer] = useState('');
   const [editingCard, setEditingCard] = useState(null);
   const [editFormData, setEditFormData] = useState({});
-  const [fieldOptions, setFieldOptions] = useState({ sports: [], brands: [], conditions: [] });
+  const [fieldOptions, setFieldOptions] = useState({ sports: [], brands: [], conditions: [], teams: [], years: [], card_sets: [] });
   const [selectedCards, setSelectedCards] = useState(new Set());
   const [selectAll, setSelectAll] = useState(false);
   const [sortBy, setSortBy] = useState('');
@@ -87,16 +101,19 @@ function DatabaseBrowser({ onNavigate }) {
   const [copyFormData, setCopyFormData] = useState({});
   const [refreshingPrices, setRefreshingPrices] = useState(false);
   const [refreshResult, setRefreshResult] = useState(null);
+  const scrollPositionRef = useRef(0);
 
   useEffect(() => {
+    // Save scroll position before fetching
+    scrollPositionRef.current = window.pageYOffset || document.documentElement.scrollTop;
     fetchCards();
-  }, [currentPage, searchTerm, filterSport, filterBrand, filterCondition, sortBy, sortDir]);
+  }, [currentPage, searchTerm, filterSport, filterBrand, filterCondition, filterTeam, filterYear, filterSet, filterName, filterNumber, filterFeatures, filterIsPlayer, sortBy, sortDir]);
 
   // Clear selections when page changes or filters change
   useEffect(() => {
     setSelectedCards(new Set());
     setSelectAll(false);
-  }, [currentPage, searchTerm, filterSport, filterBrand, filterCondition]);
+  }, [currentPage, searchTerm, filterSport, filterBrand, filterCondition, filterTeam, filterYear, filterSet, filterName, filterNumber, filterFeatures, filterIsPlayer]);
 
   // Fetch distinct options for dropdowns
   useEffect(() => {
@@ -108,9 +125,12 @@ function DatabaseBrowser({ onNavigate }) {
           sports: (data.sports || []).map((s) => String(s).toLowerCase()),
           brands: (data.brands || []).map((s) => String(s).toLowerCase()),
           conditions: (data.conditions || []).map((s) => String(s).toLowerCase()),
+          teams: (data.teams || []).map((s) => String(s).toLowerCase()).sort(),
+          years: (data.years || []).sort((a, b) => b - a),
+          card_sets: (data.card_sets || []).map((s) => String(s).toLowerCase()).sort(),
         });
       } catch (e) {
-        setFieldOptions({ sports: [], brands: [], conditions: [] });
+        setFieldOptions({ sports: [], brands: [], conditions: [], teams: [], years: [], card_sets: [] });
       }
     })();
   }, []);
@@ -125,19 +145,32 @@ function DatabaseBrowser({ onNavigate }) {
         ...(filterSport && { sport: filterSport }),
         ...(filterBrand && { brand: filterBrand }),
         ...(filterCondition && { condition: filterCondition }),
+        ...(filterTeam && { team: filterTeam }),
+        ...(filterYear && { year: filterYear }),
+        ...(filterSet && { card_set: filterSet }),
+        ...(filterName && { name: filterName }),
+        ...(filterNumber && { number: filterNumber }),
+        ...(filterFeatures && { features: filterFeatures }),
+        ...(filterIsPlayer && { is_player: filterIsPlayer }),
         ...(sortBy && { sortBy }),
         ...(sortBy && { sortDir })
       });
 
       const response = await fetch(`http://localhost:3001/api/cards?${params}`);
       const data = await response.json();
-      
+
       setCards(data.cards || []);
       setTotalPages(data.pagination?.pages || 1);
+      setTotalCards(data.pagination?.totalQuantity || data.pagination?.total || 0);
     } catch (error) {
       console.error('Error fetching cards:', error);
     }
     setLoading(false);
+
+    // Restore scroll position after render
+    requestAnimationFrame(() => {
+      window.scrollTo(0, scrollPositionRef.current);
+    });
   };
 
   const handleSearch = (e) => {
@@ -182,7 +215,7 @@ function DatabaseBrowser({ onNavigate }) {
       team: card.team || '',
       card_set: card.card_set || '',
       condition: normalizeCondition(card.condition || 'near mint'),
-      is_player_card: card.is_player_card !== undefined ? card.is_player_card : true,
+      is_player: card.is_player !== undefined ? card.is_player : true,
       features: card.features || '',
       value_estimate: card.value_estimate || '',
       quantity: card.quantity || 1,
@@ -358,7 +391,7 @@ function DatabaseBrowser({ onNavigate }) {
   const startCopyEdit = (copy) => {
     setEditingCopyId(copy.id);
     setCopyFormData({
-      condition: normalizeCondition(copy.condition || copy.condition_at_scan || 'near mint'),
+      condition: normalizeCondition(copy.condition || 'near mint'),
       value_estimate: copy.value_estimate || '',
       features: copy.features || '',
       notes: copy.notes || ''
@@ -444,7 +477,7 @@ function DatabaseBrowser({ onNavigate }) {
       team: card.team || '',
       card_set: card.card_set || '',
       condition: normalizeCondition(card.condition || 'near mint'),
-      is_player_card: card.is_player_card !== undefined ? card.is_player_card : true,
+      is_player: card.is_player !== undefined ? card.is_player : true,
       features: card.features || '',
       value_estimate: card.value_estimate || '',
       quantity: card.quantity || 1,
@@ -514,78 +547,186 @@ function DatabaseBrowser({ onNavigate }) {
     <div className="database-browser">
       <header className="browser-header">
         <div className="header-top">
-          <h1>database browser</h1>
+          <h1>DATABASE BROWSER</h1>
           <div className="header-buttons">
             {selectedCards.size > 0 && (
-              <button 
-                className="bulk-delete-button" 
+              <button
+                className="bulk-delete-button"
                 onClick={handleBulkDelete}
               >
-                Delete Selected ({selectedCards.size})
+                DELETE SELECTED ({selectedCards.size})
               </button>
             )}
-            <button 
-              className="back-button" 
+            <button
+              className="back-button"
               onClick={() => onNavigate('main')}
             >
-              ← Back to Main
+              ← BACK TO MAIN
             </button>
           </div>
         </div>
-        
+
         <div className="search-filters">
+          <div className="total-count">
+            TOTAL CARDS: {totalCards}
+          </div>
+
           <form onSubmit={handleSearch} className="search-form">
             <input
               type="text"
-              placeholder="Search by name, team, or set..."
+              placeholder="SEARCH BY NAME, TEAM, OR SET..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="search-input"
             />
-            <button type="submit" className="search-button">Search</button>
+            <button type="submit" className="search-button">SEARCH</button>
           </form>
-          
+
           <div className="filters">
-            <select 
-              value={filterSport} 
+            <input
+              list="sports-list"
+              value={filterSport}
               onChange={(e) => setFilterSport(e.target.value)}
+              placeholder="ALL SPORTS"
               className="filter-select"
-            >
-              <option value="">all sports</option>
+            />
+            <datalist id="sports-list">
               {fieldOptions.sports.map((s) => (
-                <option key={s} value={s}>{s}</option>
+                <option key={s} value={s} />
               ))}
-            </select>
-            
-            <select 
-              value={filterBrand} 
+            </datalist>
+
+            <input
+              list="brands-list"
+              value={filterBrand}
               onChange={(e) => setFilterBrand(e.target.value)}
+              placeholder="ALL BRANDS"
               className="filter-select"
-            >
-              <option value="">all brands</option>
+            />
+            <datalist id="brands-list">
               {fieldOptions.brands.map((b) => (
-                <option key={b} value={b}>{b}</option>
+                <option key={b} value={b} />
               ))}
-            </select>
-            
-            <select
+            </datalist>
+
+            <input
+              list="years-list"
+              value={filterYear}
+              onChange={(e) => setFilterYear(e.target.value)}
+              placeholder="ALL YEARS"
+              className="filter-select"
+            />
+            <datalist id="years-list">
+              {fieldOptions.years.map((y) => (
+                <option key={y} value={y} />
+              ))}
+            </datalist>
+
+            <input
+              list="teams-list"
+              value={filterTeam}
+              onChange={(e) => setFilterTeam(e.target.value)}
+              placeholder="ALL TEAMS"
+              className="filter-select"
+            />
+            <datalist id="teams-list">
+              {fieldOptions.teams.map((t) => (
+                <option key={t} value={t} />
+              ))}
+            </datalist>
+
+            <input
+              list="sets-list"
+              value={filterSet}
+              onChange={(e) => setFilterSet(e.target.value)}
+              placeholder="ALL SETS"
+              className="filter-select"
+            />
+            <datalist id="sets-list">
+              {fieldOptions.card_sets.map((cs) => (
+                <option key={cs} value={cs} />
+              ))}
+            </datalist>
+
+            <input
+              list="conditions-list"
               value={filterCondition}
               onChange={(e) => setFilterCondition(e.target.value)}
+              placeholder="ALL CONDITIONS"
+              className="filter-select"
+            />
+            <datalist id="conditions-list">
+              {fieldOptions.conditions.map((c) => (
+                <option key={c} value={c} />
+              ))}
+            </datalist>
+
+            <input
+              type="text"
+              value={filterName}
+              onChange={(e) => setFilterName(e.target.value)}
+              placeholder="FILTER BY NAME"
+              className="filter-select"
+            />
+
+            <input
+              type="text"
+              value={filterNumber}
+              onChange={(e) => setFilterNumber(e.target.value)}
+              placeholder="FILTER BY NUMBER"
+              className="filter-select"
+            />
+
+            <input
+              type="text"
+              value={filterFeatures}
+              onChange={(e) => setFilterFeatures(e.target.value)}
+              placeholder="FILTER BY FEATURES"
+              className="filter-select"
+            />
+
+            <select
+              value={filterIsPlayer}
+              onChange={(e) => setFilterIsPlayer(e.target.value)}
               className="filter-select"
             >
-              <option value="">all conditions</option>
-              {fieldOptions.conditions.map((c) => (
-                <option key={c} value={c}>{c}</option>
-              ))}
+              <option value="">ALL CARDS</option>
+              <option value="true">PLAYER CARDS ONLY</option>
+              <option value="false">NON-PLAYER CARDS ONLY</option>
             </select>
+
             <button
               className="refresh-prices-button"
               onClick={handleRefreshPrices}
               disabled={refreshingPrices}
               title="Refresh price estimates using AI (token-efficient batching)"
             >
-              {refreshingPrices ? 'refreshing...' : 'refresh prices'}
+              {refreshingPrices ? 'REFRESHING...' : 'REFRESH PRICES'}
             </button>
+
+            <button
+              className="reset-filters-button"
+              onClick={() => {
+                setFilterSport('');
+                setFilterBrand('');
+                setFilterCondition('');
+                setFilterTeam('');
+                setFilterYear('');
+                setFilterSet('');
+                setFilterName('');
+                setFilterNumber('');
+                setFilterFeatures('');
+                setFilterIsPlayer('');
+                setSearchTerm('');
+                setSortBy('');
+                setSortDir('asc');
+                setCurrentPage(1);
+              }}
+              title="Reset all filters and search"
+            >
+              RESET FILTERS
+            </button>
+
             {refreshResult && (
               <span className="refresh-result">{refreshResult}</span>
             )}
@@ -610,24 +751,25 @@ function DatabaseBrowser({ onNavigate }) {
                     />
                   </th>
                   {[
-                    ['name','Name'],
-                    ['sport','Sport'],
-                    ['brand','Brand'],
-                    ['number','Number'],
-                    ['copyright_year','Year'],
-                    ['team','Team'],
-                    ['card_set','Set'],
-                    ['condition','Condition'],
-                    ['is_player_card','Player Card'],
-                    ['features','Features'],
-                    ['value_estimate','Price Estimate'],
-                    ['quantity','Qty'],
-                    ['date_added','Date Added'],
+                    ['name','NAME'],
+                    ['sport','SPORT'],
+                    ['brand','BRAND'],
+                    ['number','NUMBER'],
+                    ['copyright_year','YEAR'],
+                    ['team','TEAM'],
+                    ['card_set','SET'],
+                    ['condition','CONDITION'],
+                    ['is_player','PLAYER CARD'],
+                    ['features','FEATURES'],
+                    ['value_estimate','PRICE ESTIMATE'],
+                    ['quantity','QTY'],
+                    ['date_added','DATE ADDED'],
                   ].map(([key,label]) => (
                     <th
                       key={key}
                       className={`sortable ${sortBy===key ? 'sorted' : ''}`}
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.preventDefault();
                         if (sortBy === key) setSortDir(sortDir === 'asc' ? 'desc' : 'asc');
                         else { setSortBy(key); setSortDir('asc'); }
                         setCurrentPage(1);
@@ -672,7 +814,7 @@ function DatabaseBrowser({ onNavigate }) {
                           </select>
                         </td>
                         <td>
-                          <select value={editFormData.is_player_card} onChange={(e) => updateFormField('is_player_card', e.target.value === 'true')}>
+                          <select value={editFormData.is_player} onChange={(e) => updateFormField('is_player', e.target.value === 'true')}>
                             <option value={true}>Yes</option>
                             <option value={false}>No</option>
                           </select>
@@ -682,8 +824,8 @@ function DatabaseBrowser({ onNavigate }) {
                         <td><input type="number" value={editFormData.quantity} onChange={(e) => updateFormField('quantity', parseInt(e.target.value))} /></td>
                         <td><span className="readonly-field">{formatFieldValue('date_added', card.date_added)}</span></td>
                         <td className="actions">
-                          <button onClick={() => handleSave(card.id)} className="save-btn">Save</button>
-                          <button onClick={handleCancel} className="cancel-btn">Cancel</button>
+                          <button onClick={() => handleSave(card.id)} className="save-btn">SAVE</button>
+                          <button onClick={handleCancel} className="cancel-btn">CANCEL</button>
                         </td>
                       </>
                     ) : (
@@ -696,21 +838,21 @@ function DatabaseBrowser({ onNavigate }) {
                           />
                         </td>
                         <td className={`${sortBy==='name'?'sorted-cell':''}`}>{formatFieldValue('name', card.name)}</td>
-                        <td className={`${sortBy==='sport'?'sorted-cell':''}`}>{formatFieldValue('sport', card.sport)}</td>
-                        <td className={`${sortBy==='brand'?'sorted-cell':''}`}>{formatFieldValue('brand', card.brand)}</td>
+                        <td className={`${sortBy==='sport'?'sorted-cell':''} clickable-cell`} onClick={() => card.sport && setFilterSport(card.sport)}>{formatFieldValue('sport', card.sport)}</td>
+                        <td className={`${sortBy==='brand'?'sorted-cell':''} clickable-cell`} onClick={() => card.brand && setFilterBrand(card.brand)}>{formatFieldValue('brand', card.brand)}</td>
                         <td className={`${sortBy==='number'?'sorted-cell':''}`}>{formatFieldValue('number', card.number)}</td>
-                        <td className={`${sortBy==='copyright_year'?'sorted-cell':''}`}>{formatFieldValue('copyright_year', card.copyright_year)}</td>
-                        <td className={`${sortBy==='team'?'sorted-cell':''}`}>{formatFieldValue('team', card.team)}</td>
-                        <td className={`${sortBy==='card_set'?'sorted-cell':''}`}>{formatFieldValue('card_set', card.card_set)}</td>
-                        <td className={`${sortBy==='condition'?'sorted-cell':''}`}>{card.quantity > 1 ? 'multiple' : formatFieldValue('condition', card.condition)}</td>
-                        <td className={`${sortBy==='is_player_card'?'sorted-cell':''}`}>{formatFieldValue('is_player_card', card.is_player_card)}</td>
+                        <td className={`${sortBy==='copyright_year'?'sorted-cell':''} clickable-cell`} onClick={() => card.copyright_year && setFilterYear(card.copyright_year)}>{formatFieldValue('copyright_year', card.copyright_year)}</td>
+                        <td className={`${sortBy==='team'?'sorted-cell':''} clickable-cell`} onClick={() => card.team && setFilterTeam(card.team)}>{formatFieldValue('team', card.team)}</td>
+                        <td className={`${sortBy==='card_set'?'sorted-cell':''} clickable-cell`} onClick={() => card.card_set && setFilterSet(card.card_set)}>{formatFieldValue('card_set', card.card_set)}</td>
+                        <td className={`${sortBy==='condition'?'sorted-cell':''} clickable-cell`} onClick={() => card.condition && setFilterCondition(card.condition)}>{card.quantity > 1 ? 'multiple' : formatFieldValue('condition', card.condition)}</td>
+                        <td className={`${sortBy==='is_player'?'sorted-cell':''}`}>{formatFieldValue('is_player', card.is_player)}</td>
                         <td className={`${sortBy==='features'?'sorted-cell':''}`}>{card.quantity > 1 ? 'multiple' : formatFieldValue('features', card.features)}</td>
                         <td className={`${sortBy==='value_estimate'?'sorted-cell':''}`}>{card.quantity > 1 ? 'multiple' : formatFieldValue('value_estimate', card.value_estimate)}</td>
                         <td className={`${sortBy==='quantity'?'sorted-cell':''}`}>{formatFieldValue('quantity', card.quantity)}</td>
                         <td className={`${sortBy==='date_added'?'sorted-cell':''}`}>{card.quantity > 1 ? 'multiple' : formatFieldValue('date_added', card.date_added)}</td>
                         <td className="actions">
-                          <button onClick={() => handleEdit(card)} className="edit-btn">Edit</button>
-                          <button onClick={() => handleDelete(card.id)} className="delete-btn">Delete</button>
+                          <button onClick={() => handleEdit(card)} className="edit-btn">EDIT</button>
+                          <button onClick={() => handleDelete(card.id)} className="delete-btn">DELETE</button>
                         </td>
                       </>
                     )}
@@ -726,17 +868,17 @@ function DatabaseBrowser({ onNavigate }) {
               disabled={currentPage === 1}
               className="page-btn"
             >
-              Previous
+              PREVIOUS
             </button>
             <span className="page-info">
-              Page {currentPage} of {totalPages}
+              PAGE {currentPage} OF {totalPages}
             </span>
             <button
               onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
               disabled={currentPage === totalPages}
               className="page-btn"
             >
-              Next
+              NEXT
             </button>
           </div>
         </>
@@ -772,8 +914,8 @@ function DatabaseBrowser({ onNavigate }) {
                               copy {idx + 1}
                               {editingCopyId !== ic.id && (
                                 <div className="copy-actions">
-                                  <button onClick={() => startCopyEdit(ic)} className="edit-copy-btn">edit</button>
-                                  <button onClick={() => deleteCopy(ic.id)} className="delete-copy-btn">delete</button>
+                                  <button onClick={() => startCopyEdit(ic)} className="edit-copy-btn">EDIT</button>
+                                  <button onClick={() => deleteCopy(ic.id)} className="delete-copy-btn">DELETE</button>
                                 </div>
                               )}
                             </div>
@@ -818,13 +960,13 @@ function DatabaseBrowser({ onNavigate }) {
                                   <input type="text" value={copyFormData.notes} onChange={(e) => updateCopyField('notes', e.target.value)} />
                                 </div>
                                 <div className="copy-edit-actions">
-                                  <button onClick={() => saveCopyEdit(ic.id)} className="save-btn">save</button>
-                                  <button onClick={cancelCopyEdit} className="cancel-btn">cancel</button>
+                                  <button onClick={() => saveCopyEdit(ic.id)} className="save-btn">SAVE</button>
+                                  <button onClick={cancelCopyEdit} className="cancel-btn">CANCEL</button>
                                 </div>
                               </div>
                             ) : (
                               <>
-                                <div className="detail-row"><span className="detail-label">condition:</span> {formatFieldValue('condition', ic.condition || ic.condition_at_scan)}</div>
+                                <div className="detail-row"><span className="detail-label">condition:</span> {formatFieldValue('condition', ic.condition)}</div>
                                 <div className="detail-row"><span className="detail-label">value:</span> {formatFieldValue('value_estimate', ic.value_estimate) || 'N/A'}</div>
                                 <div className="detail-row"><span className="detail-label">features:</span> {formatFieldValue('features', ic.features)}</div>
                                 <div className="detail-row"><span className="detail-label">verified:</span> {ic.verification_date ? new Date(ic.verification_date).toLocaleDateString() : 'N/A'}</div>
@@ -841,8 +983,8 @@ function DatabaseBrowser({ onNavigate }) {
                     )}
 
                     <div className="modal-actions">
-                      <button onClick={startModalEdit} className="edit-btn">Edit</button>
-                      <button onClick={deleteFromModal} className="delete-btn">Delete</button>
+                      <button onClick={startModalEdit} className="edit-btn">EDIT</button>
+                      <button onClick={deleteFromModal} className="delete-btn">DELETE</button>
                     </div>
                   </div>
                 ) : (
@@ -902,8 +1044,8 @@ function DatabaseBrowser({ onNavigate }) {
                     </div>
 
                     <div className="modal-actions">
-                      <button onClick={saveModalEdit} className="save-btn">Save</button>
-                      <button onClick={() => setModalEditMode(false)} className="cancel-btn">Cancel</button>
+                      <button onClick={saveModalEdit} className="save-btn">SAVE</button>
+                      <button onClick={() => setModalEditMode(false)} className="cancel-btn">CANCEL</button>
                     </div>
                   </div>
                 )}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/harlan/Documents/personal/code/programs/trading_cards_db/app/run.py", line 10, in <module>
+    from .grid_processor import GridProcessor, save_grid_cards_to_verification
+  File "/Users/harlan/Documents/personal/code/programs/trading_cards_db/app/grid_processor.py", line 169
+    from PIL import Image as PILImage
+    ^
+IndentationError: expected an indented block after 'try' statement on line 168

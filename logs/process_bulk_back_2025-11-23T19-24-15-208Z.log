@@ -1,0 +1,331 @@
+Seeded common Topps checklists
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 5 images from provided file list
+Found 5 grid back images to process
+Found 3072 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/5] Processing: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+processing: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+2025-11-23 14:24:16,072 - trading_cards - INFO - [filesystem] File uploaded: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+2025-11-23 14:24:21,286 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg', 'File size: 446712 bytes, Type: .jpeg', None, 'session_20251123_142416_52860', None, '74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-23 14:24:21,287 - trading_cards - INFO - [filesystem] File uploaded: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+2025-11-23 14:24:21,293 - trading_cards - INFO - [system] Upload status changed: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg -> processing
+2025-11-23 14:24:21,297 - trading_cards - INFO - [image_processing] Started processing: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+Extracting individual cards from grid...
+Hough detection incomplete, trying smart edge detection...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+2025-11-23 14:24:52,033 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 14:24:52,047 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg (9 cards)
+2025-11-23 14:24:52,053 - trading_cards - INFO - [system] Upload status changed: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=1984, brand=Topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2363 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-11-23 14:24:57,495 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:25:02,617 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:25:07,545 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:25:13,172 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:25:18,283 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:25:24,082 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:26:06,924 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:26:13,681 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:26:18,046 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:26:23,943 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos0_Marc_Hill_698.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos1_Tom_Tellmann_476.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos2_Dave_Tobik_341.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos3_Dick_Howser_471.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos4_Bill_Stein_758.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos5_Dave_Stewart_352.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos6_Frank_Tanana_479.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos7_Gary_Woods_99.png
+Saved cropped back: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c_pos8_Roy_Howell_94.png
+Saved 9 grid cards to cards/pending_verification/74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.json
+Grid processing completed: 9 cards extracted
+2025-11-23 14:26:24,087 - trading_cards - INFO - [filesystem] File move: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg -> 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+2025-11-23 14:26:24,089 - trading_cards - INFO - [system] Upload status changed: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg -> pending_verification
+2025-11-23 14:26:24,090 - trading_cards - SUCCESS - [image_processing] Processing completed: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg
+completed: 74B5AACE-806C-4CE4-9341-7F91DD6CBEFE_1_105_c.jpeg (moved to pending_verification/bulk back)
+[2/5] Processing: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+processing: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+2025-11-23 14:26:24,091 - trading_cards - INFO - [filesystem] File uploaded: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+2025-11-23 14:26:29,325 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg', 'File size: 439157 bytes, Type: .jpeg', None, 'session_20251123_142416_52860', None, '892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-23 14:26:29,325 - trading_cards - INFO - [filesystem] File uploaded: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+2025-11-23 14:26:29,330 - trading_cards - INFO - [system] Upload status changed: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg -> processing
+2025-11-23 14:26:29,335 - trading_cards - INFO - [image_processing] Started processing: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+Extracting individual cards from grid...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+2025-11-23 14:26:53,136 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 14:26:53,141 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg (9 cards)
+2025-11-23 14:26:53,146 - trading_cards - INFO - [system] Upload status changed: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=None, brand=None, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2363 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-11-23 14:26:59,150 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:04,215 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:09,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:14,569 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:19,446 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:25,260 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:31,301 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:36,531 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:41,233 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:27:46,881 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos0_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos1_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos2_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos3_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos4_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos5_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos6_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos7_unknown_unknown.png
+Saved cropped back: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c_pos8_unknown_unknown.png
+Saved 9 grid cards to cards/pending_verification/892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.json
+Grid processing completed: 9 cards extracted
+2025-11-23 14:27:47,015 - trading_cards - INFO - [filesystem] File move: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg -> 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+2025-11-23 14:27:47,017 - trading_cards - INFO - [system] Upload status changed: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg -> pending_verification
+2025-11-23 14:27:47,017 - trading_cards - SUCCESS - [image_processing] Processing completed: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg
+completed: 892A48E0-ED65-4F77-80A5-0350447A8685_1_105_c.jpeg (moved to pending_verification/bulk back)
+[3/5] Processing: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+processing: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+2025-11-23 14:27:47,019 - trading_cards - INFO - [filesystem] File uploaded: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+2025-11-23 14:27:52,232 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC', 'File size: 4479735 bytes, Type: .heic', None, 'session_20251123_142416_52860', None, '2025-09-01T03-27-02-187Z_IMG_2088.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-23 14:27:52,233 - trading_cards - INFO - [filesystem] File uploaded: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+2025-11-23 14:27:52,234 - trading_cards - INFO - [system] Upload status changed: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC -> processing
+2025-11-23 14:27:52,236 - trading_cards - INFO - [image_processing] Started processing: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+Extracting individual cards from grid...
+Hough detection incomplete, trying smart edge detection...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+2025-11-23 14:28:28,328 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 14:28:28,335 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC (9 cards)
+2025-11-23 14:28:28,341 - trading_cards - INFO - [system] Upload status changed: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=1973, brand=Topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2363 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-11-23 14:28:33,560 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:28:39,195 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:28:44,332 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:28:49,435 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:28:54,349 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:29:00,245 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:29:06,126 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:29:11,692 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:29:17,244 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:29:23,328 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos0_Boots_Day_254.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos1_Dick_Dietz_295.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos2_Earl_Williams_360.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos3_Eliseo_Rodriguez_Delgado_45.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos4_Eliseo_Rodriguez_Delgado_45.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos5_Jonathan_Trumpbour_Matlack_55.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos6_1973_League_Leaders_64.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos7_Buford_Billy_Champion_74.png
+Saved cropped back: 2025-09-01T03-27-02-187Z_IMG_2088_pos8_David_Wayne_Roberts_133.png
+Saved 9 grid cards to cards/pending_verification/2025-09-01T03-27-02-187Z_IMG_2088.json
+Grid processing completed: 9 cards extracted
+2025-11-23 14:29:27,632 - trading_cards - INFO - [filesystem] File move: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC -> 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+2025-11-23 14:29:27,634 - trading_cards - INFO - [system] Upload status changed: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC -> pending_verification
+2025-11-23 14:29:27,635 - trading_cards - SUCCESS - [image_processing] Processing completed: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC
+completed: 2025-09-01T03-27-02-187Z_IMG_2088.HEIC (moved to pending_verification/bulk back)
+[4/5] Processing: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+processing: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+2025-11-23 14:29:27,637 - trading_cards - INFO - [filesystem] File uploaded: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+2025-11-23 14:29:32,853 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg', 'File size: 483102 bytes, Type: .jpeg', None, 'session_20251123_142416_52860', None, '9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-23 14:29:32,854 - trading_cards - INFO - [filesystem] File uploaded: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+2025-11-23 14:29:32,859 - trading_cards - INFO - [system] Upload status changed: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg -> processing
+2025-11-23 14:29:32,874 - trading_cards - INFO - [image_processing] Started processing: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+Extracting individual cards from grid...
+Hough detection incomplete, trying smart edge detection...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+2025-11-23 14:30:08,650 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 14:30:08,657 - trading_cards - SUCCESS - [image_processing] Grid processing complete: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg (9 cards)
+2025-11-23 14:30:08,664 - trading_cards - INFO - [system] Upload status changed: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=1984, brand=Topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2363 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-11-23 14:30:13,671 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:18,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:24,089 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:29,764 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:35,484 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:41,129 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:46,069 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:51,859 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:30:57,124 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:31:02,601 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos0_Billy_Sample_12.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos1_Dave_Schmidt_584.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos2_Dave_Stegman_664.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3_Jim_Rice_401.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4_Terry_Crowley_732.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5_Paul_Splittorff_52.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6_Bert_Blyleven_789.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7_Bobby_Castillo_38.png
+Saved cropped back: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8_Ron_Oester_114.png
+Saved 9 grid cards to cards/pending_verification/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.json
+Grid processing completed: 9 cards extracted
+2025-11-23 14:31:02,739 - trading_cards - INFO - [filesystem] File move: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg -> 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+2025-11-23 14:31:02,740 - trading_cards - INFO - [system] Upload status changed: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg -> pending_verification
+2025-11-23 14:31:02,741 - trading_cards - SUCCESS - [image_processing] Processing completed: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg
+completed: 9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c.jpeg (moved to pending_verification/bulk back)
+[5/5] Processing: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+processing: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+2025-11-23 14:31:02,742 - trading_cards - INFO - [filesystem] File uploaded: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+2025-11-23 14:31:07,962 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg', 'File size: 425304 bytes, Type: .jpeg', None, 'session_20251123_142416_52860', None, 'A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-23 14:31:07,963 - trading_cards - INFO - [filesystem] File uploaded: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+2025-11-23 14:31:07,967 - trading_cards - INFO - [system] Upload status changed: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg -> processing
+2025-11-23 14:31:07,972 - trading_cards - INFO - [image_processing] Started processing: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+Extracting individual cards from grid...
+Hough detection incomplete, trying smart edge detection...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+2025-11-23 14:31:39,568 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-23 14:31:39,574 - trading_cards - SUCCESS - [image_processing] Grid processing complete: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg (9 cards)
+2025-11-23 14:31:39,576 - trading_cards - INFO - [system] Upload status changed: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg -> pending_verification
+Detailed processing extracted 9 cards
+Grid context: year=1984, brand=Topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2363 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Detailed grid processing completed: 9 cards analyzed
+2025-11-23 14:31:45,012 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:31:51,121 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:31:56,295 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:32:01,075 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:32:06,394 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:32:11,969 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:32:17,103 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:32:22,223 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:32:27,608 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Applied general image enhancement
+2025-11-23 14:32:33,792 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Grid processing completed: 9 cards processed
+Supplemented name from front image: Rick Dempsey
+Supplemented team from front image: Dodgers
+Matched grid position 6 with IMG_7311_optimized.png
+Supplemented name from front image: Rick Dempsey
+Supplemented team from front image: Dodgers
+Matched grid position 7 with IMG_7311_optimized.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos0_Dan_Quisenberry_570.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos1_Ray_Smith_46.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos2_Jack_O'Connor_268.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos3_Gary_Carter_393.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4_Luis_Deleon_38.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5_Andre_Dawson_392.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6_Rick_Dempsey_407.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7_Rick_Dempsey_407.png
+Saved cropped back: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8_Eric_Rasmussen_724.png
+Saved 9 grid cards to cards/pending_verification/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.json
+Grid processing completed: 9 cards extracted
+2025-11-23 14:32:33,937 - trading_cards - INFO - [filesystem] File move: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg -> A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+2025-11-23 14:32:33,939 - trading_cards - INFO - [system] Upload status changed: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg -> pending_verification
+2025-11-23 14:32:33,941 - trading_cards - SUCCESS - [image_processing] Processing completed: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg
+completed: A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c.jpeg (moved to pending_verification/bulk back)

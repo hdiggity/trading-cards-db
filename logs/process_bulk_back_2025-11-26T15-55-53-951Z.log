@@ -1,0 +1,50 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3369 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2151.HEIC
+processing: IMG_2151.HEIC
+2025-11-26 10:55:54,837 - trading_cards - INFO - [filesystem] File uploaded: IMG_2151.HEIC
+2025-11-26 10:56:00,071 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2151.HEIC', 'File size: 4270703 bytes, Type: .heic', None, 'session_20251126_105554_61105', None, 'IMG_2151.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-26 10:56:00,072 - trading_cards - INFO - [filesystem] File uploaded: IMG_2151.HEIC
+2025-11-26 10:56:00,081 - trading_cards - INFO - [system] Upload status changed: IMG_2151.HEIC -> processing
+2025-11-26 10:56:00,090 - trading_cards - INFO - [image_processing] Started processing: IMG_2151.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/IMG_2151.HEIC
+Trying enhanced multi-pass extraction with checklist validation...
+[Enhanced Grid Extraction] Processing: cards/unprocessed_bulk_back/IMG_2151.HEIC
+[Post-Correction] Applying learned corrections...
+[Post-Correction] Warning: No module named 'post_extraction_corrections'
+[Validation] Checking against checklist database...
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+Enhanced extraction succeeded: 9 cards, 0 unknown
+Grid context: year=© 1975, brand=topps, sport=baseball, set=n/a
+Warning: Accuracy enhancement failed: name 'enhance_cards_batch' is not defined
+Front image matching disabled - using back extraction only
+Grid processing completed: 9 cards processed
+Saved cropped back: IMG_2151_pos0_Rogelio_Moret_8.png
+Saved cropped back: IMG_2151_pos1_Enzo_Hernandez_84.png
+Saved cropped back: IMG_2151_pos2_Joseph_Lis_86.png
+Saved cropped back: IMG_2151_pos3_George_Foster_87.png
+Saved cropped back: IMG_2151_pos4_George_Foster_87.png
+Saved cropped back: IMG_2151_pos5_William_Lee_128.png
+Saved cropped back: IMG_2151_pos6_Leslie_Spikes_135.png
+Saved cropped back: IMG_2151_pos7_Robert_Reynolds_142.png
+Saved cropped back: IMG_2151_pos8_San_Diego_Padres_146.png
+Saved 9 grid cards to cards/pending_verification/IMG_2151.json
+Grid processing completed: 9 cards extracted
+2025-11-26 10:56:42,329 - trading_cards - INFO - [filesystem] File move: IMG_2151.HEIC -> IMG_2151.HEIC
+2025-11-26 10:56:42,335 - trading_cards - INFO - [system] Upload status changed: IMG_2151.HEIC -> pending_verification
+2025-11-26 10:56:42,337 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2151.HEIC
+completed: IMG_2151.HEIC (moved to pending_verification/bulk back)

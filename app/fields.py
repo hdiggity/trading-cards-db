@@ -18,10 +18,9 @@ shared_card_field_specs = [
     ("team", Optional[str], lambda: Column(String), None),
     ("card_set", Optional[str], lambda: Column(String), None),
     ("condition", Optional[str], lambda: Column(String), None),
-    ("is_player_card", Optional[bool], lambda: Column(Boolean, default=True), True),
+    ("is_player", Optional[bool], lambda: Column(Boolean, default=True), True),
     ("features", Optional[str], lambda: Column(String), "none"),
     ("value_estimate", Optional[str], lambda: Column(String), None),
-    ("matched_front_file", Optional[str], lambda: Column(String), None),
     ("notes", Optional[str], lambda: Column(String), None),
 ]
 
@@ -32,18 +31,6 @@ db_only_field_specs = [
         int,
         lambda: Column(Integer, default=1),
         1,
-    ),
-    (
-        "last_price",
-        Optional[float],
-        lambda: Column(Float),
-        None,
-    ),
-    (
-        "price_last_checked",
-        Optional[str],
-        lambda: Column(DateTime),
-        None,
     ),
     (
         "date_added",

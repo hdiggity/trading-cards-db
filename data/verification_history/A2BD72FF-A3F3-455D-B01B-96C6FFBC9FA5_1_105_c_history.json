@@ -1,0 +1,4744 @@
+[
+  {
+    "timestamp": "2025-11-24T01:07:16.012Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "570",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Dan Quisenberry",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "570",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "ray smith",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "46",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Ray Smith",
+          "brand": "topps",
+          "team": "Minnesota Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "46",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "jack o'connor",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "268",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jack O'Connor",
+          "brand": "topps",
+          "team": "Minnesota Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "268",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "gary carter",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "393",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Carter",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "393",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:07:25.830Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "ray smith",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "46",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Ray Smith",
+          "brand": "topps",
+          "team": "Minnesota Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "46",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "jack o'connor",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "268",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jack O'Connor",
+          "brand": "topps",
+          "team": "Minnesota Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "268",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "gary carter",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "393",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Carter",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "393",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:07:33.793Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "jack o'connor",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "268",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jack O'Connor",
+          "brand": "topps",
+          "team": "Minnesota Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "268",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "gary carter",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "393",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Carter",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "393",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:07:40.793Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "gary carter",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "393",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Carter",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "393",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:08:11.288Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "gary carter",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "393",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "personal data",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Carter",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "393",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:08:14.195Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "gary carter",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "393",
+        "copyright_year": "1984",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "personal data",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Carter",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "393",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:08:23.164Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:08:26.126Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "luis deleon",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Luis Deleon",
+          "brand": "topps",
+          "team": "San Diego Padres",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:08:31.659Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:08:45.633Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "personal data",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:08:50.476Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "andre dawson",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "392",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "personal data",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Dawson",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "392",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:09:27.420Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:09:50.007Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:09:55.709Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:09:56.377Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:10:05.899Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "rick dempsey",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:10:08.885Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "dan quisenberry",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "407",
+        "copyright_year": "1984",
+        "team": "los angeles dodgers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.5,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8250000000000001,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "value_range": "$1-5",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "front_supplemented",
+        "_team_source": "front_supplemented",
+        "matched_front_file": "IMG_7311_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Rick Dempsey",
+          "front_team": "Dodgers",
+          "uniform_number": "56",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8250000000000001,
+          "matched_front": "cards/unprocessed_single_front/IMG_7311_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Dempsey",
+          "brand": "topps",
+          "team": "Dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "407",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T01:53:06.971Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "eric rasmussen",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "724",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/A2BD72FF-A3F3-455D-B01B-96C6FFBC9FA5_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Rasmussen",
+          "brand": "topps",
+          "team": "Kansas City Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "724",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

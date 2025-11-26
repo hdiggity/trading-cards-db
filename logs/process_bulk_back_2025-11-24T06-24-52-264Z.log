@@ -1,0 +1,147 @@
+Seeded common Topps checklists
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 2 images from provided file list
+Found 2 grid back images to process
+Found 3144 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/2] Processing: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+processing: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+2025-11-24 01:24:53,458 - trading_cards - INFO - [filesystem] File uploaded: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+2025-11-24 01:24:58,715 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg', 'File size: 457808 bytes, Type: .jpeg', None, 'session_20251124_012453_28985', None, 'D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-24 01:24:58,715 - trading_cards - INFO - [filesystem] File uploaded: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+2025-11-24 01:24:58,722 - trading_cards - INFO - [system] Upload status changed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg -> processing
+2025-11-24 01:24:58,729 - trading_cards - INFO - [image_processing] Started processing: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+Extracting individual cards from grid...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+DEBUG GPT raw response (first 500 chars): I'm unable to extract detailed information from these images. If you can provide clearer images or specific details from the cards, I'd be happy to help further!
+GPT analysis failed: No JSON array found
+Detailed grid processing failed: No JSON array found
+2025-11-24 01:25:04,694 - trading_cards - ERROR - [image_processing] Grid processing fail: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+2025-11-24 01:25:04,702 - trading_cards - ERROR - [system] Upload status changed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg -> failed
+Detailed processing extracted 9 cards
+Detailed processing returned 9/9 unknown cards, trying standard fallback...
+Detailed processing failed, trying enhanced processing: Detailed processing mostly failed: 9/9 unknown
+Processing enhanced 3x3 grid: cards/unprocessed_bulk_back/D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+Applying image enhancement...
+GPT Response length: 475 characters
+Enhanced grid processing failed: No JSON array found in response
+2025-11-24 01:25:08,066 - trading_cards - ERROR - [image_processing] Grid processing fail: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+2025-11-24 01:25:08,073 - trading_cards - ERROR - [system] Upload status changed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg -> failed
+Enhanced processing extracted 9 cards
+Enhanced processing also returned 9/9 unknown, trying standard...
+Enhanced processing also failed, falling back to standard: Enhanced processing mostly failed: 9/9 unknown
+Applied general image enhancement
+Error parsing grid response: No JSON array found
+Grid context: year=None, brand=None, sport=baseball, set=None
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2435 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Grid processing completed: 9 cards processed
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos0_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos1_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos2_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos3_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos4_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos5_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos6_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos7_Unidentified_None.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_pos8_Unidentified_None.png
+Saved 9 grid cards to cards/pending_verification/D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.json
+Grid processing completed: 9 cards extracted
+2025-11-24 01:26:04,752 - trading_cards - INFO - [filesystem] File move: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg -> D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+2025-11-24 01:26:04,754 - trading_cards - INFO - [system] Upload status changed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg -> pending_verification
+2025-11-24 01:26:04,755 - trading_cards - SUCCESS - [image_processing] Processing completed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg
+completed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c.jpeg (moved to pending_verification/bulk back)
+[2/2] Processing: IMG_2068.HEIC
+processing: IMG_2068.HEIC
+2025-11-24 01:26:04,756 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-24 01:26:09,977 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2068.HEIC', 'File size: 4599058 bytes, Type: .heic', None, 'session_20251124_012453_28985', None, 'IMG_2068.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-24 01:26:09,977 - trading_cards - INFO - [filesystem] File uploaded: IMG_2068.HEIC
+2025-11-24 01:26:09,979 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> processing
+2025-11-24 01:26:09,983 - trading_cards - INFO - [image_processing] Started processing: IMG_2068.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/IMG_2068.HEIC
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/IMG_2068.HEIC
+Extracting individual cards from grid...
+Hough detection incomplete, trying smart edge detection...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+DEBUG GPT raw response (first 500 chars): ```json
+[
+    {
+        "grid_position": 0,
+        "name": "Robert Raymond Pfeil",
+        "sport": "baseball",
+        "brand": "Topps",
+        "number": "99",
+        "copyright_year": "1970",
+        "team": "New York Mets",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null
+    },
+    {
+        "grid_position": 1,
+        "name": "Kenneth Raymond Suarez",
+        "sport": "baseball",
+        "brand": "To
+2025-11-24 01:26:41,111 - trading_cards - SUCCESS - [image_processing] Grid processing complete: IMG_2068.HEIC (9 cards)
+2025-11-24 01:26:41,119 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+Detailed grid processing completed: 9 cards analyzed
+Detailed processing extracted 9 cards
+Grid context: year=1972, brand=Topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2435 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Grid processing completed: 9 cards processed
+Saved cropped back: IMG_2068_pos0_1970_rookie_stars_99.png
+Saved cropped back: IMG_2068_pos1_bob_tillman_209.png
+Saved cropped back: IMG_2068_pos2_jim_bunning_545.png
+Saved cropped back: IMG_2068_pos3_nl_playoff_game_3_24.png
+Saved cropped back: IMG_2068_pos4_nl_playoff_game_3_24.png
+Saved cropped back: IMG_2068_pos5_al_strikeout_leaders_66.png
+Saved cropped back: IMG_2068_pos6_al_strikeout_leaders_66.png
+Saved cropped back: IMG_2068_pos7_Vince_Colbert_unknown.png
+Saved cropped back: IMG_2068_pos8_al_home_run_leaders_86.png
+Saved 9 grid cards to cards/pending_verification/IMG_2068.json
+Grid processing completed: 9 cards extracted
+2025-11-24 01:27:33,881 - trading_cards - INFO - [filesystem] File move: IMG_2068.HEIC -> IMG_2068.HEIC
+2025-11-24 01:27:33,884 - trading_cards - INFO - [system] Upload status changed: IMG_2068.HEIC -> pending_verification
+2025-11-24 01:27:33,885 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2068.HEIC
+completed: IMG_2068.HEIC (moved to pending_verification/bulk back)

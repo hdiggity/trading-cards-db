@@ -12,9 +12,33 @@ from pathlib import Path
 from typing import List, Tuple, Dict, Any
 import json
 import os
+import re
+import logging
+import sys
+
+# Suppress httpx logging to prevent stdout pollution during JSON output
+logging.getLogger("httpx").setLevel(logging.WARNING)
 
 from .utils import client, llm_chat
 from .logging_system import logger, LogSource, ActionType
+
+
+def debug_print(msg: str):
+    """Print debug messages to stderr to avoid polluting stdout JSON output."""
+    print(msg, file=sys.stderr)
+
+
+def sanitize_json_string(value):
+    """Remove control characters from strings to prevent JSON parse errors."""
+    if isinstance(value, str):
+        # Remove ASCII control characters (0x00-0x1F) except common whitespace
+        # Keep \t, \n, \r but escape them properly by removing raw versions
+        return re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', value)
+    elif isinstance(value, dict):
+        return {k: sanitize_json_string(v) for k, v in value.items()}
+    elif isinstance(value, list):
+        return [sanitize_json_string(v) for v in value]
+    return value
 
 # Progress file for real-time UI updates
 PROGRESS_FILE = Path("logs/processing_progress.json")
@@ -85,12 +109,12 @@ def detect_and_extract_grid_cards(image_path: str) -> List[np.ndarray]:
 
     if not card_regions or len(card_regions) != 9:
         # Try smart grid detection with edge profiling
-        print("Hough detection incomplete, trying smart edge detection...")
+        debug_print("Hough detection incomplete, trying smart edge detection...")
         card_regions = smart_grid_detection(image)
 
     if not card_regions or len(card_regions) != 9:
         # Final fallback: simple grid division
-        print("Using simple grid division fallback")
+        debug_print("Using simple grid division fallback")
         card_regions = simple_grid_division(image)
     
     # Extract and enhance individual cards
@@ -106,7 +130,7 @@ def detect_and_extract_grid_cards(image_path: str) -> List[np.ndarray]:
             extracted_cards.append(enhanced_card)
             
         except Exception as e:
-            print(f"Failed to extract card {i}: {e}")
+            debug_print(f"Failed to extract card {i}: {e}")
             # Create placeholder for failed extraction
             placeholder = np.zeros((CARD_TARGET_HEIGHT, CARD_TARGET_WIDTH, 3), dtype=np.uint8)
             extracted_cards.append(placeholder)
@@ -189,7 +213,7 @@ def detect_3x3_grid(image: np.ndarray) -> List[Tuple[int, int, int, int]]:
                 return card_regions
                 
     except Exception as e:
-        print(f"Grid detection failed: {e}")
+        debug_print(f"Grid detection failed: {e}")
     
     return []
 
@@ -486,7 +510,7 @@ def convert_cards_to_base64(card_images: List[np.ndarray]) -> List[str]:
             base64_images.append(image_base64)
 
         except Exception as e:
-            print(f"Failed to convert card {i} to base64: {e}")
+            debug_print(f"Failed to convert card {i} to base64: {e}")
             # Create placeholder base64 image
             placeholder = np.zeros((CARD_TARGET_HEIGHT, CARD_TARGET_WIDTH, 3), dtype=np.uint8)
             placeholder_rgb = cv2.cvtColor(placeholder, cv2.COLOR_BGR2RGB)
@@ -522,7 +546,7 @@ def convert_cards_to_base64_with_variants(card_images: List[np.ndarray]) -> Tupl
             high_contrast_images.append(base64.b64encode(buffer_hc.getvalue()).decode('utf-8'))
 
         except Exception as e:
-            print(f"Failed to convert card {i}: {e}")
+            debug_print(f"Failed to convert card {i}: {e}")
             placeholder = np.zeros((CARD_TARGET_HEIGHT, CARD_TARGET_WIDTH, 3), dtype=np.uint8)
             placeholder_rgb = cv2.cvtColor(placeholder, cv2.COLOR_BGR2RGB)
             pil_placeholder = Image.fromarray(placeholder_rgb)
@@ -536,40 +560,30 @@ def convert_cards_to_base64_with_variants(card_images: List[np.ndarray]) -> Tupl
 
 
 def build_detailed_grid_analysis_prompt() -> str:
-    """Build optimized prompt for detailed grid analysis - concise for speed"""
+    """Build simplified prompt - let GPT use its natural extraction abilities"""
 
-    return """Analyze 9 baseball card BACKS extracted from a 3x3 grid.
+    return """Extract data from 9 baseball card backs.
 
-EXTRACTION PRIORITY (in order):
-1. COPYRIGHT YEAR: Find © symbol + 4-digit year (often tiny at bottom edge)
-2. PLAYER NAME: Usually at top of card back in large text
-3. CARD NUMBER: Look in corners (e.g., "#123" or just "123")
-4. BRAND: Topps, Panini, Upper Deck, Fleer, Donruss, etc.
-5. TEAM: CRITICAL - Extract from card back using these locations:
-   - Stats table header often shows team abbreviation (CHC, NYY, LAD, etc.)
-   - Biographical text: "plays for the [team]" or "traded to [team]"
-   - Position line: "Third Base, Chicago White Sox"
-   - Card title: "CUBS", "YANKEES" in header text
-   - Career text: "[team] drafted him in..." or "signed with [team]"
-   - Look for city names + baseball context (Chicago=Cubs/White Sox, NY=Yankees/Mets)
-   - Common abbreviations: ATL=Braves, BOS=Red Sox, CHC=Cubs, CWS=White Sox, CLE=Indians/Guardians, DET=Tigers, HOU=Astros, KC=Royals, LAA=Angels, LAD=Dodgers, MIL=Brewers, MIN=Twins, NYM=Mets, NYY=Yankees, OAK=Athletics, PHI=Phillies, PIT=Pirates, SD=Padres, SF=Giants, SEA=Mariners, STL=Cardinals, TB=Rays, TEX=Rangers, TOR=Blue Jays, WSH=Nationals
+For each card, extract:
+- name (player name or card title)
+- number (card number)
+- copyright_year (4-digit year)
+- brand (manufacturer)
+- team
+- sport
+- condition (gem_mint, mint, near_mint, excellent, very_good, good, fair, poor)
+- is_player_card (true/false)
+- card_set
+- features
+- notes
 
-KEY RULES:
-- Multi-player/Leaders/Checklist cards: is_player_card=false, name=printed title
-- Single player cards: is_player_card=true, name=player name
-- Use stats + team + era to identify unclear names
-- card_set = "n/a" for base cards; only specify actual subsets
-- NEVER return "unknown" for team if ANY team info is visible - make your best determination
-
-Return JSON array with 9 objects:
-[{"grid_position":0,"name":"string","sport":"baseball","brand":"string","number":"string or null","copyright_year":"YYYY","team":"string","card_set":"n/a","condition":"very_good","is_player_card":true,"features":"none","notes":null}]
-
-Be precise. Use "unknown" only when truly unreadable."""
+Return JSON array:
+[{"grid_position":0,"name":"string","sport":"baseball","brand":"string","number":"string","copyright_year":"YYYY","team":"string","card_set":"n/a","condition":"good","is_player_card":true,"features":"none","notes":null}]"""
 
 
 def process_detailed_3x3_grid(image_path: str) -> Tuple[List[Dict], List[str]]:
     """
-    Process 3x3 grid with individual card extraction and detailed analysis
+    Process 3x3 grid with ChatGPT-style simple extraction (primary) and complex fallback
 
     Returns:
         Tuple of (card_data_list, base64_images_list)
@@ -577,41 +591,68 @@ def process_detailed_3x3_grid(image_path: str) -> Tuple[List[Dict], List[str]]:
     filename = Path(image_path).name
 
     try:
-        print(f"Starting detailed 3x3 grid processing: {image_path}")
+        debug_print(f"Starting grid processing: {image_path}")
         write_substep_progress("Starting grid processing", filename, percent=5)
 
-        # Step 1: Extract individual cards from grid
-        print("Extracting individual cards from grid...")
-        write_substep_progress("Extracting 9 cards from grid", "detecting card boundaries", percent=10)
+        # STEP 1: Try simple ChatGPT-style extraction FIRST (primary method)
+        debug_print("Attempting simple ChatGPT-style extraction...")
+        write_substep_progress("Simple extraction", "analyzing full grid", percent=20)
+        card_data = simple_chatgpt_extraction(image_path, filename)
+
+        # Check if simple extraction succeeded
+        if card_data:
+            unknown_count = sum(1 for c in card_data if c.get('name', '').lower() in ('unknown', 'unidentified'))
+            debug_print(f"Simple extraction result: {unknown_count}/9 unknown")
+
+            # If most cards were successfully extracted, use this result
+            if unknown_count < 5:  # Success threshold: less than half unknown
+                write_substep_progress("Extraction complete", f"{9 - unknown_count}/9 cards identified", percent=90)
+                logger.log_grid_processing(
+                    filename,
+                    "complete",
+                    cards_detected=len(card_data),
+                    method="simple_chatgpt_style"
+                )
+                debug_print(f"Simple extraction succeeded: {9 - unknown_count}/9 cards identified")
+                # Generate placeholder base64 images for compatibility
+                placeholder_images = [""] * 9
+                return sanitize_json_string(card_data), placeholder_images
+
+        # STEP 2: Fallback to complex preprocessing if simple extraction failed
+        debug_print("Simple extraction insufficient, falling back to complex preprocessing...")
+        write_substep_progress("Using complex extraction", "splitting and enhancing", percent=30)
+
+        # Extract individual cards from grid
         card_images = detect_and_extract_grid_cards(image_path)
-        print(f"Extracted {len(card_images)} individual cards")
-        write_substep_progress("Cards extracted", f"{len(card_images)} cards found", percent=25)
+        debug_print(f"Extracted {len(card_images)} individual cards")
+        write_substep_progress("Cards extracted", f"{len(card_images)} cards found", percent=45)
 
-        # Step 2: Convert to base64 with both normal and high-contrast variants
-        print("Converting cards to base64 with high-contrast variants...")
-        write_substep_progress("Processing card images", "enhancing for OCR", percent=35)
+        # Convert to base64 with both normal and high-contrast variants
+        debug_print("Converting cards to base64 with high-contrast variants...")
+        write_substep_progress("Processing card images", "enhancing for OCR", percent=55)
         normal_images, hc_images = convert_cards_to_base64_with_variants(card_images)
-        write_substep_progress("Images ready", "sending to GPT-4 Vision", percent=45)
 
-        # Step 3: Analyze cards with GPT using both image variants
-        print("Analyzing cards with GPT-4 Vision (using dual image variants)...")
-        write_substep_progress("Analyzing with GPT-4 Vision", "extracting card data", percent=50)
+        # Analyze cards with GPT using both image variants
+        debug_print("Analyzing cards with GPT-4 Vision (using dual image variants)...")
+        write_substep_progress("Analyzing with GPT-4 Vision", "extracting card data", percent=70)
         card_data = analyze_cards_with_gpt_dual(normal_images, hc_images, filename)
+
         write_substep_progress("Analysis complete", f"{len(card_data)} cards identified", percent=90)
 
         logger.log_grid_processing(
             filename,
             "complete",
             cards_detected=len(card_data),
-            method="detailed_individual_dual"
+            method="complex_preprocessing_fallback"
         )
 
-        print(f"Detailed grid processing completed: {len(card_data)} cards analyzed")
+        debug_print(f"Grid processing completed: {len(card_data)} cards analyzed")
+        card_data = sanitize_json_string(card_data)
         return card_data, normal_images
         
     except Exception as e:
         error_msg = f"Detailed grid processing failed: {str(e)}"
-        print(error_msg)
+        debug_print(error_msg)
         
         logger.log_grid_processing(filename, "fail", error=error_msg, method="detailed_individual")
         
@@ -634,6 +675,195 @@ def process_detailed_3x3_grid(image_path: str) -> Tuple[List[Dict], List[str]]:
             })
         
         return default_cards, []
+
+
+def analyze_full_grid_image(image_path: str, filename: str) -> List[Dict]:
+    """Fallback: Analyze the full 3x3 grid image directly instead of individual crops.
+
+    This is used when individual card extraction fails (all unknown).
+    GPT can often read the full grid better than poorly-cropped individual cards.
+    """
+    try:
+        # Load and encode the full image
+        image = Image.open(image_path)
+
+        # Resize if needed
+        max_size = 2400
+        if max(image.size) > max_size:
+            ratio = max_size / max(image.size)
+            new_size = (int(image.size[0] * ratio), int(image.size[1] * ratio))
+            image = image.resize(new_size, Image.LANCZOS)
+
+        # Convert to base64
+        buffer = BytesIO()
+        image.save(buffer, format="PNG", quality=95)
+        image_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+        # Build prompt for full grid analysis
+        analysis_prompt = """Extract data from a 3x3 grid of 9 baseball card backs.
+
+Grid layout:
+Position 0 | Position 1 | Position 2
+Position 3 | Position 4 | Position 5
+Position 6 | Position 7 | Position 8
+
+Return JSON array with 9 objects:
+[{"grid_position":0,"name":"string","sport":"baseball","brand":"string","number":"string","copyright_year":"YYYY","team":"string","card_set":"n/a","condition":"good","is_player_card":true,"features":"none","notes":null}]"""
+
+        messages = [
+            {"role": "system", "content": analysis_prompt},
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": "Analyze this 3x3 grid of card backs and extract data for all 9 cards:"},
+                    {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}}
+                ]
+            }
+        ]
+
+        response = llm_chat(messages=messages, max_tokens=3000, temperature=0.4)
+        raw_response = response.choices[0].message.content.strip()
+
+        debug_print(f"DEBUG Full grid fallback response (first 500 chars): {raw_response[:500]}")
+
+        # Parse JSON
+        if raw_response.startswith("```json"):
+            raw_response = raw_response[7:].strip()
+        elif raw_response.startswith("```"):
+            raw_response = raw_response[3:].strip()
+        if raw_response.endswith("```"):
+            raw_response = raw_response[:-3].strip()
+
+        start = raw_response.find("[")
+        if start == -1:
+            return None
+
+        depth = 0
+        for idx in range(start, len(raw_response)):
+            if raw_response[idx] == "[":
+                depth += 1
+            elif raw_response[idx] == "]":
+                depth -= 1
+                if depth == 0:
+                    json_str = raw_response[start:idx + 1]
+                    break
+        else:
+            return None
+
+        parsed_cards = json.loads(json_str)
+
+        # Ensure 9 cards
+        while len(parsed_cards) < 9:
+            parsed_cards.append({
+                "grid_position": len(parsed_cards),
+                "name": "unknown", "sport": "baseball", "brand": "unknown",
+                "number": None, "copyright_year": "unknown", "team": "unknown",
+                "card_set": "n/a", "condition": "good", "is_player_card": True,
+                "features": "none", "notes": "fallback incomplete"
+            })
+
+        # Sanitize to remove control characters that break JSON parsing
+        return sanitize_json_string(parsed_cards[:9])
+
+    except Exception as e:
+        debug_print(f"Full grid fallback failed: {e}")
+        return None
+
+
+def simple_chatgpt_extraction(image_path: str, filename: str) -> List[Dict]:
+    """
+    Simple extraction mimicking ChatGPT app approach:
+    - Minimal preprocessing
+    - Full grid image (not split)
+    - Ultra-simple prompt
+    - Higher temperature for natural interpretation
+    """
+    try:
+        debug_print("Using simple ChatGPT-style extraction...")
+
+        # Load original image with minimal processing
+        image = Image.open(image_path)
+
+        # Only resize if image is extremely large (preserve quality)
+        max_size = 3000  # Higher than previous 2400
+        if max(image.size) > max_size:
+            ratio = max_size / max(image.size)
+            new_size = (int(image.size[0] * ratio), int(image.size[1] * ratio))
+            image = image.resize(new_size, Image.LANCZOS)
+
+        # Convert to base64 (PNG to preserve quality)
+        buffer = BytesIO()
+        image.save(buffer, format="PNG")
+        image_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+        # Ultra-simple prompt (ChatGPT app style)
+        prompt = """Extract data from these 9 baseball card backs in a 3x3 grid.
+
+Grid positions:
+0 1 2
+3 4 5
+6 7 8
+
+Return JSON array:
+[{"grid_position":0,"name":"string","sport":"baseball","brand":"string","number":"string","copyright_year":"YYYY","team":"string","card_set":"n/a","condition":"good","is_player_card":true,"features":"none","notes":null}]"""
+
+        messages = [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": prompt},
+                    {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{image_b64}"}}
+                ]
+            }
+        ]
+
+        # Use higher temperature for better text interpretation
+        response = llm_chat(messages=messages, max_tokens=3000, temperature=0.4)
+        raw_response = response.choices[0].message.content.strip()
+
+        debug_print(f"Simple extraction response (first 300 chars): {raw_response[:300]}")
+
+        # Parse JSON
+        if raw_response.startswith("```json"):
+            raw_response = raw_response[7:].strip()
+        elif raw_response.startswith("```"):
+            raw_response = raw_response[3:].strip()
+        if raw_response.endswith("```"):
+            raw_response = raw_response[:-3].strip()
+
+        start = raw_response.find("[")
+        if start == -1:
+            return None
+
+        depth = 0
+        for idx in range(start, len(raw_response)):
+            if raw_response[idx] == "[":
+                depth += 1
+            elif raw_response[idx] == "]":
+                depth -= 1
+                if depth == 0:
+                    json_str = raw_response[start:idx + 1]
+                    break
+        else:
+            return None
+
+        parsed_cards = json.loads(json_str)
+
+        # Ensure 9 cards
+        while len(parsed_cards) < 9:
+            parsed_cards.append({
+                "grid_position": len(parsed_cards),
+                "name": "unknown", "sport": "baseball", "brand": "unknown",
+                "number": None, "copyright_year": "unknown", "team": "unknown",
+                "card_set": "n/a", "condition": "good", "is_player_card": True,
+                "features": "none", "notes": "extraction incomplete"
+            })
+
+        return sanitize_json_string(parsed_cards[:9])
+
+    except Exception as e:
+        debug_print(f"Simple extraction failed: {e}")
+        return None
 
 
 def analyze_cards_with_gpt(base64_images: List[str], filename: str) -> List[Dict]:
@@ -690,6 +920,9 @@ def analyze_cards_with_gpt_dual(normal_images: List[str], hc_images: List[str], 
         # Parse response
         raw_response = response.choices[0].message.content.strip()
 
+        # Debug: Log raw GPT response
+        debug_print(f"DEBUG GPT raw response (first 500 chars): {raw_response[:500]}")
+
         # Clean and parse JSON
         if raw_response.startswith("```json"):
             raw_response = raw_response[7:].strip()
@@ -735,8 +968,15 @@ def analyze_cards_with_gpt_dual(normal_images: List[str], hc_images: List[str], 
                 "notes": "card analysis incomplete"
             })
 
+        # Check if all cards came back as unknown - if so, try full grid analysis
+        unknown_count = sum(1 for c in parsed_cards if c.get('name', '').lower() in ('unknown', 'unidentified'))
+        if unknown_count >= 7:
+            debug_print(f"WARNING: {unknown_count}/9 cards returned as unknown. Individual card extraction may have failed.")
+            debug_print("Attempting full grid image analysis as fallback...")
+            # Don't raise - return the results and let fallback happen at higher level
+
         return parsed_cards[:9]
 
     except Exception as e:
-        print(f"GPT analysis failed: {e}")
+        debug_print(f"GPT analysis failed: {e}")
         raise

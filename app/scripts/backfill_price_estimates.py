@@ -32,7 +32,7 @@ def fmt_price(value: Optional[float]) -> Optional[str]:
 
 def heuristic_estimate(card: Card) -> str:
     """Very simple heuristic when no last_price is available.
-    Returns a range like "$1-5".
+    Returns a single conservative value like "$1".
     """
     features = (card.features or "").lower()
     condition = (card.condition or "").lower().replace("_", " ")
@@ -42,29 +42,27 @@ def heuristic_estimate(card: Card) -> str:
     except Exception:
         year = None
 
-    # Base range
-    low, high = 1, 5
+    # Base value - most common cards are worth very little
+    value = 1
 
     if "autograph" in features:
-        low, high = 20, 200
+        value = 25
     elif "rookie" in features:
-        low, high = 5, 25
+        value = 3
     elif "hall of fame" in features or "hof" in features:
-        low, high = 5, 20
+        value = 2
 
-    # Vintage bump
+    # Vintage bump (pre-1980)
     if year and year <= 1979:
-        low = max(low, 5)
-        high = max(high, 30)
+        value = max(value, 2)
 
-    # Condition adjustment (rough)
+    # Condition adjustment
     if condition in {"poor", "fair"}:
-        high = max(3, min(high, 8))
-        low = max(1, min(low, 2))
-    elif condition in {"excellent", "near mint", "mint", "gem mint"}:
-        high = int(high * 1.5)
+        value = max(1, int(value * 0.5))
+    elif condition in {"near mint", "mint", "gem mint"}:
+        value = int(value * 1.5)
 
-    return f"${low}-{high}"
+    return f"${value}"
 
 
 def backfill(dry_run: bool = False) -> dict:

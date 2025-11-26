@@ -1,0 +1,18 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3288 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2139.HEIC
+processing: IMG_2139.HEIC
+2025-11-25 15:23:54,284 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:23:59,524 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2139.HEIC', 'File size: 3917441 bytes, Type: .heic', None, 'session_20251125_152354_14276', None, 'IMG_2139.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-25 15:23:59,524 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:23:59,532 - trading_cards - INFO - [system] Upload status changed: IMG_2139.HEIC -> processing
+2025-11-25 15:23:59,539 - trading_cards - INFO - [image_processing] Started processing: IMG_2139.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/IMG_2139.HEIC
+Trying enhanced multi-pass extraction with checklist validation...
+[Enhanced Grid Extraction] Processing: cards/unprocessed_bulk_back/IMG_2139.HEIC

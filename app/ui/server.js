@@ -561,8 +561,8 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
       const gridMeta = card._grid_metadata || {};
       const pos = gridMeta.position !== undefined ? gridMeta.position : cardIndex;
       const croppedFiles = await fs.readdir(CROPPED_BACKS_PENDING);
-      // Match by base name and position
-      const searchPattern = `${id}_pos${pos}_`;
+      // Match by base name and position (supports both IMG_2139_pos4.png and IMG_2139_pos4_Name_Number.png)
+      const searchPattern = `${id}_pos${pos}`;
       croppedBackFile = croppedFiles.find(f => f.startsWith(searchPattern));
       // If not found by position, try by name/number
       if (!croppedBackFile && card.name && card.number) {
@@ -585,6 +585,20 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
           processedCard[field] = processedCard[field].toLowerCase();
         }
       });
+      // Normalize is_player to boolean (handle string "true"/"false" from UI)
+      if (processedCard.is_player !== undefined && processedCard.is_player !== null) {
+        if (typeof processedCard.is_player === 'string') {
+          processedCard.is_player = processedCard.is_player.toLowerCase() === 'true';
+        } else if (typeof processedCard.is_player === 'boolean') {
+          // Already boolean, keep as-is
+        } else {
+          // Default to true for any other value
+          processedCard.is_player = Boolean(processedCard.is_player);
+        }
+      } else {
+        // Default to true if not provided
+        processedCard.is_player = true;
+      }
       // Ensure source_file is set from the image filename
       if (!processedCard.source_file && imageFile) {
         processedCard.source_file = imageFile;
@@ -632,36 +646,35 @@ with get_session() as session:
             # Create CardCreate instance for validation
             card_create = CardCreate(**card_info)
 
-            # Check for existing card (duplicate detection)
+            # Check for existing card (duplicate detection) to get card_id
             existing = session.query(Card).filter(
                 Card.brand == card_info.get("brand"),
                 Card.number == card_info.get("number"),
                 Card.name == card_info.get("name"),
-                Card.copyright_year == card_info.get("copyright_year")
+                Card.copyright_year == card_info.get("copyright_year"),
+                Card.team == card_info.get("team")
             ).first()
 
             if existing:
-                # Update quantity for duplicate
-                existing.quantity += 1
                 card_id = existing.id
-                print(f"Updated quantity for existing card: {card_info.get('name')}")
+                print(f"Found existing card: {card_info.get('name')}, adding to cards_complete")
             else:
-                # Create new card
+                # Create new card entry to get card_id
+                # Trigger will update this with correct data from cards_complete
                 new_card = Card(**card_create.model_dump())
                 session.add(new_card)
                 session.flush()  # Get the new card's ID
                 card_id = new_card.id
-                print(f"Added new card: {card_info.get('name')}")
+                print(f"Created new card: {card_info.get('name')}")
 
-            # Always create CardComplete record for each physical card copy
+            # Create CardComplete record for each physical card copy
+            # Database triggers will automatically update cards table and quantity
             grid_meta = card_info.get('_grid_metadata', {})
             card_complete = CardComplete(
                 card_id=card_id,
                 source_file=card_info.get('source_file') or card_info.get('original_filename'),
-                source_position=grid_meta.get('position') or card_info.get('grid_position'),
                 grid_position=str(grid_meta.get('position') or card_info.get('grid_position', '')),
                 original_filename=card_info.get('original_filename'),
-                condition_at_scan=card_info.get('condition'),
                 notes=card_info.get('notes'),
                 name=card_info.get('name'),
                 sport=card_info.get('sport'),
@@ -671,12 +684,13 @@ with get_session() as session:
                 team=card_info.get('team'),
                 card_set=card_info.get('card_set'),
                 condition=card_info.get('condition'),
+                is_player=card_info.get('is_player'),
                 value_estimate=card_info.get('value_estimate'),
                 features=card_info.get('features'),
-                matched_front_file=card_info.get('matched_front_file')
+                cropped_back_file=card_info.get('cropped_back_file')
             )
             session.add(card_complete)
-            print(f"Added card_complete record for: {card_info.get('name')}")
+            print(f"Added cards_complete record for: {card_info.get('name')} (triggers will sync to cards)")
 
         except Exception as e:
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
@@ -698,16 +712,22 @@ print("Database import completed successfully")
     let error = '';
     
     pythonProcess.stdout.on('data', (data) => {
-      output += data.toString();
+      const text = data.toString();
+      output += text;
+      console.log(`[pass-card] Python stdout: ${text.trim()}`);
     });
-    
+
     pythonProcess.stderr.on('data', (data) => {
-      error += data.toString();
+      const text = data.toString();
+      error += text;
+      console.error(`[pass-card] Python stderr: ${text.trim()}`);
     });
-    
+
     pythonProcess.on('close', async (code) => {
       try { REPROCESS_JOBS.delete(id); } catch (_) {}
       console.log(`[pass-card] Python exited with code ${code}, allCardData had ${allCardData.length} cards, splicing index ${cardIndex}`);
+      console.log(`[pass-card] Full output: ${output.trim()}`);
+      console.log(`[pass-card] Full error: ${error.trim()}`);
       if (code === 0) {
         // Remove the imported card from the array FIRST, before any async operations
         const cardIdx = parseInt(cardIndex);
@@ -913,6 +933,20 @@ app.post('/api/pass/:id', async (req, res) => {
           processedCard[field] = processedCard[field].toLowerCase();
         }
       });
+      // Normalize is_player to boolean (handle string "true"/"false" from UI)
+      if (processedCard.is_player !== undefined && processedCard.is_player !== null) {
+        if (typeof processedCard.is_player === 'string') {
+          processedCard.is_player = processedCard.is_player.toLowerCase() === 'true';
+        } else if (typeof processedCard.is_player === 'boolean') {
+          // Already boolean, keep as-is
+        } else {
+          // Default to true for any other value
+          processedCard.is_player = Boolean(processedCard.is_player);
+        }
+      } else {
+        // Default to true if not provided
+        processedCard.is_player = true;
+      }
       // Ensure source_file is set from the image filename
       if (!processedCard.source_file && imageFile) {
         processedCard.source_file = imageFile;
@@ -949,38 +983,36 @@ with get_session() as session:
             # Create CardCreate instance for validation
             card_create = CardCreate(**card_info)
 
-            # Check for existing card (duplicate detection)
+            # Check for existing card (duplicate detection) to get card_id
             existing = session.query(Card).filter(
                 Card.brand == card_info.get("brand"),
                 Card.number == card_info.get("number"),
                 Card.name == card_info.get("name"),
-                Card.copyright_year == card_info.get("copyright_year")
+                Card.copyright_year == card_info.get("copyright_year"),
+                Card.team == card_info.get("team")
             ).first()
 
             if existing:
-                # Update quantity for duplicate
-                existing.quantity += 1
                 card_id = existing.id
-                print(f"Updated quantity for existing card: {card_info.get('name')}")
+                print(f"Found existing card: {card_info.get('name')}, adding to cards_complete")
             else:
-                # Create new card
+                # Create new card entry to get card_id
+                # Trigger will update this with correct data from cards_complete
                 new_card = Card(**card_create.model_dump())
                 session.add(new_card)
                 session.flush()  # Get the new card ID
                 card_id = new_card.id
-                print(f"Added new card: {card_info.get('name')}")
+                print(f"Created new card: {card_info.get('name')}")
 
             # Create CardComplete record with full card data for each physical copy
+            # Database triggers will automatically update cards table and quantity
             grid_meta = card_info.get('_grid_metadata', {})
             card_complete = CardComplete(
                 card_id=card_id,
                 source_file=source_file,
-                source_position=grid_meta.get('position') or card_info.get('grid_position') or idx,
                 grid_position=str(grid_meta.get('position') or card_info.get('grid_position', idx)),
                 original_filename=source_file,
-                condition_at_scan=card_info.get('condition'),
                 notes=card_info.get('notes'),
-                meta_data=json.dumps({k: v for k, v in card_info.items() if k not in text_fields}),
                 # Card data (denormalized)
                 name=card_info.get('name'),
                 sport=card_info.get('sport'),
@@ -990,12 +1022,13 @@ with get_session() as session:
                 team=card_info.get('team'),
                 card_set=card_info.get('card_set'),
                 condition=card_info.get('condition'),
+                is_player=card_info.get('is_player'),
                 value_estimate=card_info.get('value_estimate'),
                 features=card_info.get('features'),
-                matched_front_file=card_info.get('matched_front_file')
+                cropped_back_file=card_info.get('cropped_back_file')
             )
             session.add(card_complete)
-            print(f"Added card_complete record for: {card_info.get('name')}")
+            print(f"Added cards_complete record for: {card_info.get('name')} (triggers will sync to cards)")
 
         except Exception as e:
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
@@ -1019,15 +1052,21 @@ print("Database import completed successfully")
     let error = '';
     
     pythonProcess.stdout.on('data', (data) => {
-      output += data.toString();
+      const text = data.toString();
+      output += text;
+      console.log(`[pass-all] Python stdout: ${text.trim()}`);
     });
-    
+
     pythonProcess.stderr.on('data', (data) => {
-      error += data.toString();
+      const text = data.toString();
+      error += text;
+      console.error(`[pass-all] Python stderr: ${text.trim()}`);
     });
-    
+
     pythonProcess.on('close', async (code) => {
       console.log(`[pass-all] Python exited with code ${code} for ${id}`);
+      console.log(`[pass-all] Full output: ${output.trim()}`);
+      console.log(`[pass-all] Full error: ${error.trim()}`);
       if (code === 0) {
         // Database import successful, now move files to verified folder
         try {
@@ -1214,11 +1253,17 @@ app.post('/api/reprocess/:id', async (req, res) => {
 import sys
 import json
 import os
+import logging
+
+# Suppress httpx logging to prevent stdout pollution
+logging.getLogger("httpx").setLevel(logging.WARNING)
+
 sys.path.append("${path.join(__dirname, '../..')}")
 from app.utils import gpt_extract_cards_from_image, save_cards_to_verification
 from pathlib import Path
 from app.run import _is_probable_3x3_grid
 from app.grid_processor import GridProcessor
+from app.accuracy_boost import enhance_cards_batch
 
 try:
     image_path = "${imagePath.replace(/\\/g, '\\\\')}"
@@ -1286,16 +1331,19 @@ try:
         print(f"Grid detection failed (continuing with standard): {e}", file=sys.stderr)
 
     if is_grid:
-        print("Detected probable 3x3 grid. Using GridProcessor for 9-card extraction...", file=sys.stderr)
+        print("Detected probable 3x3 grid. Using GridProcessor for consistent extraction...", file=sys.stderr)
+
+        # Use GridProcessor directly - it handles all the extraction logic with proper fallbacks
         gp = GridProcessor()
         grid_cards, raw = gp.process_3x3_grid(image_path)
-        
+
         # Convert GridCard objects to plain dicts
         parsed_cards = []
         for gc in grid_cards:
             d = gc.data.copy() if isinstance(gc.data, dict) else dict(gc.data)
             d.setdefault('_grid_metadata', {"position": gc.position, "row": gc.row, "col": gc.col, "confidence": getattr(gc, 'confidence', None)})
             parsed_cards.append(d)
+
         print(f"Grid processing completed: {len(parsed_cards)} cards extracted", file=sys.stderr)
     else:
         # Extract cards using enhanced reprocessing prompt with previous data context
@@ -1303,7 +1351,22 @@ try:
         parsed_cards, validated_cards = gpt_extract_cards_from_image(image_path, previous_data)
         
         print(f"Re-processing completed: {len(parsed_cards)} cards extracted", file=sys.stderr)
-    
+
+    # Apply accuracy enhancements (checklist lookup for unidentified names)
+    try:
+        parsed_cards = enhance_cards_batch(parsed_cards)
+        print(f"Applied accuracy enhancements to {len(parsed_cards)} cards", file=sys.stderr)
+    except Exception as e:
+        print(f"Warning: Accuracy enhancement failed: {e}", file=sys.stderr)
+
+    # Apply value estimation
+    try:
+        from app.value_estimator import add_value_estimation
+        parsed_cards = [add_value_estimation(card) for card in parsed_cards]
+        print(f"Applied value estimation to {len(parsed_cards)} cards", file=sys.stderr)
+    except Exception as e:
+        print(f"Warning: Value estimation failed: {e}", file=sys.stderr)
+
     # Debug: Check if we're getting the same data back
     names = [card.get('name', 'unknown') for card in parsed_cards]
     years = [card.get('copyright_year', 'unknown') for card in parsed_cards]
@@ -1492,28 +1555,30 @@ app.post('/api/fail-card/:id/:cardIndex', async (req, res) => {
     if (!jsonFile) {
       return res.status(404).json({ error: 'Card data file not found' });
     }
-    
+
     // Get the current card data
     const jsonPath = path.join(PENDING_VERIFICATION_DIR, jsonFile);
     let allCardData = JSON.parse(await fs.readFile(jsonPath, 'utf8'));
 
+    // Get failed card position before removing
+    const cardIdx = parseInt(cardIndex);
+    const failedCard = allCardData[cardIdx];
+    const gridMeta = failedCard?._grid_metadata || {};
+    const failedPosition = gridMeta.position !== undefined ? gridMeta.position : cardIdx;
+
     // Find and delete the cropped back image for this specific card before removing from array
     const CROPPED_BACKS_PENDING = path.join(PENDING_VERIFICATION_DIR, 'pending_verification_cropped_backs');
     try {
-      const cardIdx = parseInt(cardIndex);
-      const card = allCardData[cardIdx];
-      if (card) {
-        const gridMeta = card._grid_metadata || {};
-        const pos = gridMeta.position !== undefined ? gridMeta.position : cardIdx;
+      if (failedCard) {
         const croppedFiles = await fs.readdir(CROPPED_BACKS_PENDING);
         // Match by base name and position
-        const searchPattern = `${id}_pos${pos}_`;
+        const searchPattern = `${id}_pos${failedPosition}_`;
         let croppedBackFile = croppedFiles.find(f => f.startsWith(searchPattern));
         // If not found by position, try by name/number
-        if (!croppedBackFile && card.name && card.number) {
-          const namePart = card.name.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
+        if (!croppedBackFile && failedCard.name && failedCard.number) {
+          const namePart = failedCard.name.replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_]/g, '');
           croppedBackFile = croppedFiles.find(f =>
-            f.includes(`_${namePart}_`) && f.includes(`_${card.number}.`)
+            f.includes(`_${namePart}_`) && f.includes(`_${failedCard.number}.`)
           );
         }
         // Delete the cropped back if found
@@ -1526,51 +1591,63 @@ app.post('/api/fail-card/:id/:cardIndex', async (req, res) => {
       console.log(`[fail-card] No cropped_backs dir or error: ${cropErr.message}`);
     }
 
-    // Remove the rejected card from the array
-    allCardData.splice(parseInt(cardIndex), 1);
-    
-    // Update the JSON file with remaining cards
-    if (allCardData.length > 0) {
-      await fs.writeFile(jsonPath, JSON.stringify(allCardData, null, 2));
-      res.json({ 
-        success: true, 
-        message: 'Card rejected and removed. Remaining cards updated.',
-        remainingCards: allCardData.length
-      });
-    } else {
-      // No cards left, move image back to unprocessed_bulk_back for reprocessing
-      const imageFile = bulkBackFiles.find(file => {
-        const imgBaseName = path.parse(file).name;
-        const imgExt = path.parse(file).ext.toLowerCase();
-        return imgBaseName === id && ['.jpg', '.jpeg', '.png', '.heic'].includes(imgExt);
-      });
+    // Find the bulk back image
+    const imageFile = bulkBackFiles.find(file => {
+      const imgBaseName = path.parse(file).name;
+      const imgExt = path.parse(file).ext.toLowerCase();
+      return imgBaseName === id && ['.jpg', '.jpeg', '.png', '.heic'].includes(imgExt);
+    });
 
+    // Move bulk back image to unprocessed with position info
+    let movedImageName = null;
+    if (imageFile) {
+      const ext = path.extname(imageFile);
+      const baseName = path.parse(imageFile).name;
+      // Append failed position to filename so user knows which card failed
+      movedImageName = `${baseName}_failed_pos${failedPosition}${ext}`;
       try {
-        await fs.unlink(jsonPath);
-        if (imageFile) {
-          // Move image back to unprocessed_bulk_back instead of deleting
-          await fs.rename(
-            path.join(PENDING_BULK_BACK_DIR, imageFile),
-            path.join(UNPROCESSED_BULK_BACK_DIR, imageFile)
-          );
-          console.log(`[fail-card] Moved image back to unprocessed: ${imageFile}`);
-        }
-
-        res.json({
-          success: true,
-          message: 'Last card rejected. Image moved back to unprocessed for reprocessing.',
-          remainingCards: 0
-        });
-      } catch (cleanupError) {
-        console.error('[fail-card] Error moving files:', cleanupError);
-        res.json({
-          success: true,
-          message: 'Card rejected but file cleanup failed',
-          remainingCards: 0
-        });
+        await fs.rename(
+          path.join(PENDING_BULK_BACK_DIR, imageFile),
+          path.join(UNPROCESSED_BULK_BACK_DIR, movedImageName)
+        );
+        console.log(`[fail-card] Moved image back to unprocessed: ${movedImageName}`);
+      } catch (moveErr) {
+        console.error(`[fail-card] Error moving image: ${moveErr.message}`);
+        movedImageName = null;
       }
     }
-    
+
+    // Delete all cropped backs for this image since we're moving it back
+    try {
+      const croppedFiles = await fs.readdir(CROPPED_BACKS_PENDING);
+      for (const f of croppedFiles) {
+        if (f.startsWith(`${id}_pos`)) {
+          await fs.unlink(path.join(CROPPED_BACKS_PENDING, f));
+          console.log(`[fail-card] Deleted cropped back: ${f}`);
+        }
+      }
+    } catch (e) {
+      // Ignore errors cleaning up cropped backs
+    }
+
+    // Delete the JSON file since we're moving the image back
+    try {
+      await fs.unlink(jsonPath);
+      console.log(`[fail-card] Deleted JSON: ${jsonFile}`);
+    } catch (e) {
+      console.error(`[fail-card] Error deleting JSON: ${e.message}`);
+    }
+
+    res.json({
+      success: true,
+      message: movedImageName
+        ? `Card at position ${failedPosition} failed. Image moved back to unprocessed as ${movedImageName}`
+        : `Card at position ${failedPosition} failed. Pending data removed.`,
+      movedImage: movedImageName,
+      failedPosition: failedPosition,
+      remainingCards: 0
+    });
+
   } catch (error) {
     console.error('Error processing single card fail action:', error);
     res.status(500).json({ error: 'Failed to process single card fail action' });
@@ -1616,8 +1693,8 @@ app.post('/api/fail/:id', async (req, res) => {
 // Get all cards from database with pagination and filtering
 app.get('/api/cards', async (req, res) => {
   try {
-    const { page = 1, limit = 20, search = '', sport = '', brand = '', condition = '', sortBy = '', sortDir = 'asc' } = req.query;
-    
+    const { page = 1, limit = 20, search = '', sport = '', brand = '', condition = '', team = '', year = '', card_set = '', name = '', number = '', features = '', is_player = '', sortBy = '', sortDir = 'asc' } = req.query;
+
     const pythonProcess = spawn('python', ['-c', `
 import json
 import sys
@@ -1631,12 +1708,19 @@ search = "${search}"
 sport = "${sport}"
 brand = "${brand}"
 condition = "${condition}"
+team = "${team}"
+year = "${year}"
+card_set = "${card_set}"
+name = "${req.query.name || ''}"
+number = "${req.query.number || ''}"
+features = "${req.query.features || ''}"
+is_player = "${req.query.is_player || ''}"
 sort_by = "${(req.query.sortBy || '').toString()}"
 sort_dir = "${(req.query.sortDir || 'asc').toString()}".lower()
 
 with get_session() as session:
     query = session.query(Card)
-    
+
     # Apply filters
     filters = []
     if search:
@@ -1651,7 +1735,21 @@ with get_session() as session:
         filters.append(Card.brand.ilike(f"%{brand}%"))
     if condition:
         filters.append(Card.condition == condition)
-    
+    if team:
+        filters.append(Card.team.ilike(f"%{team}%"))
+    if year:
+        filters.append(Card.copyright_year == int(year))
+    if card_set:
+        filters.append(Card.card_set.ilike(f"%{card_set}%"))
+    if name:
+        filters.append(Card.name.ilike(f"%{name}%"))
+    if number:
+        filters.append(Card.number.ilike(f"%{number}%"))
+    if features:
+        filters.append(Card.features.ilike(f"%{features}%"))
+    if is_player:
+        filters.append(Card.is_player == (is_player.lower() == 'true'))
+
     if filters:
         query = query.filter(and_(*filters))
 
@@ -1665,26 +1763,50 @@ with get_session() as session:
         'team': Card.team,
         'card_set': Card.card_set,
         'condition': Card.condition,
-        'is_player_card': Card.is_player_card,
+        'is_player': Card.is_player,
         'features': Card.features,
         'value_estimate': Card.value_estimate,
         'quantity': Card.quantity,
         'date_added': Card.date_added,
     }
-    col = valid_cols.get(sort_by)
-    if col is not None:
-        if sort_dir == 'desc':
-            query = query.order_by(desc(col))
-        else:
-            query = query.order_by(asc(col))
-    
-    # Get total count
-    total = query.count()
-    
-    # Apply pagination
-    offset = (page - 1) * limit
-    cards = query.offset(offset).limit(limit).all()
-    
+
+    # Special handling for value_estimate - extract numeric value for sorting
+    if sort_by == 'value_estimate':
+        import re
+        # Use SQL CAST with extracted number for proper numeric sorting
+        # Extract first number from value_estimate string (e.g., "$1-5" -> 1, "$10-25" -> 10)
+        # SQLite: use substr and instr to extract digits, then cast
+        # Simpler approach: sort in Python after fetching
+        cards_all = query.all()
+        def extract_price(card):
+            val = card.value_estimate or ''
+            nums = re.findall(r'[\\d.]+', str(val))
+            if nums:
+                try:
+                    return float(nums[0])
+                except:
+                    pass
+            return 0.0 if sort_dir == 'desc' else float('inf')
+        cards_all.sort(key=extract_price, reverse=(sort_dir == 'desc'))
+        total = len(cards_all)
+        offset = (page - 1) * limit
+        cards = cards_all[offset:offset + limit]
+    else:
+        col = valid_cols.get(sort_by)
+        if col is not None:
+            if sort_dir == 'desc':
+                query = query.order_by(desc(col))
+            else:
+                query = query.order_by(asc(col))
+
+        # Get total count and total quantity
+        total = query.count()
+        total_quantity = session.query(func.sum(Card.quantity)).filter(*filters).scalar() or 0
+
+        # Apply pagination
+        offset = (page - 1) * limit
+        cards = query.offset(offset).limit(limit).all()
+
     # Convert to dict
     result = {
         "cards": [
@@ -1698,7 +1820,7 @@ with get_session() as session:
                 "team": card.team,
                 "card_set": card.card_set,
                 "condition": card.condition,
-                "is_player_card": card.is_player_card,
+                "is_player": card.is_player,
                 "features": card.features,
                 "value_estimate": card.value_estimate,
                 "quantity": card.quantity,
@@ -1710,6 +1832,7 @@ with get_session() as session:
             "page": page,
             "limit": limit,
             "total": total,
+            "totalQuantity": total_quantity,
             "pages": (total + limit - 1) // limit
         }
     }
@@ -1760,7 +1883,9 @@ app.put('/api/cards/:id', async (req, res) => {
 
     const pythonProcess = spawn('python', ['-c', `
 import json
+import re
 import sys
+from datetime import datetime
 from app.database import get_session
 from app.models import Card
 
@@ -2267,7 +2392,7 @@ with get_session() as session:
             "sport": card.sport,
             "condition": card.condition,
             "features": card.features,
-            "is_player_card": card.is_player_card
+            "is_player": card.is_player
         })
 
     print(json.dumps({"suggestions": suggestions}))
@@ -2392,6 +2517,164 @@ print(json.dumps(result))
   } catch (error) {
     console.error('Error looking up team:', error);
     res.json({ team: null, source: null });
+  }
+});
+
+// Get field-specific autocomplete suggestions
+app.post('/api/field-autocomplete', async (req, res) => {
+  try {
+    const { field, query, limit = 10 } = req.body;
+
+    if (!field || !query || query.length < 1) {
+      return res.json({ suggestions: [] });
+    }
+
+    const allowedFields = ['name', 'sport', 'brand', 'team', 'card_set', 'number'];
+    if (!allowedFields.includes(field)) {
+      return res.status(400).json({ error: 'Invalid field name' });
+    }
+
+    const pythonProcess = spawn('python', ['-c', `
+import json
+from app.database import get_session
+from app.models import Card
+from sqlalchemy import func, distinct
+
+search_field = ${JSON.stringify(field)}
+search_query = ${JSON.stringify(query || '')}
+search_limit = ${limit}
+
+with get_session() as session:
+    # Get distinct values for the field that match the query
+    field_attr = getattr(Card, search_field)
+
+    query_obj = session.query(distinct(field_attr)).filter(
+        field_attr.isnot(None),
+        func.lower(field_attr).like(f"%{search_query.lower()}%")
+    )
+
+    # Exclude empty and 'unknown' values
+    query_obj = query_obj.filter(
+        field_attr != '',
+        func.lower(field_attr) != 'unknown'
+    )
+
+    # Order by length first (shorter matches first), then alphabetically
+    results = query_obj.order_by(
+        func.length(field_attr),
+        field_attr
+    ).limit(search_limit).all()
+
+    suggestions = [r[0] for r in results if r[0]]
+
+    print(json.dumps({"suggestions": suggestions}))
+`], {
+      cwd: path.join(__dirname, '../..')
+    });
+
+    let output = '';
+    let error = '';
+
+    pythonProcess.stdout.on('data', (data) => {
+      output += data.toString();
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+      error += data.toString();
+    });
+
+    pythonProcess.on('close', (code) => {
+      if (code === 0) {
+        try {
+          const result = JSON.parse(output);
+          res.json(result);
+        } catch (parseError) {
+          res.status(500).json({ error: 'Failed to parse autocomplete results' });
+        }
+      } else {
+        res.status(500).json({
+          error: 'Failed to get autocomplete suggestions',
+          details: error.trim()
+        });
+      }
+    });
+
+  } catch (error) {
+    console.error('Error getting field autocomplete:', error);
+    res.status(500).json({ error: 'Failed to get autocomplete suggestions' });
+  }
+});
+
+// Get full card data by name for autofill
+app.post('/api/card-by-name', async (req, res) => {
+  try {
+    const { name } = req.body;
+
+    if (!name || name.length < 1) {
+      return res.json({ card: null });
+    }
+
+    const pythonProcess = spawn('python', ['-c', `
+import json
+from app.database import get_session
+from app.models import Card
+from sqlalchemy import func
+
+search_name = ${JSON.stringify(name || '')}
+
+with get_session() as session:
+    # Find the most recent card with this name
+    card = session.query(Card).filter(
+        func.lower(Card.name) == search_name.lower()
+    ).order_by(Card.date_added.desc()).first()
+
+    if card:
+        card_data = {
+            'name': card.name,
+            'sport': card.sport,
+            'brand': card.brand,
+            'team': card.team,
+            'card_set': card.card_set,
+            'number': card.number,
+            'copyright_year': card.copyright_year,
+            'condition': card.condition,
+            'is_player': card.is_player,
+            'features': card.features
+        }
+        print(json.dumps({"card": card_data}))
+    else:
+        print(json.dumps({"card": None}))
+`], {
+      cwd: path.join(__dirname, '../..')
+    });
+
+    let output = '';
+    let error = '';
+
+    pythonProcess.stdout.on('data', (data) => {
+      output += data.toString();
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+      error += data.toString();
+    });
+
+    pythonProcess.on('close', (code) => {
+      if (code === 0) {
+        try {
+          const result = JSON.parse(output);
+          res.json(result);
+        } catch (parseError) {
+          res.json({ card: null });
+        }
+      } else {
+        res.json({ card: null });
+      }
+    });
+
+  } catch (error) {
+    console.error('Error getting card by name:', error);
+    res.status(500).json({ error: 'Failed to get card data' });
   }
 });
 
@@ -2602,46 +2885,72 @@ app.use('/api/front-image', express.static(FRONT_IMAGES_DIR));
 const CROPPED_BACKS_DIR = path.join(__dirname, '../../cards/pending_verification/pending_verification_cropped_backs');
 const VERIFIED_CROPPED_BACKS_DIR = path.join(__dirname, '../../cards/verified/verified_cropped_backs');
 
-// Smart cropped back image endpoint with position-based fallback
+// Smart cropped back image endpoint - checks both pending and verified directories
 app.get('/api/cropped-back-image/:filename', async (req, res) => {
   const { filename } = req.params;
-  const exactPath = path.join(CROPPED_BACKS_DIR, filename);
+  const pendingPath = path.join(CROPPED_BACKS_DIR, filename);
+  const verifiedPath = path.join(VERIFIED_CROPPED_BACKS_DIR, filename);
 
+  // Try exact match in pending first
   try {
-    // First try exact match
-    await fs.access(exactPath);
-    return res.sendFile(exactPath);
+    await fs.access(pendingPath);
+    return res.sendFile(pendingPath);
+  } catch (e) {}
+
+  // Try exact match in verified
+  try {
+    await fs.access(verifiedPath);
+    console.log(`[cropped-back] Found exact match in verified: ${filename}`);
+    return res.sendFile(verifiedPath);
   } catch (e) {
-    // Exact file not found - try fallbacks
-    // filename format: stem_posN_Name_Number.png
-    const posMatch = filename.match(/^(.+)_pos(\d+)_.+\.png$/);
-    if (posMatch) {
-      const stem = posMatch[1];
-      const pos = posMatch[2];
-
-      try {
-        const files = await fs.readdir(CROPPED_BACKS_DIR);
-
-        // Fallback 1: Same stem and position
-        let fallback = files.find(f => f.startsWith(stem) && f.includes(`_pos${pos}_`));
-        if (fallback) {
-          return res.sendFile(path.join(CROPPED_BACKS_DIR, fallback));
-        }
-
-        // Fallback 2: Same stem, ANY position (when cropped images don't match JSON positions)
-        fallback = files.find(f => f.startsWith(stem) && f.includes('_pos'));
-        if (fallback) {
-          console.log(`[cropped-back] Using fallback image: ${fallback} for requested: ${filename}`);
-          return res.sendFile(path.join(CROPPED_BACKS_DIR, fallback));
-        }
-      } catch (readErr) {
-        // Directory doesn't exist
-      }
-    }
-
-    // No fallback found
-    res.status(404).send('Cropped image not found');
+    console.log(`[cropped-back] Not found in verified: ${filename}`);
   }
+
+  // Exact file not found - try position-based fallbacks
+  // filename format: stem_posN_Name_Number.png or stem_posN.png
+  const posMatch = filename.match(/^(.+)_pos(\d+)(?:_.+)?\.png$/);
+  if (posMatch) {
+    const stem = posMatch[1];
+    const pos = posMatch[2];
+
+    // Check verified directory first for position match
+    try {
+      const verifiedFiles = await fs.readdir(VERIFIED_CROPPED_BACKS_DIR);
+      let fallback = verifiedFiles.find(f => f.startsWith(stem) && f.includes(`_pos${pos}_`));
+      if (fallback) {
+        return res.sendFile(path.join(VERIFIED_CROPPED_BACKS_DIR, fallback));
+      }
+    } catch (readErr) {}
+
+    // Check pending directory for position match
+    try {
+      const pendingFiles = await fs.readdir(CROPPED_BACKS_DIR);
+      let fallback = pendingFiles.find(f => f.startsWith(stem) && f.includes(`_pos${pos}_`));
+      if (fallback) {
+        return res.sendFile(path.join(CROPPED_BACKS_DIR, fallback));
+      }
+
+      // Last resort: any position from pending (shouldn't normally happen)
+      fallback = pendingFiles.find(f => f.startsWith(stem) && f.includes('_pos'));
+      if (fallback) {
+        console.log(`[cropped-back] Using fallback image from pending: ${fallback} for requested: ${filename}`);
+        return res.sendFile(path.join(CROPPED_BACKS_DIR, fallback));
+      }
+    } catch (readErr) {}
+
+    // Last resort: any position from verified (for position mismatches)
+    try {
+      const verifiedFiles = await fs.readdir(VERIFIED_CROPPED_BACKS_DIR);
+      let fallback = verifiedFiles.find(f => f.startsWith(stem) && f.includes('_pos'));
+      if (fallback) {
+        console.log(`[cropped-back] Using fallback image from verified: ${fallback} for requested: ${filename}`);
+        return res.sendFile(path.join(VERIFIED_CROPPED_BACKS_DIR, fallback));
+      }
+    } catch (readErr) {}
+  }
+
+  // No fallback found
+  res.status(404).send('Cropped image not found');
 });
 
 app.use('/api/verified-cropped-back-image', express.static(VERIFIED_CROPPED_BACKS_DIR));
@@ -2709,10 +3018,7 @@ with get_session() as session:
             "condition": ic.condition,
             "value_estimate": ic.value_estimate,
             "features": getattr(ic, 'features', None),
-            "condition_at_scan": ic.condition_at_scan,
-            "scan_quality": ic.scan_quality,
             "notes": ic.notes,
-            "matched_front_file": ic.matched_front_file,
             "name": ic.name,
             "number": ic.number,
             "copyright_year": ic.copyright_year,

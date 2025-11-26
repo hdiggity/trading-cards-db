@@ -1,0 +1,50 @@
+Seeded common Topps checklists
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3171 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+processing: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+2025-11-24 16:56:01,874 - trading_cards - INFO - [filesystem] File uploaded: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+2025-11-24 16:56:07,085 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg', 'File size: 457808 bytes, Type: .jpeg', None, 'session_20251124_165601_64104', None, 'D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-24 16:56:07,086 - trading_cards - INFO - [filesystem] File uploaded: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+2025-11-24 16:56:07,096 - trading_cards - INFO - [system] Upload status changed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg -> processing
+2025-11-24 16:56:07,106 - trading_cards - INFO - [image_processing] Started processing: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+Trying simple direct GPT extraction...
+Simple direct extraction succeeded: 9 cards
+Grid context: year=1980, brand=topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2462 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Grid processing completed: 9 cards processed
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos0_fernando_gonzalez_171.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos1_kiko_garcia_37.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos2_kiko_garcia_37.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos3_mark_belanger_425.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos4_john_curtis_12.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos5_Nino_Espinosa_777.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos6_Franklin_Stubbs_697.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos7_Doc_Edwards_534.png
+Saved cropped back: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7_pos8_Kent_Hrbek_265.png
+Saved 9 grid cards to cards/pending_verification/D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.json
+Grid processing completed: 9 cards extracted
+2025-11-24 16:57:45,478 - trading_cards - INFO - [filesystem] File move: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg -> D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+2025-11-24 16:57:45,485 - trading_cards - INFO - [system] Upload status changed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg -> pending_verification
+2025-11-24 16:57:45,486 - trading_cards - SUCCESS - [image_processing] Processing completed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg
+completed: D7C34DA9-C0BE-41BA-888F-FFC3C4B47E68_1_105_c_failed_pos7.jpeg (moved to pending_verification/bulk back)

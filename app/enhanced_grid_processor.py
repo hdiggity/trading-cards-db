@@ -167,7 +167,7 @@ CRITICAL GRID ANALYSIS INSTRUCTIONS:
 
 ENHANCED TEXT DETECTION:
 - The image has been preprocessed for optimal text clarity
-- Look carefully at card backs for player names (usually at top)
+- PLAYER NAME EXTRACTION (HIGHEST PRIORITY): Find the player's FULL NAME printed in ALL CAPS or bold text. Common locations: header section near top (may be below biographical text), next to card number, or as distinct name line (e.g., "ARTHUR BOBBY LEE DARWIN", "DAVE GOLTZ"). DO NOT extract team names, positions, biographical snippets, or stats. Look for the person's actual name in all caps/bold.
 - Find copyright years (© symbol + year, often small text at borders)
 - Identify team names from uniform colors, logos, or text
 - Look for card numbers (often in corners or along edges)
@@ -182,7 +182,7 @@ GRID CONSISTENCY ANALYSIS:
 INDIVIDUAL CARD EXTRACTION FOCUS:
 NAMING RULE: If a card shows multiple players or is a Leaders/Checklist/Team card, set is_player_card=false and set name to the printed title header (e.g., '1973 Rookie First Basemen', 'Brewers Field Leaders', 'NL Batting Leaders'). Only for single-player cards set is_player_card=true and use the player's name.
 For each of the 9 positions (0-8), extract:
-- Player name from the card back text
+- Player name: Find the player's FULL NAME in ALL CAPS or bold (e.g., "ARTHUR BOBBY LEE DARWIN", "DAVE GOLTZ"). Typically near top but may be below biographical text. DO NOT extract team names, positions, biographical snippets, or stats. Look for the person's actual name.
 - Team (from uniform, text, or team colors)
 - Card number (often in corners)
 - Copyright year (© symbol, not stats years)
@@ -195,7 +195,7 @@ Return a JSON array with exactly 9 objects, one for each grid position. For card
 Return exactly this object shape for each card:
 {{
   "grid_position": 0-8,
-  "name": "player name from card back",
+  "name": "FULL player name from TOP of card (largest text)",
   "sport": "baseball",
   "brand": "brand name",
   "number": "card number",

@@ -1,0 +1,6256 @@
+[
+  {
+    "timestamp": "2025-11-24T02:28:17.369Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "doug flynn",
+        "number": "552",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "jim fanning",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:28:20.501Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "doug flynn",
+        "number": "554",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "jim fanning",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:28:25.482Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "doug flynn",
+        "number": "554",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "jim fanning",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:28:34.864Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "jim fanning",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:28:38.825Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "jim fanning",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:28:43.031Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "montreal expos",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:28:50.439Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "montreal expos team checklist",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:28:55.672Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "montreal expos team checklist",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "checklist",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:05.688Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "montreal expos team checklist",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:07.774Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "montreal expos team checklist",
+        "number": "759",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:11.721Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:16.667Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "28",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:19.181Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "285",
+        "team": "cincinnati reds",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:27.265Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "285",
+        "team": "cincinnati reds",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:30.698Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "285",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:33.174Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "dan driessen",
+        "number": "285",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:48.601Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:52.599Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:29:55.006Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "tim wallach",
+        "number": "473",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:30:06.035Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "frank thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:30:09.176Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "derrel thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:30:17.593Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "derrel thomas",
+        "number": "448",
+        "team": "new york mets",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:30:23.754Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "derrel thomas",
+        "number": "448",
+        "team": "california angels",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:30:24.856Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "derrel thomas",
+        "number": "448",
+        "team": "california angels",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:30:50.367Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "dave stewart",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:31:06.040Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "derrel thomas",
+        "number": "72",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:31:09.520Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "derrel thomas",
+        "number": "448",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:31:11.021Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "derrel thomas",
+        "number": "448",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:31:15.390Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "derrel thomas",
+        "number": "448",
+        "team": "california angels",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:31:55.115Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "reggie smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:01.574Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "bryn smith",
+        "number": "88",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:06.001Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "bryn smith",
+        "number": "88",
+        "team": "montreal expos",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:08.449Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "bryn smith",
+        "number": "88",
+        "team": "montreal expos",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:15.689Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "dave righetti",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:22.267Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "dave stieb",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:27.595Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "dave stieb",
+        "number": "240",
+        "team": "new york yankees",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:30.867Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "dave stieb",
+        "number": "240",
+        "team": "toronto blue jays",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:37.727Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "steve howe",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:32:51.554Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "dave stewart",
+        "number": "722",
+        "team": "los angeles dodgers",
+        "copyright_year": "1982",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:33:02.631Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "dave stewart",
+        "number": "723",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T02:33:04.467Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "dave stewart",
+        "number": "723",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1982 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

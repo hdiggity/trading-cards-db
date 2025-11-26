@@ -31,11 +31,18 @@ function MainPage({ onNavigate }) {
   const rawStartRef = React.useRef(0);
 
   useEffect(() => {
-    fetchStats();
-    fetchPendingCount();
-    fetchRawScanCount();
-    // Detect background processing if page reloads mid-run
-    (async () => {
+    const loadData = async () => {
+      try {
+        await Promise.all([
+          fetchStats(),
+          fetchPendingCount(),
+          fetchRawScanCount()
+        ]);
+      } catch (error) {
+        console.error('Error loading main page data:', error);
+      }
+
+      // Detect background processing if page reloads mid-run
       try {
         const r = await fetch('http://localhost:3001/api/processing-status');
         const s = await r.json();
@@ -49,15 +56,21 @@ function MainPage({ onNavigate }) {
           rawStartRef.current = base;
           setRawStart(prev => prev || base);
         }
-      } catch {}
-    })();
+      } catch (error) {
+        console.error('Error checking processing status:', error);
+      }
+    };
+
+    loadData();
   }, []);
 
   const fetchStats = async () => {
     try {
       const response = await fetch('http://localhost:3001/api/database-stats');
+      if (!response.ok) throw new Error(`Stats fetch failed: ${response.status}`);
       const data = await response.json();
       setStats(data);
+      console.log('[MainPage] Loaded stats:', data);
     } catch (error) {
       console.error('Error fetching stats:', error);
     }
@@ -66,20 +79,25 @@ function MainPage({ onNavigate }) {
   const fetchPendingCount = async () => {
     try {
       const response = await fetch('http://localhost:3001/api/pending-cards');
+      if (!response.ok) throw new Error(`Pending cards fetch failed: ${response.status}`);
       const data = await response.json();
       setPendingCount(data.length);
+      console.log('[MainPage] Loaded pending count:', data.length);
       return data.length;
     } catch (error) {
       console.error('Error fetching pending count:', error);
-      return pendingCount;
+      setPendingCount(0);
+      return 0;
     }
   };
 
   const fetchRawScanCount = async () => {
     try {
       const response = await fetch('http://localhost:3001/api/raw-scan-count');
+      if (!response.ok) throw new Error(`Raw scan count fetch failed: ${response.status}`);
       const data = await response.json();
       setRawScanCount(data.count);
+      console.log('[MainPage] Loaded raw scan count:', data.count);
       return data.count;
     } catch (error) {
       console.error('Error fetching raw scan count:', error);
@@ -116,8 +134,6 @@ function MainPage({ onNavigate }) {
         const start = Date.now();
         setBgTotal(result.count || rawScanCount);
         const poll = async () => {
-          await fetchPendingCount();
-          await fetchRawScanCount();
           // Check server process status with real-time progress
           let active = true;
           let serverProgress = null;
@@ -126,7 +142,7 @@ function MainPage({ onNavigate }) {
           let total = 0;
           let substep = '';
           try {
-            const rs = await fetch('/api/processing-status');
+            const rs = await fetch('http://localhost:3001/api/processing-status');
             const st = await rs.json();
             active = !!st.active;
             if (typeof st.progress === 'number') serverProgress = st.progress;
@@ -136,7 +152,7 @@ function MainPage({ onNavigate }) {
             if (st.substep) substep = st.substepDetail ? `${st.substep}: ${st.substepDetail}` : st.substep;
           } catch {}
 
-          // Update progress from server
+          // Update progress from server (prefer server-reported progress)
           if (serverProgress !== null) {
             setBgProgress(serverProgress);
           }
@@ -145,10 +161,16 @@ function MainPage({ onNavigate }) {
           setBgSubstep(substep);
           if (total > 0) setBgTotal(total);
 
+          // Refresh counts less frequently to reduce overhead
+          if (current % 3 === 0 || !active) {
+            await fetchPendingCount();
+            await fetchRawScanCount();
+          }
+
           const longTimeout = Date.now() - start >= 60 * 60 * 1000; // 60 min safety cap
 
           if (active && !longTimeout) {
-            setTimeout(poll, 2000); // Poll every 2 seconds for smoother updates
+            setTimeout(poll, 1500); // Poll every 1.5 seconds for smoother updates
           } else {
             // Process ended
             setBgProcessing(false);
@@ -201,9 +223,9 @@ function MainPage({ onNavigate }) {
         <div className="top-progress-inner">
           <div className="top-progress-title">
             {bgTotal > 0 ? (
-              <>Processing {bgCurrent} of {bgTotal} ({bgProgress}%)</>
+              <>PROCESSING {bgCurrent} OF {bgTotal} ({bgProgress}%)</>
             ) : (
-              <>Processing raw scans… {bgProgress}%</>
+              <>PROCESSING RAW SCANS... {bgProgress}%</>
             )}
           </div>
           {(bgCurrentFile || bgSubstep) && (
@@ -212,7 +234,7 @@ function MainPage({ onNavigate }) {
             </div>
           )}
           <div className="top-progress-actions">
-            <button 
+            <button
               className="cancel-processing"
               type="button"
               onClick={async () => {
@@ -227,7 +249,7 @@ function MainPage({ onNavigate }) {
               }}
               title="Cancel background processing"
             >
-              cancel
+              CANCEL
             </button>
           </div>
           <div className="progress-track top">
@@ -236,22 +258,22 @@ function MainPage({ onNavigate }) {
         </div>
       </div>
       <header className="main-header">
-        <h1>trading cards database</h1>
+        <h1>TRADING CARDS DATABASE</h1>
       </header>
 
       <div className="stats-section">
-        <h2>collection totals</h2>
+        <h2>COLLECTION TOTALS</h2>
         <div className="stats-grid">
           <div className="stat-card">
             <div className="stat-number">{stats.total_cards}</div>
-            <div className="stat-label">cards</div>
+            <div className="stat-label">CARDS</div>
           </div>
           <div className="stat-card hoverable">
             <div className="stat-number">{stats.unique_years}</div>
-            <div className="stat-label">years</div>
+            <div className="stat-label">YEARS</div>
             {Array.isArray(stats.years_summary) && stats.years_summary.length > 0 && (
-              <div className="hover-preview" role="tooltip" aria-label="top years">
-                <div className="hover-title">top years</div>
+              <div className="hover-preview" role="tooltip" aria-label="TOP YEARS">
+                <div className="hover-title">TOP YEARS</div>
                 <ul>
                   {stats.years_summary.map((y, idx) => (
                     <li key={idx}>
@@ -266,10 +288,10 @@ function MainPage({ onNavigate }) {
           </div>
           <div className="stat-card hoverable">
             <div className="stat-number">{stats.unique_brands}</div>
-            <div className="stat-label">brands</div>
+            <div className="stat-label">BRANDS</div>
             {Array.isArray(stats.brands_summary) && stats.brands_summary.length > 0 && (
-              <div className="hover-preview" role="tooltip" aria-label="top brands">
-                <div className="hover-title">top brands</div>
+              <div className="hover-preview" role="tooltip" aria-label="TOP BRANDS">
+                <div className="hover-title">TOP BRANDS</div>
                 <ul>
                   {stats.brands_summary.map((b, idx) => (
                     <li key={idx}>
@@ -284,10 +306,10 @@ function MainPage({ onNavigate }) {
           </div>
           <div className="stat-card hoverable">
             <div className="stat-number">{stats.unique_sports}</div>
-            <div className="stat-label">sports</div>
+            <div className="stat-label">SPORTS</div>
             {Array.isArray(stats.sports_summary) && stats.sports_summary.length > 0 && (
-              <div className="hover-preview" role="tooltip" aria-label="top sports">
-                <div className="hover-title">top sports</div>
+              <div className="hover-preview" role="tooltip" aria-label="TOP SPORTS">
+                <div className="hover-title">TOP SPORTS</div>
                 <ul>
                   {stats.sports_summary.map((s, idx) => (
                     <li key={idx}>
@@ -302,22 +324,22 @@ function MainPage({ onNavigate }) {
           </div>
           <div className="stat-card">
             <div className="stat-number">{stats.total_quantity}</div>
-            <div className="stat-label">total quantity</div>
+            <div className="stat-label">TOTAL QUANTITY</div>
           </div>
           <div className="stat-card">
             <div className="stat-number">${stats.total_value?.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
-            <div className="stat-label">total value</div>
+            <div className="stat-label">TOTAL VALUE</div>
           </div>
         </div>
       </div>
 
       <div className="actions-section">
-        <h2>actions</h2>
+        <h2>ACTIONS</h2>
         <div className="action-buttons">
           <div className="process-section">
             <div className="process-header">
-              <h3>process scans</h3>
-              <span className="process-available">{rawScanCount} available (oldest first)</span>
+              <h3>PROCESS SCANS</h3>
+              <span className="process-available">{rawScanCount} AVAILABLE (OLDEST FIRST)</span>
             </div>
             <div className="process-quick-select">
               {[1, 5, 10, 25].map(n => (
@@ -335,12 +357,12 @@ function MainPage({ onNavigate }) {
                 onClick={() => setProcessCount('')}
                 disabled={rawScanCount === 0 || processing || bgProcessing}
               >
-                all
+                ALL
               </button>
               <input
                 type="number"
                 className="process-count-input"
-                placeholder="custom"
+                placeholder="CUSTOM"
                 min="1"
                 max={rawScanCount}
                 value={processCount}
@@ -355,9 +377,9 @@ function MainPage({ onNavigate }) {
                 disabled={rawScanCount === 0 || processing || bgProcessing}
               >
                 {(processing || bgProcessing) ? (
-                  <>processing... <div className="spinner-sm" /></>
+                  <>PROCESSING... <div className="spinner-sm" /></>
                 ) : (
-                  <>start processing {processCount || rawScanCount} image{(processCount || rawScanCount) !== '1' && (processCount || rawScanCount) !== 1 ? 's' : ''}</>
+                  <>START PROCESSING {processCount || rawScanCount} IMAGE{(processCount || rawScanCount) !== '1' && (processCount || rawScanCount) !== 1 ? 'S' : ''}</>
                 )}
               </button>
               <button
@@ -366,7 +388,7 @@ function MainPage({ onNavigate }) {
                 onClick={() => onNavigate('raw-preview')}
                 disabled={rawScanCount === 0}
               >
-                preview
+                PREVIEW
               </button>
             </div>
           </div>
@@ -377,7 +399,7 @@ function MainPage({ onNavigate }) {
             disabled={pendingCount === 0}
           >
             <div className="button-content">
-              <h3>verify cards {pendingCount > 0 && `(${pendingCount})`}</h3>
+              <h3>VERIFY CARDS {pendingCount > 0 && `(${pendingCount})`}</h3>
             </div>
           </button>
 
@@ -386,7 +408,7 @@ function MainPage({ onNavigate }) {
             onClick={() => onNavigate('database')}
           >
             <div className="button-content">
-              <h3>browse database</h3>
+              <h3>BROWSE DATABASE</h3>
             </div>
           </button>
 
@@ -395,7 +417,7 @@ function MainPage({ onNavigate }) {
             onClick={() => onNavigate('logs')}
           >
             <div className="button-content">
-              <h3>system logs</h3>
+              <h3>SYSTEM LOGS</h3>
             </div>
           </button>
 
@@ -404,7 +426,7 @@ function MainPage({ onNavigate }) {
       </div>
 
       <div className="upload-section">
-        <h2>upload photos</h2>
+        <h2>UPLOAD PHOTOS</h2>
         <UploadDropZone onUploadComplete={handleUploadComplete} />
       </div>
       {/* Old inline banner removed in favor of top drop-down */}

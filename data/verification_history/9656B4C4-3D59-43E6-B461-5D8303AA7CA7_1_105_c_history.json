@@ -1,0 +1,4036 @@
+[
+  {
+    "timestamp": "2025-11-23T22:00:56.590Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "billy sample",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "12",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Billy Sample",
+          "brand": "topps",
+          "team": "Rangers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "12",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "dave schmidt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "584",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Schmidt",
+          "brand": "topps",
+          "team": "Rangers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "584",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dave stegman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "664",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: White Sox -> chicago white sox",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Stegman",
+          "brand": "topps",
+          "team": "chicago white sox",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "664",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "jim rice",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "401",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Rice",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "401",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:01:04.758Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "dave schmidt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "584",
+        "copyright_year": "1984",
+        "team": "texas rangers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Schmidt",
+          "brand": "topps",
+          "team": "Rangers",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "584",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "dave stegman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "664",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: White Sox -> chicago white sox",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Stegman",
+          "brand": "topps",
+          "team": "chicago white sox",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "664",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "jim rice",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "401",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Rice",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "401",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:01:13.674Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "dave stegman",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "664",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: White Sox -> chicago white sox",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Stegman",
+          "brand": "topps",
+          "team": "chicago white sox",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "664",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "jim rice",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "401",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Rice",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "401",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:01:38.984Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim rice",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "401",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Rice",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "401",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:01:46.055Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim rice",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "401",
+        "copyright_year": "1984",
+        "team": "boston ",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Rice",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "401",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:02:06.090Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim rice",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "401",
+        "copyright_year": "1984",
+        "team": "boston red sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Rice",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "401",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:02:19.439Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim rice",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "401",
+        "copyright_year": "1984",
+        "team": "boston red sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "personal data",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Rice",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "401",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:02:27.888Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "terry crowley",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "732",
+        "copyright_year": "1984",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Crowley",
+          "brand": "topps",
+          "team": "Expos",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "732",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:03:45.114Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "paul splittorff",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "52",
+        "copyright_year": "1984",
+        "team": "kansas city royals",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Splittorff",
+          "brand": "topps",
+          "team": "Royals",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "52",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:03:59.705Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "bert blyleven",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "789",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "team: Indians -> cleveland indians",
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Bert Blyleven",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "789",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:04:11.193Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "38",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:04:16.295Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "588",
+        "copyright_year": "1984",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:04:22.791Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "588",
+        "copyright_year": "1985",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:04:37.772Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bobby castillo",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "588",
+        "copyright_year": "1985",
+        "team": "minnesota twins",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Castillo",
+          "brand": "topps",
+          "team": "Twins",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "38",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:04:46.873Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "114",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:05:24.481Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "31",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:05:27.789Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "31",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:05:32.022Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "314",
+        "copyright_year": "1984",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T22:05:48.894Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "ron oester",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "314",
+        "copyright_year": "1985",
+        "team": "cincinnati reds",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_learned_corrections_applied": [
+          "card_set: 1984 Topps -> n/a"
+        ],
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/9656B4C4-3D59-43E6-B461-5D8303AA7CA7_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ron Oester",
+          "brand": "topps",
+          "team": "Reds",
+          "card_set": "n/a",
+          "copyright_year": "1984",
+          "number": "114",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

@@ -110,13 +110,23 @@ images/
 ```
 
 ## Features
-- **Model-Configurable Vision Integration**: Automatic card data extraction (set `OPENAI_MODEL` to use newer models like gpt-5 when available)
+
+### Core Features
+- **Model-Configurable Vision Integration**: Automatic card data extraction (set `OPENAI_MODEL` to use newer models)
 - **HEIC Support**: Full support for iPhone/Apple HEIC images with automatic conversion
-- **Web UI**: Visual verification with editing capabilities  
+- **Web UI**: Visual verification with editing capabilities
 - **Duplicate Detection**: Automatically increments quantity for existing cards
 - **Field Validation**: Dropdowns for conditions, boolean toggles for status
 - **Undo Functionality**: Reverse last processing operation
 - **Direct Database Import**: No intermediate verification steps
+
+### Enhanced Extraction System (Active)
+- **Multi-Pass Validation**: 2-pass GPT-4 extraction with confidence scoring
+- **Checklist Validation**: 111 cards across 8 sets, validates against known checklists
+- **Post-Extraction Learning**: Auto-corrects common mistakes from 201 previous corrections
+- **Self-Improving**: Gets smarter with every verification session
+
+See ENHANCED_EXTRACTION.md and CORRECTION_LEARNING.md for details.
 
 ## Development
 - **Field Definitions**: All card fields defined in `app/fields.py`

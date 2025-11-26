@@ -755,11 +755,39 @@ def get_set_info(year: int, brand: str, sport: str = "baseball") -> Optional[Dic
     return None
 
 
+def get_card_from_checklist(set_id: int, card_number: str) -> Optional[Dict]:
+    """Look up a specific card from the checklist by number."""
+    if not CHECKLISTS_DB_PATH.exists():
+        return None
+
+    conn = sqlite3.connect(str(CHECKLISTS_DB_PATH))
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT card_number, player_name, team
+        FROM set_cards
+        WHERE set_id = ? AND card_number = ?
+        LIMIT 1
+    """, (set_id, str(card_number)))
+
+    row = cursor.fetchone()
+    conn.close()
+
+    if row:
+        return {
+            "card_number": row[0],
+            "player_name": row[1],
+            "team": row[2]
+        }
+    return None
+
+
 def validate_card_number(card: Dict) -> Dict:
-    """Validate card number against known checklists."""
+    """Validate card number and player name against known checklists."""
     year = card.get("copyright_year")
     brand = card.get("brand")
     number = card.get("number")
+    name = card.get("name", "")
     sport = card.get("sport", "baseball")
 
     if not all([year, brand, number]):
@@ -789,6 +817,51 @@ def validate_card_number(card: Dict) -> Dict:
                 card["_checklist_valid"] = False
             else:
                 card["_checklist_valid"] = True
+
+                # Look up expected player for this card number
+                checklist_card = get_card_from_checklist(set_info["set_id"], str(num_int))
+                if checklist_card and checklist_card.get("player_name"):
+                    expected_name = checklist_card["player_name"].lower()
+                    extracted_name = name.lower().strip()
+
+                    # If name is unidentified/unknown, use checklist name directly
+                    if extracted_name in ("unidentified", "unknown", "n/a", ""):
+                        card["_original_name"] = card["name"]
+                        card["name"] = checklist_card["player_name"].lower()
+                        card["_name_from_checklist"] = True
+                        card["_name_validated"] = True
+                    # Check if names match (fuzzy matching)
+                    elif expected_name and extracted_name:
+                        # Exact match
+                        if extracted_name == expected_name:
+                            card["_name_validated"] = True
+                        # Partial match (one contains the other)
+                        elif expected_name in extracted_name or extracted_name in expected_name:
+                            card["_name_validated"] = True
+                            card["_name_match_type"] = "partial"
+                        else:
+                            # Names don't match - checklist takes priority since GPT names are often wrong
+                            card["_name_validated"] = False
+                            card["_expected_name"] = checklist_card["player_name"]
+                            card["_name_mismatch"] = True
+                            # Always use checklist name when we have a card number match
+                            # GPT extraction is unreliable for names, but card numbers are more reliable
+                            card["_original_name"] = card["name"]
+                            card["name"] = checklist_card["player_name"].lower()
+                            card["_name_corrected_from_checklist"] = True
+
+                    # Also fill in team from checklist - checklist is more reliable than GPT
+                    if checklist_card.get("team"):
+                        current_team = card.get("team", "")
+                        checklist_team = checklist_card["team"].lower()
+                        if current_team in ("unknown", "unidentified", "n/a", ""):
+                            card["team"] = checklist_team
+                            card["_team_from_checklist"] = True
+                        elif current_team.lower() != checklist_team:
+                            # Team mismatch - trust checklist over GPT
+                            card["_original_team"] = card["team"]
+                            card["team"] = checklist_team
+                            card["_team_corrected_from_checklist"] = True
     else:
         card["_checklist_validated"] = False
 

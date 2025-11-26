@@ -54,6 +54,13 @@
   gap: 16px;
 }
 
+.total-count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  padding: 8px 0;
+}
+
 .search-form {
   display: flex;
   gap: 12px;
@@ -726,4 +733,15 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 .copy-edit-actions .cancel-btn {
   font-size: 11px;
   padding: 5px 12px;
+}
+
+/* Clickable cell styling */
+.clickable-cell {
+  cursor: pointer;
+  position: relative;
+}
+
+.clickable-cell:hover {
+  background-color: #f0f0f0;
+  text-decoration: underline;
 }

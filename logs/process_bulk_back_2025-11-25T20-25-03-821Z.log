@@ -1,0 +1,82 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3288 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2139.HEIC
+processing: IMG_2139.HEIC
+2025-11-25 15:25:04,799 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:25:10,026 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2139.HEIC', 'File size: 3917441 bytes, Type: .heic', None, 'session_20251125_152504_14711', None, 'IMG_2139.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-25 15:25:10,026 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:25:10,035 - trading_cards - INFO - [system] Upload status changed: IMG_2139.HEIC -> processing
+2025-11-25 15:25:10,048 - trading_cards - INFO - [image_processing] Started processing: IMG_2139.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/IMG_2139.HEIC
+Trying enhanced multi-pass extraction with checklist validation...
+[Enhanced Grid Extraction] Processing: cards/unprocessed_bulk_back/IMG_2139.HEIC
+[Post-Correction] Applying learned corrections...
+[Post-Correction] Warning: No module named 'post_extraction_corrections'
+[Validation] Checking against checklist database...
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+[Checklist Validation] Error: No module named 'card_set_database'
+Enhanced extraction succeeded: 9 cards, 0 unknown
+Warning: Card 4 has single-word name: n/a
+Warning: Card 5 has single-word name: n/a
+Warning: Card 6 has single-word name: n/a
+Warning: Card 7 has single-word name: n/a
+Warning: Card 8 has single-word name: n/a
+Re-extracting names for 5 suspicious cards: [4, 5, 6, 7, 8]
+Corrected name for position 4: 'n/a' -> 'CECIL UPSHAW'
+Corrected name for position 5: 'n/a' -> 'MONTY MONTGOMERY'
+Corrected name for position 6: 'n/a' -> 'MONTY MONTGOMERY'
+Corrected name for position 7: 'n/a' -> 'CURTIS BROWN'
+Corrected name for position 8: 'n/a' -> 'CURTIS BROWN'
+Grid context: year=1970, brand=Topps, sport=baseball, set=n/a
+Warning: Accuracy enhancement failed: name 'enhance_cards_batch' is not defined
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2579 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Grid processing completed: 9 cards processed
+Error extracting individual backs: [Errno 2] No such file or directory: 'cards/pending_verification/pending_verification_cropped_backs/IMG_2139_pos4_Cecil_Upshaw_n/a.png'
+Matched grid position 0 with IMG_7563_optimized.png
+Matched grid position 1 with IMG_7562_optimized.png
+Matched grid position 2 with IMG_7565_optimized.png
+Matched grid position 3 with IMG_7569_optimized.png
+Supplemented team from front image: Cubs
+Matched grid position 4 with IMG_7568_optimized.png
+Supplemented team from front image: Cubs
+Matched grid position 5 with IMG_7564_optimized.png
+Matched grid position 6 with IMG_7567_optimized.png
+Supplemented team from front image: Cardinals
+Matched grid position 7 with IMG_7570_optimized.png
+Supplemented team from front image: Padres
+Matched grid position 8 with IMG_7566_optimized.png
+Saved cropped back: IMG_2139_pos0_Clyde_Wright_525.png
+Saved cropped back: IMG_2139_pos1_Alex_Johnson_554.png
+Saved cropped back: IMG_2139_pos2_Andy_Messersmith_574.png
+Saved cropped back: IMG_2139_pos3_Cecil_Upshaw_579.png
+Saved 9 grid cards to cards/pending_verification/IMG_2139.json
+Grid processing completed: 9 cards extracted
+2025-11-25 15:26:59,927 - trading_cards - INFO - [filesystem] File move: IMG_2139.HEIC -> IMG_2139.HEIC
+2025-11-25 15:26:59,933 - trading_cards - INFO - [system] Upload status changed: IMG_2139.HEIC -> pending_verification
+2025-11-25 15:26:59,935 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2139.HEIC
+completed: IMG_2139.HEIC (moved to pending_verification/bulk back)

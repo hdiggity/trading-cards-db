@@ -1,10 +1,15 @@
 from contextlib import contextmanager
+import os
+from pathlib import Path
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
 
 from app.models import Base
 
-DATABASE_URL = "sqlite:///./cards/verified/trading_cards.db"
+# Get absolute path to database file (relative to project root)
+PROJECT_ROOT = Path(__file__).parent.parent
+DB_PATH = PROJECT_ROOT / "cards" / "verified" / "trading_cards.db"
+DATABASE_URL = f"sqlite:///{DB_PATH}"
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(bind=engine)

@@ -1,0 +1,83 @@
+2025-11-25 01:50:42,545 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:51:01,415 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:52:26,636 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:52:58,641 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:54:15,397 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:55:08,614 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:55:56,541 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:56:21,620 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2098.HEIC (card 0)
+2025-11-25 01:56:47,585 - trading_cards - INFO - [system] Upload status changed: IMG_2098.HEIC -> verified
+2025-11-25 01:56:47,588 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2098.HEIC
+2025-11-25 02:02:14,983 - trading_cards - INFO - [filesystem] File uploaded: IMG_2109.HEIC
+2025-11-25 02:02:20,209 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2109.HEIC', 'File size: 4735113 bytes, Type: .heic', None, 'session_20251125_020214_31147', None, 'IMG_2109.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-25 02:02:20,209 - trading_cards - INFO - [filesystem] File uploaded: IMG_2109.HEIC
+2025-11-25 02:02:20,219 - trading_cards - INFO - [system] Upload status changed: IMG_2109.HEIC -> processing
+2025-11-25 02:02:20,225 - trading_cards - INFO - [image_processing] Started processing: IMG_2109.HEIC
+2025-11-25 02:04:08,013 - trading_cards - INFO - [filesystem] File move: IMG_2109.HEIC -> IMG_2109.HEIC
+2025-11-25 02:04:08,017 - trading_cards - INFO - [system] Upload status changed: IMG_2109.HEIC -> pending_verification
+2025-11-25 02:04:08,019 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2109.HEIC
+2025-11-25 14:46:01,416 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:46:44,466 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:47:10,566 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:47:50,394 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:48:15,921 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:48:36,461 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:49:27,095 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:49:56,097 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2109.HEIC (card 0)
+2025-11-25 14:50:35,976 - trading_cards - INFO - [system] Upload status changed: IMG_2109.HEIC -> verified
+2025-11-25 14:50:35,979 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2109.HEIC
+2025-11-25 15:05:12,093 - trading_cards - INFO - [filesystem] File uploaded: IMG_2129.HEIC
+2025-11-25 15:05:17,337 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2129.HEIC', 'File size: 4002233 bytes, Type: .heic', None, 'session_20251125_150512_5225', None, 'IMG_2129.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-25 15:05:17,338 - trading_cards - INFO - [filesystem] File uploaded: IMG_2129.HEIC
+2025-11-25 15:05:17,349 - trading_cards - INFO - [system] Upload status changed: IMG_2129.HEIC -> processing
+2025-11-25 15:05:17,359 - trading_cards - INFO - [image_processing] Started processing: IMG_2129.HEIC
+2025-11-25 15:07:31,240 - trading_cards - INFO - [filesystem] File move: IMG_2129.HEIC -> IMG_2129.HEIC
+2025-11-25 15:07:31,246 - trading_cards - INFO - [system] Upload status changed: IMG_2129.HEIC -> pending_verification
+2025-11-25 15:07:31,248 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2129.HEIC
+2025-11-25 15:09:06,956 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:09:38,164 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:10:46,175 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:11:44,295 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:12:09,408 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:12:50,039 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:13:42,464 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:14:32,770 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2129.HEIC (card 0)
+2025-11-25 15:15:43,135 - trading_cards - INFO - [system] Upload status changed: IMG_2129.HEIC -> verified
+2025-11-25 15:15:43,140 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2129.HEIC
+2025-11-25 15:23:04,208 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:23:09,431 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2139.HEIC', 'File size: 3917441 bytes, Type: .heic', None, 'session_20251125_152304_13898', None, 'IMG_2139.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-25 15:23:09,432 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:23:09,443 - trading_cards - INFO - [system] Upload status changed: IMG_2139.HEIC -> processing
+2025-11-25 15:23:09,452 - trading_cards - INFO - [image_processing] Started processing: IMG_2139.HEIC
+2025-11-25 15:23:54,284 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:23:59,524 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2139.HEIC', 'File size: 3917441 bytes, Type: .heic', None, 'session_20251125_152354_14276', None, 'IMG_2139.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-25 15:23:59,524 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:23:59,532 - trading_cards - INFO - [system] Upload status changed: IMG_2139.HEIC -> processing
+2025-11-25 15:23:59,539 - trading_cards - INFO - [image_processing] Started processing: IMG_2139.HEIC
+2025-11-25 15:25:04,799 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:25:10,026 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2139.HEIC', 'File size: 3917441 bytes, Type: .heic', None, 'session_20251125_152504_14711', None, 'IMG_2139.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-25 15:25:10,026 - trading_cards - INFO - [filesystem] File uploaded: IMG_2139.HEIC
+2025-11-25 15:25:10,035 - trading_cards - INFO - [system] Upload status changed: IMG_2139.HEIC -> processing
+2025-11-25 15:25:10,048 - trading_cards - INFO - [image_processing] Started processing: IMG_2139.HEIC
+2025-11-25 15:26:59,927 - trading_cards - INFO - [filesystem] File move: IMG_2139.HEIC -> IMG_2139.HEIC
+2025-11-25 15:26:59,933 - trading_cards - INFO - [system] Upload status changed: IMG_2139.HEIC -> pending_verification
+2025-11-25 15:26:59,935 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2139.HEIC
+2025-11-25 16:57:50,910 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2139.HEIC (card 0)
+2025-11-25 16:58:24,922 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2139.HEIC (card 0)
+2025-11-25 16:58:57,407 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2139.HEIC (card 0)
+2025-11-25 16:59:14,140 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2139.HEIC (card 0)

@@ -104,7 +104,7 @@ def add_value_estimation(card_data: Dict[str, Any]) -> Dict[str, Any]:
             return enhanced_data
         if mode in ("heuristic", "fast"):
             # Lightweight heuristic, then cache
-            value_range = _heuristic_range(card_data)
+            value_range = _heuristic_estimate(card_data)
             details = {
                 'confidence': 'low',
                 'reasoning': 'Heuristic estimate (fast mode)',
@@ -118,34 +118,20 @@ def add_value_estimation(card_data: Dict[str, Any]) -> Dict[str, Any]:
             return enhanced_data
 
         # Build prompt for GPT value estimation
-        estimation_prompt = f"""You are a professional trading card appraiser with expertise in sports card valuation. Estimate the current market value of this trading card based on the provided information.
+        estimation_prompt = f"""You are a trading card appraiser. Give a CONSERVATIVE single-number estimate for this card.
 
-Card Details:
-- Player: {card_data.get('name', 'Unknown')}
-- Year: {card_data.get('copyright_year', 'Unknown')}
-- Brand: {card_data.get('brand', 'Unknown')}
-- Set: {card_data.get('card_set', 'Unknown')}
-- Card Number: {card_data.get('number', 'Unknown')}
-- Condition: {card_data.get('condition', 'Unknown')}
-- Sport: {card_data.get('sport', 'Baseball')}
-- Features: {card_data.get('features', 'None')}
-- Team: {card_data.get('team', 'Unknown')}
+Card: {card_data.get('name', 'Unknown')} - {card_data.get('copyright_year', 'Unknown')} {card_data.get('brand', 'Unknown')} #{card_data.get('number', 'Unknown')}
+Condition: {card_data.get('condition', 'Unknown')}
+Features: {card_data.get('features', 'None')}
 
-Instructions:
-1. Consider current market trends, player significance, card rarity, condition, and historical sales
-2. Provide a realistic value range for the current market (not peak/bubble prices)
-3. Account for condition impact on value
-4. Consider if this is a rookie card, star player, or Hall of Famer
-5. Factor in brand significance and set popularity
+IMPORTANT: Most common vintage baseball cards are worth $1-3. Only star players, rookies, or special cards are worth more. Be conservative.
 
-Return ONLY a JSON object with this exact format:
+Return ONLY a JSON object:
 {{
-  "value_range": "$X-Y",
+  "value_estimate": "$X",
   "confidence": "high|medium|low",
-  "reasoning": "Brief explanation of key value factors"
-}}
-
-Be conservative and realistic in your estimates. Consider actual sales data and current market conditions."""
+  "reasoning": "Brief explanation"
+}}"""
 
         client = _get_client()
         if client is None:
@@ -175,7 +161,7 @@ Be conservative and realistic in your estimates. Consider actual sales data and 
         
         # Add to card data
         enhanced_data = card_data.copy()
-        enhanced_data['value_estimate'] = value_data.get('value_range', '$1-5')
+        enhanced_data['value_estimate'] = value_data.get('value_estimate') or value_data.get('value_range', '$1')
         enhanced_data['_value_details'] = {
             'confidence': value_data.get('confidence', 'low'),
             'reasoning': value_data.get('reasoning', 'GPT-powered estimate'),
@@ -195,7 +181,7 @@ Be conservative and realistic in your estimates. Consider actual sales data and 
         print(f"Error in GPT value estimation: {e}")
         # Fallback to simple estimate
         enhanced_data = card_data.copy()
-        value_range = _heuristic_range(card_data)
+        value_range = _heuristic_estimate(card_data)
         enhanced_data['value_estimate'] = value_range
         enhanced_data['_value_details'] = {
             'confidence': 'low',
@@ -205,9 +191,9 @@ Be conservative and realistic in your estimates. Consider actual sales data and 
         return enhanced_data
 
 
-def _heuristic_range(card: Dict[str, Any]) -> str:
-    """A simple, fast heuristic range used for performance.
-    Kept consistent with the backfill script.
+def _heuristic_estimate(card: Dict[str, Any]) -> str:
+    """A simple, fast heuristic estimate - returns single conservative value.
+    Most vintage cards in average condition are worth $1-3.
     """
     try:
         features = str(card.get('features') or '').lower()
@@ -218,19 +204,25 @@ def _heuristic_range(card: Dict[str, Any]) -> str:
     except Exception:
         features, condition, year = '', '', None
 
-    low, high = 1, 5
+    # Base value - most common cards are worth very little
+    value = 1
+
+    # Special features add value
     if 'autograph' in features:
-        low, high = 20, 200
+        value = 25
     elif 'rookie' in features:
-        low, high = 5, 25
+        value = 3
     elif 'hall of fame' in features or 'hof' in features:
-        low, high = 5, 20
+        value = 2
+
+    # Vintage cards (pre-1980) slight bump
     if year and year <= 1979:
-        low = max(low, 5)
-        high = max(high, 30)
+        value = max(value, 2)
+
+    # Condition adjustments
     if condition in {'poor', 'fair'}:
-        high = max(3, min(high, 8))
-        low = max(1, min(low, 2))
-    elif condition in {'excellent', 'near mint', 'mint', 'gem mint'}:
-        high = int(high * 1.5)
-    return f"${low}-{high}"
+        value = max(1, int(value * 0.5))
+    elif condition in {'near mint', 'mint', 'gem mint'}:
+        value = int(value * 1.5)
+
+    return f"${value}"

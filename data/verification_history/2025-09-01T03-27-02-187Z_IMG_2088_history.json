@@ -1,0 +1,6345 @@
+[
+  {
+    "timestamp": "2025-11-23T20:59:52.513Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "boots day",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "254",
+        "copyright_year": "1973",
+        "team": "montreal",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Boots Day",
+          "brand": "topps",
+          "team": "Montreal",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "254",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "dick dietz",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "295",
+        "copyright_year": "1973",
+        "team": "san francisco",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Dick Dietz",
+          "brand": "topps",
+          "team": "San Francisco",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "295",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "360",
+        "copyright_year": "1973",
+        "team": "atlanta",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T20:59:58.060Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "boots day",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "254",
+        "copyright_year": "1972",
+        "team": "montreal expos",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Boots Day",
+          "brand": "topps",
+          "team": "Montreal",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "254",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "dick dietz",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "295",
+        "copyright_year": "1973",
+        "team": "san francisco",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Dick Dietz",
+          "brand": "topps",
+          "team": "San Francisco",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "295",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "360",
+        "copyright_year": "1973",
+        "team": "atlanta",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:00:13.346Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "dick dietz",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "295",
+        "copyright_year": "1973",
+        "team": "san francisco",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Dick Dietz",
+          "brand": "topps",
+          "team": "San Francisco",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "295",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "360",
+        "copyright_year": "1973",
+        "team": "atlanta",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:00:19.065Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "dick dietz",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "295",
+        "copyright_year": "1972",
+        "team": "san francisco giants",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Dick Dietz",
+          "brand": "topps",
+          "team": "San Francisco",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "295",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "360",
+        "copyright_year": "1973",
+        "team": "atlanta",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:00:20.825Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "dick dietz",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "295",
+        "copyright_year": "1972",
+        "team": "san francisco giants",
+        "card_set": "n/a",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Dick Dietz",
+          "brand": "topps",
+          "team": "San Francisco",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "295",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "360",
+        "copyright_year": "1973",
+        "team": "atlanta",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:00:35.654Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "360",
+        "copyright_year": "1973",
+        "team": "atlanta",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:00:39.356Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "380",
+        "copyright_year": "1972",
+        "team": "atlanta",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:00:44.195Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "380",
+        "copyright_year": "1972",
+        "team": "atlanta braves",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:00:46.876Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "earl williams",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "380",
+        "copyright_year": "1972",
+        "team": "atlanta braves",
+        "card_set": "n/a",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Earl Williams",
+          "brand": "topps",
+          "team": "Atlanta",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "360",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:06.160Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:08.095Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:22.095Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:28.576Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "eliseo rodriguez delgado",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "45",
+        "copyright_year": "1973",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Eliseo Rodriguez Delgado",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "45",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:40.624Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:40.632Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "jonathan trumpbour matlack",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "55",
+        "copyright_year": "1973",
+        "team": "new york mets",
+        "card_set": "n/a",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jonathan Trumpbour Matlack",
+          "brand": "topps",
+          "team": "Mets",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "55",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:49.063Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "1973 league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:01:55.083Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "1972 s league leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:02:10.832Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "1972 stolen base leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "n/a",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:02:15.804Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "1972 stolen base leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "multiple",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:02:16.304Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "1972 stolen base leaders",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "64",
+        "copyright_year": "1973",
+        "team": "multiple",
+        "card_set": "n/a",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.4,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8100000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8100000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "1973 League Leaders",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "64",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:02:28.390Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:02:30.694Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "buford billy champion",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "74",
+        "copyright_year": "1973",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Buford Billy Champion",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "74",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:02:47.576Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T21:02:49.463Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "david wayne roberts",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "133",
+        "copyright_year": "1973",
+        "team": "san diego padres",
+        "card_set": "n/a",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$5-30",
+        "_value_details": {
+          "value_range": "$5-30",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1973 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/2025-09-01T03-27-02-187Z_IMG_2088_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Wayne Roberts",
+          "brand": "topps",
+          "team": "Padres",
+          "card_set": "1973 Topps",
+          "copyright_year": "1973",
+          "number": "133",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

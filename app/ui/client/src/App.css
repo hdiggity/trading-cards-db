@@ -3,20 +3,27 @@
 .App {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
-  background: #fafafa;
+  background: #f5f5f5;
   min-height: 100vh;
   color: #1a1a1a;
 }
 
+/* Prevent content from causing layout shift during data updates */
+* {
+  box-sizing: border-box;
+}
+
 .App-header {
   text-align: center;
-  margin-bottom: 48px;
-  padding: 32px;
+  margin-bottom: 16px;
+  padding: 16px;
   background: white;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
+  min-height: 130px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .header-top {
@@ -112,28 +119,29 @@
 
 .card-container {
   display: flex;
-  gap: 32px;
-  margin-bottom: 32px;
-  min-height: 700px;
+  gap: 16px;
+  margin-bottom: 16px;
+  min-height: 500px;
 }
 
 .image-section {
-  flex: 1.2;
+  flex: 0 0 320px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   background: white;
   border-radius: 8px;
-  padding: 24px;
+  padding: 12px;
   border: 1px solid #e5e5e5;
-  gap: 16px;
+  gap: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .card-image {
   max-width: 100%;
-  max-height: 400px;
-  border-radius: 8px;
+  max-height: 280px;
+  border-radius: 6px;
   border: 1px solid #333;
   object-fit: contain;
 }
@@ -141,45 +149,48 @@
 /* Main image block styling */
 .main-image-block {
   background: #1a1a1a;
-  border-radius: 10px;
-  padding: 12px;
+  border-radius: 8px;
+  padding: 8px;
   border: 1px solid #333;
 }
 
 .main-image-title {
   color: #fff;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  margin-bottom: 10px;
-  padding-bottom: 8px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
   border-bottom: 1px solid #333;
 }
 
 .data-section {
   flex: 1;
   text-align: left;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .data-section h3 {
   color: #1a1a1a;
-  margin-bottom: 24px;
-  font-size: 1.5rem;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
 
 .card-data {
-  max-height: 580px;
-  overflow-y: auto;
+  max-height: none;
+  overflow-y: visible;
   background: white;
   border-radius: 8px;
-  padding: 24px;
+  padding: 12px;
   border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .card-entry {
-  margin-bottom: 24px;
-  padding: 20px;
+  margin-bottom: 12px;
+  padding: 12px;
   background: #fafafa;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
@@ -226,10 +237,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding: 12px 16px;
   background: white;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
+  min-height: 80px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .navigation {
@@ -247,6 +260,8 @@
   font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.2s ease;
+  min-width: 130px;
+  min-height: 40px;
 }
 
 .nav-button:hover:not(:disabled) {
@@ -296,6 +311,8 @@
   font-weight: 600;
   transition: all 0.2s ease;
   letter-spacing: 0.025em;
+  min-width: 110px;
+  min-height: 44px;
 }
 
 .pass-button {
@@ -365,6 +382,8 @@
   font-size: 0.875rem;
   font-weight: 500;
   transition: background-color 0.2s ease;
+  min-width: 140px;
+  min-height: 36px;
 }
 
 .reprocess-button:hover:not(:disabled) {
@@ -386,7 +405,7 @@
 }
 
 .field-group {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -449,7 +468,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .save-status {
@@ -459,6 +480,11 @@
   border-radius: 6px;
   background: #fafafa;
   border: 1px solid #e5e5e5;
+  min-width: 140px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .saving {
@@ -700,8 +726,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  padding: 16px;
+  margin-bottom: 8px;
+  padding: 8px 12px;
   background: #fafafa;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
@@ -733,6 +759,8 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
+  min-width: 150px;
+  min-height: 40px;
 }
 
 .card-info p {
@@ -746,38 +774,38 @@
 .zoomable-image-container {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 6px;
   background: #111;
   /* Allow JS to handle touch gestures (pinch/pan) */
   touch-action: none;
-  min-height: 200px;
+  min-height: 150px;
 }
 
 /* Paired front/back images layout */
 .paired-images {
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .paired-image-block {
   background: #1a1a1a;
-  border-radius: 10px;
-  padding: 12px;
+  border-radius: 8px;
+  padding: 8px;
   border: 1px solid #333;
 }
 
 .paired-image-block .zoomable-image-container {
-  min-height: 280px;
+  min-height: 180px;
 }
 
 .paired-image-title {
   color: #fff;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  margin-bottom: 10px;
-  padding-bottom: 8px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
   border-bottom: 1px solid #333;
 }
 

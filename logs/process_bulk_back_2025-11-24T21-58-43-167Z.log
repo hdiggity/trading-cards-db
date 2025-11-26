@@ -1,0 +1,59 @@
+Seeded common Topps checklists
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3171 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2078.HEIC
+processing: IMG_2078.HEIC
+2025-11-24 16:58:45,003 - trading_cards - INFO - [filesystem] File uploaded: IMG_2078.HEIC
+2025-11-24 16:58:50,206 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2078.HEIC', 'File size: 4414022 bytes, Type: .heic', None, 'session_20251124_165844_65699', None, 'IMG_2078.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-24 16:58:50,206 - trading_cards - INFO - [filesystem] File uploaded: IMG_2078.HEIC
+2025-11-24 16:58:50,217 - trading_cards - INFO - [system] Upload status changed: IMG_2078.HEIC -> processing
+2025-11-24 16:58:50,226 - trading_cards - INFO - [image_processing] Started processing: IMG_2078.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/IMG_2078.HEIC
+Trying simple direct GPT extraction...
+Simple direct extraction succeeded: 9 cards
+Grid context: year=1972, brand=topps, sport=baseball, set=n/a
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2462 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Grid processing completed: 9 cards processed
+Matched grid position 0 with IMG_7431_optimized.png
+Matched grid position 1 with IMG_7431_optimized.png
+Matched grid position 2 with IMG_7431_optimized.png
+Matched grid position 3 with IMG_7431_optimized.png
+Matched grid position 4 with IMG_7431_optimized.png
+Matched grid position 5 with IMG_7431_optimized.png
+Matched grid position 6 with IMG_7431_optimized.png
+Matched grid position 7 with IMG_7431_optimized.png
+Matched grid position 8 with IMG_7431_optimized.png
+Saved cropped back: IMG_2078_pos0_nl_strikeout_leaders_92.png
+Saved cropped back: IMG_2078_pos1_nl_strikeout_leaders_92.png
+Saved cropped back: IMG_2078_pos2_jim_palmer_110.png
+Saved cropped back: IMG_2078_pos3_jim_palmer_110.png
+Saved cropped back: IMG_2078_pos4_jim_mcandrew_129.png
+Saved cropped back: IMG_2078_pos5_1971_innings_pitched_leaders_243.png
+Saved cropped back: IMG_2078_pos6_1971_batting_leaders_211.png
+Saved cropped back: IMG_2078_pos7_1971_saves_leaders_215.png
+Saved cropped back: IMG_2078_pos8_1971_saves_leaders_215.png
+Saved 9 grid cards to cards/pending_verification/IMG_2078.json
+Grid processing completed: 9 cards extracted
+2025-11-24 17:00:47,674 - trading_cards - INFO - [filesystem] File move: IMG_2078.HEIC -> IMG_2078.HEIC
+2025-11-24 17:00:47,680 - trading_cards - INFO - [system] Upload status changed: IMG_2078.HEIC -> pending_verification
+2025-11-24 17:00:47,682 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2078.HEIC
+completed: IMG_2078.HEIC (moved to pending_verification/bulk back)

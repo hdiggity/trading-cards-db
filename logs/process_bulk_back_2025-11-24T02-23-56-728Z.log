@@ -1,0 +1,60 @@
+Seeded common Topps checklists
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3108 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+processing: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+2025-11-23 21:23:57,597 - trading_cards - INFO - [filesystem] File uploaded: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+2025-11-23 21:24:02,843 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg', 'File size: 435279 bytes, Type: .jpeg', None, 'session_20251123_212357_12529', None, 'C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-23 21:24:02,844 - trading_cards - INFO - [filesystem] File uploaded: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+2025-11-23 21:24:02,855 - trading_cards - INFO - [system] Upload status changed: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg -> processing
+2025-11-23 21:24:02,863 - trading_cards - INFO - [image_processing] Started processing: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+Using detailed individual card processing for maximum detail extraction...
+Starting detailed 3x3 grid processing: cards/unprocessed_bulk_back/C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+Extracting individual cards from grid...
+Extracted 9 individual cards
+Converting cards to base64 with high-contrast variants...
+Analyzing cards with GPT-4 Vision (using dual image variants)...
+DEBUG GPT raw response (first 500 chars): I'm unable to extract information from these images. Please provide clearer images or text details for analysis.
+GPT analysis failed: No JSON array found
+Detailed grid processing failed: No JSON array found
+2025-11-23 21:24:09,637 - trading_cards - ERROR - [image_processing] Grid processing fail: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+2025-11-23 21:24:09,642 - trading_cards - ERROR - [system] Upload status changed: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg -> failed
+Detailed processing extracted 9 cards
+Grid context: year=None, brand=None, sport=baseball, set=None
+Applied accuracy enhancements to 9 cards
+Using front images as BACKUP to supplement missing data from backs...
+Matching front images from cards/unprocessed_single_front
+Found 2399 front images; limiting to 10 most recent for matching
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Applied general image enhancement
+Grid processing completed: 9 cards processed
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos0_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos1_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos2_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos3_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos4_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos5_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos6_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos7_Unidentified_None.png
+Saved cropped back: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c_pos8_Unidentified_None.png
+Saved 9 grid cards to cards/pending_verification/C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.json
+Grid processing completed: 9 cards extracted
+2025-11-23 21:25:02,367 - trading_cards - INFO - [filesystem] File move: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg -> C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+2025-11-23 21:25:02,369 - trading_cards - INFO - [system] Upload status changed: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg -> pending_verification
+2025-11-23 21:25:02,370 - trading_cards - SUCCESS - [image_processing] Processing completed: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg
+completed: C9D1C5B1-D76B-4CBE-9277-08E0F58A9378_1_105_c.jpeg (moved to pending_verification/bulk back)

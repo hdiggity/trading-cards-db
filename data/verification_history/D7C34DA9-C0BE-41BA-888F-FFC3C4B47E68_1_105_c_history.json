@@ -1,0 +1,4870 @@
+[
+  {
+    "timestamp": "2025-11-24T06:29:53.801Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "mike jorgensen",
+        "number": "171",
+        "team": "texas rangers",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Mike Jorgensen",
+        "_name_mismatch": true,
+        "_original_name": "Stein",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:30:06.392Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill stein",
+        "number": "171",
+        "team": "texas rangers",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Mike Jorgensen",
+        "_name_mismatch": true,
+        "_original_name": "Stein",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:30:31.198Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill stein",
+        "number": "171",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Mike Jorgensen",
+        "_name_mismatch": true,
+        "_original_name": "Stein",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:30:35.591Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill stein",
+        "number": "171",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Mike Jorgensen",
+        "_name_mismatch": true,
+        "_original_name": "Stein",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:30:51.245Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:30:57.612Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "mickey rivers",
+        "number": "371",
+        "team": "red sox",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:00.626Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "mickey rivers",
+        "number": "371",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:25.119Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "bob stanley",
+        "number": "37",
+        "team": "red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:26.912Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mickey rivers",
+        "number": "371",
+        "team": "red sox",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:33.263Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mickey rivers",
+        "number": "371",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:34.777Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mickey rivers",
+        "number": "371",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Bob Stanley",
+        "_name_mismatch": true,
+        "_original_name": "Mickey Rivers",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:47.713Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "rick manning",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:52.591Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "mike hargrove",
+        "number": "519",
+        "team": "cleveland indians",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:31:57.335Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "mike hargrove",
+        "number": "425",
+        "team": "cleveland indians",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:32:00.343Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "mike hargrove",
+        "number": "425",
+        "team": "cleveland indians",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        },
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Rick Manning",
+        "_name_mismatch": true,
+        "_original_name": "Doug Rader",
+        "_name_corrected_from_checklist": true,
+        "_original_team": "Texas Rangers",
+        "_team_corrected_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:32:25.251Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "willie stargell",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:32:29.162Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ned yost",
+        "number": "425",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:32:38.836Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ned yost",
+        "number": "777",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:32:42.501Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ned yost",
+        "number": "777",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:32:46.726Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ned yost",
+        "number": "777",
+        "team": "texas rangers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_checklist_valid": true,
+        "_name_validated": false,
+        "_expected_name": "Willie Stargell",
+        "_name_mismatch": true,
+        "_original_name": "Hargrove",
+        "_name_corrected_from_checklist": true,
+        "_team_from_checklist": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:33:19.272Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "biff pocoroba",
+        "number": "777",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$2",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1979 Topps",
+        "_card_number_warning": "Card #777 exceeds set size (726 cards)",
+        "_checklist_valid": false,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:33:38.176Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:33:45.100Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "n/a",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:33:54.503Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "franklin stubbs",
+        "number": "697",
+        "team": "los angeles dodgers",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:34:06.686Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "doc edwards",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-24T06:34:16.783Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "cleveland indians team checklist",
+        "number": "534",
+        "team": "cleveland indians",
+        "copyright_year": "1989",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        },
+        "_checklist_validated": true,
+        "_set_name": "1989 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "kent hrbek",
+        "number": "265",
+        "team": "n/a",
+        "copyright_year": "1988",
+        "brand": "topps",
+        "card_set": "n/a",
+        "value_estimate": "$1",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1988 Topps",
+        "_checklist_valid": true,
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

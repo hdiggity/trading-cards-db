@@ -1,0 +1,6409 @@
+[
+  {
+    "timestamp": "2025-11-26T15:34:29.539Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:34:38.124Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:34:40.164Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "monty goes to phillies",
+        "number": "139",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:35:54.183Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "monty goes to phillies",
+        "number": "139T",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:36:10.188Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aure",
+        "number": "139T",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:36:19.378Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:36:55.978Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:37:03.176Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:37:06.505Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurel",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:38:15.338Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurelio monteagudo",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:38:19.612Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurelio monteagudo",
+        "number": "n/a",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:38:24.004Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurelio monteagudo",
+        "number": "n/a",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:38:24.491Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurelio monteagudo",
+        "number": "n/a",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Monty Goes To Phillies",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "n/a",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:41:24.220Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:41:38.788Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "aurelio monteagudo",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:41:46.117Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "aurelio monteagudo",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:41:48.405Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "phila",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:41:54.075Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:41:57.085Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "very good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:42:08.689Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:42:34.720Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:42:40.041Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:42:43.388Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "st louis cardinals",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:42:50.843Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in  man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:43:01.831Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:43:02.619Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:43:07.877Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "st louis cardinals",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8400000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "_extraction_method": "enhanced_grid",
+        "_confidence": {
+          "name": 0.6,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_validation": {
+          "status": "error",
+          "message": "No module named 'card_set_database'"
+        },
+        "_overall_confidence": 0.8400000000000002,
+        "value_estimate": "$2",
+        "_value_details": {
+          "value_range": "$2",
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_original_extraction": {
+          "name": "Curtis For Redbirds In  Man Swap",
+          "brand": "topps",
+          "team": "n/a",
+          "card_set": "1971 Topps",
+          "copyright_year": "1971",
+          "number": "371",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "is_player": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:50:18.271Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:50:33.847Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aur",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:50:46.607Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aurelio monteagudo",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:50:54.623Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aurelio monteagudo",
+        "number": "n/a",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:51:03.291Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:51:07.109Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:51:15.599Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "monty goes to phillies",
+        "number": "n/a",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:51:27.439Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurel",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:23.141Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurel",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "very good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:24.512Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "very good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:25.153Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurelio",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "very good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:37.603Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "very good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos5.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:43.518Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:46.985Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "john curtis",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:46.995Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "aurelio",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:53:53.040Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "aurelio monteagudo",
+        "number": "139T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "philadelphia phillies",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos6.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:54:02.776Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:54:10.031Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:54:12.833Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "st louis",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:54:16.184Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "st louis cardinals",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:54:22.985Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "st louis cardinals",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:55:06.350Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "curtis for redbirds in man swap",
+        "number": "371",
+        "copyright_year": "1971",
+        "brand": "topps",
+        "team": "n/a",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-26T15:55:15.804Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "373T",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "team": "st louis cardinals",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2139_pos8.png"
+        },
+        "is_player": true
+      }
+    ],
+    "afterData": null
+  }
+]

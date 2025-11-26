@@ -1,0 +1,5400 @@
+[
+  {
+    "timestamp": "2025-11-23T19:08:02.795Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "gorman thomas",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "515",
+        "copyright_year": "1984",
+        "team": "milwaukee brewers",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7314_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Robin Yount",
+          "front_team": "Brewers",
+          "uniform_number": null,
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7314_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "andre thornton",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "115",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Thornton",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "115",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "george vukovich",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "638",
+        "copyright_year": "1984",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Vukovich",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "638",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "pat tabler",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "329",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Tabler",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "329",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:08:07.539Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "gorman thomas",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "515",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7314_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Robin Yount",
+          "front_team": "Brewers",
+          "uniform_number": null,
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7314_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "andre thornton",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "115",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Thornton",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "115",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "george vukovich",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "638",
+        "copyright_year": "1984",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Vukovich",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "638",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "pat tabler",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "329",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Tabler",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "329",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:08:09.341Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "gorman thomas",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "515",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7314_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Robin Yount",
+          "front_team": "Brewers",
+          "uniform_number": null,
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7314_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "topps",
+          "team": "Brewers",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "andre thornton",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "115",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Thornton",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "115",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "george vukovich",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "638",
+        "copyright_year": "1984",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Vukovich",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "638",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "pat tabler",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "329",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Tabler",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "329",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:08:26.895Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "andre thornton",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "115",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Andre Thornton",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "115",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "george vukovich",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "638",
+        "copyright_year": "1984",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Vukovich",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "638",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "pat tabler",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "329",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Tabler",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "329",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:08:46.063Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "george vukovich",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "638",
+        "copyright_year": "1984",
+        "team": "philadelphia phillies",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Vukovich",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "638",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "pat tabler",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "329",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Tabler",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "329",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:08:47.274Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "george vukovich",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "638",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Vukovich",
+          "brand": "topps",
+          "team": "Phillies",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "638",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "pat tabler",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "329",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Tabler",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "329",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:09:02.828Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "pat tabler",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "329",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Tabler",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "329",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:09:03.368Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:15:45.645Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:16:13.013Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "broderick perkins",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "212",
+        "copyright_year": "1984",
+        "team": "cleveland indians",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7308_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Tom Candiotti",
+          "front_team": "Indians",
+          "uniform_number": "49",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7308_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Broderick Perkins",
+          "brand": "topps",
+          "team": "Indians",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "212",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:16:27.060Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:16:33.858Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:16:34.928Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "97",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Lamarr Hoyt",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "97",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:03.861Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "personal data",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:16.668Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "unknown",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:22.858Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:23.076Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "lamarr hoyt",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "405",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8925000000000002,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Personal Data",
+          "brand": "topps",
+          "team": "unknown",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "405",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:32.911Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "303",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:53.501Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "163",
+        "copyright_year": "1984",
+        "team": "white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:56.407Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "163",
+        "copyright_year": "1984",
+        "team": "other",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:17:58.908Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "lorenzo gray",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "163",
+        "copyright_year": "1984",
+        "team": "other",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.8925000000000002,
+        "value_estimate": "$1-5",
+        "_value_details": {
+          "confidence": "low",
+          "reasoning": "Heuristic estimate (fast mode)",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "matched_front_file": "IMG_7315_optimized.png",
+        "_front_match": {
+          "matched_file": true,
+          "front_name": "Steve Rosenberg",
+          "front_team": "White Sox",
+          "uniform_number": "51",
+          "data_priority": "back_primary_front_supplemental"
+        },
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8925000000000002,
+          "matched_front": "cards/unprocessed_single_front/IMG_7315_optimized.png",
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Lorenzo Gray",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "303",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:22:03.795Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.88,
+        "value_estimate": "$5-15",
+        "_value_details": {
+          "confidence": "medium",
+          "reasoning": "Hall of Fame player, common card year",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.88,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-23T19:22:05.388Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "carlton fisk",
+        "sport": "baseball",
+        "brand": "topps",
+        "number": "560",
+        "copyright_year": "1984",
+        "team": "chicago white sox",
+        "card_set": "n/a",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": null,
+        "_confidence": {
+          "name": 0.95,
+          "copyright_year": 0.95,
+          "condition": 0.8,
+          "brand": 0.9,
+          "features": 0.8
+        },
+        "_overall_confidence": 0.88,
+        "value_estimate": "$5-15",
+        "_value_details": {
+          "confidence": "medium",
+          "reasoning": "Hall of Fame player, common card year",
+          "source": "heuristic"
+        },
+        "_player_validated": false,
+        "_checklist_validated": true,
+        "_set_name": "1984 Topps",
+        "_checklist_valid": true,
+        "_name_source": "back_primary",
+        "_team_source": "back_primary",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.88,
+          "matched_front": null,
+          "cropped_back_alias": "pending_verification_cropped_backs/8DF3115A-3BE7-431C-B47D-16B6BEC6EB0D_1_105_c_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Carlton Fisk",
+          "brand": "topps",
+          "team": "White Sox",
+          "card_set": "1984 Topps",
+          "copyright_year": "1984",
+          "number": "560",
+          "condition": "very_good",
+          "sport": "baseball"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

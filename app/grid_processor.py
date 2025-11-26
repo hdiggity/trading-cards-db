@@ -1,5 +1,5 @@
 """
-Enhanced processing system for 3x3 grid card back images with front image matching
+Enhanced processing system for 3x3 grid card back images
 """
 
 import json
@@ -20,13 +20,7 @@ from .accuracy import CardValidator, ConfidenceScorer, detect_card_era_and_type
 from .value_estimator import add_value_estimation
 from .enhanced_grid_processor import process_enhanced_3x3_grid
 from .detailed_grid_processor import process_detailed_3x3_grid
-from .accuracy_boost import enhance_cards_batch, seed_common_checklists, generate_prompt_enhancements_from_learning
-
-# Initialize checklists database on module load
-try:
-    seed_common_checklists()
-except Exception as e:
-    print(f"Warning: Failed to seed checklists: {e}", file=sys.stderr)
+from .enhanced_extraction import enhanced_extract_grid, enhanced_extract_with_validation
 
 @dataclass
 class GridCard:
@@ -36,7 +30,6 @@ class GridCard:
     col: int       # 0-2
     data: Dict[str, Any]
     confidence: float = 0.0
-    matched_front: Optional[str] = None  # Path to matched front image
 
 
 class GridProcessor:
@@ -100,16 +93,16 @@ CRITICAL REQUIREMENTS:
 - Cross-reference jersey numbers, positions, and stats across the grid for accuracy
 
 CARD BACK IDENTIFICATION TECHNIQUES:
-- Player names typically at top of card back
-- Statistical tables often include player name headers
-- Biographical sections mention player names multiple times
+- PLAYER NAME (MOST CRITICAL): Find the player's FULL NAME printed in ALL CAPS or bold text. This is typically near the top but may be below biographical text. Look for the person's actual name (e.g., "ARTHUR BOBBY LEE DARWIN", "DAVE GOLTZ", "JIM HOLT"). DO NOT extract team names, positions, biographical snippets, or statistical headers. The name is the person being featured - their actual name in all caps/bold.
+- Statistical tables often include player name headers (verify against top name)
+- Biographical sections mention player names multiple times (confirm consistency)
 - Career highlights reference player achievements with names
-- Use visible statistics (BA, ERA, HRs) + team + year to identify specific players
+- Use visible statistics (BA, ERA, HRs) + team + year to identify specific players ONLY if top name is unclear
 - Example: ".305 BA" + "Yankees" + "1975" = specific identifiable player
 
 For each card in the grid (position 0-8), analyze:
 - Position in grid (0=top-left, 1=top-center, ..., 8=bottom-right)
-- Player name (make maximum effort using all available clues)
+- Player name (ALWAYS read from the LARGEST TEXT at TOP of card back)
 - Team (CRITICAL - find from: stats header abbreviations like CHC/NYY/LAD, biographical text, position lines, career summaries, trade info. Common: ATL=Braves, BOS=Red Sox, CHC=Cubs, CWS=White Sox, CLE=Indians, DET=Tigers, HOU=Astros, KC=Royals, LAA=Angels, LAD=Dodgers, MIL=Brewers, MIN=Twins, NYM=Mets, NYY=Yankees, OAK=A's, PHI=Phillies, PIT=Pirates, SD=Padres, SF=Giants, SEA=Mariners, STL=Cardinals, TEX=Rangers, TOR=Blue Jays)
 - Copyright year (look for © symbol, ignore stats years)
 - Brand (should be consistent across grid)
@@ -139,39 +132,165 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
 
     def process_3x3_grid(self, image_path: str, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
         """
-        Process a 3x3 grid of card backs (PRIMARY) with optional front image matching (BACKUP)
-        
+        Process a 3x3 grid of card backs - back extraction only (no front matching)
+
         Data Priority:
-        1. PRIMARY: 3x3 grid back extraction (enhanced preprocessing + GPT analysis)  
-        2. BACKUP: Front image matching to supplement missing data only
-        3. CONTEXT: Apply grid consistency patterns
-        
+        1. PRIMARY: Simple direct GPT extraction (most reliable)
+        2. FALLBACK: Detailed individual card processing
+        3. FALLBACK: Enhanced grid processing
+        4. CONTEXT: Apply grid consistency patterns
+
         Returns: (grid_cards, raw_data)
         """
         print(f"Processing 3x3 grid as PRIMARY input: {image_path}", file=sys.stderr)
-        
-        # STEP 1: Detailed individual card processing (PRIMARY data source)
-        print("Using detailed individual card processing for maximum detail extraction...", file=sys.stderr)
-        try:
-            detailed_data, _ = process_detailed_3x3_grid(image_path)
-            raw_data = detailed_data
-            print(f"Detailed processing extracted {len(raw_data)} cards", file=sys.stderr)
-        except Exception as e:
-            print(f"Detailed processing failed, trying enhanced processing: {e}", file=sys.stderr)
+
+        raw_data = None
+
+        # STEP 0: Try enhanced multi-pass extraction with validation (NEW - most accurate)
+        use_enhanced = os.getenv("USE_ENHANCED_EXTRACTION", "true").lower() == "true"
+        if use_enhanced:
+            print("Trying enhanced multi-pass extraction with checklist validation...", file=sys.stderr)
+            try:
+                enhanced_cards = enhanced_extract_with_validation(image_path, extract_individual=False)
+                unknown_count = sum(1 for c in enhanced_cards if c.get('name', '').lower() in ('unknown', 'unidentified', ''))
+                if unknown_count < 7:  # Accept if most cards were extracted
+                    raw_data = enhanced_cards
+                    print(f"Enhanced extraction succeeded: {len(raw_data)} cards, {unknown_count} unknown", file=sys.stderr)
+                else:
+                    print(f"Enhanced extraction returned too many unknowns ({unknown_count}/9), falling back...", file=sys.stderr)
+            except Exception as enhanced_err:
+                print(f"Enhanced extraction failed ({enhanced_err}), falling back to simple...", file=sys.stderr)
+
+        # STEP 1: Try simple direct GPT extraction (fallback)
+        if raw_data is None:
+            print("Trying simple direct GPT extraction...", file=sys.stderr)
+            try:
+                from PIL import Image as PILImage
+                from io import BytesIO
+
+                # Load and encode image
+                img = PILImage.open(image_path)
+                max_size = 2400
+                if max(img.size) > max_size:
+                    ratio = max_size / max(img.size)
+                    img = img.resize((int(img.size[0] * ratio), int(img.size[1] * ratio)), PILImage.LANCZOS)
+                buffer = BytesIO()
+                img.save(buffer, format="JPEG", quality=95)
+                img_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+                simple_prompt = """This is a 3x3 grid of baseball card BACKS (9 cards total, arranged left-to-right, top-to-bottom).
+
+For each card (position 0-8), I need you to extract data in this EXACT order of priority:
+
+1. PLAYER NAME (CRITICAL): Find the player's FULL NAME on the card back. This is typically printed in ALL CAPS or bold text near the top. Common locations:
+   - In a header section below any biographical text
+   - Next to the card number
+   - As a distinct name line (e.g., "ARTHUR BOBBY LEE DARWIN", "JIM HOLT", "DAVE GOLTZ")
+
+   Look for a person's FIRST and LAST NAME (possibly with middle name/initial). Read every letter carefully.
+
+   DO NOT extract:
+   - Team names (Cubs, Yankees, Red Sox, etc.)
+   - Positions (Pitcher, Catcher, Third Base, etc.)
+   - Biographical snippets ("Bobby works for a car towing firm")
+   - Stats headers or table text
+
+   The name is the person being featured on the card - their actual name in all caps or bold.
+
+2. Card number: Look for # followed by digits (often near the name or in corners)
+3. Team: The team name (often in stats table or biographical text)
+4. Copyright year: The © year (usually at bottom edge, small text)
+5. Brand: Usually Topps
+6. Card set: Use 'n/a' unless it's a special subset (Traded, All-Star, etc.)
+7. Value estimate: Like '$1-3' or '$5-10'
+
+Return ONLY a JSON array with exactly 9 objects:
+[{grid_position: 0, name: "FIRST LAST", number: "123", team: "team name", copyright_year: "1984", brand: "topps", card_set: "n/a", value_estimate: "$1-3", sport: "baseball", condition: "very_good", is_player_card: true, features: "none"}, ...]
+
+REMEMBER: Look for the person's actual NAME in all caps or bold, NOT biographical text or descriptions."""
+
+                simple_response = client.chat.completions.create(
+                    model=MODEL,
+                    messages=[
+                        {"role": "system", "content": "You are a baseball card expert. Extract data accurately from card backs."},
+                        {"role": "user", "content": [
+                            {"type": "text", "text": simple_prompt},
+                            {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}}
+                        ]}
+                    ],
+                    max_tokens=2000,
+                    temperature=0.1
+                )
+
+                result_text = simple_response.choices[0].message.content.strip()
+                # Clean markdown if present
+                if result_text.startswith("```"):
+                    result_text = result_text.split("```")[1]
+                    if result_text.startswith("json"):
+                        result_text = result_text[4:]
+                    result_text = result_text.strip()
+                if result_text.endswith("```"):
+                    result_text = result_text[:-3].strip()
+
+                parsed_cards = json.loads(result_text)
+
+                # Add grid metadata
+                for i, card in enumerate(parsed_cards):
+                    card.setdefault('grid_position', i)
+                    card.setdefault('_grid_metadata', {"position": i, "row": i // 3, "col": i % 3})
+
+                # Check if extraction worked
+                unknown_count = sum(1 for c in parsed_cards if c.get('name', '').lower() in ('unknown', 'unidentified', ''))
+                if unknown_count >= 7:
+                    raise ValueError(f"Simple extraction failed - {unknown_count}/9 unknown")
+
+                raw_data = parsed_cards
+                print(f"Simple direct extraction succeeded: {len(raw_data)} cards", file=sys.stderr)
+            except Exception as simple_err:
+                print(f"Simple extraction failed ({simple_err}), trying detailed processing...", file=sys.stderr)
+
+        # STEP 2: Fall back to detailed individual card processing
+        if raw_data is None:
+            print("Using detailed individual card processing...", file=sys.stderr)
+            try:
+                detailed_data, _ = process_detailed_3x3_grid(image_path)
+                raw_data = detailed_data
+                print(f"Detailed processing extracted {len(raw_data)} cards", file=sys.stderr)
+
+                # Check if detailed processing mostly failed (returned defaults)
+                unknown_count = sum(1 for c in raw_data if c.get('name', '').lower() in ('unknown', 'unidentified'))
+                if unknown_count >= 7:
+                    print(f"Detailed processing returned {unknown_count}/9 unknown cards, trying enhanced...", file=sys.stderr)
+                    raw_data = None
+            except Exception as e:
+                print(f"Detailed processing failed: {e}", file=sys.stderr)
+
+        # STEP 3: Fall back to enhanced grid processing
+        if raw_data is None:
+            print("Trying enhanced grid processing...", file=sys.stderr)
             try:
                 enhanced_data, _ = process_enhanced_3x3_grid(image_path)
                 raw_data = enhanced_data
                 print(f"Enhanced processing extracted {len(raw_data)} cards", file=sys.stderr)
+
+                # Check enhanced processing too
+                unknown_count = sum(1 for c in raw_data if c.get('name', '').lower() in ('unknown', 'unidentified'))
+                if unknown_count >= 7:
+                    print(f"Enhanced processing also returned {unknown_count}/9 unknown, trying standard...", file=sys.stderr)
+                    raw_data = None
             except Exception as e2:
-                print(f"Enhanced processing also failed, falling back to standard: {e2}", file=sys.stderr)
-            # Fallback to standard processing
+                print(f"Enhanced processing also failed: {e2}", file=sys.stderr)
+
+        # STEP 4: Final fallback to standard processing
+        if raw_data is None:
+            print("Using standard fallback processing...", file=sys.stderr)
             encoded_image, mime_type = convert_image_to_supported_format(image_path, apply_preprocessing=True)
             grid_prompt = self.build_grid_prompt()
-            
+
             messages = [
                 {"role": "system", "content": grid_prompt},
                 {
-                    "role": "user", 
+                    "role": "user",
                     "content": [
                         {
                             "type": "image_url",
@@ -180,13 +299,13 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
                     ]
                 }
             ]
-            
+
             response = llm_chat(
                 messages=messages,
                 max_tokens=4000,
                 temperature=0.1,
             )
-            
+
             raw_response = response.choices[0].message.content.strip()
             raw_data = self._parse_grid_response(raw_response)
         
@@ -196,7 +315,10 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
             while len(raw_data) < 9:
                 raw_data.append(self._create_default_card(len(raw_data)))
             raw_data = raw_data[:9]
-        
+
+        # STEP 1.5: Verify player names - check if names look suspicious (team names, positions, etc.)
+        raw_data = self._verify_player_names(raw_data, image_path)
+
         # STEP 2: Apply context-based enhancements (grid consistency)
         enhanced_data = self._apply_grid_context_enhancement(raw_data)
         
@@ -226,13 +348,9 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
             )
             grid_cards.append(grid_card)
         
-        # STEP 4: Match with front images as BACKUP data source (supplements missing info only)
-        if front_images_dir and front_images_dir.exists():
-            print(f"Using front images as BACKUP to supplement missing data from backs...", file=sys.stderr)
-            grid_cards = self._match_front_images(grid_cards, front_images_dir)
-        else:
-            print("No front images directory provided - using back data only", file=sys.stderr)
-        
+        # STEP 4: Front image matching disabled - back data only
+        print("Front image matching disabled - using back extraction only", file=sys.stderr)
+
         print(f"Grid processing completed: {len(grid_cards)} cards processed", file=sys.stderr)
         return grid_cards, raw_data
     
@@ -291,7 +409,124 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
             "features": "none",
             "notes": None
         }
-    
+
+    def _verify_player_names(self, cards: List[Dict], image_path: str) -> List[Dict]:
+        """Verify and correct player names by checking for common errors"""
+
+        # Common team names that shouldn't be player names
+        TEAM_NAMES = {'cubs', 'yankees', 'red sox', 'dodgers', 'giants', 'mets', 'cardinals',
+                      'braves', 'phillies', 'pirates', 'reds', 'astros', 'padres', 'mariners',
+                      'angels', 'athletics', 'rangers', 'twins', 'royals', 'white sox', 'indians',
+                      'tigers', 'brewers', 'orioles', 'blue jays'}
+
+        # Common positions that shouldn't be player names
+        POSITIONS = {'pitcher', 'catcher', 'first base', 'second base', 'third base',
+                    'shortstop', 'outfield', 'left field', 'center field', 'right field',
+                    'designated hitter', 'relief pitcher', 'starting pitcher'}
+
+        suspicious_cards = []
+        for i, card in enumerate(cards):
+            name = card.get('name', '').lower().strip()
+
+            # Check if name looks suspicious
+            is_suspicious = False
+            if not name or name in ('unknown', 'unidentified', ''):
+                is_suspicious = True
+            elif name in TEAM_NAMES:
+                is_suspicious = True
+                print(f"Warning: Card {i} has team name as player name: {name}", file=sys.stderr)
+            elif name in POSITIONS:
+                is_suspicious = True
+                print(f"Warning: Card {i} has position as player name: {name}", file=sys.stderr)
+            elif len(name.split()) < 2:
+                # Most player names have first and last name
+                is_suspicious = True
+                print(f"Warning: Card {i} has single-word name: {name}", file=sys.stderr)
+
+            if is_suspicious:
+                suspicious_cards.append(i)
+
+        # If we have suspicious names, try a focused re-extraction on just names
+        if suspicious_cards and len(suspicious_cards) <= 6:  # Only if < 66% are bad
+            print(f"Re-extracting names for {len(suspicious_cards)} suspicious cards: {suspicious_cards}", file=sys.stderr)
+            try:
+                from PIL import Image as PILImage
+                img = PILImage.open(image_path)
+                max_size = 2400
+                if max(img.size) > max_size:
+                    ratio = max_size / max(img.size)
+                    img = img.resize((int(img.size[0] * ratio), int(img.size[1] * ratio)), PILImage.LANCZOS)
+                buffer = BytesIO()
+                img.save(buffer, format="JPEG", quality=95)
+                img_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+                positions_str = ", ".join(str(p) for p in suspicious_cards)
+                name_fix_prompt = f"""Look at this 3x3 grid of baseball card BACKS. I need you to read ONLY the player names from these specific card positions: {positions_str}
+
+The cards are arranged like this:
+Position 0 | Position 1 | Position 2
+Position 3 | Position 4 | Position 5
+Position 6 | Position 7 | Position 8
+
+For EACH position I mentioned ({positions_str}), find the player's FULL NAME printed in ALL CAPS or bold text on the card back.
+
+The name is typically:
+- In a header section near the top (may be below biographical text)
+- Next to the card number
+- In white text on a dark background, or dark text on light background
+- The person's actual name (e.g., "DAVID ALLAN GOLTZ", "JIM HOLT", "ARTHUR BOBBY LEE DARWIN")
+
+DO NOT give me:
+- Team names (Cubs, Yankees, etc.)
+- Positions (Pitcher, Catcher, etc.)
+- Biographical snippets ("Dave played little league ball")
+- Stats or table headers
+
+Read the actual player NAME carefully - every letter matters.
+
+Return ONLY a JSON array with one object per position I mentioned:
+[{{"position": 0, "name": "FIRST MIDDLE LAST"}}, ...]
+
+Only include positions {positions_str} in your response."""
+
+                name_response = client.chat.completions.create(
+                    model=MODEL,
+                    messages=[
+                        {"role": "system", "content": "You are a baseball card expert focused on reading player names accurately."},
+                        {"role": "user", "content": [
+                            {"type": "text", "text": name_fix_prompt},
+                            {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}}
+                        ]}
+                    ],
+                    max_tokens=500,
+                    temperature=0
+                )
+
+                result_text = name_response.choices[0].message.content.strip()
+                if result_text.startswith("```"):
+                    result_text = result_text.split("```")[1]
+                    if result_text.startswith("json"):
+                        result_text = result_text[4:]
+                    result_text = result_text.strip()
+                if result_text.endswith("```"):
+                    result_text = result_text[:-3].strip()
+
+                corrected_names = json.loads(result_text)
+
+                # Apply corrections
+                for correction in corrected_names:
+                    pos = correction.get('position')
+                    new_name = correction.get('name', '').strip()
+                    if pos is not None and pos < len(cards) and new_name:
+                        old_name = cards[pos].get('name', '')
+                        cards[pos]['name'] = new_name
+                        print(f"Corrected name for position {pos}: '{old_name}' -> '{new_name}'", file=sys.stderr)
+
+            except Exception as e:
+                print(f"Name verification failed: {e}", file=sys.stderr)
+
+        return cards
+
     def _apply_grid_context_enhancement(self, cards: List[Dict]) -> List[Dict]:
         """Apply context-based enhancement using grid patterns"""
         enhanced_cards = []
@@ -403,15 +638,22 @@ ACCURACY MANDATE: Use ALL visible information and context clues. Grid consistenc
                 print(f"Error processing front image {front_img}: {e}", file=sys.stderr)
                 continue
         
-        # Match grid cards with front images
+        # Match grid cards with front images (prevent duplicate matches)
+        used_fronts = set()
         for grid_card in grid_cards:
-            best_match = self._find_best_front_match(grid_card, front_cards_info)
+            # Filter out already-used fronts
+            available_fronts = [fc for fc in front_cards_info if str(fc['path']) not in used_fronts]
+            if not available_fronts:
+                print(f"No more front images available for position {grid_card.position}")
+                break
+
+            best_match = self._find_best_front_match(grid_card, available_fronts)
             if best_match:
-                grid_card.matched_front = str(best_match['path'])
+                used_fronts.add(str(best_match['path']))
                 # Enhance grid card data with front card info
                 grid_card.data = self._merge_front_back_data(grid_card.data, best_match['info'])
                 print(f"Matched grid position {grid_card.position} with {best_match['path'].name}")
-        
+
         return grid_cards
     
     def _extract_front_card_info(self, front_image_path: Path) -> Dict[str, Any]:
@@ -480,70 +722,60 @@ Focus on information that would help match this front with a corresponding back.
         return best_match
     
     def _calculate_match_score(self, back_data: Dict, front_info: Dict) -> float:
-        """Calculate matching score between back and front card data"""
+        """Calculate matching score between back and front card data
+
+        Priority: card number > year > team > name
+        Since back names are often wrong, we don't require name match
+        """
         score = 0.0
-        matches = 0
-        total_checks = 0
 
-        # Name matching (REQUIRED if both have names)
-        back_name = str(back_data.get('name', '')).lower().strip()
-        front_name = str(front_info.get('name', '')).lower().strip()
+        # Card number matching (HIGHEST PRIORITY - most reliable)
+        back_number = str(back_data.get('number', '')).strip()
+        front_number = str(front_info.get('uniform_number', '')).strip()
 
-        name_match = False
-        name_checked = False
-        if back_name and front_name and back_name != 'unknown' and front_name != 'unknown':
-            name_checked = True
-            total_checks += 1
-            if back_name in front_name or front_name in back_name:
-                score += 0.4
-                matches += 1
-                name_match = True
+        if back_number and front_number:
+            if back_number == front_number:
+                score += 0.5  # Strong indicator
 
-        # If names were available but didn't match, return 0 (require name match)
-        if name_checked and not name_match:
-            return 0.0
-
-        # Team matching
-        back_team = str(back_data.get('team', '')).lower().strip()
-        front_team = str(front_info.get('team', '')).lower().strip()
-        
-        if back_team and front_team and back_team != 'unknown' and front_team != 'unknown':
-            total_checks += 1
-            if back_team in front_team or front_team in back_team:
-                score += 0.3
-                matches += 1
-        
-        # Sport matching
-        back_sport = str(back_data.get('sport', '')).lower()
-        front_sport = str(front_info.get('sport', '')).lower()
-        
-        if back_sport and front_sport:
-            total_checks += 1
-            if back_sport == front_sport:
-                score += 0.2
-                matches += 1
-        
-        # Era consistency (basic check)
+        # Year matching (HIGH PRIORITY)
         back_year = back_data.get('copyright_year')
         front_era = front_info.get('era')
-        
+
         if back_year and front_era:
-            total_checks += 1
             try:
                 year_int = int(str(back_year))
                 if ((year_int < 1980 and front_era == 'vintage') or
                     (1980 <= year_int < 2000 and front_era == 'classic') or
                     (year_int >= 2000 and front_era == 'modern')):
-                    score += 0.1
-                    matches += 1
+                    score += 0.2
             except:
                 pass
-        
-        # Normalize score
-        if total_checks > 0:
-            return score / max(total_checks * 0.25, 1.0)  # Scale to 0-1 range
-        
-        return 0.0
+
+        # Team matching (MEDIUM PRIORITY)
+        back_team = str(back_data.get('team', '')).lower().strip()
+        front_team = str(front_info.get('team', '')).lower().strip()
+
+        if back_team and front_team and back_team != 'unknown' and front_team != 'unknown':
+            if back_team in front_team or front_team in back_team:
+                score += 0.2
+
+        # Sport matching
+        back_sport = str(back_data.get('sport', '')).lower()
+        front_sport = str(front_info.get('sport', '')).lower()
+
+        if back_sport and front_sport:
+            if back_sport == front_sport:
+                score += 0.1
+
+        # Name matching (LOWEST PRIORITY - often wrong on back)
+        back_name = str(back_data.get('name', '')).lower().strip()
+        front_name = str(front_info.get('name', '')).lower().strip()
+
+        if back_name and front_name and back_name != 'unknown' and front_name != 'unknown':
+            if back_name in front_name or front_name in back_name:
+                score += 0.1  # Bonus if names happen to match
+
+        return score
     
     def _merge_front_back_data(self, back_data: Dict, front_info: Dict) -> Dict:
         """
@@ -577,8 +809,7 @@ Focus on information that would help match this front with a corresponding back.
         else:
             merged['_team_source'] = 'back_primary'
         
-        # Record matched front file (always add if matched)
-        merged['matched_front_file'] = front_info.get('_filename')
+        # Note: Front matching disabled - no front file recording
         
         # Add supplemental matching metadata (for verification/debugging)
         merged['_front_match'] = {
@@ -613,8 +844,7 @@ def save_grid_cards_to_verification(
             'position': grid_card.position,
             'row': grid_card.row,
             'col': grid_card.col,
-            'confidence': grid_card.confidence,
-            'matched_front': grid_card.matched_front
+            'confidence': grid_card.confidence
         }
         # Add deterministic cropped-back alias path for UI (created if save_cropped_backs=True)
         if filename_stem is not None:
@@ -652,15 +882,15 @@ def save_grid_cards_to_verification(
                 feats = [t.strip().lower().replace("_", " ") for t in out["features"].split(",")]
                 feats = [t for t in feats if t]
                 out["features"] = ",".join(sorted(set(feats))) if feats else "none"
-        # If card_set is only brand/year, set to 'n/a'
+        # If card_set is only brand/year, set to 'n/a' (case-insensitive)
         try:
             cs = out.get("card_set") or ""
             br = out.get("brand") or ""
             if isinstance(cs, str):
                 import re
-                leftovers = cs
-                brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc"]
-                for bt in brand_tokens + ([br] if br else []):
+                leftovers = cs.lower()
+                brand_tokens = ["topps", "panini", "upper deck", "donruss", "fleer", "bowman", "leaf", "score", "pinnacle", "select", "o-pee-chee", "opc", "baseball"]
+                for bt in brand_tokens + ([br.lower()] if br else []):
                     if bt:
                         leftovers = leftovers.replace(bt, "")
                 leftovers = re.sub(r"\b(19\d{2}|20\d{2})\b", "", leftovers)
@@ -728,6 +958,48 @@ def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCar
             cropped_card.save(crop_path, "PNG")
 
             print(f"Saved cropped back: {crop_filename}")
-            
+
     except Exception as e:
         print(f"Error extracting individual backs: {e}", file=sys.stderr)
+
+
+def reprocess_grid_image(image_path: str) -> List[Dict]:
+    """Reprocess a 3x3 grid image and return enhanced card data.
+
+    This is the shared function used by both initial processing and reprocessing.
+    It uses simple GPT extraction followed by checklist-based name correction.
+
+    Args:
+        image_path: Path to the grid image file
+
+    Returns:
+        List of card dictionaries with grid_metadata and enhanced data
+    """
+    print(f"Reprocessing grid image: {image_path}", file=sys.stderr)
+
+    # Use GridProcessor to extract cards
+    gp = GridProcessor()
+    grid_cards, raw_data = gp.process_3x3_grid(image_path)
+
+    # Convert GridCard objects to plain dicts
+    cards = []
+    for gc in grid_cards:
+        card = gc.data.copy() if isinstance(gc.data, dict) else dict(gc.data)
+        card.setdefault('grid_position', gc.position)
+        card.setdefault('_grid_metadata', {
+            "position": gc.position,
+            "row": gc.row,
+            "col": gc.col,
+            "confidence": getattr(gc, 'confidence', None)
+        })
+        cards.append(card)
+
+    # Apply accuracy enhancements (checklist lookup for names)
+    try:
+        cards = enhance_cards_batch(cards)
+        print(f"Applied accuracy enhancements to {len(cards)} cards", file=sys.stderr)
+    except Exception as e:
+        print(f"Warning: Accuracy enhancement failed: {e}", file=sys.stderr)
+
+    print(f"Reprocessing complete: {len(cards)} cards extracted", file=sys.stderr)
+    return cards

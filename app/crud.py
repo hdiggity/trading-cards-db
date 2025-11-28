@@ -1,4 +1,3 @@
-from datetime import datetime
 from typing import List, Optional
 
 from sqlmodel import select
@@ -6,7 +5,6 @@ from sqlmodel import select
 from app.database import get_session
 from app.logging_system import ActionType, LogLevel, LogSource, logger
 from app.models import Card, CardComplete
-from app.per_card_export import write_per_card_file
 from app.schemas import CardCreate
 
 
@@ -22,9 +20,8 @@ def upsert_card(card_data: CardCreate, image_path: str = None, source_metadata: 
 
 
 def insert_card_complete(card_data: CardCreate, source_metadata: dict = None):
-    """
-    Insert a new card into cards_complete table.
-    The cards table will be automatically updated via database triggers.
+    """Insert a new card into cards_complete table. The cards table will be
+    automatically updated via database triggers.
 
     Args:
         card_data: Card information to insert

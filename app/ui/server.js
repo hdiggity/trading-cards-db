@@ -853,6 +853,20 @@ print("Database import completed successfully")
               const p = spawn('python', ['-c', py], { cwd: path.join(__dirname, '../..') });
               p.on('error', ()=>{});
             } catch(_) {}
+
+            // Trigger automatic model retraining check (non-blocking, bulk back completed)
+            try {
+              console.log('[pass-card] Bulk back complete, triggering auto-retrain check...');
+              const autoRetrainProc = spawn('python', ['-m', 'app.auto_retrain', '--min-new-cards', '9'], {
+                cwd: path.join(__dirname, '../..'),
+                detached: true,
+                stdio: 'ignore'
+              });
+              autoRetrainProc.unref();
+            } catch(autoRetrainErr) {
+              console.log('[pass-card] Auto-retrain check failed (non-critical):', autoRetrainErr.message);
+            }
+
             res.json({
               success: true,
               message: 'Last card verified and imported. All cards from this image processed and archived.',
@@ -924,8 +938,8 @@ app.post('/api/pass/:id', async (req, res) => {
       }
     }
 
-    // Convert text fields to lowercase for consistency and inject source_file
-    cardData = cardData.map(card => {
+    // Convert text fields to lowercase for consistency and inject source_file and cropped_back_file
+    cardData = cardData.map((card, idx) => {
       const processedCard = { ...card };
       const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
       textFields.forEach(field => {
@@ -953,6 +967,12 @@ app.post('/api/pass/:id', async (req, res) => {
       }
       if (!processedCard.original_filename && imageFile) {
         processedCard.original_filename = imageFile;
+      }
+      // Add cropped_back_file for each card
+      const gridMeta = card._grid_metadata || {};
+      const pos = gridMeta.position !== undefined ? gridMeta.position : idx;
+      if (!processedCard.cropped_back_file) {
+        processedCard.cropped_back_file = `${id}_pos${pos}.png`;
       }
       return processedCard;
     });
@@ -1082,12 +1102,43 @@ print("Database import completed successfully")
           );
           console.log(`[pass-all] Moved image to verified: ${verifiedImageName}`);
 
+          // Move all cropped back images to verified cropped backs folder
+          const CROPPED_BACKS_PENDING = path.join(PENDING_VERIFICATION_DIR, 'pending_verification_cropped_backs');
+          const CROPPED_BACKS_VERIFIED = path.join(VERIFIED_ROOT_DIR, 'verified_cropped_backs');
+          try {
+            await fs.mkdir(CROPPED_BACKS_VERIFIED, { recursive: true });
+            const croppedFiles = await fs.readdir(CROPPED_BACKS_PENDING);
+            const matchingCroppedFiles = croppedFiles.filter(f => f.startsWith(id + '_pos'));
+            for (const croppedFile of matchingCroppedFiles) {
+              await fs.rename(
+                path.join(CROPPED_BACKS_PENDING, croppedFile),
+                path.join(CROPPED_BACKS_VERIFIED, croppedFile)
+              );
+              console.log(`[pass-all] Moved cropped back to verified: ${croppedFile}`);
+            }
+          } catch (cropErr) {
+            console.error(`[pass-all] Warning: Failed to move cropped backs: ${cropErr.message}`);
+          }
+
           // Log verification action (pass all)
           try {
             const py = `from app.logging_system import logger\nlogger.log_verification_action(filename='${(imageFile||'').replace(/'/g,"\'")}', action='pass')`;
             const p = spawn('python', ['-c', py], { cwd: path.join(__dirname, '../..') });
             p.on('error', ()=>{});
           } catch(_) {}
+
+          // Trigger automatic model retraining check (non-blocking)
+          try {
+            console.log('[pass-all] Triggering auto-retrain check...');
+            const autoRetrainProc = spawn('python', ['-m', 'app.auto_retrain', '--min-new-cards', '9'], {
+              cwd: path.join(__dirname, '../..'),
+              detached: true,
+              stdio: 'ignore'
+            });
+            autoRetrainProc.unref();
+          } catch(autoRetrainErr) {
+            console.log('[pass-all] Auto-retrain check failed (non-critical):', autoRetrainErr.message);
+          }
 
           res.json({
             success: true,
@@ -1699,7 +1750,7 @@ app.get('/api/cards', async (req, res) => {
 import json
 import sys
 from app.database import get_session
-from app.models import Card
+from app.models import Card, CardComplete
 from sqlalchemy import func, or_, and_, asc, desc
 
 page = ${parseInt(page)}
@@ -1789,6 +1840,8 @@ with get_session() as session:
             return 0.0 if sort_dir == 'desc' else float('inf')
         cards_all.sort(key=extract_price, reverse=(sort_dir == 'desc'))
         total = len(cards_all)
+        # Use CardComplete as ground truth for total quantity
+        total_quantity = session.query(func.count(CardComplete.id)).scalar() or 0
         offset = (page - 1) * limit
         cards = cards_all[offset:offset + limit]
     else:
@@ -1801,7 +1854,8 @@ with get_session() as session:
 
         # Get total count and total quantity
         total = query.count()
-        total_quantity = session.query(func.sum(Card.quantity)).filter(*filters).scalar() or 0
+        # Use CardComplete as ground truth for total quantity
+        total_quantity = session.query(func.count(CardComplete.id)).scalar() or 0
 
         # Apply pagination
         offset = (page - 1) * limit
@@ -2777,13 +2831,14 @@ app.get('/api/database-stats', async (req, res) => {
   try {
     const pythonProcess = spawn('python', ['-c', `
 from app.database import get_session
-from app.models import Card
+from app.models import Card, CardComplete
 from sqlalchemy import func, distinct
 import json
 
 with get_session() as session:
     total_cards = session.query(func.count(Card.id)).scalar()
-    total_quantity = session.query(func.sum(Card.quantity)).scalar() or 0
+    # Use CardComplete as ground truth for total quantity
+    total_quantity = session.query(func.count(CardComplete.id)).scalar() or 0
     unique_players = session.query(func.count(func.distinct(Card.name))).scalar()
     unique_years = session.query(func.count(func.distinct(Card.copyright_year))).scalar()
     unique_brands = session.query(func.count(func.distinct(Card.brand))).scalar()

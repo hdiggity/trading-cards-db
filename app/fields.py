@@ -1,7 +1,7 @@
 from typing import Optional
 
 from pydantic import Field
-from sqlalchemy import Boolean, Column, DateTime, Float, Integer, String, func
+from sqlalchemy import Boolean, Column, DateTime, Integer, String, func
 
 # fields shared between models and Pydantic
 shared_card_field_specs = [

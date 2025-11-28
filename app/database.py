@@ -1,6 +1,6 @@
 from contextlib import contextmanager
-import os
 from pathlib import Path
+
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
 
@@ -33,7 +33,7 @@ def _set_sqlite_pragma(dbapi_connection, connection_record):
 
 
 def init_db():
-    """Initialize database with all tables including logging tables"""
+    """Initialize database with all tables including logging tables."""
     Base.metadata.create_all(bind=engine)
     
     # Also initialize logging tables
@@ -46,7 +46,7 @@ def init_db():
 
 @contextmanager
 def get_session():
-    """Context manager for database sessions"""
+    """Context manager for database sessions."""
     session = SessionLocal()
     try:
         yield session

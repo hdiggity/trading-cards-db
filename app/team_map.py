@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from typing import Optional
 
-
 _MLB = {
     # historical + common names → canonical "city team"
     "indians": "cleveland indians",

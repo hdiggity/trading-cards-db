@@ -1,7 +1,5 @@
-"""
-Logging system for trading card pipeline
-Uses a separate database in logs/ directory to keep system logs isolated from card data
-"""
+"""Logging system for trading card pipeline Uses a separate database in logs/
+directory to keep system logs isolated from card data."""
 
 import json
 import logging
@@ -13,7 +11,8 @@ from enum import Enum
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from sqlalchemy import Column, DateTime, Integer, String, Text, create_engine, func
+from sqlalchemy import (Column, DateTime, Integer, String, Text, create_engine,
+                        func)
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
@@ -32,7 +31,7 @@ LogsBase = declarative_base()
 
 @contextmanager
 def get_logs_session():
-    """Get a session for the logs database"""
+    """Get a session for the logs database."""
     session = LogsSessionLocal()
     try:
         yield session
@@ -122,7 +121,7 @@ class ActionType(str, Enum):
 
 
 class SystemLog(LogsBase):
-    """System log table in logs database"""
+    """System log table in logs database."""
     __tablename__ = "system_logs"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -142,7 +141,7 @@ class SystemLog(LogsBase):
 
 
 class UploadHistory(LogsBase):
-    """Upload history table in logs database"""
+    """Upload history table in logs database."""
     __tablename__ = "upload_history"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -172,7 +171,7 @@ class UploadHistory(LogsBase):
 
 
 class EnhancedLogger:
-    """Logger for pipeline tracking using separate logs database"""
+    """Logger for pipeline tracking using separate logs database."""
 
     def __init__(self, session_id: Optional[str] = None):
         self.session_id = session_id or self._generate_session_id()
@@ -409,7 +408,7 @@ class EnhancedLogger:
         success: bool = True,
         error: Optional[str] = None
     ):
-        """Log file operations like move, delete, create"""
+        """Log file operations like move, delete, create."""
         action_map = {
             "move": ActionType.FILE_MOVE,
             "delete": ActionType.FILE_DELETE,
@@ -556,7 +555,7 @@ logger = EnhancedLogger()
 
 
 def init_logging_tables():
-    """Initialize logging tables in logs database"""
+    """Initialize logging tables in logs database."""
     LogsBase.metadata.create_all(bind=logs_engine)
 
 

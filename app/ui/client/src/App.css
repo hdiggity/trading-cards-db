@@ -122,10 +122,11 @@
   gap: 16px;
   margin-bottom: 16px;
   min-height: 500px;
+  align-items: flex-start;
 }
 
 .image-section {
-  flex: 0 0 320px;
+  flex: 0 0 480px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -136,11 +137,15 @@
   border: 1px solid #e5e5e5;
   gap: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 16px;
+  max-height: calc(100vh - 200px);
+  overflow: hidden;
 }
 
 .card-image {
   max-width: 100%;
-  max-height: 280px;
+  max-height: 600px;
   border-radius: 6px;
   border: 1px solid #333;
   object-fit: contain;
@@ -167,15 +172,21 @@
   flex: 1;
   text-align: left;
   min-width: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
 }
 
 .data-section h3 {
   color: #1a1a1a;
-  margin-bottom: 12px;
-  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: -0.025em;
+  position: sticky;
+  top: 0;
+  background: #f5f5f5;
+  padding: 8px 0;
+  z-index: 10;
 }
 
 .card-data {
@@ -183,14 +194,14 @@
   overflow-y: visible;
   background: white;
   border-radius: 8px;
-  padding: 12px;
+  padding: 8px;
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .card-entry {
-  margin-bottom: 12px;
-  padding: 12px;
+  margin-bottom: 8px;
+  padding: 8px;
   background: #fafafa;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
@@ -210,26 +221,26 @@
 }
 
 .card-fields p {
-  margin: 0 0 12px 0;
+  margin: 0 0 6px 0;
   padding: 0;
   display: flex;
   align-items: flex-start;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .card-fields strong {
   color: #525252;
   min-width: 100px;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 500;
-  margin-right: 12px;
+  margin-right: 8px;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
 
 .card-fields span {
   color: #1a1a1a;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   flex: 1;
 }
 
@@ -752,6 +763,13 @@
   background: white;
   font-size: 0.875rem;
   color: #525252;
+  cursor: pointer;
+}
+
+.verification-mode select:disabled {
+  background: #f5f5f5;
+  color: #a0a0a0;
+  cursor: not-allowed;
 }
 
 .card-info {

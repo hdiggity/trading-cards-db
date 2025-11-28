@@ -1255,15 +1255,14 @@ function App({ onNavigate }) {
         <div className="verification-controls">
           <div className="verification-mode">
             <label>Verification Mode:</label>
-            <select 
-              value={verificationMode} 
+            <select
+              value={verificationMode}
               onChange={(e) => {
                 setVerificationMode(e.target.value);
                 setCurrentCardIndex(0);
                 setIsEditing(false);
                 setEditedData([]);
               }}
-              disabled={isEditing}
             >
               <option value="entire">Entire Photo</option>
               <option value="single">Single Card</option>

@@ -1,0 +1,40 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3369 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2171.HEIC
+processing: IMG_2171.HEIC
+2025-11-28 16:56:06,781 - trading_cards - INFO - [filesystem] File uploaded: IMG_2171.HEIC
+2025-11-28 16:56:12,011 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2171.HEIC', 'File size: 3945069 bytes, Type: .heic', None, 'session_20251128_165606_76655', None, 'IMG_2171.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-28 16:56:12,011 - trading_cards - INFO - [filesystem] File uploaded: IMG_2171.HEIC
+2025-11-28 16:56:12,016 - trading_cards - INFO - [system] Upload status changed: IMG_2171.HEIC -> processing
+2025-11-28 16:56:12,018 - trading_cards - INFO - [image_processing] Started processing: IMG_2171.HEIC
+Processing 3x3 grid as PRIMARY input: cards/unprocessed_bulk_back/IMG_2171.HEIC
+Trying enhanced multi-pass extraction with checklist validation...
+[Enhanced Grid Extraction] Processing: cards/unprocessed_bulk_back/IMG_2171.HEIC
+Enhanced extraction failed (Expecting value: line 1 column 1 (char 0)), falling back to simple...
+Trying simple direct GPT extraction...
+Simple direct extraction succeeded: 9 cards
+Grid context: year=1975, brand=topps, sport=baseball, set=n/a
+Warning: Accuracy enhancement failed: name 'enhance_cards_batch' is not defined
+Front image matching disabled - using back extraction only
+Grid processing completed: 9 cards processed
+Saved cropped back: IMG_2171_pos0_Daniel_Vincent_Frisella_343.png
+Saved cropped back: IMG_2171_pos1_Victor_Albury_368.png
+Saved cropped back: IMG_2171_pos2_Derrel_Osbon_Thomas_378.png
+Saved cropped back: IMG_2171_pos3_Bernardo_Carbo_379.png
+Saved cropped back: IMG_2171_pos4_Derrel_Mckinley_Harrelson_395.png
+Saved cropped back: IMG_2171_pos5_Robert_Tolan_402.png
+Saved cropped back: IMG_2171_pos6_Douglas_Lee_Griffin_454.png
+Saved cropped back: IMG_2171_pos7_Cecil_Celester_Cooper_489.png
+Saved cropped back: IMG_2171_pos8_Cecil_Celester_Cooper_489.png
+Saved 9 grid cards to cards/pending_verification/IMG_2171.json
+Grid processing completed: 9 cards extracted
+2025-11-28 16:57:22,571 - trading_cards - INFO - [filesystem] File move: IMG_2171.HEIC -> IMG_2171.HEIC
+2025-11-28 16:57:22,575 - trading_cards - INFO - [system] Upload status changed: IMG_2171.HEIC -> pending_verification
+2025-11-28 16:57:22,576 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2171.HEIC
+completed: IMG_2171.HEIC (moved to pending_verification/bulk back)

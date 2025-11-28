@@ -1,0 +1,1614 @@
+[
+  {
+    "timestamp": "2025-11-28T22:27:33.560Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "donald joseph stanhouse",
+        "number": "493",
+        "team": "texas rangers",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john david hilton",
+        "number": "509",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "lawrence william milbourne",
+        "number": "512",
+        "team": "houston astros",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:34:26.769Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "donald joseph stanhouse",
+        "number": "493",
+        "team": "texas rangers",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john david hilton",
+        "number": "509",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "lawrence william milbourne",
+        "number": "512",
+        "team": "houston astros",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:34:43.631Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "john david hilton",
+        "number": "509",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "lawrence william milbourne",
+        "number": "512",
+        "team": "houston astros",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:34:47.128Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "john david hilton",
+        "number": "509",
+        "team": "other",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "lawrence william milbourne",
+        "number": "512",
+        "team": "houston astros",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:35:06.915Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "lawrence william milbourne",
+        "number": "512",
+        "team": "houston astros",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:35:14.961Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:35:19.328Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:35:29.152Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:35:29.252Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "richard henry pole",
+        "number": "513",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:35:38.633Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "gaylord jackson perry",
+        "number": "530",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:35:52.066Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "david wayne roberts",
+        "number": "558",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:36:07.626Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "los angeles angels",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:36:10.761Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "herman thomas davis",
+        "number": "564",
+        "team": "baltimore orioles",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-28T22:36:23.350Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "david allen tomlin",
+        "number": "578",
+        "team": "san diego padres",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2181_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

@@ -1,12 +1,10 @@
-import os
 import shutil
 from datetime import datetime
 from pathlib import Path
 
 
 def backup_database(db_path: str = "trading_cards.db", backup_dir: str = "backups", retention: int = 20) -> str:
-    """
-    Create a timestamped backup copy of the SQLite database.
+    """Create a timestamped backup copy of the SQLite database.
 
     - Places backups under `<backup_dir>/` with filename `trading_cards_YYYYmmdd_HHMMSS.db`.
     - Keeps only the latest `retention` backups (older ones are deleted).

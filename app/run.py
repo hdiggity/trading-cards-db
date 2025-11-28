@@ -5,10 +5,9 @@ import os
 import time
 from pathlib import Path
 
-import os
-from .utils import gpt_extract_cards_from_image, gpt_extract_cards_single_pass, save_cards_to_verification
+# Old extraction functions removed - simplified pipeline only uses grid processing
 from .grid_processor import GridProcessor, save_grid_cards_to_verification
-from .logging_system import logger, LogSource, ActionType
+from .logging_system import logger
 
 PENDING_VERIFICATION_DIR = Path("cards/pending_verification")
 PENDING_BULK_BACK_DIR = Path("cards/pending_verification/pending_verification_bulk_back")
@@ -20,7 +19,7 @@ PROGRESS_FILE = Path("logs/processing_progress.json")
 
 
 def update_progress(current: int, total: int, current_file: str = "", status: str = "processing"):
-    """Write progress to file for UI to read"""
+    """Write progress to file for UI to read."""
     try:
         PROGRESS_FILE.parent.mkdir(parents=True, exist_ok=True)
         progress_data = {
@@ -40,8 +39,8 @@ def update_progress(current: int, total: int, current_file: str = "", status: st
 def _is_probable_3x3_grid(image_path: Path) -> bool:
     """Lightweight detection for 3x3 grid backs using OpenCV if available.
 
-    Returns True if we can confidently detect 3 horizontal and 3 vertical separators
-    forming a 3x3 grid; False otherwise.
+    Returns True if we can confidently detect 3 horizontal and 3
+    vertical separators forming a 3x3 grid; False otherwise.
     """
     try:
         import cv2  # type: ignore
@@ -146,7 +145,14 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             filename_stem = image_path.stem
             disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
 
+            # Move bulk back image to pending_verification/bulk back FIRST (before saving)
+            PENDING_BULK_BACK_DIR.mkdir(parents=True, exist_ok=True)
+            old_path = str(image_path)
+            new_path = PENDING_BULK_BACK_DIR / image_path.name
+            image_path.rename(new_path)
+
             # Save grid cards with enhanced metadata to pending_verification
+            # Use the new path since we just moved the file
             save_grid_cards_to_verification(
                 grid_cards,
                 out_dir=PENDING_VERIFICATION_DIR,
@@ -154,23 +160,17 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
                 filename_stem=filename_stem,
                 include_tcdb_verification=not disable_tcdb,
                 save_cropped_backs=True,
-                original_image_path=str(image_path)
+                original_image_path=str(new_path)
             )
 
             card_count = len(grid_cards)
             print(f"Grid processing completed: {card_count} cards extracted")
 
-            # Move bulk back image to pending_verification/bulk back
-            PENDING_BULK_BACK_DIR.mkdir(parents=True, exist_ok=True)
-            old_path = str(image_path)
-            new_path = str(PENDING_BULK_BACK_DIR / image_path.name)
-            image_path.rename(PENDING_BULK_BACK_DIR / image_path.name)
-
             # Log file move
             logger.log_file_operation(
                 operation="move",
                 source_path=old_path,
-                dest_path=new_path,
+                dest_path=str(new_path),
                 success=True
             )
 
@@ -184,24 +184,9 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             print(f"completed: {image_path.name} (moved to pending_verification/bulk back)")
             return  # Early return since we handled the move differently
         else:
-            # Fast single-pass extraction with compact high-accuracy prompt
-            fast_mode = os.getenv("FAST_SINGLE_PASS", "true").lower() != "false"
-            if fast_mode:
-                parsed_cards, _ = gpt_extract_cards_single_pass(str(image_path))
-            else:
-                parsed_cards, _ = gpt_extract_cards_from_image(str(image_path))
-            processing_time = time.time() - start_time
-            
-            filename_stem = image_path.stem
-            disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
-            save_cards_to_verification(
-                parsed_cards,
-                out_dir=PENDING_VERIFICATION_DIR,
-                filename_stem=filename_stem,
-                include_tcdb_verification=not disable_tcdb
-            )
-            
-            card_count = len(parsed_cards)
+            # Simplified pipeline only processes 3x3 grids
+            print(f"Error: Image {image_path.name} is not a 3x3 grid. Only grid processing is supported.", file=sys.stderr)
+            return
 
         # move image to pending_verification directory
         PENDING_VERIFICATION_DIR.mkdir(exist_ok=True)
@@ -254,8 +239,8 @@ def process_all_raw_scans():
 
 
 def process_3x3_grid_backs(file_list_path=None):
-    """
-    Process 3x3 grid BACK images as PRIMARY input with enhanced card detection.
+    """Process 3x3 grid BACK images as PRIMARY input with enhanced card
+    detection.
 
     INPUT: Card backs arranged in 3x3 grids (9 cards per image)
     PROCESSING: Enhanced image preprocessing + GPT-4 analysis optimized for card backs
@@ -319,7 +304,7 @@ def process_3x3_grid_backs(file_list_path=None):
 
 
 def process_all_images():
-    """Process all available images with appropriate methods"""
+    """Process all available images with appropriate methods."""
     print("processing all available images...")
     
     # Process 3x3 grid backs first (most accurate with context)
@@ -333,7 +318,7 @@ def process_all_images():
 
 
 def auto_detect_and_process():
-    """Auto-detect image types and process with appropriate methods"""
+    """Auto-detect image types and process with appropriate methods."""
     print("auto-detecting image types and processing...")
     
     # Check for 3x3 grid images
@@ -361,7 +346,7 @@ def auto_detect_and_process():
 
 
 def undo_last_processing():
-    """Undo the last image processing operation using system_logs"""
+    """Undo the last image processing operation using system_logs."""
     last_filename = logger.get_last_processed_filename()
 
     if not last_filename:

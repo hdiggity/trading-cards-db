@@ -2,12 +2,8 @@
 
 from pydantic import BaseModel
 
-from app.fields import (
-    pydantic_annotations,
-    pydantic_defaults,
-    pydantic_read_annotations,
-    pydantic_read_defaults,
-)
+from app.fields import (pydantic_annotations, pydantic_defaults,
+                        pydantic_read_annotations, pydantic_read_defaults)
 
 
 class CardBase(BaseModel):

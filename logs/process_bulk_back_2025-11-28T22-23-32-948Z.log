@@ -1,0 +1,18 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3369 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2181.HEIC
+processing: IMG_2181.HEIC
+2025-11-28 17:23:33,356 - trading_cards - INFO - [filesystem] File uploaded: IMG_2181.HEIC
+2025-11-28 17:23:38,579 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2181.HEIC', 'File size: 4156142 bytes, Type: .heic', None, 'session_20251128_172333_87467', None, 'IMG_2181.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-28 17:23:38,580 - trading_cards - INFO - [filesystem] File uploaded: IMG_2181.HEIC
+2025-11-28 17:23:38,589 - trading_cards - INFO - [system] Upload status changed: IMG_2181.HEIC -> processing
+2025-11-28 17:23:38,595 - trading_cards - INFO - [image_processing] Started processing: IMG_2181.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2181.HEIC
+error processing IMG_2181.HEIC: cannot identify image file 'cards/unprocessed_bulk_back/IMG_2181.HEIC'
+2025-11-28 17:23:38,654 - trading_cards - ERROR - [system] Upload status changed: IMG_2181.HEIC -> failed

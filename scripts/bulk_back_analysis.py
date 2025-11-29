@@ -26,13 +26,16 @@ from PIL import Image, ImageEnhance, ImageFilter
 def load_heic_image(input_path: str) -> Image.Image:
     """Load HEIC image and convert to PIL Image."""
     if input_path.lower().endswith(".heic"):
-        heif_file = pillow_heif.read_heif(input_path)
-        image = Image.frombytes(
-            heif_file.mode,
-            heif_file.size,
-            heif_file.data,
-            "raw",
-        )
+        # Check file size first
+        file_size = Path(input_path).stat().st_size
+        if file_size < 1024:  # Less than 1KB
+            raise ValueError(f"File size too small: {file_size} bytes")
+
+        # Register HEIF opener
+        pillow_heif.register_heif_opener()
+
+        # Use PIL to open HEIC directly
+        image = Image.open(input_path)
     else:
         image = Image.open(input_path)
 
@@ -183,16 +186,53 @@ def main():
         print(f"\nNo HEIC files found in {downloads_dir}")
         sys.exit(0)
 
-    print(f"Processing {len(heic_files)} HEIC file(s) ({args.strength} strength)...\n")
+    # Filter out files that already have a PNG version (already processed) or are corrupted
+    files_to_process = []
+    skipped_count = 0
+    corrupted_count = 0
+    for heic_file in heic_files:
+        # Check if already processed
+        png_version = downloads_dir / (heic_file.stem + ".png")
+        if png_version.exists():
+            print(f"⊘ {heic_file.name} (already processed)")
+            skipped_count += 1
+            continue
+
+        # Check if file is corrupted (0 bytes or too small)
+        file_size = heic_file.stat().st_size
+        if file_size == 0:
+            print(f"✗ {heic_file.name} (corrupted: 0 bytes - skipping)")
+            corrupted_count += 1
+            continue
+        elif file_size < 1024:
+            print(f"✗ {heic_file.name} (corrupted: {file_size} bytes - skipping)")
+            corrupted_count += 1
+            continue
+
+        files_to_process.append(heic_file)
+
+    if not files_to_process:
+        if skipped_count > 0:
+            print(f"\nAll {len(heic_files)} HEIC files already processed")
+        elif corrupted_count > 0:
+            print(f"\nAll {len(heic_files)} HEIC files were corrupted (skipped)")
+        sys.exit(0)
+
+    print(f"\nProcessing {len(files_to_process)} HEIC file(s) ({args.strength} strength)...")
+    if skipped_count > 0:
+        print(f"Skipped {skipped_count} already-processed file(s)")
+    if corrupted_count > 0:
+        print(f"Skipped {corrupted_count} corrupted file(s)")
+    print()
 
     # Process all files (output to same directory)
     success_count = 0
-    for heic_file in heic_files:
+    for heic_file in files_to_process:
         if process_single_file(heic_file, downloads_dir, args.strength, args.quality):
             success_count += 1
 
     # Summary
-    print(f"\nDone: {success_count}/{len(heic_files)} files optimized")
+    print(f"\nDone: {success_count}/{len(files_to_process)} files optimized")
 
 
 if __name__ == "__main__":

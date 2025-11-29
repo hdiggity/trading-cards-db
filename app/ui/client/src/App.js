@@ -216,27 +216,30 @@ function ZoomableImage({ src, alt, className, onError }) {
   
   const handleMouseDown = (e) => {
     if (isZoomed && zoomLevel > 1) {
+      e.preventDefault();
       setMouseDownPos({ x: e.clientX, y: e.clientY });
       setDragStart({ x: e.clientX - position.x, y: e.clientY - position.y });
+      setIsDragging(true);
       setHasDraggedEnough(false);
     }
   };
 
   const handleMouseMove = (e) => {
-    if (isZoomed && zoomLevel > 1 && mouseDownPos.x !== 0) {
+    if (isDragging && isZoomed && zoomLevel > 1) {
+      e.preventDefault();
+
       // Calculate distance moved since mouse down
       const dx = Math.abs(e.clientX - mouseDownPos.x);
       const dy = Math.abs(e.clientY - mouseDownPos.y);
       const distanceMoved = Math.sqrt(dx * dx + dy * dy);
 
-      // Only start dragging if moved beyond threshold
+      // Mark as dragged if moved beyond threshold
       if (distanceMoved > DRAG_THRESHOLD) {
-        if (!isDragging) {
-          setIsDragging(true);
-        }
         setHasDraggedEnough(true);
+      }
 
-        const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
+      const rect = imgRef.current?.getBoundingClientRect();
+      if (rect) {
         const newPos = { x: e.clientX - dragStart.x, y: e.clientY - dragStart.y };
         setPosition(clampPosition(newPos, zoomLevel, rect));
       }
@@ -268,6 +271,7 @@ function ZoomableImage({ src, alt, className, onError }) {
     } else if (e.touches.length === 1 && isZoomed && zoomLevel > 1) {
       setMouseDownPos({ x: e.touches[0].clientX, y: e.touches[0].clientY });
       setDragStart({ x: e.touches[0].clientX - position.x, y: e.touches[0].clientY - position.y });
+      setIsDragging(true);
       setHasDraggedEnough(false);
     }
   };
@@ -288,10 +292,13 @@ function ZoomableImage({ src, alt, className, onError }) {
         setIsZoomed(false);
         setPosition({ x: 0, y: 0 });
       }
-    } else if (isDragging && e.touches.length === 1) {
-      const rect = imgRef.current ? imgRef.current.getBoundingClientRect() : null;
-      const newPos = { x: e.touches[0].clientX - dragStart.x, y: e.touches[0].clientY - dragStart.y };
-      setPosition(clampPosition(newPos, zoomLevel, rect));
+    } else if (isDragging && e.touches.length === 1 && isZoomed && zoomLevel > 1) {
+      e.preventDefault();
+      const rect = imgRef.current?.getBoundingClientRect();
+      if (rect) {
+        const newPos = { x: e.touches[0].clientX - dragStart.x, y: e.touches[0].clientY - dragStart.y };
+        setPosition(clampPosition(newPos, zoomLevel, rect));
+      }
     }
   };
 
@@ -1280,30 +1287,17 @@ function App({ onNavigate }) {
 
       <div className="card-container">
         <div className="image-section">
-          <div className="main-image-block">
-            <div className="main-image-title">Original Scan</div>
-            <ZoomableImage
-              src={`http://localhost:3001/api/bulk-back-image/${currentCard.imageFile}`}
-              alt="Trading card"
-              className="card-image"
-            />
-          </div>
-
-          {/* Paired view: show cropped back and matched front for fast verification */}
-          {verificationMode === 'single' && currentCard?.data?.length > 0 && (
+          {/* Single container with images side-by-side */}
+          {verificationMode === 'single' && currentCard?.data?.length > 0 ? (
             (() => {
               const sel = currentCard.data[Math.min(currentCardIndex, currentCard.data.length - 1)] || {};
               const stem = (currentCard.imageFile || '').replace(/\.[^.]+$/, '');
-              // Build cropped back filename: stem_posN_Name_Number.png
               const pos = sel?._grid_metadata?.position ?? sel?.grid_position ?? currentCardIndex;
-              // Use cropped_back_file or cropped_back_alias from data if available
               let croppedFilename = sel?.cropped_back_file || sel?._grid_metadata?.cropped_back_alias;
               if (croppedFilename) {
-                // Remove directory prefix if present (e.g., "pending_verification_cropped_backs/file.png" -> "file.png")
                 croppedFilename = croppedFilename.split('/').pop();
               }
               if (!croppedFilename) {
-                // Construct filename - use title case to match how files are saved
                 const cardName = (sel?.name || 'unknown')
                   .split(' ')
                   .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
@@ -1312,36 +1306,53 @@ function App({ onNavigate }) {
                 croppedFilename = `${stem}_pos${pos}_${cardName}_${cardNumber}.png`;
               }
               const backCropUrl = croppedFilename ? `http://localhost:3001/api/cropped-back-image/${croppedFilename}` : null;
-              const frontFile = sel?.matched_front_file; // filename under cards/unprocessed_single_front
-              const frontUrl = frontFile
-                ? `http://localhost:3001/api/front-image/${frontFile}`
-                : null;
-              if (!backCropUrl && !frontUrl) return null;
+              const frontFile = sel?.matched_front_file;
+              const frontUrl = frontFile ? `http://localhost:3001/api/front-image/${frontFile}` : null;
+
               return (
-                <div className="paired-images">
-                  {backCropUrl && (
-                    <div className="paired-image-block">
-                      <div className="paired-image-title">BACK (CROPPED)</div>
+                <div className="unified-image-container">
+                  <div className="image-grid">
+                    <div className="image-with-label">
+                      <div className="image-label">FULL SCAN</div>
                       <ZoomableImage
-                        src={backCropUrl}
-                        alt="Card back (cropped)"
+                        src={`http://localhost:3001/api/bulk-back-image/${currentCard.imageFile}`}
+                        alt="Full scan"
                         className="card-image"
                       />
                     </div>
-                  )}
-                  {frontUrl && (
-                    <div className="paired-image-block">
-                      <div className="paired-image-title">FRONT (MATCHED)</div>
-                      <ZoomableImage
-                        src={frontUrl}
-                        alt="Card front (matched)"
-                        className="card-image"
-                      />
-                    </div>
-                  )}
+                    {backCropUrl && (
+                      <div className="image-with-label">
+                        <div className="image-label">CROPPED</div>
+                        <ZoomableImage
+                          src={backCropUrl}
+                          alt="Cropped back"
+                          className="card-image"
+                        />
+                      </div>
+                    )}
+                    {frontUrl && (
+                      <div className="image-with-label">
+                        <div className="image-label">FRONT</div>
+                        <ZoomableImage
+                          src={frontUrl}
+                          alt="Front"
+                          className="card-image"
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
               );
             })()
+          ) : (
+            <div className="main-image-block">
+              <div className="main-image-title">Original Scan</div>
+              <ZoomableImage
+                src={`http://localhost:3001/api/bulk-back-image/${currentCard.imageFile}`}
+                alt="Trading card"
+                className="card-image"
+              />
+            </div>
           )}
         </div>
 

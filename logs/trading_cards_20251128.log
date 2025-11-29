@@ -83,3 +83,35 @@
 2025-11-28 17:41:12,235 - trading_cards - INFO - [filesystem] File move: IMG_2192.HEIC -> IMG_2192.HEIC
 2025-11-28 17:41:12,238 - trading_cards - INFO - [system] Upload status changed: IMG_2192.HEIC -> pending_verification
 2025-11-28 17:41:12,239 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2192.HEIC
+2025-11-28 21:48:39,134 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:48:53,112 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:49:16,107 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:50:21,331 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:50:47,435 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:51:06,469 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:51:28,184 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:51:47,326 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2192.HEIC (card 0)
+2025-11-28 21:53:43,217 - trading_cards - INFO - [system] Upload status changed: IMG_2192.HEIC -> verified
+2025-11-28 21:53:43,220 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2192.HEIC
+2025-11-28 21:56:23,715 - trading_cards - INFO - [filesystem] File uploaded: IMG_2202.HEIC
+2025-11-28 21:56:28,958 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2202.HEIC', 'File size: 4277300 bytes, Type: .heic', None, 'session_20251128_215623_15113', None, 'IMG_2202.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-11-28 21:56:28,958 - trading_cards - INFO - [filesystem] File uploaded: IMG_2202.HEIC
+2025-11-28 21:56:28,970 - trading_cards - INFO - [system] Upload status changed: IMG_2202.HEIC -> processing
+2025-11-28 21:56:28,977 - trading_cards - INFO - [image_processing] Started processing: IMG_2202.HEIC
+2025-11-28 21:56:49,536 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-28 21:56:54,150 - trading_cards - INFO - [filesystem] File move: IMG_2202.HEIC -> IMG_2202.HEIC
+2025-11-28 21:56:54,153 - trading_cards - INFO - [system] Upload status changed: IMG_2202.HEIC -> pending_verification
+2025-11-28 21:56:54,156 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2202.HEIC
+2025-11-28 21:59:26,914 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 21:59:42,498 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 21:59:57,525 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 22:00:44,000 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 22:00:58,011 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 22:01:22,269 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 22:01:36,328 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 22:01:51,329 - trading_cards - SUCCESS - [verification] Single card passed: IMG_2202.HEIC (card 0)
+2025-11-28 22:02:05,305 - trading_cards - INFO - [system] Upload status changed: IMG_2202.HEIC -> verified
+2025-11-28 22:02:05,309 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2202.HEIC

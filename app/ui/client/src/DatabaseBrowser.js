@@ -190,7 +190,8 @@ function DatabaseBrowser({ onNavigate }) {
       });
       const result = await response.json();
       if (result.success) {
-        setRefreshResult(`Updated ${result.updated} of ${result.total} cards in ${result.batches} batches`);
+        const batchText = result.batches ? ` in ${result.batches} batches` : '';
+        setRefreshResult(`Updated ${result.updated} of ${result.total} cards${batchText}`);
         fetchCards();
       } else {
         setRefreshResult(`Error: ${result.error || 'Unknown error'}`);

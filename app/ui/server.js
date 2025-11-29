@@ -847,6 +847,20 @@ print("Database import completed successfully")
               }
             }
 
+            // Move cropped back to verified/cropped_backs (last card)
+            if (croppedBackFile) {
+              try {
+                await fs.mkdir(CROPPED_BACKS_VERIFIED, { recursive: true });
+                await fs.rename(
+                  path.join(CROPPED_BACKS_PENDING, croppedBackFile),
+                  path.join(CROPPED_BACKS_VERIFIED, croppedBackFile)
+                );
+                console.log(`[pass-card] Moved last cropped back to verified: ${croppedBackFile}`);
+              } catch (cropErr) {
+                console.error(`[pass-card] Warning: Failed to move last cropped back: ${cropErr.message}`);
+              }
+            }
+
             // Log verification action (all from this image processed)
             try {
               const py = `from app.logging_system import logger\nlogger.log_verification_action(filename='${(imageFileEarly||'').replace(/'/g,"\'")}', action='pass')`;

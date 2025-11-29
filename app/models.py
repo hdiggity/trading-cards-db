@@ -42,7 +42,7 @@ class CardComplete(Base):
     value_estimate = Column(String)
     notes = Column(Text)
     quantity = Column(Integer)
-    last_updated = Column(DateTime, onupdate=func.now())
+    last_updated = Column(DateTime, server_default=func.now(), onupdate=func.now())
 
     # Source/scan metadata columns specific to cards_complete
     source_file = Column(String, index=True)

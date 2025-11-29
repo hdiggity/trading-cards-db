@@ -4,6 +4,7 @@ Simplified single-pass GPT Vision extraction for 3x3 grid card backs
 
 import json
 import sys
+import re
 from pathlib import Path
 from typing import Dict, List, Any, Tuple
 from dataclasses import dataclass
@@ -17,6 +18,46 @@ import os
 
 register_heif_opener()
 MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
+
+def normalize_price(price_str):
+    """Validate and normalize price to $xx.xx format"""
+    if not price_str:
+        return "$1.00"
+
+    # Check if already in correct format
+    if re.match(r'^\$\d+\.\d{2}$', str(price_str)):
+        return str(price_str)
+
+    # Extract all numbers from the string
+    nums = re.findall(r'\d+\.?\d*', str(price_str))
+    if not nums:
+        return "$1.00"
+
+    # Take first number or average if multiple
+    if len(nums) == 1:
+        val = float(nums[0])
+    else:
+        val = sum(float(n) for n in nums) / len(nums)
+
+    # Round to common price points and format as $xx.xx
+    if val < 1.5:
+        return "$1.00"
+    elif val < 2.5:
+        return "$2.00"
+    elif val < 4:
+        return "$3.00"
+    elif val < 7:
+        return "$5.00"
+    elif val < 15:
+        return "$10.00"
+    elif val < 30:
+        return "$20.00"
+    elif val < 75:
+        return "$50.00"
+    elif val < 150:
+        return "$100.00"
+    else:
+        return f"${int(val)}.00"
 
 @dataclass
 class GridCard:
@@ -68,6 +109,7 @@ Extract data for each card (position 0-8) in this order:
 8. condition: Condition assessment (mint, near_mint, excellent, very_good, good, fair, poor, damaged)
 9. is_player_card: true/false
 10. features: Special features or 'none'
+11. value_estimate: How much is this card probably worth? Format as $xx.xx (e.g., $1.00, $5.00, $10.00)
 
 Return ONLY a JSON array with exactly 9 objects:
 [{
@@ -81,7 +123,8 @@ Return ONLY a JSON array with exactly 9 objects:
   "sport": "baseball",
   "condition": "very_good",
   "is_player_card": true,
-  "features": "none"
+  "features": "none",
+  "value_estimate": "$1.00"
 }, ...]"""
 
         # Call GPT Vision API
@@ -123,11 +166,14 @@ Return ONLY a JSON array with exactly 9 objects:
             card.setdefault('grid_position', i)
             card.setdefault('_grid_metadata', {"position": i, "row": i // 3, "col": i % 3})
 
-        # Lowercase field values for consistency
+        # Lowercase field values for consistency and normalize prices
         for card in raw_data:
             for key in ("name", "sport", "brand", "team", "card_set", "condition"):
                 if key in card and card[key] is not None and isinstance(card[key], str):
                     card[key] = card[key].lower().strip()
+            # Normalize price estimate
+            if 'value_estimate' in card:
+                card['value_estimate'] = normalize_price(card['value_estimate'])
 
         # Create GridCard objects
         grid_cards = []

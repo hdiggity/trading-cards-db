@@ -1,0 +1,3075 @@
+[
+  {
+    "timestamp": "2025-11-29T02:48:23.065Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "frank robinson",
+        "number": "580",
+        "team": "los angeles",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "terry wayne hughes",
+        "number": "612",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "paulino casanova",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:48:35.521Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "frank robinson",
+        "number": "580",
+        "team": "los angeles",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "terry wayne hughes",
+        "number": "612",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "paulino casanova",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:48:38.744Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "frank robinson",
+        "number": "580",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "terry wayne hughes",
+        "number": "612",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "paulino casanova",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:48:44.682Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "terry wayne hughes",
+        "number": "612",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "paulino casanova",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:48:50.766Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "terry wayne hughes",
+        "number": "612",
+        "team": "n/a",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "paulino casanova",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:48:52.739Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "terry wayne hughes",
+        "number": "612",
+        "team": "boston red sox",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "paulino casanova",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:49:04.371Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "paulino casanova",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:49:06.681Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "paulino casanova ortiz",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:49:13.792Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "paulino casanova ortiz",
+        "number": "633",
+        "team": "n/a",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:49:15.741Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "paulino casanova ortiz",
+        "number": "633",
+        "team": "atlanta braves",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:50:15.768Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "yankees",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:50:20.978Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "steve jack kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:50:36.892Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:50:45.936Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:50:47.076Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "texas rangers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:50:56.379Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "n/a",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:50:59.955Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:06.111Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "tom grieve",
+        "number": "106",
+        "team": "texas rangers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos5.png"
+        },
+        "is_player": true
+      },
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:11.614Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:19.216Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "n/a",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:21.239Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "cincinnati",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:25.371Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "149",
+        "team": "cincinnati reds",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:27.839Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "george foster",
+        "number": "179",
+        "team": "cincinnati reds",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:37.546Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:44.715Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "n/a",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:51:46.972Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "steve foucault",
+        "number": "303",
+        "team": "texas rangers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:53:09.976Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:53:29.391Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "n/a",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:53:42.822Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "pie traynor",
+        "number": "343",
+        "team": "pittsburg pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2192_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

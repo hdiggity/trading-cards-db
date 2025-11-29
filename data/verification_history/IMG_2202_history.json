@@ -1,0 +1,3192 @@
+[
+  {
+    "timestamp": "2025-11-29T02:59:16.507Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "ed crosby",
+        "number": "451",
+        "team": "cardinals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "bill champion",
+        "number": "501",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:59:19.631Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "ed crosby",
+        "number": "451",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "bill champion",
+        "number": "501",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:59:26.525Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "ed crosby",
+        "number": "451",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "bill champion",
+        "number": "501",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:59:38.523Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "bill champion",
+        "number": "501",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:59:42.154Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "bill champion",
+        "number": "501",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:59:48.872Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:59:55.444Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "athletics",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T02:59:57.169Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mike norris",
+        "number": "653",
+        "team": "oakland athletics",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:04.015Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "385T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:08.175Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "n/a",
+        "number": "383T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:17.240Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "",
+        "number": "383T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:27.435Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "383T",
+        "team": "n/a",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:32.173Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "383T",
+        "team": "n/a",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:34.422Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "383T",
+        "team": "texas rangers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:40.339Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "383T",
+        "team": "texas rangers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "sports extra",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:43.654Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "383T",
+        "team": "texas rangers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:55.350Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "tigers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:00:57.671Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tito fuentes",
+        "number": "652",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:01:10.771Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:01:21.922Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "johnny bench",
+        "number": "70",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:01:32.372Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:01:35.983Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "dennis leonard",
+        "number": "75",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:01:45.755Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:01:50.987Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bob davis",
+        "number": "78",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:02:01.134Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-11-29T03:02:04.886Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "don money",
+        "number": "79",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2202_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

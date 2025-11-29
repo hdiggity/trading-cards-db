@@ -1306,8 +1306,6 @@ function App({ onNavigate }) {
                 croppedFilename = `${stem}_pos${pos}_${cardName}_${cardNumber}.png`;
               }
               const backCropUrl = croppedFilename ? `http://localhost:3001/api/cropped-back-image/${croppedFilename}` : null;
-              const frontFile = sel?.matched_front_file;
-              const frontUrl = frontFile ? `http://localhost:3001/api/front-image/${frontFile}` : null;
 
               return (
                 <div className="unified-image-container">
@@ -1326,16 +1324,6 @@ function App({ onNavigate }) {
                         <ZoomableImage
                           src={backCropUrl}
                           alt="Cropped back"
-                          className="card-image"
-                        />
-                      </div>
-                    )}
-                    {frontUrl && (
-                      <div className="image-with-label">
-                        <div className="image-label">FRONT</div>
-                        <ZoomableImage
-                          src={frontUrl}
-                          alt="Front"
                           className="card-image"
                         />
                       </div>

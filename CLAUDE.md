@@ -19,17 +19,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture Overview
 
-This is a trading card digitization system that uses GPT-4 Vision to extract structured data from scanned trading card images.
+This is a trading card digitization system that uses GPT-5.2 Vision to extract structured data from scanned trading card images.
 
 ### Data Flow
 1. **INPUT**: 3x3 Grid Backs in `cards/unprocessed_bulk_back/` - **ONLY RAW INPUT TO PIPELINE**
-2. **PROCESSING**: Single-pass GPT-4 Vision extraction from grid back cards (9 cards per image)
+2. **PROCESSING**: Single-pass GPT-5.2 Vision extraction from grid back cards (9 cards per image)
 3. **OUTPUT**: Structured JSON with extracted data → `cards/pending_verification/` + cropped individual back images
 4. **VERIFICATION**: React UI for manual review and editing
 5. **DATABASE**: Final import to SQLite database after verification
 
 ### Processing Approach
-- **Single-Pass Extraction**: Each 3x3 grid is sent once to GPT-4 Vision with a simple, clear prompt
+- **Single-Pass Extraction**: Each 3x3 grid is sent once to GPT-5.2 Vision with a simple, clear prompt
 - **No Fallbacks**: No multi-tier processing, no enhanced/detailed modes, no learned corrections
 - **No Front Matching**: Front images are not used for extraction or matching
 - **Manual Verification**: UI displays cropped card backs for easy manual correction of any errors
@@ -43,7 +43,7 @@ This is a trading card digitization system that uses GPT-4 Vision to extract str
 ### Key Components
 
 **Simplified Image Processing Pipeline** (`app/run.py`, `app/grid_processor.py`)
-- Uses OpenAI GPT-4o Vision API for single-pass extraction
+- Uses OpenAI GPT-5.2 Vision API for single-pass extraction
 - Simple, direct prompt asking for the database fields needed
 - No image preprocessing, enhancement, or multi-pass validation
 - No front-back matching, learned corrections, or checklist validation
@@ -62,6 +62,6 @@ This is a trading card digitization system that uses GPT-4 Vision to extract str
 - Dynamic annotation system for consistent field handling
 
 ### Environment Requirements
-- `OPENAI_API_KEY` environment variable required for GPT-4 Vision API
-- `OPENAI_MODEL` (optional) - Model to use (default: "gpt-4o")
+- `OPENAI_API_KEY` environment variable required for GPT-5.2 Vision API
+- `OPENAI_MODEL` (optional) - Model to use (default: "gpt-5.2")
 - Uses `.env` file for configuration loading

@@ -243,7 +243,7 @@ def process_3x3_grid_backs(file_list_path=None):
     detection.
 
     INPUT: Card backs arranged in 3x3 grids (9 cards per image)
-    PROCESSING: Enhanced image preprocessing + GPT-4 analysis optimized for card backs
+    PROCESSING: Enhanced image preprocessing + GPT-5.2 analysis optimized for card backs
     BACKUP: Single front images used only to supplement missing data from backs
 
     Front images remain untouched - used only as reference for matching/supplementing.

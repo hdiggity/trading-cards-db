@@ -2,10 +2,10 @@
 """Optimize HEIC images of 3x3 card grids for ChatGPT extraction.
 
 Batch processes all HEIC files from Downloads folder, replacing them
-with optimized PNG files (better format for GPT-4 Vision).
+with optimized PNG files (better format for GPT-5.2 Vision).
 
 Applies gentle, non-destructive enhancements to improve readability
-without introducing artifacts that confuse GPT-4 Vision.
+without introducing artifacts that confuse GPT-5.2 Vision.
 
 WARNING: Original HEIC files are DELETED and replaced with PNG!
 
@@ -47,7 +47,7 @@ def load_heic_image(input_path: str) -> Image.Image:
 
 
 def optimize_for_chatgpt(image: Image.Image, strength: str = "light") -> Image.Image:
-    """Apply gentle enhancements optimized for ChatGPT/GPT-4 Vision.
+    """Apply gentle enhancements optimized for ChatGPT/GPT-5.2 Vision.
 
     Args:
         image: Input PIL Image
@@ -83,7 +83,7 @@ def optimize_for_chatgpt(image: Image.Image, strength: str = "light") -> Image.I
 
     config = presets.get(strength, presets["light"])
 
-    # Step 1: Resize to optimal resolution for GPT-4 Vision
+    # Step 1: Resize to optimal resolution for GPT-5.2 Vision
     max_size = config["resize_max"]
     if max(image.size) > max_size:
         ratio = max_size / max(image.size)
@@ -127,7 +127,7 @@ def process_single_file(
         output_filename = input_path.stem + ".png"
         output_path = output_dir / output_filename
 
-        # Save as PNG (better for GPT-4 Vision)
+        # Save as PNG (better for GPT-5.2 Vision)
         optimized.save(
             str(output_path),
             format="PNG",
@@ -232,7 +232,8 @@ def main():
             success_count += 1
 
     # Summary
-    print(f"\nDone: {success_count}/{len(files_to_process)} files optimized")
+    print(f"\nDone: {
+        success_count}/{len(files_to_process)} files optimized")
 
 
 if __name__ == "__main__":

@@ -22,8 +22,8 @@ cd ../../..
 Create a `.env` file in the project root:
 ```
 OPENAI_API_KEY=your-openai-api-key-here
-# Choose the OpenAI model (defaults to gpt-4o); when available, set to gpt-5
-OPENAI_MODEL=gpt-4o
+# Choose the OpenAI model (defaults to gpt-5.2)
+OPENAI_MODEL=gpt-5.2
 # Speed/quality knobs (optional)
 # Use fast heuristic price ranges during extraction (no extra API calls)
 VALUE_ESTIMATE_MODE=heuristic   # gpt|heuristic|off
@@ -121,7 +121,7 @@ images/
 - **Direct Database Import**: No intermediate verification steps
 
 ### Enhanced Extraction System (Active)
-- **Multi-Pass Validation**: 2-pass GPT-4 extraction with confidence scoring
+- **Single-Pass Extraction**: GPT-5.2 Vision extraction optimized for structured data
 - **Checklist Validation**: 111 cards across 8 sets, validates against known checklists
 - **Post-Extraction Learning**: Auto-corrects common mistakes from 201 previous corrections
 - **Self-Improving**: Gets smarter with every verification session

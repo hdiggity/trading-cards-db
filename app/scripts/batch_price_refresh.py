@@ -119,7 +119,7 @@ Return only a JSON object with index as key and price as value. Format all price
 
             try:
                 response = client.chat.completions.create(
-                    model="gpt-4o-mini",
+                    model="gpt-5.2-chat-latest",
                     messages=[{"role": "user", "content": prompt}],
                     max_tokens=500,
                     temperature=0.1

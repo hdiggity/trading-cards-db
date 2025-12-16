@@ -17,7 +17,7 @@ from .utils import client
 import os
 
 register_heif_opener()
-MODEL = os.getenv("OPENAI_MODEL", "gpt-4o")
+MODEL = os.getenv("OPENAI_MODEL", "gpt-5.2")
 
 def normalize_price(price_str):
     """Validate and normalize price to $xx.xx format"""

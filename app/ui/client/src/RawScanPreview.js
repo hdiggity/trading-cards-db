@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './RawScanPreview.css';
 
-function RawScanPreview({ onNavigate }) {
+function RawScanPreview() {
+  const navigate = useNavigate();
   const [files, setFiles] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -23,7 +25,7 @@ function RawScanPreview({ onNavigate }) {
     <div className="raw-preview">
       <header className="raw-header">
         <h1>raw scan preview</h1>
-        <button className="back-button" onClick={() => onNavigate && onNavigate('main')}>← Back</button>
+        <button className="back-button" onClick={() => navigate('/')}>← Back</button>
       </header>
       {loading ? (
         <div className="loading">Loading raw scans…</div>

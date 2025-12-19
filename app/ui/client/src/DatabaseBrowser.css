@@ -193,6 +193,7 @@
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: #1a1a1a;
+  text-transform: none;
 }
 
 .cards-table tr:nth-child(even) {
@@ -212,6 +213,7 @@
   font-size: 12px;
   box-sizing: border-box;
   background: white;
+  text-transform: none;
 }
 
 .cards-table input:focus,
@@ -524,6 +526,7 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   display: flex;
   font-size: 14px;
   color: #1a1a1a;
+  text-transform: none;
 }
 
 .detail-label {
@@ -574,6 +577,7 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   border-radius: 6px;
   font-size: 14px;
   background: white;
+  text-transform: none;
 }
 
 .modal-edit-form input:focus,
@@ -716,6 +720,7 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   border-radius: 4px;
   font-size: 12px;
   background: white;
+  text-transform: none;
 }
 
 .copy-edit-form input:focus,

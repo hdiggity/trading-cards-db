@@ -10,14 +10,11 @@ body {
   background-color: #fafbfc;
   color: #1a202c;
   line-height: 1.6;
+  text-transform: uppercase;
 }
 
 code {
   font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-}
-
-button {
-  font-family: inherit;
 }
 
 input, select, textarea {
@@ -35,9 +32,30 @@ html {
   outline-offset: 2px;
 }
 
-/* Remove default button styles */
+/* Button styles - all buttons uppercase */
 button {
+  font-family: inherit;
   background: none;
   border: none;
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Headers should be uppercase */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+/* Action labels should be uppercase */
+.action-label, .image-label {
+  text-transform: uppercase;
+}
+
+/* Card data should NOT be uppercase - keep original case */
+input, textarea, select,
+.card-data, .card-value, .card-field-value,
+.edit-input, .field-value,
+[class*="data-"], [class*="-value"],
+.card-info input, .card-info textarea {
+  text-transform: none;
 }

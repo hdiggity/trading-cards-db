@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SystemLogs.css';
 
-function SystemLogs({ onNavigate }) {
+function SystemLogs() {
+  const navigate = useNavigate();
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -102,7 +104,7 @@ function SystemLogs({ onNavigate }) {
       <div className="system-logs">
         <div className="logs-header">
           <h2>system logs</h2>
-          <button onClick={() => onNavigate('main')} className="back-button">
+          <button onClick={() => navigate('/')} className="back-button">
             ← Back to Main
           </button>
         </div>
@@ -130,7 +132,7 @@ function SystemLogs({ onNavigate }) {
           <button onClick={exportAllLogs} disabled={logs.length === 0}>
             Export All
           </button>
-          <button onClick={() => onNavigate('main')} className="back-button">
+          <button onClick={() => navigate('/')} className="back-button">
             ← Back to Main
           </button>
         </div>

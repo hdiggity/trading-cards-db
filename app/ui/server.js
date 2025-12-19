@@ -1,8 +1,11 @@
+// load environment variables first
+const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '../../.env') });
+
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs').promises;
 const fsSync = require('fs');
-const path = require('path');
 const { spawn } = require('child_process');
 const multer = require('multer');
 
@@ -12,6 +15,14 @@ const PORT = process.env.PORT || 3001;
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Import routes
+const healthRoutes = require('./routes/health');
+const authRoutes = require('./routes/auth');
+
+// Register routes
+app.use('/', healthRoutes);  // /health, /health/readiness, /health/liveness
+app.use('/api/auth', authRoutes);  // /api/auth/login, /api/auth/register, etc.
 
 // Canonicalize team names (JS side) for reprocess normalization
 const TEAM_CANON = {
@@ -334,6 +345,74 @@ async function ensureDirectories() {
   }
 }
 
+// Startup validation
+async function validateStartup() {
+  const errors = [];
+  const warnings = [];
+
+  // check openai api key
+  if (!process.env.OPENAI_API_KEY) {
+    errors.push('OPENAI_API_KEY environment variable is required');
+  } else {
+    console.log('✓ openai api key configured');
+  }
+
+  // check jwt secret for production
+  const environment = process.env.ENVIRONMENT || 'development';
+  if (environment === 'production') {
+    if (!process.env.JWT_SECRET) {
+      errors.push('JWT_SECRET is required for production environment');
+    } else if (process.env.JWT_SECRET.length < 32) {
+      warnings.push('JWT_SECRET should be at least 32 characters for security');
+    } else {
+      console.log('✓ jwt secret configured for production');
+    }
+  }
+
+  // check database url
+  if (!process.env.DATABASE_URL) {
+    warnings.push('DATABASE_URL not set, using default sqlite database');
+  } else {
+    console.log('✓ database url configured');
+  }
+
+  // check python availability
+  try {
+    await new Promise((resolve, reject) => {
+      const pythonCheck = spawn('python', ['--version']);
+      pythonCheck.on('close', (code) => {
+        if (code === 0) {
+          console.log('✓ python available');
+          resolve();
+        } else {
+          reject(new Error('python not available'));
+        }
+      });
+      pythonCheck.on('error', (err) => {
+        reject(err);
+      });
+    });
+  } catch (err) {
+    warnings.push('python not available - image processing will fail');
+  }
+
+  // print warnings
+  if (warnings.length > 0) {
+    console.log('\n⚠️  warnings:');
+    warnings.forEach(w => console.log(`  - ${w}`));
+  }
+
+  // print errors and exit if any
+  if (errors.length > 0) {
+    console.error('\n❌ configuration errors:');
+    errors.forEach(e => console.error(`  - ${e}`));
+    console.error('\nserver cannot start with configuration errors\n');
+    process.exit(1);
+  }
+
+  console.log('\n✓ startup validation passed\n');
+}
+
 // Lightweight audit logger (JSON Lines)
 async function audit(action, payload = {}) {
   try {
@@ -548,11 +627,11 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
       console.log(`[pass-card] No cropped_backs dir or error: ${err.message}`);
     }
 
-    // Convert selected text fields to lowercase for consistency (include 'name')
+    // Convert selected text fields to lowercase for consistency
     // Also inject source_file and cropped_back_file
     const processedCardData = cardToImport.map(card => {
       const processedCard = { ...card };
-      const textFields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition'];
+      const textFields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition', 'notes'];
       textFields.forEach(field => {
         if (processedCard[field] && typeof processedCard[field] === 'string') {
           processedCard[field] = processedCard[field].toLowerCase();
@@ -928,7 +1007,7 @@ app.post('/api/pass/:id', async (req, res) => {
     // Convert text fields to lowercase for consistency and inject source_file and cropped_back_file
     cardData = cardData.map((card, idx) => {
       const processedCard = { ...card };
-      const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
+      const textFields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition', 'notes'];
       textFields.forEach(field => {
         if (processedCard[field] && typeof processedCard[field] === 'string') {
           processedCard[field] = processedCard[field].toLowerCase();
@@ -978,7 +1057,7 @@ card_data = input_data.get('cards', input_data) if isinstance(input_data, dict) 
 source_file = input_data.get('source_file', '') if isinstance(input_data, dict) else ''
 
 # Convert text fields to lowercase for consistency
-text_fields = ['name', 'sport', 'brand', 'team', 'card_set']
+text_fields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition', 'notes']
 for card_info in card_data:
     for field in text_fields:
         if field in card_info and isinstance(card_info[field], str):
@@ -1860,6 +1939,12 @@ app.post('/api/process-raw-scans', async (req, res) => {
     // Write the file list to a temp file for Python to read
     const fileListPath = path.join(logsDir, `process_list_${stamp}.json`);
     await fs.writeFile(fileListPath, JSON.stringify(filesToProcess));
+
+    // Clear any existing progress file to prevent showing stale 100% progress
+    try {
+      await fs.unlink(PYTHON_PROGRESS_FILE).catch(() => {});
+    } catch {}
+
 
     const child = spawn('python', ['-m', 'app.run', '--grid', '--file-list', fileListPath], {
       cwd: path.join(__dirname, '../..'),
@@ -3187,10 +3272,84 @@ print(json.dumps({
 
 // Upload history endpoint removed
 
-// Initialize and start server
-ensureDirectories().then(() => {
-  app.listen(PORT, () => {
-    console.log(`🚀 API Server running on http://localhost:${PORT}`);
-    console.log(`📁 Frontend available at http://localhost:3000`);
-  });
+// ============================================================================
+// Recent Activity Endpoint
+// ============================================================================
+
+// Recent activity endpoint - returns last 10 verification actions across all files
+app.get('/api/recent-activity', async (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit) || 10;
+    const allActivity = [];
+
+    // Read all history files from verification history directory
+    const historyDir = path.join(PENDING_VERIFICATION_DIR, 'history');
+
+    try {
+      await fs.mkdir(historyDir, { recursive: true });
+      const files = await fs.readdir(historyDir);
+
+      for (const file of files) {
+        if (file.endsWith('_history.json')) {
+          const fileId = file.replace('_history.json', '');
+          const historyPath = path.join(historyDir, file);
+
+          try {
+            const content = await fs.readFile(historyPath, 'utf8');
+            const history = JSON.parse(content);
+
+            // Add each action with file context
+            history.forEach(action => {
+              allActivity.push({
+                ...action,
+                fileId: fileId,
+                fileName: `${fileId}.json`
+              });
+            });
+          } catch (e) {
+            console.error(`[recent-activity] Error reading ${file}:`, e);
+          }
+        }
+      }
+
+      // Sort by timestamp (most recent first) and take the limit
+      allActivity.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+      const recentActivity = allActivity.slice(0, limit);
+
+      res.json({
+        activity: recentActivity,
+        count: recentActivity.length,
+        total: allActivity.length
+      });
+    } catch (e) {
+      // History directory doesn't exist or is empty
+      res.json({ activity: [], count: 0, total: 0 });
+    }
+  } catch (error) {
+    console.error('[recent-activity] Error:', error);
+    res.status(500).json({ error: error.message, activity: [], count: 0, total: 0 });
+  }
 });
+
+// Initialize and start server
+async function startServer() {
+  try {
+    console.log('🔍 validating startup configuration...\n');
+    await validateStartup();
+
+    console.log('📁 ensuring required directories exist...');
+    await ensureDirectories();
+
+    app.listen(PORT, () => {
+      console.log(`\n🚀 server running on http://localhost:${PORT}`);
+      console.log(`📁 frontend available at http://localhost:3000`);
+      console.log(`🏥 health check available at http://localhost:${PORT}/health`);
+      console.log(`🔐 auth endpoints available at http://localhost:${PORT}/api/auth`);
+    });
+  } catch (err) {
+    console.error('failed to start server:', err);
+    process.exit(1);
+  }
+}
+
+startServer();

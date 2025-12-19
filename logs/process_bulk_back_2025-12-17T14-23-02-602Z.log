@@ -1,0 +1,19 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3369 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2212.HEIC
+processing: IMG_2212.HEIC
+2025-12-17 09:23:04,713 - trading_cards - INFO - [filesystem] File uploaded: IMG_2212.HEIC
+2025-12-17 09:23:09,909 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2212.HEIC', 'File size: 2727236 bytes, Type: .heic', None, 'session_20251217_092304_38598', None, 'IMG_2212.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-17 09:23:09,910 - trading_cards - INFO - [filesystem] File uploaded: IMG_2212.HEIC
+2025-12-17 09:23:09,915 - trading_cards - INFO - [system] Upload status changed: IMG_2212.HEIC -> processing
+2025-12-17 09:23:09,920 - trading_cards - INFO - [image_processing] Started processing: IMG_2212.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2212.HEIC
+2025-12-17 09:23:14,381 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+error processing IMG_2212.HEIC: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-12-17 09:23:14,385 - trading_cards - ERROR - [system] Upload status changed: IMG_2212.HEIC -> failed

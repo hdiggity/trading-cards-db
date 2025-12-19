@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import MainPage from './MainPage';
 import App from './App';
 import DatabaseBrowser from './DatabaseBrowser';
@@ -6,28 +7,18 @@ import SystemLogs from './SystemLogs';
 import RawScanPreview from './RawScanPreview';
 
 function AppRouter() {
-  const [currentView, setCurrentView] = useState('main');
-  const [navKey, setNavKey] = useState(0);
-
-  const handleNavigate = (view) => {
-    setCurrentView(view);
-    // Increment key to force remount and data refresh when navigating back
-    setNavKey(k => k + 1);
-  };
-
-  switch (currentView) {
-    case 'verify':
-      return <App key={`verify-${navKey}`} onNavigate={handleNavigate} />;
-    case 'database':
-      return <DatabaseBrowser key={`db-${navKey}`} onNavigate={handleNavigate} />;
-    case 'logs':
-      return <SystemLogs key={`logs-${navKey}`} onNavigate={handleNavigate} />;
-    case 'raw-preview':
-      return <RawScanPreview key={`raw-${navKey}`} onNavigate={handleNavigate} />;
-    case 'main':
-    default:
-      return <MainPage key={`main-${navKey}`} onNavigate={handleNavigate} />;
-  }
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/verification" element={<App />} />
+        <Route path="/database" element={<DatabaseBrowser />} />
+        <Route path="/logs" element={<SystemLogs />} />
+        <Route path="/raw-preview" element={<RawScanPreview />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default AppRouter;

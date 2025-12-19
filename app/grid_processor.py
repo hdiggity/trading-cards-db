@@ -108,8 +108,9 @@ Extract data for each card (position 0-8) in this order:
 7. sport: Sport type (baseball, basketball, etc.)
 8. condition: Condition assessment (mint, near_mint, excellent, very_good, good, fair, poor, damaged)
 9. is_player_card: true/false
-10. features: Special features or 'none'
-11. value_estimate: How much is this card probably worth? Format as $xx.xx (e.g., $1.00, $5.00, $10.00)
+10. features: ONLY special features like "rookie", "error", "autograph", "serial numbered", "memorabilia", etc. Use 'none' if no special features.
+11. notes: Interesting content from the card itself (achievements, career highlights, unique stats, trivia, etc.). Do NOT mention duplicates in grid, image quality, or scanning artifacts. Use 'none' if nothing noteworthy.
+12. value_estimate: How much is this card probably worth? Format as $xx.xx (e.g., $1.00, $5.00, $10.00)
 
 Return ONLY a JSON array with exactly 9 objects:
 [{
@@ -124,6 +125,7 @@ Return ONLY a JSON array with exactly 9 objects:
   "condition": "very_good",
   "is_player_card": true,
   "features": "none",
+  "notes": "led league in stolen bases 1975",
   "value_estimate": "$1.00"
 }, ...]"""
 
@@ -137,7 +139,7 @@ Return ONLY a JSON array with exactly 9 objects:
                     {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}}
                 ]}
             ],
-            max_tokens=2000,
+            max_completion_tokens=2000,
             temperature=0.1
         )
 
@@ -168,7 +170,7 @@ Return ONLY a JSON array with exactly 9 objects:
 
         # Lowercase field values for consistency and normalize prices
         for card in raw_data:
-            for key in ("name", "sport", "brand", "team", "card_set", "condition"):
+            for key in ("name", "sport", "brand", "team", "card_set", "condition", "notes"):
                 if key in card and card[key] is not None and isinstance(card[key], str):
                     card[key] = card[key].lower().strip()
             # Normalize price estimate
@@ -178,12 +180,21 @@ Return ONLY a JSON array with exactly 9 objects:
         # Create GridCard objects
         grid_cards = []
         for i, card_data in enumerate(raw_data):
+            # Calculate confidence based on data completeness
+            required_fields = ['name', 'number', 'team', 'copyright_year', 'brand']
+            filled_required = sum(1 for f in required_fields if card_data.get(f) and card_data.get(f) not in ['unknown', 'unidentified', None])
+
+            # Base confidence on GPT-5.2 quality (0.90) plus completeness bonus
+            base_confidence = 0.90
+            completeness_bonus = (filled_required / len(required_fields)) * 0.10
+            confidence = round(base_confidence + completeness_bonus, 2)
+
             grid_card = GridCard(
                 position=i,
                 row=i // 3,
                 col=i % 3,
                 data=card_data,
-                confidence=0.8  # Fixed confidence for single-pass
+                confidence=confidence
             )
             grid_cards.append(grid_card)
 
@@ -203,7 +214,8 @@ Return ONLY a JSON array with exactly 9 objects:
             "card_set": "n/a",
             "condition": "very_good",
             "is_player_card": True,
-            "features": "none"
+            "features": "none",
+            "notes": "none"
         }
 
 

@@ -1,30 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './DatabaseBrowser.css';
 
-// Utility function to format field names for display
-const formatFieldName = (fieldName) => {
-  const fieldMap = {
-    'name': 'Name',
-    'sport': 'Sport',
-    'brand': 'Brand',
-    'number': 'Number',
-    'copyright_year': 'Year',
-    'team': 'Team',
-    'card_set': 'Set',
-    'condition': 'Condition',
-    'is_player': 'Player Card',
-    'features': 'Features',
-    'quantity': 'Qty',
-    'value_estimate': 'Price Estimate',
-    'date_added': 'Date Added',
-    'last_updated': 'Last Updated'
-  };
-  return fieldMap[fieldName] || fieldName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-};
-
 // Utility helpers for display normalization
-const toTitleCase = (str) => (str ? String(str) : '');
-
 const normalizeCondition = (val) => (val ? String(val).replace(/_/g, ' ').trim().toLowerCase() : '');
 
 // Utility function to format field values for display
@@ -67,7 +45,8 @@ const formatFieldValue = (fieldName, value) => {
   }
 };
 
-function DatabaseBrowser({ onNavigate }) {
+function DatabaseBrowser() {
+  const navigate = useNavigate();
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
@@ -92,7 +71,6 @@ function DatabaseBrowser({ onNavigate }) {
   const [sortBy, setSortBy] = useState('');
   const [sortDir, setSortDir] = useState('asc');
   const [modalCard, setModalCard] = useState(null);
-  const [modalImageUrl, setModalImageUrl] = useState(null);
   const [modalLoading, setModalLoading] = useState(false);
   const [modalEditMode, setModalEditMode] = useState(false);
   const [modalFormData, setModalFormData] = useState({});
@@ -363,7 +341,6 @@ function DatabaseBrowser({ onNavigate }) {
 
     setModalCard(card);
     setModalLoading(true);
-    setModalImageUrl(null);
     setModalEditMode(false);
     setModalIndividualCards([]);
 
@@ -381,7 +358,6 @@ function DatabaseBrowser({ onNavigate }) {
 
   const closeModal = () => {
     setModalCard(null);
-    setModalImageUrl(null);
     setModalEditMode(false);
     setModalFormData({});
     setModalIndividualCards([]);
@@ -560,7 +536,7 @@ function DatabaseBrowser({ onNavigate }) {
             )}
             <button
               className="back-button"
-              onClick={() => onNavigate('main')}
+              onClick={() => navigate('/')}
             >
               ← BACK TO MAIN
             </button>

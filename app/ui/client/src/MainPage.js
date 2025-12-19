@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
 import UploadDropZone from './UploadDropZone';
 
-function MainPage({ onNavigate }) {
+function MainPage() {
+  const navigate = useNavigate();
   const [stats, setStats] = useState({
     total_cards: 0,
     total_quantity: 0,
@@ -17,6 +19,8 @@ function MainPage({ onNavigate }) {
   });
   const [pendingCount, setPendingCount] = useState(0);
   const [rawScanCount, setRawScanCount] = useState(0);
+  const [systemHealth, setSystemHealth] = useState(null);
+  const [recentActivity, setRecentActivity] = useState([]);
   const [processCount, setProcessCount] = useState('');
   const [processing, setProcessing] = useState(false);
   const [bgProcessing, setBgProcessing] = useState(false);
@@ -36,7 +40,9 @@ function MainPage({ onNavigate }) {
         await Promise.all([
           fetchStats(),
           fetchPendingCount(),
-          fetchRawScanCount()
+          fetchRawScanCount(),
+          fetchSystemHealth(),
+          fetchRecentActivity()
         ]);
       } catch (error) {
         console.error('Error loading main page data:', error);
@@ -102,6 +108,32 @@ function MainPage({ onNavigate }) {
     } catch (error) {
       console.error('Error fetching raw scan count:', error);
       return rawScanCount;
+    }
+  };
+
+  const fetchSystemHealth = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/health');
+      if (!response.ok) throw new Error(`Health check failed: ${response.status}`);
+      const data = await response.json();
+      setSystemHealth(data);
+      console.log('[MainPage] Loaded system health:', data);
+    } catch (error) {
+      console.error('Error fetching system health:', error);
+      setSystemHealth({ status: 'error', checks: {} });
+    }
+  };
+
+  const fetchRecentActivity = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/api/recent-activity?limit=10');
+      if (!response.ok) throw new Error(`Recent activity fetch failed: ${response.status}`);
+      const data = await response.json();
+      setRecentActivity(data.activity || []);
+      console.log('[MainPage] Loaded recent activity:', data.activity?.length || 0, 'items');
+    } catch (error) {
+      console.error('Error fetching recent activity:', error);
+      setRecentActivity([]);
     }
   };
 
@@ -385,7 +417,7 @@ function MainPage({ onNavigate }) {
               <button
                 className="process-preview-btn"
                 type="button"
-                onClick={() => onNavigate('raw-preview')}
+                onClick={() => navigate('/raw-preview')}
                 disabled={rawScanCount === 0}
               >
                 PREVIEW
@@ -395,7 +427,7 @@ function MainPage({ onNavigate }) {
 
           <button
             className="action-button verify"
-            onClick={() => onNavigate('verify')}
+            onClick={() => navigate('/verification')}
             disabled={pendingCount === 0}
           >
             <div className="button-content">
@@ -405,7 +437,7 @@ function MainPage({ onNavigate }) {
 
           <button
             className="action-button database"
-            onClick={() => onNavigate('database')}
+            onClick={() => navigate('/database')}
           >
             <div className="button-content">
               <h3>BROWSE DATABASE</h3>
@@ -414,7 +446,7 @@ function MainPage({ onNavigate }) {
 
           <button
             className="action-button logs"
-            onClick={() => onNavigate('logs')}
+            onClick={() => navigate('/logs')}
           >
             <div className="button-content">
               <h3>SYSTEM LOGS</h3>
@@ -429,8 +461,94 @@ function MainPage({ onNavigate }) {
         <h2>UPLOAD PHOTOS</h2>
         <UploadDropZone onUploadComplete={handleUploadComplete} />
       </div>
-      {/* Old inline banner removed in favor of top drop-down */}
 
+      {/* System status section at bottom */}
+      <div className="system-status-section">
+        <div className="status-card">
+          <div className="status-header">
+            <h3>SYSTEM STATUS</h3>
+            <span className={`status-badge ${systemHealth?.status || 'unknown'}`}>
+              {systemHealth?.status === 'healthy' ? '● HEALTHY' :
+               systemHealth?.status === 'degraded' ? '● DEGRADED' :
+               systemHealth?.status === 'error' ? '● ERROR' : '● UNKNOWN'}
+            </span>
+          </div>
+          <div className="status-checks">
+            <div className="status-check" title={systemHealth?.checks?.database?.message || ''}>
+              <span className="status-check-label">DATABASE</span>
+              <span className={`status-check-value ${systemHealth?.checks?.database?.status || 'unknown'}`}>
+                {systemHealth?.checks?.database?.status === 'healthy' ? '✓ HEALTHY' :
+                 systemHealth?.checks?.database?.status === 'warning' ? '⚠ WARNING' :
+                 systemHealth?.checks?.database?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
+              </span>
+              {systemHealth?.checks?.database?.message && (
+                <span className="status-detail">{systemHealth.checks.database.message}</span>
+              )}
+            </div>
+            <div className="status-check" title={systemHealth?.checks?.openai_config?.message || ''}>
+              <span className="status-check-label">OPENAI API</span>
+              <span className={`status-check-value ${systemHealth?.checks?.openai_config?.status || 'unknown'}`}>
+                {systemHealth?.checks?.openai_config?.status === 'healthy' ? '✓ CONFIGURED' :
+                 systemHealth?.checks?.openai_config?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
+              </span>
+              {systemHealth?.checks?.openai_config?.message && (
+                <span className="status-detail">{systemHealth.checks.openai_config.message}</span>
+              )}
+            </div>
+            <div className="status-check" title={systemHealth?.checks?.directories?.message || ''}>
+              <span className="status-check-label">FILESYSTEM</span>
+              <span className={`status-check-value ${systemHealth?.checks?.directories?.status || 'unknown'}`}>
+                {systemHealth?.checks?.directories?.status === 'healthy' ? '✓ HEALTHY' :
+                 systemHealth?.checks?.directories?.status === 'warning' ? '⚠ WARNING' :
+                 systemHealth?.checks?.directories?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
+              </span>
+              {systemHealth?.checks?.directories?.message && (
+                <span className="status-detail">{systemHealth.checks.directories.message}</span>
+              )}
+            </div>
+            <div className="status-check" title={systemHealth?.checks?.python?.message || ''}>
+              <span className="status-check-label">PYTHON</span>
+              <span className={`status-check-value ${systemHealth?.checks?.python?.status || 'unknown'}`}>
+                {systemHealth?.checks?.python?.status === 'healthy' ? `✓ ${systemHealth?.checks?.python?.version || 'HEALTHY'}` :
+                 systemHealth?.checks?.python?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Recent activity feed */}
+        <div className="activity-card">
+          <h3>RECENT ACTIVITY</h3>
+          {recentActivity.length > 0 ? (
+            <div className="activity-list">
+              {recentActivity.map((activity, idx) => (
+                <div key={idx} className="activity-item">
+                  <span className={`activity-action ${activity.action}`}>
+                    {activity.action === 'pass' ? '✓' : activity.action === 'fail' ? '✗' : '↶'}
+                  </span>
+                  <span className="activity-description">
+                    {activity.action === 'pass' ? 'PASSED' :
+                     activity.action === 'fail' ? 'FAILED' :
+                     activity.action === 'undo' ? 'UNDONE' : activity.action.toUpperCase()}
+                    {activity.cardNumber ? ` #${activity.cardNumber}` : ''}
+                    {activity.cardCount > 1 ? ` (${activity.cardCount} cards)` : ''}
+                  </span>
+                  <span className="activity-time">
+                    {new Date(activity.timestamp).toLocaleString('en-US', {
+                      month: 'short',
+                      day: 'numeric',
+                      hour: 'numeric',
+                      minute: '2-digit'
+                    })}
+                  </span>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="activity-empty">NO RECENT ACTIVITY</div>
+          )}
+        </div>
+      </div>
 
     </div>
   );

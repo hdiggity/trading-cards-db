@@ -297,6 +297,25 @@
   align-items: center;
 }
 
+.below-image-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 2px solid #e5e5e5;
+  width: 100%;
+  align-items: center;
+}
+
+.below-image-actions .action-group {
+  width: 100%;
+  max-width: 500px;
+  justify-content: center;
+}
+
 .action-group {
   display: flex;
   align-items: center;
@@ -347,6 +366,31 @@
 }
 
 .pass-button:disabled, .fail-button:disabled {
+  background: #e5e5e5;
+  color: #a3a3a3;
+  cursor: not-allowed;
+}
+
+.undo-button {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  letter-spacing: 0.025em;
+  min-width: 110px;
+  min-height: 44px;
+  background: #3b82f6;
+  color: white;
+}
+
+.undo-button:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.undo-button:disabled {
   background: #e5e5e5;
   color: #a3a3a3;
   cursor: not-allowed;
@@ -498,6 +542,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .saving {
@@ -526,6 +572,27 @@
   color: #525252;
   background: #f8f8f8;
   border-color: #d4d4d4;
+}
+
+.unsaved-changes-indicator {
+  color: #dc2626;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  padding: 4px 8px;
+  background: #fef2f2;
+  border-radius: 4px;
+  border: 1px solid #fecaca;
+  animation: pulse-warning 2s ease-in-out infinite;
+}
+
+@keyframes pulse-warning {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
 }
 
 @keyframes pulse {
@@ -1110,6 +1177,101 @@
   cursor: pointer;
 }
 .cancel-processing:hover { border-color: #d1d5db; background: #f3f4f6; }
+
+/* Session recovery banner */
+.recovery-banner {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-bottom: 2px solid #f59e0b;
+  padding: 16px 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.recovery-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.recovery-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.recovery-text {
+  flex: 1;
+}
+
+.recovery-text strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #92400e;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.recovery-text p {
+  margin: 0;
+  font-size: 13px;
+  color: #78350f;
+  text-transform: none;
+}
+
+.recovery-actions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.restore-button,
+.discard-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.restore-button {
+  background: #1a1a1a;
+  color: white;
+}
+
+.restore-button:hover {
+  background: #333333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.discard-button {
+  background: white;
+  color: #78350f;
+  border: 1px solid #fbbf24;
+}
+
+.discard-button:hover {
+  background: #fef3c7;
+  border-color: #f59e0b;
+}
 
 .system-log-button:hover {
   background: #404040;

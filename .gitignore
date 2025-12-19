@@ -2,8 +2,15 @@
 app/__pycache__/
 app/cache/
 
+# backup files
+*.backup
+*.bak
+
 # local setup
 .env
+.env.production
+.env.development
+.env.test
 .claude
 .ruff_cache
 .vscode

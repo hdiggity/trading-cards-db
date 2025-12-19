@@ -1,0 +1,33 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 1 images from provided file list
+Found 1 grid back images to process
+Found 3369 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/1] Processing: IMG_2212.HEIC
+processing: IMG_2212.HEIC
+2025-12-17 09:25:15,457 - trading_cards - INFO - [filesystem] File uploaded: IMG_2212.HEIC
+2025-12-17 09:25:20,643 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2212.HEIC', 'File size: 2727236 bytes, Type: .heic', None, 'session_20251217_092515_39524', None, 'IMG_2212.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-17 09:25:20,643 - trading_cards - INFO - [filesystem] File uploaded: IMG_2212.HEIC
+2025-12-17 09:25:20,649 - trading_cards - INFO - [system] Upload status changed: IMG_2212.HEIC -> processing
+2025-12-17 09:25:20,657 - trading_cards - INFO - [image_processing] Started processing: IMG_2212.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2212.HEIC
+2025-12-17 09:25:52,559 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Extraction completed: 9 cards processed
+Saved cropped back: IMG_2212_pos0.png
+Saved cropped back: IMG_2212_pos1.png
+Saved cropped back: IMG_2212_pos2.png
+Saved cropped back: IMG_2212_pos3.png
+Saved cropped back: IMG_2212_pos4.png
+Saved cropped back: IMG_2212_pos5.png
+Saved cropped back: IMG_2212_pos6.png
+Saved cropped back: IMG_2212_pos7.png
+Saved cropped back: IMG_2212_pos8.png
+Saved 9 grid cards to cards/pending_verification/IMG_2212.json
+Grid processing completed: 9 cards extracted
+2025-12-17 09:26:04,419 - trading_cards - INFO - [filesystem] File move: IMG_2212.HEIC -> IMG_2212.HEIC
+2025-12-17 09:26:04,432 - trading_cards - INFO - [system] Upload status changed: IMG_2212.HEIC -> pending_verification
+2025-12-17 09:26:04,443 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2212.HEIC
+completed: IMG_2212.HEIC (moved to pending_verification/bulk back)

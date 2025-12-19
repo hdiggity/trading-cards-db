@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
+import ConfirmDialog from './components/ConfirmDialog';
 
 // Utility function to format field names for display
 const formatFieldName = (fieldName) => {
@@ -653,7 +655,8 @@ function FeaturesSelector({ value, availableFeatures, onChange }) {
   );
 }
 
-function App({ onNavigate }) {
+function App() {
+  const navigate = useNavigate();
   const [pendingCards, setPendingCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -671,7 +674,53 @@ function App({ onNavigate }) {
   const [showSuggestions, setShowSuggestions] = useState({}); // { cardIndex: true/false }
   const suggestionTimeoutRef = useRef(null);
 
+  // Undo/Redo functionality
+  const [verificationHistory, setVerificationHistory] = useState([]);
+  const [canUndo, setCanUndo] = useState(false);
+
+  // Unsaved changes tracking
+  const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+  const [originalData, setOriginalData] = useState([]);
+
+  // Confirmation dialog state
+  const [confirmDialog, setConfirmDialog] = useState({
+    isOpen: false,
+    title: '',
+    message: '',
+    onConfirm: null
+  });
+
+  // Session recovery state
+  const [showRecovery, setShowRecovery] = useState(false);
+  const [recoverySession, setRecoverySession] = useState(null);
+
   useEffect(() => {
+    // Check for saved session on mount
+    const checkSavedSession = () => {
+      try {
+        const savedSession = localStorage.getItem('editSession');
+        if (savedSession) {
+          const session = JSON.parse(savedSession);
+          const now = Date.now();
+          const sessionAge = now - session.timestamp;
+          const oneHour = 3600000;
+
+          // Only show recovery if session is less than 1 hour old
+          if (sessionAge < oneHour) {
+            setRecoverySession(session);
+            setShowRecovery(true);
+          } else {
+            // Clear old session
+            localStorage.removeItem('editSession');
+          }
+        }
+      } catch (error) {
+        console.error('Error checking saved session:', error);
+        localStorage.removeItem('editSession');
+      }
+    };
+
+    checkSavedSession();
     fetchPendingCards();
     fetchFieldOptions();
 
@@ -722,8 +771,10 @@ function App({ onNavigate }) {
             return processedCard;
           });
           setEditedData(processedData);
+          setOriginalData(JSON.parse(JSON.stringify(processedData))); // Deep copy for comparison
         }
         setIsEditing(true);
+        setHasUnsavedChanges(false); // Reset on new card
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -870,6 +921,205 @@ function App({ onNavigate }) {
     setTimeout(() => autoSaveProgress(newData), 500);
   };
 
+  // Fetch verification history when card changes
+  useEffect(() => {
+    const fetchHistory = async () => {
+      if (pendingCards.length === 0 || currentIndex >= pendingCards.length) {
+        setVerificationHistory([]);
+        setCanUndo(false);
+        return;
+      }
+
+      const currentCard = pendingCards[currentIndex];
+      if (!currentCard?.id) return;
+
+      try {
+        const response = await fetch(`http://localhost:3001/api/verification-history/${currentCard.id}`);
+        if (response.ok) {
+          const data = await response.json();
+          setVerificationHistory(data.history || []);
+          setCanUndo(data.history && data.history.length > 0);
+        } else {
+          setVerificationHistory([]);
+          setCanUndo(false);
+        }
+      } catch (error) {
+        console.error('Failed to fetch verification history:', error);
+        setVerificationHistory([]);
+        setCanUndo(false);
+      }
+    };
+
+    fetchHistory();
+  }, [pendingCards, currentIndex]);
+
+  // Undo last action
+  const handleUndo = async () => {
+    if (!canUndo || pendingCards.length === 0) return;
+
+    const currentCard = pendingCards[currentIndex];
+    if (!currentCard?.id) return;
+
+    try {
+      const response = await fetch(`http://localhost:3001/api/undo/${currentCard.id}`, {
+        method: 'POST'
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+
+        // Reload cards to get updated data
+        await fetchPendingCards();
+
+        // Show success message
+        console.log('Undo successful:', result.message || 'Last action undone');
+
+        // Update history
+        setVerificationHistory(prev => prev.slice(0, -1));
+        setCanUndo(verificationHistory.length > 1);
+      } else {
+        const error = await response.json();
+        console.error('Undo failed:', error.error || 'Unknown error');
+        alert(`Failed to undo: ${error.error || 'Unknown error'}`);
+      }
+    } catch (error) {
+      console.error('Undo error:', error);
+      alert('Failed to undo action');
+    }
+  };
+
+  // Keyboard shortcut for undo (Cmd/Ctrl+Z)
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Check for Cmd+Z (Mac) or Ctrl+Z (Windows/Linux)
+      if ((e.metaKey || e.ctrlKey) && e.key === 'z' && !e.shiftKey) {
+        e.preventDefault();
+        if (canUndo) {
+          handleUndo();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [canUndo, pendingCards, currentIndex]);
+
+  // Track unsaved changes by comparing edited data with original
+  useEffect(() => {
+    if (!isEditing || editedData.length === 0 || originalData.length === 0) {
+      setHasUnsavedChanges(false);
+      return;
+    }
+
+    // Deep comparison of editedData vs originalData
+    const hasChanges = JSON.stringify(editedData) !== JSON.stringify(originalData);
+    setHasUnsavedChanges(hasChanges);
+  }, [editedData, originalData, isEditing]);
+
+  // Save edit session to localStorage for recovery
+  useEffect(() => {
+    if (isEditing && editedData.length > 0 && pendingCards.length > 0) {
+      const currentCard = pendingCards[currentIndex];
+      if (currentCard?.id) {
+        const sessionState = {
+          cardId: currentCard.id,
+          editedData: editedData,
+          currentIndex: currentIndex,
+          currentCardIndex: currentCardIndex,
+          verificationMode: verificationMode,
+          timestamp: Date.now()
+        };
+        localStorage.setItem('editSession', JSON.stringify(sessionState));
+      }
+    } else {
+      // Clear session when not editing
+      localStorage.removeItem('editSession');
+    }
+  }, [isEditing, editedData, currentIndex, currentCardIndex, verificationMode, pendingCards]);
+
+  // Warn user before leaving page with unsaved changes
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      if (hasUnsavedChanges) {
+        e.preventDefault();
+        e.returnValue = ''; // Required for Chrome
+        return ''; // Required for some browsers
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+  }, [hasUnsavedChanges]);
+
+  // Recovery handlers
+  const handleRestore = () => {
+    if (!recoverySession) return;
+
+    try {
+      // Find the card that was being edited
+      const cardIndex = pendingCards.findIndex(card => card.id === recoverySession.cardId);
+
+      if (cardIndex !== -1) {
+        setCurrentIndex(cardIndex);
+        setCurrentCardIndex(recoverySession.currentCardIndex || 0);
+        setVerificationMode(recoverySession.verificationMode || 'single');
+        setEditedData(recoverySession.editedData);
+        setOriginalData(JSON.parse(JSON.stringify(recoverySession.editedData)));
+        setIsEditing(true);
+        setShowRecovery(false);
+        setRecoverySession(null);
+        console.log('Session restored successfully');
+      } else {
+        // Card no longer exists
+        setShowRecovery(false);
+        setRecoverySession(null);
+        localStorage.removeItem('editSession');
+        console.log('Card from saved session no longer exists');
+      }
+    } catch (error) {
+      console.error('Error restoring session:', error);
+      setShowRecovery(false);
+      setRecoverySession(null);
+      localStorage.removeItem('editSession');
+    }
+  };
+
+  const handleDiscardRecovery = () => {
+    setShowRecovery(false);
+    setRecoverySession(null);
+    localStorage.removeItem('editSession');
+  };
+
+  // Wrapper to show confirmation for destructive actions
+  const handleActionWithConfirm = (action, mode = null) => {
+    if (pendingCards.length === 0) return;
+
+    const actionMode = mode || verificationMode;
+    const currentCard = pendingCards[currentIndex];
+
+    // Determine if we need confirmation
+    const needsConfirmation = actionMode === 'entire' || (action === 'fail' && actionMode === 'entire');
+
+    if (needsConfirmation) {
+      const cardCount = actionMode === 'entire' ? currentCard.data.length : 1;
+      const actionText = action === 'pass' ? 'pass' : 'fail';
+      const actionTextUpper = action === 'pass' ? 'PASS' : 'FAIL';
+
+      setConfirmDialog({
+        isOpen: true,
+        title: `${actionTextUpper} ${cardCount} CARD${cardCount > 1 ? 'S' : ''}?`,
+        message: `are you sure you want to ${actionText} ${cardCount} card${cardCount > 1 ? 's' : ''}? this action will ${action === 'pass' ? 'add them to the database' : 'discard them'}.`,
+        onConfirm: () => {
+          setConfirmDialog({ ...confirmDialog, isOpen: false });
+          handleAction(action, mode);
+        }
+      });
+    } else {
+      // Single card actions don't need confirmation
+      handleAction(action, mode);
+    }
+  };
+
   const handleAction = async (action, mode = null) => {
     if (pendingCards.length === 0) return;
 
@@ -1007,6 +1257,10 @@ function App({ onNavigate }) {
           data: saveData
         };
         setPendingCards(updatedCards);
+
+        // Update original data to clear unsaved changes indicator
+        setOriginalData(JSON.parse(JSON.stringify(saveData)));
+        setHasUnsavedChanges(false);
       } else {
         console.error('Failed to auto-save progress');
       }
@@ -1022,8 +1276,8 @@ function App({ onNavigate }) {
 
   const updateCardField = (cardIndex, field, value) => {
     const newData = [...editedData];
-    // Convert text fields to lowercase for consistency (include name)
-    const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
+    // Convert text fields to lowercase for consistency
+    const textFields = ['name', 'sport', 'brand', 'team', 'card_set', 'notes'];
     let processedValue = textFields.includes(field) && typeof value === 'string'
       ? value.toLowerCase()
       : value;
@@ -1218,7 +1472,7 @@ function App({ onNavigate }) {
         <p>no pending cards for verification</p>
         <button 
           className="return-home-button" 
-          onClick={() => onNavigate('main')}
+          onClick={() => navigate('/')}
         >
           return to main page
         </button>
@@ -1249,12 +1503,34 @@ function App({ onNavigate }) {
           </div>
         </div>
       </div>
+
+      {/* Session recovery banner */}
+      {showRecovery && recoverySession && (
+        <div className="recovery-banner">
+          <div className="recovery-content">
+            <div className="recovery-icon">⚠️</div>
+            <div className="recovery-text">
+              <strong>UNSAVED WORK FOUND</strong>
+              <p>found unsaved work from previous session. restore it?</p>
+            </div>
+            <div className="recovery-actions">
+              <button onClick={handleRestore} className="restore-button">
+                restore
+              </button>
+              <button onClick={handleDiscardRecovery} className="discard-button">
+                discard
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       <header className="App-header">
         <div className="header-top">
           <h1>trading card verification</h1>
           <button 
             className="back-button" 
-            onClick={() => onNavigate('main')}
+            onClick={() => navigate('/')}
           >
             ← Back to Main
           </button>
@@ -1342,6 +1618,58 @@ function App({ onNavigate }) {
               />
             </div>
           )}
+
+          {/* Action buttons - placed right below images */}
+          {verificationMode === 'single' && (
+            <div className="below-image-actions">
+              {canUndo && (
+                <div className="action-group">
+                  <button
+                    onClick={handleUndo}
+                    disabled={processing || reprocessing}
+                    className="undo-button"
+                    title="Undo last action (Cmd/Ctrl+Z)"
+                  >
+                    ← Undo
+                  </button>
+                </div>
+              )}
+              <div className="action-group">
+                <span className="action-label">Card:</span>
+                <button
+                  onClick={() => handleActionWithConfirm('fail')}
+                  disabled={processing || reprocessing}
+                  className="fail-button"
+                >
+                  {processing ? '...' : 'Fail Card'}
+                </button>
+                <button
+                  onClick={() => handleActionWithConfirm('pass')}
+                  disabled={processing || reprocessing}
+                  className="pass-button"
+                >
+                  {processing ? '...' : 'Pass Card'}
+                </button>
+              </div>
+              <div className="action-group">
+                <span className="action-label">Image:</span>
+                <button
+                  onClick={() => handleActionWithConfirm('fail', 'entire')}
+                  disabled={processing || reprocessing}
+                  className="fail-button"
+                >
+                  {processing ? '...' : 'Fail All'}
+                </button>
+                <button
+                  onClick={() => handleActionWithConfirm('pass', 'entire')}
+                  disabled={processing || reprocessing}
+                  className="pass-button"
+                >
+                  {processing ? '...' : 'Pass All'}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
 
         <div className="data-section">
@@ -1365,6 +1693,11 @@ function App({ onNavigate }) {
               Re-process All
             </button>
             <div className="save-status">
+              {hasUnsavedChanges && (
+                <span className="unsaved-changes-indicator" title="You have unsaved changes">
+                  ● UNSAVED CHANGES
+                </span>
+              )}
               {autoSaving ? (
                 <span className="saving">Saving...</span>
               ) : lastSaved ? (
@@ -1709,67 +2042,38 @@ function App({ onNavigate }) {
           </button>
         </div>
 
-        <div className="action-buttons">
-          {verificationMode === 'single' ? (
-            <>
-              <div className="action-group">
-                <span className="action-label">Card:</span>
-                <button
-                  onClick={() => handleAction('fail')}
-                  disabled={processing || reprocessing}
-                  className="fail-button"
-                >
-                  {processing ? '...' : 'Fail Card'}
-                </button>
-                <button
-                  onClick={() => handleAction('pass')}
-                  disabled={processing || reprocessing}
-                  className="pass-button"
-                >
-                  {processing ? '...' : 'Pass Card'}
-                </button>
-              </div>
-              <div className="action-group">
-                <span className="action-label">Image:</span>
-                <button
-                  onClick={() => handleAction('fail', 'entire')}
-                  disabled={processing || reprocessing}
-                  className="fail-button"
-                >
-                  {processing ? '...' : 'Fail All'}
-                </button>
-                <button
-                  onClick={() => handleAction('pass', 'entire')}
-                  disabled={processing || reprocessing}
-                  className="pass-button"
-                >
-                  {processing ? '...' : 'Pass All'}
-                </button>
-              </div>
-            </>
-          ) : (
-            <>
+        {verificationMode !== 'single' && (
+          <div className="action-buttons">
+            {canUndo && (
               <button
-                onClick={() => handleAction('fail')}
+                onClick={handleUndo}
                 disabled={processing || reprocessing}
-                className="fail-button"
+                className="undo-button"
+                title="Undo last action (Cmd/Ctrl+Z)"
               >
-                {processing ? 'Processing...' : 'Fail All'}
+                ← Undo
               </button>
-              <button
-                onClick={() => handleAction('pass')}
-                disabled={processing || reprocessing}
-                className="pass-button"
-              >
-                {processing ? 'Processing...' : 'Pass All'}
-              </button>
-            </>
-          )}
-        </div>
+            )}
+            <button
+              onClick={() => handleActionWithConfirm('fail')}
+              disabled={processing || reprocessing}
+              className="fail-button"
+            >
+              {processing ? 'Processing...' : 'Fail All'}
+            </button>
+            <button
+              onClick={() => handleActionWithConfirm('pass')}
+              disabled={processing || reprocessing}
+              className="pass-button"
+            >
+              {processing ? 'Processing...' : 'Pass All'}
+            </button>
+          </div>
+        )}
         
         <div className="system-controls">
           <button 
-            onClick={() => onNavigate && onNavigate('logs')}
+            onClick={() => navigate('/logs')}
             className="system-log-button"
             title="View system logs for debugging"
           >
@@ -1777,6 +2081,15 @@ function App({ onNavigate }) {
           </button>
         </div>
       </div>
+
+      {/* Confirmation Dialog */}
+      <ConfirmDialog
+        isOpen={confirmDialog.isOpen}
+        title={confirmDialog.title}
+        message={confirmDialog.message}
+        onConfirm={confirmDialog.onConfirm}
+        onCancel={() => setConfirmDialog({ ...confirmDialog, isOpen: false })}
+      />
     </div>
   );
 }

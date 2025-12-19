@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Optimize HEIC images of 3x3 card grids for ChatGPT extraction.
+"""Optimize HEIC/JPEG images of 3x3 card grids for ChatGPT extraction.
 
-Batch processes all HEIC files from Downloads folder, replacing them
+Batch processes all HEIC and JPEG files from Downloads folder, replacing them
 with optimized PNG files (better format for GPT-5.2 Vision).
 
 Applies gentle, non-destructive enhancements to improve readability
 without introducing artifacts that confuse GPT-5.2 Vision.
 
-WARNING: Original HEIC files are DELETED and replaced with PNG!
+WARNING: Original HEIC/JPEG files are DELETED and replaced with PNG!
 
 Usage:
     python bulk_back_analysis.py
@@ -20,24 +20,28 @@ import sys
 from pathlib import Path
 
 import pillow_heif
-from PIL import Image, ImageEnhance, ImageFilter
+from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
 
-def load_heic_image(input_path: str) -> Image.Image:
-    """Load HEIC image and convert to PIL Image."""
+def load_image(input_path: str) -> Image.Image:
+    """Load HEIC or JPEG image and convert to PIL Image."""
+    # Check file size first
+    file_size = Path(input_path).stat().st_size
+    if file_size < 1024:  # Less than 1KB
+        raise ValueError(f"File size too small: {file_size} bytes")
+
     if input_path.lower().endswith(".heic"):
-        # Check file size first
-        file_size = Path(input_path).stat().st_size
-        if file_size < 1024:  # Less than 1KB
-            raise ValueError(f"File size too small: {file_size} bytes")
-
-        # Register HEIF opener
+        # Register HEIF opener for HEIC files
         pillow_heif.register_heif_opener()
 
-        # Use PIL to open HEIC directly
-        image = Image.open(input_path)
-    else:
-        image = Image.open(input_path)
+    # Use PIL to open image (works for HEIC, JPEG, PNG, etc.)
+    image = Image.open(input_path)
+
+    # CRITICAL: Apply EXIF orientation to prevent unwanted rotation
+    # Phone cameras often store orientation in EXIF metadata
+    # This corrects the image to its proper orientation then strips EXIF data
+    # so the output PNG is always correctly oriented
+    image = ImageOps.exif_transpose(image)
 
     # Convert to RGB if needed
     if image.mode != "RGB":
@@ -115,15 +119,15 @@ def optimize_for_chatgpt(image: Image.Image, strength: str = "light") -> Image.I
 def process_single_file(
     input_path: Path, output_dir: Path, strength: str = "light", quality: int = 95
 ):
-    """Process a single HEIC file and replace with optimized PNG."""
+    """Process a single HEIC or JPEG file and replace with optimized PNG."""
     try:
         # Load image
-        image = load_heic_image(str(input_path))
+        image = load_image(str(input_path))
 
         # Apply optimizations
         optimized = optimize_for_chatgpt(image, strength=strength)
 
-        # Replace HEIC with PNG (same name, different extension)
+        # Replace original with PNG (same name, different extension)
         output_filename = input_path.stem + ".png"
         output_path = output_dir / output_filename
 
@@ -135,7 +139,7 @@ def process_single_file(
             compress_level=9 - (quality // 10)
         )
 
-        # Delete original HEIC file
+        # Delete original file
         input_path.unlink()
 
         print(f"✓ {output_filename}")
@@ -148,13 +152,13 @@ def process_single_file(
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Batch optimize HEIC images: replaces with optimized PNG in same directory"
+        description="Batch optimize HEIC/JPEG images: replaces with optimized PNG in same directory"
     )
     parser.add_argument(
         "--downloads",
         default=Path.home() / "Downloads",
         type=Path,
-        help="Directory to scan for HEIC files (default: ~/Downloads)",
+        help="Directory to scan for HEIC/JPEG files (default: ~/Downloads)",
     )
     parser.add_argument(
         "--strength",
@@ -179,61 +183,54 @@ def main():
         print(f"Error: Directory not found: {downloads_dir}")
         sys.exit(1)
 
-    # Find all HEIC files
-    heic_files = list(downloads_dir.glob("*.HEIC")) + list(downloads_dir.glob("*.heic"))
+    # Find all HEIC and JPEG files
+    image_files = (
+        list(downloads_dir.glob("*.HEIC")) +
+        list(downloads_dir.glob("*.heic")) +
+        list(downloads_dir.glob("*.JPEG")) +
+        list(downloads_dir.glob("*.jpeg")) +
+        list(downloads_dir.glob("*.JPG")) +
+        list(downloads_dir.glob("*.jpg"))
+    )
 
-    if not heic_files:
-        print(f"\nNo HEIC files found in {downloads_dir}")
+    if not image_files:
+        print(f"\nNo HEIC or JPEG files found in {downloads_dir}")
         sys.exit(0)
 
-    # Filter out files that already have a PNG version (already processed) or are corrupted
+    # Filter out corrupted files
     files_to_process = []
-    skipped_count = 0
     corrupted_count = 0
-    for heic_file in heic_files:
-        # Check if already processed
-        png_version = downloads_dir / (heic_file.stem + ".png")
-        if png_version.exists():
-            print(f"⊘ {heic_file.name} (already processed)")
-            skipped_count += 1
-            continue
-
+    for image_file in image_files:
         # Check if file is corrupted (0 bytes or too small)
-        file_size = heic_file.stat().st_size
+        file_size = image_file.stat().st_size
         if file_size == 0:
-            print(f"✗ {heic_file.name} (corrupted: 0 bytes - skipping)")
+            print(f"✗ {image_file.name} (corrupted: 0 bytes - skipping)")
             corrupted_count += 1
             continue
         elif file_size < 1024:
-            print(f"✗ {heic_file.name} (corrupted: {file_size} bytes - skipping)")
+            print(f"✗ {image_file.name} (corrupted: {file_size} bytes - skipping)")
             corrupted_count += 1
             continue
 
-        files_to_process.append(heic_file)
+        files_to_process.append(image_file)
 
     if not files_to_process:
-        if skipped_count > 0:
-            print(f"\nAll {len(heic_files)} HEIC files already processed")
-        elif corrupted_count > 0:
-            print(f"\nAll {len(heic_files)} HEIC files were corrupted (skipped)")
+        print(f"\nAll {len(image_files)} image files were corrupted (skipped)")
         sys.exit(0)
 
-    print(f"\nProcessing {len(files_to_process)} HEIC file(s) ({args.strength} strength)...")
-    if skipped_count > 0:
-        print(f"Skipped {skipped_count} already-processed file(s)")
+    print(f"\nProcessing {len(files_to_process)} image file(s) ({args.strength} strength)...")
     if corrupted_count > 0:
         print(f"Skipped {corrupted_count} corrupted file(s)")
     print()
 
     # Process all files (output to same directory)
     success_count = 0
-    for heic_file in files_to_process:
-        if process_single_file(heic_file, downloads_dir, args.strength, args.quality):
+    for image_file in files_to_process:
+        if process_single_file(image_file, downloads_dir, args.strength, args.quality):
             success_count += 1
 
     # Summary
-    print(f"\nDone: {
-        success_count}/{len(files_to_process)} files optimized")
+    print(f"\nDone: {success_count}/{len(files_to_process)} files optimized")
 
 
 if __name__ == "__main__":

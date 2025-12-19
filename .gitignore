@@ -1,6 +1,10 @@
 # caches
 app/__pycache__/
+app/scripts/__pycache__/
 app/cache/
+
+# learning databases
+cards/verified/corrections.db
 
 # backup files
 *.backup

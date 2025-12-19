@@ -194,14 +194,26 @@ async function recordCorrections(originalCard, modifiedCard) {
     card_set: modifiedCard.card_set || originalCard.card_set
   };
 
-  // Call Python to record corrections
+  // Call Python to record corrections using CorrectionTracker
   const pythonCode = `
 import sys, json
-from app.accuracy_boost import record_correction
+from app.correction_tracker import CorrectionTracker
+
+tracker = CorrectionTracker()
 data = json.loads(sys.stdin.read())
+
 for corr in data['corrections']:
-    record_correction(corr['field'], corr['original'], corr['corrected'], data['context'])
-print(f"Recorded {len(data['corrections'])} corrections")
+    tracker.log_correction(
+        field_name=corr['field'],
+        gpt_value=corr['original'],
+        corrected_value=corr['corrected'],
+        card_name=data['context'].get('card_name'),
+        image_filename=data['context'].get('image_filename'),
+        brand=data['context'].get('brand'),
+        sport=data['context'].get('sport')
+    )
+
+print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
 `;
 
   return new Promise((resolve) => {
@@ -209,7 +221,15 @@ print(f"Recorded {len(data['corrections'])} corrections")
       cwd: path.join(__dirname, '../..'),
       stdio: ['pipe', 'pipe', 'pipe']
     });
-    pythonProcess.stdin.write(JSON.stringify({ corrections, context }));
+
+    // Add card_name and image_filename to context
+    const enrichedContext = {
+      ...context,
+      card_name: modifiedCard.name || originalCard.name,
+      image_filename: modifiedCard.source_file || originalCard.source_file
+    };
+
+    pythonProcess.stdin.write(JSON.stringify({ corrections, context: enrichedContext }));
     pythonProcess.stdin.end();
     pythonProcess.on('close', () => resolve());
     pythonProcess.on('error', () => resolve());

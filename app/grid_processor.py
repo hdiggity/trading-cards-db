@@ -14,10 +14,14 @@ from io import BytesIO
 from pillow_heif import register_heif_opener
 
 from .utils import client
+from .correction_tracker import CorrectionTracker
 import os
 
 register_heif_opener()
 MODEL = os.getenv("OPENAI_MODEL", "gpt-5.2")
+
+# Initialize correction tracker
+correction_tracker = CorrectionTracker()
 
 def normalize_price(price_str):
     """Validate and normalize price to $xx.xx format"""
@@ -86,7 +90,7 @@ class GridProcessor:
 
         # Load and encode image
         img = Image.open(image_path)
-        max_size = 2400
+        max_size = 4000
         if max(img.size) > max_size:
             ratio = max_size / max(img.size)
             img = img.resize((int(img.size[0] * ratio), int(img.size[1] * ratio)), Image.LANCZOS)
@@ -99,37 +103,66 @@ class GridProcessor:
 
 Extract data for each card (position 0-8) in this order:
 
-1. name: Player's full name (typically in ALL CAPS or bold near top)
-2. number: Card number (look for # symbol)
-3. team: Team name
-4. copyright_year: Copyright year (© symbol, usually at bottom)
+1. name: Player's full name in all lowercase
+2. number: Card number
+3. team: Team name (including city)
+4. copyright_year: Copyright year, usually at bottom
 5. brand: Card brand (usually Topps)
 6. card_set: Card set name (use 'n/a' if not a special subset)
 7. sport: Sport type (baseball, basketball, etc.)
 8. condition: Condition assessment (mint, near_mint, excellent, very_good, good, fair, poor, damaged)
 9. is_player_card: true/false
 10. features: ONLY special features like "rookie", "error", "autograph", "serial numbered", "memorabilia", etc. Use 'none' if no special features.
-11. notes: Interesting content from the card itself (achievements, career highlights, unique stats, trivia, etc.). Do NOT mention duplicates in grid, image quality, or scanning artifacts. Use 'none' if nothing noteworthy.
+11. notes: Interesting content from the card itself (achievements, career highlights, unique stats, trivia, etc.)
 12. value_estimate: How much is this card probably worth? Format as $xx.xx (e.g., $1.00, $5.00, $10.00)
 
-Return ONLY a JSON array with exactly 9 objects:
-[{
-  "grid_position": 0,
-  "name": "PLAYER NAME",
-  "number": "123",
-  "team": "team name",
-  "copyright_year": "1984",
-  "brand": "topps",
-  "card_set": "n/a",
-  "sport": "baseball",
-  "condition": "very_good",
-  "is_player_card": true,
-  "features": "none",
-  "notes": "led league in stolen bases 1975",
-  "value_estimate": "$1.00"
-}, ...]"""
+Return structured JSON with a "cards" array containing exactly 9 card objects (position 0-8)."""
 
-        # Call GPT Vision API
+        # Define structured output schema
+        response_schema = {
+            "type": "json_schema",
+            "json_schema": {
+                "name": "card_grid_extraction",
+                "strict": True,
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "cards": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "grid_position": {"type": "integer"},
+                                    "name": {"type": "string"},
+                                    "number": {"type": ["string", "null"]},
+                                    "team": {"type": ["string", "null"]},
+                                    "copyright_year": {"type": ["string", "null"]},
+                                    "brand": {"type": ["string", "null"]},
+                                    "card_set": {"type": ["string", "null"]},
+                                    "sport": {"type": "string"},
+                                    "condition": {"type": ["string", "null"]},
+                                    "is_player_card": {"type": "boolean"},
+                                    "features": {"type": "string"},
+                                    "notes": {"type": "string"},
+                                    "value_estimate": {"type": "string"}
+                                },
+                                "required": [
+                                    "grid_position", "name", "number", "team",
+                                    "copyright_year", "brand", "card_set", "sport",
+                                    "condition", "is_player_card", "features",
+                                    "notes", "value_estimate"
+                                ],
+                                "additionalProperties": False
+                            }
+                        }
+                    },
+                    "required": ["cards"],
+                    "additionalProperties": False
+                }
+            }
+        }
+
+        # Call GPT Vision API with structured outputs
         response = client.chat.completions.create(
             model=MODEL,
             messages=[
@@ -139,22 +172,16 @@ Return ONLY a JSON array with exactly 9 objects:
                     {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}}
                 ]}
             ],
+            response_format=response_schema,
             max_completion_tokens=2000,
             temperature=0.1
         )
 
         result_text = response.choices[0].message.content.strip()
 
-        # Clean markdown if present
-        if result_text.startswith("```"):
-            result_text = result_text.split("```")[1]
-            if result_text.startswith("json"):
-                result_text = result_text[4:]
-            result_text = result_text.strip()
-        if result_text.endswith("```"):
-            result_text = result_text[:-3].strip()
-
-        raw_data = json.loads(result_text)
+        # Parse structured output
+        result_json = json.loads(result_text)
+        raw_data = result_json.get("cards", [])
 
         # Ensure exactly 9 cards
         if len(raw_data) != 9:
@@ -176,6 +203,10 @@ Return ONLY a JSON array with exactly 9 objects:
             # Normalize price estimate
             if 'value_estimate' in card:
                 card['value_estimate'] = normalize_price(card['value_estimate'])
+
+        # Apply learned corrections from previous manual fixes
+        for i, card in enumerate(raw_data):
+            raw_data[i] = correction_tracker.apply_learned_corrections(card)
 
         # Create GridCard objects
         grid_cards = []

@@ -72,7 +72,6 @@ yarn-error.log*
 *.db-journal
 *.db-wal
 *.db-shm
-cards/verified/corrections.db
 
 # Backups
 *.backup

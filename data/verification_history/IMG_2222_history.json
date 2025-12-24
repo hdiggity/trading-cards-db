@@ -1,0 +1,616 @@
+[
+  {
+    "timestamp": "2025-12-19T23:27:57.399Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "jeff newman",
+        "number": "204",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "boog powell",
+        "number": "206",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "butch metzger",
+        "number": "215",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "francisco barrios",
+        "number": "222",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "francisco barrios",
+        "number": "222",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #222 in this grid",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave tomlin",
+        "number": "241",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "rick sawyer",
+        "number": "268",
+        "team": "st. louis cardinals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "278",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don hood",
+        "number": "296",
+        "team": "new york yankees",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "near_mint",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2222_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T23:28:00.453Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "jeff newman",
+        "number": "204",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "boog powell",
+        "number": "206",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "butch metzger",
+        "number": "215",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "francisco barrios",
+        "number": "222",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "francisco barrios",
+        "number": "222",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave tomlin",
+        "number": "241",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "rick sawyer",
+        "number": "268",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "278",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don hood",
+        "number": "296",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T23:28:12.783Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "jeff newman",
+        "number": "204",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "boog powell",
+        "number": "206",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "butch metzger",
+        "number": "215",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "francisco barrios",
+        "number": "222",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "francisco barrios",
+        "number": "222",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dave tomlin",
+        "number": "241",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "rick sawyer",
+        "number": "268",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "278",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "don hood",
+        "number": "296",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

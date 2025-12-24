@@ -1,30 +1,32 @@
-"""
-Simplified single-pass GPT Vision extraction for 3x3 grid card backs
-"""
+"""Simplified single-pass GPT Vision extraction for 3x3 grid card backs."""
 
-import json
-import sys
-import re
-from pathlib import Path
-from typing import Dict, List, Any, Tuple
-from dataclasses import dataclass
-from PIL import Image
 import base64
+import json
+import os
+import re
+import sys
+from dataclasses import dataclass
 from io import BytesIO
+from pathlib import Path
+from typing import Any, Dict, List, Tuple
+
+from PIL import Image
 from pillow_heif import register_heif_opener
 
-from .utils import client
 from .correction_tracker import CorrectionTracker
-import os
+from .utils import client
 
 register_heif_opener()
 MODEL = os.getenv("OPENAI_MODEL", "gpt-5.2")
 
+# Shared prompt text for value estimation
+VALUE_ESTIMATE_PROMPT = "How much is this card probably worth? Format as $xx.xx (e.g., $1.00, $5.00, $10.00)"
+
 # Initialize correction tracker
-correction_tracker = CorrectionTracker()
+correction_tracker = CorrectionTracker(db_path="data/corrections.db")
 
 def normalize_price(price_str):
-    """Validate and normalize price to $xx.xx format"""
+    """Validate and normalize price to $xx.xx format."""
     if not price_str:
         return "$1.00"
 
@@ -65,7 +67,7 @@ def normalize_price(price_str):
 
 @dataclass
 class GridCard:
-    """Represents a card extracted from a grid with position info"""
+    """Represents a card extracted from a grid with position info."""
     position: int  # 0-8 for 3x3 grid (top-left to bottom-right)
     row: int       # 0-2
     col: int       # 0-2
@@ -74,11 +76,11 @@ class GridCard:
 
 
 class GridProcessor:
-    """Simple single-pass GPT Vision processor for 3x3 grid card backs"""
+    """Simple single-pass GPT Vision processor for 3x3 grid card backs."""
 
     def process_3x3_grid(self, image_path: str, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
-        """
-        Process a 3x3 grid of card backs with single-pass GPT Vision extraction
+        """Process a 3x3 grid of card backs with single-pass GPT Vision
+        extraction.
 
         Args:
             image_path: Path to the 3x3 grid image
@@ -87,6 +89,12 @@ class GridProcessor:
         Returns: (grid_cards, raw_data)
         """
         print(f"Processing 3x3 grid with single-pass GPT Vision: {image_path}", file=sys.stderr)
+
+        # Get example features from database
+        feature_examples = self._get_feature_examples()
+        feature_examples_text = ""
+        if feature_examples:
+            feature_examples_text = f" Examples from database: {', '.join(feature_examples)}."
 
         # Load and encode image
         img = Image.open(image_path)
@@ -99,7 +107,7 @@ class GridProcessor:
         img_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
         # Single-pass extraction prompt
-        prompt = """This is a 3x3 grid of baseball card BACKS (9 cards total, arranged left-to-right, top-to-bottom).
+        prompt = f"""This is a 3x3 grid of baseball card BACKS (9 cards total, arranged left-to-right, top-to-bottom).
 
 Extract data for each card (position 0-8) in this order:
 
@@ -107,14 +115,16 @@ Extract data for each card (position 0-8) in this order:
 2. number: Card number
 3. team: Team name (including city)
 4. copyright_year: Copyright year, usually at bottom
-5. brand: Card brand (usually Topps)
-6. card_set: Card set name (use 'n/a' if not a special subset)
+5. brand: Card brand (Topps, etc.)
+6. card_set: ONLY named special subsets like "Traded", etc. Use 'n/a' for regular base cards. DO NOT use descriptive text about card back type (Mexican, Venezuelan, OPC, chewing gum, etc.)
 7. sport: Sport type (baseball, basketball, etc.)
-8. condition: Condition assessment (mint, near_mint, excellent, very_good, good, fair, poor, damaged)
+8. condition: Physical condition of EACH INDIVIDUAL CARD. Assess each card separately - they can have different conditions. Look for: corners (sharp vs rounded/damaged), edges (clean vs worn/chipped), surface (clean vs scratched/stained/creased), centering (well-centered vs off-center). Use: mint (perfect), near_mint (minor wear), excellent (light wear on corners/edges), very_good (moderate wear, no creases), good (heavy wear or minor creases), fair (major creases/stains), poor (severe damage), damaged (torn/water damaged)
 9. is_player_card: true/false
-10. features: ONLY special features like "rookie", "error", "autograph", "serial numbered", "memorabilia", etc. Use 'none' if no special features.
-11. notes: Interesting content from the card itself (achievements, career highlights, unique stats, trivia, etc.)
-12. value_estimate: How much is this card probably worth? Format as $xx.xx (e.g., $1.00, $5.00, $10.00)
+10. features: ONLY special features like "rookie", "error", "autograph", "serial numbered", "memorabilia", etc.{feature_examples_text} Use 'none' if no special features.
+11. notes: ONLY unique card-specific facts like print variations, manufacturing errors, or rarity information (e.g., "short print", "error card - misspelled name", "photo variation"). DO NOT include condition details (that goes in condition field), player stats, or achievements. Use 'none' if no unique aspects.
+12. value_estimate: {VALUE_ESTIMATE_PROMPT}
+
+IMPORTANT: Each card can have a DIFFERENT condition - examine each one individually for wear, damage, creasing, and surface issues.
 
 Return structured JSON with a "cards" array containing exactly 9 card objects (position 0-8)."""
 
@@ -195,6 +205,20 @@ Return structured JSON with a "cards" array containing exactly 9 card objects (p
             card.setdefault('grid_position', i)
             card.setdefault('_grid_metadata', {"position": i, "row": i // 3, "col": i % 3})
 
+        # Store original GPT extraction before any modifications
+        # This preserves what GPT actually extracted for correction tracking
+        for card in raw_data:
+            card['_original_extraction'] = {
+                'name': card.get('name'),
+                'brand': card.get('brand'),
+                'team': card.get('team'),
+                'card_set': card.get('card_set'),
+                'copyright_year': card.get('copyright_year'),
+                'number': card.get('number'),
+                'condition': card.get('condition'),
+                'sport': card.get('sport')
+            }
+
         # Lowercase field values for consistency and normalize prices
         for card in raw_data:
             for key in ("name", "sport", "brand", "team", "card_set", "condition", "notes"):
@@ -204,21 +228,28 @@ Return structured JSON with a "cards" array containing exactly 9 card objects (p
             if 'value_estimate' in card:
                 card['value_estimate'] = normalize_price(card['value_estimate'])
 
+        # Store original GPT data for confidence calculation
+        original_gpt_data = [card.copy() for card in raw_data]
+
         # Apply learned corrections from previous manual fixes
         for i, card in enumerate(raw_data):
             raw_data[i] = correction_tracker.apply_learned_corrections(card)
 
+        # Apply learned condition predictions
+        for i, card in enumerate(raw_data):
+            predicted_condition = correction_tracker.predict_condition(card)
+            if predicted_condition:
+                raw_data[i]['condition'] = predicted_condition
+                raw_data[i]['_condition_predicted'] = True
+
         # Create GridCard objects
         grid_cards = []
         for i, card_data in enumerate(raw_data):
-            # Calculate confidence based on data completeness
-            required_fields = ['name', 'number', 'team', 'copyright_year', 'brand']
-            filled_required = sum(1 for f in required_fields if card_data.get(f) and card_data.get(f) not in ['unknown', 'unidentified', None])
-
-            # Base confidence on GPT-5.2 quality (0.90) plus completeness bonus
-            base_confidence = 0.90
-            completeness_bonus = (filled_required / len(required_fields)) * 0.10
-            confidence = round(base_confidence + completeness_bonus, 2)
+            # Calculate real confidence based on historical accuracy
+            confidence = correction_tracker.get_confidence_score(
+                card_data,
+                original_gpt_data[i]
+            )
 
             grid_card = GridCard(
                 position=i,
@@ -232,8 +263,32 @@ Return structured JSON with a "cards" array containing exactly 9 card objects (p
         print(f"Extraction completed: {len(grid_cards)} cards processed", file=sys.stderr)
         return grid_cards, raw_data
 
+    def _get_feature_examples(self) -> List[str]:
+        """Get example features from the database to help GPT understand feature types."""
+        try:
+            from .database import get_session
+            from .models import Card
+
+            with get_session() as session:
+                # Get all features and split them
+                features_raw = session.query(Card.features).filter(
+                    Card.features.isnot(None)
+                ).limit(100).all()
+
+                all_features = set()
+                for (features_str,) in features_raw:
+                    if features_str and features_str != 'none':
+                        for feature in features_str.split(','):
+                            all_features.add(feature.strip())
+
+                # Return up to 10 most common examples
+                return sorted(list(all_features))[:10]
+        except Exception as e:
+            print(f"Could not fetch feature examples: {e}", file=sys.stderr)
+            return []
+
     def _create_default_card(self, position: int) -> Dict:
-        """Create a default card entry for missing data"""
+        """Create a default card entry for missing data."""
         return {
             "grid_position": position,
             "name": "unidentified",
@@ -258,7 +313,7 @@ def save_grid_cards_to_verification(
     save_cropped_backs: bool = True,
     original_image_path: str = None
 ):
-    """Save grid cards to verification with cropped back images"""
+    """Save grid cards to verification with cropped back images."""
     out_dir.mkdir(exist_ok=True)
 
     # Convert GridCard objects to dicts for JSON serialization
@@ -304,7 +359,7 @@ def save_grid_cards_to_verification(
 
 def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCard],
                                      output_dir: Path, filename_stem: str):
-    """Extract and save individual card backs from 3x3 grid"""
+    """Extract and save individual card backs from 3x3 grid."""
     try:
         # Load original image
         img = Image.open(image_path)
@@ -341,7 +396,7 @@ def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCar
 
 
 def reprocess_grid_image(image_path: str) -> List[Dict]:
-    """Reprocess a 3x3 grid image with single-pass extraction
+    """Reprocess a 3x3 grid image with single-pass extraction.
 
     Args:
         image_path: Path to the grid image file
@@ -364,7 +419,7 @@ def reprocess_grid_image(image_path: str) -> List[Dict]:
             "position": gc.position,
             "row": gc.row,
             "col": gc.col,
-            "confidence": getattr(gc, 'confidence', 0.8)
+            "confidence": getattr(gc, 'confidence', 0.0)
         })
         cards.append(card)
 

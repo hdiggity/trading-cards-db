@@ -5,12 +5,14 @@ Simple price refresh using ChatGPT
 import json
 import os
 import re
+import sys
 from typing import Optional
 from dotenv import load_dotenv
 from openai import OpenAI
 from sqlalchemy import func
 from app.database import get_session
 from app.models import Card, CardComplete
+from app.grid_processor import VALUE_ESTIMATE_PROMPT, MODEL
 
 load_dotenv()
 
@@ -111,17 +113,18 @@ def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
                 card_summaries.append(summary)
 
             cards_text = "\n".join(card_summaries)
-            prompt = f"""How much is each of these cards probably worth?
+            prompt = f"""{VALUE_ESTIMATE_PROMPT}
 
+Cards to evaluate:
 {cards_text}
 
-Return only a JSON object with index as key and price as value. Format all prices as $xx.xx (e.g., $1.00, $5.00, $10.00)."""
+Return only a JSON object with index as key and price as value (e.g., {{"0": "$5.00", "1": "$10.00"}})."""
 
             try:
                 response = client.chat.completions.create(
-                    model="gpt-5.2-chat-latest",
+                    model=MODEL,
                     messages=[{"role": "user", "content": prompt}],
-                    max_tokens=500,
+                    max_completion_tokens=500,
                     temperature=0.1
                 )
 
@@ -152,7 +155,7 @@ Return only a JSON object with index as key and price as value. Format all price
                         updated += 1
 
             except Exception as e:
-                print(f"Batch pricing error: {e}")
+                print(f"Batch pricing error: {e}", file=sys.stderr)
 
         session.commit()
 

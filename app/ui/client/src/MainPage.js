@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
-import UploadDropZone from './UploadDropZone';
 
 function MainPage() {
   const navigate = useNavigate();
@@ -33,6 +32,7 @@ function MainPage() {
   const [rawStart, setRawStart] = useState(0);
   const [pendingStart, setPendingStart] = useState(0); // eslint-disable-line no-unused-vars
   const rawStartRef = React.useRef(0);
+  const fileInputRef = React.useRef(null);
 
   useEffect(() => {
     const loadData = async () => {
@@ -239,9 +239,36 @@ function MainPage() {
     }
   }, [rawScanCount, bgProcessing, rawStart]);
 
-  const handleUploadComplete = (fileCount) => {
-    // Refresh raw scan count after upload
-    fetchRawScanCount();
+  const handleUploadClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleFileSelect = async (e) => {
+    const files = Array.from(e.target.files || []);
+    if (files.length === 0) return;
+
+    try {
+      const formData = new FormData();
+      files.forEach(file => formData.append('images', file));
+
+      const response = await fetch('http://localhost:3001/api/upload', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        alert(`Successfully uploaded ${result.count} image(s)`);
+        fetchRawScanCount();
+        e.target.value = ''; // Reset input
+      } else {
+        const error = await response.json();
+        alert(`Upload failed: ${error.error || 'Unknown error'}`);
+      }
+    } catch (error) {
+      console.error('Upload error:', error);
+      alert('Upload failed. Check console for details.');
+    }
   };
 
   return (
@@ -291,13 +318,11 @@ function MainPage() {
       </div>
       <header className="main-header">
         <h1>TRADING CARDS DATABASE</h1>
-      </header>
 
-      <div className="stats-section">
-        <h2>COLLECTION TOTALS</h2>
-        <div className="stats-grid">
+        {/* Collection totals banner */}
+        <div className="stats-banner">
           <div className="stat-card">
-            <div className="stat-number">{stats.total_cards}</div>
+            <div className="stat-number">{stats.total_quantity}</div>
             <div className="stat-label">CARDS</div>
           </div>
           <div className="stat-card hoverable">
@@ -355,18 +380,13 @@ function MainPage() {
             )}
           </div>
           <div className="stat-card">
-            <div className="stat-number">{stats.total_quantity}</div>
-            <div className="stat-label">TOTAL QUANTITY</div>
-          </div>
-          <div className="stat-card">
             <div className="stat-number">${stats.total_value?.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
             <div className="stat-label">TOTAL VALUE</div>
           </div>
         </div>
-      </div>
+      </header>
 
       <div className="actions-section">
-        <h2>ACTIONS</h2>
         <div className="action-buttons">
           <div className="process-section">
             <div className="process-header">
@@ -445,78 +465,29 @@ function MainPage() {
           </button>
 
           <button
-            className="action-button logs"
-            onClick={() => navigate('/logs')}
+            className="action-button upload"
+            onClick={handleUploadClick}
           >
             <div className="button-content">
-              <h3>SYSTEM LOGS</h3>
+              <h3>UPLOAD PHOTOS</h3>
             </div>
           </button>
+
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/*,.heic,.heif"
+            multiple
+            style={{ display: 'none' }}
+            onChange={handleFileSelect}
+          />
 
           {/* Upload history removed for streamlined UI */}
         </div>
       </div>
 
-      <div className="upload-section">
-        <h2>UPLOAD PHOTOS</h2>
-        <UploadDropZone onUploadComplete={handleUploadComplete} />
-      </div>
-
-      {/* System status section at bottom */}
-      <div className="system-status-section">
-        <div className="status-card">
-          <div className="status-header">
-            <h3>SYSTEM STATUS</h3>
-            <span className={`status-badge ${systemHealth?.status || 'unknown'}`}>
-              {systemHealth?.status === 'healthy' ? '● HEALTHY' :
-               systemHealth?.status === 'degraded' ? '● DEGRADED' :
-               systemHealth?.status === 'error' ? '● ERROR' : '● UNKNOWN'}
-            </span>
-          </div>
-          <div className="status-checks">
-            <div className="status-check" title={systemHealth?.checks?.database?.message || ''}>
-              <span className="status-check-label">DATABASE</span>
-              <span className={`status-check-value ${systemHealth?.checks?.database?.status || 'unknown'}`}>
-                {systemHealth?.checks?.database?.status === 'healthy' ? '✓ HEALTHY' :
-                 systemHealth?.checks?.database?.status === 'warning' ? '⚠ WARNING' :
-                 systemHealth?.checks?.database?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
-              </span>
-              {systemHealth?.checks?.database?.message && (
-                <span className="status-detail">{systemHealth.checks.database.message}</span>
-              )}
-            </div>
-            <div className="status-check" title={systemHealth?.checks?.openai_config?.message || ''}>
-              <span className="status-check-label">OPENAI API</span>
-              <span className={`status-check-value ${systemHealth?.checks?.openai_config?.status || 'unknown'}`}>
-                {systemHealth?.checks?.openai_config?.status === 'healthy' ? '✓ CONFIGURED' :
-                 systemHealth?.checks?.openai_config?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
-              </span>
-              {systemHealth?.checks?.openai_config?.message && (
-                <span className="status-detail">{systemHealth.checks.openai_config.message}</span>
-              )}
-            </div>
-            <div className="status-check" title={systemHealth?.checks?.directories?.message || ''}>
-              <span className="status-check-label">FILESYSTEM</span>
-              <span className={`status-check-value ${systemHealth?.checks?.directories?.status || 'unknown'}`}>
-                {systemHealth?.checks?.directories?.status === 'healthy' ? '✓ HEALTHY' :
-                 systemHealth?.checks?.directories?.status === 'warning' ? '⚠ WARNING' :
-                 systemHealth?.checks?.directories?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
-              </span>
-              {systemHealth?.checks?.directories?.message && (
-                <span className="status-detail">{systemHealth.checks.directories.message}</span>
-              )}
-            </div>
-            <div className="status-check" title={systemHealth?.checks?.python?.message || ''}>
-              <span className="status-check-label">PYTHON</span>
-              <span className={`status-check-value ${systemHealth?.checks?.python?.status || 'unknown'}`}>
-                {systemHealth?.checks?.python?.status === 'healthy' ? `✓ ${systemHealth?.checks?.python?.version || 'HEALTHY'}` :
-                 systemHealth?.checks?.python?.status === 'error' ? '✗ ERROR' : '- UNKNOWN'}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* Recent activity feed */}
+      {/* Recent activity feed - centered */}
+      <div className="recent-activity-section">
         <div className="activity-card">
           <h3>RECENT ACTIVITY</h3>
           {recentActivity.length > 0 ? (
@@ -548,6 +519,22 @@ function MainPage() {
             <div className="activity-empty">NO RECENT ACTIVITY</div>
           )}
         </div>
+      </div>
+
+      {/* System status button at bottom */}
+      <div className="system-status-footer">
+        <button
+          className="system-status-button"
+          onClick={() => navigate('/logs')}
+          title="View system logs and status"
+        >
+          <span className={`status-indicator ${systemHealth?.status || 'unknown'}`}>
+            {systemHealth?.status === 'healthy' ? '●' :
+             systemHealth?.status === 'degraded' ? '●' :
+             systemHealth?.status === 'error' ? '●' : '●'}
+          </span>
+          SYSTEM STATUS
+        </button>
       </div>
 
     </div>

@@ -1,0 +1,145 @@
+Processing 3x3 grid BACK images (PRIMARY input source)...
+Processing 5 images from provided file list
+Found 5 grid back images to process
+Found 3369 front images available for backup matching
+Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)
+[1/5] Processing: IMG_2272.HEIC
+processing: IMG_2272.HEIC
+2025-12-19 23:12:39,229 - trading_cards - INFO - [filesystem] File uploaded: IMG_2272.HEIC
+2025-12-19 23:12:44,440 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2272.HEIC', 'File size: 2879634 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2272.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:12:44,440 - trading_cards - INFO - [filesystem] File uploaded: IMG_2272.HEIC
+2025-12-19 23:12:44,456 - trading_cards - INFO - [system] Upload status changed: IMG_2272.HEIC -> processing
+2025-12-19 23:12:44,466 - trading_cards - INFO - [image_processing] Started processing: IMG_2272.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2272.HEIC
+2025-12-19 23:13:26,687 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Extraction completed: 9 cards processed
+Saved cropped back: IMG_2272_pos0.png
+Saved cropped back: IMG_2272_pos1.png
+Saved cropped back: IMG_2272_pos2.png
+Saved cropped back: IMG_2272_pos3.png
+Saved cropped back: IMG_2272_pos4.png
+Saved cropped back: IMG_2272_pos5.png
+Saved cropped back: IMG_2272_pos6.png
+Saved cropped back: IMG_2272_pos7.png
+Saved cropped back: IMG_2272_pos8.png
+Saved 9 grid cards to cards/pending_verification/IMG_2272.json
+Grid processing completed: 9 cards extracted
+2025-12-19 23:13:28,969 - trading_cards - INFO - [filesystem] File move: IMG_2272.HEIC -> IMG_2272.HEIC
+2025-12-19 23:13:28,973 - trading_cards - INFO - [system] Upload status changed: IMG_2272.HEIC -> pending_verification
+2025-12-19 23:13:28,975 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2272.HEIC
+completed: IMG_2272.HEIC (moved to pending_verification/bulk back)
+[2/5] Processing: IMG_2282.HEIC
+processing: IMG_2282.HEIC
+2025-12-19 23:13:28,976 - trading_cards - INFO - [filesystem] File uploaded: IMG_2282.HEIC
+2025-12-19 23:13:34,167 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2282.HEIC', 'File size: 4790822 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2282.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:13:34,168 - trading_cards - INFO - [filesystem] File uploaded: IMG_2282.HEIC
+2025-12-19 23:13:34,170 - trading_cards - INFO - [system] Upload status changed: IMG_2282.HEIC -> processing
+2025-12-19 23:13:34,174 - trading_cards - INFO - [image_processing] Started processing: IMG_2282.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2282.HEIC
+2025-12-19 23:13:59,185 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Extraction completed: 9 cards processed
+Saved cropped back: IMG_2282_pos0.png
+Saved cropped back: IMG_2282_pos1.png
+Saved cropped back: IMG_2282_pos2.png
+Saved cropped back: IMG_2282_pos3.png
+Saved cropped back: IMG_2282_pos4.png
+Saved cropped back: IMG_2282_pos5.png
+Saved cropped back: IMG_2282_pos6.png
+Saved cropped back: IMG_2282_pos7.png
+Saved cropped back: IMG_2282_pos8.png
+Saved 9 grid cards to cards/pending_verification/IMG_2282.json
+Grid processing completed: 9 cards extracted
+2025-12-19 23:14:03,671 - trading_cards - INFO - [filesystem] File move: IMG_2282.HEIC -> IMG_2282.HEIC
+2025-12-19 23:14:03,674 - trading_cards - INFO - [system] Upload status changed: IMG_2282.HEIC -> pending_verification
+2025-12-19 23:14:03,675 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2282.HEIC
+completed: IMG_2282.HEIC (moved to pending_verification/bulk back)
+[3/5] Processing: IMG_2292.HEIC
+processing: IMG_2292.HEIC
+2025-12-19 23:14:03,676 - trading_cards - INFO - [filesystem] File uploaded: IMG_2292.HEIC
+2025-12-19 23:14:08,864 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2292.HEIC', 'File size: 3978560 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2292.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:14:08,866 - trading_cards - INFO - [filesystem] File uploaded: IMG_2292.HEIC
+2025-12-19 23:14:08,869 - trading_cards - INFO - [system] Upload status changed: IMG_2292.HEIC -> processing
+2025-12-19 23:14:08,875 - trading_cards - INFO - [image_processing] Started processing: IMG_2292.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2292.HEIC
+2025-12-19 23:14:36,477 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Extraction completed: 9 cards processed
+Saved cropped back: IMG_2292_pos0.png
+Saved cropped back: IMG_2292_pos1.png
+Saved cropped back: IMG_2292_pos2.png
+Saved cropped back: IMG_2292_pos3.png
+Saved cropped back: IMG_2292_pos4.png
+Saved cropped back: IMG_2292_pos5.png
+Saved cropped back: IMG_2292_pos6.png
+Saved cropped back: IMG_2292_pos7.png
+Saved cropped back: IMG_2292_pos8.png
+Saved 9 grid cards to cards/pending_verification/IMG_2292.json
+Grid processing completed: 9 cards extracted
+2025-12-19 23:14:41,037 - trading_cards - INFO - [filesystem] File move: IMG_2292.HEIC -> IMG_2292.HEIC
+2025-12-19 23:14:41,040 - trading_cards - INFO - [system] Upload status changed: IMG_2292.HEIC -> pending_verification
+2025-12-19 23:14:41,042 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2292.HEIC
+completed: IMG_2292.HEIC (moved to pending_verification/bulk back)
+[4/5] Processing: IMG_2302.HEIC
+processing: IMG_2302.HEIC
+2025-12-19 23:14:41,043 - trading_cards - INFO - [filesystem] File uploaded: IMG_2302.HEIC
+2025-12-19 23:14:46,243 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2302.HEIC', 'File size: 4123146 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2302.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:14:46,244 - trading_cards - INFO - [filesystem] File uploaded: IMG_2302.HEIC
+2025-12-19 23:14:46,248 - trading_cards - INFO - [system] Upload status changed: IMG_2302.HEIC -> processing
+2025-12-19 23:14:46,253 - trading_cards - INFO - [image_processing] Started processing: IMG_2302.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2302.HEIC
+2025-12-19 23:15:02,637 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Extraction completed: 9 cards processed
+Saved cropped back: IMG_2302_pos0.png
+Saved cropped back: IMG_2302_pos1.png
+Saved cropped back: IMG_2302_pos2.png
+Saved cropped back: IMG_2302_pos3.png
+Saved cropped back: IMG_2302_pos4.png
+Saved cropped back: IMG_2302_pos5.png
+Saved cropped back: IMG_2302_pos6.png
+Saved cropped back: IMG_2302_pos7.png
+Saved cropped back: IMG_2302_pos8.png
+Saved 9 grid cards to cards/pending_verification/IMG_2302.json
+Grid processing completed: 9 cards extracted
+2025-12-19 23:15:07,117 - trading_cards - INFO - [filesystem] File move: IMG_2302.HEIC -> IMG_2302.HEIC
+2025-12-19 23:15:07,118 - trading_cards - INFO - [system] Upload status changed: IMG_2302.HEIC -> pending_verification
+2025-12-19 23:15:07,119 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2302.HEIC
+completed: IMG_2302.HEIC (moved to pending_verification/bulk back)
+[5/5] Processing: IMG_2312.HEIC
+processing: IMG_2312.HEIC
+2025-12-19 23:15:07,121 - trading_cards - INFO - [filesystem] File uploaded: IMG_2312.HEIC
+2025-12-19 23:15:12,307 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2312.HEIC', 'File size: 2868217 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2312.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:15:12,308 - trading_cards - INFO - [filesystem] File uploaded: IMG_2312.HEIC
+2025-12-19 23:15:12,313 - trading_cards - INFO - [system] Upload status changed: IMG_2312.HEIC -> processing
+2025-12-19 23:15:12,318 - trading_cards - INFO - [image_processing] Started processing: IMG_2312.HEIC
+Processing 3x3 grid with single-pass GPT Vision: cards/unprocessed_bulk_back/IMG_2312.HEIC
+2025-12-19 23:15:53,835 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Extraction completed: 9 cards processed
+Saved cropped back: IMG_2312_pos0.png
+Saved cropped back: IMG_2312_pos1.png
+Saved cropped back: IMG_2312_pos2.png
+Saved cropped back: IMG_2312_pos3.png
+Saved cropped back: IMG_2312_pos4.png
+Saved cropped back: IMG_2312_pos5.png
+Saved cropped back: IMG_2312_pos6.png
+Saved cropped back: IMG_2312_pos7.png
+Saved cropped back: IMG_2312_pos8.png
+Saved 9 grid cards to cards/pending_verification/IMG_2312.json
+Grid processing completed: 9 cards extracted
+2025-12-19 23:15:55,982 - trading_cards - INFO - [filesystem] File move: IMG_2312.HEIC -> IMG_2312.HEIC
+2025-12-19 23:15:55,983 - trading_cards - INFO - [system] Upload status changed: IMG_2312.HEIC -> pending_verification
+2025-12-19 23:15:55,984 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2312.HEIC
+completed: IMG_2312.HEIC (moved to pending_verification/bulk back)

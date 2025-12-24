@@ -66,13 +66,17 @@ function normalizeCardJS(card) {
     const feats = out.features.split(',').map(s => s.trim().toLowerCase().replace('_',' ')).filter(Boolean);
     out.features = feats.length ? Array.from(new Set(feats)).join(',') : 'none';
   }
-  // card_set: set to 'n/a' if it only contains brand/year tokens
+  // card_set: set to 'n/a' if it only contains brand/year tokens or descriptive back text
   try {
     const cs = (out.card_set || '').toLowerCase();
     const br = (out.brand || '').toLowerCase();
     if (cs) {
       let leftovers = cs.replace(br, '');
       leftovers = leftovers.replace(/\b(19\d{2}|20\d{2})\b/g, '');
+      // Remove common descriptive terms that aren't card sets (using word boundaries and partial matches)
+      leftovers = leftovers.replace(/(mexican|venezuelan|opc|o-pee-chee|chewing|gum)/gi, '');
+      leftovers = leftovers.replace(/\bback(s|ookie)?\b/gi, ''); // Handles "back", "backs", "backookie"
+      leftovers = leftovers.replace(/\b(rookie|card)s?\b/gi, ''); // Handles singular and plural
       leftovers = leftovers.replace(/[^a-z]+/g, ' ').trim();
       if (leftovers === '') out.card_set = 'n/a';
     }
@@ -173,6 +177,10 @@ async function recordCorrections(originalCard, modifiedCard) {
   // Otherwise fall back to comparing originalCard directly
   const aiExtraction = originalCard._original_extraction || originalCard;
 
+  console.log('[recordCorrections] Comparing cards - has _original_extraction:', !!originalCard._original_extraction);
+  console.log('[recordCorrections] Sample original name:', aiExtraction.name);
+  console.log('[recordCorrections] Sample modified name:', modifiedCard.name);
+
   for (const field of trackFields) {
     const orig = aiExtraction[field];
     const modified = modifiedCard[field];
@@ -180,11 +188,17 @@ async function recordCorrections(originalCard, modifiedCard) {
     const origNorm = orig?.toString().toLowerCase().trim() || '';
     const modNorm = modified?.toString().toLowerCase().trim() || '';
     if (origNorm !== modNorm && modNorm !== '') {
+      console.log(`[recordCorrections] Field ${field} changed: "${origNorm}" -> "${modNorm}"`);
       corrections.push({ field, original: orig, corrected: modified });
     }
   }
 
-  if (corrections.length === 0) return;
+  if (corrections.length === 0) {
+    console.log('[recordCorrections] No corrections detected');
+    return;
+  }
+
+  console.log(`[recordCorrections] Detected ${corrections.length} corrections:`, JSON.stringify(corrections));
 
   // Build context for the correction
   const context = {
@@ -199,7 +213,7 @@ async function recordCorrections(originalCard, modifiedCard) {
 import sys, json
 from app.correction_tracker import CorrectionTracker
 
-tracker = CorrectionTracker()
+tracker = CorrectionTracker(db_path="data/corrections.db")
 data = json.loads(sys.stdin.read())
 
 for corr in data['corrections']:
@@ -210,7 +224,8 @@ for corr in data['corrections']:
         card_name=data['context'].get('card_name'),
         image_filename=data['context'].get('image_filename'),
         brand=data['context'].get('brand'),
-        sport=data['context'].get('sport')
+        sport=data['context'].get('sport'),
+        copyright_year=data['context'].get('copyright_year')
     )
 
 print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
@@ -222,6 +237,11 @@ print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
       stdio: ['pipe', 'pipe', 'pipe']
     });
 
+    let stderr = '';
+    pythonProcess.stderr.on('data', (data) => {
+      stderr += data.toString();
+    });
+
     // Add card_name and image_filename to context
     const enrichedContext = {
       ...context,
@@ -231,8 +251,21 @@ print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
 
     pythonProcess.stdin.write(JSON.stringify({ corrections, context: enrichedContext }));
     pythonProcess.stdin.end();
-    pythonProcess.on('close', () => resolve());
-    pythonProcess.on('error', () => resolve());
+
+    pythonProcess.on('close', (code) => {
+      if (code !== 0) {
+        console.error('[CorrectionTracker] Python process exited with code', code);
+        console.error('[CorrectionTracker] Error:', stderr);
+      } else {
+        console.log('[CorrectionTracker]', stderr.trim());
+      }
+      resolve();
+    });
+
+    pythonProcess.on('error', (err) => {
+      console.error('[CorrectionTracker] Failed to start Python process:', err);
+      resolve();
+    });
   });
 }
 
@@ -610,7 +643,9 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
     if (modifiedData) {
       allCardData[parseInt(cardIndex)] = modifiedData;
       // Record corrections for learning system (async, non-blocking)
-      recordCorrections(originalCardData, modifiedData).catch(() => {});
+      recordCorrections(originalCardData, modifiedData).catch((err) => {
+        console.error('[pass-card] Failed to record corrections:', err);
+      });
     }
 
     // Import only the specific card to database
@@ -1019,7 +1054,9 @@ app.post('/api/pass/:id', async (req, res) => {
     if (modifiedData) {
       for (let i = 0; i < modifiedData.length; i++) {
         if (i < originalData.length) {
-          recordCorrections(originalData[i], modifiedData[i]).catch(() => {});
+          recordCorrections(originalData[i], modifiedData[i]).catch((err) => {
+            console.error('[pass-all] Failed to record corrections:', err);
+          });
         }
       }
     }
@@ -1291,7 +1328,7 @@ app.post('/api/save-progress/:id', async (req, res) => {
     }
 
     // Convert selected text fields to lowercase for consistency (include 'name')
-    const processData = (card) => {
+    const processData = (card, existingCard = null) => {
       const processedCard = { ...card };
       const textFields = ['name', 'sport', 'brand', 'team', 'card_set', 'features', 'condition'];
       textFields.forEach(field => {
@@ -1299,6 +1336,10 @@ app.post('/api/save-progress/:id', async (req, res) => {
           processedCard[field] = processedCard[field].toLowerCase();
         }
       });
+      // Preserve _original_extraction from existing card if available
+      if (existingCard && existingCard._original_extraction) {
+        processedCard._original_extraction = existingCard._original_extraction;
+      }
       return processedCard;
     };
 
@@ -1308,14 +1349,14 @@ app.post('/api/save-progress/:id', async (req, res) => {
     if (cardIndex !== undefined && data.length === 1) {
       finalData = [...existingData];
       if (cardIndex >= 0 && cardIndex < finalData.length) {
-        finalData[cardIndex] = processData(data[0]);
+        finalData[cardIndex] = processData(data[0], existingData[cardIndex]);
       }
       console.log(`[save-progress] Single card mode: updated card ${cardIndex}, total cards: ${finalData.length}`);
     } else {
       // Full array update (entire photo mode) - but merge by grid_position to be safe
       if (data.length === existingData.length) {
         // Same length, safe to replace entirely
-        finalData = data.map(processData);
+        finalData = data.map((card, idx) => processData(card, existingData[idx]));
       } else {
         // Different lengths - merge by grid_position
         finalData = [...existingData];
@@ -1326,7 +1367,7 @@ app.post('/api/save-progress/:id', async (req, res) => {
               (c.grid_position ?? c._grid_metadata?.position) === pos
             );
             if (idx !== -1) {
-              finalData[idx] = processData(incomingCard);
+              finalData[idx] = processData(incomingCard, existingData[idx]);
             }
           }
         }
@@ -1349,7 +1390,73 @@ app.post('/api/save-progress/:id', async (req, res) => {
   }
 });
 
-// Reprocess endpoint removed - functionality deprecated (references non-existent utils.py functions)
+// Reprocess card data using GPT Vision
+app.post('/api/reprocess/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { mode } = req.body; // 'remaining' or 'all'
+
+    // Find the image file in pending verification bulk back directory
+    const bulkBackFiles = await fs.readdir(PENDING_BULK_BACK_DIR);
+    const imageFile = bulkBackFiles.find(file => {
+      const imgBaseName = path.parse(file).name;
+      const imgExt = path.parse(file).ext.toLowerCase();
+      return imgBaseName === id && ['.jpg', '.jpeg', '.png', '.heic'].includes(imgExt);
+    });
+
+    if (!imageFile) {
+      return res.status(404).json({ error: 'Image file not found for reprocessing' });
+    }
+
+    const imagePath = path.join(PENDING_BULK_BACK_DIR, imageFile);
+
+    // Call Python to reprocess the image with grid_processor
+    const pythonProcess = spawn('python', ['-c', `
+import sys
+from app.grid_processor import reprocess_grid_image
+
+image_path = sys.argv[1]
+cards = reprocess_grid_image(image_path)
+
+# Output JSON
+import json
+print(json.dumps(cards))
+`, imagePath], {
+      cwd: path.join(__dirname, '../..'),
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+
+    let output = '';
+    let error = '';
+
+    pythonProcess.stdout.on('data', (data) => {
+      output += data.toString();
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+      error += data.toString();
+    });
+
+    pythonProcess.on('close', (code) => {
+      if (code === 0) {
+        try {
+          const reprocessedCards = JSON.parse(output);
+          res.json({ success: true, data: reprocessedCards });
+        } catch (parseError) {
+          console.error('Failed to parse reprocessed data:', parseError);
+          res.status(500).json({ error: 'Failed to parse reprocessed data', details: parseError.message });
+        }
+      } else {
+        console.error('Reprocess failed:', error);
+        res.status(500).json({ error: 'Reprocessing failed', details: error.trim() });
+      }
+    });
+
+  } catch (error) {
+    console.error('Error reprocessing card:', error);
+    res.status(500).json({ error: 'Failed to reprocess card' });
+  }
+});
 
 app.post('/api/fail-card/:id/:cardIndex', async (req, res) => {
   try {
@@ -3086,11 +3193,17 @@ print(json.dumps(result))
     pythonProcess.stdout.on('data', (d) => output += d.toString());
     pythonProcess.stderr.on('data', (d) => error += d.toString());
     pythonProcess.on('close', (code) => {
+      console.log('[refresh-prices] Exit code:', code);
+      console.log('[refresh-prices] Output:', output);
+      console.log('[refresh-prices] Error:', error);
+
       if (code === 0) {
         try {
           const result = JSON.parse(output);
+          console.log('[refresh-prices] Parsed result:', result);
           res.json({ success: true, ...result });
         } catch (e) {
+          console.log('[refresh-prices] JSON parse error:', e.message);
           res.json({ success: true, message: output.trim() });
         }
       } else {
@@ -3303,7 +3416,7 @@ app.get('/api/recent-activity', async (req, res) => {
     const allActivity = [];
 
     // Read all history files from verification history directory
-    const historyDir = path.join(PENDING_VERIFICATION_DIR, 'history');
+    const historyDir = VERIFICATION_HISTORY_DIR;
 
     try {
       await fs.mkdir(historyDir, { recursive: true });
@@ -3348,6 +3461,80 @@ app.get('/api/recent-activity', async (req, res) => {
   } catch (error) {
     console.error('[recent-activity] Error:', error);
     res.status(500).json({ error: error.message, activity: [], count: 0, total: 0 });
+  }
+});
+
+// Search for previously verified cards by name prefix (for autofill)
+app.get('/api/search-cards', async (req, res) => {
+  try {
+    const { query = '', limit = 10 } = req.query;
+
+    if (!query || query.trim().length < 2) {
+      return res.json({ cards: [] });
+    }
+
+    const pythonProcess = spawn('python', ['-c', `
+import json
+import sys
+from app.database import get_session
+from app.models import Card
+
+query = "${query.toLowerCase().replace(/"/g, '\\"')}"
+limit = ${parseInt(limit) || 10}
+
+with get_session() as session:
+    # Search by name prefix (case-insensitive)
+    cards = session.query(Card).filter(
+        Card.name.like(query + '%')
+    ).order_by(
+        Card.name
+    ).limit(limit).all()
+
+    results = []
+    for card in cards:
+        results.append({
+            'id': card.id,
+            'name': card.name,
+            'sport': card.sport,
+            'brand': card.brand,
+            'team': card.team,
+            'number': card.number,
+            'copyright_year': card.copyright_year,
+            'card_set': card.card_set,
+            'condition': card.condition,
+            'is_player': card.is_player,
+            'features': card.features,
+            'value_estimate': card.value_estimate,
+            'notes': card.notes
+        })
+
+    print(json.dumps({'cards': results}))
+    `], {
+      cwd: path.join(__dirname, '../..'),
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+
+    let output = '';
+    let error = '';
+
+    pythonProcess.stdout.on('data', (d) => output += d.toString());
+    pythonProcess.stderr.on('data', (d) => error += d.toString());
+    pythonProcess.on('close', (code) => {
+      if (code === 0) {
+        try {
+          const result = JSON.parse(output);
+          res.json(result);
+        } catch (e) {
+          res.json({ cards: [] });
+        }
+      } else {
+        console.error('Search error:', error);
+        res.json({ cards: [] });
+      }
+    });
+  } catch (error) {
+    console.error('Error searching cards:', error);
+    res.json({ cards: [] });
   }
 });
 

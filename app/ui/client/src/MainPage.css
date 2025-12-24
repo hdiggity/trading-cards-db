@@ -3,7 +3,7 @@
 .main-page {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
   background: #fafafa;
   min-height: 100vh;
@@ -11,26 +11,41 @@
 
 .main-header {
   text-align: center;
-  margin-bottom: 48px;
-  padding: 48px 32px;
+  margin-bottom: 16px;
+  padding: 20px 16px 16px 16px;
   background: white;
   color: #1a1a1a;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
 }
 
-/* System status section */
-.system-status-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 48px;
+.main-header h1 {
+  margin: 0 0 16px 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
 }
 
-.status-card,
+/* Stats banner - horizontal layout below title */
+.stats-banner {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Recent activity section - centered */
+.recent-activity-section {
+  max-width: 800px;
+  margin: 0 auto 16px auto;
+}
+
 .activity-card {
   background: white;
-  padding: 24px;
+  padding: 16px;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
 }
@@ -45,7 +60,7 @@
 .status-header h3,
 .activity-card h3 {
   margin: 0 0 16px 0;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1a1a1a;
 }
@@ -207,13 +222,6 @@
   font-weight: 500;
 }
 
-.main-header h1 {
-  margin: 0 0 12px 0;
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-}
-
 .main-header p {
   margin: 0;
   font-size: 1.125rem;
@@ -221,102 +229,90 @@
   font-weight: 400;
 }
 
-.stats-section {
-  margin-bottom: 48px;
-}
-
-.stats-section h2 {
+.stats-banner .stat-card {
+  background: transparent;
+  padding: 0;
   text-align: center;
-  margin-bottom: 32px;
-  color: #1a1a1a;
-  font-size: 1.875rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-}
-
-.stats-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 32px;
-  justify-content: center; /* center items per row */
-}
-
-.stat-card {
-  background: white;
-  padding: 32px 24px;
-  border-radius: 8px;
-  text-align: center;
-  border: 1px solid #e5e5e5;
-  transition: border-color 0.2s ease;
   position: relative; /* for hover preview positioning */
-  width: 240px; /* match the grid column width for consistent centering */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.stat-card:hover {
-  border-color: #d4d4d4;
-}
-
-.stat-card.pending {
-  background: #1a1a1a;
-  color: white;
-  border-color: #1a1a1a;
-}
-
-.stat-card.raw-scans {
-  background: #525252;
-  color: white;
-  border-color: #525252;
-}
-
-.stat-number {
-  font-size: 2.5rem;
+.stats-banner .stat-number {
+  font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 8px;
+  color: #1a1a1a;
   letter-spacing: -0.025em;
 }
 
-.stat-label {
-  font-size: 0.875rem;
-  opacity: 0.8;
+.stats-banner .stat-label {
+  font-size: 0.6875rem;
+  color: #6b7280;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
-.upload-section {
-  margin-bottom: 48px;
+/* System status footer */
+.system-status-footer {
+  text-align: center;
+  padding: 16px 0;
 }
 
-.upload-section h2 {
-  text-align: center;
-  margin-bottom: 32px;
-  color: #1a1a1a;
-  font-size: 1.875rem;
+.system-status-button {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: -0.025em;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.system-status-button:hover {
+  border-color: #d4d4d4;
+  background: #fafafa;
+}
+
+.status-indicator {
+  font-size: 0.625rem;
+}
+
+.status-indicator.healthy {
+  color: #15803d;
+}
+
+.status-indicator.degraded {
+  color: #a16207;
+}
+
+.status-indicator.error {
+  color: #b91c1c;
+}
+
+.status-indicator.unknown {
+  color: #6b7280;
 }
 
 .actions-section {
-  margin-bottom: 48px;
-}
-
-.actions-section h2 {
-  text-align: center;
-  margin-bottom: 32px;
-  color: #1a1a1a;
-  font-size: 1.875rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 16px;
 }
 
 .action-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  max-width: 600px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
 
 /* Row with primary process button and a compact preview button */
@@ -324,8 +320,9 @@
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 20px;
+  padding: 16px;
   width: 100%;
+  grid-column: 1 / -1; /* Span full width */
 }
 
 .process-header {
@@ -506,7 +503,7 @@
   background: white;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
-  padding: 24px 48px;
+  padding: 20px;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
@@ -515,7 +512,7 @@
   text-align: center;
   position: relative;
   width: 100%;
-  max-width: 400px;
+  min-height: 80px;
 }
 
 .action-button .spinner {
@@ -555,8 +552,8 @@
 }
 
 .button-content h3 {
-  margin: 0 0 8px 0;
-  font-size: 1.25rem;
+  margin: 0;
+  font-size: 1.125rem;
   color: #1a1a1a;
   font-weight: 600;
   letter-spacing: -0.025em;
@@ -769,49 +766,55 @@
 
 @media (max-width: 1024px) {
   .main-page {
-    padding: 24px;
+    padding: 20px;
   }
-  .stat-card { width: 200px; }
+  .stats-banner {
+    gap: 18px;
+  }
 }
 
 @media (max-width: 768px) {
   .main-page {
-    padding: 16px;
+    padding: 12px;
   }
 
   .main-header {
-    padding: 32px 24px;
-    margin-bottom: 32px;
+    padding: 16px;
+    margin-bottom: 12px;
   }
 
   .main-header h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
   }
 
   .main-header p {
     font-size: 1rem;
   }
 
-  .system-status-section {
+  .stats-banner {
+    gap: 16px;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .stats-banner .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stats-banner .stat-label {
+    font-size: 0.625rem;
+  }
+
+  .action-buttons {
     grid-template-columns: 1fr;
-  }
-
-  .stats-grid { gap: 12px; }
-
-  .stat-card {
-    padding: 24px 16px;
-    width: 160px;
-  }
-
-  .stat-number {
-    font-size: 2rem;
   }
 
   .action-button {
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    padding: 24px;
+    padding: 20px;
   }
 
   .button-icon {
@@ -846,12 +849,23 @@
 }
 
 @media (max-width: 480px) {
-  .stats-grid { gap: 12px; }
-  
   .main-header h1 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
   }
-  
+
+  .stats-banner {
+    gap: 12px;
+  }
+
+  .stats-banner .stat-number {
+    font-size: 1.25rem;
+  }
+
+  .stats-banner .stat-label {
+    font-size: 0.5625rem;
+  }
+
   .badge {
     top: 12px;
     right: 12px;
@@ -865,16 +879,20 @@
 .hoverable .hover-preview {
   display: none;
   position: absolute;
-  top: -8px;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, 8px);
   background: white;
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   padding: 10px 12px;
   min-width: 200px;
+  max-width: 300px;
+  width: max-content;
   z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .hoverable:hover .hover-preview { display: block; }

@@ -159,7 +159,8 @@ function DatabaseBrowser() {
 
   const handleRefreshPrices = async () => {
     setRefreshingPrices(true);
-    setRefreshResult(null);
+    setRefreshResult('Refreshing ALL card prices...');
+
     try {
       const response = await fetch('http://localhost:3001/api/refresh-prices', {
         method: 'POST',
@@ -167,18 +168,31 @@ function DatabaseBrowser() {
         body: JSON.stringify({ batchSize: 25, forceAll: true })
       });
       const result = await response.json();
+
       if (result.success) {
         const batchText = result.batches ? ` in ${result.batches} batches` : '';
-        setRefreshResult(`Updated ${result.updated} of ${result.total} cards${batchText}`);
-        fetchCards();
+        setRefreshResult(`✓ Updated ${result.updated} of ${result.total} cards${batchText}`);
+
+        // Auto-clear after 10 seconds
+        setTimeout(() => setRefreshResult(null), 10000);
+
+        // Refresh the displayed cards to show new prices
+        try {
+          await fetchCards();
+        } catch (err) {
+          console.error('Error refreshing card display:', err);
+        }
       } else {
-        setRefreshResult(`Error: ${result.error || 'Unknown error'}`);
+        setRefreshResult(`✗ Error: ${result.error || 'Failed to refresh prices'}`);
+        setTimeout(() => setRefreshResult(null), 10000);
       }
     } catch (error) {
       console.error('Error refreshing prices:', error);
-      setRefreshResult('Error: Failed to refresh prices');
+      setRefreshResult(`✗ Error: Failed to refresh prices`);
+      setTimeout(() => setRefreshResult(null), 10000);
+    } finally {
+      setRefreshingPrices(false);
     }
-    setRefreshingPrices(false);
   };
 
   const handleEdit = (card) => {
@@ -564,7 +578,7 @@ function DatabaseBrowser() {
               list="sports-list"
               value={filterSport}
               onChange={(e) => setFilterSport(e.target.value)}
-              placeholder="ALL SPORTS"
+              placeholder="sport"
               className="filter-select"
             />
             <datalist id="sports-list">
@@ -577,7 +591,7 @@ function DatabaseBrowser() {
               list="brands-list"
               value={filterBrand}
               onChange={(e) => setFilterBrand(e.target.value)}
-              placeholder="ALL BRANDS"
+              placeholder="brand"
               className="filter-select"
             />
             <datalist id="brands-list">
@@ -590,7 +604,7 @@ function DatabaseBrowser() {
               list="years-list"
               value={filterYear}
               onChange={(e) => setFilterYear(e.target.value)}
-              placeholder="ALL YEARS"
+              placeholder="year"
               className="filter-select"
             />
             <datalist id="years-list">
@@ -603,7 +617,7 @@ function DatabaseBrowser() {
               list="teams-list"
               value={filterTeam}
               onChange={(e) => setFilterTeam(e.target.value)}
-              placeholder="ALL TEAMS"
+              placeholder="team"
               className="filter-select"
             />
             <datalist id="teams-list">
@@ -616,7 +630,7 @@ function DatabaseBrowser() {
               list="sets-list"
               value={filterSet}
               onChange={(e) => setFilterSet(e.target.value)}
-              placeholder="ALL SETS"
+              placeholder="set"
               className="filter-select"
             />
             <datalist id="sets-list">
@@ -629,7 +643,7 @@ function DatabaseBrowser() {
               list="conditions-list"
               value={filterCondition}
               onChange={(e) => setFilterCondition(e.target.value)}
-              placeholder="ALL CONDITIONS"
+              placeholder="condition"
               className="filter-select"
             />
             <datalist id="conditions-list">
@@ -642,7 +656,7 @@ function DatabaseBrowser() {
               type="text"
               value={filterName}
               onChange={(e) => setFilterName(e.target.value)}
-              placeholder="FILTER BY NAME"
+              placeholder="name"
               className="filter-select"
             />
 
@@ -650,7 +664,7 @@ function DatabaseBrowser() {
               type="text"
               value={filterNumber}
               onChange={(e) => setFilterNumber(e.target.value)}
-              placeholder="FILTER BY NUMBER"
+              placeholder="number"
               className="filter-select"
             />
 
@@ -658,7 +672,7 @@ function DatabaseBrowser() {
               type="text"
               value={filterFeatures}
               onChange={(e) => setFilterFeatures(e.target.value)}
-              placeholder="FILTER BY FEATURES"
+              placeholder="features"
               className="filter-select"
             />
 
@@ -667,9 +681,9 @@ function DatabaseBrowser() {
               onChange={(e) => setFilterIsPlayer(e.target.value)}
               className="filter-select"
             >
-              <option value="">ALL CARDS</option>
-              <option value="true">PLAYER CARDS ONLY</option>
-              <option value="false">NON-PLAYER CARDS ONLY</option>
+              <option value="">cards</option>
+              <option value="true">player cards</option>
+              <option value="false">non-player cards</option>
             </select>
 
             <button

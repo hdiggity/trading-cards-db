@@ -1,12 +1,13 @@
 /* Minimal, sleek design for database browser */
 
 .database-browser {
-  max-width: 1800px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 32px;
+  padding: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
   background: #fafafa;
   min-height: 100vh;
+  font-size: 14px;
 }
 
 .browser-header {
@@ -27,7 +28,7 @@
 .header-top h1 {
   color: #1a1a1a;
   margin: 0;
-  font-size: 1.875rem;
+  font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
@@ -51,13 +52,13 @@
 .search-filters {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .total-count {
   font-size: 14px;
   font-weight: 600;
-  color: #666;
+  color: #525252;
   padding: 8px 0;
 }
 
@@ -75,6 +76,11 @@
   font-size: 14px;
   background: white;
   transition: border-color 0.2s ease;
+  text-transform: none;
+}
+
+.search-input::placeholder {
+  text-transform: none;
 }
 
 .search-input:focus {
@@ -99,19 +105,28 @@
 }
 
 .filters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 6px;
-  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  margin-bottom: 8px;
+  align-items: center;
+  overflow-x: auto;
 }
 
 .filter-select {
-  padding: 4px 8px;
+  padding: 4px 6px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  font-size: 11px;
+  font-size: 12px;
   background: white;
   transition: border-color 0.2s ease;
+  width: 90px;
+  flex-shrink: 0;
+  text-transform: none;
+}
+
+.filter-select::placeholder {
+  text-transform: none;
 }
 
 .filter-select:focus {
@@ -119,19 +134,23 @@
   border-color: #525252;
 }
 
-.refresh-prices-button {
+.refresh-prices-button,
+.reset-filters-button {
   padding: 4px 8px;
   background: #1a1a1a;
   color: white;
   border: none;
   border-radius: 4px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.refresh-prices-button:hover:not(:disabled) {
+.refresh-prices-button:hover:not(:disabled),
+.reset-filters-button:hover {
   background: #333;
 }
 
@@ -142,8 +161,14 @@
 
 .refresh-result {
   font-size: 13px;
-  color: #525252;
+  font-weight: 600;
+  color: #15803d;
   margin-left: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 4px 8px;
+  background: #dcfce7;
+  border-radius: 4px;
 }
 
 .loading {
@@ -168,17 +193,34 @@
 .cards-table table {
   width: 100%;
   border-collapse: collapse;
+  table-layout: auto;
 }
 
 .cards-table th {
   background: #1a1a1a;
   color: white;
-  padding: 12px 8px;
+  padding: 8px 4px;
   text-align: left;
   font-weight: 500;
-  font-size: 13px;
-  min-width: 80px;
+  font-size: 12px;
+  max-width: 75px;
   border-bottom: 1px solid #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Specific column widths for narrower fields */
+.cards-table th:nth-child(2),  /* ID column */
+.cards-table td:nth-child(2) {
+  max-width: 45px;
+}
+
+/* Actions column - compact */
+.cards-table th:last-child,
+.cards-table td:last-child {
+  max-width: 110px;
+  width: 110px;
 }
 
 .cards-table th.sortable { cursor: pointer; user-select: none; }
@@ -186,12 +228,13 @@
 .cards-table td.sorted-cell { background: #f3f4f6; }
 
 .cards-table td {
-  padding: 10px 8px;
+  padding: 6px 4px;
   border-bottom: 1px solid #f0f0f0;
-  font-size: 13px;
-  max-width: 120px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  font-size: 12px;
+  max-width: 75px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #1a1a1a;
   text-transform: none;
 }
@@ -207,9 +250,9 @@
 .cards-table input,
 .cards-table select {
   width: 100%;
-  padding: 6px 8px;
+  padding: 3px 4px;
   border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  border-radius: 3px;
   font-size: 12px;
   box-sizing: border-box;
   background: white;
@@ -233,14 +276,23 @@
 }
 
 .edit-btn, .delete-btn, .save-btn, .cancel-btn {
-  padding: 6px 12px;
+  padding: 4px 7px;
   border: none;
-  border-radius: 4px;
+  border-radius: 3px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
-  margin-right: 6px;
+  margin-right: 3px;
   transition: background-color 0.2s ease;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.edit-btn:last-child,
+.delete-btn:last-child,
+.save-btn:last-child,
+.cancel-btn:last-child {
+  margin-right: 0;
 }
 
 .edit-btn {
@@ -345,9 +397,10 @@ table td input[type="checkbox"] {
 
 table th:first-child,
 table td:first-child {
-  width: 40px;
+  width: 35px;
+  max-width: 35px;
   text-align: center;
-  padding: 8px 4px;
+  padding: 6px 2px;
 }
 
 /* Selection highlighting */
@@ -368,24 +421,6 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 @media (max-width: 1600px) {
   .cards-table {
     overflow-x: auto;
-  }
-  
-  .cards-table table {
-    min-width: 1400px;
-  }
-  
-  .filters {
-    flex-direction: column;
-  }
-  
-  .filter-select {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1200px) {
-  .cards-table table {
-    min-width: 1200px;
   }
 }
 

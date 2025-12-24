@@ -1,11 +1,12 @@
 import os
-from dotenv import load_dotenv
 from pathlib import Path
+
+from dotenv import load_dotenv
 
 
 class Config:
-    """
-    Centralized configuration management for the trading cards application.
+    """Centralized configuration management for the trading cards application.
+
     Loads environment variables and validates required settings.
     """
 
@@ -54,8 +55,8 @@ class Config:
         self.validate()
 
     def validate(self):
-        """
-        Validate required configuration based on environment.
+        """Validate required configuration based on environment.
+
         Raises ValueError if required settings are missing.
         """
         errors = []
@@ -127,8 +128,7 @@ _config = None
 
 
 def get_config(reload=False):
-    """
-    Get the global configuration instance.
+    """Get the global configuration instance.
 
     Args:
         reload: If True, reload configuration from environment

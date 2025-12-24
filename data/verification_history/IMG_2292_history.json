@@ -1,0 +1,3243 @@
+[
+  {
+    "timestamp": "2025-12-20T04:16:54.422Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "texas rangers",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby evans",
+        "number": "408",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:17:29.887Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "texas rangers",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby evans",
+        "number": "408",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:17:59.898Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby evans",
+        "number": "408",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:18:40.213Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "408",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:19:04.729Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:19:10.520Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard sets n.l. record f",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:19:15.869Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard sets n.l. record for ",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:19:56.376Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard sets n.l. record for k's by a righthander",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:20:00.545Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard sets n.l. record for k's by a righthander",
+        "number": "203",
+        "team": "houston astros",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:21:47.106Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard sets n.l. record for k's by a righthander",
+        "number": "203",
+        "team": "houston astros",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard set",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:22:04.136Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard record breaker",
+        "number": "203",
+        "team": "houston astros",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard record breaker",
+        "number": "203",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:23:07.115Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob davis",
+        "number": "713",
+        "team": "san diego padres",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "dennis eckersley",
+        "number": "40",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "len barker",
+        "number": "94",
+        "team": "other",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "john wathan",
+        "number": "99",
+        "team": "kansas city royals",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rick cerone",
+        "number": "152",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "dwight evans",
+        "number": "155",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "j.r. richard record breaker",
+        "number": "203",
+        "team": "houston astros",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "j.r. richard record breaker",
+        "number": "203",
+        "team": "houston astros",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": 3
+          },
+          {
+            "field": "team",
+            "original": "n/a",
+            "corrected": "philadelphia phillies",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "is_player": false
+      },
+      {
+        "grid_position": 8,
+        "name": "dave lemanczyk",
+        "number": "207",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2292_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

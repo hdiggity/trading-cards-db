@@ -49,7 +49,8 @@ router.get('/health', async (req, res) => {
     if (dbUrl.startsWith('sqlite:')) {
       // extract file path from sqlite url
       const dbPath = dbUrl.replace('sqlite:///', '');
-      const fullPath = path.resolve(dbPath);
+      // Resolve from project root (two directories up from this file)
+      const fullPath = path.resolve(__dirname, '../../../', dbPath);
 
       if (fs.existsSync(fullPath)) {
         const stats = fs.statSync(fullPath);

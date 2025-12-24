@@ -438,20 +438,37 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:3001/api/field-autocomplete', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ field, query, limit: 8 })
-      });
+      // For name field, search previously verified cards for autofill
+      if (field === 'name' && onAutofill) {
+        const response = await fetch(`http://localhost:3001/api/search-cards?query=${encodeURIComponent(query)}&limit=8`);
 
-      if (response.ok) {
-        const data = await response.json();
-        if (data.suggestions && data.suggestions.length > 0) {
-          setSuggestions(data.suggestions);
-          setShowSuggestions(true);
-        } else {
-          setSuggestions([]);
-          setShowSuggestions(false);
+        if (response.ok) {
+          const data = await response.json();
+          if (data.cards && data.cards.length > 0) {
+            setSuggestions(data.cards); // Store full card objects
+            setShowSuggestions(true);
+          } else {
+            setSuggestions([]);
+            setShowSuggestions(false);
+          }
+        }
+      } else {
+        // For other fields, use field-specific autocomplete
+        const response = await fetch('http://localhost:3001/api/field-autocomplete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ field, query, limit: 8 })
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          if (data.suggestions && data.suggestions.length > 0) {
+            setSuggestions(data.suggestions);
+            setShowSuggestions(true);
+          } else {
+            setSuggestions([]);
+            setShowSuggestions(false);
+          }
         }
       }
     } catch (error) {
@@ -475,28 +492,19 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
   };
 
   const handleSuggestionClick = async (suggestion) => {
-    onChange(suggestion);
     setShowSuggestions(false);
     setSuggestions([]);
 
-    // If this is the name field and we have an autofill callback, fetch card data
-    if (field === 'name' && onAutofill) {
-      try {
-        const response = await fetch('http://localhost:3001/api/card-by-name', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name: suggestion })
-        });
-
-        if (response.ok) {
-          const data = await response.json();
-          if (data.card) {
-            onAutofill(data.card);
-          }
-        }
-      } catch (error) {
-        console.error('Error fetching card data for autofill:', error);
+    // If suggestion is a card object (from name field search)
+    if (typeof suggestion === 'object' && suggestion.name) {
+      onChange(suggestion.name);
+      // Autofill all fields from this card
+      if (field === 'name' && onAutofill) {
+        onAutofill(suggestion);
       }
+    } else {
+      // String suggestion (from field autocomplete)
+      onChange(suggestion);
     }
   };
 
@@ -550,27 +558,41 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
           boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
           marginTop: '2px'
         }}>
-          {suggestions.map((suggestion, idx) => (
-            <div
-              key={idx}
-              onClick={() => handleSuggestionClick(suggestion)}
-              style={{
-                padding: '8px 12px',
-                cursor: 'pointer',
-                borderBottom: idx < suggestions.length - 1 ? '1px solid #eee' : 'none',
-                fontSize: '13px',
-                transition: 'background-color 0.15s'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#f0f7ff';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#fff';
-              }}
-            >
-              {suggestion}
-            </div>
-          ))}
+          {suggestions.map((suggestion, idx) => {
+            // Check if suggestion is a card object or a string
+            const isCardObject = typeof suggestion === 'object' && suggestion.name;
+
+            return (
+              <div
+                key={idx}
+                onClick={() => handleSuggestionClick(suggestion)}
+                style={{
+                  padding: '8px 12px',
+                  cursor: 'pointer',
+                  borderBottom: idx < suggestions.length - 1 ? '1px solid #eee' : 'none',
+                  fontSize: '13px',
+                  transition: 'background-color 0.15s'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#f0f7ff';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#fff';
+                }}
+              >
+                {isCardObject ? (
+                  <div>
+                    <div style={{ fontWeight: 'bold' }}>{suggestion.name}</div>
+                    <div style={{ fontSize: '11px', color: '#666', marginTop: '2px' }}>
+                      {[suggestion.copyright_year, suggestion.brand, suggestion.team, suggestion.number].filter(Boolean).join(' • ')}
+                    </div>
+                  </div>
+                ) : (
+                  suggestion
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>
@@ -587,13 +609,8 @@ function FeaturesSelector({ value, availableFeatures, onChange }) {
   const [showCustomInput, setShowCustomInput] = useState(false);
   const [addedCustomFeatures, setAddedCustomFeatures] = useState([]);
 
-  const predefinedFeatures = [
-    'rookie', 'autograph', 'jersey', 'parallel', 'refractor', 'chrome',
-    'limited edition', 'serial numbered', 'prospect', 'hall of fame', 'insert', 'short print'
-  ];
-
-  // Include selected features and custom added features so they show up in the checkbox list
-  const allFeatures = [...new Set([...predefinedFeatures, ...availableFeatures, ...selectedFeatures, ...addedCustomFeatures])];
+  // Only show features that exist in the database, plus custom added features
+  const allFeatures = [...new Set([...availableFeatures, ...selectedFeatures, ...addedCustomFeatures])];
 
   const handleFeatureToggle = (feature) => {
     const newSelected = selectedFeatures.includes(feature)
@@ -698,6 +715,12 @@ function App() {
     // Check for saved session on mount
     const checkSavedSession = () => {
       try {
+        // Check if we've already shown recovery for this browser session
+        const recoveryShown = sessionStorage.getItem('recoveryShown');
+        if (recoveryShown) {
+          return; // Don't show recovery again in this browser session
+        }
+
         const savedSession = localStorage.getItem('editSession');
         if (savedSession) {
           const session = JSON.parse(savedSession);
@@ -705,11 +728,11 @@ function App() {
           const sessionAge = now - session.timestamp;
           const oneHour = 3600000;
 
-          // Only show recovery if session is less than 1 hour old
-          if (sessionAge < oneHour) {
+          // Only show recovery if session is less than 1 hour old and not currently editing
+          if (sessionAge < oneHour && !isEditing) {
             setRecoverySession(session);
             setShowRecovery(true);
-          } else {
+          } else if (sessionAge >= oneHour) {
             // Clear old session
             localStorage.removeItem('editSession');
           }
@@ -955,12 +978,23 @@ function App() {
 
   // Undo last action
   const handleUndo = async () => {
-    if (!canUndo || pendingCards.length === 0) return;
+    console.log('Undo clicked - canUndo:', canUndo, 'pendingCards.length:', pendingCards.length);
+
+    if (!canUndo || pendingCards.length === 0) {
+      console.log('Undo blocked - canUndo:', canUndo, 'pendingCards.length:', pendingCards.length);
+      return;
+    }
 
     const currentCard = pendingCards[currentIndex];
-    if (!currentCard?.id) return;
+    console.log('Current card:', currentCard?.id);
+
+    if (!currentCard?.id) {
+      console.log('Undo blocked - no current card ID');
+      return;
+    }
 
     try {
+      console.log('Calling undo API for card:', currentCard.id);
       const response = await fetch(`http://localhost:3001/api/undo/${currentCard.id}`, {
         method: 'POST'
       });
@@ -973,6 +1007,7 @@ function App() {
 
         // Show success message
         console.log('Undo successful:', result.message || 'Last action undone');
+        alert('Undo successful!');
 
         // Update history
         setVerificationHistory(prev => prev.slice(0, -1));
@@ -1068,12 +1103,15 @@ function App() {
         setIsEditing(true);
         setShowRecovery(false);
         setRecoverySession(null);
+        // Mark that we've shown recovery for this browser session
+        sessionStorage.setItem('recoveryShown', 'true');
         console.log('Session restored successfully');
       } else {
         // Card no longer exists
         setShowRecovery(false);
         setRecoverySession(null);
         localStorage.removeItem('editSession');
+        sessionStorage.setItem('recoveryShown', 'true');
         console.log('Card from saved session no longer exists');
       }
     } catch (error) {
@@ -1081,6 +1119,7 @@ function App() {
       setShowRecovery(false);
       setRecoverySession(null);
       localStorage.removeItem('editSession');
+      sessionStorage.setItem('recoveryShown', 'true');
     }
   };
 
@@ -1088,6 +1127,8 @@ function App() {
     setShowRecovery(false);
     setRecoverySession(null);
     localStorage.removeItem('editSession');
+    // Mark that we've shown recovery for this browser session
+    sessionStorage.setItem('recoveryShown', 'true');
   };
 
   // Wrapper to show confirmation for destructive actions
@@ -1158,6 +1199,9 @@ function App() {
       if (response.ok) {
         try { await response.json(); } catch (_) {}
 
+        // Clear recovery flag so recovery banner can show for future unsaved work
+        sessionStorage.removeItem('recoveryShown');
+
         // Re-fetch pending cards from server to ensure sync
         try {
           const refreshResponse = await fetch('http://localhost:3001/api/pending-cards');
@@ -1190,6 +1234,11 @@ function App() {
               }
             } else {
               // Entire photo mode - image should be removed
+              if (freshData.length === 0) {
+                // No more pending cards, navigate to main page
+                navigate('/');
+                return;
+              }
               const newIndex = currentIndex >= freshData.length ? Math.max(0, freshData.length - 1) : currentIndex;
               setCurrentIndex(newIndex);
               setCurrentCardIndex(0);
@@ -1547,8 +1596,8 @@ function App() {
                 setEditedData([]);
               }}
             >
-              <option value="entire">Entire Photo</option>
-              <option value="single">Single Card</option>
+              <option value="entire">ENTIRE PHOTO</option>
+              <option value="single">SINGLE CARD</option>
             </select>
           </div>
           

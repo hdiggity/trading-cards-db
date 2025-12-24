@@ -1,0 +1,3028 @@
+[
+  {
+    "timestamp": "2025-12-19T19:43:38.306Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos0.png"
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos1.png"
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos3.png"
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "boston red sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos4.png"
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos5.png"
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos6.png"
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "st. louis cardinals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos7.png"
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "st. louis cardinals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 1,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2212_pos8.png"
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:44:03.786Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "81",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "al an foster",
+        "number": "108",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:45:24.776Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "81",
+        "team": "california",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "al an foster",
+        "number": "108",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:45:50.865Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "al an foster",
+        "number": "108",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:46:01.240Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "al an foster",
+        "number": "108",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:46:14.101Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:46:31.259Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:46:35.392Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:46:56.717Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:47:09.903Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "houston astros",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:47:13.670Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "houston astros",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:47:18.109Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "houston astros",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:47:25.057Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "houston astros",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughl",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:47:31.359Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "houston astros",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mc",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:47:39.049Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "houston astros",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclau",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-19T19:48:40.008Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "kevin bell",
+        "number": "83",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows noticeable staining/toning and edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 1,
+        "name": "john verhoeven",
+        "number": "91",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 2,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "tom hausman",
+        "number": "99",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #99; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 4,
+        "name": "alan foster",
+        "number": "108",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 5,
+        "name": "bernie carbo",
+        "number": "159",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "grid_position": 6,
+        "name": "dan spillner",
+        "number": "182",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "grid_position": 7,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "houston astros",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "grid_position": 8,
+        "name": "bo mclaughlin",
+        "number": "184",
+        "team": "cincinnati reds",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate of card #184; back shows staining/toning and moderate edge/corner wear",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "afterData": null
+  }
+]

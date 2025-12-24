@@ -1,0 +1,141 @@
+2025-12-19 14:49:08,218 - trading_cards - INFO - [system] Upload status changed: IMG_2212.HEIC -> verified
+2025-12-19 14:49:08,224 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2212.HEIC
+2025-12-19 18:15:55,752 - trading_cards - INFO - [filesystem] File uploaded: IMG_2222.HEIC
+2025-12-19 18:16:00,975 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2222.HEIC', 'File size: 4370076 bytes, Type: .heic', None, 'session_20251219_181555_42652', None, 'IMG_2222.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 18:16:00,976 - trading_cards - INFO - [filesystem] File uploaded: IMG_2222.HEIC
+2025-12-19 18:16:00,990 - trading_cards - INFO - [system] Upload status changed: IMG_2222.HEIC -> processing
+2025-12-19 18:16:00,997 - trading_cards - INFO - [image_processing] Started processing: IMG_2222.HEIC
+2025-12-19 18:16:30,265 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 18:16:34,656 - trading_cards - INFO - [filesystem] File move: IMG_2222.HEIC -> IMG_2222.HEIC
+2025-12-19 18:16:34,658 - trading_cards - INFO - [system] Upload status changed: IMG_2222.HEIC -> pending_verification
+2025-12-19 18:16:34,659 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2222.HEIC
+2025-12-19 18:16:34,660 - trading_cards - INFO - [filesystem] File uploaded: IMG_2232.HEIC
+2025-12-19 18:16:39,868 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2232.HEIC', 'File size: 4185202 bytes, Type: .heic', None, 'session_20251219_181555_42652', None, 'IMG_2232.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 18:16:39,869 - trading_cards - INFO - [filesystem] File uploaded: IMG_2232.HEIC
+2025-12-19 18:16:39,874 - trading_cards - INFO - [system] Upload status changed: IMG_2232.HEIC -> processing
+2025-12-19 18:16:39,879 - trading_cards - INFO - [image_processing] Started processing: IMG_2232.HEIC
+2025-12-19 18:17:08,465 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 18:17:13,225 - trading_cards - INFO - [filesystem] File move: IMG_2232.HEIC -> IMG_2232.HEIC
+2025-12-19 18:17:13,228 - trading_cards - INFO - [system] Upload status changed: IMG_2232.HEIC -> pending_verification
+2025-12-19 18:17:13,229 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2232.HEIC
+2025-12-19 18:17:13,230 - trading_cards - INFO - [filesystem] File uploaded: IMG_2241.HEIC
+2025-12-19 18:17:18,408 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2241.HEIC', 'File size: 4415463 bytes, Type: .heic', None, 'session_20251219_181555_42652', None, 'IMG_2241.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 18:17:18,409 - trading_cards - INFO - [filesystem] File uploaded: IMG_2241.HEIC
+2025-12-19 18:17:18,412 - trading_cards - INFO - [system] Upload status changed: IMG_2241.HEIC -> processing
+2025-12-19 18:17:18,416 - trading_cards - INFO - [image_processing] Started processing: IMG_2241.HEIC
+2025-12-19 18:17:51,212 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 18:17:55,797 - trading_cards - INFO - [filesystem] File move: IMG_2241.HEIC -> IMG_2241.HEIC
+2025-12-19 18:17:55,800 - trading_cards - INFO - [system] Upload status changed: IMG_2241.HEIC -> pending_verification
+2025-12-19 18:17:55,801 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2241.HEIC
+2025-12-19 18:17:55,802 - trading_cards - INFO - [filesystem] File uploaded: IMG_2251.HEIC
+2025-12-19 18:18:00,987 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2251.HEIC', 'File size: 4732769 bytes, Type: .heic', None, 'session_20251219_181555_42652', None, 'IMG_2251.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 18:18:00,987 - trading_cards - INFO - [filesystem] File uploaded: IMG_2251.HEIC
+2025-12-19 18:18:00,990 - trading_cards - INFO - [system] Upload status changed: IMG_2251.HEIC -> processing
+2025-12-19 18:18:00,994 - trading_cards - INFO - [image_processing] Started processing: IMG_2251.HEIC
+2025-12-19 18:18:42,398 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 18:18:47,011 - trading_cards - INFO - [filesystem] File move: IMG_2251.HEIC -> IMG_2251.HEIC
+2025-12-19 18:18:47,017 - trading_cards - INFO - [system] Upload status changed: IMG_2251.HEIC -> pending_verification
+2025-12-19 18:18:47,018 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2251.HEIC
+2025-12-19 18:18:47,019 - trading_cards - INFO - [filesystem] File uploaded: IMG_2262.HEIC
+2025-12-19 18:18:52,231 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2262.HEIC', 'File size: 5005090 bytes, Type: .heic', None, 'session_20251219_181555_42652', None, 'IMG_2262.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 18:18:52,233 - trading_cards - INFO - [filesystem] File uploaded: IMG_2262.HEIC
+2025-12-19 18:18:52,240 - trading_cards - INFO - [system] Upload status changed: IMG_2262.HEIC -> processing
+2025-12-19 18:18:52,245 - trading_cards - INFO - [image_processing] Started processing: IMG_2262.HEIC
+2025-12-19 18:19:24,843 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 18:19:29,349 - trading_cards - INFO - [filesystem] File move: IMG_2262.HEIC -> IMG_2262.HEIC
+2025-12-19 18:19:29,352 - trading_cards - INFO - [system] Upload status changed: IMG_2262.HEIC -> pending_verification
+2025-12-19 18:19:29,353 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2262.HEIC
+2025-12-19 18:28:20,440 - trading_cards - INFO - [system] Upload status changed: IMG_2222.HEIC -> verified
+2025-12-19 18:28:20,448 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2222.HEIC
+2025-12-19 18:30:57,902 - trading_cards - INFO - [system] Upload status changed: IMG_2232.HEIC -> verified
+2025-12-19 18:30:57,908 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2232.HEIC
+2025-12-19 18:33:58,633 - trading_cards - INFO - [system] Upload status changed: IMG_2241.HEIC -> verified
+2025-12-19 18:33:58,639 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2241.HEIC
+2025-12-19 18:37:12,516 - trading_cards - INFO - [system] Upload status changed: IMG_2251.HEIC -> verified
+2025-12-19 18:37:12,522 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2251.HEIC
+2025-12-19 22:25:56,129 - trading_cards - INFO - [system] Upload status changed: IMG_2262.HEIC -> verified
+2025-12-19 22:25:56,139 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2262.HEIC
+2025-12-19 23:12:13,626 - trading_cards - INFO - [filesystem] File uploaded: IMG_2272.HEIC
+2025-12-19 23:12:39,229 - trading_cards - INFO - [filesystem] File uploaded: IMG_2272.HEIC
+2025-12-19 23:12:44,440 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2272.HEIC', 'File size: 2879634 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2272.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:12:44,440 - trading_cards - INFO - [filesystem] File uploaded: IMG_2272.HEIC
+2025-12-19 23:12:44,456 - trading_cards - INFO - [system] Upload status changed: IMG_2272.HEIC -> processing
+2025-12-19 23:12:44,466 - trading_cards - INFO - [image_processing] Started processing: IMG_2272.HEIC
+2025-12-19 23:13:26,687 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 23:13:28,969 - trading_cards - INFO - [filesystem] File move: IMG_2272.HEIC -> IMG_2272.HEIC
+2025-12-19 23:13:28,973 - trading_cards - INFO - [system] Upload status changed: IMG_2272.HEIC -> pending_verification
+2025-12-19 23:13:28,975 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2272.HEIC
+2025-12-19 23:13:28,976 - trading_cards - INFO - [filesystem] File uploaded: IMG_2282.HEIC
+2025-12-19 23:13:34,167 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2282.HEIC', 'File size: 4790822 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2282.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:13:34,168 - trading_cards - INFO - [filesystem] File uploaded: IMG_2282.HEIC
+2025-12-19 23:13:34,170 - trading_cards - INFO - [system] Upload status changed: IMG_2282.HEIC -> processing
+2025-12-19 23:13:34,174 - trading_cards - INFO - [image_processing] Started processing: IMG_2282.HEIC
+2025-12-19 23:13:59,185 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 23:14:03,671 - trading_cards - INFO - [filesystem] File move: IMG_2282.HEIC -> IMG_2282.HEIC
+2025-12-19 23:14:03,674 - trading_cards - INFO - [system] Upload status changed: IMG_2282.HEIC -> pending_verification
+2025-12-19 23:14:03,675 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2282.HEIC
+2025-12-19 23:14:03,676 - trading_cards - INFO - [filesystem] File uploaded: IMG_2292.HEIC
+2025-12-19 23:14:08,864 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2292.HEIC', 'File size: 3978560 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2292.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:14:08,866 - trading_cards - INFO - [filesystem] File uploaded: IMG_2292.HEIC
+2025-12-19 23:14:08,869 - trading_cards - INFO - [system] Upload status changed: IMG_2292.HEIC -> processing
+2025-12-19 23:14:08,875 - trading_cards - INFO - [image_processing] Started processing: IMG_2292.HEIC
+2025-12-19 23:14:36,477 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 23:14:41,037 - trading_cards - INFO - [filesystem] File move: IMG_2292.HEIC -> IMG_2292.HEIC
+2025-12-19 23:14:41,040 - trading_cards - INFO - [system] Upload status changed: IMG_2292.HEIC -> pending_verification
+2025-12-19 23:14:41,042 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2292.HEIC
+2025-12-19 23:14:41,043 - trading_cards - INFO - [filesystem] File uploaded: IMG_2302.HEIC
+2025-12-19 23:14:46,243 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2302.HEIC', 'File size: 4123146 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2302.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:14:46,244 - trading_cards - INFO - [filesystem] File uploaded: IMG_2302.HEIC
+2025-12-19 23:14:46,248 - trading_cards - INFO - [system] Upload status changed: IMG_2302.HEIC -> processing
+2025-12-19 23:14:46,253 - trading_cards - INFO - [image_processing] Started processing: IMG_2302.HEIC
+2025-12-19 23:15:02,637 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 23:15:07,073 - trading_cards - INFO - [system] Upload status changed: IMG_2272.HEIC -> verified
+2025-12-19 23:15:07,077 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2272.HEIC
+2025-12-19 23:15:07,117 - trading_cards - INFO - [filesystem] File move: IMG_2302.HEIC -> IMG_2302.HEIC
+2025-12-19 23:15:07,118 - trading_cards - INFO - [system] Upload status changed: IMG_2302.HEIC -> pending_verification
+2025-12-19 23:15:07,119 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2302.HEIC
+2025-12-19 23:15:07,121 - trading_cards - INFO - [filesystem] File uploaded: IMG_2312.HEIC
+2025-12-19 23:15:12,307 - trading_cards - ERROR - Failed to log to database: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO system_logs (level, source, action, message, details, meta_data, session_id, user_agent, image_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, timestamp]
+[parameters: ('info', 'filesystem', 'upload', 'File uploaded: IMG_2312.HEIC', 'File size: 2868217 bytes, Type: .heic', None, 'session_20251219_231239_83659', None, 'IMG_2312.HEIC')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-19 23:15:12,308 - trading_cards - INFO - [filesystem] File uploaded: IMG_2312.HEIC
+2025-12-19 23:15:12,313 - trading_cards - INFO - [system] Upload status changed: IMG_2312.HEIC -> processing
+2025-12-19 23:15:12,318 - trading_cards - INFO - [image_processing] Started processing: IMG_2312.HEIC
+2025-12-19 23:15:53,835 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-19 23:15:55,982 - trading_cards - INFO - [filesystem] File move: IMG_2312.HEIC -> IMG_2312.HEIC
+2025-12-19 23:15:55,983 - trading_cards - INFO - [system] Upload status changed: IMG_2312.HEIC -> pending_verification
+2025-12-19 23:15:55,984 - trading_cards - SUCCESS - [image_processing] Processing completed: IMG_2312.HEIC
+2025-12-19 23:16:42,206 - trading_cards - INFO - [system] Upload status changed: IMG_2282.HEIC -> verified
+2025-12-19 23:16:42,209 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2282.HEIC
+2025-12-19 23:23:27,826 - trading_cards - INFO - [system] Upload status changed: IMG_2292.HEIC -> verified
+2025-12-19 23:23:27,832 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2292.HEIC
+2025-12-19 23:29:10,947 - trading_cards - INFO - [system] Upload status changed: IMG_2302.HEIC -> verified
+2025-12-19 23:29:10,951 - trading_cards - SUCCESS - [verification] All cards passed: IMG_2302.HEIC

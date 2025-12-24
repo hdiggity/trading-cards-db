@@ -101,12 +101,12 @@
 /* Notes field styling */
 .field-value textarea {
   width: 100%;
-  min-height: 50px;
-  padding: 6px 8px;
+  min-height: 36px;
+  padding: 4px 6px;
   border: 1px solid #d1d5db;
   border-radius: 4px;
   font-family: inherit;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   resize: vertical;
   background: white;
 }
@@ -146,7 +146,8 @@
 
 .card-image {
   max-width: 100%;
-  max-height: 320px;
+  max-height: 700px;
+  height: auto;
   border-radius: 3px;
   border: 1px solid #333;
   object-fit: contain;
@@ -462,15 +463,15 @@
 }
 
 .field-group {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: flex;
   flex-direction: column;
 }
 
 .field-group label {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   color: #525252;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.025em;
@@ -478,10 +479,10 @@
 
 .field-group input,
 .field-group select {
-  padding: 6px 10px;
+  padding: 4px 8px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   background: white;
   transition: border-color 0.2s ease;
   color: #1a1a1a;
@@ -865,7 +866,10 @@
   background: #111;
   /* Allow JS to handle touch gestures (pinch/pan) */
   touch-action: none;
-  min-height: 150px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Unified image container for side-by-side layout */

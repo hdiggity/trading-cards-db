@@ -1,0 +1,2506 @@
+[
+  {
+    "timestamp": "2025-12-20T04:15:22.582Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:15:32.078Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:15:36.218Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:15:49.737Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:15:56.416Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:16:06.484Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:16:12.629Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-20T04:16:30.779Z",
+    "action": "edit",
+    "cardIndex": null,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill castro",
+        "number": "448",
+        "team": "milwaukee brewers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos0.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "tim corcoran",
+        "number": "515",
+        "team": "detroit tigers",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos1.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "excellent",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos2.png"
+        }
+      },
+      {
+        "grid_position": 3,
+        "name": "luis gomez",
+        "number": "573",
+        "team": "toronto blue jays",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos3.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "rod carew",
+        "number": "580",
+        "team": "minnesota twins",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos4.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos5.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "bobby murcer",
+        "number": "590",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.64,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos6.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "willie randolph",
+        "number": "620",
+        "team": "new york yankees",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.8,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos7.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "len barker",
+        "number": "634",
+        "team": "texas rangers",
+        "copyright_year": "1973",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.48,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2282_pos8.png"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          },
+          {
+            "field": "copyright_year",
+            "original": "1970",
+            "corrected": "1973",
+            "confidence": 9
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  }
+]

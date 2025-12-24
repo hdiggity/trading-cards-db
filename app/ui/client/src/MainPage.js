@@ -33,6 +33,28 @@ function MainPage() {
   const [pendingStart, setPendingStart] = useState(0); // eslint-disable-line no-unused-vars
   const rawStartRef = React.useRef(0);
   const fileInputRef = React.useRef(null);
+  const [gridSize, setGridSize] = useState('3x3');
+  const [gridSizeOptions, setGridSizeOptions] = useState([]);
+
+  useEffect(() => {
+    const loadGridSizeOptions = async () => {
+      try {
+        const response = await fetch('http://localhost:3001/api/grid-size-options');
+        if (response.ok) {
+          const data = await response.json();
+          setGridSizeOptions(data.options || []);
+          const defaultOption = data.options.find(o => o.default);
+          if (defaultOption) {
+            setGridSize(defaultOption.value);
+          }
+        }
+      } catch (error) {
+        console.error('Error loading grid size options:', error);
+      }
+    };
+
+    loadGridSizeOptions();
+  }, []);
 
   useEffect(() => {
     const loadData = async () => {
@@ -151,7 +173,10 @@ function MainPage() {
       const response = await fetch('http://localhost:3001/api/process-raw-scans', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ count: countToProcess })
+        body: JSON.stringify({
+          count: countToProcess,
+          grid_dimensions: gridSize
+        })
       });
       const result = await response.json();
       if (response.ok) {
@@ -250,6 +275,7 @@ function MainPage() {
     try {
       const formData = new FormData();
       files.forEach(file => formData.append('images', file));
+      formData.append('grid_dimensions', gridSize);
 
       const response = await fetch('http://localhost:3001/api/upload', {
         method: 'POST',
@@ -392,6 +418,25 @@ function MainPage() {
             <div className="process-header">
               <h3>PROCESS SCANS</h3>
               <span className="process-available">{rawScanCount} AVAILABLE (OLDEST FIRST)</span>
+            </div>
+            <div className="grid-size-selector">
+              <label htmlFor="grid-size-select" className="grid-size-label">GRID SIZE:</label>
+              <select
+                id="grid-size-select"
+                className="grid-size-select"
+                value={gridSize}
+                onChange={(e) => setGridSize(e.target.value)}
+                disabled={processing || bgProcessing}
+              >
+                {gridSizeOptions.map(option => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+              <span className="grid-size-hint">
+                {gridSizeOptions.find(o => o.value === gridSize)?.cards || 0} cards per image
+              </span>
             </div>
             <div className="process-quick-select">
               {[1, 5, 10, 25].map(n => (

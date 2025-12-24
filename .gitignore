@@ -1,24 +1,85 @@
-# caches
-app/__pycache__/
-app/scripts/__pycache__/
-app/cache/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# learning databases
-cards/verified/corrections.db
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
 
-# backup files
-*.backup
-*.bak
+# Jupyter
+.ipynb_checkpoints/
 
-# local setup
+# Environment
 .env
 .env.production
 .env.development
 .env.test
-.claude
-.ruff_cache
-.vscode
+.venv/
+venv/
+ENV/
+env/
 
-# node
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Caches
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+.pytype/
+app/__pycache__/
+app/scripts/__pycache__/
+app/cache/
+
+# OS
+.DS_Store
+._*
+
+# Node
 node_modules/
 */node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+*.db-journal
+*.db-wal
+*.db-shm
+cards/verified/corrections.db
+
+# Backups
+*.backup
+*.bak
+
+# Logs
+*.log
+
+# Project specific
+.claude

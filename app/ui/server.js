@@ -540,15 +540,17 @@ app.post('/api/upload-raw-scans', async (req, res) => {
   upload.array('images')(req, res, async (err) => {
     if (err) {
       console.error('Multer upload error:', err);
-      return res.status(400).json({ 
-        error: 'Upload failed: ' + err.message 
+      return res.status(400).json({
+        error: 'Upload failed: ' + err.message
       });
     }
-    
+
     try {
       if (!req.files || req.files.length === 0) {
         return res.status(400).json({ error: 'No files uploaded' });
       }
+
+    const gridDimensions = req.body.grid_dimensions || '3x3'; // NEW: Accept grid size
 
     const uploadedFiles = req.files.map(file => ({
       originalName: file.originalname,
@@ -556,6 +558,19 @@ app.post('/api/upload-raw-scans', async (req, res) => {
       path: file.path,
       size: file.size
     }));
+
+    // Store grid dimensions as metadata for each file
+    for (const file of req.files) {
+      try {
+        const metadataPath = path.join(rawScansPath, `${file.filename}.grid_metadata.json`);
+        await fs.writeFile(metadataPath, JSON.stringify({
+          grid_dimensions: gridDimensions,
+          uploaded_at: new Date().toISOString()
+        }));
+      } catch (metaErr) {
+        console.error(`Failed to write grid metadata for ${file.filename}:`, metaErr);
+      }
+    }
 
     // Log each upload into UploadHistory + system logs
     try {
@@ -591,7 +606,8 @@ print("OK")
     res.json({
       success: true,
       message: `Successfully uploaded ${req.files.length} file(s)`,
-      files: uploadedFiles
+      files: uploadedFiles,
+      grid_dimensions: gridDimensions
     });
 
     } catch (error) {
@@ -2032,7 +2048,7 @@ app.post('/api/cancel-processing', async (req, res) => {
 
 app.post('/api/process-raw-scans', async (req, res) => {
   try {
-    const { count } = req.body || {};
+    const { count, grid_dimensions } = req.body || {};
     const BULK_BACK_DIR = path.join(__dirname, '../../cards/unprocessed_bulk_back');
 
     // Ensure logs directory exists and create a per-run log file
@@ -2063,9 +2079,32 @@ app.post('/api/process-raw-scans', async (req, res) => {
     // Get the specific files to process (oldest first)
     const filesToProcess = allFiles.slice(0, toProcess);
 
-    // Write the file list to a temp file for Python to read
-    const fileListPath = path.join(logsDir, `process_list_${stamp}.json`);
-    await fs.writeFile(fileListPath, JSON.stringify(filesToProcess));
+    // Build manifest with per-file grid dimensions
+    const fileManifest = [];
+    for (const filename of filesToProcess) {
+      let dims = grid_dimensions || '3x3'; // Use request override or default
+
+      // Try to read grid metadata for this file
+      const metadataPath = path.join(BULK_BACK_DIR, `${filename}.grid_metadata.json`);
+      try {
+        const metadata = await fs.readFile(metadataPath, 'utf8');
+        const parsed = JSON.parse(metadata);
+        if (parsed.grid_dimensions) {
+          dims = parsed.grid_dimensions;
+        }
+      } catch {
+        // No metadata file, use default or override
+      }
+
+      fileManifest.push({
+        filename: filename,
+        grid_dimensions: dims
+      });
+    }
+
+    // Write manifest to temp file
+    const manifestPath = path.join(logsDir, `process_manifest_${stamp}.json`);
+    await fs.writeFile(manifestPath, JSON.stringify(fileManifest, null, 2));
 
     // Clear any existing progress file to prevent showing stale 100% progress
     try {
@@ -2073,7 +2112,7 @@ app.post('/api/process-raw-scans', async (req, res) => {
     } catch {}
 
 
-    const child = spawn('python', ['-m', 'app.run', '--grid', '--file-list', fileListPath], {
+    const child = spawn('python', ['-m', 'app.run', '--grid', '--manifest', manifestPath], {
       cwd: path.join(__dirname, '../..'),
       detached: true,
       stdio: ['ignore', 'pipe', 'pipe']
@@ -2103,8 +2142,8 @@ app.post('/api/process-raw-scans', async (req, res) => {
       // Finalize progress to 100%
       const finished = { ...status, active: false, remaining: 0, progress: 100, finishedAt: new Date().toISOString(), exitCode: code ?? null, signal: signal ?? null };
       writeStatus(finished);
-      // Clean up the file list
-      fs.unlink(fileListPath).catch(() => {});
+      // Clean up the manifest file
+      fs.unlink(manifestPath).catch(() => {});
     });
 
     child.unref();
@@ -3535,6 +3574,28 @@ with get_session() as session:
   } catch (error) {
     console.error('Error searching cards:', error);
     res.json({ cards: [] });
+  }
+});
+
+// Get supported grid size options
+app.get('/api/grid-size-options', async (req, res) => {
+  try {
+    const options = [
+      { value: '1x1', label: '1x1 (Single Card)', cards: 1 },
+      { value: '2x2', label: '2x2 (4 Cards)', cards: 4 },
+      { value: '2x3', label: '2x3 (6 Cards)', cards: 6 },
+      { value: '3x2', label: '3x2 (6 Cards)', cards: 6 },
+      { value: '3x3', label: '3x3 (9 Cards)', cards: 9, default: true },
+      { value: '3x4', label: '3x4 (12 Cards)', cards: 12 },
+      { value: '4x3', label: '4x3 (12 Cards)', cards: 12 },
+      { value: '4x4', label: '4x4 (16 Cards)', cards: 16 },
+      { value: '4x5', label: '4x5 (20 Cards)', cards: 20 },
+      { value: '5x4', label: '5x4 (20 Cards)', cards: 20 }
+    ];
+    res.json({ options });
+  } catch (error) {
+    console.error('Error getting grid size options:', error);
+    res.status(500).json({ error: error.message });
   }
 });
 

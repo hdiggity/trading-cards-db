@@ -2,11 +2,13 @@ import argparse
 import datetime
 import json
 import os
+import sys
 import time
 from pathlib import Path
 
 # Old extraction functions removed - simplified pipeline only uses grid processing
-from .grid_processor import GridProcessor, save_grid_cards_to_verification
+from .grid_processor import (GridDimensions, GridProcessor,
+                             save_grid_cards_to_verification)
 from .logging_system import logger
 
 PENDING_VERIFICATION_DIR = Path("cards/pending_verification")
@@ -36,18 +38,18 @@ def update_progress(current: int, total: int, current_file: str = "", status: st
         pass
 
 
-def _is_probable_3x3_grid(image_path: Path) -> bool:
-    """Lightweight detection for 3x3 grid backs using OpenCV if available.
+def _detect_grid_layout(image_path: Path):
+    """Detect grid layout from image using separator line detection.
 
-    Returns True if we can confidently detect 3 horizontal and 3
-    vertical separators forming a 3x3 grid; False otherwise.
+    Returns GridDimensions with detected rows/cols, or None if detection
+    fails. Supports 2x2, 2x3, 3x2, 3x3, 3x4, 4x3, 4x4, etc.
     """
     try:
         import cv2  # type: ignore
         import numpy as np  # type: ignore
     except Exception:
         # OpenCV not available; cannot reliably detect grid
-        return False
+        return None
 
     try:
         img = cv2.imread(str(image_path))
@@ -74,7 +76,7 @@ def _is_probable_3x3_grid(image_path: Path) -> bool:
         # Detect horizontal and vertical lines
         lines = cv2.HoughLinesP(edges, 1, np.pi/180, threshold=120, minLineLength=100, maxLineGap=20)
         if lines is None:
-            return False
+            return None
 
         horiz = []
         vert = []
@@ -97,37 +99,61 @@ def _is_probable_3x3_grid(image_path: Path) -> bool:
         horiz_u = dedup(horiz)
         vert_u = dedup(vert)
 
-        # We expect at least 2 internal separators in each direction (plus borders)
-        # Empirically, requiring >=2 gives a strong hint of 3x3 layout
-        return len(horiz_u) >= 2 and len(vert_u) >= 2
-    except Exception:
-        return False
+        # Calculate grid size based on internal separators
+        # Number of separators = grid_size - 1
+        # So grid_size = separators + 1
+        rows = len(horiz_u) + 1 if horiz_u else 1
+        cols = len(vert_u) + 1 if vert_u else 1
+
+        # Sanity check: 1x1 to 5x5 grids
+        if 1 <= rows <= 5 and 1 <= cols <= 5:
+            return GridDimensions(rows=rows, cols=cols)
+
+        return None
+
+    except Exception as e:
+        print(f"Grid detection error: {e}", file=sys.stderr)
+        return None
 
 
-def process_and_move(image_path: Path, use_grid_processing: bool = False):
+def _is_probable_3x3_grid(image_path: Path) -> bool:
+    """Backward compatibility: check if image is 3x3 grid."""
+    detected = _detect_grid_layout(image_path)
+    return detected is not None and detected.rows == 3 and detected.cols == 3
+
+
+def process_and_move(image_path: Path, use_grid_processing: bool = False, grid_dimensions: GridDimensions = None):
     print(f"processing: {image_path.name}")
-    
+
     # Log upload and processing start
     file_size = image_path.stat().st_size if image_path.exists() else None
     file_type = image_path.suffix.lower() if image_path.suffix else None
-    
+
     logger.log_upload(
         filename=image_path.name,
         original_path=str(image_path),
         file_size=file_size,
         file_type=file_type
     )
-    
+
     start_time = time.time()
     logger.log_processing_start(image_path.name)
-    
+
     try:
-        # Auto-detect 3x3 grid if not explicitly requested
-        if not use_grid_processing and _is_probable_3x3_grid(image_path):
-            use_grid_processing = True
+        # Auto-detect grid if not explicitly requested
+        if not use_grid_processing and grid_dimensions is None:
+            detected_dims = _detect_grid_layout(image_path)
+            if detected_dims is not None:
+                use_grid_processing = True
+                grid_dimensions = detected_dims
+                print(f"Auto-detected {detected_dims.grid_string} grid layout", file=sys.stderr)
+
+        # Default to 3x3 if grid processing requested but no dimensions given
+        if use_grid_processing and grid_dimensions is None:
+            grid_dimensions = GridDimensions(rows=3, cols=3)
 
         if use_grid_processing:
-            # Use enhanced grid processing for 3x3 back images
+            # Use grid processing with specified/detected dimensions
             grid_processor = GridProcessor()
 
             # Check for front images to use for matching, gated by env
@@ -136,8 +162,9 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             if not disable_front and FRONT_IMAGES_DIR.exists():
                 front_dir = FRONT_IMAGES_DIR
 
-            grid_cards, raw_data = grid_processor.process_3x3_grid(
+            grid_cards, raw_data = grid_processor.process_grid(
                 str(image_path),
+                grid_dimensions=grid_dimensions,
                 front_images_dir=front_dir
             )
 
@@ -238,20 +265,28 @@ def process_all_raw_scans():
         process_and_move(image_path, use_grid_processing=use_grid)
 
 
-def process_3x3_grid_backs(file_list_path=None):
-    """Process 3x3 grid BACK images as PRIMARY input with enhanced card
-    detection.
-
-    INPUT: Card backs arranged in 3x3 grids (9 cards per image)
-    PROCESSING: Enhanced image preprocessing + GPT-5.2 analysis optimized for card backs
-    BACKUP: Single front images used only to supplement missing data from backs
-
-    Front images remain untouched - used only as reference for matching/supplementing.
+def process_grid_backs(file_list_path=None, manifest_path=None):
+    """Process grid BACK images with optional grid dimension override.
 
     Args:
-        file_list_path: Optional path to JSON file containing list of specific filenames to process
+        file_list_path: Optional path to JSON file with specific filenames
+        manifest_path: Optional path to JSON manifest with {filename, grid_dimensions}[]
     """
-    print("Processing 3x3 grid BACK images (PRIMARY input source)...")
+    print(f"Processing grid BACK images{' with manifest support' if manifest_path else ''}...")
+
+    # Load manifest if provided
+    file_manifest = {}
+    if manifest_path:
+        try:
+            with open(manifest_path, 'r') as f:
+                manifest_data = json.load(f)
+            for entry in manifest_data:
+                file_manifest[entry['filename']] = GridDimensions.from_string(
+                    entry.get('grid_dimensions', '3x3')
+                )
+            print(f"Loaded manifest with {len(file_manifest)} files")
+        except Exception as e:
+            print(f"Error reading manifest: {e}", file=sys.stderr)
 
     # If a file list is provided, only process those specific files
     if file_list_path:
@@ -275,7 +310,7 @@ def process_3x3_grid_backs(file_list_path=None):
         ] if BACK_IMAGES_DIR.exists() else []
 
     if not back_images:
-        print(f"No 3x3 grid back images found in {BACK_IMAGES_DIR}")
+        print(f"No grid back images found in {BACK_IMAGES_DIR}")
         return
 
     # Check available front images for backup matching (read-only)
@@ -290,17 +325,30 @@ def process_3x3_grid_backs(file_list_path=None):
     total = len(back_images)
     print(f"Found {total} grid back images to process")
     print(f"Found {front_count} front images available for backup matching")
-    print("Pipeline: BACKS (primary) → Enhanced Processing → Front Matching (backup)")
 
     update_progress(0, total, "", "starting")
 
     for i, image_path in enumerate(back_images):
         update_progress(i, total, image_path.name, "processing")
         print(f"[{i+1}/{total}] Processing: {image_path.name}")
-        process_and_move(image_path, use_grid_processing=True)
+
+        # Get dimensions from manifest or auto-detect
+        dims = file_manifest.get(image_path.name)
+        if dims is None:
+            dims = _detect_grid_layout(image_path)
+            if dims is None:
+                dims = GridDimensions(rows=3, cols=3)
+
+        print(f"Using {dims.grid_string} grid for {image_path.name}", file=sys.stderr)
+        process_and_move(image_path, use_grid_processing=True, grid_dimensions=dims)
         update_progress(i + 1, total, image_path.name, "completed")
 
     update_progress(total, total, "", "done")
+
+
+def process_3x3_grid_backs(file_list_path=None):
+    """Backward compatibility wrapper for 3x3 grid processing."""
+    return process_grid_backs(file_list_path=file_list_path, manifest_path=None)
 
 
 def process_all_images():
@@ -436,12 +484,16 @@ if __name__ == "__main__":
         "--file-list", type=str,
         help="Path to JSON file containing list of specific files to process"
     )
+    parser.add_argument(
+        "--manifest", type=str,
+        help="Path to JSON manifest file with filenames and grid dimensions"
+    )
     args = parser.parse_args()
 
     if args.raw:
         process_all_raw_scans()
     elif args.grid:
-        process_3x3_grid_backs(file_list_path=args.file_list)
+        process_grid_backs(file_list_path=args.file_list, manifest_path=args.manifest)
     elif args.all:
         process_all_images()
     elif args.auto:

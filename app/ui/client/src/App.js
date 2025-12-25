@@ -2207,6 +2207,23 @@ function App() {
 
       <div className="controls">
         <div className="navigation">
+          <button
+            onClick={goToPrevious}
+            disabled={currentIndex === 0 || reprocessing || pendingCards.length <= 1}
+            className="nav-button"
+            style={{ visibility: pendingCards.length <= 1 ? 'hidden' : 'visible' }}
+          >
+            ← Previous Card
+          </button>
+          <button
+            onClick={goToNext}
+            disabled={currentIndex === pendingCards.length - 1 || reprocessing || pendingCards.length <= 1}
+            className="nav-button"
+            style={{ visibility: pendingCards.length <= 1 ? 'hidden' : 'visible' }}
+          >
+            Next Card →
+          </button>
+
           {verificationMode === 'single' && (
             <>
               <button
@@ -2218,7 +2235,7 @@ function App() {
                 className="nav-button"
                 style={{ visibility: currentCard.data.length <= 1 ? 'hidden' : 'visible' }}
               >
-                ← Previous Card
+                ← Previous Photo
               </button>
               <button
                 onClick={() => {
@@ -2229,27 +2246,10 @@ function App() {
                 className="nav-button"
                 style={{ visibility: currentCard.data.length <= 1 ? 'hidden' : 'visible' }}
               >
-                Next Card →
+                Next Photo →
               </button>
             </>
           )}
-
-          <button
-            onClick={goToPrevious}
-            disabled={currentIndex === 0 || reprocessing || pendingCards.length <= 1}
-            className="nav-button"
-            style={{ visibility: pendingCards.length <= 1 ? 'hidden' : 'visible' }}
-          >
-            ← Previous Photo
-          </button>
-          <button
-            onClick={goToNext}
-            disabled={currentIndex === pendingCards.length - 1 || reprocessing || pendingCards.length <= 1}
-            className="nav-button"
-            style={{ visibility: pendingCards.length <= 1 ? 'hidden' : 'visible' }}
-          >
-            Next Photo →
-          </button>
         </div>
 
         {verificationMode !== 'single' && (

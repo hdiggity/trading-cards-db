@@ -723,6 +723,8 @@ function App() {
       const sorted = applySorting(pendingCards, sortBy);
       setPendingCards(sorted);
       setCurrentIndex(0); // Reset to first card when sorting changes
+      // Restart editing with new card at index 0
+      setIsEditing(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortBy]);
@@ -778,7 +780,7 @@ function App() {
     };
   }, []);
 
-  // Auto-start editing when card changes (isEditing intentionally excluded to prevent loops)
+  // Auto-start editing when card changes
   useEffect(() => {
     if (pendingCards.length > 0 && !isEditing) {
       const currentCard = pendingCards[currentIndex];
@@ -791,7 +793,10 @@ function App() {
               processedCard[field] = processedCard[field].toLowerCase();
             }
           });
-          setEditedData([processedCard]);
+          const newEditedData = [processedCard];
+          setEditedData(newEditedData);
+          setOriginalData(JSON.parse(JSON.stringify(newEditedData)));
+          console.log(`[Auto-start edit] Card ${currentCard.id}, Single mode, Card ${currentCardIndex}: ${processedCard.name}`);
         } else {
           const processedData = currentCard.data.map(card => {
             const processedCard = { ...card };
@@ -805,6 +810,7 @@ function App() {
           });
           setEditedData(processedData);
           setOriginalData(JSON.parse(JSON.stringify(processedData))); // Deep copy for comparison
+          console.log(`[Auto-start edit] Card ${currentCard.id}, Entire mode, ${processedData.length} cards`);
         }
         setIsEditing(true);
         setHasUnsavedChanges(false); // Reset on new card
@@ -812,6 +818,14 @@ function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pendingCards, currentIndex, currentCardIndex, verificationMode]);
+
+  // Clear recovery banner when starting to edit
+  useEffect(() => {
+    if (isEditing && pendingCards.length > 0) {
+      setShowRecovery(false);
+      setRecoverySession(null);
+    }
+  }, [isEditing, pendingCards.length]);
 
   const fetchFieldOptions = async () => {
     try {
@@ -888,6 +902,12 @@ function App() {
         try {
           const data = await response.json();
           console.log('[fetchPendingCards] Loaded', data.length, 'pending images. Cards per image:', data.map(d => d.data?.length || 0));
+
+          // Don't update pending cards while editing to prevent data mismatch
+          if (isEditing) {
+            console.log('[fetchPendingCards] Skipping update - currently editing');
+            return;
+          }
 
           // Apply sorting based on sortBy state
           const sortedData = applySorting(data, sortBy);
@@ -1352,15 +1372,8 @@ function App() {
           setLastSaved(new Date());
         }
 
-        // Update the current card's data in the local state
-        const updatedCards = [...pendingCards];
-        updatedCards[currentIndex] = {
-          ...currentCard,
-          data: saveData
-        };
-        setPendingCards(updatedCards);
-
         // Update original data to clear unsaved changes indicator
+        // Don't update pendingCards to avoid unnecessary re-renders
         setOriginalData(JSON.parse(JSON.stringify(saveData)));
         setHasUnsavedChanges(false);
       } else if (retryCount < maxRetries) {
@@ -1604,13 +1617,32 @@ function App() {
     );
   }
 
+  // Validate currentIndex is within bounds
+  if (currentIndex >= pendingCards.length) {
+    console.error(`Invalid currentIndex: ${currentIndex} >= ${pendingCards.length}`);
+    setCurrentIndex(0);
+    return null;
+  }
+
   const currentCard = pendingCards[currentIndex];
+
+  // Validate currentCard exists
+  if (!currentCard || !currentCard.data) {
+    console.error(`Invalid currentCard at index ${currentIndex}:`, currentCard);
+    return <div className="App">Error: Invalid card data</div>;
+  }
+
   let displayData;
-  
+
   if (verificationMode === 'single') {
     displayData = isEditing ? editedData : [currentCard.data[currentCardIndex]];
   } else {
     displayData = isEditing ? editedData : currentCard.data;
+  }
+
+  // Log current card for debugging
+  if (displayData && displayData.length > 0) {
+    console.log(`[Render] Card ID: ${currentCard.id}, Display: ${displayData[0]?.name || 'unknown'}, Index: ${currentIndex}/${pendingCards.length}`);
   }
 
   return (

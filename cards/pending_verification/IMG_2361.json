@@ -1,0 +1,359 @@
+[
+  {
+    "grid_position": 0,
+    "name": "jerry wayne terrell",
+    "number": "654",
+    "team": "minnesota twins",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "jerry wayne terrell",
+      "brand": "topps",
+      "team": "minnesota twins",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "654",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 1,
+    "name": "william franklin butler",
+    "number": "549",
+    "team": "kansas city royals",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "william franklin butler",
+      "brand": "topps",
+      "team": "kansas city royals",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "549",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 2,
+    "name": "larry eugene hisle",
+    "number": "526",
+    "team": "minnesota twins",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "larry eugene hisle",
+      "brand": "topps",
+      "team": "minnesota twins",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "526",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 3,
+    "name": "arthur bobby lee darwin",
+    "number": "346",
+    "team": "minnesota twins",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "arthur bobby lee darwin",
+      "brand": "topps",
+      "team": "minnesota twins",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "346",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 4,
+    "name": "stephen russell braun",
+    "number": "273",
+    "team": "minnesota twins",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "stephen russell braun",
+      "brand": "topps",
+      "team": "minnesota twins",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "273",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 5,
+    "name": "michael jorgensen",
+    "number": "286",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "michael jorgensen",
+      "brand": "topps",
+      "team": "pittsburgh pirates",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "286",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 6,
+    "name": "charles gilbert taylor",
+    "number": "58",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "charles gilbert taylor",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "58",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 7,
+    "name": "ronald ray fairly",
+    "number": "270",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.50",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.69,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "ronald ray fairly",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "270",
+      "condition": "excellent",
+      "sport": "baseball"
+    },
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 8,
+    "name": "robert sherwood bailey",
+    "number": "365",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.10",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.69,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2361_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "robert sherwood bailey",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "365",
+      "condition": "fair",
+      "sport": "baseball"
+    },
+    "_condition_predicted": true
+  }
+]

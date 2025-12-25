@@ -228,3 +228,12 @@
 {"ts":"2025-11-29T03:01:36.190Z","action":"verify_card_passed","id":"IMG_2202","scope":"single","remaining":2}
 {"ts":"2025-11-29T03:01:51.194Z","action":"verify_card_passed","id":"IMG_2202","scope":"single","remaining":1}
 {"ts":"2025-11-29T03:02:05.105Z","action":"verify_image_archived","id":"IMG_2202","scope":"all"}
+{"ts":"2025-12-25T19:35:13.003Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":8}
+{"ts":"2025-12-25T19:35:45.036Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":7}
+{"ts":"2025-12-25T19:37:31.660Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":6}
+{"ts":"2025-12-25T19:37:59.861Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":5}
+{"ts":"2025-12-25T19:39:10.618Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":4}
+{"ts":"2025-12-25T19:39:52.914Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":3}
+{"ts":"2025-12-25T19:40:10.248Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":2}
+{"ts":"2025-12-25T19:40:35.857Z","action":"verify_card_passed","id":"IMG_2312","scope":"single","remaining":1}
+{"ts":"2025-12-25T19:41:37.504Z","action":"verify_image_archived","id":"IMG_2312","scope":"all"}

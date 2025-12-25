@@ -1,5 +1,4 @@
-"""Single-pass GPT Vision extraction for dynamic grid card backs (NxM
-grids)."""
+"""Simplified single-pass GPT Vision extraction for 3x3 grid card backs."""
 
 import base64
 import json
@@ -67,76 +66,35 @@ def normalize_price(price_str):
         return f"${int(val)}.00"
 
 @dataclass
-class GridDimensions:
-    """Container for grid dimensions and calculated properties."""
-    rows: int
-    cols: int
-
-    @property
-    def total_cards(self) -> int:
-        return self.rows * self.cols
-
-    @property
-    def grid_string(self) -> str:
-        return f"{self.rows}x{self.cols}"
-
-    def position_to_row_col(self, position: int) -> Tuple[int, int]:
-        """Convert linear position to (row, col)."""
-        return (position // self.cols, position % self.cols)
-
-    def row_col_to_position(self, row: int, col: int) -> int:
-        """Convert row, col to linear position."""
-        return row * self.cols + col
-
-    @classmethod
-    def from_string(cls, grid_string: str) -> 'GridDimensions':
-        """Parse '3x3' format into GridDimensions."""
-        rows, cols = map(int, grid_string.split('x'))
-        return cls(rows=rows, cols=cols)
-
-
-@dataclass
 class GridCard:
     """Represents a card extracted from a grid with position info."""
-    position: int  # Position in grid (top-left to bottom-right)
-    row: int       # Row index
-    col: int       # Column index
+    position: int  # 0-8 for 3x3 grid (top-left to bottom-right)
+    row: int       # 0-2
+    col: int       # 0-2
     data: Dict[str, Any]
     confidence: float = 0.0
 
 
 class GridProcessor:
-    """Single-pass GPT Vision processor for dynamic grid card backs."""
+    """Simple single-pass GPT Vision processor for 3x3 grid card backs."""
 
-    def __init__(self, default_dimensions: GridDimensions = None):
-        """Initialize processor with optional default dimensions.
-
-        Args:
-            default_dimensions: Default grid dimensions (if None, loads from config)
-        """
-        if default_dimensions is None:
-            from .config import get_config
-            config = get_config()
-            default_dimensions = GridDimensions(
-                rows=config.default_grid_rows,
-                cols=config.default_grid_cols
-            )
-        self.default_dimensions = default_dimensions
-
-    def process_grid(self, image_path: str, grid_dimensions: GridDimensions = None, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
-        """Process a grid of card backs with single-pass GPT Vision extraction.
+    def process_3x3_grid(self, image_path: str, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
+        """Process a 3x3 grid of card backs with single-pass GPT Vision
+        extraction.
 
         Args:
-            image_path: Path to the grid image
-            grid_dimensions: Optional grid dimensions (defaults to constructor default)
+            image_path: Path to the 3x3 grid image
             front_images_dir: Ignored (no front matching)
 
         Returns: (grid_cards, raw_data)
         """
-        if grid_dimensions is None:
-            grid_dimensions = self.default_dimensions
+        print(f"Processing 3x3 grid with single-pass GPT Vision: {image_path}", file=sys.stderr)
 
-        print(f"Processing {grid_dimensions.grid_string} grid with single-pass GPT Vision: {image_path}", file=sys.stderr)
+        # Get example features from database
+        feature_examples = self._get_feature_examples()
+        feature_examples_text = ""
+        if feature_examples:
+            feature_examples_text = f" Examples from database: {', '.join(feature_examples)}."
 
         # Load and encode image
         img = Image.open(image_path)
@@ -148,124 +106,10 @@ class GridProcessor:
         img.save(buffer, format="JPEG", quality=95)
         img_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
-        # Build dynamic prompt and schema based on grid dimensions
-        prompt = self._build_extraction_prompt(grid_dimensions)
-        response_schema = self._build_response_schema(grid_dimensions)
+        # Single-pass extraction prompt
+        prompt = f"""This is a 3x3 grid of baseball card BACKS (9 cards total, arranged left-to-right, top-to-bottom).
 
-        # Call GPT Vision API with structured outputs
-        response = client.chat.completions.create(
-            model=MODEL,
-            messages=[
-                {"role": "system", "content": "You are a trading card expert. Extract data accurately from card backs."},
-                {"role": "user", "content": [
-                    {"type": "text", "text": prompt},
-                    {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}}
-                ]}
-            ],
-            response_format=response_schema,
-            max_completion_tokens=2000,
-            temperature=0.1
-        )
-
-        result_text = response.choices[0].message.content.strip()
-
-        # Parse structured output
-        result_json = json.loads(result_text)
-        raw_data = result_json.get("cards", [])
-
-        # Ensure exactly the expected number of cards
-        expected_count = grid_dimensions.total_cards
-        if len(raw_data) != expected_count:
-            print(f"Warning: Expected {expected_count} cards, got {len(raw_data)}", file=sys.stderr)
-            while len(raw_data) < expected_count:
-                raw_data.append(self._create_default_card(len(raw_data)))
-            raw_data = raw_data[:expected_count]
-
-        # Add grid metadata with dynamic position calculation
-        for i, card in enumerate(raw_data):
-            row, col = grid_dimensions.position_to_row_col(i)
-            card.setdefault('grid_position', i)
-            card.setdefault('_grid_metadata', {
-                "position": i,
-                "row": row,
-                "col": col,
-                "grid_dimensions": grid_dimensions.grid_string
-            })
-
-        # Store original GPT extraction before any modifications
-        # This preserves what GPT actually extracted for correction tracking
-        for card in raw_data:
-            card['_original_extraction'] = {
-                'name': card.get('name'),
-                'brand': card.get('brand'),
-                'team': card.get('team'),
-                'card_set': card.get('card_set'),
-                'copyright_year': card.get('copyright_year'),
-                'number': card.get('number'),
-                'condition': card.get('condition'),
-                'sport': card.get('sport')
-            }
-
-        # Lowercase field values for consistency and normalize prices
-        for card in raw_data:
-            for key in ("name", "sport", "brand", "team", "card_set", "condition", "notes"):
-                if key in card and card[key] is not None and isinstance(card[key], str):
-                    card[key] = card[key].lower().strip()
-            # Normalize price estimate
-            if 'value_estimate' in card:
-                card['value_estimate'] = normalize_price(card['value_estimate'])
-
-        # Store original GPT data for confidence calculation
-        original_gpt_data = [card.copy() for card in raw_data]
-
-        # Apply learned corrections from previous manual fixes
-        for i, card in enumerate(raw_data):
-            raw_data[i] = correction_tracker.apply_learned_corrections(card)
-
-        # Apply learned condition predictions
-        for i, card in enumerate(raw_data):
-            predicted_condition = correction_tracker.predict_condition(card)
-            if predicted_condition:
-                raw_data[i]['condition'] = predicted_condition
-                raw_data[i]['_condition_predicted'] = True
-
-        # Create GridCard objects with dynamic dimensions
-        grid_cards = []
-        for i, card_data in enumerate(raw_data):
-            row, col = grid_dimensions.position_to_row_col(i)
-
-            # Calculate real confidence based on historical accuracy
-            confidence = correction_tracker.get_confidence_score(
-                card_data,
-                original_gpt_data[i]
-            )
-
-            grid_card = GridCard(
-                position=i,
-                row=row,
-                col=col,
-                data=card_data,
-                confidence=confidence
-            )
-            grid_cards.append(grid_card)
-
-        print(f"Extraction completed: {len(grid_cards)} cards processed", file=sys.stderr)
-        return grid_cards, raw_data
-
-    def _build_extraction_prompt(self, grid_dimensions: GridDimensions) -> str:
-        """Build dynamic extraction prompt based on grid dimensions."""
-        # Get example features from database
-        feature_examples = self._get_feature_examples()
-        feature_examples_text = ""
-        if feature_examples:
-            feature_examples_text = f" Examples from database: {', '.join(feature_examples)}."
-
-        total = grid_dimensions.total_cards
-        max_pos = total - 1
-
-        prompt = f"""This is a {grid_dimensions.grid_string} grid of baseball card BACKS ({total} cards total, arranged left-to-right, top-to-bottom).
-
-Extract data for each card (position 0-{max_pos}) in this order:
+Extract data for each card (position 0-8) in this order:
 
 1. name: Player's full name in all lowercase
 2. number: Card number
@@ -282,15 +126,10 @@ Extract data for each card (position 0-{max_pos}) in this order:
 
 IMPORTANT: Each card can have a DIFFERENT condition - examine each one individually for wear, damage, creasing, and surface issues.
 
-Return structured JSON with a "cards" array containing exactly {total} card objects (position 0-{max_pos})."""
+Return structured JSON with a "cards" array containing exactly 9 card objects (position 0-8)."""
 
-        return prompt
-
-    def _build_response_schema(self, grid_dimensions: GridDimensions) -> dict:
-        """Build dynamic JSON schema expecting exact number of cards."""
-        total = grid_dimensions.total_cards
-
-        return {
+        # Define structured output schema
+        response_schema = {
             "type": "json_schema",
             "json_schema": {
                 "name": "card_grid_extraction",
@@ -324,9 +163,7 @@ Return structured JSON with a "cards" array containing exactly {total} card obje
                                     "notes", "value_estimate"
                                 ],
                                 "additionalProperties": False
-                            },
-                            "minItems": total,
-                            "maxItems": total
+                            }
                         }
                     },
                     "required": ["cards"],
@@ -335,13 +172,184 @@ Return structured JSON with a "cards" array containing exactly {total} card obje
             }
         }
 
-    def process_3x3_grid(self, image_path: str, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
-        """Backward compatibility wrapper for 3x3 grids."""
-        return self.process_grid(
-            image_path,
-            GridDimensions(rows=3, cols=3),
-            front_images_dir
+        # Call GPT Vision API with structured outputs
+        response = client.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": "You are a trading card expert. Extract data accurately from card backs."},
+                {"role": "user", "content": [
+                    {"type": "text", "text": prompt},
+                    {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}}
+                ]}
+            ],
+            response_format=response_schema,
+            max_completion_tokens=2000,
+            temperature=0.1
         )
+
+        result_text = response.choices[0].message.content.strip()
+
+        # Parse structured output
+        result_json = json.loads(result_text)
+        raw_data = result_json.get("cards", [])
+
+        # Ensure exactly 9 cards
+        if len(raw_data) != 9:
+            print(f"Warning: Expected 9 cards, got {len(raw_data)}", file=sys.stderr)
+            while len(raw_data) < 9:
+                raw_data.append(self._create_default_card(len(raw_data)))
+            raw_data = raw_data[:9]
+
+        # Add grid metadata
+        for i, card in enumerate(raw_data):
+            card.setdefault('grid_position', i)
+            card.setdefault('_grid_metadata', {"position": i, "row": i // 3, "col": i % 3})
+
+        # Store original GPT extraction before any modifications
+        # This preserves what GPT actually extracted for correction tracking
+        for card in raw_data:
+            card['_original_extraction'] = {
+                'name': card.get('name'),
+                'brand': card.get('brand'),
+                'team': card.get('team'),
+                'card_set': card.get('card_set'),
+                'copyright_year': card.get('copyright_year'),
+                'number': card.get('number'),
+                'condition': card.get('condition'),
+                'sport': card.get('sport')
+            }
+
+        # Lowercase field values for consistency and normalize prices
+        for card in raw_data:
+            for key in ("name", "sport", "brand", "team", "card_set", "condition", "notes"):
+                if key in card and card[key] is not None and isinstance(card[key], str):
+                    card[key] = card[key].lower().strip()
+            # Normalize price estimate
+            if 'value_estimate' in card:
+                card['value_estimate'] = normalize_price(card['value_estimate'])
+
+        # Apply validation rules to fix known error patterns
+        for card in raw_data:
+            card.update(self._apply_validation_rules(card))
+
+        # Store original GPT data for confidence calculation
+        original_gpt_data = [card.copy() for card in raw_data]
+
+        # Apply learned corrections from previous manual fixes
+        for i, card in enumerate(raw_data):
+            raw_data[i] = correction_tracker.apply_learned_corrections(card)
+
+        # Apply learned condition predictions
+        for i, card in enumerate(raw_data):
+            predicted_condition = correction_tracker.predict_condition(card)
+            if predicted_condition:
+                raw_data[i]['condition'] = predicted_condition
+                raw_data[i]['_condition_predicted'] = True
+
+        # Create GridCard objects
+        grid_cards = []
+        for i, card_data in enumerate(raw_data):
+            # Calculate real confidence based on historical accuracy
+            confidence = correction_tracker.get_confidence_score(
+                card_data,
+                original_gpt_data[i]
+            )
+
+            grid_card = GridCard(
+                position=i,
+                row=i // 3,
+                col=i % 3,
+                data=card_data,
+                confidence=confidence
+            )
+            grid_cards.append(grid_card)
+
+        print(f"Extraction completed: {len(grid_cards)} cards processed", file=sys.stderr)
+        return grid_cards, raw_data
+
+    def _apply_validation_rules(self, card: Dict) -> Dict:
+        """Apply rule-based validation to fix known error patterns.
+
+        Rules applied:
+        1. Card set cleanup: Remove redundant year+brand patterns
+        2. Team name completion: Add city prefix from learned corrections
+        3. Condition confidence marker: Flag suspicious vintage condition assessments
+        4. Copyright year validation: Flag unlikely year values
+
+        Returns dict with corrections to apply (updated fields only).
+        """
+        corrections = {}
+
+        # Rule 1: Card Set Cleanup
+        # Pattern: "{year} {brand}" should be "n/a" for base sets
+        card_set = (card.get('card_set') or '').strip()
+        brand = (card.get('brand') or '').strip()
+        year = (card.get('copyright_year') or '').strip()
+
+        if card_set and brand and year:
+            # Check if card_set is just "{year} {brand}"
+            if card_set == f"{year} {brand}":
+                corrections['card_set'] = 'n/a'
+                card['_card_set_autocorrected'] = True
+
+        # Rule 2: Team Name Completion
+        # Use learned corrections to add city prefixes
+        team = (card.get('team') or '').strip()
+        if team and team not in ('n/a', 'unknown', 'none'):
+            # Build team completion map from known corrections
+            team_completions = {
+                'brewers': 'milwaukee brewers',
+                'indians': 'cleveland indians',
+                'padres': 'san diego padres',
+                'rangers': 'texas rangers',
+                'red sox': 'boston red sox',
+                'mets': 'new york mets',
+                'reds': 'cincinnati reds',
+                'cubs': 'chicago cubs',
+                'white sox': 'chicago white sox',
+                'yankees': 'new york yankees',
+                'dodgers': 'los angeles dodgers',
+                'giants': 'san francisco giants',
+                'athletics': 'oakland athletics',
+                'orioles': 'baltimore orioles',
+                'angels': 'los angeles angels',
+                'astros': 'houston astros',
+                'braves': 'atlanta braves',
+                'cardinals': 'st. louis cardinals',
+                'phillies': 'philadelphia phillies',
+                'pirates': 'pittsburgh pirates',
+                'royals': 'kansas city royals',
+                'tigers': 'detroit tigers',
+                'twins': 'minnesota twins',
+            }
+
+            if team in team_completions:
+                corrections['team'] = team_completions[team]
+                card['_team_autocompleted'] = True
+
+        # Rule 3: Condition Confidence Marker (no auto-change, just flag)
+        # User choice: flag only, don't auto-downgrade
+        condition = (card.get('condition') or '').strip()
+        try:
+            year_int = int(year) if year and year.isdigit() else 9999
+            if condition == 'very_good' and year_int < 1980:
+                # Don't change condition, just mark for confidence penalty
+                card['_condition_suspicious'] = True
+        except (ValueError, AttributeError):
+            pass
+
+        # Rule 4: Copyright Year Cross-Validation
+        # Flag years that seem unlikely (too far from brand patterns)
+        try:
+            year_int = int(year) if year and year.isdigit() else None
+            if year_int:
+                # Flag suspiciously old or new years
+                if year_int < 1950 or year_int > 2025:
+                    card['_year_suspicious'] = True
+        except (ValueError, AttributeError):
+            pass
+
+        return corrections
 
     def _get_feature_examples(self) -> List[str]:
         """Get example features from the database to help GPT understand
@@ -430,12 +438,7 @@ def save_grid_cards_to_verification(
         try:
             cropped_dir = out_dir / "pending_verification_cropped_backs"
             cropped_dir.mkdir(exist_ok=True)
-
-            # Extract grid dimensions from first card's metadata
-            grid_dim_str = grid_cards[0].data.get('_grid_metadata', {}).get('grid_dimensions', '3x3')
-            grid_dims = GridDimensions.from_string(grid_dim_str)
-
-            _extract_and_save_individual_backs(original_image_path, grid_cards, cropped_dir, filename_stem, grid_dims)
+            _extract_and_save_individual_backs(original_image_path, grid_cards, cropped_dir, filename_stem)
         except Exception as e:
             print(f"Failed to save cropped backs: {e}", file=sys.stderr)
 
@@ -444,18 +447,16 @@ def save_grid_cards_to_verification(
 
 
 def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCard],
-                                     output_dir: Path, filename_stem: str,
-                                     grid_dimensions: GridDimensions):
-    """Extract and save individual card backs from grid with dynamic
-    dimensions."""
+                                     output_dir: Path, filename_stem: str):
+    """Extract and save individual card backs from 3x3 grid."""
     try:
         # Load original image
         img = Image.open(image_path)
         width, height = img.size
 
-        # Calculate card dimensions based on grid
-        card_width = width // grid_dimensions.cols
-        card_height = height // grid_dimensions.rows
+        # Calculate grid dimensions (3x3)
+        card_width = width // 3
+        card_height = height // 3
 
         for grid_card in grid_cards:
             # Calculate crop coordinates

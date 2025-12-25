@@ -32,25 +32,25 @@ class CorrectionTracker:
         table_exists = cursor.fetchone() is not None
 
         if not table_exists:
-            # Create new table with field_name schema (backward compatible)
+            # Create new table matching actual schema
             cursor.execute("""
                 CREATE TABLE corrections (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    card_name TEXT,
-                    field_name TEXT NOT NULL,
-                    gpt_value TEXT,
+                    field TEXT NOT NULL,
+                    original_value TEXT,
                     corrected_value TEXT,
-                    image_filename TEXT,
                     brand TEXT,
+                    year TEXT,
                     sport TEXT,
-                    copyright_year TEXT,
-                    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+                    card_set TEXT,
+                    context TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
 
             cursor.execute("""
-                CREATE INDEX idx_field_name
-                ON corrections(field_name)
+                CREATE INDEX idx_corrections_field
+                ON corrections(field)
             """)
 
             cursor.execute("""
@@ -70,7 +70,8 @@ class CorrectionTracker:
         image_filename: Optional[str] = None,
         brand: Optional[str] = None,
         sport: Optional[str] = None,
-        copyright_year: Optional[str] = None
+        copyright_year: Optional[str] = None,
+        card_set: Optional[str] = None
     ):
         """Log a manual correction for learning."""
         # Skip if values are the same
@@ -80,14 +81,22 @@ class CorrectionTracker:
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
 
+        # Build context string for additional info
+        context_parts = []
+        if card_name:
+            context_parts.append(f"name:{card_name}")
+        if image_filename:
+            context_parts.append(f"file:{image_filename}")
+        context = "|".join(context_parts) if context_parts else None
+
         # Use actual database schema column names
         cursor.execute("""
             INSERT INTO corrections (
                 field, original_value, corrected_value,
-                brand, year, sport
-            ) VALUES (?, ?, ?, ?, ?, ?)
+                brand, year, sport, card_set, context
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
         """, (field_name, gpt_value, corrected_value,
-              brand, copyright_year, sport))
+              brand, copyright_year, sport, card_set, context))
 
         conn.commit()
         conn.close()
@@ -343,12 +352,12 @@ class CorrectionTracker:
         card_data: Dict,
         gpt_data: Dict
     ) -> float:
-        """Calculate confidence score based on how often GPT gets fields right.
+        """Calculate calibrated confidence score based on historical accuracy.
 
-        Compares GPT extraction to learned patterns to give a real confidence score.
+        Enhanced confidence calculation with field weighting and validation penalties.
 
         Args:
-            card_data: Card data with corrections applied
+            card_data: Card data with corrections applied (may have validation flags)
             gpt_data: Original GPT extraction
 
         Returns:
@@ -357,13 +366,20 @@ class CorrectionTracker:
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
 
-        # Fields to check
-        check_fields = ['name', 'team', 'brand', 'number', 'condition']
+        # Field weights (some fields are more error-prone)
+        field_weights = {
+            'name': 1.5,       # Most important
+            'team': 1.2,
+            'brand': 1.0,
+            'number': 1.0,
+            'condition': 0.8,  # GPT frequently overestimates
+            'card_set': 0.8,   # GPT frequently includes redundant info
+        }
 
-        correct_count = 0
-        total_checked = 0
+        weighted_correct = 0
+        total_weight = 0
 
-        for field in check_fields:
+        for field, weight in field_weights.items():
             gpt_value = gpt_data.get(field)
             if not gpt_value:
                 continue
@@ -389,19 +405,44 @@ class CorrectionTracker:
 
             total_count = cursor.fetchone()[0]
 
-            total_checked += 1
-
-            # If we've seen this value before and it's usually right, count as correct
+            # Calculate field-specific accuracy
             if total_count > 0:
                 accuracy = 1.0 - (error_count / total_count)
-                correct_count += accuracy
             else:
-                # No history, assume GPT is 80% accurate
-                correct_count += 0.8
+                # No history: default accuracy varies by field
+                if field in ('condition', 'card_set'):
+                    accuracy = 0.7  # Lower default for error-prone fields
+                else:
+                    accuracy = 0.8  # Standard default
+
+            weighted_correct += accuracy * weight
+            total_weight += weight
 
         conn.close()
 
-        if total_checked == 0:
-            return 0.8  # Default confidence when no history
+        if total_weight == 0:
+            base_confidence = 0.8
+        else:
+            base_confidence = weighted_correct / total_weight
 
-        return round(correct_count / total_checked, 2)
+        # Apply penalties from validation rule flags
+        confidence = base_confidence
+
+        # Vintage condition penalty (from validation rules)
+        if card_data.get('_condition_suspicious'):
+            confidence -= 0.15
+            confidence = max(0.0, confidence)
+
+        # Suspicious year penalty
+        if card_data.get('_year_suspicious'):
+            confidence -= 0.10
+            confidence = max(0.0, confidence)
+
+        # Boost for autocorrected fields (high confidence fixes)
+        if card_data.get('_card_set_autocorrected'):
+            confidence = min(1.0, confidence + 0.05)
+
+        if card_data.get('_team_autocompleted'):
+            confidence = min(1.0, confidence + 0.05)
+
+        return round(confidence, 2)

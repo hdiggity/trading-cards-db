@@ -1,5 +1,7 @@
-from sqlalchemy import (Boolean, Column, DateTime, ForeignKey, Integer, String,
-                        Text, func)
+from datetime import datetime
+
+from sqlalchemy import (JSON, Boolean, Column, DateTime, ForeignKey, Integer,
+                        String, Text, func)
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
@@ -54,3 +56,20 @@ class CardComplete(Base):
 
     # relationship back to card
     card = relationship("Card", back_populates="complete_cards")
+
+
+class UndoTransaction(Base):
+    """Tracks reversible operations for comprehensive undo functionality."""
+    __tablename__ = "undo_transactions"
+
+    id = Column(Integer, primary_key=True)
+    transaction_id = Column(String, unique=True, index=True, nullable=False)
+    file_id = Column(String, index=True, nullable=False)
+    action_type = Column(String, nullable=False)
+    card_index = Column(Integer, nullable=True)
+    timestamp = Column(DateTime, default=datetime.utcnow, nullable=False)
+
+    before_state = Column(JSON)
+    after_state = Column(JSON)
+    is_reversed = Column(Boolean, default=False, nullable=False)
+    reversed_at = Column(DateTime, nullable=True)

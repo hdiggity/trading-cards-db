@@ -1,4 +1,4 @@
-# Python
+# python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -19,66 +19,81 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Testing
-.pytest_cache/
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
 .coverage
 .coverage.*
-htmlcov/
-.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
 .hypothesis/
+.pytest_cache/
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Environment
+# environments
 .env
 .env.production
 .env.development
 .env.test
-.venv/
+.venv
+env/
 venv/
 ENV/
-env/
+env.bak/
+venv.bak/
 
-# IDE
+# caches
+app/__pycache__/
+app/scripts/__pycache__/
+app/cache/
+.ruff_cache/
+*.pyc
+
+# learning databases
+cards/verified/corrections.db
+
+# backup files
+*.backup
+*.bak
+
+# ide
+.claude/
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# Caches
-.ruff_cache/
-.mypy_cache/
-.dmypy.json
-.pytype/
-app/__pycache__/
-app/scripts/__pycache__/
-app/cache/
-
-# OS
 .DS_Store
-._*
 
-# Node
+# node
 node_modules/
 */node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json.bak
 
-# Database
-*.db-journal
-*.db-wal
-*.db-shm
-
-# Backups
-*.backup
-*.bak
-
-# Logs
+# logs
 *.log
+logs/*
+!logs/.gitkeep
 
-# Project specific
-.claude
+# os
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# temp files
+*.tmp
+*.temp
+.temp/
+.tmp/

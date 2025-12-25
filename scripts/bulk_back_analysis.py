@@ -11,7 +11,6 @@ WARNING: Original HEIC/JPEG files are DELETED and replaced with PNG!
 
 Usage:
     python bulk_back_analysis.py
-    python bulk_back_analysis.py --strength medium
     python bulk_back_analysis.py --downloads ~/Desktop
 """
 
@@ -20,7 +19,7 @@ import sys
 from pathlib import Path
 
 import pillow_heif
-from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+from PIL import Image, ImageEnhance, ImageOps
 
 
 def load_image(input_path: str) -> Image.Image:
@@ -50,74 +49,39 @@ def load_image(input_path: str) -> Image.Image:
     return image
 
 
-def optimize_for_chatgpt(image: Image.Image, strength: str = "light") -> Image.Image:
+def optimize_for_chatgpt(image: Image.Image) -> Image.Image:
     """Apply gentle enhancements optimized for ChatGPT/GPT-5.2 Vision.
 
     Args:
         image: Input PIL Image
-        strength: 'light', 'medium', or 'strong'
 
     Returns:
         Enhanced PIL Image
     """
-    # Strength presets
-    presets = {
-        "light": {
-            "resize_max": 3200,
-            "sharpen_factor": 1.1,
-            "contrast_factor": 1.05,
-            "brightness_factor": 1.02,
-            "denoise": False,
-        },
-        "medium": {
-            "resize_max": 3200,
-            "sharpen_factor": 1.3,
-            "contrast_factor": 1.1,
-            "brightness_factor": 1.05,
-            "denoise": True,
-        },
-        "strong": {
-            "resize_max": 3200,
-            "sharpen_factor": 1.5,
-            "contrast_factor": 1.15,
-            "brightness_factor": 1.08,
-            "denoise": True,
-        },
-    }
-
-    config = presets.get(strength, presets["light"])
-
     # Step 1: Resize to optimal resolution for GPT-5.2 Vision
-    max_size = config["resize_max"]
+    max_size = 3200
     if max(image.size) > max_size:
         ratio = max_size / max(image.size)
         new_size = (int(image.size[0] * ratio), int(image.size[1] * ratio))
         image = image.resize(new_size, Image.Resampling.LANCZOS)
 
-    # Step 2: Gentle noise reduction (optional, helps with phone camera images)
-    if config["denoise"]:
-        image = image.filter(ImageFilter.MedianFilter(size=3))
+    # Step 2: Slight brightness adjustment (helps with underexposed cards)
+    enhancer = ImageEnhance.Brightness(image)
+    image = enhancer.enhance(1.02)
 
-    # Step 3: Slight brightness adjustment (helps with underexposed cards)
-    if config["brightness_factor"] != 1.0:
-        enhancer = ImageEnhance.Brightness(image)
-        image = enhancer.enhance(config["brightness_factor"])
+    # Step 3: Gentle contrast enhancement (improves text readability)
+    enhancer = ImageEnhance.Contrast(image)
+    image = enhancer.enhance(1.05)
 
-    # Step 4: Gentle contrast enhancement (improves text readability)
-    if config["contrast_factor"] != 1.0:
-        enhancer = ImageEnhance.Contrast(image)
-        image = enhancer.enhance(config["contrast_factor"])
-
-    # Step 5: Gentle sharpening (improves text clarity)
-    if config["sharpen_factor"] != 1.0:
-        enhancer = ImageEnhance.Sharpness(image)
-        image = enhancer.enhance(config["sharpen_factor"])
+    # Step 4: Gentle sharpening (improves text clarity)
+    enhancer = ImageEnhance.Sharpness(image)
+    image = enhancer.enhance(1.1)
 
     return image
 
 
 def process_single_file(
-    input_path: Path, output_dir: Path, strength: str = "light", quality: int = 95
+    input_path: Path, output_dir: Path, quality: int = 95
 ):
     """Process a single HEIC or JPEG file and replace with optimized PNG."""
     try:
@@ -125,7 +89,7 @@ def process_single_file(
         image = load_image(str(input_path))
 
         # Apply optimizations
-        optimized = optimize_for_chatgpt(image, strength=strength)
+        optimized = optimize_for_chatgpt(image)
 
         # Replace original with PNG (same name, different extension)
         output_filename = input_path.stem + ".png"
@@ -159,12 +123,6 @@ def main():
         default=Path.home() / "Downloads",
         type=Path,
         help="Directory to scan for HEIC/JPEG files (default: ~/Downloads)",
-    )
-    parser.add_argument(
-        "--strength",
-        choices=["light", "medium", "strong"],
-        default="light",
-        help="Enhancement strength (default: light)",
     )
     parser.add_argument(
         "--quality",
@@ -218,7 +176,7 @@ def main():
         print(f"\nAll {len(image_files)} image files were corrupted (skipped)")
         sys.exit(0)
 
-    print(f"\nProcessing {len(files_to_process)} image file(s) ({args.strength} strength)...")
+    print(f"\nProcessing {len(files_to_process)} image file(s)...")
     if corrupted_count > 0:
         print(f"Skipped {corrupted_count} corrupted file(s)")
     print()
@@ -226,7 +184,7 @@ def main():
     # Process all files (output to same directory)
     success_count = 0
     for image_file in files_to_process:
-        if process_single_file(image_file, downloads_dir, args.strength, args.quality):
+        if process_single_file(image_file, downloads_dir, args.quality):
             success_count += 1
 
     # Summary

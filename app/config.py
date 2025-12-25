@@ -51,10 +51,6 @@ class Config:
         self.cards_dir = os.getenv('CARDS_DIR', 'cards')
         self.logs_dir = os.getenv('LOGS_DIR', 'logs')
 
-        # Grid processing configuration
-        self.default_grid_rows = int(os.getenv('DEFAULT_GRID_ROWS', '3'))
-        self.default_grid_cols = int(os.getenv('DEFAULT_GRID_COLS', '3'))
-
         # Validate configuration
         self.validate()
 

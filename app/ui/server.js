@@ -225,7 +225,8 @@ for corr in data['corrections']:
         image_filename=data['context'].get('image_filename'),
         brand=data['context'].get('brand'),
         sport=data['context'].get('sport'),
-        copyright_year=data['context'].get('copyright_year')
+        copyright_year=data['context'].get('copyright_year'),
+        card_set=data['context'].get('card_set')
     )
 
 print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
@@ -511,11 +512,27 @@ app.get('/api/pending-cards', async (req, res) => {
         const jsonPath = path.join(PENDING_VERIFICATION_DIR, jsonFile);
         const jsonData = JSON.parse(await fs.readFile(jsonPath, 'utf8'));
 
+        // Transform data to include UI-friendly confidence and flag indicators
+        const transformedData = jsonData.map(card => ({
+          ...card,
+          _overall_confidence: card._grid_metadata?.confidence || 0.8,
+          _has_autocorrections: !!(card._card_set_autocorrected || card._team_autocompleted),
+          _has_warnings: !!(card._condition_suspicious || card._year_suspicious),
+          _autocorrection_badges: [
+            card._card_set_autocorrected && { field: 'card_set', label: 'Auto-fixed' },
+            card._team_autocompleted && { field: 'team', label: 'City added' },
+          ].filter(Boolean),
+          _warning_badges: [
+            card._condition_suspicious && { field: 'condition', label: 'Vintage - verify condition', type: 'condition' },
+            card._year_suspicious && { field: 'copyright_year', label: 'Unusual year', type: 'year' },
+          ].filter(Boolean)
+        }));
+
         cards.push({
           id: baseName,
           jsonFile,
           imageFile,
-          data: jsonData
+          data: transformedData
         });
       }
     }
@@ -540,17 +557,15 @@ app.post('/api/upload-raw-scans', async (req, res) => {
   upload.array('images')(req, res, async (err) => {
     if (err) {
       console.error('Multer upload error:', err);
-      return res.status(400).json({
-        error: 'Upload failed: ' + err.message
+      return res.status(400).json({ 
+        error: 'Upload failed: ' + err.message 
       });
     }
-
+    
     try {
       if (!req.files || req.files.length === 0) {
         return res.status(400).json({ error: 'No files uploaded' });
       }
-
-    const gridDimensions = req.body.grid_dimensions || '3x3'; // NEW: Accept grid size
 
     const uploadedFiles = req.files.map(file => ({
       originalName: file.originalname,
@@ -558,19 +573,6 @@ app.post('/api/upload-raw-scans', async (req, res) => {
       path: file.path,
       size: file.size
     }));
-
-    // Store grid dimensions as metadata for each file
-    for (const file of req.files) {
-      try {
-        const metadataPath = path.join(rawScansPath, `${file.filename}.grid_metadata.json`);
-        await fs.writeFile(metadataPath, JSON.stringify({
-          grid_dimensions: gridDimensions,
-          uploaded_at: new Date().toISOString()
-        }));
-      } catch (metaErr) {
-        console.error(`Failed to write grid metadata for ${file.filename}:`, metaErr);
-      }
-    }
 
     // Log each upload into UploadHistory + system logs
     try {
@@ -606,8 +608,7 @@ print("OK")
     res.json({
       success: true,
       message: `Successfully uploaded ${req.files.length} file(s)`,
-      files: uploadedFiles,
-      grid_dimensions: gridDimensions
+      files: uploadedFiles
     });
 
     } catch (error) {
@@ -736,6 +737,58 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
       return processedCard;
     });
     
+    // Create undo transaction BEFORE database import
+    let transactionId = null;
+    const beforeState = {
+      json_file: jsonFile,
+      json_data: JSON.parse(JSON.stringify(allCardData)),
+      card_index: parseInt(cardIndex),
+      cropped_back_file: croppedBackFile,
+      image_file: imageFile
+    };
+
+    try {
+      const createTxnProcess = spawn('python', ['-c', `
+import sys
+import json
+from app.crud import create_undo_transaction
+
+data = json.loads(sys.stdin.read())
+transaction_id = create_undo_transaction(
+    file_id=data['file_id'],
+    action_type=data['action_type'],
+    before_state=data['before_state'],
+    card_index=data.get('card_index')
+)
+print(transaction_id)
+      `], {
+        cwd: path.join(__dirname, '../..'),
+        stdio: ['pipe', 'pipe', 'pipe']
+      });
+
+      createTxnProcess.stdin.write(JSON.stringify({
+        file_id: id,
+        action_type: 'pass_card',
+        before_state: beforeState,
+        card_index: parseInt(cardIndex)
+      }));
+      createTxnProcess.stdin.end();
+
+      const txnOutput = await new Promise((resolve, reject) => {
+        let output = '';
+        createTxnProcess.stdout.on('data', (data) => { output += data.toString(); });
+        createTxnProcess.on('close', (code) => {
+          if (code === 0) resolve(output.trim());
+          else reject(new Error('Failed to create undo transaction'));
+        });
+      });
+
+      transactionId = txnOutput;
+      console.log(`[pass-card] Created undo transaction: ${transactionId}`);
+    } catch (txnErr) {
+      console.error(`[pass-card] Warning: Failed to create undo transaction: ${txnErr.message}`);
+    }
+
     // Import card directly to database
     const pythonProcess = spawn('python', ['-c', `
 import json
@@ -763,6 +816,7 @@ for card_info in card_data:
         if field in card_info and isinstance(card_info[field], str):
             card_info[field] = card_info[field].lower()
 
+card_complete_ids = []
 with get_session() as session:
     for card_info in card_data:
         try:
@@ -780,7 +834,7 @@ with get_session() as session:
 
             if existing:
                 card_id = existing.id
-                print(f"Found existing card: {card_info.get('name')}, adding to cards_complete")
+                print(f"Found existing card: {card_info.get('name')}, adding to cards_complete", file=sys.stderr)
             else:
                 # Create new card entry to get card_id
                 # Trigger will update this with correct data from cards_complete
@@ -788,7 +842,7 @@ with get_session() as session:
                 session.add(new_card)
                 session.flush()  # Get the new card's ID
                 card_id = new_card.id
-                print(f"Created new card: {card_info.get('name')}")
+                print(f"Created new card: {card_info.get('name')}", file=sys.stderr)
 
             # Create CardComplete record for each physical card copy
             # Database triggers will automatically update cards table and quantity
@@ -813,14 +867,19 @@ with get_session() as session:
                 cropped_back_file=card_info.get('cropped_back_file')
             )
             session.add(card_complete)
-            print(f"Added cards_complete record for: {card_info.get('name')} (triggers will sync to cards)")
+            session.flush()
+            card_complete_ids.append(card_complete.id)
+            print(f"Added cards_complete record for: {card_info.get('name')} (triggers will sync to cards)", file=sys.stderr)
 
         except Exception as e:
-            print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
+            print(f"Error processing card {card_info.get('name', 'n/a')}: {e}", file=sys.stderr)
             continue
 
     session.commit()
-print("Database import completed successfully")
+
+# Output card_complete_ids as JSON to stdout
+print(json.dumps({"success": True, "card_complete_ids": card_complete_ids}))
+print("Database import completed successfully", file=sys.stderr)
     `], {
       cwd: path.join(__dirname, '../..'),
       stdio: ['pipe', 'pipe', 'pipe']
@@ -852,6 +911,19 @@ print("Database import completed successfully")
       console.log(`[pass-card] Full output: ${output.trim()}`);
       console.log(`[pass-card] Full error: ${error.trim()}`);
       if (code === 0) {
+        // Parse card_complete_ids from Python output
+        let cardCompleteIds = [];
+        try {
+          const jsonOutput = output.trim().split('\n').find(line => line.startsWith('{'));
+          if (jsonOutput) {
+            const result = JSON.parse(jsonOutput);
+            cardCompleteIds = result.card_complete_ids || [];
+            console.log(`[pass-card] Parsed card_complete_ids: ${JSON.stringify(cardCompleteIds)}`);
+          }
+        } catch (parseErr) {
+          console.error(`[pass-card] Warning: Failed to parse card_complete_ids: ${parseErr.message}`);
+        }
+
         // Remove the imported card from the array FIRST, before any async operations
         const cardIdx = parseInt(cardIndex);
         allCardData.splice(cardIdx, 1);
@@ -899,17 +971,80 @@ print("Database import completed successfully")
             console.error(`[pass-card] Warning: Failed to copy image to verified: ${partialErr.message}`);
           }
 
+          // Track file movements for undo
+          const fileMovements = [];
+
           // Move cropped back to verified/cropped_backs
           if (croppedBackFile) {
             try {
               await fs.mkdir(CROPPED_BACKS_VERIFIED, { recursive: true });
-              await fs.rename(
-                path.join(CROPPED_BACKS_PENDING, croppedBackFile),
-                path.join(CROPPED_BACKS_VERIFIED, croppedBackFile)
-              );
+              const sourcePath = path.join(CROPPED_BACKS_PENDING, croppedBackFile);
+              const destPath = path.join(CROPPED_BACKS_VERIFIED, croppedBackFile);
+              await fs.rename(sourcePath, destPath);
               console.log(`[pass-card] Moved cropped back to verified: ${croppedBackFile}`);
+
+              // Record file movement
+              fileMovements.push({
+                source: sourcePath,
+                dest: destPath,
+                file_type: 'cropped_back'
+              });
             } catch (cropErr) {
               console.error(`[pass-card] Warning: Failed to move cropped back: ${cropErr.message}`);
+            }
+          }
+
+          // Update undo transaction with after_state
+          if (transactionId) {
+            try {
+              const updateTxnProcess = spawn('python', ['-c', `
+import sys
+import json
+from app.crud import update_undo_transaction_after_state
+from app.file_movement_tracker import FileMovementTracker
+
+data = json.loads(sys.stdin.read())
+tracker = FileMovementTracker()
+
+# Record file movements
+for movement in data['file_movements']:
+    tracker.record_movement(
+        source=movement['source'],
+        dest=movement['dest'],
+        transaction_id=data['transaction_id'],
+        file_type=movement.get('file_type')
+    )
+
+# Update transaction with after_state
+update_undo_transaction_after_state(
+    transaction_id=data['transaction_id'],
+    after_state=data['after_state']
+)
+print("Transaction updated successfully")
+              `], {
+                cwd: path.join(__dirname, '../..'),
+                stdio: ['pipe', 'pipe', 'pipe']
+              });
+
+              updateTxnProcess.stdin.write(JSON.stringify({
+                transaction_id: transactionId,
+                file_movements: fileMovements,
+                after_state: {
+                  card_complete_ids: cardCompleteIds,
+                  files_moved: fileMovements.length
+                }
+              }));
+              updateTxnProcess.stdin.end();
+
+              updateTxnProcess.on('close', (code) => {
+                if (code === 0) {
+                  console.log(`[pass-card] Updated undo transaction ${transactionId}`);
+                } else {
+                  console.error(`[pass-card] Warning: Failed to update undo transaction`);
+                }
+              });
+            } catch (updateErr) {
+              console.error(`[pass-card] Warning: Failed to update transaction: ${updateErr.message}`);
             }
           }
 
@@ -936,6 +1071,9 @@ print("Database import completed successfully")
             return imgBaseName === id && ['.jpg', '.jpeg', '.png', '.heic'].includes(imgExt);
           });
 
+          // Track file movements for undo
+          const fileMovements = [];
+
           try {
             // Delete grouped JSON file FIRST (data is now in database)
             await fs.unlink(jsonPath);
@@ -947,6 +1085,7 @@ print("Database import completed successfully")
             if (imageFile) {
               const verifiedImageName = getVerifiedFilename(imageFile);
               const verifiedImagePath = path.join(VERIFIED_IMAGES_DIR, verifiedImageName);
+              const sourceBulkPath = path.join(PENDING_BULK_BACK_DIR, imageFile);
 
               // Copy to verified if not already there
               try {
@@ -954,17 +1093,21 @@ print("Database import completed successfully")
                 console.log(`[pass-card] Image already in verified: ${verifiedImageName}`);
               } catch {
                 // Not in verified yet, copy it
-                await fs.copyFile(
-                  path.join(PENDING_BULK_BACK_DIR, imageFile),
-                  verifiedImagePath
-                );
+                await fs.copyFile(sourceBulkPath, verifiedImagePath);
                 console.log(`[pass-card] Copied image to verified: ${verifiedImageName}`);
               }
 
               // Delete the original from pending after successful copy to verified
               try {
-                await fs.unlink(path.join(PENDING_BULK_BACK_DIR, imageFile));
+                await fs.unlink(sourceBulkPath);
                 console.log(`[pass-card] Deleted original from pending: ${imageFile}`);
+
+                // Record bulk image movement
+                fileMovements.push({
+                  source: sourceBulkPath,
+                  dest: verifiedImagePath,
+                  file_type: 'bulk_back'
+                });
               } catch (delErr) {
                 console.error(`[pass-card] Warning: Failed to delete original: ${delErr.message}`);
               }
@@ -974,13 +1117,74 @@ print("Database import completed successfully")
             if (croppedBackFile) {
               try {
                 await fs.mkdir(CROPPED_BACKS_VERIFIED, { recursive: true });
-                await fs.rename(
-                  path.join(CROPPED_BACKS_PENDING, croppedBackFile),
-                  path.join(CROPPED_BACKS_VERIFIED, croppedBackFile)
-                );
+                const sourceCroppedPath = path.join(CROPPED_BACKS_PENDING, croppedBackFile);
+                const destCroppedPath = path.join(CROPPED_BACKS_VERIFIED, croppedBackFile);
+                await fs.rename(sourceCroppedPath, destCroppedPath);
                 console.log(`[pass-card] Moved last cropped back to verified: ${croppedBackFile}`);
+
+                // Record cropped back movement
+                fileMovements.push({
+                  source: sourceCroppedPath,
+                  dest: destCroppedPath,
+                  file_type: 'cropped_back'
+                });
               } catch (cropErr) {
                 console.error(`[pass-card] Warning: Failed to move last cropped back: ${cropErr.message}`);
+              }
+            }
+
+            // Update undo transaction with after_state
+            if (transactionId) {
+              try {
+                const updateTxnProcess = spawn('python', ['-c', `
+import sys
+import json
+from app.crud import update_undo_transaction_after_state
+from app.file_movement_tracker import FileMovementTracker
+
+data = json.loads(sys.stdin.read())
+tracker = FileMovementTracker()
+
+# Record file movements
+for movement in data['file_movements']:
+    tracker.record_movement(
+        source=movement['source'],
+        dest=movement['dest'],
+        transaction_id=data['transaction_id'],
+        file_type=movement.get('file_type')
+    )
+
+# Update transaction with after_state
+update_undo_transaction_after_state(
+    transaction_id=data['transaction_id'],
+    after_state=data['after_state']
+)
+print("Transaction updated successfully")
+                `], {
+                  cwd: path.join(__dirname, '../..'),
+                  stdio: ['pipe', 'pipe', 'pipe']
+                });
+
+                updateTxnProcess.stdin.write(JSON.stringify({
+                  transaction_id: transactionId,
+                  file_movements: fileMovements,
+                  after_state: {
+                    card_complete_ids: cardCompleteIds,
+                    files_moved: fileMovements.length,
+                    json_deleted: true
+                  }
+                }));
+                updateTxnProcess.stdin.end();
+
+                updateTxnProcess.on('close', (code) => {
+                  if (code === 0) {
+                    console.log(`[pass-card] Updated undo transaction ${transactionId} (all cards done)`);
+                  } else {
+                    console.error(`[pass-card] Warning: Failed to update undo transaction`);
+                  }
+                });
+              } catch (updateErr) {
+                console.error(`[pass-card] Warning: Failed to update transaction: ${updateErr.message}`);
               }
             }
 
@@ -1499,8 +1703,9 @@ app.post('/api/fail-card/:id/:cardIndex', async (req, res) => {
     const gridMeta = failedCard?._grid_metadata || {};
     const failedPosition = gridMeta.position !== undefined ? gridMeta.position : cardIdx;
 
-    // Find and delete the cropped back image for this specific card before removing from array
+    // Archive cropped back image instead of deleting (enables undo recovery)
     const CROPPED_BACKS_PENDING = path.join(PENDING_VERIFICATION_DIR, 'pending_verification_cropped_backs');
+    const FAILED_ARCHIVE_DIR = path.join(__dirname, '../../cards/archive/failed_cropped_backs');
     try {
       if (failedCard) {
         const croppedFiles = await fs.readdir(CROPPED_BACKS_PENDING);
@@ -1514,10 +1719,16 @@ app.post('/api/fail-card/:id/:cardIndex', async (req, res) => {
             f.includes(`_${namePart}_`) && f.includes(`_${failedCard.number}.`)
           );
         }
-        // Delete the cropped back if found
+        // Archive the cropped back if found (instead of deleting)
         if (croppedBackFile) {
-          await fs.unlink(path.join(CROPPED_BACKS_PENDING, croppedBackFile));
-          console.log(`[fail-card] Deleted cropped back: ${croppedBackFile}`);
+          await fs.mkdir(FAILED_ARCHIVE_DIR, { recursive: true });
+          const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/, '');
+          const archiveName = `${id}_pos${failedPosition}_${timestamp}.png`;
+          await fs.rename(
+            path.join(CROPPED_BACKS_PENDING, croppedBackFile),
+            path.join(FAILED_ARCHIVE_DIR, archiveName)
+          );
+          console.log(`[fail-card] Archived cropped back: ${archiveName}`);
         }
       }
     } catch (cropErr) {
@@ -2048,7 +2259,7 @@ app.post('/api/cancel-processing', async (req, res) => {
 
 app.post('/api/process-raw-scans', async (req, res) => {
   try {
-    const { count, grid_dimensions } = req.body || {};
+    const { count } = req.body || {};
     const BULK_BACK_DIR = path.join(__dirname, '../../cards/unprocessed_bulk_back');
 
     // Ensure logs directory exists and create a per-run log file
@@ -2079,32 +2290,9 @@ app.post('/api/process-raw-scans', async (req, res) => {
     // Get the specific files to process (oldest first)
     const filesToProcess = allFiles.slice(0, toProcess);
 
-    // Build manifest with per-file grid dimensions
-    const fileManifest = [];
-    for (const filename of filesToProcess) {
-      let dims = grid_dimensions || '3x3'; // Use request override or default
-
-      // Try to read grid metadata for this file
-      const metadataPath = path.join(BULK_BACK_DIR, `${filename}.grid_metadata.json`);
-      try {
-        const metadata = await fs.readFile(metadataPath, 'utf8');
-        const parsed = JSON.parse(metadata);
-        if (parsed.grid_dimensions) {
-          dims = parsed.grid_dimensions;
-        }
-      } catch {
-        // No metadata file, use default or override
-      }
-
-      fileManifest.push({
-        filename: filename,
-        grid_dimensions: dims
-      });
-    }
-
-    // Write manifest to temp file
-    const manifestPath = path.join(logsDir, `process_manifest_${stamp}.json`);
-    await fs.writeFile(manifestPath, JSON.stringify(fileManifest, null, 2));
+    // Write the file list to a temp file for Python to read
+    const fileListPath = path.join(logsDir, `process_list_${stamp}.json`);
+    await fs.writeFile(fileListPath, JSON.stringify(filesToProcess));
 
     // Clear any existing progress file to prevent showing stale 100% progress
     try {
@@ -2112,7 +2300,7 @@ app.post('/api/process-raw-scans', async (req, res) => {
     } catch {}
 
 
-    const child = spawn('python', ['-m', 'app.run', '--grid', '--manifest', manifestPath], {
+    const child = spawn('python', ['-m', 'app.run', '--grid', '--file-list', fileListPath], {
       cwd: path.join(__dirname, '../..'),
       detached: true,
       stdio: ['ignore', 'pipe', 'pipe']
@@ -2142,8 +2330,8 @@ app.post('/api/process-raw-scans', async (req, res) => {
       // Finalize progress to 100%
       const finished = { ...status, active: false, remaining: 0, progress: 100, finishedAt: new Date().toISOString(), exitCode: code ?? null, signal: signal ?? null };
       writeStatus(finished);
-      // Clean up the manifest file
-      fs.unlink(manifestPath).catch(() => {});
+      // Clean up the file list
+      fs.unlink(fileListPath).catch(() => {});
     });
 
     child.unref();
@@ -3281,8 +3469,154 @@ app.post('/api/undo/:id', async (req, res) => {
     }
 
     const undoneAction = result.undoneAction;
+    const actionType = undoneAction.action;
 
-    // Restore the beforeData to the JSON file
+    // Handle different action types
+    if (actionType === 'pass_card' || actionType === 'pass_all') {
+      console.log(`[undo] Reversing database import and file movements for ${actionType}`);
+
+      // Find the corresponding UndoTransaction by file_id, action_type, and timestamp proximity
+      try {
+        const findTxnProcess = spawn('python', ['-c', `
+import sys
+import json
+from app.crud import get_transactions_for_file
+from datetime import datetime
+
+file_id = sys.argv[1]
+action_type = sys.argv[2]
+card_index = sys.argv[3] if len(sys.argv) > 3 and sys.argv[3] != 'null' else None
+timestamp_str = sys.argv[4]
+
+# Parse timestamp
+target_time = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+
+# Get all non-reversed transactions for this file
+transactions = get_transactions_for_file(file_id)
+
+# Find matching transaction (by action_type and card_index if provided)
+matching_txn = None
+for txn in transactions:
+    if txn.action_type == action_type:
+        if card_index is not None and txn.card_index is not None:
+            if str(txn.card_index) == str(card_index):
+                matching_txn = txn
+                break
+        elif card_index is None and txn.card_index is None:
+            matching_txn = txn
+            break
+
+if matching_txn:
+    print(json.dumps({
+        "success": True,
+        "transaction_id": matching_txn.transaction_id,
+        "action_type": matching_txn.action_type
+    }))
+else:
+    print(json.dumps({"success": False, "error": "No matching transaction found"}))
+        `, id, actionType, String(undoneAction.cardIndex || 'null'), undoneAction.timestamp], {
+          cwd: path.join(__dirname, '../..'),
+          stdio: ['pipe', 'pipe', 'pipe']
+        });
+
+        const txnOutput = await new Promise((resolve, reject) => {
+          let output = '';
+          let error = '';
+          findTxnProcess.stdout.on('data', (data) => { output += data.toString(); });
+          findTxnProcess.stderr.on('data', (data) => { error += data.toString(); });
+          findTxnProcess.on('close', (code) => {
+            if (code === 0) {
+              try {
+                const result = JSON.parse(output.trim());
+                resolve(result);
+              } catch (e) {
+                reject(new Error(`Failed to parse transaction output: ${output}`));
+              }
+            } else {
+              reject(new Error(`Transaction lookup failed: ${error}`));
+            }
+          });
+        });
+
+        if (txnOutput.success && txnOutput.transaction_id) {
+          const transactionId = txnOutput.transaction_id;
+          console.log(`[undo] Found transaction ${transactionId}, reversing...`);
+
+          // Reverse database import and file movements
+          const undoProcess = spawn('python', ['-c', `
+import sys
+import json
+from app.crud import undo_card_import, mark_transaction_reversed
+from app.file_movement_tracker import FileMovementTracker
+
+transaction_id = sys.argv[1]
+
+# Reverse database changes
+db_result = undo_card_import(transaction_id)
+print(f"Database rollback: deleted {db_result['affected_cards']} cards_complete records", file=sys.stderr)
+
+# Reverse file movements
+tracker = FileMovementTracker()
+file_result = tracker.reverse_movement(transaction_id)
+print(f"File reversal: moved {file_result['reversed_count']} files back", file=sys.stderr)
+
+# Mark transaction as reversed
+mark_transaction_reversed(transaction_id)
+
+# Output result
+result = {
+    "success": True,
+    "cards_deleted": db_result['affected_cards'],
+    "files_reversed": file_result['reversed_count'],
+    "errors": file_result.get('errors', [])
+}
+print(json.dumps(result))
+          `, transactionId], {
+            cwd: path.join(__dirname, '../..'),
+            stdio: ['pipe', 'pipe', 'pipe']
+          });
+
+          const undoOutput = await new Promise((resolve, reject) => {
+            let output = '';
+            let error = '';
+            undoProcess.stdout.on('data', (data) => { output += data.toString(); });
+            undoProcess.stderr.on('data', (data) => {
+              const text = data.toString();
+              error += text;
+              console.log(`[undo] ${text.trim()}`);
+            });
+            undoProcess.on('close', (code) => {
+              if (code === 0) {
+                try {
+                  const result = JSON.parse(output.trim());
+                  resolve(result);
+                } catch (e) {
+                  reject(new Error(`Failed to parse undo output: ${output}`));
+                }
+              } else {
+                reject(new Error(`Undo process failed: ${error}`));
+              }
+            });
+          });
+
+          console.log(`[undo] Rollback complete: ${undoOutput.cards_deleted} cards deleted, ${undoOutput.files_reversed} files reversed`);
+          if (undoOutput.errors && undoOutput.errors.length > 0) {
+            console.error(`[undo] File reversal errors:`, undoOutput.errors);
+          }
+        } else {
+          console.warn(`[undo] No transaction found for ${actionType} - continuing with JSON restore only`);
+        }
+      } catch (txnErr) {
+        console.error(`[undo] Warning: Transaction reversal failed: ${txnErr.message}`);
+        // Continue with JSON restoration even if transaction reversal fails
+      }
+    } else if (actionType === 'fail_card') {
+      // Attempt to restore cropped back from archive
+      console.log(`[undo] Attempting to restore cropped back from archive for ${id}`);
+      // TODO: Implement cropped back restoration from archive
+    }
+
+    // Restore the beforeData to the JSON file (for all action types)
     if (undoneAction.beforeData) {
       const jsonPath = path.join(PENDING_VERIFICATION_DIR, `${id}.json`);
 
@@ -3299,9 +3633,6 @@ app.post('/api/undo/:id', async (req, res) => {
       }
     }
 
-    // If the action was a pass_card or pass_all, we may need to remove from database
-    // For now, we just restore the JSON - database undo is more complex
-
     res.json({
       success: true,
       undoneAction: undoneAction.action,
@@ -3311,6 +3642,170 @@ app.post('/api/undo/:id', async (req, res) => {
     });
   } catch (error) {
     console.error('[undo] Error:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Undo all actions for a file back to original extraction
+app.post('/api/undo-all/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const historyFile = path.join(VERIFICATION_HISTORY_DIR, `${id}_history.json`);
+
+    // Read history
+    let history = [];
+    try {
+      const data = await fs.readFile(historyFile, 'utf8');
+      history = JSON.parse(data);
+    } catch (e) {
+      return res.status(404).json({ error: 'No history found for this file' });
+    }
+
+    if (history.length === 0) {
+      return res.status(400).json({ error: 'No actions to undo' });
+    }
+
+    console.log(`[undo-all] Reversing ${history.length} actions for ${id}`);
+
+    let undoneCount = 0;
+    let errors = [];
+
+    // Process actions in reverse order (most recent first)
+    for (let i = history.length - 1; i >= 0; i--) {
+      const action = history[i];
+      const actionType = action.action;
+
+      try {
+        // Handle pass_card and pass_all actions
+        if (actionType === 'pass_card' || actionType === 'pass_all') {
+          console.log(`[undo-all] Reversing ${actionType} (${i + 1}/${history.length})`);
+
+          // Find and reverse transaction
+          try {
+            const findTxnProcess = spawn('python', ['-c', `
+import sys
+import json
+from app.crud import get_transactions_for_file
+from datetime import datetime
+
+file_id = sys.argv[1]
+action_type = sys.argv[2]
+card_index = sys.argv[3] if len(sys.argv) > 3 and sys.argv[3] != 'null' else None
+
+# Get all non-reversed transactions for this file
+transactions = get_transactions_for_file(file_id)
+
+# Find matching transaction
+matching_txn = None
+for txn in transactions:
+    if txn.action_type == action_type:
+        if card_index is not None and txn.card_index is not None:
+            if str(txn.card_index) == str(card_index):
+                matching_txn = txn
+                break
+        elif card_index is None and txn.card_index is None:
+            matching_txn = txn
+            break
+
+if matching_txn:
+    print(json.dumps({
+        "success": True,
+        "transaction_id": matching_txn.transaction_id
+    }))
+else:
+    print(json.dumps({"success": False}))
+            `, id, actionType, String(action.cardIndex || 'null')], {
+              cwd: path.join(__dirname, '../..'),
+              stdio: ['pipe', 'pipe', 'pipe']
+            });
+
+            const txnOutput = await new Promise((resolve, reject) => {
+              let output = '';
+              findTxnProcess.stdout.on('data', (data) => { output += data.toString(); });
+              findTxnProcess.on('close', (code) => {
+                if (code === 0) {
+                  try {
+                    resolve(JSON.parse(output.trim()));
+                  } catch (e) {
+                    reject(new Error(`Parse error: ${output}`));
+                  }
+                } else {
+                  reject(new Error('Transaction lookup failed'));
+                }
+              });
+            });
+
+            if (txnOutput.success && txnOutput.transaction_id) {
+              // Reverse the transaction
+              const undoProcess = spawn('python', ['-c', `
+import sys
+from app.crud import undo_card_import, mark_transaction_reversed
+from app.file_movement_tracker import FileMovementTracker
+
+transaction_id = sys.argv[1]
+
+# Reverse database changes
+undo_card_import(transaction_id)
+
+# Reverse file movements
+tracker = FileMovementTracker()
+tracker.reverse_movement(transaction_id)
+
+# Mark as reversed
+mark_transaction_reversed(transaction_id)
+
+print("OK")
+              `, txnOutput.transaction_id], {
+                cwd: path.join(__dirname, '../..'),
+                stdio: ['pipe', 'pipe', 'pipe']
+              });
+
+              await new Promise((resolve, reject) => {
+                undoProcess.on('close', (code) => {
+                  if (code === 0) resolve();
+                  else reject(new Error('Undo failed'));
+                });
+              });
+
+              console.log(`[undo-all] Reversed transaction ${txnOutput.transaction_id}`);
+            }
+          } catch (txnErr) {
+            console.error(`[undo-all] Warning: Failed to reverse transaction for action ${i}: ${txnErr.message}`);
+            errors.push(`Action ${i}: ${txnErr.message}`);
+          }
+        }
+
+        undoneCount++;
+      } catch (actionErr) {
+        console.error(`[undo-all] Error processing action ${i}:`, actionErr);
+        errors.push(`Action ${i}: ${actionErr.message}`);
+      }
+    }
+
+    // Clear the history
+    await fs.writeFile(historyFile, JSON.stringify([], null, 2));
+    console.log(`[undo-all] Cleared history for ${id}`);
+
+    // Restore the original extraction (first entry in history)
+    if (history.length > 0 && history[0].beforeData) {
+      const jsonPath = path.join(PENDING_VERIFICATION_DIR, `${id}.json`);
+      try {
+        await fs.writeFile(jsonPath, JSON.stringify(history[0].beforeData, null, 2));
+        console.log(`[undo-all] Restored original extraction to ${id}.json`);
+      } catch (restoreErr) {
+        console.error(`[undo-all] Warning: Failed to restore original JSON: ${restoreErr.message}`);
+        errors.push(`JSON restore: ${restoreErr.message}`);
+      }
+    }
+
+    res.json({
+      success: true,
+      actionsUndone: undoneCount,
+      totalActions: history.length,
+      errors: errors.length > 0 ? errors : undefined
+    });
+  } catch (error) {
+    console.error('[undo-all] Error:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -3574,28 +4069,6 @@ with get_session() as session:
   } catch (error) {
     console.error('Error searching cards:', error);
     res.json({ cards: [] });
-  }
-});
-
-// Get supported grid size options
-app.get('/api/grid-size-options', async (req, res) => {
-  try {
-    const options = [
-      { value: '1x1', label: '1x1 (Single Card)', cards: 1 },
-      { value: '2x2', label: '2x2 (4 Cards)', cards: 4 },
-      { value: '2x3', label: '2x3 (6 Cards)', cards: 6 },
-      { value: '3x2', label: '3x2 (6 Cards)', cards: 6 },
-      { value: '3x3', label: '3x3 (9 Cards)', cards: 9, default: true },
-      { value: '3x4', label: '3x4 (12 Cards)', cards: 12 },
-      { value: '4x3', label: '4x3 (12 Cards)', cards: 12 },
-      { value: '4x4', label: '4x4 (16 Cards)', cards: 16 },
-      { value: '4x5', label: '4x5 (20 Cards)', cards: 20 },
-      { value: '5x4', label: '5x4 (20 Cards)', cards: 20 }
-    ];
-    res.json({ options });
-  } catch (error) {
-    console.error('Error getting grid size options:', error);
-    res.status(500).json({ error: error.message });
   }
 });
 

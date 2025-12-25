@@ -711,28 +711,38 @@ function App() {
   const [showRecovery, setShowRecovery] = useState(false);
   const [recoverySession, setRecoverySession] = useState(null);
 
+  // Sorting state
+  const [sortBy, setSortBy] = useState('default'); // 'default', 'confidence-low', 'confidence-high'
+
+  // Re-apply sorting when sortBy changes
+  const sortByRef = useRef(sortBy);
+  useEffect(() => {
+    if (pendingCards.length > 0 && sortByRef.current !== sortBy) {
+      console.log(`[Sorting Effect] Sorting changed from ${sortByRef.current} to ${sortBy}`);
+      sortByRef.current = sortBy;
+      const sorted = applySorting(pendingCards, sortBy);
+      setPendingCards(sorted);
+      setCurrentIndex(0); // Reset to first card when sorting changes
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sortBy]);
+
   useEffect(() => {
     // Check for saved session on mount
     const checkSavedSession = () => {
       try {
-        // Check if we've already shown recovery for this browser session
-        const recoveryShown = sessionStorage.getItem('recoveryShown');
-        if (recoveryShown) {
-          return; // Don't show recovery again in this browser session
-        }
-
         const savedSession = localStorage.getItem('editSession');
         if (savedSession) {
           const session = JSON.parse(savedSession);
           const now = Date.now();
           const sessionAge = now - session.timestamp;
-          const oneHour = 3600000;
+          const oneDay = 86400000; // 24 hours
 
-          // Only show recovery if session is less than 1 hour old and not currently editing
-          if (sessionAge < oneHour && !isEditing) {
+          // Only show recovery if session is less than 24 hours old and not currently editing
+          if (sessionAge < oneDay && !isEditing) {
             setRecoverySession(session);
             setShowRecovery(true);
-          } else if (sessionAge >= oneHour) {
+          } else if (sessionAge >= oneDay) {
             // Clear old session
             localStorage.removeItem('editSession');
           }
@@ -749,9 +759,9 @@ function App() {
 
     // Poll for newly processed cards every 10 seconds
     const pollInterval = setInterval(() => {
-      // Only poll if not currently processing an action
-      if (!processing && !reprocessing) {
-        fetchPendingCards();
+      // Completely disable polling if there are any pending cards to prevent interruptions
+      if (!processing && !reprocessing && pendingCards.length === 0) {
+        fetchPendingCards(false);
       }
     }, 10000);
 
@@ -871,14 +881,27 @@ function App() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isEditing, editedData.length]);
 
-  const fetchPendingCards = async () => {
+  const fetchPendingCards = async (preservePosition = false) => {
     try {
       const response = await fetch('http://localhost:3001/api/pending-cards');
       if (response.ok) {
         try {
           const data = await response.json();
           console.log('[fetchPendingCards] Loaded', data.length, 'pending images. Cards per image:', data.map(d => d.data?.length || 0));
-          setPendingCards(data);
+
+          // Apply sorting based on sortBy state
+          const sortedData = applySorting(data, sortBy);
+
+          // If preserving position (during polling), keep current card ID in view
+          if (preservePosition && pendingCards.length > 0 && currentIndex < pendingCards.length) {
+            const currentCardId = pendingCards[currentIndex].id;
+            const newIndex = sortedData.findIndex(card => card.id === currentCardId);
+            if (newIndex !== -1 && newIndex !== currentIndex) {
+              setCurrentIndex(newIndex);
+            }
+          }
+
+          setPendingCards(sortedData);
         } catch (_) {}
       }
       setLoading(false);
@@ -886,6 +909,28 @@ function App() {
       console.error('Error fetching pending cards:', error);
       setLoading(false);
     }
+  };
+
+  // Helper function to sort pending cards by confidence
+  const applySorting = (cards, sortType) => {
+    if (sortType === 'default') return [...cards]; // Always return new array
+
+    const cardsWithConfidence = cards.map(card => {
+      const avgConfidence = card.data.reduce((sum, c) => sum + (c._overall_confidence || 0.8), 0) / card.data.length;
+      return { ...card, _avgConfidence: avgConfidence };
+    });
+
+    const sorted = cardsWithConfidence.sort((a, b) => {
+      if (sortType === 'confidence-high') {
+        return b._avgConfidence - a._avgConfidence; // High to low
+      } else if (sortType === 'confidence-low') {
+        return a._avgConfidence - b._avgConfidence; // Low to high
+      }
+      return 0;
+    });
+
+    console.log(`[applySorting] ${sortType}:`, sorted.slice(0, 3).map(c => `${c.id}=${c._avgConfidence.toFixed(2)}`));
+    return sorted;
   };
 
   const fetchCardSuggestions = async (cardIndex, searchParams) => {
@@ -1103,15 +1148,14 @@ function App() {
         setIsEditing(true);
         setShowRecovery(false);
         setRecoverySession(null);
-        // Mark that we've shown recovery for this browser session
-        sessionStorage.setItem('recoveryShown', 'true');
+        // Clear localStorage after successful restore
+        localStorage.removeItem('editSession');
         console.log('Session restored successfully');
       } else {
         // Card no longer exists
         setShowRecovery(false);
         setRecoverySession(null);
         localStorage.removeItem('editSession');
-        sessionStorage.setItem('recoveryShown', 'true');
         console.log('Card from saved session no longer exists');
       }
     } catch (error) {
@@ -1119,7 +1163,6 @@ function App() {
       setShowRecovery(false);
       setRecoverySession(null);
       localStorage.removeItem('editSession');
-      sessionStorage.setItem('recoveryShown', 'true');
     }
   };
 
@@ -1127,8 +1170,10 @@ function App() {
     setShowRecovery(false);
     setRecoverySession(null);
     localStorage.removeItem('editSession');
-    // Mark that we've shown recovery for this browser session
-    sessionStorage.setItem('recoveryShown', 'true');
+    // Clear editing state to prevent re-saving
+    setIsEditing(false);
+    setEditedData([]);
+    setOriginalData([]);
   };
 
   // Wrapper to show confirmation for destructive actions
@@ -1163,6 +1208,13 @@ function App() {
 
   const handleAction = async (action, mode = null) => {
     if (pendingCards.length === 0) return;
+
+    // Force save if editing before pass/fail to prevent data loss
+    if (isEditing && editedData.length > 0) {
+      await autoSaveProgress(editedData);
+      // Wait for save to complete
+      await new Promise(resolve => setTimeout(resolve, 500));
+    }
 
     // Cancel any pending auto-save to prevent race condition
     if (autoSaveTimeoutRef.current) {
@@ -1265,7 +1317,7 @@ function App() {
     setProcessing(false);
   };
 
-  const autoSaveProgress = async (dataToSave = null) => {
+  const autoSaveProgress = async (dataToSave = null, retryCount = 0) => {
     if (pendingCards.length === 0) return;
     // Don't auto-save during pass/fail actions to prevent race condition
     if (processing) return;
@@ -1275,6 +1327,7 @@ function App() {
 
     if (saveData.length === 0) return;
 
+    const maxRetries = 3;
     setAutoSaving(true);
 
     try {
@@ -1290,7 +1343,7 @@ function App() {
         },
         body: JSON.stringify(requestBody),
       });
-      
+
       if (response.ok) {
         try {
           const result = await response.json();
@@ -1310,11 +1363,33 @@ function App() {
         // Update original data to clear unsaved changes indicator
         setOriginalData(JSON.parse(JSON.stringify(saveData)));
         setHasUnsavedChanges(false);
+      } else if (retryCount < maxRetries) {
+        // Retry with exponential backoff
+        const delay = Math.pow(2, retryCount) * 1000;
+        console.log(`Auto-save failed, retrying in ${delay}ms (attempt ${retryCount + 1}/${maxRetries})`);
+        setTimeout(() => {
+          autoSaveProgress(dataToSave, retryCount + 1);
+        }, delay);
+        return;
       } else {
-        console.error('Failed to auto-save progress');
+        console.error('Failed to auto-save progress after all retries');
+        setHasUnsavedChanges(true);
       }
     } catch (error) {
       console.error('Error auto-saving progress:', error);
+      if (retryCount < maxRetries) {
+        // Network failure - retry with exponential backoff
+        const delay = Math.pow(2, retryCount) * 1000;
+        console.log(`Network error, retrying in ${delay}ms (attempt ${retryCount + 1}/${maxRetries})`);
+        setTimeout(() => {
+          autoSaveProgress(dataToSave, retryCount + 1);
+        }, delay);
+        return;
+      } else {
+        // Failed after retries - keep localStorage as backup
+        console.error('Auto-save failed after all retries - data preserved in localStorage');
+        setHasUnsavedChanges(true);
+      }
     }
 
     setAutoSaving(false);
@@ -1600,7 +1675,19 @@ function App() {
               <option value="single">SINGLE CARD</option>
             </select>
           </div>
-          
+
+          <div className="verification-mode">
+            <label>Sort By:</label>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+            >
+              <option value="default">Default Order</option>
+              <option value="confidence-high">High Confidence First</option>
+              <option value="confidence-low">Low Confidence First (Review Needed)</option>
+            </select>
+          </div>
+
           <div className="card-info">
             <p>Photo {currentIndex + 1} of {pendingCards.length}</p>
             {verificationMode === 'single' && currentCard.data.length > 1 && (
@@ -1997,19 +2084,61 @@ function App() {
                         <ConfidenceIndicator confidence={card._confidence?.copyright_year} fieldName="copyright_year" />
                       </p>
                       <p>
-                        <strong>{formatFieldName('team')}:</strong> 
+                        <strong>{formatFieldName('team')}:</strong>
                         <span>{formatFieldValue('team', card.team)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.team} fieldName="team" />
+                        {card._team_autocompleted && (
+                          <span style={{
+                            marginLeft: '8px',
+                            padding: '2px 6px',
+                            backgroundColor: '#d1fae5',
+                            color: '#065f46',
+                            borderRadius: '4px',
+                            fontSize: '0.75rem',
+                            fontWeight: '500'
+                          }}>✓ City added</span>
+                        )}
                       </p>
                       <p>
-                        <strong>{formatFieldName('card_set')}:</strong> 
+                        <strong>{formatFieldName('card_set')}:</strong>
                         <span>{formatFieldValue('card_set', card.card_set)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.card_set} fieldName="card_set" />
+                        {card._card_set_autocorrected && (
+                          <span style={{
+                            marginLeft: '8px',
+                            padding: '2px 6px',
+                            backgroundColor: '#d1fae5',
+                            color: '#065f46',
+                            borderRadius: '4px',
+                            fontSize: '0.75rem',
+                            fontWeight: '500'
+                          }}>✓ Auto-fixed</span>
+                        )}
                       </p>
                       <p>
-                        <strong>{formatFieldName('condition')}:</strong> 
+                        <strong>{formatFieldName('condition')}:</strong>
                         <span>{formatFieldValue('condition', card.condition)}</span>
                         <ConfidenceIndicator confidence={card._confidence?.condition} fieldName="condition" />
+                        {card._learned_corrections?.some(c => c.field === 'condition') && (
+                          <span style={{
+                            marginLeft: '8px',
+                            padding: '2px 6px',
+                            backgroundColor: '#dbeafe',
+                            color: '#1e40af',
+                            borderRadius: '4px',
+                            fontSize: '0.75rem',
+                            fontWeight: '500',
+                            cursor: 'pointer'
+                          }} onClick={() => {
+                            if (isEditing) {
+                              const newData = [...editedData];
+                              newData[index].condition = card._learned_corrections.find(c => c.field === 'condition')?.corrected;
+                              setEditedData(newData);
+                            }
+                          }} title="Click to apply suggestion (when editing)">
+                            💡 Suggest: {card._learned_corrections.find(c => c.field === 'condition')?.corrected}
+                          </span>
+                        )}
                       </p>
                       <p>
                         <strong>{formatFieldName('is_player')}:</strong> 

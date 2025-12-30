@@ -1,0 +1,379 @@
+[
+  {
+    "grid_position": 0,
+    "name": "john denny",
+    "number": "339",
+    "team": "st. louis cardinals",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "john denny",
+      "brand": "topps",
+      "team": "st. louis cardinals",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "339",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 1,
+    "name": "roger metzger",
+    "number": "297",
+    "team": "houston astros",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "roger metzger",
+      "brand": "topps",
+      "team": "houston astros",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "297",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 2,
+    "name": "the pirates get their doctor",
+    "number": "146t",
+    "team": null,
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "traded",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": false,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.50",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.66,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "the pirates get their doctor",
+      "brand": "topps",
+      "team": null,
+      "card_set": "traded",
+      "copyright_year": "1975",
+      "number": "146t",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 3,
+    "name": "sixto lezcan0",
+    "number": "355",
+    "team": "milwaukee brewers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "sixto lezcan0",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "355",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 4,
+    "name": "don money",
+    "number": "402",
+    "team": "milwaukee brewers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.32,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "don money",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "402",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 5,
+    "name": "bobby darwin",
+    "number": "65",
+    "team": "minnesota twins",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "bobby darwin",
+      "brand": "topps",
+      "team": "minnesota twins",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "65",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 6,
+    "name": "george scott",
+    "number": "15",
+    "team": "milwaukee brewers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "george scott",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "15",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 7,
+    "name": "pedro garcia",
+    "number": "187",
+    "team": "milwaukee brewers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "pedro garcia",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "187",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 8,
+    "name": "jim colborn",
+    "number": "521",
+    "team": "milwaukee brewers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2520_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "jim colborn",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "521",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  }
+]

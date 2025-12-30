@@ -1,24 +1,96 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# environments
+.env
+.env.production
+.env.development
+.env.test
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
 # caches
 app/__pycache__/
 app/scripts/__pycache__/
 app/cache/
-
-# learning databases
-cards/verified/corrections.db
+.ruff_cache/
+*.pyc
 
 # backup files
 *.backup
 *.bak
 
-# local setup
-.env
-.env.production
-.env.development
-.env.test
-.claude
-.ruff_cache
-.vscode
+# ide
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
 
 # node
 node_modules/
 */node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# logs
+*.log
+logs/*
+!logs/.gitkeep
+
+# os
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# temp files
+*.tmp
+*.temp
+.temp/
+.tmp/

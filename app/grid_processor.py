@@ -5,6 +5,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from dataclasses import dataclass
 from io import BytesIO
 from pathlib import Path
@@ -19,8 +20,169 @@ from .utils import client
 register_heif_opener()
 MODEL = os.getenv("OPENAI_MODEL", "gpt-5.2")
 
+# Load Hall of Fame list
+_hall_of_fame_cache = None
+
+def load_hall_of_fame():
+    """Load MLB Hall of Fame player names."""
+    global _hall_of_fame_cache
+    if _hall_of_fame_cache is None:
+        hof_path = Path(__file__).parent / 'awards_data' / 'hall_of_fame.json'
+        try:
+            with open(hof_path, 'r', encoding='utf-8') as f:
+                _hall_of_fame_cache = set(json.load(f))
+        except Exception as e:
+            print(f"Warning: Could not load Hall of Fame list: {e}", file=sys.stderr)
+            _hall_of_fame_cache = set()
+    return _hall_of_fame_cache
+
+def is_hall_of_famer(name):
+    """Check if a player name matches a Hall of Famer."""
+    if not name or not isinstance(name, str):
+        return False
+    normalized_name = name.lower().strip()
+    return normalized_name in load_hall_of_fame()
+
+# Load award years caches
+_rookie_years_cache = None
+_mvp_years_cache = None
+_cy_young_years_cache = None
+_triple_crown_years_cache = None
+
+def load_rookie_years():
+    """Load MLB rookie year mappings."""
+    global _rookie_years_cache
+    if _rookie_years_cache is None:
+        rookie_path = Path(__file__).parent / 'awards_data' / 'rookie_years.json'
+        try:
+            with open(rookie_path, 'r', encoding='utf-8') as f:
+                _rookie_years_cache = json.load(f)
+        except Exception as e:
+            print(f"Warning: Could not load rookie years: {e}", file=sys.stderr)
+            _rookie_years_cache = {}
+    return _rookie_years_cache
+
+def load_award_years(award_type):
+    """Load award year mappings for MVP, Cy Young, or Triple Crown."""
+    global _mvp_years_cache, _cy_young_years_cache, _triple_crown_years_cache
+
+    if award_type == 'mvp':
+        if _mvp_years_cache is None:
+            path = Path(__file__).parent / 'awards_data' / 'mvp_years.json'
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    _mvp_years_cache = json.load(f)
+            except Exception as e:
+                print(f"Warning: Could not load MVP years: {e}", file=sys.stderr)
+                _mvp_years_cache = {}
+        return _mvp_years_cache
+    elif award_type == 'cy_young':
+        if _cy_young_years_cache is None:
+            path = Path(__file__).parent / 'awards_data' / 'cy_young_years.json'
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    _cy_young_years_cache = json.load(f)
+            except Exception as e:
+                print(f"Warning: Could not load Cy Young years: {e}", file=sys.stderr)
+                _cy_young_years_cache = {}
+        return _cy_young_years_cache
+    elif award_type == 'triple_crown':
+        if _triple_crown_years_cache is None:
+            path = Path(__file__).parent / 'awards_data' / 'triple_crown_years.json'
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    _triple_crown_years_cache = json.load(f)
+            except Exception as e:
+                print(f"Warning: Could not load Triple Crown years: {e}", file=sys.stderr)
+                _triple_crown_years_cache = {}
+        return _triple_crown_years_cache
+    return {}
+
+def normalize_name_for_matching(name):
+    """Normalize a name for fuzzy matching (handles middle names, suffixes,
+    accents)."""
+    if not name or not isinstance(name, str):
+        return ""
+
+    # Remove accents and normalize to ASCII
+    name = unicodedata.normalize('NFD', name)
+    name = ''.join(char for char in name if unicodedata.category(char) != 'Mn')
+
+    # Remove common suffixes
+    name = re.sub(r'\s+(jr\.?|sr\.?|iii?|iv)$', '', name.lower().strip(), flags=re.IGNORECASE)
+
+    # Split into parts
+    parts = name.split()
+    if len(parts) <= 2:
+        return ' '.join(parts)
+
+    # Return first + last name (skip middle names)
+    return f"{parts[0]} {parts[-1]}"
+
+def matches_player(card_name, award_name):
+    """Check if card name matches an award winner name (handles variations)."""
+    if not card_name or not award_name:
+        return False
+
+    card_normalized = normalize_name_for_matching(card_name)
+    award_normalized = normalize_name_for_matching(award_name)
+
+    # Exact match
+    if card_normalized == award_normalized:
+        return True
+
+    # Also check if full card name matches (in case award has middle name)
+    if card_name.lower().strip() == award_name.lower().strip():
+        return True
+
+    return False
+
+def is_rookie_card(name, copyright_year):
+    """Check if a card is a rookie card based on name and year."""
+    if not name or not copyright_year:
+        return False
+
+    rookie_years = load_rookie_years()
+
+    # Check against all rookie names
+    for rookie_name, rookie_year in rookie_years.items():
+        if matches_player(name, rookie_name):
+            # Rookie cards are from the year AFTER the player's rookie season
+            # E.g., if player was rookie in 2024, their 2025 card is the rookie card
+            try:
+                card_year = int(copyright_year)
+                return card_year == rookie_year + 1
+            except (ValueError, TypeError):
+                return False
+
+    return False
+
+def has_award_in_year(name, copyright_year, award_type):
+    """Check if a player won an award in the year before the copyright year."""
+    if not name or not copyright_year:
+        return False
+
+    award_years = load_award_years(award_type)
+
+    # Check against all award winners
+    for winner_name, years in award_years.items():
+        if matches_player(name, winner_name):
+            # Award cards are from the year AFTER they won
+            # E.g., if player won MVP in 2024, their 2025 card has "season mvp" feature
+            try:
+                card_year = int(copyright_year)
+                # years can be a list (for multiple wins)
+                if isinstance(years, list):
+                    return (card_year - 1) in years
+                else:
+                    return card_year - 1 == years
+            except (ValueError, TypeError):
+                return False
+
+    return False
+
 # Shared prompt text for value estimation
-VALUE_ESTIMATE_PROMPT = "How much is this card probably worth? Format as $xx.xx (e.g., $1.00, $5.00, $10.00)"
+VALUE_ESTIMATE_PROMPT = """Estimate the card's market value considering ALL factors: player name and reputation, copyright year, brand/manufacturer, card set, condition (most important for value), features (rookie, autograph, serial numbered, memorabilia, hall of fame, awards like season mvp/cy young season/triple crown season, etc.), and any special notes (error cards, variations, short prints). Popular players, older cards in good condition, and special features increase value. Format as $xx.xx (e.g., $0.50 for common cards, $2.00-$10.00 for solid players in good condition, $25.00-$100.00+ for rookie cards of stars or cards with multiple premium features)."""
 
 # Initialize correction tracker
 correction_tracker = CorrectionTracker(db_path="data/corrections.db")
@@ -228,6 +390,50 @@ Return structured JSON with a "cards" array containing exactly 9 card objects (p
             if 'value_estimate' in card:
                 card['value_estimate'] = normalize_price(card['value_estimate'])
 
+        # Auto-add Hall of Fame feature for recognized players
+        for card in raw_data:
+            if card.get('is_player_card', True) and card.get('sport') == 'baseball':
+                if is_hall_of_famer(card.get('name')):
+                    existing_features = card.get('features', 'none')
+                    if existing_features == 'none':
+                        card['features'] = 'hall of fame'
+                    elif 'hall of fame' not in existing_features:
+                        card['features'] = f"{existing_features},hall of fame"
+
+        # Auto-add rookie, MVP, Cy Young, and Triple Crown features
+        def add_feature(card, feature_name):
+            """Helper to add a feature to a card."""
+            existing = card.get('features', 'none')
+            if existing == 'none':
+                card['features'] = feature_name
+            elif feature_name not in existing:
+                card['features'] = f"{existing},{feature_name}"
+
+        for card in raw_data:
+            if card.get('is_player_card', True) and card.get('sport') == 'baseball':
+                name = card.get('name')
+                year = card.get('copyright_year')
+
+                # Check for rookie card
+                if is_rookie_card(name, year):
+                    add_feature(card, 'rookie')
+
+                # Check for season MVP
+                if has_award_in_year(name, year, 'mvp'):
+                    add_feature(card, 'season mvp')
+
+                # Check for Cy Young season
+                if has_award_in_year(name, year, 'cy_young'):
+                    add_feature(card, 'cy young season')
+
+                # Check for Triple Crown season
+                if has_award_in_year(name, year, 'triple_crown'):
+                    add_feature(card, 'triple crown season')
+
+        # Apply validation rules to fix known error patterns
+        for card in raw_data:
+            card.update(self._apply_validation_rules(card))
+
         # Store original GPT data for confidence calculation
         original_gpt_data = [card.copy() for card in raw_data]
 
@@ -263,8 +469,93 @@ Return structured JSON with a "cards" array containing exactly 9 card objects (p
         print(f"Extraction completed: {len(grid_cards)} cards processed", file=sys.stderr)
         return grid_cards, raw_data
 
+    def _apply_validation_rules(self, card: Dict) -> Dict:
+        """Apply rule-based validation to fix known error patterns.
+
+        Rules applied:
+        1. Card set cleanup: Remove redundant year+brand patterns
+        2. Team name completion: Add city prefix from learned corrections
+        3. Condition confidence marker: Flag suspicious vintage condition assessments
+        4. Copyright year validation: Flag unlikely year values
+
+        Returns dict with corrections to apply (updated fields only).
+        """
+        corrections = {}
+
+        # Rule 1: Card Set Cleanup
+        # Pattern: "{year} {brand}" should be "n/a" for base sets
+        card_set = (card.get('card_set') or '').strip()
+        brand = (card.get('brand') or '').strip()
+        year = (card.get('copyright_year') or '').strip()
+
+        if card_set and brand and year:
+            # Check if card_set is just "{year} {brand}"
+            if card_set == f"{year} {brand}":
+                corrections['card_set'] = 'n/a'
+                card['_card_set_autocorrected'] = True
+
+        # Rule 2: Team Name Completion
+        # Use learned corrections to add city prefixes
+        team = (card.get('team') or '').strip()
+        if team and team not in ('n/a', 'unknown', 'none'):
+            # Build team completion map from known corrections
+            team_completions = {
+                'brewers': 'milwaukee brewers',
+                'indians': 'cleveland indians',
+                'padres': 'san diego padres',
+                'rangers': 'texas rangers',
+                'red sox': 'boston red sox',
+                'mets': 'new york mets',
+                'reds': 'cincinnati reds',
+                'cubs': 'chicago cubs',
+                'white sox': 'chicago white sox',
+                'yankees': 'new york yankees',
+                'dodgers': 'los angeles dodgers',
+                'giants': 'san francisco giants',
+                'athletics': 'oakland athletics',
+                'orioles': 'baltimore orioles',
+                'angels': 'los angeles angels',
+                'astros': 'houston astros',
+                'braves': 'atlanta braves',
+                'cardinals': 'st. louis cardinals',
+                'phillies': 'philadelphia phillies',
+                'pirates': 'pittsburgh pirates',
+                'royals': 'kansas city royals',
+                'tigers': 'detroit tigers',
+                'twins': 'minnesota twins',
+            }
+
+            if team in team_completions:
+                corrections['team'] = team_completions[team]
+                card['_team_autocompleted'] = True
+
+        # Rule 3: Condition Confidence Marker (no auto-change, just flag)
+        # User choice: flag only, don't auto-downgrade
+        condition = (card.get('condition') or '').strip()
+        try:
+            year_int = int(year) if year and year.isdigit() else 9999
+            if condition == 'very_good' and year_int < 1980:
+                # Don't change condition, just mark for confidence penalty
+                card['_condition_suspicious'] = True
+        except (ValueError, AttributeError):
+            pass
+
+        # Rule 4: Copyright Year Cross-Validation
+        # Flag years that seem unlikely (too far from brand patterns)
+        try:
+            year_int = int(year) if year and year.isdigit() else None
+            if year_int:
+                # Flag suspiciously old or new years
+                if year_int < 1950 or year_int > 2025:
+                    card['_year_suspicious'] = True
+        except (ValueError, AttributeError):
+            pass
+
+        return corrections
+
     def _get_feature_examples(self) -> List[str]:
-        """Get example features from the database to help GPT understand feature types."""
+        """Get example features from the database to help GPT understand
+        feature types."""
         try:
             from .database import get_session
             from .models import Card

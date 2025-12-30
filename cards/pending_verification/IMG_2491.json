@@ -1,0 +1,432 @@
+[
+  {
+    "grid_position": 0,
+    "name": "duane kuiper",
+    "number": "508",
+    "team": "cleveland indians",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "duane kuiper",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "508",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 1,
+    "name": "jack brohamer",
+    "number": "618",
+    "team": "chicago white sox",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "jack brohamer",
+      "brand": "topps",
+      "team": "chicago white sox",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "618",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 2,
+    "name": "tribe deals with chisox for blanks",
+    "number": "127",
+    "team": null,
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "sports extra",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": false,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.50",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.66,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "tribe deals with chisox for blanks",
+      "brand": "topps",
+      "team": null,
+      "card_set": "sports extra",
+      "copyright_year": "1976",
+      "number": "127",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 3,
+    "name": "jim bibby",
+    "number": "324",
+    "team": "cleveland indians",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "jim bibby",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "324",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 4,
+    "name": "mike sadek",
+    "number": "234",
+    "team": "san francisco giants",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "mike sadek",
+      "brand": "topps",
+      "team": "san francisco giants",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "234",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 5,
+    "name": "dave roberts",
+    "number": "54",
+    "team": "san diego padres",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "dave roberts",
+      "brand": "topps",
+      "team": "san diego padres",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "54",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 6,
+    "name": "cleveland indians checklist",
+    "number": "477",
+    "team": "cleveland indians",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": false,
+    "features": "checklist",
+    "notes": "none",
+    "value_estimate": "$0.50",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "cleveland indians checklist",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "477",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 7,
+    "name": "eric raich",
+    "number": "484",
+    "team": "cleveland indians",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "eric raich",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "484",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 8,
+    "name": "jim bibby",
+    "number": "324",
+    "team": "cleveland indians",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2491_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "jim bibby",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "324",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  }
+]

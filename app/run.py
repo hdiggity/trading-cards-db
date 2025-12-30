@@ -145,14 +145,7 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             filename_stem = image_path.stem
             disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
 
-            # Move bulk back image to pending_verification/bulk back FIRST (before saving)
-            PENDING_BULK_BACK_DIR.mkdir(parents=True, exist_ok=True)
-            old_path = str(image_path)
-            new_path = PENDING_BULK_BACK_DIR / image_path.name
-            image_path.rename(new_path)
-
-            # Save grid cards with enhanced metadata to pending_verification
-            # Use the new path since we just moved the file
+            # Save grid cards FIRST - if this fails, nothing has been moved
             save_grid_cards_to_verification(
                 grid_cards,
                 out_dir=PENDING_VERIFICATION_DIR,
@@ -160,8 +153,13 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
                 filename_stem=filename_stem,
                 include_tcdb_verification=not disable_tcdb,
                 save_cropped_backs=True,
-                original_image_path=str(new_path)
+                original_image_path=str(image_path)
             )
+
+            # THEN move bulk back image to pending_verification (only after successful save)
+            PENDING_BULK_BACK_DIR.mkdir(parents=True, exist_ok=True)
+            new_path = PENDING_BULK_BACK_DIR / image_path.name
+            image_path.rename(new_path)
 
             card_count = len(grid_cards)
             print(f"Grid processing completed: {card_count} cards extracted")
@@ -347,11 +345,46 @@ def auto_detect_and_process():
 
 def undo_last_processing():
     """Undo the last image processing operation using system_logs."""
+    from app.crud import (get_transactions_for_file, mark_transaction_reversed,
+                          undo_card_import)
+    from app.file_movement_tracker import FileMovementTracker
+
     last_filename = logger.get_last_processed_filename()
 
     if not last_filename:
         print("no processing history found in system logs.")
         return
+
+    # Get file stem (ID) for transaction lookup
+    file_stem = Path(last_filename).stem
+
+    # Rollback database imports for this file
+    try:
+        transactions = get_transactions_for_file(file_stem)
+        if transactions:
+            print(f"found {len(transactions)} database transaction(s) to reverse")
+            tracker = FileMovementTracker()
+
+            for transaction in transactions:
+                # Rollback database changes
+                db_result = undo_card_import(transaction.transaction_id)
+                print(f"  reversed database import: deleted {db_result['affected_cards']} card(s)")
+
+                # Reverse file movements
+                file_result = tracker.reverse_movement(transaction.transaction_id)
+                print(f"  reversed file movements: {file_result['reversed_count']} file(s) moved back")
+
+                if file_result.get('errors'):
+                    for error in file_result['errors']:
+                        print(f"  warning: {error}")
+
+                # Mark transaction as reversed
+                mark_transaction_reversed(transaction.transaction_id)
+        else:
+            print("no database transactions found for this file")
+    except Exception as e:
+        print(f"warning: database rollback failed: {e}")
+        print("continuing with file operations...")
 
     # paths for the files to undo - check both locations
     pending_bulk_back_image = PENDING_BULK_BACK_DIR / last_filename

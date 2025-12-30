@@ -1,0 +1,400 @@
+[
+  {
+    "grid_position": 0,
+    "name": "john wallace morris",
+    "number": "577",
+    "team": "new york yankees",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "john wallace morris",
+      "brand": "topps",
+      "team": "new york yankees",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "577",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 1,
+    "name": "thomas william bradley",
+    "number": "179",
+    "team": "milwaukee brewers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "thomas william bradley",
+      "brand": "topps",
+      "team": "california angels",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "179",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "team",
+        "original": "california angels",
+        "corrected": "milwaukee brewers",
+        "confidence": 2
+      },
+      {
+        "field": "team",
+        "original": "california angels",
+        "corrected": "milwaukee brewers",
+        "confidence": "pattern"
+      },
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 2,
+    "name": "thomas william bradley",
+    "number": "179",
+    "team": "milwaukee brewers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "duplicate of card #179 in this grid",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "thomas william bradley",
+      "brand": "topps",
+      "team": "california angels",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "179",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "team",
+        "original": "california angels",
+        "corrected": "milwaukee brewers",
+        "confidence": 2
+      },
+      {
+        "field": "team",
+        "original": "california angels",
+        "corrected": "milwaukee brewers",
+        "confidence": "pattern"
+      },
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 3,
+    "name": "frank thomas duffy",
+    "number": "448",
+    "team": "cleveland indians",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "frank thomas duffy",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "448",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 4,
+    "name": "thomas william buskey",
+    "number": "403",
+    "team": "detroit tigers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "thomas william buskey",
+      "brand": "topps",
+      "team": "detroit tigers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "403",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 5,
+    "name": "james evan perry",
+    "number": "263",
+    "team": "detroit tigers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "james evan perry",
+      "brand": "topps",
+      "team": "detroit tigers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "263",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 6,
+    "name": "tommy lee mcgraw",
+    "number": "462",
+    "team": "new york mets",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "tommy lee mcgraw",
+      "brand": "topps",
+      "team": "new york mets",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "462",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 7,
+    "name": "freddy ray beene",
+    "number": "181",
+    "team": "boston red sox",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "freddy ray beene",
+      "brand": "topps",
+      "team": "boston red sox",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "181",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 8,
+    "name": "leslie charles spikes",
+    "number": "135",
+    "team": "detroit tigers",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2401_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "leslie charles spikes",
+      "brand": "topps",
+      "team": "detroit tigers",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "135",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ],
+    "_condition_predicted": true
+  }
+]

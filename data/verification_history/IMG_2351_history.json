@@ -1,0 +1,1099 @@
+[
+  {
+    "timestamp": "2025-12-26T14:49:18.630Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "robert tolan",
+        "number": "535",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "robert tolan",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "535",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "robert fasoli colluccio",
+        "number": "124",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "robert fasoli colluccio",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "124",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very good",
+            "confidence": 10
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "johnny evald johnson",
+        "number": "551",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "johnny evald johnson",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "551",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 3,
+        "name": "james lawrence lytle",
+        "number": "437",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "james lawrence lytle",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "437",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 4,
+        "name": "none",
+        "number": "737",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": null,
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "none",
+          "brand": null,
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1973",
+          "number": "737",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1973",
+            "corrected": "1972",
+            "confidence": 3
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "willie davis",
+        "number": "651",
+        "team": "montreal expos",
+        "copyright_year": "1972",
+        "brand": null,
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "willie davis",
+          "brand": null,
+          "team": "montreal expos",
+          "card_set": "traded",
+          "copyright_year": "1973",
+          "number": "651",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1973",
+            "corrected": "1972",
+            "confidence": 3
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "milt pappas",
+        "number": "208",
+        "team": "chicago n.l.",
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "milt pappas",
+          "brand": "topps",
+          "team": "chicago n.l.",
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "208",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very good",
+            "confidence": 10
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "craig robert kusick",
+        "number": "297",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.66,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "craig robert kusick",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1972",
+          "number": "297",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "david allan goltz",
+        "number": "419",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.66,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "david allan goltz",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1972",
+          "number": "419",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-26T14:49:20.864Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "robert tolan",
+        "number": "535",
+        "team": "cinc",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "robert tolan",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "535",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.55,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "_team_auto_filled": true,
+        "_team_source": "database_name_match"
+      },
+      {
+        "grid_position": 1,
+        "name": "robert fasoli colluccio",
+        "number": "124",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "robert fasoli colluccio",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "124",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very good",
+            "confidence": 10
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "johnny evald johnson",
+        "number": "551",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "johnny evald johnson",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "551",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 3,
+        "name": "james lawrence lytle",
+        "number": "437",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "james lawrence lytle",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "437",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 4,
+        "name": "none",
+        "number": "737",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": null,
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "none",
+          "brand": null,
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1973",
+          "number": "737",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1973",
+            "corrected": "1972",
+            "confidence": 3
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "willie davis",
+        "number": "651",
+        "team": "montreal expos",
+        "copyright_year": "1972",
+        "brand": null,
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "willie davis",
+          "brand": null,
+          "team": "montreal expos",
+          "card_set": "traded",
+          "copyright_year": "1973",
+          "number": "651",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1973",
+            "corrected": "1972",
+            "confidence": 3
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "milt pappas",
+        "number": "208",
+        "team": "chicago n.l.",
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "milt pappas",
+          "brand": "topps",
+          "team": "chicago n.l.",
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "208",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very good",
+            "confidence": 10
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "craig robert kusick",
+        "number": "297",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.66,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "craig robert kusick",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1972",
+          "number": "297",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "david allan goltz",
+        "number": "419",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.66,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "david allan goltz",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1972",
+          "number": "419",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2025-12-26T14:49:23.011Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "robert tolan",
+        "number": "535",
+        "team": "cinci",
+        "copyright_year": "1974",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "robert tolan",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "535",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.55,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "_team_auto_filled": true,
+        "_team_source": "database_name_match"
+      },
+      {
+        "grid_position": 1,
+        "name": "robert fasoli colluccio",
+        "number": "124",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "robert fasoli colluccio",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "124",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very good",
+            "confidence": 10
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "johnny evald johnson",
+        "number": "551",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "johnny evald johnson",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "551",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 3,
+        "name": "james lawrence lytle",
+        "number": "437",
+        "team": null,
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.55,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "james lawrence lytle",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "437",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 4,
+        "name": "none",
+        "number": "737",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": null,
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "none",
+          "brand": null,
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1973",
+          "number": "737",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1973",
+            "corrected": "1972",
+            "confidence": 3
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "willie davis",
+        "number": "651",
+        "team": "montreal expos",
+        "copyright_year": "1972",
+        "brand": null,
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "willie davis",
+          "brand": null,
+          "team": "montreal expos",
+          "card_set": "traded",
+          "copyright_year": "1973",
+          "number": "651",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1973",
+            "corrected": "1972",
+            "confidence": 3
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "milt pappas",
+        "number": "208",
+        "team": "chicago n.l.",
+        "copyright_year": null,
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "milt pappas",
+          "brand": "topps",
+          "team": "chicago n.l.",
+          "card_set": "n/a",
+          "copyright_year": null,
+          "number": "208",
+          "condition": "good",
+          "sport": "baseball"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very good",
+            "confidence": 10
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "craig robert kusick",
+        "number": "297",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.66,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "craig robert kusick",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1972",
+          "number": "297",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "david allan goltz",
+        "number": "419",
+        "team": null,
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.66,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2351_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "david allan goltz",
+          "brand": "topps",
+          "team": null,
+          "card_set": "n/a",
+          "copyright_year": "1972",
+          "number": "419",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  }
+]

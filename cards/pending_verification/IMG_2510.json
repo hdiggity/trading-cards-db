@@ -1,0 +1,368 @@
+[
+  {
+    "grid_position": 0,
+    "name": "duane kuiper",
+    "number": "508",
+    "team": "cleveland indians",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "duane kuiper",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1979",
+      "number": "508",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ]
+  },
+  {
+    "grid_position": 1,
+    "name": "rogie vachon",
+    "number": "45",
+    "team": "los angeles kings",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.10",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "rogie vachon",
+      "brand": "topps",
+      "team": "los angeles kings",
+      "card_set": "n/a",
+      "copyright_year": "1979",
+      "number": "45",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ]
+  },
+  {
+    "grid_position": 2,
+    "name": "felix millan",
+    "number": "255",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "felix millan",
+      "brand": "topps",
+      "team": "pittsburgh pirates",
+      "card_set": "n/a",
+      "copyright_year": "1979",
+      "number": "255",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ]
+  },
+  {
+    "grid_position": 3,
+    "name": "pat dobson",
+    "number": "296t",
+    "team": "cleveland indians",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "traded",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.69,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "pat dobson",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "traded",
+      "copyright_year": "1979",
+      "number": "296t",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 4,
+    "name": "jim bibby",
+    "number": "324",
+    "team": "cleveland indians",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "jim bibby",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1979",
+      "number": "324",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ]
+  },
+  {
+    "grid_position": 5,
+    "name": "ray fosse",
+    "number": "554t",
+    "team": "cleveland indians",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "traded",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.69,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "ray fosse",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "traded",
+      "copyright_year": "1979",
+      "number": "554t",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 6,
+    "name": "jackie brown",
+    "number": "301",
+    "team": "cleveland indians",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "jackie brown",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1979",
+      "number": "301",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ]
+  },
+  {
+    "grid_position": 7,
+    "name": "tom buskey",
+    "number": "178",
+    "team": "cleveland indians",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.20",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "tom buskey",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "n/a",
+      "copyright_year": "1979",
+      "number": "178",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ]
+  },
+  {
+    "grid_position": 8,
+    "name": "pat dobson",
+    "number": "296t",
+    "team": "cleveland indians",
+    "copyright_year": "1979",
+    "brand": "topps",
+    "card_set": "traded",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.69,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2510_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "pat dobson",
+      "brand": "topps",
+      "team": "cleveland indians",
+      "card_set": "traded",
+      "copyright_year": "1979",
+      "number": "296t",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  }
+]

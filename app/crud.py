@@ -1,10 +1,12 @@
-from typing import List, Optional
+import uuid
+from datetime import datetime
+from typing import Dict, List, Optional
 
 from sqlmodel import select
 
 from app.database import get_session
 from app.logging_system import ActionType, LogLevel, LogSource, logger
-from app.models import Card, CardComplete
+from app.models import Card, CardComplete, UndoTransaction
 from app.schemas import CardCreate
 
 
@@ -120,3 +122,174 @@ def get_card_by_id(card_id: int) -> Optional[Card]:
         except Exception:
             pass
         return row
+
+
+def create_undo_transaction(
+    file_id: str,
+    action_type: str,
+    before_state: Dict,
+    card_index: Optional[int] = None
+) -> str:
+    """Create undo transaction record before database operation.
+
+    Args:
+        file_id: ID of the file being processed
+        action_type: Type of action (pass_card, pass_all, fail_card, fail_all)
+        before_state: State before operation (file paths, etc.)
+        card_index: Index of card if single-card operation
+
+    Returns:
+        transaction_id (UUID string)
+    """
+    transaction_id = str(uuid.uuid4())
+
+    with get_session() as sess:
+        transaction = UndoTransaction(
+            transaction_id=transaction_id,
+            file_id=file_id,
+            action_type=action_type,
+            card_index=card_index,
+            before_state=before_state,
+            after_state=None,
+            is_reversed=False
+        )
+        sess.add(transaction)
+        sess.commit()
+
+        try:
+            logger.log(
+                LogLevel.INFO,
+                LogSource.DATABASE,
+                f"Created undo transaction {transaction_id}",
+                ActionType.DB_INSERT,
+                details=f"file_id={file_id}, action={action_type}"
+            )
+        except Exception:
+            pass
+
+    return transaction_id
+
+
+def update_undo_transaction_after_state(transaction_id: str, after_state: Dict):
+    """Update transaction with after_state (DB IDs, file movements).
+
+    Args:
+        transaction_id: UUID of transaction to update
+        after_state: State after operation (card_complete_ids, files_moved, etc.)
+    """
+    with get_session() as sess:
+        transaction = sess.query(UndoTransaction).filter_by(
+            transaction_id=transaction_id
+        ).first()
+
+        if transaction:
+            transaction.after_state = after_state
+            sess.commit()
+
+            try:
+                logger.log(
+                    LogLevel.INFO,
+                    LogSource.DATABASE,
+                    f"Updated undo transaction {transaction_id} with after_state",
+                    ActionType.DB_UPDATE
+                )
+            except Exception:
+                pass
+
+
+def undo_card_import(transaction_id: str) -> Dict:
+    """Reverse a card import transaction.
+
+    - Deletes cards_complete records
+    - Database triggers automatically update cards table
+    - Returns list of deleted IDs
+
+    Args:
+        transaction_id: UUID of transaction to reverse
+
+    Returns:
+        dict with deleted_ids and affected_cards
+    """
+    with get_session() as sess:
+        transaction = sess.query(UndoTransaction).filter_by(
+            transaction_id=transaction_id
+        ).first()
+
+        if not transaction:
+            return {"error": "Transaction not found", "deleted_ids": []}
+
+        if transaction.is_reversed:
+            return {"error": "Transaction already reversed", "deleted_ids": []}
+
+        after_state = transaction.after_state or {}
+        card_complete_ids = after_state.get("card_complete_ids", [])
+
+        deleted_ids = []
+        for card_id in card_complete_ids:
+            card_complete = sess.get(CardComplete, card_id)
+            if card_complete:
+                sess.delete(card_complete)
+                deleted_ids.append(card_id)
+
+        sess.commit()
+
+        try:
+            logger.log(
+                LogLevel.INFO,
+                LogSource.DATABASE,
+                f"Undone card import for transaction {transaction_id}",
+                ActionType.DB_DELETE,
+                details=f"deleted_ids={deleted_ids}"
+            )
+        except Exception:
+            pass
+
+        return {
+            "deleted_ids": deleted_ids,
+            "affected_cards": len(deleted_ids)
+        }
+
+
+def mark_transaction_reversed(transaction_id: str):
+    """Mark transaction as reversed with timestamp.
+
+    Args:
+        transaction_id: UUID of transaction to mark
+    """
+    with get_session() as sess:
+        transaction = sess.query(UndoTransaction).filter_by(
+            transaction_id=transaction_id
+        ).first()
+
+        if transaction:
+            transaction.is_reversed = True
+            transaction.reversed_at = datetime.utcnow()
+            sess.commit()
+
+            try:
+                logger.log(
+                    LogLevel.INFO,
+                    LogSource.DATABASE,
+                    f"Marked transaction {transaction_id} as reversed",
+                    ActionType.DB_UPDATE
+                )
+            except Exception:
+                pass
+
+
+def get_transactions_for_file(file_id: str) -> List[UndoTransaction]:
+    """Get all transactions for a file (for undo_all).
+
+    Args:
+        file_id: File ID to query
+
+    Returns:
+        List of UndoTransaction objects
+    """
+    with get_session() as sess:
+        transactions = sess.query(UndoTransaction).filter_by(
+            file_id=file_id,
+            is_reversed=False
+        ).order_by(UndoTransaction.timestamp.desc()).all()
+
+        return transactions

@@ -1,0 +1,426 @@
+[
+  {
+    "grid_position": 0,
+    "name": "bob moose",
+    "number": "476",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "bob moose",
+      "brand": "topps",
+      "team": "pittsburgh pirates",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "476",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 1,
+    "name": "robin yount",
+    "number": "316",
+    "team": "milwaukee brewers",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$2.00",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "robin yount",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "316",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 2,
+    "name": "san diego padres checklist",
+    "number": "331",
+    "team": "san diego padres",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": false,
+    "features": "checklist",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "san diego padres checklist",
+      "brand": "topps",
+      "team": "san diego padres",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "331",
+      "condition": "good",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 3,
+    "name": "harry rasmussen",
+    "number": "182",
+    "team": "st. louis cardinals",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "harry rasmussen",
+      "brand": "topps",
+      "team": "st. louis cardinals",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "182",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 4,
+    "name": "mike vall",
+    "number": "655",
+    "team": "san francisco giants",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.69,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "mike vall",
+      "brand": "topps",
+      "team": "san francisco giants",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "655",
+      "condition": "excellent",
+      "sport": "baseball"
+    },
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 5,
+    "name": "mike vall",
+    "number": "655",
+    "team": "san francisco giants",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "mike vall",
+      "brand": "topps",
+      "team": "san francisco giants",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "655",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 6,
+    "name": "randy tate",
+    "number": "549",
+    "team": "new york mets",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "randy tate",
+      "brand": "topps",
+      "team": "new york mets",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "549",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 7,
+    "name": "kurt bevacqua",
+    "number": "427",
+    "team": "milwaukee brewers",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "kurt bevacqua",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "427",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 8,
+    "name": "jim slaton",
+    "number": "163",
+    "team": "milwaukee brewers",
+    "copyright_year": "1974",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2441_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "jim slaton",
+      "brand": "topps",
+      "team": "milwaukee brewers",
+      "card_set": "n/a",
+      "copyright_year": "1976",
+      "number": "163",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      },
+      {
+        "field": "copyright_year",
+        "original": "1976",
+        "corrected": "1974",
+        "confidence": 9
+      }
+    ],
+    "_condition_predicted": true
+  }
+]

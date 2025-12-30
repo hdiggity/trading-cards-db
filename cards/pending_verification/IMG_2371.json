@@ -1,0 +1,380 @@
+[
+  {
+    "grid_position": 0,
+    "name": "jesus maria frias (anuar)",
+    "number": "496",
+    "team": "san diego padres",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "jesus maria frias (anuar)",
+      "brand": "topps",
+      "team": "san diego padres",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "496",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 1,
+    "name": "dennis herman blair",
+    "number": "521",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "dennis herman blair",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "521",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 2,
+    "name": "timothy john foli",
+    "number": "149",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "timothy john foli",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "149",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 3,
+    "name": "michael augustine torrez",
+    "number": "254",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "michael augustine torrez",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "254",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 4,
+    "name": "larry lintz",
+    "number": "416",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "larry lintz",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "416",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 5,
+    "name": "lawrence david biittner",
+    "number": "543",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "lawrence david biittner",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "543",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 6,
+    "name": "balor lilbon moore",
+    "number": "592",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "balor lilbon moore",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "592",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 7,
+    "name": "donald john demola",
+    "number": "391",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "donald john demola",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "391",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  },
+  {
+    "grid_position": 8,
+    "name": "robert thomas walker",
+    "number": "627",
+    "team": "montreal expos",
+    "copyright_year": "1975",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$0.25",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.45,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2371_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "robert thomas walker",
+      "brand": "topps",
+      "team": "montreal expos",
+      "card_set": "n/a",
+      "copyright_year": "1975",
+      "number": "627",
+      "condition": "very_good",
+      "sport": "baseball"
+    },
+    "_condition_suspicious": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "very_good",
+        "corrected": "good",
+        "confidence": 62
+      }
+    ],
+    "_condition_predicted": true
+  }
+]

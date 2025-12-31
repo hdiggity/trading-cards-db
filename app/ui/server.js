@@ -662,18 +662,24 @@ app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
     // Record history BEFORE making changes (enables undo)
     await recordVerificationAction(id, 'pass_card', allCardData, null, parseInt(cardIndex));
 
-    // Use modified data for the specific card if provided, and record corrections for learning
+    // Use modified data for the specific card if provided
     const originalCardData = allCardData[parseInt(cardIndex)];
     if (modifiedData) {
       allCardData[parseInt(cardIndex)] = modifiedData;
-      // Record corrections for learning system (async, non-blocking)
-      recordCorrections(originalCardData, modifiedData).catch((err) => {
+    }
+
+    // Record corrections for learning system
+    // Always compare final card data with _original_extraction
+    // This captures corrections even if made via auto-save (not sent in modifiedData)
+    const finalCardData = allCardData[parseInt(cardIndex)];
+    if (originalCardData._original_extraction) {
+      recordCorrections(originalCardData, finalCardData).catch((err) => {
         console.error('[pass-card] Failed to record corrections:', err);
       });
     }
 
     // Import only the specific card to database
-    const cardToImport = [allCardData[parseInt(cardIndex)]];
+    const cardToImport = [finalCardData];
 
     // Get the image file for source tracking
     const imageFile = bulkBackFiles.find(file => {
@@ -1271,17 +1277,17 @@ app.post('/api/pass/:id', async (req, res) => {
     }
     
     // Get the card data to import
-    const originalData = JSON.parse(await fs.readFile(path.join(PENDING_VERIFICATION_DIR, jsonFile), 'utf8'));
-    let cardData = modifiedData || originalData;
+    const jsonData = JSON.parse(await fs.readFile(path.join(PENDING_VERIFICATION_DIR, jsonFile), 'utf8'));
+    let cardData = modifiedData || jsonData;
 
-    // Record corrections for any modified cards (for learning system)
-    if (modifiedData) {
-      for (let i = 0; i < modifiedData.length; i++) {
-        if (i < originalData.length) {
-          recordCorrections(originalData[i], modifiedData[i]).catch((err) => {
-            console.error('[pass-all] Failed to record corrections:', err);
-          });
-        }
+    // Record corrections for learning system
+    // Always compare final data with _original_extraction, regardless of whether user edited via UI
+    // This captures all corrections including those made via auto-save
+    for (let i = 0; i < cardData.length; i++) {
+      if (jsonData[i] && jsonData[i]._original_extraction) {
+        recordCorrections(jsonData[i], cardData[i]).catch((err) => {
+          console.error('[pass-all] Failed to record corrections:', err);
+        });
       }
     }
 
@@ -1578,6 +1584,13 @@ app.post('/api/save-progress/:id', async (req, res) => {
     if (cardIndex !== undefined && data.length === 1) {
       finalData = [...existingData];
       if (cardIndex >= 0 && cardIndex < finalData.length) {
+        // Record corrections for learning before updating
+        const originalCard = existingData[cardIndex];
+        const modifiedCard = data[0];
+        recordCorrections(originalCard, modifiedCard).catch((err) => {
+          console.error('[save-progress] Failed to record corrections:', err);
+        });
+
         finalData[cardIndex] = processData(data[0], existingData[cardIndex]);
       }
       console.log(`[save-progress] Single card mode: updated card ${cardIndex}, total cards: ${finalData.length}`);
@@ -1585,6 +1598,12 @@ app.post('/api/save-progress/:id', async (req, res) => {
       // Full array update (entire photo mode) - but merge by grid_position to be safe
       if (data.length === existingData.length) {
         // Same length, safe to replace entirely
+        // Record corrections for all changed cards
+        for (let i = 0; i < data.length; i++) {
+          recordCorrections(existingData[i], data[i]).catch((err) => {
+            console.error(`[save-progress] Failed to record corrections for card ${i}:`, err);
+          });
+        }
         finalData = data.map((card, idx) => processData(card, existingData[idx]));
       } else {
         // Different lengths - merge by grid_position
@@ -1596,6 +1615,10 @@ app.post('/api/save-progress/:id', async (req, res) => {
               (c.grid_position ?? c._grid_metadata?.position) === pos
             );
             if (idx !== -1) {
+              // Record corrections for this card
+              recordCorrections(existingData[idx], incomingCard).catch((err) => {
+                console.error(`[save-progress] Failed to record corrections for pos ${pos}:`, err);
+              });
               finalData[idx] = processData(incomingCard, existingData[idx]);
             }
           }

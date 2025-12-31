@@ -962,21 +962,9 @@ print("Database import completed successfully", file=sys.stderr)
             }
           }
 
-          // Partial verification: copy image to verified_images
-          try {
-            const verifiedImageName = getVerifiedFilename(imageFile);
-            const verifiedImagePath = path.join(VERIFIED_IMAGES_DIR, verifiedImageName);
-
-            // Copy image to verified_images if not already there
-            try {
-              await fs.access(verifiedImagePath);
-            } catch {
-              await fs.copyFile(path.join(PENDING_BULK_BACK_DIR, imageFile), verifiedImagePath);
-              console.log(`[pass-card] Copied image to verified: ${verifiedImageName}`);
-            }
-          } catch (partialErr) {
-            console.error(`[pass-card] Warning: Failed to copy image to verified: ${partialErr.message}`);
-          }
+          // Partial verification: do NOT move bulk back image yet (still processing remaining cards)
+          // Image will be moved when last card is verified
+          console.log(`[pass-card] Partial verification - keeping bulk back in pending for remaining ${allCardData.length} cards`);
 
           // Track file movements for undo
           const fileMovements = [];
@@ -1088,26 +1076,27 @@ print("Transaction updated successfully")
             releaseLock(id);
             console.log(`[pass-card] Unlocked ${id} - all cards done, JSON deleted`);
 
-            // Copy image file to verified folder with verified_ prefix (keep original in pending)
+            // Move image file to verified folder with verified_ prefix (use rename, not copy)
             if (imageFile) {
               const verifiedImageName = getVerifiedFilename(imageFile);
               const verifiedImagePath = path.join(VERIFIED_IMAGES_DIR, verifiedImageName);
               const sourceBulkPath = path.join(PENDING_BULK_BACK_DIR, imageFile);
 
-              // Copy to verified if not already there
+              // Check if already in verified (avoid duplicates)
               try {
                 await fs.access(verifiedImagePath);
                 console.log(`[pass-card] Image already in verified: ${verifiedImageName}`);
+                // Delete from pending since already verified
+                try {
+                  await fs.unlink(sourceBulkPath);
+                  console.log(`[pass-card] Deleted duplicate from pending: ${imageFile}`);
+                } catch (delErr) {
+                  console.error(`[pass-card] Warning: Failed to delete duplicate: ${delErr.message}`);
+                }
               } catch {
-                // Not in verified yet, copy it
-                await fs.copyFile(sourceBulkPath, verifiedImagePath);
-                console.log(`[pass-card] Copied image to verified: ${verifiedImageName}`);
-              }
-
-              // Delete the original from pending after successful copy to verified
-              try {
-                await fs.unlink(sourceBulkPath);
-                console.log(`[pass-card] Deleted original from pending: ${imageFile}`);
+                // Not in verified yet, move it (rename = atomic move, no duplicate)
+                await fs.rename(sourceBulkPath, verifiedImagePath);
+                console.log(`[pass-card] Moved image to verified: ${verifiedImageName}`);
 
                 // Record bulk image movement
                 fileMovements.push({
@@ -1115,8 +1104,6 @@ print("Transaction updated successfully")
                   dest: verifiedImagePath,
                   file_type: 'bulk_back'
                 });
-              } catch (delErr) {
-                console.error(`[pass-card] Warning: Failed to delete original: ${delErr.message}`);
               }
             }
 

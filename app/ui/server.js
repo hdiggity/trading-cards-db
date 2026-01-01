@@ -1088,10 +1088,13 @@ print("Transaction updated successfully")
               const verifiedImagePath = path.join(VERIFIED_IMAGES_DIR, verifiedImageName);
               const sourceBulkPath = path.join(PENDING_BULK_BACK_DIR, imageFile);
 
-              // Check if already in verified (avoid duplicates)
-              try {
-                await fs.access(verifiedImagePath);
-                console.log(`[pass-card] Image already in verified: ${verifiedImageName}`);
+              // Check if already in verified with ANY extension (avoid duplicates like .HEIC + .jpeg)
+              const baseNameWithoutExt = path.parse(verifiedImageName).name;
+              const verifiedFiles = await fs.readdir(VERIFIED_IMAGES_DIR);
+              const existingFile = verifiedFiles.find(f => path.parse(f).name === baseNameWithoutExt);
+
+              if (existingFile) {
+                console.log(`[pass-card] Image already in verified as ${existingFile}, skipping ${verifiedImageName}`);
                 // Delete from pending since already verified
                 try {
                   await fs.unlink(sourceBulkPath);
@@ -1099,7 +1102,7 @@ print("Transaction updated successfully")
                 } catch (delErr) {
                   console.error(`[pass-card] Warning: Failed to delete duplicate: ${delErr.message}`);
                 }
-              } catch {
+              } else {
                 // Not in verified yet, move it (rename = atomic move, no duplicate)
                 await fs.rename(sourceBulkPath, verifiedImagePath);
                 console.log(`[pass-card] Moved image to verified: ${verifiedImageName}`);
@@ -1449,11 +1452,27 @@ print("Database import completed successfully")
 
           // Move image file to verified/verified_images folder with verified_ prefix
           const verifiedImageName = getVerifiedFilename(imageFile);
-          await fs.rename(
-            path.join(PENDING_BULK_BACK_DIR, imageFile),
-            path.join(VERIFIED_IMAGES_DIR, verifiedImageName)
-          );
-          console.log(`[pass-all] Moved image to verified: ${verifiedImageName}`);
+          const sourceBulkPath = path.join(PENDING_BULK_BACK_DIR, imageFile);
+          const verifiedImagePath = path.join(VERIFIED_IMAGES_DIR, verifiedImageName);
+
+          // Check if already in verified with ANY extension (avoid duplicates like .HEIC + .jpeg)
+          const baseNameWithoutExt = path.parse(verifiedImageName).name;
+          const verifiedFiles = await fs.readdir(VERIFIED_IMAGES_DIR);
+          const existingFile = verifiedFiles.find(f => path.parse(f).name === baseNameWithoutExt);
+
+          if (existingFile) {
+            console.log(`[pass-all] Image already in verified as ${existingFile}, skipping ${verifiedImageName}`);
+            // Delete from pending since already verified
+            try {
+              await fs.unlink(sourceBulkPath);
+              console.log(`[pass-all] Deleted duplicate from pending: ${imageFile}`);
+            } catch (delErr) {
+              console.error(`[pass-all] Warning: Failed to delete duplicate: ${delErr.message}`);
+            }
+          } else {
+            await fs.rename(sourceBulkPath, verifiedImagePath);
+            console.log(`[pass-all] Moved image to verified: ${verifiedImageName}`);
+          }
 
           // Move all cropped back images to verified cropped backs folder
           const CROPPED_BACKS_PENDING = path.join(PENDING_VERIFICATION_DIR, 'pending_verification_cropped_backs');

@@ -1,0 +1,4078 @@
+[
+  {
+    "timestamp": "2026-01-18T00:28:34.891Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "orel hershiser",
+        "number": "493",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "orel hershiser",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "493",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "orel hershiser",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 1,
+        "name": "glenn abbott",
+        "number": "201",
+        "team": "seattle mariners",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "glenn abbott",
+          "brand": "topps",
+          "team": "seattle mariners",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "201",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "glenn abbott",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "fernando valenzuela",
+        "number": "440",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "fernando valenzuela",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "440",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "fernando valenzuela",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 3,
+        "name": "bruce zaccary",
+        "number": "77",
+        "team": "cincinnati reds",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "bruce zaccary",
+          "brand": "topps",
+          "team": "cincinnati reds",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "77",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "bruce zaccary",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:28:44.638Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "glenn abbott",
+        "number": "201",
+        "team": "seattle mariners",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "glenn abbott",
+          "brand": "topps",
+          "team": "seattle mariners",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "201",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "glenn abbott",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 2,
+        "name": "fernando valenzuela",
+        "number": "440",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "fernando valenzuela",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "440",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "fernando valenzuela",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 3,
+        "name": "bruce zaccary",
+        "number": "77",
+        "team": "cincinnati reds",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "bruce zaccary",
+          "brand": "topps",
+          "team": "cincinnati reds",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "77",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "bruce zaccary",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:28:50.199Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "fernando valenzuela",
+        "number": "440",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "fernando valenzuela",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "440",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "fernando valenzuela",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 3,
+        "name": "bruce zaccary",
+        "number": "77",
+        "team": "cincinnati reds",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "bruce zaccary",
+          "brand": "topps",
+          "team": "cincinnati reds",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "77",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "bruce zaccary",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:28:57.914Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "bruce zaccary",
+        "number": "77",
+        "team": "cincinnati reds",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "bruce zaccary",
+          "brand": "topps",
+          "team": "cincinnati reds",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "77",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "bruce zaccary",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:29:06.006Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "bruce zachary",
+        "number": "77",
+        "team": "cincinnati reds",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "bruce zaccary",
+          "brand": "topps",
+          "team": "cincinnati reds",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "77",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "bruce zaccary",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:29:12.527Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "bruce zachary",
+        "number": "57",
+        "team": "cincinnati reds",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "bruce zaccary",
+          "brand": "topps",
+          "team": "cincinnati reds",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "77",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "bruce zaccary",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:29:12.737Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "bruce zachary",
+        "number": "57",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "bruce zaccary",
+          "brand": "topps",
+          "team": "cincinnati reds",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "77",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "bruce zaccary",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:29:36.488Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tom lasorda",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:30:10.954Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tom lasorda; los angeles dodgers team checklist",
+        "number": "601",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.69,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "tom lasorda",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "601",
+          "condition": "excellent",
+          "sport": "baseball"
+        },
+        "canonical_name": "tom lasorda",
+        "_condition_predicted": true,
+        "_overall_confidence": 0.69,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:30:19.249Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "mike lacoss",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:30:30.762Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "mike scioscia",
+        "number": "249",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:30:34.257Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "mike scioscia",
+        "number": "549",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:30:36.794Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "mike scioscia",
+        "number": "549",
+        "team": "los ",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:30:40.549Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "mike scioscia",
+        "number": "549",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:30:57.624Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "mike scioscia",
+        "number": "549",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "mike lacoss",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "249",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike lacoss",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:31:08.625Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "pedro guerrero",
+        "number": "575",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "pedro guerrero",
+          "brand": "topps",
+          "team": "los angeles dodgers",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "575",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "pedro guerrero",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:31:25.169Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "kansas city royals",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:31:28.071Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "german rivera",
+        "number": "626",
+        "team": "other",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "german rivera",
+          "brand": "topps",
+          "team": "kansas city royals",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "626",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "german rivera",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:31:37.530Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "233",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:31:45.389Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "253",
+        "team": "san francisco giants",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:31:52.245Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "dave dravecky",
+        "number": "253",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:31:57.925Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "sid bream",
+        "number": "253",
+        "team": "los angeles dodgers",
+        "copyright_year": "1985",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.35",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_4907_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "dave dravecky",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1985",
+          "number": "233",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave dravecky",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 97
+          }
+        ],
+        "_condition_predicted": true,
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  }
+]

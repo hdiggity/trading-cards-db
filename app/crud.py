@@ -1,3 +1,4 @@
+import sys
 import uuid
 from datetime import datetime
 from typing import Dict, List, Optional
@@ -37,12 +38,25 @@ def insert_card_complete(card_data: CardCreate, source_metadata: dict = None):
 
     with get_session() as sess:
         # Find or create the card_id (cards table entry will be created by trigger if needed)
-        stmt = select(Card).where(
-            Card.brand == data.get("brand"),
-            Card.number == data.get("number"),
-            Card.name == data.get("name"),
-            Card.copyright_year == data.get("copyright_year"),
-        )
+        # Use canonical_name for matching if available, otherwise fall back to exact name match
+        canonical_name = data.get("canonical_name")
+
+        if canonical_name:
+            # Use canonical name for duplicate detection (handles name variations)
+            stmt = select(Card).where(
+                Card.brand == data.get("brand"),
+                Card.number == data.get("number"),
+                Card.canonical_name == canonical_name,
+                Card.copyright_year == data.get("copyright_year"),
+            )
+        else:
+            # Fallback to exact name match for backwards compatibility
+            stmt = select(Card).where(
+                Card.brand == data.get("brand"),
+                Card.number == data.get("number"),
+                Card.name == data.get("name"),
+                Card.copyright_year == data.get("copyright_year"),
+            )
         existing_card = sess.exec(stmt).first()
         card_id = existing_card.id if existing_card else None
 
@@ -62,6 +76,7 @@ def insert_card_complete(card_data: CardCreate, source_metadata: dict = None):
             notes=source_metadata.get('notes'),
             # Card data fields
             name=data.get("name"),
+            canonical_name=data.get("canonical_name"),
             sport=data.get("sport"),
             brand=data.get("brand"),
             number=data.get("number"),
@@ -78,6 +93,12 @@ def insert_card_complete(card_data: CardCreate, source_metadata: dict = None):
         sess.add(card_complete)
         sess.commit()
         sess.refresh(card_complete)
+
+        # Automatically merge any duplicates after insertion
+        from app.auto_merge import auto_merge_duplicates_for_card
+        merged_count = auto_merge_duplicates_for_card(card_id)
+        if merged_count > 0:
+            print(f"Auto-merged {merged_count} duplicate(s) for {card_complete.name}", file=sys.stderr)
 
         try:
             rec = f"{card_complete.name} #{card_complete.number or ''} {card_complete.brand or ''} {card_complete.copyright_year or ''}".strip()

@@ -1,23 +1,23 @@
-"""
-Simple price refresh using ChatGPT
-"""
+"""Simple price refresh using ChatGPT."""
 
 import json
 import os
 import re
 import sys
 from typing import Optional
+
 from dotenv import load_dotenv
 from openai import OpenAI
 from sqlalchemy import func
+
 from app.database import get_session
+from app.grid_processor import MODEL, VALUE_ESTIMATE_PROMPT
 from app.models import Card, CardComplete
-from app.grid_processor import VALUE_ESTIMATE_PROMPT, MODEL
 
 load_dotenv()
 
 def normalize_price(price_str):
-    """Validate and normalize price to $xx.xx format"""
+    """Validate and normalize price to $xx.xx format."""
     if not price_str:
         return "$1.00"
 
@@ -36,25 +36,8 @@ def normalize_price(price_str):
     else:
         val = sum(float(n) for n in nums) / len(nums)
 
-    # Round to common price points and format as $xx.xx
-    if val < 1.5:
-        return "$1.00"
-    elif val < 2.5:
-        return "$2.00"
-    elif val < 4:
-        return "$3.00"
-    elif val < 7:
-        return "$5.00"
-    elif val < 15:
-        return "$10.00"
-    elif val < 30:
-        return "$20.00"
-    elif val < 75:
-        return "$50.00"
-    elif val < 150:
-        return "$100.00"
-    else:
-        return f"${int(val)}.00"
+    # Format as $xx.xx without rounding to common price points
+    return f"${val:.2f}"
 
 def get_client() -> Optional[OpenAI]:
     api_key = os.getenv("OPENAI_API_KEY")
@@ -79,7 +62,7 @@ def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
             cards = session.query(Card).all()
         else:
             cards = session.query(Card).filter(
-                (Card.value_estimate == None) |
+                (Card.value_estimate is None) |
                 (Card.value_estimate == '') |
                 (Card.value_estimate == '$1-5')
             ).all()

@@ -5,6 +5,8 @@ to automatically fix common extraction errors in future runs.
 
 Includes condition prediction based on card metadata and manual
 corrections.
+
+Learning system for field corrections and automatic quality improvement.
 """
 
 import sqlite3
@@ -164,8 +166,19 @@ class CorrectionTracker:
             patterns = self.get_correction_patterns(field, confidence_threshold)
 
             # Apply exact match corrections
+            # For team field, only apply SAFE corrections (city additions, not player-specific)
             for pattern_gpt, pattern_corrected, count in patterns:
                 if gpt_value.lower() == pattern_gpt.lower():
+                    # For team field, skip player-specific corrections
+                    if field == 'team':
+                        # Only apply if it's a city addition (corrected ends with original)
+                        is_city_addition = pattern_corrected.lower().strip().endswith(
+                            pattern_gpt.lower().strip()
+                        )
+                        if not is_city_addition:
+                            # Skip this player-specific team correction
+                            continue
+
                     corrected_data[field] = pattern_corrected
                     corrections_applied.append({
                         'field': field,
@@ -175,16 +188,15 @@ class CorrectionTracker:
                     })
                     break
 
-            # Apply team name corrections (city addition)
+            # Apply team name corrections (city addition) - handles nickname to full name
             if field == 'team':
-                corrected_data[field] = self._apply_team_corrections(
-                    gpt_value, patterns
-                )
-                if corrected_data[field] != gpt_value:
+                new_team = self._apply_team_corrections(gpt_value, patterns)
+                if new_team != gpt_value and new_team != corrected_data.get(field, gpt_value):
+                    corrected_data[field] = new_team
                     corrections_applied.append({
                         'field': 'team',
                         'original': gpt_value,
-                        'corrected': corrected_data[field],
+                        'corrected': new_team,
                         'confidence': 'pattern'
                     })
 
@@ -199,9 +211,19 @@ class CorrectionTracker:
         gpt_value: str,
         patterns: List[Tuple[str, str, int]]
     ) -> str:
-        """Apply team name corrections (e.g., add missing city)"""
+        """Apply team name corrections (e.g., add missing city).
+
+        Only applies SAFE corrections:
+        - City prefix additions (e.g., "cubs" -> "chicago cubs")
+        - NOT player-specific team changes (e.g., "milwaukee brewers" -> "chicago white sox")
+
+        Player-specific team corrections are not generalizable and should not be applied
+        to other players.
+        """
         if not gpt_value:
             return gpt_value
+
+        gpt_lower = gpt_value.lower().strip()
 
         # Check if city is missing (common GPT error)
         # Pattern: "cubs" should be "chicago cubs"
@@ -209,12 +231,24 @@ class CorrectionTracker:
             if not pattern_gpt or not pattern_corrected:
                 continue
 
-            # If GPT value matches the team name part
-            if gpt_value.lower() == pattern_gpt.lower():
+            pattern_gpt_lower = pattern_gpt.lower().strip()
+            pattern_corrected_lower = pattern_corrected.lower().strip()
+
+            # Only apply if this is a SAFE correction (city prefix addition)
+            # Safe: corrected value ends with original value (e.g., "cubs" -> "chicago cubs")
+            # Unsafe: completely different team (e.g., "milwaukee brewers" -> "chicago white sox")
+            is_city_addition = pattern_corrected_lower.endswith(pattern_gpt_lower)
+
+            if not is_city_addition:
+                # Skip player-specific team changes - these are not generalizable
+                continue
+
+            # If GPT value matches the team name part exactly
+            if gpt_lower == pattern_gpt_lower:
                 return pattern_corrected
 
-            # If GPT value is just the team nickname
-            if pattern_corrected.lower().endswith(gpt_value.lower()):
+            # If GPT value is just the team nickname and we have a city addition for it
+            if pattern_corrected_lower.endswith(gpt_lower):
                 return pattern_corrected
 
         return gpt_value

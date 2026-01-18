@@ -6,6 +6,7 @@ from sqlalchemy import Boolean, Column, DateTime, Integer, String, func
 # fields shared between models and Pydantic
 shared_card_field_specs = [
     ("name", str, lambda: Column(String, nullable=False), ...),
+    ("canonical_name", Optional[str], lambda: Column(String), None),
     (
         "sport",
         Optional[str],

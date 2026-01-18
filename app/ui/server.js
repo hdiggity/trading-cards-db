@@ -432,20 +432,23 @@ async function validateStartup() {
 
   // check python availability
   try {
-    await new Promise((resolve, reject) => {
-      const pythonCheck = spawn('python', ['--version']);
-      pythonCheck.on('close', (code) => {
-        if (code === 0) {
-          console.log('✓ python available');
-          resolve();
-        } else {
-          reject(new Error('python not available'));
-        }
-      });
-      pythonCheck.on('error', (err) => {
-        reject(err);
-      });
-    });
+    await Promise.race([
+      new Promise((resolve, reject) => {
+        const pythonCheck = spawn('python', ['--version']);
+        pythonCheck.on('close', (code) => {
+          if (code === 0) {
+            console.log('✓ python available');
+            resolve();
+          } else {
+            reject(new Error('python not available'));
+          }
+        });
+        pythonCheck.on('error', (err) => {
+          reject(err);
+        });
+      }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('python check timeout')), 5000))
+    ]);
   } catch (err) {
     warnings.push('python not available - image processing will fail');
   }
@@ -837,13 +840,25 @@ with get_session() as session:
             card_create = CardCreate(**card_info)
 
             # Check for existing card (duplicate detection) to get card_id
-            existing = session.query(Card).filter(
-                Card.brand == card_info.get("brand"),
-                Card.number == card_info.get("number"),
-                Card.name == card_info.get("name"),
-                Card.copyright_year == card_info.get("copyright_year"),
-                Card.team == card_info.get("team")
-            ).first()
+            # Use canonical_name for matching if available, otherwise fall back to exact name match
+            canonical_name = card_info.get("canonical_name")
+
+            if canonical_name:
+                # Use canonical name for duplicate detection (handles name variations)
+                existing = session.query(Card).filter(
+                    Card.brand == card_info.get("brand"),
+                    Card.number == card_info.get("number"),
+                    Card.canonical_name == canonical_name,
+                    Card.copyright_year == card_info.get("copyright_year")
+                ).first()
+            else:
+                # Fallback to exact name match for backwards compatibility
+                existing = session.query(Card).filter(
+                    Card.brand == card_info.get("brand"),
+                    Card.number == card_info.get("number"),
+                    Card.name == card_info.get("name"),
+                    Card.copyright_year == card_info.get("copyright_year")
+                ).first()
 
             if existing:
                 card_id = existing.id
@@ -889,6 +904,20 @@ with get_session() as session:
             continue
 
     session.commit()
+
+# Automatically merge any duplicates created during this import
+from app.auto_merge import auto_merge_duplicates_for_card
+
+# Get unique card_ids that were used in this batch
+unique_card_ids = list(set([
+    session.query(CardComplete).filter(CardComplete.id == cc_id).first().card_id
+    for cc_id in card_complete_ids
+]))
+
+for card_id in unique_card_ids:
+    merged_count = auto_merge_duplicates_for_card(card_id)
+    if merged_count > 0:
+        print(f"Auto-merged {merged_count} duplicate(s) for card ID {card_id}", file=sys.stderr)
 
 # Output card_complete_ids as JSON to stdout
 print(json.dumps({"success": True, "card_complete_ids": card_complete_ids}))
@@ -994,6 +1023,7 @@ print("Database import completed successfully", file=sys.stderr)
               console.error(`[pass-card] Warning: Failed to move cropped back: ${cropErr.message}`);
             }
           }
+
 
           // Update undo transaction with after_state
           if (transactionId) {
@@ -1135,6 +1165,7 @@ print("Transaction updated successfully")
                 console.error(`[pass-card] Warning: Failed to move last cropped back: ${cropErr.message}`);
               }
             }
+
 
             // Update undo transaction with after_state
             if (transactionId) {
@@ -1360,13 +1391,25 @@ with get_session() as session:
             card_create = CardCreate(**card_info)
 
             # Check for existing card (duplicate detection) to get card_id
-            existing = session.query(Card).filter(
-                Card.brand == card_info.get("brand"),
-                Card.number == card_info.get("number"),
-                Card.name == card_info.get("name"),
-                Card.copyright_year == card_info.get("copyright_year"),
-                Card.team == card_info.get("team")
-            ).first()
+            # Use canonical_name for matching if available, otherwise fall back to exact name match
+            canonical_name = card_info.get("canonical_name")
+
+            if canonical_name:
+                # Use canonical name for duplicate detection (handles name variations)
+                existing = session.query(Card).filter(
+                    Card.brand == card_info.get("brand"),
+                    Card.number == card_info.get("number"),
+                    Card.canonical_name == canonical_name,
+                    Card.copyright_year == card_info.get("copyright_year")
+                ).first()
+            else:
+                # Fallback to exact name match for backwards compatibility
+                existing = session.query(Card).filter(
+                    Card.brand == card_info.get("brand"),
+                    Card.number == card_info.get("number"),
+                    Card.name == card_info.get("name"),
+                    Card.copyright_year == card_info.get("copyright_year")
+                ).first()
 
             if existing:
                 card_id = existing.id
@@ -1411,6 +1454,39 @@ with get_session() as session:
             continue
 
     session.commit()
+
+# Automatically merge any duplicates created during this import
+from app.auto_merge import auto_merge_duplicates_for_card
+
+# Get all card_ids that were processed
+processed_card_ids = set()
+for card_info in card_data:
+    try:
+        canonical_name = card_info.get("canonical_name")
+        if canonical_name:
+            card = session.query(Card).filter(
+                Card.brand == card_info.get("brand"),
+                Card.number == card_info.get("number"),
+                Card.canonical_name == canonical_name,
+                Card.copyright_year == card_info.get("copyright_year")
+            ).first()
+        else:
+            card = session.query(Card).filter(
+                Card.brand == card_info.get("brand"),
+                Card.number == card_info.get("number"),
+                Card.name == card_info.get("name"),
+                Card.copyright_year == card_info.get("copyright_year")
+            ).first()
+        if card:
+            processed_card_ids.add(card.id)
+    except:
+        pass
+
+for card_id in processed_card_ids:
+    merged_count = auto_merge_duplicates_for_card(card_id)
+    if merged_count > 0:
+        print(f"Auto-merged {merged_count} duplicate(s) for card ID {card_id}")
+
 print("Database import completed successfully")
     `], {
       cwd: path.join(__dirname, '../..'),
@@ -2558,7 +2634,8 @@ with get_session() as session:
     teams = session.query(distinct(Card.team)).filter(Card.team.isnot(None)).all()
     conditions = session.query(distinct(Card.condition)).filter(Card.condition.isnot(None)).all()
     sets = session.query(distinct(Card.card_set)).filter(Card.card_set.isnot(None)).all()
-    
+    years = session.query(distinct(Card.copyright_year)).filter(Card.copyright_year.isnot(None)).all()
+
     # Get all features and split them
     features_raw = session.query(Card.features).filter(Card.features.isnot(None)).all()
     all_features = set()
@@ -2566,14 +2643,15 @@ with get_session() as session:
         if features_str and features_str != 'none':
             for feature in features_str.split(','):
                 all_features.add(feature.strip())
-    
+
     result = {
         "sports": sorted([s[0] for s in sports if s[0]]),
         "brands": sorted([b[0] for b in brands if b[0]]),
         "teams": sorted([t[0] for t in teams if t[0]]),
         "conditions": sorted([c[0] for c in conditions if c[0]]),
         "card_sets": sorted([s[0] for s in sets if s[0]]),
-        "features": sorted(list(all_features))
+        "features": sorted(list(all_features)),
+        "years": sorted([y[0] for y in years if y[0]], reverse=True)
     }
     
     print(json.dumps(result))

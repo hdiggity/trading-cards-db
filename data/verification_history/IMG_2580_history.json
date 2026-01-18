@@ -1,0 +1,3705 @@
+[
+  {
+    "timestamp": "2026-01-18T00:12:40.739Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "ray fosse",
+        "number": "267",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "ray fosse",
+          "brand": "topps",
+          "team": "cleveland indians",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "267",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ray fosse",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "lamar johnson",
+        "number": "443",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "lamar johnson",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "443",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "lamar johnson",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 2,
+        "name": "mike bacsik",
+        "number": "103",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "mike bacsik",
+          "brand": "topps",
+          "team": "baltimore orioles",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "103",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike bacsik",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:13:01.518Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "lamar johnson",
+        "number": "443",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "lamar johnson",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "443",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "lamar johnson",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 2,
+        "name": "mike bacsik",
+        "number": "103",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "mike bacsik",
+          "brand": "topps",
+          "team": "baltimore orioles",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "103",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike bacsik",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:13:22.981Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "lamar johnson",
+        "number": "443",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "lamar johnson",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "443",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "lamar johnson",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.45,
+        "_has_autocorrections": false,
+        "_has_warnings": true,
+        "_autocorrection_badges": [],
+        "_warning_badges": [
+          {
+            "field": "condition",
+            "label": "Vintage - verify condition",
+            "type": "condition"
+          }
+        ]
+      },
+      {
+        "grid_position": 2,
+        "name": "mike bacsik",
+        "number": "103",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "mike bacsik",
+          "brand": "topps",
+          "team": "baltimore orioles",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "103",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike bacsik",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:13:23.789Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "lamar johnson",
+        "number": "443",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "lamar johnson",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "443",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "lamar johnson",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.45,
+        "_has_autocorrections": false,
+        "_has_warnings": true,
+        "_autocorrection_badges": [],
+        "_warning_badges": [
+          {
+            "field": "condition",
+            "label": "Vintage - verify condition",
+            "type": "condition"
+          }
+        ]
+      },
+      {
+        "grid_position": 2,
+        "name": "mike bacsik",
+        "number": "103",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "mike bacsik",
+          "brand": "topps",
+          "team": "baltimore orioles",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "103",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike bacsik",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:13:34.342Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mike bacsik",
+        "number": "103",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "mike bacsik",
+          "brand": "topps",
+          "team": "baltimore orioles",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "103",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike bacsik",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:13:48.396Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "mike bacsik",
+        "number": "103",
+        "team": "texas rangers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "mike bacsik",
+          "brand": "topps",
+          "team": "baltimore orioles",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "103",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "mike bacsik",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.45,
+        "_has_autocorrections": false,
+        "_has_warnings": true,
+        "_autocorrection_badges": [],
+        "_warning_badges": [
+          {
+            "field": "condition",
+            "label": "Vintage - verify condition",
+            "type": "condition"
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:13:58.201Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:14:11.575Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "dave collins",
+        "number": "431",
+        "team": "other",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.40",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "dave collins",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "431",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "dave collins",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.45,
+        "_has_autocorrections": false,
+        "_has_warnings": true,
+        "_autocorrection_badges": [],
+        "_warning_badges": [
+          {
+            "field": "condition",
+            "label": "Vintage - verify condition",
+            "type": "condition"
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:14:36.283Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "milwaukee brewers",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:14:41.690Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "stan thomas",
+        "number": "353",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "stan thomas",
+          "brand": "topps",
+          "team": "milwaukee brewers",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "353",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "stan thomas",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.45,
+        "_has_autocorrections": false,
+        "_has_warnings": true,
+        "_autocorrection_badges": [],
+        "_warning_badges": [
+          {
+            "field": "condition",
+            "label": "Vintage - verify condition",
+            "type": "condition"
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:14:51.114Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "chris speier",
+        "number": "515",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "chris speier",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "515",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "chris speier",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:14:57.807Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "charlie williams",
+        "number": "73",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "charlie williams",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "73",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "charlie williams",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:15:06.096Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "ed halicki",
+        "number": "343",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "ed halicki",
+          "brand": "topps",
+          "team": "san francisco giants",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "343",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed halicki",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:15:15.430Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:15:17.460Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "st",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.45,
+        "_has_autocorrections": false,
+        "_has_warnings": true,
+        "_autocorrection_badges": [],
+        "_warning_badges": [
+          {
+            "field": "condition",
+            "label": "Vintage - verify condition",
+            "type": "condition"
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:15:17.876Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "john curtis",
+        "number": "324",
+        "team": "st louis cardinals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.30",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.45,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2580_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "john curtis",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1977",
+          "number": "324",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "john curtis",
+        "_condition_suspicious": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.45,
+        "_has_autocorrections": false,
+        "_has_warnings": true,
+        "_autocorrection_badges": [],
+        "_warning_badges": [
+          {
+            "field": "condition",
+            "label": "Vintage - verify condition",
+            "type": "condition"
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  }
+]

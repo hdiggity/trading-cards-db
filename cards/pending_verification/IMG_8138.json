@@ -1,0 +1,371 @@
+[
+  {
+    "grid_position": 1,
+    "name": "trevor rosenthal",
+    "number": "261",
+    "team": "st. louis cardinals",
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "back text mentions perfect inning vs. washington nationals and 2011 midwest league western division title with quad cities.",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "Trevor Rosenthal",
+      "brand": "Topps",
+      "team": "St. Louis Cardinals",
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "261",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": "trevor rosenthal",
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 2,
+    "name": "kevin correia",
+    "number": "262",
+    "team": "pittsburgh pirates",
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "mentions 2012: 10-10, 4.21 era; ended season with 3 straight wins; 2013 pirates.",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.44,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "Kevin Correia",
+      "brand": "Topps",
+      "team": "Pittsburgh Pirates",
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "262",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": "kevin correia",
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 3,
+    "name": "2013 topps baseball checklist",
+    "number": "264",
+    "team": null,
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": false,
+    "features": "checklist",
+    "notes": "checklist card (not a player).",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.55,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "2013 Topps Baseball Checklist",
+      "brand": "Topps",
+      "team": null,
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "264",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": null,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 4,
+    "name": "2013 topps baseball checklist",
+    "number": "266",
+    "team": null,
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": false,
+    "features": "checklist",
+    "notes": "checklist card (not a player).",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.55,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "2013 Topps Baseball Checklist",
+      "brand": "Topps",
+      "team": null,
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "266",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": null,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 5,
+    "name": "jason kipnis",
+    "number": "267",
+    "team": "cleveland indians",
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "mentions 2012: 18 hr, 31 sb; successful in last 18 sb attempts after early struggles.",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "Jason Kipnis",
+      "brand": "Topps",
+      "team": "Cleveland Indians",
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "267",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": "jason kipnis",
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 6,
+    "name": "st. louis cardinals (2012 nlds game 5)",
+    "number": "269",
+    "team": "st. louis cardinals",
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": false,
+    "features": "none",
+    "notes": "recaps cardinals\u2019 9th-inning rally; references pete kozma and carlos beltran.",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "St. Louis Cardinals (2012 NLDS Game 5)",
+      "brand": "Topps",
+      "team": "St. Louis Cardinals",
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "269",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": null,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 7,
+    "name": "manny machado",
+    "number": "270",
+    "team": "baltimore orioles",
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "rookie",
+    "notes": "mentions debut at 20; august 1, 2012 game vs. yankees with both hits to opposite field; helped baltimore return to playoffs.",
+    "value_estimate": "$3.00",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.44,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "Manny Machado",
+      "brand": "Topps",
+      "team": "Baltimore Orioles",
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "270",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": "manny machado",
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 8,
+    "name": "league leaders (2012 national league runs batted in)",
+    "number": "272",
+    "team": null,
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": false,
+    "features": "none",
+    "notes": "not a single-player card; leaders list format.",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.55,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "League Leaders (2012 National League Runs Batted In)",
+      "brand": "Topps",
+      "team": null,
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "272",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": null,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  },
+  {
+    "grid_position": 9,
+    "name": "dexter fowler",
+    "number": "273",
+    "team": "colorado rockies",
+    "copyright_year": "2013",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "mentions 2009\u201311 batting averages and memorial day 2012 5-for-5 with 7 rbi vs. marlins.",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.6,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_8138_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "Dexter Fowler",
+      "brand": "Topps",
+      "team": "Colorado Rockies",
+      "card_set": "2013 Topps Baseball",
+      "copyright_year": "2013",
+      "number": "273",
+      "condition": "Unknown (image only shows backs; corners/edges look generally OK)",
+      "sport": "Baseball"
+    },
+    "canonical_name": "dexter fowler",
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very good",
+        "confidence": 10
+      }
+    ]
+  }
+]

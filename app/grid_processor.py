@@ -227,6 +227,163 @@ def normalize_price(price_str):
     else:
         return f"${int(val)}.00"
 
+
+def normalize_condition(condition_str):
+    """Normalize condition to valid values: mint, near_mint, excellent, very_good, good, fair, poor, damaged."""
+    if not condition_str:
+        return "good"
+
+    cond = str(condition_str).lower().strip()
+
+    # Direct matches
+    valid = ["mint", "near_mint", "excellent", "very_good", "good", "fair", "poor", "damaged"]
+    if cond in valid:
+        return cond
+
+    # Handle variations
+    cond_normalized = cond.replace("-", "_").replace(" ", "_")
+    if cond_normalized in valid:
+        return cond_normalized
+
+    # Keyword matching for verbose descriptions
+    if "mint" in cond and "near" not in cond:
+        return "mint"
+    if "near" in cond and "mint" in cond:
+        return "near_mint"
+    if "excellent" in cond or "exc" in cond:
+        return "excellent"
+    if "very" in cond and "good" in cond:
+        return "very_good"
+    if "fair" in cond:
+        return "fair"
+    if "poor" in cond:
+        return "poor"
+    if "damaged" in cond or "torn" in cond or "water" in cond:
+        return "damaged"
+    if "good" in cond:
+        return "good"
+    if "clean" in cond or "minor" in cond:
+        return "very_good"
+    if "wear" in cond or "worn" in cond:
+        return "good"
+
+    # Default
+    return "good"
+
+
+def normalize_features(features_str):
+    """Normalize features to valid values only."""
+    if not features_str:
+        return "none"
+
+    feat = str(features_str).lower().strip()
+
+    if feat in ("none", "n/a", "null", "unknown", ""):
+        return "none"
+
+    # Valid feature keywords
+    valid_features = [
+        "rookie", "error", "autograph", "auto", "serial numbered", "memorabilia",
+        "relic", "patch", "refractor", "parallel", "short print", "sp",
+        "hall of fame", "hof", "season mvp", "cy young season", "triple crown season",
+        "all-star", "gold", "silver", "chrome", "prizm", "checklist"
+    ]
+
+    # Parse comma-separated features
+    parts = [p.strip() for p in feat.split(",")]
+    normalized = []
+
+    for part in parts:
+        if not part or part in ("none", "n/a"):
+            continue
+        # Check if part contains a valid feature keyword
+        for valid in valid_features:
+            if valid in part:
+                # Use the canonical form
+                if valid == "auto":
+                    normalized.append("autograph")
+                elif valid == "hof":
+                    normalized.append("hall of fame")
+                elif valid == "sp":
+                    normalized.append("short print")
+                else:
+                    normalized.append(valid)
+                break
+        # Skip verbose descriptions that don't match valid features
+
+    if not normalized:
+        return "none"
+
+    return ",".join(sorted(set(normalized)))
+
+
+def normalize_card_set(card_set_str):
+    """Normalize card_set - return 'n/a' for base cards, keep valid subset names."""
+    if not card_set_str:
+        return "n/a"
+
+    cs = str(card_set_str).lower().strip()
+
+    # Already n/a
+    if cs in ("n/a", "na", "none", "null", "unknown", "base", "base set", ""):
+        return "n/a"
+
+    # Valid subset names to keep
+    valid_subsets = [
+        "traded", "update", "chrome", "heritage", "opening day", "archives",
+        "all-star", "rookie cup", "future stars", "record breaker", "draft picks",
+        "prospects", "mini", "tiffany", "gold", "silver", "platinum", "diamond",
+        "refractor", "prizm", "optic", "select", "mosaic", "donruss", "panini"
+    ]
+
+    # Check if it's a valid subset
+    for subset in valid_subsets:
+        if subset in cs:
+            return subset
+
+    # Filter out year+brand combinations like "2012 topps baseball", "1975 topps", etc.
+    # These are not subsets, just descriptions of the base set
+    if re.match(r'^\d{4}\s*(topps|donruss|fleer|upper deck|bowman|score|leaf)', cs):
+        return "n/a"
+
+    # Filter out generic descriptions
+    if "baseball" in cs or "checklist" in cs or "base" in cs:
+        return "n/a"
+
+    # If it's short and doesn't look like a year+brand, keep it
+    if len(cs) < 20 and not re.search(r'\d{4}', cs):
+        return cs
+
+    return "n/a"
+
+
+def normalize_notes(notes_str):
+    """Normalize notes - accept most, only reject clearly useless verbose descriptions."""
+    if not notes_str:
+        return "none"
+
+    n = str(notes_str).lower().strip()
+
+    if len(n) < 3 or n in ("none", "n/a", "na", "null", "unknown", ""):
+        return "none"
+
+    # Only reject clearly verbose/useless GPT filler
+    reject_patterns = [
+        "back shows", "back reads", "back text",
+        "standard topps", "standard design",
+        "mlb logo", "mlbpa logo", "copyright"
+    ]
+
+    for pattern in reject_patterns:
+        if pattern in n:
+            return "none"
+
+    # Accept and truncate if needed
+    if len(n) <= 80:
+        return n
+    return n[:77] + "..."
+
+
 @dataclass
 class GridCard:
     """Represents a card extracted from a grid with position info."""
@@ -250,13 +407,12 @@ class GridProcessor:
 
         Returns: (grid_cards, raw_data)
         """
-        print(f"Processing 3x3 grid with single-pass GPT Vision: {image_path}", file=sys.stderr)
+        print(f"Processing grid with GPT Vision: {image_path}", file=sys.stderr)
 
         # Get example features from database
         feature_examples = self._get_feature_examples()
-        feature_examples_text = ""
         if feature_examples:
-            feature_examples_text = f" Examples from database: {', '.join(feature_examples)}."
+            f" Examples from database: {', '.join(feature_examples)}."
 
         # Load and encode image
         img = Image.open(image_path)
@@ -269,26 +425,24 @@ class GridProcessor:
         img_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
         # Single-pass extraction prompt
-        prompt = f"""This is a 3x3 grid of baseball card BACKS (9 cards total, arranged left-to-right, top-to-bottom).
+        prompt = """Grid of trading card backs, left-to-right top-to-bottom.
 
-Extract data for each card (position 0-8) in this order:
+Extract for each card:
 
-1. name: Player's full name in all lowercase
-2. number: Card number
-3. team: Team name (including city)
-4. copyright_year: Copyright year, usually at bottom
-5. brand: Card brand (Topps, etc.)
-6. card_set: ONLY named special subsets like "Traded", etc. Use 'n/a' for regular base cards. DO NOT use descriptive text about card back type (Mexican, Venezuelan, OPC, chewing gum, etc.)
-7. sport: Sport type (baseball, basketball, etc.)
-8. condition: Physical condition of EACH INDIVIDUAL CARD. Assess each card separately - they can have different conditions. Look for: corners (sharp vs rounded/damaged), edges (clean vs worn/chipped), surface (clean vs scratched/stained/creased), centering (well-centered vs off-center). Use: mint (perfect), near_mint (minor wear), excellent (light wear on corners/edges), very_good (moderate wear, no creases), good (heavy wear or minor creases), fair (major creases/stains), poor (severe damage), damaged (torn/water damaged)
+1. name
+2. number
+3. team
+4. copyright_year
+5. brand
+6. card_set
+7. sport
+8. condition
 9. is_player_card: true/false
-10. features: ONLY special features like "rookie", "error", "autograph", "serial numbered", "memorabilia", etc.{feature_examples_text} Use 'none' if no special features.
-11. notes: ONLY unique card-specific facts like print variations, manufacturing errors, or rarity information (e.g., "short print", "error card - misspelled name", "photo variation"). DO NOT include condition details (that goes in condition field), player stats, or achievements. Use 'none' if no unique aspects.
-12. value_estimate: {VALUE_ESTIMATE_PROMPT}
+10. features
+11. notes
+12. value_estimate
 
-IMPORTANT: Each card can have a DIFFERENT condition - examine each one individually for wear, damage, creasing, and surface issues.
-
-Return structured JSON with a "cards" array containing exactly 9 card objects (position 0-8)."""
+Return JSON with "cards" array."""
 
         # Define structured output schema
         response_schema = {
@@ -381,14 +535,44 @@ Return structured JSON with a "cards" array containing exactly 9 card objects (p
                 'sport': card.get('sport')
             }
 
-        # Lowercase field values for consistency and normalize prices
+        # Lowercase field values for consistency and normalize prices/conditions
         for card in raw_data:
-            for key in ("name", "sport", "brand", "team", "card_set", "condition", "notes"):
+            for key in ("name", "sport", "brand", "team", "card_set", "notes"):
                 if key in card and card[key] is not None and isinstance(card[key], str):
                     card[key] = card[key].lower().strip()
+            # Normalize condition to valid values
+            if 'condition' in card:
+                card['condition'] = normalize_condition(card['condition'])
+            # Normalize features to valid values
+            if 'features' in card:
+                card['features'] = normalize_features(card['features'])
+            # Normalize card_set to valid values
+            if 'card_set' in card:
+                card['card_set'] = normalize_card_set(card['card_set'])
+            # Normalize notes to filter generic descriptions
+            if 'notes' in card:
+                card['notes'] = normalize_notes(card['notes'])
             # Normalize price estimate
             if 'value_estimate' in card:
                 card['value_estimate'] = normalize_price(card['value_estimate'])
+
+        # Add canonical names for player cards using MLB Stats API
+        from app.player_canonical import CanonicalNameService
+        canonical_service = CanonicalNameService()
+
+        for card in raw_data:
+            if card.get('is_player_card', True) and card.get('sport') == 'baseball':
+                player_name = card.get('name')
+                if player_name:
+                    canonical = canonical_service.get_canonical_name(player_name, 'baseball')
+                    card['canonical_name'] = canonical
+
+                    # Track if we couldn't get canonical name
+                    if canonical is None:
+                        card['_canonical_lookup_failed'] = True
+            else:
+                # Non-player cards don't need canonical names
+                card['canonical_name'] = None
 
         # Auto-add Hall of Fame feature for recognized players
         for card in raw_data:
@@ -433,6 +617,8 @@ Return structured JSON with a "cards" array containing exactly 9 card objects (p
         # Apply validation rules to fix known error patterns
         for card in raw_data:
             card.update(self._apply_validation_rules(card))
+
+        # Note: Appearance validation system removed - GPT-5.2 extraction trusted directly
 
         # Store original GPT data for confidence calculation
         original_gpt_data = [card.copy() for card in raw_data]
@@ -627,6 +813,15 @@ def save_grid_cards_to_verification(
         card_dict['_grid_metadata'] = meta
         cards_data.append(card_dict)
 
+    # Save cropped individual back images (needed for UI verification)
+    cropped_dir = out_dir / "pending_verification_cropped_backs"
+    if save_cropped_backs and original_image_path:
+        try:
+            cropped_dir.mkdir(exist_ok=True)
+            _extract_and_save_individual_backs(original_image_path, grid_cards, cropped_dir, filename_stem)
+        except Exception as e:
+            print(f"Failed to save cropped backs: {e}", file=sys.stderr)
+
     # Save JSON file
     filename = out_dir / (
         f"{filename_stem}.json" if filename_stem else f"grid_{len(cards_data)}_cards.json"
@@ -634,15 +829,6 @@ def save_grid_cards_to_verification(
 
     with open(filename, "w") as f:
         json.dump(cards_data, f, indent=2)
-
-    # Save cropped individual back images
-    if save_cropped_backs and original_image_path:
-        try:
-            cropped_dir = out_dir / "pending_verification_cropped_backs"
-            cropped_dir.mkdir(exist_ok=True)
-            _extract_and_save_individual_backs(original_image_path, grid_cards, cropped_dir, filename_stem)
-        except Exception as e:
-            print(f"Failed to save cropped backs: {e}", file=sys.stderr)
 
     print(f"Saved {len(cards_data)} grid cards to {filename}")
     return filename.stem
@@ -700,6 +886,17 @@ def reprocess_grid_image(image_path: str) -> List[Dict]:
     # Use GridProcessor to extract cards
     gp = GridProcessor()
     grid_cards, raw_data = gp.process_3x3_grid(image_path)
+
+    # Save cropped back images for UI verification
+    img_path = Path(image_path)
+    filename_stem = img_path.stem
+    cropped_dir = Path("cards/pending_verification/pending_verification_cropped_backs")
+    cropped_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        _extract_and_save_individual_backs(image_path, grid_cards, cropped_dir, filename_stem)
+    except Exception as e:
+        print(f"Warning: Failed to save cropped backs during reprocessing: {e}", file=sys.stderr)
 
     # Convert GridCard objects to plain dicts
     cards = []

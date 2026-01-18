@@ -609,6 +609,15 @@ function FeaturesSelector({ value, availableFeatures, onChange }) {
   const [showCustomInput, setShowCustomInput] = useState(false);
   const [addedCustomFeatures, setAddedCustomFeatures] = useState([]);
 
+  // Sync selectedFeatures when value prop changes (e.g., when switching cards)
+  useEffect(() => {
+    if (!value || value === 'none') {
+      setSelectedFeatures([]);
+    } else {
+      setSelectedFeatures(value.split(',').map(f => f.trim()).filter(f => f));
+    }
+  }, [value]);
+
   // Only show features that exist in the database, plus custom added features
   const allFeatures = [...new Set([...availableFeatures, ...selectedFeatures, ...addedCustomFeatures])];
 

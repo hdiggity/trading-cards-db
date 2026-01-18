@@ -1,0 +1,4311 @@
+[
+  {
+    "timestamp": "2026-01-18T00:15:28.903Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "ed wojna",
+        "number": "88",
+        "team": "philadelphia phillies",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "ed wojna",
+          "brand": "topps",
+          "team": "philadelphia phillies",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "88",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed wojna",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 1,
+        "name": "wally joyner",
+        "number": "80",
+        "team": "milwaukee brewers",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "wally joyner",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "80",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wally joyner",
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "211",
+        "team": "toronto blue jays",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:15:57.269Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "ed wojna",
+        "number": "88",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "ed wojna",
+          "brand": "topps",
+          "team": "philadelphia phillies",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "88",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "ed wojna",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 1,
+        "name": "wally joyner",
+        "number": "80",
+        "team": "milwaukee brewers",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "wally joyner",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "80",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wally joyner",
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "211",
+        "team": "toronto blue jays",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:16:08.394Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "wally joyner",
+        "number": "80",
+        "team": "milwaukee brewers",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "wally joyner",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "80",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wally joyner",
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "211",
+        "team": "toronto blue jays",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:16:12.968Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "wally joyner",
+        "number": "80",
+        "team": "california angels",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.50",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "wally joyner",
+          "brand": "topps",
+          "team": "california angels",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "80",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wally joyner",
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": 2
+          },
+          {
+            "field": "team",
+            "original": "california angels",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "211",
+        "team": "toronto blue jays",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:16:20.292Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "211",
+        "team": "toronto blue jays",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:16:40.617Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "211",
+        "team": "toronto blue jays",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:16:42.819Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "111",
+        "team": "toronto blue jays",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:16:47.853Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "111",
+        "team": "california angels",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:16:52.868Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "alfredo griffin",
+        "number": "111",
+        "team": "oakland athletics",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "alfredo griffin",
+          "brand": "topps",
+          "team": "toronto blue jays",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "211",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "alfredo griffin",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:17:05.002Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "r.j. reynolds",
+        "number": "109",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "r.j. reynolds",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "109",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "r.j. reynolds",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:17:10.099Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "steve garvey",
+        "number": "100",
+        "team": "san diego padres",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.75",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "steve garvey",
+          "brand": "topps",
+          "team": "san diego padres",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "100",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "steve garvey",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:17:20.099Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "wade boggs",
+        "number": "150",
+        "team": "boston red sox",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$1.50",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "wade boggs",
+          "brand": "topps",
+          "team": "boston red sox",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "150",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "wade boggs",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:17:41.954Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:17:49.184Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "atlanta braves",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:17:49.368Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "paul assenmacher",
+        "number": "132",
+        "team": "atlanta braves",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "paul assenmacher",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "132",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "paul assenmacher",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:17:58.919Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:18:01.384Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "jim beattie",
+        "number": "117",
+        "team": "seattle mariners",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "jim beattie",
+          "brand": "topps",
+          "team": "pittsburgh pirates",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "117",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "jim beattie",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:18:55.146Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "chicago cubs",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ]
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-18T00:18:55.338Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "henry cotto",
+        "number": "174",
+        "team": "other",
+        "copyright_year": "1987",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$0.25",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.6,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_5750_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "henry cotto",
+          "brand": "topps",
+          "team": "chicago cubs",
+          "card_set": "n/a",
+          "copyright_year": "1987",
+          "number": "174",
+          "condition": "very_good",
+          "sport": "baseball"
+        },
+        "canonical_name": "henry cotto",
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 62
+          }
+        ],
+        "_overall_confidence": 0.6,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  }
+]

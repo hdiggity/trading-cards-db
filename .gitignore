@@ -94,3 +94,6 @@ Thumbs.db
 *.temp
 .temp/
 .tmp/
+
+# keep verified originals local only (untouched, not in git)
+cards/verified/originals/

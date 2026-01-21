@@ -134,13 +134,13 @@ class CorrectionTracker:
     def apply_learned_corrections(
         self,
         card_data: Dict,
-        confidence_threshold: int = 2
+        confidence_threshold: int = 4
     ) -> Dict:
         """Apply learned corrections to extracted card data.
 
         Args:
             card_data: Dictionary of card fields from GPT
-            confidence_threshold: Minimum correction occurrences to apply
+            confidence_threshold: Minimum correction occurrences to apply (default 4 to trust GPT more)
 
         Returns:
             Card data with learned corrections applied
@@ -148,9 +148,9 @@ class CorrectionTracker:
         corrected_data = card_data.copy()
         corrections_applied = []
 
-        # Fields to check for corrections
+        # Fields to check for corrections (name excluded - use canonical_names system instead)
         correctable_fields = [
-            'name', 'team', 'brand', 'sport', 'condition',
+            'team', 'brand', 'sport', 'condition',
             'copyright_year', 'card_set'
         ]
 

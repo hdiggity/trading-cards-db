@@ -364,13 +364,13 @@
 }
 
 .quick-btn:hover:not(:disabled) {
-  border-color: #3b82f6;
-  color: #3b82f6;
+  border-color: #6366f1;
+  color: #6366f1;
 }
 
 .quick-btn.active {
-  background: #3b82f6;
-  border-color: #3b82f6;
+  background: #6366f1;
+  border-color: #6366f1;
   color: white;
 }
 
@@ -391,7 +391,7 @@
 
 .process-count-input:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
@@ -412,12 +412,13 @@
 .process-main-btn {
   flex: 1;
   padding: 14px 24px;
-  background: #3b82f6;
+  background: #6366f1;
   border: none;
   border-radius: 8px;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
+  letter-spacing: 0.02em;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -427,11 +428,11 @@
 }
 
 .process-main-btn:hover:not(:disabled) {
-  background: #2563eb;
+  background: #4f46e5;
 }
 
 .process-main-btn:disabled {
-  background: #94a3b8;
+  background: #a5b4fc;
   cursor: not-allowed;
 }
 
@@ -458,12 +459,19 @@
 }
 
 .spinner-sm {
-  width: 16px;
-  height: 16px;
-  border: 2px solid rgba(255,255,255,0.3);
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.25);
   border-top-color: white;
   border-radius: 50%;
-  animation: spin 0.8s linear infinite;
+  animation: spinner-rotate 0.7s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@keyframes spinner-rotate {
+  to { transform: rotate(360deg); }
 }
 
 .secondary-button {
@@ -620,7 +628,7 @@
   left: 0;
   right: 0;
   transform: translateY(-100%);
-  transition: transform 0.35s ease;
+  transition: transform 0.3s ease;
   z-index: 1000;
 }
 
@@ -629,36 +637,70 @@
 }
 
 .top-progress-inner {
-  background: #ffffffcc; /* slightly translucent */
-  backdrop-filter: saturate(180%) blur(10px);
+  background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
-  padding: 10px 16px 14px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 8px 12px;
+  padding: 12px 20px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-progress-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .top-progress-title {
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   color: #111827;
-  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-progress-title .progress-spinner {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #e5e5e5;
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spinner-rotate 0.7s linear infinite;
 }
 
 .top-progress-file {
-  font-size: 0.75rem;
+  font-size: 11px;
   color: #6b7280;
-  margin-bottom: 6px;
+  margin-top: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 600px;
-  font-weight: 500;
+  min-height: 1.2em;
+}
+
+.top-progress-percent {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+  font-variant-numeric: tabular-nums;
+  min-width: 60px;
+  text-align: right;
 }
 
 .progress-track.top {
-  height: 6px;
-  grid-column: 1 / -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #f3f4f6;
+  border-radius: 0;
+}
+
+.progress-track.top .progress-bar {
+  background: #6366f1;
+  transition: width 0.4s ease;
 }
 
 .top-progress-actions {
@@ -667,16 +709,18 @@
 }
 
 .cancel-processing {
-  background: #f9fafb;
-  border: 1px solid #e5e5e5;
-  color: #374151;
+  background: transparent;
+  border: 1px solid #d1d5db;
+  color: #6b7280;
   border-radius: 6px;
-  padding: 6px 10px;
-  font-size: 12px;
-  line-height: 1;
+  padding: 6px 12px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   cursor: pointer;
+  transition: all 0.15s ease;
 }
-.cancel-processing:hover { border-color: #d1d5db; background: #f3f4f6; }
+.cancel-processing:hover { border-color: #9ca3af; color: #374151; }
 
 .learning-section h2 {
   text-align: center;

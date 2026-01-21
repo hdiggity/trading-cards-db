@@ -51,7 +51,7 @@ BEGIN
         value_estimate = NEW.value_estimate,
         notes = NEW.notes,
         quantity = (SELECT COUNT(*) FROM cards_complete WHERE card_id = NEW.card_id),
-        last_updated = NEW.last_updated
+        last_updated = CURRENT_TIMESTAMP
     WHERE id = NEW.card_id;
 END;
 
@@ -73,6 +73,6 @@ BEGIN
         features = NEW.features,
         value_estimate = NEW.value_estimate,
         notes = NEW.notes,
-        last_updated = NEW.last_updated
+        last_updated = CURRENT_TIMESTAMP
     WHERE id = NEW.card_id;
 END;

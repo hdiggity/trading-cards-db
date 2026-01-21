@@ -2187,6 +2187,7 @@ import sys
 from datetime import datetime
 from app.database import get_session
 from app.models import Card
+from app.correction_tracker import CorrectionTracker
 
 card_id = ${parseInt(id)}
 card_data = json.loads(sys.stdin.read())
@@ -2203,12 +2204,46 @@ with get_session() as session:
         print("Card not found", file=sys.stderr)
         sys.exit(1)
 
+    # Capture original values for correction tracking
+    original_values = {
+        'name': card.name,
+        'brand': card.brand,
+        'team': card.team,
+        'card_set': card.card_set,
+        'copyright_year': card.copyright_year,
+        'number': card.number,
+        'condition': card.condition,
+        'sport': card.sport
+    }
+
     # Update fields
     for key, value in card_data.items():
         if hasattr(card, key) and key != 'id':
             setattr(card, key, value)
 
     session.commit()
+
+    # Record corrections for changed fields
+    tracker = CorrectionTracker(db_path="data/corrections.db")
+    track_fields = ['name', 'brand', 'team', 'card_set', 'copyright_year', 'number', 'condition', 'sport']
+    for field in track_fields:
+        if field in card_data:
+            orig = original_values.get(field) or ''
+            new_val = card_data.get(field) or ''
+            orig_norm = str(orig).lower().strip()
+            new_norm = str(new_val).lower().strip()
+            if orig_norm != new_norm and new_norm:
+                tracker.log_correction(
+                    field_name=field,
+                    gpt_value=orig,
+                    corrected_value=new_val,
+                    card_name=card_data.get('name'),
+                    brand=card_data.get('brand'),
+                    sport=card_data.get('sport'),
+                    copyright_year=card_data.get('copyright_year'),
+                    card_set=card_data.get('card_set')
+                )
+
     print("Card updated successfully")
     `], {
       cwd: path.join(__dirname, '../..'),
@@ -3270,16 +3305,21 @@ app.get('/api/cropped-back-image/:filename', async (req, res) => {
   }
 
   // Exact file not found - try position-based fallbacks
-  // filename format: stem_posN_Name_Number.png or stem_posN.png
-  const posMatch = filename.match(/^(.+)_pos(\d+)(?:_.+)?\.png$/);
+  // filename format: stem_posN_Name_Number.ext or stem_posN.ext (png or jpg)
+  const posMatch = filename.match(/^(.+)_pos(\d+)(?:_.+)?\.(png|jpg)$/i);
   if (posMatch) {
     const stem = posMatch[1];
     const pos = posMatch[2];
 
-    // Check verified directory first for position match
+    // Check verified directory first for position match (with or without name suffix, any extension)
     try {
       const verifiedFiles = await fs.readdir(VERIFIED_CROPPED_BACKS_DIR);
+      // Try exact position with suffix first, then without suffix
       let fallback = verifiedFiles.find(f => f.startsWith(stem) && f.includes(`_pos${pos}_`));
+      if (!fallback) {
+        // Match stem_pos1.jpg or stem_pos1.png (no trailing underscore/suffix)
+        fallback = verifiedFiles.find(f => f.match(new RegExp(`^${stem}_pos${pos}\\.(png|jpg)$`, 'i')));
+      }
       if (fallback) {
         return res.sendFile(path.join(VERIFIED_CROPPED_BACKS_DIR, fallback));
       }
@@ -3288,7 +3328,11 @@ app.get('/api/cropped-back-image/:filename', async (req, res) => {
     // Check pending directory for position match
     try {
       const pendingFiles = await fs.readdir(CROPPED_BACKS_DIR);
+      // Try exact position with suffix first, then without suffix
       let fallback = pendingFiles.find(f => f.startsWith(stem) && f.includes(`_pos${pos}_`));
+      if (!fallback) {
+        fallback = pendingFiles.find(f => f.match(new RegExp(`^${stem}_pos${pos}\\.(png|jpg)$`, 'i')));
+      }
       if (fallback) {
         return res.sendFile(path.join(CROPPED_BACKS_DIR, fallback));
       }
@@ -3440,6 +3484,7 @@ import json
 import sys
 from app.database import get_session
 from app.models import CardComplete
+from app.correction_tracker import CorrectionTracker
 
 copy_id = ${parseInt(id)}
 updates = json.loads('''${JSON.stringify(updates).replace(/'/g, "\\'")}''')
@@ -3450,6 +3495,14 @@ with get_session() as session:
         print(json.dumps({"success": False, "error": "Individual card not found"}))
         sys.exit(0)
 
+    # Capture original values for correction tracking
+    original_values = {
+        'condition': copy.condition,
+        'value_estimate': copy.value_estimate,
+        'features': copy.features,
+        'notes': copy.notes
+    }
+
     # Update allowed fields
     allowed_fields = ['condition', 'value_estimate', 'features', 'notes']
     for field in allowed_fields:
@@ -3457,6 +3510,28 @@ with get_session() as session:
             setattr(copy, field, updates[field])
 
     session.commit()
+
+    # Record corrections for changed fields (only condition tracked for learning)
+    tracker = CorrectionTracker(db_path="data/corrections.db")
+    track_fields = ['condition']
+    for field in track_fields:
+        if field in updates:
+            orig = original_values.get(field) or ''
+            new_val = updates.get(field) or ''
+            orig_norm = str(orig).lower().strip()
+            new_norm = str(new_val).lower().strip()
+            if orig_norm != new_norm and new_norm:
+                tracker.log_correction(
+                    field_name=field,
+                    gpt_value=orig,
+                    corrected_value=new_val,
+                    card_name=copy.name,
+                    brand=copy.brand,
+                    sport=copy.sport,
+                    copyright_year=copy.copyright_year,
+                    card_set=copy.card_set
+                )
+
     print(json.dumps({"success": True, "id": copy.id}))
     `], {
       cwd: path.join(__dirname, '../..')

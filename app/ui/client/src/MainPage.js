@@ -280,18 +280,22 @@ function MainPage() {
         aria-live="polite"
       >
         <div className="top-progress-inner">
-          <div className="top-progress-title">
-            {bgTotal > 0 ? (
-              <>PROCESSING {bgCurrent} OF {bgTotal} ({bgProgress}%)</>
-            ) : (
-              <>PROCESSING RAW SCANS... {bgProgress}%</>
-            )}
-          </div>
-          {(bgCurrentFile || bgSubstep) && (
-            <div className="top-progress-file">
-              {bgCurrentFile}{bgCurrentFile && bgSubstep ? ' — ' : ''}{bgSubstep}
+          <div className="top-progress-info">
+            <div className="top-progress-title">
+              <span className="progress-spinner"></span>
+              {bgTotal > 0 ? (
+                <>PROCESSING {bgCurrent + 1} OF {bgTotal}</>
+              ) : (
+                <>PROCESSING</>
+              )}
             </div>
-          )}
+            <div className="top-progress-file">
+              {bgCurrentFile || bgSubstep ? (
+                <>{bgCurrentFile}{bgSubstep ? ` · ${bgSubstep}` : ''}</>
+              ) : '\u00A0'}
+            </div>
+          </div>
+          <div className="top-progress-percent">{bgProgress}%</div>
           <div className="top-progress-actions">
             <button
               className="cancel-processing"

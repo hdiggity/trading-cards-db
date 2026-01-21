@@ -358,7 +358,7 @@ def normalize_card_set(card_set_str):
 
 
 def normalize_notes(notes_str):
-    """Normalize notes - accept most, only reject clearly useless verbose descriptions."""
+    """Normalize notes - reject unhelpful patterns, keep unique card-specific info."""
     if not notes_str:
         return "none"
 
@@ -367,11 +367,16 @@ def normalize_notes(notes_str):
     if len(n) < 3 or n in ("none", "n/a", "na", "null", "unknown", ""):
         return "none"
 
-    # Only reject clearly verbose/useless GPT filler
+    # Reject unhelpful patterns that just restate other fields
     reject_patterns = [
         "back shows", "back reads", "back text",
         "standard topps", "standard design",
-        "mlb logo", "mlbpa logo", "copyright"
+        "mlb logo", "mlbpa logo", "copyright",
+        "checklist card", "not a player", "not a single-player card",
+        "leaders list format", "multi-player card",
+        "bio notes",
+        "team card", "team records", "pennant winners", "batting/pitching",
+        "summarizing", "historical"
     ]
 
     for pattern in reject_patterns:
@@ -382,6 +387,80 @@ def normalize_notes(notes_str):
     if len(n) <= 80:
         return n
     return n[:77] + "..."
+
+
+def normalize_team(team_str, card_data):
+    """Normalize team - strip suffixes, keep only city + team name."""
+    if not team_str:
+        return None
+
+    t = str(team_str).lower().strip()
+
+    if t in ("n/a", "na", "null", "unknown", ""):
+        return None
+
+    # Known MLB team names (for detecting team names in parentheses)
+    mlb_teams = {
+        'angels', 'astros', 'athletics', 'blue jays', 'braves', 'brewers',
+        'cardinals', 'cubs', 'diamondbacks', 'dodgers', 'giants', 'guardians',
+        'indians', 'mariners', 'marlins', 'mets', 'nationals', 'orioles',
+        'padres', 'phillies', 'pirates', 'rangers', 'rays', 'red sox',
+        'reds', 'rockies', 'royals', 'tigers', 'twins', 'white sox', 'yankees',
+        'expos', 'senators', 'pilots', 'browns', 'colt .45s', 'colts'
+    }
+
+    # Check if parentheses contain a team name (use it) vs descriptor (strip it)
+    paren_match = re.search(r'\(([^)]+)\)\s*$', t)
+    if paren_match:
+        paren_content = paren_match.group(1).strip()
+        # If parentheses contain a known team name, combine city with team name
+        if any(team in paren_content for team in mlb_teams):
+            city_part = re.sub(r'\s*\([^)]*\)\s*$', '', t).strip()
+            city_part = re.sub(r'\s+(n\.?l\.?|a\.?l\.?)\s*$', '', city_part, flags=re.IGNORECASE).strip()
+            if city_part:
+                t = f"{city_part} {paren_content}"
+            else:
+                t = paren_content
+        else:
+            # Strip non-team parentheticals like (mlb), (news item), (trade)
+            t = re.sub(r'\s*\([^)]*\)\s*$', '', t).strip()
+
+    # Check if card is checklist or league leaders based on name/features
+    name = (card_data.get('name') or '').lower()
+    is_player = card_data.get('is_player_card', True)
+
+    if not is_player:
+        # Non-player cards that involve multiple teams
+        if any(kw in name for kw in ['checklist', 'league leaders', 'leaders (']):
+            return "multiple"
+
+    return t if t else None
+
+
+def normalize_name(name_str):
+    """Normalize name - convert parentheses to semicolons for multiple names."""
+    if not name_str:
+        return None
+
+    n = str(name_str).strip()
+
+    # Convert patterns like "Name (Other Info)" to "name; other info"
+    # But only for multi-name cards, not descriptive parentheses
+    # Pattern: "league leaders (2012 national league runs batted in)" stays as-is
+    # Pattern: "john doe (mike smith, bob jones)" becomes "john doe; mike smith; bob jones"
+
+    # Check if parentheses contain names (commas inside = likely multiple names)
+    match = re.match(r'^([^(]+)\(([^)]+)\)$', n)
+    if match:
+        main_part = match.group(1).strip()
+        paren_part = match.group(2).strip()
+
+        # If paren contains comma-separated items that look like names, convert
+        if ',' in paren_part and not any(kw in paren_part.lower() for kw in ['league', 'year', 'game', 'season']):
+            names = [main_part] + [p.strip() for p in paren_part.split(',')]
+            return '; '.join(names).lower()
+
+    return n.lower()
 
 
 @dataclass
@@ -397,17 +476,23 @@ class GridCard:
 class GridProcessor:
     """Simple single-pass GPT Vision processor for 3x3 grid card backs."""
 
-    def process_3x3_grid(self, image_path: str, front_images_dir: Path = None) -> Tuple[List[GridCard], List[Dict]]:
+    def process_3x3_grid(self, image_path: str, front_images_dir: Path = None, progress_callback=None) -> Tuple[List[GridCard], List[Dict]]:
         """Process a 3x3 grid of card backs with single-pass GPT Vision
         extraction.
 
         Args:
             image_path: Path to the 3x3 grid image
             front_images_dir: Ignored (no front matching)
+            progress_callback: Optional callback(substep, detail) for progress updates
 
         Returns: (grid_cards, raw_data)
         """
-        print(f"Processing grid with GPT Vision: {image_path}", file=sys.stderr)
+        def report(substep, detail=""):
+            if progress_callback:
+                progress_callback(substep, detail)
+            print(f"[{substep}] {detail}", file=sys.stderr) if detail else print(f"[{substep}]", file=sys.stderr)
+
+        report("gpt_extraction", f"Sending to GPT Vision: {image_path}")
 
         # Get example features from database
         feature_examples = self._get_feature_examples()
@@ -429,7 +514,7 @@ class GridProcessor:
 
 Extract for each card:
 
-1. name
+1. name (full name including last name)
 2. number
 3. team
 4. copyright_year
@@ -439,8 +524,12 @@ Extract for each card:
 8. condition
 9. is_player_card: true/false
 10. features
-11. notes
+11. notes (what makes this card unique - specific stats, game highlights, milestones)
 12. value_estimate
+
+IMPORTANT: Never return null or empty strings for name, number, brand, or sport fields.
+If you cannot determine a value, use your best guess based on the card image.
+For sport, default to "baseball" if unclear.
 
 Return JSON with "cards" array."""
 
@@ -521,6 +610,19 @@ Return JSON with "cards" array."""
             card.setdefault('grid_position', i)
             card.setdefault('_grid_metadata', {"position": i, "row": i // 3, "col": i % 3})
 
+        # Validate required fields - flag blanks for manual review
+        required_fields = ['name', 'number', 'brand', 'sport']
+        for card in raw_data:
+            for field in required_fields:
+                value = card.get(field)
+                if not value or (isinstance(value, str) and not value.strip()):
+                    if field == 'sport':
+                        card[field] = 'baseball'  # Default sport
+                    else:
+                        card[field] = 'unknown'
+                    card['_blank_field_warning'] = card.get('_blank_field_warning', [])
+                    card['_blank_field_warning'].append(field)
+
         # Store original GPT extraction before any modifications
         # This preserves what GPT actually extracted for correction tracking
         for card in raw_data:
@@ -535,44 +637,13 @@ Return JSON with "cards" array."""
                 'sport': card.get('sport')
             }
 
-        # Lowercase field values for consistency and normalize prices/conditions
-        for card in raw_data:
-            for key in ("name", "sport", "brand", "team", "card_set", "notes"):
-                if key in card and card[key] is not None and isinstance(card[key], str):
-                    card[key] = card[key].lower().strip()
-            # Normalize condition to valid values
-            if 'condition' in card:
-                card['condition'] = normalize_condition(card['condition'])
-            # Normalize features to valid values
-            if 'features' in card:
-                card['features'] = normalize_features(card['features'])
-            # Normalize card_set to valid values
-            if 'card_set' in card:
-                card['card_set'] = normalize_card_set(card['card_set'])
-            # Normalize notes to filter generic descriptions
-            if 'notes' in card:
-                card['notes'] = normalize_notes(card['notes'])
-            # Normalize price estimate
-            if 'value_estimate' in card:
-                card['value_estimate'] = normalize_price(card['value_estimate'])
+        report("post_processing", "Starting post-processing")
 
-        # Add canonical names for player cards using MLB Stats API
+        # Initialize canonical name service (used after normalization)
         from app.player_canonical import CanonicalNameService
         canonical_service = CanonicalNameService()
 
-        for card in raw_data:
-            if card.get('is_player_card', True) and card.get('sport') == 'baseball':
-                player_name = card.get('name')
-                if player_name:
-                    canonical = canonical_service.get_canonical_name(player_name, 'baseball')
-                    card['canonical_name'] = canonical
-
-                    # Track if we couldn't get canonical name
-                    if canonical is None:
-                        card['_canonical_lookup_failed'] = True
-            else:
-                # Non-player cards don't need canonical names
-                card['canonical_name'] = None
+        report("feature_detection", "Detecting special features")
 
         # Auto-add Hall of Fame feature for recognized players
         for card in raw_data:
@@ -623,6 +694,8 @@ Return JSON with "cards" array."""
         # Store original GPT data for confidence calculation
         original_gpt_data = [card.copy() for card in raw_data]
 
+        report("learned_corrections", "Applying learned corrections")
+
         # Apply learned corrections from previous manual fixes
         for i, card in enumerate(raw_data):
             raw_data[i] = correction_tracker.apply_learned_corrections(card)
@@ -633,6 +706,69 @@ Return JSON with "cards" array."""
             if predicted_condition:
                 raw_data[i]['condition'] = predicted_condition
                 raw_data[i]['_condition_predicted'] = True
+
+        report("normalization", "Final normalization pass")
+
+        # Final normalization pass (AFTER learned corrections to ensure consistency)
+        for card in raw_data:
+            for key in ("sport", "brand", "card_set", "notes"):
+                if key in card and card[key] is not None and isinstance(card[key], str):
+                    card[key] = card[key].lower().strip()
+            if 'name' in card:
+                card['name'] = normalize_name(card['name'])
+            if 'team' in card:
+                card['team'] = normalize_team(card['team'], card)
+            if 'condition' in card:
+                card['condition'] = normalize_condition(card['condition'])
+            if 'features' in card:
+                card['features'] = normalize_features(card['features'])
+            if 'card_set' in card:
+                card['card_set'] = normalize_card_set(card['card_set'])
+            if 'notes' in card:
+                card['notes'] = normalize_notes(card['notes'])
+            if 'value_estimate' in card:
+                card['value_estimate'] = normalize_price(card['value_estimate'])
+
+        # Add canonical names for player cards using MLB Stats API
+        # (after normalization so sport field is lowercase)
+        report("canonical_names", "Looking up canonical names")
+
+        for card in raw_data:
+            if card.get('is_player_card', True) and card.get('sport') == 'baseball':
+                player_name = card.get('name')
+                if player_name:
+                    canonical = canonical_service.get_canonical_name(player_name, 'baseball')
+                    card['canonical_name'] = canonical
+
+                    # Track if we couldn't get canonical name
+                    if canonical is None:
+                        card['_canonical_lookup_failed'] = True
+            else:
+                # Non-player cards don't need canonical names
+                card['canonical_name'] = None
+
+        report("name_standardization", "Applying name standardization")
+
+        # Apply name standardization from canonical_names cache
+        # (e.g., "brent terry strom" -> "brent strom")
+        for card in raw_data:
+            if card.get('name') and card.get('sport') == 'baseball':
+                standard = canonical_service.get_standard_name(card['name'])
+                if standard:
+                    card['name'] = standard
+
+        # Validate rare features - if too many cards have "autograph", it's likely a false positive
+        autograph_count = sum(1 for card in raw_data if 'autograph' in (card.get('features') or ''))
+        if autograph_count > 2:
+            print(f"Warning: {autograph_count}/9 cards detected as autograph - removing as likely false positive", file=sys.stderr)
+            for card in raw_data:
+                features = card.get('features', 'none')
+                if 'autograph' in features:
+                    # Remove autograph from features
+                    parts = [f.strip() for f in features.split(',') if f.strip() and 'autograph' not in f.strip()]
+                    card['features'] = ','.join(parts) if parts else 'none'
+
+        report("finalizing", "Creating card objects")
 
         # Create GridCard objects
         grid_cards = []
@@ -846,15 +982,19 @@ def _extract_and_save_individual_backs(image_path: str, grid_cards: List[GridCar
         card_width = width // 3
         card_height = height // 3
 
+        # Add padding to avoid overcropping (5% on each side)
+        pad_x = int(card_width * 0.05)
+        pad_y = int(card_height * 0.05)
+
         for grid_card in grid_cards:
-            # Calculate crop coordinates
+            # Calculate crop coordinates with padding (undercrop)
             col = grid_card.col
             row = grid_card.row
 
-            left = col * card_width
-            top = row * card_height
-            right = left + card_width
-            bottom = top + card_height
+            left = max(0, col * card_width - pad_x)
+            top = max(0, row * card_height - pad_y)
+            right = min(width, (col + 1) * card_width + pad_x)
+            bottom = min(height, (row + 1) * card_height + pad_y)
 
             # Crop individual card
             cropped_card = img.crop((left, top, right, bottom))

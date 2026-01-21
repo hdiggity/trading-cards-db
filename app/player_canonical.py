@@ -148,6 +148,24 @@ class CanonicalNameService:
 
         return canonical
 
+    def get_standard_name(self, input_name: str, sport: str = "baseball") -> Optional[str]:
+        """Get standard name from cache without API lookup.
+
+        Used during post-processing to standardize name variations
+        (e.g., "brent terry strom" -> "brent strom").
+
+        Returns the cached canonical_name if it exists and differs from
+        input, otherwise returns None (no change needed).
+        """
+        if not input_name:
+            return None
+        normalized = input_name.lower().strip()
+        cached = self._get_from_cache(normalized, sport)
+        # Only return if we have a cached mapping that differs from input
+        if cached and cached != normalized:
+            return cached
+        return None
+
     def _get_from_cache(self, input_name: str, sport: str) -> Optional[str]:
         """Retrieve canonical name from cache."""
         conn = sqlite3.connect(self.cache_db_path)

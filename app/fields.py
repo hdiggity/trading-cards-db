@@ -42,7 +42,7 @@ db_only_field_specs = [
     (
         "last_updated",
         Optional[str],
-        lambda: Column(DateTime, onupdate=func.now()),
+        lambda: Column(DateTime, server_default=func.now(), onupdate=func.now()),
         None,
     ),
 ]

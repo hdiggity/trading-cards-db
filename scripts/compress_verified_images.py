@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""High-quality image compression for verified trading card images.
+"""Image compression for verified trading card images.
 
-This script compresses images while maintaining visual quality:
-- PNG files: Convert to high-quality JPEG (95% quality) or optimize PNG
-- JPEG files: Re-optimize with quality=92
+Flow:
+1. Original uncompressed image is MOVED to cards/verified/originals/ (gitignored)
+2. Compressed JPEG copy is created in the original location (tracked by git)
 
-Original files are backed up to cards/verified/originals/ (not tracked by git)
+This keeps originals safe while only committing compressed versions.
 """
 
 import os
@@ -16,17 +16,15 @@ from pathlib import Path
 from PIL import Image
 from pillow_heif import register_heif_opener
 
-# Register HEIF/HEIC support
 register_heif_opener()
 
 # Compression settings
-JPEG_QUALITY = 95  # 95% quality - visually lossless
+JPEG_QUALITY = 85  # Good balance of quality and size
 JPEG_OPTIMIZE = True
-JPEG_PROGRESSIVE = True  # Progressive JPEGs load faster
-PNG_OPTIMIZE_LEVEL = 6  # 0-9, higher = smaller but slower
+JPEG_PROGRESSIVE = True
 
-# Backup directory for originals (add to .gitignore)
-BACKUP_DIR = Path("cards/verified/originals")
+# Originals directory (gitignored)
+ORIGINALS_DIR = Path("cards/verified/originals")
 
 
 def get_file_size_mb(filepath):
@@ -34,48 +32,55 @@ def get_file_size_mb(filepath):
     return os.path.getsize(filepath) / (1024 * 1024)
 
 
-def backup_original(filepath):
-    """Backup original file before compression."""
+def move_to_originals(filepath):
+    """Move original file to originals directory."""
     filepath = Path(filepath)
 
-    # Create backup directory structure
+    # Create originals directory structure matching source
     relative_path = filepath.relative_to("cards/verified")
-    backup_path = BACKUP_DIR / relative_path
-    backup_path.parent.mkdir(parents=True, exist_ok=True)
+    originals_path = ORIGINALS_DIR / relative_path
+    originals_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Only backup if not already backed up
-    if not backup_path.exists():
-        shutil.copy2(filepath, backup_path)
-        return True
-    return False
+    # Move original (don't overwrite if exists)
+    if not originals_path.exists():
+        shutil.move(str(filepath), str(originals_path))
+        return originals_path
+    else:
+        # Original already exists, just delete the duplicate
+        filepath.unlink()
+        return originals_path
 
 
-def compress_png_or_heic(filepath, source_format='PNG'):
-    """Compress PNG/HEIC file by converting to high-quality JPEG.
-
-    For trading card scans, JPEG at 95% quality is visually identical to
-    PNG/HEIC but 80-90% smaller in file size.
-    """
+def compress_image(filepath):
+    """Compress image: move original to originals/, create compressed copy for git."""
     filepath = Path(filepath)
+
+    if not filepath.exists():
+        print(f"  Skipped (not found): {filepath}")
+        return None
+
     original_size = get_file_size_mb(filepath)
+    filepath.suffix.lower()
 
-    # Backup original
-    backed_up = backup_original(filepath)
+    # Output will always be .jpg in the same location
+    output_path = filepath.with_suffix('.jpg')
 
-    # Open and convert
+    # Open image
     with Image.open(filepath) as img:
-        # Convert to RGB if needed (remove alpha channel)
+        # Convert to RGB if needed
         if img.mode in ('RGBA', 'LA', 'P'):
             background = Image.new('RGB', img.size, (255, 255, 255))
             if img.mode == 'P':
                 img = img.convert('RGBA')
-            background.paste(img, mask=img.split()[-1] if img.mode in ('RGBA', 'LA') else None)
+            if img.mode in ('RGBA', 'LA'):
+                background.paste(img, mask=img.split()[-1])
+            else:
+                background.paste(img)
             img = background
         elif img.mode != 'RGB':
             img = img.convert('RGB')
 
-        # Save as JPEG with high quality
-        output_path = filepath.with_suffix('.jpeg')
+        # Save compressed copy
         img.save(
             output_path,
             'JPEG',
@@ -84,82 +89,17 @@ def compress_png_or_heic(filepath, source_format='PNG'):
             progressive=JPEG_PROGRESSIVE
         )
 
-    # Remove original file
-    if output_path != filepath:
-        filepath.unlink()
-
     new_size = get_file_size_mb(output_path)
-    reduction = ((original_size - new_size) / original_size) * 100
 
-    print(f"  {source_format}→JPEG: {filepath.name}")
-    print(f"    {original_size:.2f}MB → {new_size:.2f}MB ({reduction:.1f}% smaller)")
-    if backed_up:
-        print(f"    Original backed up to: {BACKUP_DIR / filepath.relative_to('cards/verified')}")
+    # Move original to originals/ (if not already a jpg we just created)
+    if filepath != output_path:
+        move_to_originals(filepath)
+        print(f"  {filepath.name} -> originals/")
+
+    reduction = ((original_size - new_size) / original_size) * 100 if original_size > 0 else 0
+    print(f"  Compressed: {output_path.name} ({original_size:.2f}MB -> {new_size:.2f}MB, {reduction:.0f}% smaller)")
 
     return output_path
-
-
-def compress_jpeg(filepath):
-    """Re-optimize JPEG file with high quality settings."""
-    filepath = Path(filepath)
-    original_size = get_file_size_mb(filepath)
-
-    # Backup original
-    backed_up = backup_original(filepath)
-
-    # Open and re-save with optimization
-    with Image.open(filepath) as img:
-        # Preserve EXIF data
-        exif = img.info.get('exif', None)
-
-        # Save to temporary file first
-        temp_path = filepath.with_suffix('.tmp.jpg')
-        save_kwargs = {
-            'quality': JPEG_QUALITY,
-            'optimize': JPEG_OPTIMIZE,
-            'progressive': JPEG_PROGRESSIVE
-        }
-        if exif:
-            save_kwargs['exif'] = exif
-
-        img.save(temp_path, 'JPEG', **save_kwargs)
-
-    # Replace original only if new file is smaller
-    new_size = get_file_size_mb(temp_path)
-    if new_size < original_size:
-        temp_path.replace(filepath)
-        reduction = ((original_size - new_size) / original_size) * 100
-        print(f"  Optimized: {filepath.name}")
-        print(f"    {original_size:.2f}MB → {new_size:.2f}MB ({reduction:.1f}% smaller)")
-        if backed_up:
-            print(f"    Original backed up to: {BACKUP_DIR / filepath.relative_to('cards/verified')}")
-    else:
-        # New file not smaller, keep original
-        temp_path.unlink()
-        print(f"  Skipped: {filepath.name} (already optimized)")
-
-    return filepath
-
-
-def compress_image(filepath):
-    """Compress image based on file type."""
-    filepath = Path(filepath)
-
-    if not filepath.exists():
-        print(f"Error: File not found: {filepath}")
-        return None
-
-    ext = filepath.suffix.lower()
-
-    if ext in ('.png',):
-        return compress_png_or_heic(filepath, 'PNG')
-    elif ext in ('.heic', '.heif'):
-        return compress_png_or_heic(filepath, 'HEIC')
-    elif ext in ('.jpg', '.jpeg'):
-        return compress_jpeg(filepath)
-    else:
-        print(f"Unsupported file type: {ext}")
-        return None
 
 
 def main():
@@ -169,20 +109,8 @@ def main():
 
     image_path = sys.argv[1]
 
-    # Ensure backup dir exists and is in .gitignore
-    BACKUP_DIR.mkdir(parents=True, exist_ok=True)
-
-    gitignore_path = Path("cards/verified/.gitignore")
-    gitignore_path.parent.mkdir(parents=True, exist_ok=True)
-
-    # Add originals/ to .gitignore if not present
-    if gitignore_path.exists():
-        content = gitignore_path.read_text()
-        if 'originals/' not in content:
-            with open(gitignore_path, 'a') as f:
-                f.write('\n# Original uncompressed images (backup)\noriginals/\n')
-    else:
-        gitignore_path.write_text('# Original uncompressed images (backup)\noriginals/\n')
+    # Ensure originals dir exists
+    ORIGINALS_DIR.mkdir(parents=True, exist_ok=True)
 
     # Compress the image
     result = compress_image(image_path)

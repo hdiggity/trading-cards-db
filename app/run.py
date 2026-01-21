@@ -18,7 +18,7 @@ BACK_IMAGES_DIR = Path("cards/unprocessed_bulk_back")
 PROGRESS_FILE = Path("logs/processing_progress.json")
 
 
-def update_progress(current: int, total: int, current_file: str = "", status: str = "processing"):
+def update_progress(current: int, total: int, current_file: str = "", status: str = "processing", substep: str = "", detail: str = ""):
     """Write progress to file for UI to read."""
     try:
         PROGRESS_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -28,6 +28,8 @@ def update_progress(current: int, total: int, current_file: str = "", status: st
             "percent": int((current / max(total, 1)) * 100),
             "current_file": current_file,
             "status": status,
+            "substep": substep,
+            "detail": detail,
             "timestamp": datetime.datetime.now().isoformat()
         }
         with open(PROGRESS_FILE, "w") as f:
@@ -104,7 +106,7 @@ def _is_probable_3x3_grid(image_path: Path) -> bool:
         return False
 
 
-def process_and_move(image_path: Path, use_grid_processing: bool = False):
+def process_and_move(image_path: Path, use_grid_processing: bool = False, current_idx: int = 0, total_count: int = 1):
     print(f"processing: {image_path.name}")
     
     # Log upload and processing start
@@ -136,9 +138,15 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             if not disable_front and FRONT_IMAGES_DIR.exists():
                 front_dir = FRONT_IMAGES_DIR
 
+            # Progress callback for substep updates
+            def progress_cb(substep, detail=""):
+                update_progress(current_idx, total_count,
+                               image_path.name, "processing", substep, detail)
+
             grid_cards, raw_data = grid_processor.process_3x3_grid(
                 str(image_path),
-                front_images_dir=front_dir
+                front_images_dir=front_dir,
+                progress_callback=progress_cb
             )
 
             processing_time = time.time() - start_time
@@ -146,6 +154,7 @@ def process_and_move(image_path: Path, use_grid_processing: bool = False):
             disable_tcdb = os.getenv("DISABLE_TCDB_VERIFICATION", "false").lower() == "true"
 
             # Save grid cards FIRST - if this fails, nothing has been moved
+            update_progress(current_idx, total_count, image_path.name, "processing", "saving", "Saving to verification")
             save_grid_cards_to_verification(
                 grid_cards,
                 out_dir=PENDING_VERIFICATION_DIR,
@@ -227,13 +236,14 @@ def process_all_raw_scans():
     ]
     if not images:
         print("no images found.")
-    for image_path in images:
+    total = len(images)
+    for i, image_path in enumerate(images):
         print(f"found image: {image_path.name}")
         # Try to detect 3x3 grid backs and route accordingly for better performance
         use_grid = _is_probable_3x3_grid(image_path)
         if use_grid:
             print(f"detected probable 3x3 grid layout for {image_path.name}")
-        process_and_move(image_path, use_grid_processing=use_grid)
+        process_and_move(image_path, use_grid_processing=use_grid, current_idx=i, total_count=total)
 
 
 def process_3x3_grid_backs(file_list_path=None):
@@ -295,7 +305,7 @@ def process_3x3_grid_backs(file_list_path=None):
     for i, image_path in enumerate(back_images):
         update_progress(i, total, image_path.name, "processing")
         print(f"[{i+1}/{total}] Processing: {image_path.name}")
-        process_and_move(image_path, use_grid_processing=True)
+        process_and_move(image_path, use_grid_processing=True, current_idx=i, total_count=total)
         update_progress(i + 1, total, image_path.name, "completed")
 
     update_progress(total, total, "", "done")

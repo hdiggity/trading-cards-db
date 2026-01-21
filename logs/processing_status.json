@@ -1,12 +1,12 @@
 {
   "active": false,
-  "pid": 22772,
-  "logFile": "/Users/harlan/Documents/personal/code/programs/trading_cards_db/logs/process_bulk_back_2026-01-08T19-27-32-560Z.log",
-  "startedAt": "2026-01-08T19:27:32.590Z",
+  "pid": 1504,
+  "logFile": "/Users/harlan/Documents/personal/code/programs/trading_cards_db/logs/process_bulk_back_2026-01-21T08-44-47-962Z.log",
+  "startedAt": "2026-01-21T08:44:47.976Z",
   "total": 1,
   "remaining": 0,
   "progress": 100,
-  "finishedAt": "2026-01-08T19:27:32.647Z",
-  "exitCode": 1,
+  "finishedAt": "2026-01-21T08:45:41.038Z",
+  "exitCode": 0,
   "signal": null
 }

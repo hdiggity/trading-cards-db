@@ -7,11 +7,13 @@ Includes condition prediction based on card metadata and manual
 corrections.
 
 Learning system for field corrections and automatic quality improvement.
+Enhanced with ML tracking for unsupervised correction learning.
 """
 
 import sqlite3
+from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 
 class CorrectionTracker:
@@ -23,7 +25,7 @@ class CorrectionTracker:
         self._init_db()
 
     def _init_db(self):
-        """Initialize corrections database."""
+        """Initialize corrections database with schema migrations."""
         Path(self.db_path).parent.mkdir(parents=True, exist_ok=True)
 
         conn = sqlite3.connect(self.db_path)
@@ -34,7 +36,7 @@ class CorrectionTracker:
         table_exists = cursor.fetchone() is not None
 
         if not table_exists:
-            # Create new table matching actual schema
+            # Create new table with full schema including ML columns
             cursor.execute("""
                 CREATE TABLE corrections (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -46,6 +48,9 @@ class CorrectionTracker:
                     sport TEXT,
                     card_set TEXT,
                     context TEXT,
+                    ml_prediction TEXT,
+                    ml_confidence REAL,
+                    correction_source TEXT DEFAULT 'user',
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
@@ -60,8 +65,62 @@ class CorrectionTracker:
                 ON corrections(brand, sport)
             """)
 
+            cursor.execute("""
+                CREATE INDEX idx_corrections_created_at
+                ON corrections(created_at)
+            """)
+        else:
+            # Run migrations for existing databases
+            self._run_migrations(cursor)
+
+        # Create ML training metadata table if not exists
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS ml_training_metadata (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                last_train_time TIMESTAMP,
+                corrections_count_at_train INTEGER,
+                model_version TEXT,
+                accuracy_stats TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+
         conn.commit()
         conn.close()
+
+    def _run_migrations(self, cursor):
+        """Run schema migrations for existing databases."""
+        # Get existing columns
+        cursor.execute("PRAGMA table_info(corrections)")
+        existing_columns = {row[1] for row in cursor.fetchall()}
+
+        # Add ML tracking columns if missing
+        new_columns = [
+            ("ml_prediction", "TEXT"),
+            ("ml_confidence", "REAL"),
+            ("correction_source", "TEXT DEFAULT 'user'")
+        ]
+
+        for col_name, col_type in new_columns:
+            if col_name not in existing_columns:
+                try:
+                    cursor.execute(f"ALTER TABLE corrections ADD COLUMN {col_name} {col_type}")
+                except sqlite3.OperationalError:
+                    pass  # Column already exists
+
+        # Add index on created_at if not exists
+        cursor.execute("""
+            SELECT name FROM sqlite_master
+            WHERE type='index' AND name='idx_corrections_created_at'
+        """)
+        if cursor.fetchone() is None:
+            try:
+                cursor.execute("""
+                    CREATE INDEX idx_corrections_created_at
+                    ON corrections(created_at)
+                """)
+            except sqlite3.OperationalError:
+                pass
 
     def log_correction(
         self,
@@ -73,9 +132,28 @@ class CorrectionTracker:
         brand: Optional[str] = None,
         sport: Optional[str] = None,
         copyright_year: Optional[str] = None,
-        card_set: Optional[str] = None
+        card_set: Optional[str] = None,
+        ml_prediction: Optional[str] = None,
+        ml_confidence: Optional[float] = None,
+        correction_source: str = 'user'
     ):
-        """Log a manual correction for learning."""
+        """Log a manual correction for learning.
+
+        Args:
+            field_name: Name of the field being corrected
+            gpt_value: Original value from GPT extraction
+            corrected_value: User's corrected value
+            card_name: Name of the card (for context)
+            image_filename: Source image filename
+            brand: Card brand
+            sport: Card sport
+            copyright_year: Card copyright year
+            card_set: Card set name
+            ml_prediction: ML predicted value if ML override was applied
+            ml_confidence: ML confidence score if ML override was applied
+            correction_source: 'user' or 'ml_override' indicating if user
+                               corrected an ML prediction
+        """
         # Skip if values are the same
         if gpt_value == corrected_value:
             return
@@ -91,14 +169,16 @@ class CorrectionTracker:
             context_parts.append(f"file:{image_filename}")
         context = "|".join(context_parts) if context_parts else None
 
-        # Use actual database schema column names
+        # Use actual database schema column names including ML columns
         cursor.execute("""
             INSERT INTO corrections (
                 field, original_value, corrected_value,
-                brand, year, sport, card_set, context
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                brand, year, sport, card_set, context,
+                ml_prediction, ml_confidence, correction_source
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (field_name, gpt_value, corrected_value,
-              brand, copyright_year, sport, card_set, context))
+              brand, copyright_year, sport, card_set, context,
+              ml_prediction, ml_confidence, correction_source))
 
         conn.commit()
         conn.close()
@@ -479,4 +559,273 @@ class CorrectionTracker:
         if card_data.get('_team_autocompleted'):
             confidence = min(1.0, confidence + 0.05)
 
-        return round(confidence, 2)
+        # ML confidence boost/penalty (Phase 6 enhancement)
+        ml_boost = 0.0
+        ml_trackable_fields = [
+            'name', 'brand', 'team', 'card_set', 'copyright_year',
+            'number', 'condition', 'sport', 'features', 'notes'
+        ]
+
+        for field in ml_trackable_fields:
+            if card_data.get(f'_ml_{field}_applied'):
+                ml_confidence = card_data.get(f'_ml_{field}_confidence', 0)
+                if ml_confidence >= 0.92:
+                    ml_boost += 0.03  # High-confidence ML override
+
+        # Cap ML boost at 0.10
+        ml_boost = min(ml_boost, 0.10)
+        confidence += ml_boost
+
+        return round(max(0.0, min(1.0, confidence)), 2)
+
+    def get_training_data(
+        self,
+        field: str,
+        min_date: Optional[datetime] = None
+    ) -> List[Dict[str, Any]]:
+        """Export corrections for ML training.
+
+        Args:
+            field: Field name to get training data for
+            min_date: Only include corrections after this date
+
+        Returns:
+            List of dicts with original_value, corrected_value, and context
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        if min_date:
+            cursor.execute("""
+                SELECT original_value, corrected_value, brand, year, sport,
+                       card_set, context, correction_source
+                FROM corrections
+                WHERE field = ?
+                AND original_value IS NOT NULL
+                AND corrected_value IS NOT NULL
+                AND created_at >= ?
+                ORDER BY created_at DESC
+            """, (field, min_date.isoformat()))
+        else:
+            cursor.execute("""
+                SELECT original_value, corrected_value, brand, year, sport,
+                       card_set, context, correction_source
+                FROM corrections
+                WHERE field = ?
+                AND original_value IS NOT NULL
+                AND corrected_value IS NOT NULL
+                ORDER BY created_at DESC
+            """, (field,))
+
+        rows = cursor.fetchall()
+        conn.close()
+
+        training_data = []
+        for row in rows:
+            training_data.append({
+                'original_value': row[0],
+                'corrected_value': row[1],
+                'brand': row[2],
+                'year': row[3],
+                'sport': row[4],
+                'card_set': row[5],
+                'context': row[6],
+                'correction_source': row[7] or 'user'
+            })
+
+        return training_data
+
+    def log_ml_prediction(
+        self,
+        field: str,
+        gpt_value: str,
+        ml_prediction: str,
+        confidence: float
+    ):
+        """Track ML prediction for accuracy monitoring (not a correction).
+
+        This logs predictions that were applied but not yet verified.
+        Used for calculating ML accuracy stats.
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        # Store in a separate predictions table for tracking
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS ml_predictions (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                field TEXT NOT NULL,
+                gpt_value TEXT,
+                ml_prediction TEXT,
+                confidence REAL,
+                was_correct INTEGER DEFAULT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+
+        cursor.execute("""
+            INSERT INTO ml_predictions (field, gpt_value, ml_prediction, confidence)
+            VALUES (?, ?, ?, ?)
+        """, (field, gpt_value, ml_prediction, confidence))
+
+        conn.commit()
+        conn.close()
+
+    def get_ml_accuracy_stats(
+        self,
+        field: str,
+        window_days: int = 7
+    ) -> Dict[str, Any]:
+        """Get rolling accuracy metrics for ML predictions on a field.
+
+        Args:
+            field: Field name to get stats for
+            window_days: Number of days to look back
+
+        Returns:
+            Dict with total_predictions, correct_count, accuracy, etc.
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        cutoff = (datetime.now() - timedelta(days=window_days)).isoformat()
+
+        # Count ML overrides that were later corrected by users
+        cursor.execute("""
+            SELECT COUNT(*) as total,
+                   SUM(CASE WHEN correction_source = 'ml_override' THEN 1 ELSE 0 END) as ml_overrides
+            FROM corrections
+            WHERE field = ?
+            AND created_at >= ?
+        """, (field, cutoff))
+
+        row = cursor.fetchone()
+        total_corrections = row[0] or 0
+        ml_overrides_corrected = row[1] or 0
+
+        # Get total ML predictions made (from ml_predictions table if exists)
+        try:
+            cursor.execute("""
+                SELECT COUNT(*) FROM ml_predictions
+                WHERE field = ?
+                AND created_at >= ?
+            """, (field, cutoff))
+            total_ml_predictions = cursor.fetchone()[0] or 0
+        except sqlite3.OperationalError:
+            total_ml_predictions = 0
+
+        conn.close()
+
+        # Calculate accuracy (predictions that weren't corrected)
+        if total_ml_predictions > 0:
+            accuracy = 1.0 - (ml_overrides_corrected / total_ml_predictions)
+        else:
+            accuracy = None  # Not enough data
+
+        return {
+            'field': field,
+            'window_days': window_days,
+            'total_corrections': total_corrections,
+            'ml_overrides_corrected': ml_overrides_corrected,
+            'total_ml_predictions': total_ml_predictions,
+            'accuracy': accuracy
+        }
+
+    def should_retrain(self) -> Tuple[bool, str]:
+        """Check if ML models should be retrained based on criteria.
+
+        Criteria:
+        1. Volume: 50+ new corrections since last train
+        2. Time: 24+ hours since last train with any new corrections
+        3. Accuracy: Rolling 20-correction accuracy drops below 70%
+
+        Returns:
+            Tuple of (should_retrain, reason)
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        # Get last training metadata
+        cursor.execute("""
+            SELECT last_train_time, corrections_count_at_train
+            FROM ml_training_metadata
+            ORDER BY created_at DESC
+            LIMIT 1
+        """)
+        row = cursor.fetchone()
+
+        if row is None:
+            # Never trained before
+            cursor.execute("SELECT COUNT(*) FROM corrections")
+            total = cursor.fetchone()[0]
+            conn.close()
+            if total >= 10:  # Minimum to start training
+                return (True, "initial_training")
+            return (False, "insufficient_data")
+
+        last_train_time = datetime.fromisoformat(row[0]) if row[0] else None
+        corrections_at_train = row[1] or 0
+
+        # Get current correction count
+        cursor.execute("SELECT COUNT(*) FROM corrections")
+        current_count = cursor.fetchone()[0]
+        new_corrections = current_count - corrections_at_train
+
+        conn.close()
+
+        # Criterion 1: Volume threshold
+        if new_corrections >= 50:
+            return (True, f"volume_threshold:{new_corrections}")
+
+        # Criterion 2: Time threshold with any new data
+        if last_train_time:
+            hours_since_train = (datetime.now() - last_train_time).total_seconds() / 3600
+            if hours_since_train >= 24 and new_corrections > 0:
+                return (True, f"time_threshold:{hours_since_train:.1f}h")
+
+        # Criterion 3: Accuracy drop (check key fields)
+        key_fields = ['condition', 'team', 'brand', 'name']
+        for field in key_fields:
+            stats = self.get_ml_accuracy_stats(field, window_days=7)
+            if stats['accuracy'] is not None and stats['accuracy'] < 0.70:
+                if stats['total_ml_predictions'] >= 20:  # Need enough samples
+                    return (True, f"accuracy_drop:{field}:{stats['accuracy']:.2f}")
+
+        return (False, "no_criteria_met")
+
+    def record_training_metadata(
+        self,
+        model_version: str,
+        accuracy_stats: Dict[str, Any]
+    ):
+        """Record metadata about a training run."""
+        import json
+
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        cursor.execute("SELECT COUNT(*) FROM corrections")
+        current_count = cursor.fetchone()[0]
+
+        cursor.execute("""
+            INSERT INTO ml_training_metadata
+            (last_train_time, corrections_count_at_train, model_version, accuracy_stats)
+            VALUES (?, ?, ?, ?)
+        """, (
+            datetime.now().isoformat(),
+            current_count,
+            model_version,
+            json.dumps(accuracy_stats)
+        ))
+
+        conn.commit()
+        conn.close()
+
+    def get_total_corrections_count(self) -> int:
+        """Get total number of corrections in database."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        cursor.execute("SELECT COUNT(*) FROM corrections")
+        count = cursor.fetchone()[0]
+        conn.close()
+        return count

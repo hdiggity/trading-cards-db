@@ -1,0 +1,22 @@
+{
+  "version": "20260123_135930",
+  "last_train_time": "2026-01-23T13:59:30.694249",
+  "categorical_fields": [
+    "sport",
+    "condition",
+    "brand",
+    "is_player"
+  ],
+  "text_fields": [
+    "name",
+    "team",
+    "card_set",
+    "notes"
+  ],
+  "structured_fields": [
+    "copyright_year",
+    "number",
+    "features",
+    "value_estimate"
+  ]
+}

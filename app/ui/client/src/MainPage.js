@@ -284,7 +284,7 @@ function MainPage() {
             <div className="top-progress-title">
               <span className="progress-spinner"></span>
               {bgTotal > 0 ? (
-                <>PROCESSING {bgCurrent + 1} OF {bgTotal}</>
+                <>PROCESSING {Math.min(bgCurrent + 1, bgTotal)} OF {bgTotal}</>
               ) : (
                 <>PROCESSING</>
               )}

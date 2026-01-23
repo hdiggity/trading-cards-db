@@ -464,5 +464,4434 @@
       }
     ],
     "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:06:51.204Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "ernie mcanally",
+        "number": "318",
+        "team": "kansas city royals",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Ernie Lee McAnally",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "318",
+          "condition": "Poor to Fair (heavy wear, staining, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text notes: On July 17, 1971 Ernie beat the Cardinals 5-3 for his first complete game in the majors; started a superb 2nd half and went 10-4 from that point."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "ernie mcanally"
+      },
+      {
+        "grid_position": 2,
+        "name": "cleveland indians team checklist",
+        "number": "331",
+        "team": "multiple",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Cleveland Indians Team Checklist",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "331",
+          "condition": "Poor (heavy wear, discoloration, creases)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card; includes 'Get All 24 Team Checklist Cards' and checklist layout.",
+          "value_estimate": "$0.25–$2.00 (low grade checklist)",
+          "notes": "Cleveland Indians team checklist card (not a single player); used to track collecting the team cards in the set."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "new york yankees",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis"
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:06:54.065Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "ernie mcanally",
+        "number": "318",
+        "team": "montreal expos",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Ernie Lee McAnally",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "318",
+          "condition": "Poor to Fair (heavy wear, staining, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text notes: On July 17, 1971 Ernie beat the Cardinals 5-3 for his first complete game in the majors; started a superb 2nd half and went 10-4 from that point."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "ernie mcanally",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "cleveland indians team checklist",
+        "number": "331",
+        "team": "multiple",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Cleveland Indians Team Checklist",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "331",
+          "condition": "Poor (heavy wear, discoloration, creases)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card; includes 'Get All 24 Team Checklist Cards' and checklist layout.",
+          "value_estimate": "$0.25–$2.00 (low grade checklist)",
+          "notes": "Cleveland Indians team checklist card (not a single player); used to track collecting the team cards in the set."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "new york yankees",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis"
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:06:56.831Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "ernie mcanally",
+        "number": "318",
+        "team": "montreal expos",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Ernie Lee McAnally",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "318",
+          "condition": "Poor to Fair (heavy wear, staining, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text notes: On July 17, 1971 Ernie beat the Cardinals 5-3 for his first complete game in the majors; started a superb 2nd half and went 10-4 from that point."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "ernie mcanally",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "cleveland indians team checklist",
+        "number": "331",
+        "team": "multiple",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Cleveland Indians Team Checklist",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "331",
+          "condition": "Poor (heavy wear, discoloration, creases)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card; includes 'Get All 24 Team Checklist Cards' and checklist layout.",
+          "value_estimate": "$0.25–$2.00 (low grade checklist)",
+          "notes": "Cleveland Indians team checklist card (not a single player); used to track collecting the team cards in the set."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "new york yankees",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis"
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:07:02.472Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "cleveland indians team checklist",
+        "number": "331",
+        "team": "multiple",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Cleveland Indians Team Checklist",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "331",
+          "condition": "Poor (heavy wear, discoloration, creases)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card; includes 'Get All 24 Team Checklist Cards' and checklist layout.",
+          "value_estimate": "$0.25–$2.00 (low grade checklist)",
+          "notes": "Cleveland Indians team checklist card (not a single player); used to track collecting the team cards in the set."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "new york yankees",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis"
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:07:19.805Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "cleveland indians team checklist",
+        "number": "331",
+        "team": "multiple",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Cleveland Indians Team Checklist",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "331",
+          "condition": "Poor (heavy wear, discoloration, creases)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card; includes 'Get All 24 Team Checklist Cards' and checklist layout.",
+          "value_estimate": "$0.25–$2.00 (low grade checklist)",
+          "notes": "Cleveland Indians team checklist card (not a single player); used to track collecting the team cards in the set."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": null,
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "new york yankees",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis"
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:07:21.820Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "cleveland indians team checklist",
+        "number": "331",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Cleveland Indians Team Checklist",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "331",
+          "condition": "Poor (heavy wear, discoloration, creases)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card; includes 'Get All 24 Team Checklist Cards' and checklist layout.",
+          "value_estimate": "$0.25–$2.00 (low grade checklist)",
+          "notes": "Cleveland Indians team checklist card (not a single player); used to track collecting the team cards in the set."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": null,
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": false
+      },
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "new york yankees",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis"
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:07:42.492Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "new york yankees",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis"
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:07:45.449Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "cleveland indians",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:07:46.667Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "john ellis",
+        "number": "605",
+        "team": "cleveland indians",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back quiz: 'who pitched in every game of the 1971 ws?' (answer shown on card).",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "John Charles Ellis",
+          "brand": "Topps",
+          "team": "New York Yankees",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1972",
+          "number": "605",
+          "condition": "Poor (faded, stained, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps back with cartoon/quiz; batting record table; position shown as 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back quiz: 'Who pitched in every game of the 1971 World Series?' (answer shown on card)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "canonical_name": "john ellis",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:08:01.468Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "joseph lis",
+        "number": "86",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Joseph Anthony Lis",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "86",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position 1B.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: acquired from Twins mid-season 1974; filled in ably as 1st base; biggest day of 1973 was a 4-for-5 game vs. Rangers (Aug. 31)."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "joseph lis"
+      },
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:08:07.685Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "back highlight",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and major/minor league batting record; position OF.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back highlight: Charlie's 9th-inning HR vs. O's (Sept. 8) ended streak of 54 straight shutout innings by staff."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:08:15.786Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "poor",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "same highlight text about 9th-inning hr ending 54 straight shutout innings by...",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor (very faded/washed, heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, very low grade)",
+          "notes": "Same highlight text about 9th-inning HR ending 54 straight shutout innings by staff; duplicate copy in worse fade."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:08:21.034Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "leslie spikes",
+        "number": "135",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "duplicate copy",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Leslie Charles Spikes",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "135",
+          "condition": "Poor to Fair (heavy wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Another duplicate of #135; Topps back with major/minor batting record; position OF.",
+          "value_estimate": "$0.10–$1.00 (duplicate, low grade)",
+          "notes": "Duplicate copy; same Sept. 8 HR note ending 54 straight shutout innings by staff."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "leslie spikes"
+      },
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:08:27.703Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "steven kline",
+        "number": "639",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Steven Jack Kline",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "639",
+          "condition": "Poor to Fair (heavy wear, discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and pitching record table; position P.",
+          "value_estimate": "$0.25–$1.50 (low grade common)",
+          "notes": "Back text: 'Steve went from the Yankees to the Indians in big trade, April 1974'; best season in majors was 1972 when he was 15-9 with 2.06 ERA."
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50 (low grade common)",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "steven kline"
+      },
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-23T19:08:35.252Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "john lowenstein",
+        "number": "424",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2381_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "John Lee Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "Topps (base set)",
+          "copyright_year": "1975",
+          "number": "424",
+          "condition": "Poor to Fair (heavy wear, staining)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps back with cartoon/quiz and batting record table; position OF.",
+          "value_estimate": "$0.25–$2.00 (low grade common)",
+          "notes": "Back text: versatile performer—can play outfield as well as 1B, 2B, 3B; used frequently as a pinch hitter in 1973 and 1974."
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      }
+    ],
+    "afterData": null
   }
 ]

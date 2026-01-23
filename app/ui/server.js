@@ -169,8 +169,11 @@ async function undoLastAction(fileId) {
 
 // Record corrections for learning system
 async function recordCorrections(originalCard, modifiedCard) {
-  // Fields to track corrections for
-  const trackFields = ['name', 'brand', 'team', 'card_set', 'copyright_year', 'number', 'condition', 'sport'];
+  // Fields to track corrections for (all editable fields)
+  const trackFields = [
+    'name', 'brand', 'team', 'card_set', 'copyright_year', 'number',
+    'condition', 'sport', 'is_player', 'features', 'value_estimate', 'notes'
+  ];
   const corrections = [];
 
   // Use _original_extraction if available (captures what AI actually extracted)
@@ -208,6 +211,21 @@ async function recordCorrections(originalCard, modifiedCard) {
     card_set: modifiedCard.card_set || originalCard.card_set
   };
 
+  // Capture ML metadata for corrections that override ML predictions
+  const mlMetadata = {};
+  for (const field of trackFields) {
+    const mlAppliedKey = `_ml_${field}_applied`;
+    const mlConfidenceKey = `_ml_${field}_confidence`;
+    const mlGptValueKey = `_ml_${field}_gpt_value`;
+    if (originalCard[mlAppliedKey]) {
+      mlMetadata[field] = {
+        ml_applied: true,
+        ml_confidence: originalCard[mlConfidenceKey],
+        ml_gpt_value: originalCard[mlGptValueKey]
+      };
+    }
+  }
+
   // Call Python to record corrections using CorrectionTracker
   const pythonCode = `
 import sys, json
@@ -217,6 +235,9 @@ tracker = CorrectionTracker(db_path="data/corrections.db")
 data = json.loads(sys.stdin.read())
 
 for corr in data['corrections']:
+    # Check if this field had ML prediction applied
+    ml_meta = data.get('ml_metadata', {}).get(corr['field'], {})
+
     tracker.log_correction(
         field_name=corr['field'],
         gpt_value=corr['original'],
@@ -226,7 +247,10 @@ for corr in data['corrections']:
         brand=data['context'].get('brand'),
         sport=data['context'].get('sport'),
         copyright_year=data['context'].get('copyright_year'),
-        card_set=data['context'].get('card_set')
+        card_set=data['context'].get('card_set'),
+        ml_prediction=ml_meta.get('ml_gpt_value') if ml_meta.get('ml_applied') else None,
+        ml_confidence=ml_meta.get('ml_confidence'),
+        correction_source='ml_override' if ml_meta.get('ml_applied') else 'user'
     )
 
 print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
@@ -250,7 +274,7 @@ print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
       image_filename: modifiedCard.source_file || originalCard.source_file
     };
 
-    pythonProcess.stdin.write(JSON.stringify({ corrections, context: enrichedContext }));
+    pythonProcess.stdin.write(JSON.stringify({ corrections, context: enrichedContext, ml_metadata: mlMetadata }));
     pythonProcess.stdin.end();
 
     pythonProcess.on('close', (code) => {
@@ -1134,6 +1158,7 @@ print("Transaction updated successfully")
                 }
               } else {
                 // Not in verified yet, move it (rename = atomic move, no duplicate)
+                // Note: git pre-commit hook will compress and backup original to originals/
                 await fs.rename(sourceBulkPath, verifiedImagePath);
                 console.log(`[pass-card] Moved image to verified: ${verifiedImageName}`);
 
@@ -1546,6 +1571,7 @@ print("Database import completed successfully")
               console.error(`[pass-all] Warning: Failed to delete duplicate: ${delErr.message}`);
             }
           } else {
+            // Note: git pre-commit hook will compress and backup original to originals/
             await fs.rename(sourceBulkPath, verifiedImagePath);
             console.log(`[pass-all] Moved image to verified: ${verifiedImageName}`);
           }

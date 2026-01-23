@@ -358,7 +358,7 @@ def normalize_card_set(card_set_str):
 
 
 def normalize_notes(notes_str):
-    """Normalize notes - reject unhelpful patterns, keep unique card-specific info."""
+    """Normalize notes - reject unhelpful patterns, abbreviate to most important info."""
     if not notes_str:
         return "none"
 
@@ -367,26 +367,85 @@ def normalize_notes(notes_str):
     if len(n) < 3 or n in ("none", "n/a", "na", "null", "unknown", ""):
         return "none"
 
-    # Reject unhelpful patterns that just restate other fields
+    # Reject unhelpful patterns - stats, bio info, generic descriptions
     reject_patterns = [
         "back shows", "back reads", "back text",
-        "standard topps", "standard design",
+        "standard topps", "standard design", "standard card",
         "mlb logo", "mlbpa logo", "copyright",
         "checklist card", "not a player", "not a single-player card",
         "leaders list format", "multi-player card",
-        "bio notes",
+        "bio notes", "biography", "personal info",
         "team card", "team records", "pennant winners", "batting/pitching",
-        "summarizing", "historical"
+        "summarizing", "historical", "career stats", "career highlights",
+        "batting record", "pitching record", "season stats",
+        "home runs", "runs batted", "earned run", "strikeouts",
+        "games played", "at bats", "batting average",
+        "full stats table", "complete statistics",
+        "nothing special", "no special", "base card", "common card",
     ]
 
     for pattern in reject_patterns:
         if pattern in n:
             return "none"
 
-    # Accept and truncate if needed
+    # Smart abbreviation to fit 80 chars while keeping important info
     if len(n) <= 80:
         return n
-    return n[:77] + "..."
+
+    # Common abbreviations for collectible card terminology
+    abbreviations = [
+        ("short print", "sp"),
+        ("super short print", "ssp"),
+        ("serial numbered", "s/n"),
+        ("limited edition", "ltd"),
+        ("variation", "var"),
+        ("photo variation", "photo var"),
+        ("error card", "error"),
+        ("uncorrected error", "ue"),
+        ("corrected error", "ce"),
+        ("printing plate", "plate"),
+        ("refractor", "ref"),
+        ("parallel", "//"),
+        ("numbered to", "#/"),
+        ("out of", "/"),
+        ("factory set", "fact set"),
+        ("tiffany", "tiff"),
+        ("glossy", "gloss"),
+        ("printing", "print"),
+        ("miscut", "miscut"),
+        ("off-center", "oc"),
+        ("diamond", "dia"),
+        (" and ", " & "),
+        ("variation", "var"),
+        ("insert", "ins"),
+        ("subset", "sub"),
+    ]
+
+    result = n
+    for full, abbrev in abbreviations:
+        result = result.replace(full, abbrev)
+
+    # If still too long, truncate at sentence/phrase boundary
+    if len(result) > 80:
+        # Try to find natural break points
+        for sep in ["; ", ", ", " - ", ": "]:
+            if sep in result:
+                parts = result.split(sep)
+                truncated = ""
+                for part in parts:
+                    if len(truncated) + len(part) + len(sep) <= 77:
+                        truncated = truncated + sep + part if truncated else part
+                    else:
+                        break
+                if truncated and len(truncated) > 10:
+                    result = truncated
+                    break
+
+    # Final truncation if still over limit
+    if len(result) > 80:
+        result = result[:77] + "..."
+
+    return result
 
 
 def normalize_team(team_str, card_data):
@@ -516,15 +575,15 @@ Extract for each card:
 
 1. name (full name including last name)
 2. number
-3. team
+3. team (most recent team only, ignore prior teams in career stats)
 4. copyright_year
 5. brand
 6. card_set
 7. sport
-8. condition
+8. condition (grade relative to card's age - yellowing, vintage print quality, old card stock are normal for pre-1990 cards, not damage)
 9. is_player_card: true/false
 10. features
-11. notes (what makes this card unique - specific stats, game highlights, milestones)
+11. notes (card rarity/specialty: errors, variations, short prints, limited editions, photo variations, miscuts, or other collectible distinctions)
 12. value_estimate
 
 IMPORTANT: Never return null or empty strings for name, number, brand, or sport fields.
@@ -634,7 +693,11 @@ Return JSON with "cards" array."""
                 'copyright_year': card.get('copyright_year'),
                 'number': card.get('number'),
                 'condition': card.get('condition'),
-                'sport': card.get('sport')
+                'sport': card.get('sport'),
+                'is_player': card.get('is_player_card'),
+                'features': card.get('features'),
+                'value_estimate': card.get('value_estimate'),
+                'notes': card.get('notes')
             }
 
         report("post_processing", "Starting post-processing")
@@ -694,6 +757,21 @@ Return JSON with "cards" array."""
         # Store original GPT data for confidence calculation
         original_gpt_data = [card.copy() for card in raw_data]
 
+        # ML prediction step: check for retraining and apply ML corrections
+        report("ml_prediction", "Generating ML predictions")
+        try:
+            from .ml_engine import get_ml_engine
+            ml_engine = get_ml_engine()
+
+            # Check if models need retraining (runs automatically if criteria met)
+            ml_engine.retrain_if_needed()
+
+            # Apply ML predictions to all cards
+            for i, card in enumerate(raw_data):
+                raw_data[i] = ml_engine.predict_all_fields(card, original_gpt_data[i])
+        except Exception as e:
+            print(f"ML prediction step failed: {e}", file=sys.stderr)
+
         report("learned_corrections", "Applying learned corrections")
 
         # Apply learned corrections from previous manual fixes
@@ -749,13 +827,18 @@ Return JSON with "cards" array."""
 
         report("name_standardization", "Applying name standardization")
 
-        # Apply name standardization from canonical_names cache
-        # (e.g., "brent terry strom" -> "brent strom")
+        # Apply name standardization - use canonical_name if available
+        # (e.g., "johnny lee bench" -> "johnny bench")
         for card in raw_data:
             if card.get('name') and card.get('sport') == 'baseball':
-                standard = canonical_service.get_standard_name(card['name'])
-                if standard:
-                    card['name'] = standard
+                # Prefer canonical_name (already looked up), otherwise try get_standard_name
+                canonical = card.get('canonical_name')
+                if canonical and canonical != card['name']:
+                    card['name'] = canonical
+                else:
+                    standard = canonical_service.get_standard_name(card['name'])
+                    if standard:
+                        card['name'] = standard
 
         # Validate rare features - if too many cards have "autograph", it's likely a false positive
         autograph_count = sum(1 for card in raw_data if 'autograph' in (card.get('features') or ''))
@@ -851,16 +934,8 @@ Return JSON with "cards" array."""
                 corrections['team'] = team_completions[team]
                 card['_team_autocompleted'] = True
 
-        # Rule 3: Condition Confidence Marker (no auto-change, just flag)
-        # User choice: flag only, don't auto-downgrade
-        condition = (card.get('condition') or '').strip()
-        try:
-            year_int = int(year) if year and year.isdigit() else 9999
-            if condition == 'very_good' and year_int < 1980:
-                # Don't change condition, just mark for confidence penalty
-                card['_condition_suspicious'] = True
-        except (ValueError, AttributeError):
-            pass
+        # Rule 3: Condition - no automatic adjustments
+        # Vintage cards should be graded relative to their age, not penalized
 
         # Rule 4: Copyright Year Cross-Validation
         # Flag years that seem unlikely (too far from brand patterns)

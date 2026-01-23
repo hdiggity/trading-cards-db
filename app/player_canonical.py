@@ -202,37 +202,54 @@ class CanonicalNameService:
             # Fall back to normalization for other sports
             return self.normalize_name_for_matching(player_name)
 
+        # First, normalize the input to handle full legal names with middle names
+        # e.g., "PETER EDWARD ROSE" -> "peter rose"
+        normalized_input = self.normalize_name_for_matching(player_name)
+
         try:
             # Rate limiting
             elapsed = time.time() - self.last_api_call
             if elapsed < self.rate_limit_delay:
                 time.sleep(self.rate_limit_delay - elapsed)
 
-            # MLB Stats API player search
-            players = statsapi.lookup_player(player_name)
+            # Try API with normalized name first (more likely to match)
+            players = statsapi.lookup_player(normalized_input)
             self.last_api_call = time.time()
+
+            if not players:
+                # Try with original name as fallback
+                players = statsapi.lookup_player(player_name)
+                self.last_api_call = time.time()
 
             if not players:
                 # Player not found in API (likely vintage/historical player)
                 # Use normalization as fallback
-                return self.normalize_name_for_matching(player_name)
+                return normalized_input
 
             # Take first result (highest confidence match)
             best_match = players[0]
 
-            # Extract canonical full name
+            # Extract canonical full name and prefer nickname over legal name
+            # API provides useName (nickname) and fullName (legal name)
+            use_name = best_match.get("useName", "").lower().strip()
+            last_name = best_match.get("lastName", "").lower().strip()
             full_name = best_match.get("fullName", "").lower().strip()
 
+            # Prefer "Pete Rose" over "Peter Edward Rose"
+            if use_name and last_name:
+                return f"{use_name} {last_name}"
+
             if full_name:
-                return full_name
+                # Apply normalization to remove middle names from full legal name
+                return self.normalize_name_for_matching(full_name)
 
             # API returned results but no fullName - use normalization
-            return self.normalize_name_for_matching(player_name)
+            return normalized_input
 
         except Exception as e:
             print(f"API lookup failed for {player_name}: {e}, using normalization fallback", file=sys.stderr)
             # Fall back to normalization on API errors
-            return self.normalize_name_for_matching(player_name)
+            return normalized_input
 
     def _store_in_cache(
         self,

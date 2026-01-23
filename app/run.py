@@ -22,10 +22,20 @@ def update_progress(current: int, total: int, current_file: str = "", status: st
     """Write progress to file for UI to read."""
     try:
         PROGRESS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        # Calculate percent with smooth start (min 5% to avoid jump from server's initial 10%)
+        # This prevents the progress bar from jumping 10% -> 0% -> back up
+        raw_pct = int((current / max(total, 1)) * 100)
+        # For "starting" status, use 5% minimum; for active processing use 10% minimum
+        if status == "starting":
+            pct = max(5, raw_pct)
+        elif status == "done":
+            pct = 100
+        else:
+            pct = max(10, raw_pct) if raw_pct < 10 else raw_pct
         progress_data = {
             "current": current,
             "total": total,
-            "percent": int((current / max(total, 1)) * 100),
+            "percent": pct,
             "current_file": current_file,
             "status": status,
             "substep": substep,

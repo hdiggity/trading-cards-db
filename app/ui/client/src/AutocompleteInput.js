@@ -43,14 +43,14 @@ function AutocompleteInput({ field, value, onChange, placeholder, className }) {
     const newValue = e.target.value;
     onChange(newValue);
 
-    // Debounce autocomplete requests (300ms)
+    // Debounce autocomplete requests (150ms)
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
 
     timeoutRef.current = setTimeout(() => {
       fetchSuggestions(newValue);
-    }, 300);
+    }, 150);
   };
 
   const handleSuggestionClick = (suggestion) => {
@@ -81,6 +81,12 @@ function AutocompleteInput({ field, value, onChange, placeholder, className }) {
         onBlur={handleBlur}
         placeholder={placeholder}
         className={className}
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="off"
+        spellCheck="false"
+        data-form-type="other"
+        data-lpignore="true"
       />
       {loading && (
         <div style={{

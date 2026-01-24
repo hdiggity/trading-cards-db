@@ -57,10 +57,62 @@ function MainPage() {
           setBgLogFile(s.logFile || null);
           if (typeof s.progress === 'number') setBgProgress(s.progress);
           else setBgProgress(10);
+          if (s.currentFile) setBgCurrentFile(s.currentFile);
+          if (typeof s.current === 'number') setBgCurrent(s.current);
+          if (typeof s.total === 'number') setBgTotal(s.total);
+          if (s.substep) setBgSubstep(s.substepDetail ? `${s.substep}: ${s.substepDetail}` : s.substep);
           // Seed baselines for progress approximation
           const base = (await fetchRawScanCount()) || 1;
           rawStartRef.current = base;
           setRawStart(prev => prev || base);
+
+          // Start polling loop to continue tracking progress after refresh
+          const start = Date.now();
+          const poll = async () => {
+            let active = true;
+            let serverProgress = null;
+            let currentFile = '';
+            let current = 0;
+            let total = 0;
+            let substep = '';
+            try {
+              const rs = await fetch('http://localhost:3001/api/processing-status');
+              const st = await rs.json();
+              active = !!st.active;
+              if (typeof st.progress === 'number') serverProgress = st.progress;
+              if (st.currentFile) currentFile = st.currentFile;
+              if (typeof st.current === 'number') current = st.current;
+              if (typeof st.total === 'number') total = st.total;
+              if (st.substep) substep = st.substepDetail ? `${st.substep}: ${st.substepDetail}` : st.substep;
+            } catch {}
+
+            if (serverProgress !== null) {
+              setBgProgress(serverProgress);
+            }
+            setBgCurrentFile(currentFile);
+            setBgCurrent(current);
+            setBgSubstep(substep);
+            if (total > 0) setBgTotal(total);
+
+            if (current % 3 === 0 || !active) {
+              await fetchPendingCount();
+              await fetchRawScanCount();
+            }
+
+            const longTimeout = Date.now() - start >= 60 * 60 * 1000;
+
+            if (active && !longTimeout) {
+              setTimeout(poll, 1500);
+            } else {
+              setBgProcessing(false);
+              setBgProgress(100);
+              setBgCurrentFile('');
+              setBgSubstep('');
+              fetchRawScanCount();
+              fetchPendingCount();
+            }
+          };
+          setTimeout(poll, 1000);
         }
       } catch (error) {
         console.error('Error checking processing status:', error);

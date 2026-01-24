@@ -422,55 +422,51 @@ function ZoomableImage({ src, alt, className, onError }) {
 }
 
 // Autocomplete input component with real-time suggestions
-function AutocompleteInput({ field, value, onChange, placeholder, className, onAutofill }) {
+function AutocompleteInput({ field, value, onChange, placeholder, className, onAutofill, cardData }) {
   const [suggestions, setSuggestions] = useState([]);
+  const [similarCards, setSimilarCards] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [loading, setLoading] = useState(false);
   const timeoutRef = useRef(null);
   const inputRef = useRef(null);
 
-  const fetchSuggestions = async (query) => {
+  const fetchSuggestions = async (query, updatedCardData) => {
     if (!query || query.length < 1) {
       setSuggestions([]);
+      setSimilarCards([]);
       setShowSuggestions(false);
       return;
     }
 
     setLoading(true);
     try {
-      // For name field, search previously verified cards for autofill
-      if (field === 'name' && onAutofill) {
-        const response = await fetch(`http://localhost:3001/api/search-cards?query=${encodeURIComponent(query)}&limit=8`);
+      // Always fetch field-specific suggestions
+      const fieldResponse = await fetch('http://localhost:3001/api/field-autocomplete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ field, query, limit: 5 })
+      });
 
-        if (response.ok) {
-          const data = await response.json();
-          if (data.cards && data.cards.length > 0) {
-            setSuggestions(data.cards); // Store full card objects
-            setShowSuggestions(true);
-          } else {
-            setSuggestions([]);
-            setShowSuggestions(false);
-          }
-        }
-      } else {
-        // For other fields, use field-specific autocomplete
-        const response = await fetch('http://localhost:3001/api/field-autocomplete', {
+      if (fieldResponse.ok) {
+        const data = await fieldResponse.json();
+        setSuggestions(data.suggestions || []);
+      }
+
+      // Also search for similar cards if we have card data and onAutofill
+      if (onAutofill && updatedCardData) {
+        const similarResponse = await fetch('http://localhost:3001/api/find-similar-cards', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ field, query, limit: 8 })
+          body: JSON.stringify(updatedCardData)
         });
 
-        if (response.ok) {
-          const data = await response.json();
-          if (data.suggestions && data.suggestions.length > 0) {
-            setSuggestions(data.suggestions);
-            setShowSuggestions(true);
-          } else {
-            setSuggestions([]);
-            setShowSuggestions(false);
-          }
+        if (similarResponse.ok) {
+          const data = await similarResponse.json();
+          setSimilarCards(data.cards || []);
         }
       }
+
+      setShowSuggestions(true);
     } catch (error) {
       console.error('Error fetching autocomplete suggestions:', error);
     }
@@ -487,19 +483,21 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
     }
 
     timeoutRef.current = setTimeout(() => {
-      fetchSuggestions(newValue);
-    }, 300);
+      // Pass updated card data with the new value
+      const updatedCardData = cardData ? { ...cardData, [field]: newValue } : null;
+      fetchSuggestions(newValue, updatedCardData);
+    }, 150);
   };
 
-  const handleSuggestionClick = async (suggestion) => {
+  const handleSuggestionClick = async (suggestion, isCard = false) => {
     setShowSuggestions(false);
     setSuggestions([]);
+    setSimilarCards([]);
 
-    // If suggestion is a card object (from name field search)
-    if (typeof suggestion === 'object' && suggestion.name) {
-      onChange(suggestion.name);
-      // Autofill all fields from this card
-      if (field === 'name' && onAutofill) {
+    if (isCard && typeof suggestion === 'object' && suggestion.name) {
+      // Card suggestion - autofill all fields
+      onChange(suggestion[field] || suggestion.name);
+      if (onAutofill) {
         onAutofill(suggestion);
       }
     } else {
@@ -530,6 +528,12 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
         onBlur={handleBlur}
         placeholder={placeholder}
         className={className}
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="off"
+        spellCheck="false"
+        data-form-type="other"
+        data-lpignore="true"
       />
       {loading && (
         <div style={{
@@ -543,7 +547,7 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
           ...
         </div>
       )}
-      {showSuggestions && suggestions.length > 0 && (
+      {showSuggestions && (suggestions.length > 0 || similarCards.length > 0) && (
         <div className="autocomplete-suggestions" style={{
           position: 'absolute',
           top: '100%',
@@ -552,47 +556,92 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
           backgroundColor: '#fff',
           border: '1px solid #4a90e2',
           borderRadius: '4px',
-          maxHeight: '150px',
+          maxHeight: '250px',
           overflowY: 'auto',
           zIndex: 1000,
           boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
           marginTop: '2px'
         }}>
-          {suggestions.map((suggestion, idx) => {
-            // Check if suggestion is a card object or a string
-            const isCardObject = typeof suggestion === 'object' && suggestion.name;
-
-            return (
-              <div
-                key={idx}
-                onClick={() => handleSuggestionClick(suggestion)}
-                style={{
-                  padding: '8px 12px',
-                  cursor: 'pointer',
-                  borderBottom: idx < suggestions.length - 1 ? '1px solid #eee' : 'none',
-                  fontSize: '13px',
-                  transition: 'background-color 0.15s'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#f0f7ff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#fff';
-                }}
-              >
-                {isCardObject ? (
-                  <div>
-                    <div style={{ fontWeight: 'bold' }}>{suggestion.name}</div>
-                    <div style={{ fontSize: '11px', color: '#666', marginTop: '2px' }}>
-                      {[suggestion.copyright_year, suggestion.brand, suggestion.team, suggestion.number].filter(Boolean).join(' • ')}
-                    </div>
-                  </div>
-                ) : (
-                  suggestion
-                )}
+          {/* Similar cards section */}
+          {similarCards.length > 0 && (
+            <>
+              <div style={{
+                padding: '6px 12px',
+                fontSize: '10px',
+                fontWeight: '600',
+                color: '#4a90e2',
+                backgroundColor: '#f0f7ff',
+                borderBottom: '1px solid #e0e0e0',
+                textTransform: 'uppercase'
+              }}>
+                matching cards in database
               </div>
-            );
-          })}
+              {similarCards.map((card, idx) => (
+                <div
+                  key={`card-${idx}`}
+                  onClick={() => handleSuggestionClick(card, true)}
+                  style={{
+                    padding: '8px 12px',
+                    cursor: 'pointer',
+                    borderBottom: '1px solid #eee',
+                    fontSize: '13px',
+                    transition: 'background-color 0.15s',
+                    backgroundColor: '#fafffe'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#e6fff9';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#fafffe';
+                  }}
+                >
+                  <div style={{ fontWeight: 'bold', color: '#16a34a' }}>{card.name}</div>
+                  <div style={{ fontSize: '11px', color: '#666', marginTop: '2px' }}>
+                    {[card.copyright_year, card.brand, `#${card.number}`, card.team].filter(Boolean).join(' · ')}
+                  </div>
+                </div>
+              ))}
+            </>
+          )}
+          {/* Field suggestions section */}
+          {suggestions.length > 0 && (
+            <>
+              {similarCards.length > 0 && (
+                <div style={{
+                  padding: '6px 12px',
+                  fontSize: '10px',
+                  fontWeight: '600',
+                  color: '#666',
+                  backgroundColor: '#f5f5f5',
+                  borderBottom: '1px solid #e0e0e0',
+                  textTransform: 'uppercase'
+                }}>
+                  {field} suggestions
+                </div>
+              )}
+              {suggestions.map((suggestion, idx) => (
+                <div
+                  key={`field-${idx}`}
+                  onClick={() => handleSuggestionClick(suggestion, false)}
+                  style={{
+                    padding: '8px 12px',
+                    cursor: 'pointer',
+                    borderBottom: idx < suggestions.length - 1 ? '1px solid #eee' : 'none',
+                    fontSize: '13px',
+                    transition: 'background-color 0.15s'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#f0f7ff';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#fff';
+                  }}
+                >
+                  {suggestion}
+                </div>
+              ))}
+            </>
+          )}
         </div>
       )}
     </div>
@@ -689,6 +738,13 @@ function App() {
   const [processing, setProcessing] = useState(false);
   const [reprocessing, setReprocessing] = useState(false);
   const reprocessControllerRef = useRef(null);
+  // Progress bar state for reprocessing
+  const [bgProcessing, setBgProcessing] = useState(false);
+  const [bgProgress, setBgProgress] = useState(0);
+  const [bgCurrentFile, setBgCurrentFile] = useState('');
+  const [bgCurrent, setBgCurrent] = useState(0);
+  const [bgTotal, setBgTotal] = useState(0);
+  const [bgSubstep, setBgSubstep] = useState('');
   const [isEditing, setIsEditing] = useState(false);
   const [editedData, setEditedData] = useState([]);
   const [lastSaved, setLastSaved] = useState(null);
@@ -719,15 +775,16 @@ function App() {
   // Session recovery state
   const [showRecovery, setShowRecovery] = useState(false);
   const [recoverySession, setRecoverySession] = useState(null);
+  const [showRecoveryDiff, setShowRecoveryDiff] = useState(false);
 
   useEffect(() => {
-    // Check for saved session on mount
-    const checkSavedSession = () => {
+    // Check for saved session after pending cards are loaded
+    const checkSavedSession = async () => {
       try {
         // Check if we've already shown recovery for this browser session
         const recoveryShown = sessionStorage.getItem('recoveryShown');
         if (recoveryShown) {
-          return; // Don't show recovery again in this browser session
+          return;
         }
 
         const savedSession = localStorage.getItem('editSession');
@@ -737,12 +794,48 @@ function App() {
           const sessionAge = now - session.timestamp;
           const oneHour = 3600000;
 
-          // Only show recovery if session is less than 1 hour old and not currently editing
-          if (sessionAge < oneHour && !isEditing) {
+          if (sessionAge >= oneHour) {
+            localStorage.removeItem('editSession');
+            return;
+          }
+
+          // Fetch current pending cards to validate recovery
+          const response = await fetch('http://localhost:3001/api/pending-cards');
+          if (!response.ok) return;
+          const currentPendingCards = await response.json();
+
+          // Find the card from the saved session
+          const matchingCard = currentPendingCards.find(c => c.id === session.cardId);
+          if (!matchingCard) {
+            // Card no longer exists, clear session
+            localStorage.removeItem('editSession');
+            return;
+          }
+
+          // Compare saved editedData with current card data (not saved originalData)
+          const currentCardData = matchingCard.data;
+          const savedEditedData = session.editedData;
+
+          // Check if there are actual differences between saved edits and current data
+          const hasActualChanges = savedEditedData.some((edited, idx) => {
+            const current = currentCardData[idx];
+            if (!current) return false;
+            // Compare key fields
+            const fieldsToCheck = ['name', 'team', 'brand', 'number', 'copyright_year', 'features', 'condition', 'card_set'];
+            return fieldsToCheck.some(field => {
+              const editedVal = (edited[field] || '').toString().toLowerCase();
+              const currentVal = (current[field] || '').toString().toLowerCase();
+              return editedVal !== currentVal;
+            });
+          });
+
+          if (hasActualChanges && !isEditing) {
+            // Store current data as originalData for accurate diff
+            session.originalData = currentCardData;
             setRecoverySession(session);
             setShowRecovery(true);
-          } else if (sessionAge >= oneHour) {
-            // Clear old session
+          } else {
+            // No actual changes or data matches, clear stale session
             localStorage.removeItem('editSession');
           }
         }
@@ -776,6 +869,61 @@ function App() {
       window.removeEventListener('unhandledrejection', handleUnhandledRejection);
     };
   }, []);
+
+  // Poll for global processing status (shows progress bar on all pages)
+  useEffect(() => {
+    let cancelled = false;
+    let pollTimeout = null;
+
+    const pollProcessingStatus = async () => {
+      if (cancelled) return;
+
+      try {
+        const response = await fetch('http://localhost:3001/api/processing-status');
+        const status = await response.json();
+
+        if (status.active) {
+          setBgProcessing(true);
+          if (typeof status.progress === 'number') setBgProgress(status.progress);
+          if (status.currentFile) setBgCurrentFile(status.currentFile);
+          if (typeof status.current === 'number') setBgCurrent(status.current);
+          if (typeof status.total === 'number') setBgTotal(status.total);
+          if (status.substep) setBgSubstep(status.substepDetail ? `${status.substep}: ${status.substepDetail}` : status.substep);
+
+          // Continue polling while active
+          pollTimeout = setTimeout(pollProcessingStatus, 1500);
+        } else if (bgProcessing) {
+          // Processing just finished
+          setBgProcessing(false);
+          setBgProgress(100);
+          // Refresh pending cards
+          fetchPendingCards();
+          // Reset progress after a moment
+          setTimeout(() => {
+            setBgProgress(0);
+            setBgCurrentFile('');
+            setBgSubstep('');
+          }, 2000);
+        } else {
+          // Not processing, poll less frequently
+          pollTimeout = setTimeout(pollProcessingStatus, 5000);
+        }
+      } catch (error) {
+        // On error, continue polling less frequently
+        if (!cancelled) {
+          pollTimeout = setTimeout(pollProcessingStatus, 5000);
+        }
+      }
+    };
+
+    // Start polling
+    pollProcessingStatus();
+
+    return () => {
+      cancelled = true;
+      if (pollTimeout) clearTimeout(pollTimeout);
+    };
+  }, [bgProcessing]);
 
   // Auto-start editing when card changes (isEditing intentionally excluded to prevent loops)
   useEffect(() => {
@@ -1060,14 +1208,15 @@ function App() {
     setHasUnsavedChanges(hasChanges);
   }, [editedData, originalData, isEditing]);
 
-  // Save edit session to localStorage for recovery
+  // Save edit session to localStorage for recovery - only if there are actual unsaved changes
   useEffect(() => {
-    if (isEditing && editedData.length > 0 && pendingCards.length > 0) {
+    if (isEditing && editedData.length > 0 && pendingCards.length > 0 && hasUnsavedChanges) {
       const currentCard = pendingCards[currentIndex];
       if (currentCard?.id) {
         const sessionState = {
           cardId: currentCard.id,
           editedData: editedData,
+          originalData: originalData,
           currentIndex: currentIndex,
           currentCardIndex: currentCardIndex,
           verificationMode: verificationMode,
@@ -1076,10 +1225,10 @@ function App() {
         localStorage.setItem('editSession', JSON.stringify(sessionState));
       }
     } else {
-      // Clear session when not editing
+      // Clear session when not editing or no unsaved changes
       localStorage.removeItem('editSession');
     }
-  }, [isEditing, editedData, currentIndex, currentCardIndex, verificationMode, pendingCards]);
+  }, [isEditing, editedData, originalData, currentIndex, currentCardIndex, verificationMode, pendingCards, hasUnsavedChanges]);
 
   // Warn user before leaving page with unsaved changes
   useEffect(() => {
@@ -1438,8 +1587,80 @@ function App() {
   const handleReprocess = async (mode = 'remaining') => {
     if (pendingCards.length === 0) return;
 
-    setReprocessing(true);
     const currentCard = pendingCards[currentIndex];
+
+    // For 'all' mode, use background processing with progress bar
+    if (mode === 'all') {
+      setReprocessing(true);
+      try {
+        const response = await fetch(`http://localhost:3001/api/reprocess/${currentCard.id}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ mode, background: true }),
+        });
+
+        const result = await response.json();
+        if (response.ok && result.background) {
+          // Start polling for progress like main page
+          setBgProcessing(true);
+          setBgProgress(5);
+          setBgTotal(1);
+          setBgCurrent(0);
+          setBgCurrentFile(currentCard.imageFile || currentCard.id);
+
+          const start = Date.now();
+          const poll = async () => {
+            let active = true;
+            let serverProgress = null;
+            let currentFile = '';
+            let current = 0;
+            let total = 1;
+            let substep = '';
+
+            try {
+              const rs = await fetch('http://localhost:3001/api/processing-status');
+              const st = await rs.json();
+              active = !!st.active;
+              if (typeof st.progress === 'number') serverProgress = st.progress;
+              if (st.currentFile) currentFile = st.currentFile;
+              if (typeof st.current === 'number') current = st.current;
+              if (typeof st.total === 'number') total = st.total;
+              if (st.substep) substep = st.substepDetail ? `${st.substep}: ${st.substepDetail}` : st.substep;
+            } catch {}
+
+            if (serverProgress !== null) setBgProgress(serverProgress);
+            setBgCurrentFile(currentFile);
+            setBgCurrent(current);
+            setBgSubstep(substep);
+            if (total > 0) setBgTotal(total);
+
+            const longTimeout = Date.now() - start >= 10 * 60 * 1000; // 10 min cap
+
+            if (active && !longTimeout) {
+              setTimeout(poll, 1500);
+            } else {
+              // Done - refresh pending cards
+              setBgProcessing(false);
+              setBgProgress(100);
+              setReprocessing(false);
+              fetchPendingCards();
+            }
+          };
+          setTimeout(poll, 1000);
+        } else {
+          setReprocessing(false);
+          alert(`Re-processing failed: ${result.error || 'Unknown error'}`);
+        }
+      } catch (error) {
+        setReprocessing(false);
+        console.error('Error starting reprocess:', error);
+        alert('Error starting re-processing: ' + (error.message || 'Unknown error'));
+      }
+      return;
+    }
+
+    // Synchronous reprocess for 'remaining' mode
+    setReprocessing(true);
     const controller = new AbortController();
     reprocessControllerRef.current = controller;
 
@@ -1488,7 +1709,7 @@ function App() {
         alert('Error re-processing card: ' + (error.message || 'Unknown error'));
       }
     }
-    
+
     setReprocessing(false);
   };
 
@@ -1549,15 +1770,45 @@ function App() {
 
   return (
     <div className="App">
-      {/* Reprocess progress bar at top */}
-      <div className={`verify-progress ${reprocessing ? 'show' : ''}`} role="status" aria-live="polite">
-        <div className="verify-progress-inner">
-          <div className="verify-progress-title">Re-processing card data…</div>
-          <div className="verify-progress-actions">
-            <button className="cancel-processing" type="button" onClick={cancelReprocess} title="Cancel re-processing">cancel</button>
+      {/* Global processing progress bar */}
+      <div className={`top-progress ${bgProcessing ? 'show' : ''}`} role="status" aria-live="polite">
+        <div className="top-progress-inner">
+          <div className="top-progress-info">
+            <div className="top-progress-title">
+              <span className="progress-spinner"></span>
+              {bgTotal > 0 ? (
+                <>PROCESSING {Math.min(bgCurrent + 1, bgTotal)} OF {bgTotal}</>
+              ) : (
+                <>PROCESSING</>
+              )}
+            </div>
+            <div className="top-progress-file">
+              {bgCurrentFile || bgSubstep ? (
+                <>{bgCurrentFile}{bgSubstep ? ` · ${bgSubstep}` : ''}</>
+              ) : '\u00A0'}
+            </div>
+          </div>
+          <div className="top-progress-percent">{bgProgress}%</div>
+          <div className="top-progress-actions">
+            <button
+              className="cancel-processing"
+              type="button"
+              onClick={async () => {
+                try {
+                  await fetch('http://localhost:3001/api/cancel-processing', { method: 'POST' });
+                } catch (e) {
+                  console.error('cancel failed', e);
+                }
+                setBgProcessing(false);
+                setReprocessing(false);
+              }}
+              title="Cancel processing"
+            >
+              CANCEL
+            </button>
           </div>
           <div className="progress-track top">
-            <div className="progress-bar indeterminate" />
+            <div className="progress-bar" style={{ width: `${bgProgress}%` }} />
           </div>
         </div>
       </div>
@@ -1572,6 +1823,9 @@ function App() {
               <p>found unsaved work from previous session. restore it?</p>
             </div>
             <div className="recovery-actions">
+              <button onClick={() => setShowRecoveryDiff(!showRecoveryDiff)} className="view-diff-button">
+                {showRecoveryDiff ? 'hide changes' : 'view changes'}
+              </button>
               <button onClick={handleRestore} className="restore-button">
                 restore
               </button>
@@ -1580,6 +1834,40 @@ function App() {
               </button>
             </div>
           </div>
+          {showRecoveryDiff && recoverySession.originalData && (
+            <div className="recovery-diff">
+              {recoverySession.editedData.map((edited, idx) => {
+                const original = recoverySession.originalData[idx] || {};
+                // Skip internal/object fields
+                const skipFields = ['id', 'position', 'grid_position', 'cropped_back_alias', '_autocorrected'];
+                const changedFields = Object.keys(edited).filter(key => {
+                  if (skipFields.some(skip => key.includes(skip))) return false;
+                  if (typeof edited[key] === 'object') return false;
+                  return edited[key] !== original[key];
+                });
+                if (changedFields.length === 0) return null;
+                const formatValue = (val) => {
+                  if (val === null || val === undefined) return '(empty)';
+                  if (typeof val === 'boolean') return val ? 'yes' : 'no';
+                  if (typeof val === 'object') return JSON.stringify(val);
+                  return String(val) || '(empty)';
+                };
+                return (
+                  <div key={idx} className="diff-card">
+                    <div className="diff-card-title">Card {idx + 1}: {edited.name || 'Unknown'}</div>
+                    {changedFields.map(field => (
+                      <div key={field} className="diff-field">
+                        <span className="diff-field-name">{field}:</span>
+                        <span className="diff-old">{formatValue(original[field])}</span>
+                        <span className="diff-arrow">→</span>
+                        <span className="diff-new">{formatValue(edited[field])}</span>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
 
@@ -1799,6 +2087,7 @@ function App() {
                           value={card.name}
                           onChange={(value) => updateCardField(index, 'name', value)}
                           onAutofill={(cardData) => handleAutofill(index, cardData)}
+                          cardData={card}
                           placeholder="player name"
                         />
                       </div>
@@ -1877,6 +2166,8 @@ function App() {
                           field="sport"
                           value={card.sport}
                           onChange={(value) => updateCardField(index, 'sport', value)}
+                          onAutofill={(cardData) => handleAutofill(index, cardData)}
+                          cardData={card}
                           placeholder="baseball, basketball, etc."
                         />
                       </div>
@@ -1886,23 +2177,29 @@ function App() {
                           field="brand"
                           value={card.brand}
                           onChange={(value) => updateCardField(index, 'brand', value)}
+                          onAutofill={(cardData) => handleAutofill(index, cardData)}
+                          cardData={card}
                           placeholder="topps, upper deck, etc."
                         />
                       </div>
                       <div className="field-group">
                         <label><strong>{formatFieldName('number')}:</strong></label>
-                        <AutocompleteInput
-                          field="number"
-                          value={card.number}
-                          onChange={(value) => updateCardField(index, 'number', value)}
+                        <input
+                          type="text"
+                          value={card.number || ''}
+                          onChange={(e) => updateCardField(index, 'number', e.target.value)}
                           placeholder="card number"
+                          autoComplete="off"
+                          autoCorrect="off"
+                          autoCapitalize="off"
+                          spellCheck="false"
                         />
                       </div>
                       <div className="field-group">
                         <label><strong>{formatFieldName('copyright_year')}:</strong></label>
-                        <input 
-                          type="text" 
-                          value={card.copyright_year} 
+                        <input
+                          type="text"
+                          value={card.copyright_year}
                           onChange={(e) => updateCardField(index, 'copyright_year', e.target.value)}
                         />
                       </div>
@@ -1912,6 +2209,8 @@ function App() {
                           field="team"
                           value={card.team}
                           onChange={(value) => updateCardField(index, 'team', value)}
+                          onAutofill={(cardData) => handleAutofill(index, cardData)}
+                          cardData={card}
                           placeholder="team name"
                         />
                       </div>

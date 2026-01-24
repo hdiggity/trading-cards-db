@@ -1763,11 +1763,11 @@ app.post('/api/save-progress/:id', async (req, res) => {
   }
 });
 
-// Reprocess card data using GPT Vision
+// Reprocess card data using GPT Vision (with progress tracking like main processing)
 app.post('/api/reprocess/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    const { mode } = req.body; // 'remaining' or 'all'
+    const { mode, background } = req.body; // mode: 'remaining' or 'all', background: true for progress bar
 
     // Find the image file in pending verification bulk back directory
     const bulkBackFiles = await fs.readdir(PENDING_BULK_BACK_DIR);
@@ -1783,16 +1783,63 @@ app.post('/api/reprocess/:id', async (req, res) => {
 
     const imagePath = path.join(PENDING_BULK_BACK_DIR, imageFile);
 
-    // Call Python to reprocess the image with grid_processor
+    // If background mode, move image back to unprocessed and trigger normal processing
+    if (background) {
+      // Move image back to unprocessed_bulk_back
+      const destPath = path.join(UNPROCESSED_BULK_BACK_DIR, imageFile);
+      await fs.rename(imagePath, destPath);
+
+      // Delete the existing JSON file
+      const jsonPath = path.join(PENDING_VERIFICATION_DIR, `${id}.json`);
+      try { await fs.unlink(jsonPath); } catch (_) {}
+
+      // Trigger background processing like main page
+      const logsDir = path.join(__dirname, '../../logs');
+      await fs.mkdir(logsDir, { recursive: true });
+      const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+      const logFile = path.join(logsDir, `reprocess_${stamp}.log`);
+
+      // Write file list for processing (as JSON array, matching main processing format)
+      const fileListPath = path.join(logsDir, `reprocess_files_${stamp}.json`);
+      await fs.writeFile(fileListPath, JSON.stringify([imageFile]));
+
+      // Clear any existing progress file to prevent showing stale progress
+      try { await fs.unlink(path.join(__dirname, '../../logs/processing_progress.json')); } catch (_) {}
+
+      const child = spawn('python', ['-m', 'app.run', '--grid', '--file-list', fileListPath], {
+        cwd: path.join(__dirname, '../..'),
+        detached: true,
+        stdio: ['ignore', 'pipe', 'pipe']
+      });
+
+      const logStream = require('fs').createWriteStream(logFile, { flags: 'a' });
+      child.stdout.pipe(logStream);
+      child.stderr.pipe(logStream);
+      child.unref();
+
+      // Write status for polling
+      writeStatus({ active: true, pid: child.pid, progress: 5, total: 1, current: 0, currentFile: imageFile, logFile, startedAt: new Date().toISOString() });
+
+      return res.json({ success: true, background: true, logFile, message: 'Reprocessing started in background' });
+    }
+
+    // Synchronous reprocess (original behavior)
     const pythonProcess = spawn('python', ['-c', `
 import sys
+import io
+import json
+
+# Redirect stdout to stderr during import and processing
+old_stdout = sys.stdout
+sys.stdout = sys.stderr
+
 from app.grid_processor import reprocess_grid_image
 
 image_path = sys.argv[1]
 cards = reprocess_grid_image(image_path)
 
-# Output JSON
-import json
+# Restore stdout and output only the JSON
+sys.stdout = old_stdout
 print(json.dumps(cards))
 `, imagePath], {
       cwd: path.join(__dirname, '../..'),
@@ -1813,11 +1860,19 @@ print(json.dumps(cards))
     pythonProcess.on('close', (code) => {
       if (code === 0) {
         try {
-          const reprocessedCards = JSON.parse(output);
+          // Try to extract JSON from output (in case there's extra content)
+          let jsonStr = output.trim();
+          // Find the JSON array in the output
+          const jsonMatch = jsonStr.match(/\[[\s\S]*\]/);
+          if (jsonMatch) {
+            jsonStr = jsonMatch[0];
+          }
+          const reprocessedCards = JSON.parse(jsonStr);
           res.json({ success: true, data: reprocessedCards });
         } catch (parseError) {
           console.error('Failed to parse reprocessed data:', parseError);
-          res.status(500).json({ error: 'Failed to parse reprocessed data', details: parseError.message });
+          console.error('Raw output:', output);
+          res.status(500).json({ error: 'Failed to parse reprocessed data', details: parseError.message, rawOutput: output.substring(0, 500) });
         }
       } else {
         console.error('Reprocess failed:', error);
@@ -3298,8 +3353,63 @@ with get_session() as session:
   }
 });
 
-// Serve bulk back images from pending_verification
-app.use('/api/bulk-back-image', express.static(PENDING_BULK_BACK_DIR));
+// Serve bulk back images from pending_verification with HEIC conversion
+app.get('/api/bulk-back-image/:filename', async (req, res) => {
+  try {
+    const imagePath = path.join(PENDING_BULK_BACK_DIR, req.params.filename);
+    const fileExtension = path.extname(imagePath).toLowerCase();
+
+    // Check if file exists
+    try {
+      await fs.access(imagePath);
+    } catch {
+      return res.status(404).send('Image not found');
+    }
+
+    if (fileExtension === '.heic' || fileExtension === '.heif') {
+      // Convert HEIC to JPEG for browser display
+      const pythonProcess = spawn('python', ['-c', `
+import sys
+from PIL import Image
+from pillow_heif import register_heif_opener
+import io
+
+register_heif_opener()
+
+try:
+    image = Image.open("${imagePath.replace(/\\/g, '\\\\')}")
+    output_buffer = io.BytesIO()
+    image.convert('RGB').save(output_buffer, format='JPEG', quality=95, optimize=False)
+    sys.stdout.buffer.write(output_buffer.getvalue())
+except Exception as e:
+    print(f"Error: {e}", file=sys.stderr)
+    sys.exit(1)
+      `], {
+        cwd: path.join(__dirname, '../..'),
+        stdio: ['pipe', 'pipe', 'pipe']
+      });
+
+      res.setHeader('Content-Type', 'image/jpeg');
+      pythonProcess.stdout.pipe(res);
+
+      pythonProcess.stderr.on('data', (data) => {
+        console.error('HEIC conversion error:', data.toString());
+      });
+
+      pythonProcess.on('close', (code) => {
+        if (code !== 0 && !res.headersSent) {
+          res.status(500).send('Error converting HEIC image');
+        }
+      });
+    } else {
+      // Serve other image formats normally
+      res.sendFile(imagePath);
+    }
+  } catch (error) {
+    console.error('Error serving bulk back image:', error);
+    res.status(500).send('Error serving image');
+  }
+});
 
 // Serve front images from unprocessed_single_front
 const FRONT_IMAGES_DIR = path.join(__dirname, '../../cards/unprocessed_single_front');
@@ -4309,6 +4419,132 @@ app.get('/api/recent-activity', async (req, res) => {
 });
 
 // Search for previously verified cards by name prefix (for autofill)
+// Find similar cards based on multiple field matches
+app.post('/api/find-similar-cards', async (req, res) => {
+  try {
+    const cardData = req.body || {};
+    const { name, brand, number, copyright_year, sport, team, card_set } = cardData;
+
+    // Need at least one field to search
+    if (!name && !brand && !number && !copyright_year && !team) {
+      return res.json({ cards: [] });
+    }
+
+    const pythonProcess = spawn('python', ['-c', `
+import json
+import sys
+from app.database import get_session
+from app.models import Card
+from sqlalchemy import or_, and_, func
+
+# Input data
+name = ${JSON.stringify(name || '')}
+brand = ${JSON.stringify(brand || '')}
+number = ${JSON.stringify(number || '')}
+copyright_year = ${JSON.stringify(copyright_year || '')}
+sport = ${JSON.stringify(sport || '')}
+team = ${JSON.stringify(team || '')}
+card_set = ${JSON.stringify(card_set || '')}
+
+with get_session() as session:
+    # Build filters for fields that have values
+    filters = []
+
+    if name and len(name) >= 2:
+        filters.append(func.lower(Card.name).like(func.lower(name) + '%'))
+    if brand and len(brand) >= 2:
+        filters.append(func.lower(Card.brand) == func.lower(brand))
+    if number and len(str(number)) >= 1:
+        filters.append(Card.number == str(number))
+    if copyright_year and len(str(copyright_year)) >= 4:
+        filters.append(Card.copyright_year == str(copyright_year))
+    if sport and len(sport) >= 3:
+        filters.append(func.lower(Card.sport) == func.lower(sport))
+    if team and len(team) >= 2:
+        filters.append(func.lower(Card.team).like('%' + func.lower(team) + '%'))
+    if card_set and len(card_set) >= 2:
+        filters.append(func.lower(Card.card_set).like('%' + func.lower(card_set) + '%'))
+
+    if len(filters) < 2:
+        # Need at least 2 matching fields to suggest
+        print(json.dumps({'cards': []}))
+        sys.exit(0)
+
+    # Find cards matching at least 2 of the criteria
+    cards = session.query(Card).filter(
+        or_(*filters)
+    ).limit(50).all()
+
+    # Score each card by how many fields match
+    results = []
+    for card in cards:
+        score = 0
+        if name and card.name and card.name.lower().startswith(name.lower()):
+            score += 2  # Name match is worth more
+        if brand and card.brand and card.brand.lower() == brand.lower():
+            score += 1
+        if number and card.number and str(card.number) == str(number):
+            score += 2  # Number match is important
+        if copyright_year and card.copyright_year and str(card.copyright_year) == str(copyright_year):
+            score += 1
+        if sport and card.sport and card.sport.lower() == sport.lower():
+            score += 1
+        if team and card.team and team.lower() in card.team.lower():
+            score += 1
+        if card_set and card.card_set and card_set.lower() in card.card_set.lower():
+            score += 1
+
+        # Only include if at least 2 fields match
+        if score >= 2:
+            results.append({
+                'id': card.id,
+                'name': card.name,
+                'sport': card.sport,
+                'brand': card.brand,
+                'team': card.team,
+                'number': card.number,
+                'copyright_year': card.copyright_year,
+                'card_set': card.card_set,
+                'condition': card.condition,
+                'is_player': card.is_player,
+                'features': card.features,
+                'value_estimate': card.value_estimate,
+                'notes': card.notes,
+                'score': score
+            })
+
+    # Sort by score descending, take top 5
+    results.sort(key=lambda x: x['score'], reverse=True)
+    print(json.dumps({'cards': results[:5]}))
+    `], {
+      cwd: path.join(__dirname, '../..'),
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+
+    let output = '';
+    let error = '';
+
+    pythonProcess.stdout.on('data', (d) => output += d.toString());
+    pythonProcess.stderr.on('data', (d) => error += d.toString());
+    pythonProcess.on('close', (code) => {
+      if (code === 0) {
+        try {
+          const result = JSON.parse(output);
+          res.json(result);
+        } catch (e) {
+          res.json({ cards: [] });
+        }
+      } else {
+        console.error('Similar cards search error:', error);
+        res.json({ cards: [] });
+      }
+    });
+  } catch (error) {
+    console.error('Error finding similar cards:', error);
+    res.json({ cards: [] });
+  }
+});
+
 app.get('/api/search-cards', async (req, res) => {
   try {
     const { query = '', limit = 10 } = req.query;

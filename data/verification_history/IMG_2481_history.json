@@ -1,0 +1,4624 @@
+[
+  {
+    "timestamp": "2026-01-24T20:48:10.955Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "fred kendall",
+        "number": "639",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Fred Kendall",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "639",
+          "condition": "Good (rounded corners, edge wear, light soiling; typical vintage stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Card back with complete major league batting record; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw (higher if sharp/centered)",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "fred kendall"
+      },
+      {
+        "grid_position": 2,
+        "name": "bill castro",
+        "number": "293",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Castro",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "293",
+          "condition": "Good (corner/edge wear, light discoloration; typical for 1970s Topps)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "bill castro"
+      },
+      {
+        "grid_position": 3,
+        "name": "mike caldwell",
+        "number": "524",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Caldwell",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "524",
+          "condition": "Good (noticeable corner wear, mild staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "mike caldwell"
+      },
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:04.740Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "bill castro",
+        "number": "293",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Castro",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "293",
+          "condition": "Good (corner/edge wear, light discoloration; typical for 1970s Topps)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "bill castro"
+      },
+      {
+        "grid_position": 3,
+        "name": "mike caldwell",
+        "number": "524",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Caldwell",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "524",
+          "condition": "Good (noticeable corner wear, mild staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "mike caldwell"
+      },
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:07.238Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "bill castro",
+        "number": "293",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Castro",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "293",
+          "condition": "Good (corner/edge wear, light discoloration; typical for 1970s Topps)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "bill castro",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "mike caldwell",
+        "number": "524",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Caldwell",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "524",
+          "condition": "Good (noticeable corner wear, mild staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "mike caldwell"
+      },
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:12.906Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "mike caldwell",
+        "number": "524",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Caldwell",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "524",
+          "condition": "Good (noticeable corner wear, mild staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "mike caldwell"
+      },
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:18.883Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "mike caldwell",
+        "number": "521",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Caldwell",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "524",
+          "condition": "Good (noticeable corner wear, mild staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "mike caldwell",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:29.673Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim colborn",
+        "number": "521",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Caldwell",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "524",
+          "condition": "Good (noticeable corner wear, mild staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "mike caldwell",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:30.241Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim colborn",
+        "number": "521",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Caldwell",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "524",
+          "condition": "Good (noticeable corner wear, mild staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "mike caldwell",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:45.258Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter"
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:46.723Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "darrell porter",
+        "number": "645",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Darrell Porter",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "645",
+          "condition": "Good (soft corners, edge wear; typical vintage)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "darrell porter",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:52.210Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott"
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:49:59.675Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "george scott",
+        "number": "15",
+        "team": "milwaukee",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "George Scott",
+          "brand": "Topps",
+          "team": "Milwaukee",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "15",
+          "condition": "Good (corner wear, light surface/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel; checklist-style stats layout",
+          "value_estimate": "$0.50–$3.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "george scott",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:50:31.592Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox"
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:50:37.806Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "elliott maddox",
+        "number": "503",
+        "team": "new york yankees",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Elliott Maddox",
+          "brand": "Topps",
+          "team": "New York",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "503",
+          "condition": "Good (corner rounding, edge wear, light toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Batting record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "elliott maddox",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:50:56.411Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:50:56.572Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "danny frisella",
+        "number": "32",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Danny Frisella",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "32",
+          "condition": "Good (heavier corner wear; some discoloration)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$2.00 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "danny frisella",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:51:08.127Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh"
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:51:19.528Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "joe mcintosh",
+        "number": "497",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Joe McIntosh",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "497",
+          "condition": "Good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "joe mcintosh",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:51:36.362Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:51:37.242Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "dave freisleben",
+        "number": "217",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2481_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Freisleben",
+          "brand": "Topps",
+          "team": "San Diego",
+          "card_set": "1974 Topps",
+          "copyright_year": "1974",
+          "number": "217",
+          "condition": "Good (corner wear, edge wear; typical 1974 stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitching record back; cartoon panel",
+          "value_estimate": "$0.25–$1.50 raw",
+          "notes": "Standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1974",
+            "corrected": "1976",
+            "confidence": 18
+          }
+        ],
+        "canonical_name": "dave freisleben",
+        "_overall_confidence": 0.74,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  }
+]

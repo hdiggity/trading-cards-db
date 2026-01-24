@@ -1,0 +1,5496 @@
+[
+  {
+    "timestamp": "2026-01-24T20:30:15.581Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "marc hill",
+        "number": "577",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.53,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Marc Hill",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "577",
+          "condition": "Poor to Fair (heavy wear, rounded corners, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats layout; includes cartoon/notes area",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Poor to Fair (heavy wear, rounded corners, staining/toning)",
+            "corrected": "fair",
+            "confidence": 19
+          }
+        ],
+        "canonical_name": "marc hill"
+      },
+      {
+        "grid_position": 2,
+        "name": "derrel thomas",
+        "number": "493",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.65,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Derrel Thomas",
+          "brand": "Topps",
+          "team": "Los Angeles Dodgers",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "493",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; handwritten-style bio notes printed on card",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_ml_team_applied": true,
+        "_ml_team_confidence": 1,
+        "_ml_team_gpt_value": "Los Angeles Dodgers",
+        "_ml_team_support": 8,
+        "canonical_name": "derrel thomas"
+      },
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:30:19.690Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "marc hill",
+        "number": "577",
+        "team": "san francisco giants",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.53,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Marc Hill",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "577",
+          "condition": "Poor to Fair (heavy wear, rounded corners, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats layout; includes cartoon/notes area",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Poor to Fair (heavy wear, rounded corners, staining/toning)",
+            "corrected": "fair",
+            "confidence": 19
+          }
+        ],
+        "canonical_name": "marc hill",
+        "_overall_confidence": 0.53,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "derrel thomas",
+        "number": "493",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.65,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Derrel Thomas",
+          "brand": "Topps",
+          "team": "Los Angeles Dodgers",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "493",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; handwritten-style bio notes printed on card",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_ml_team_applied": true,
+        "_ml_team_confidence": 1,
+        "_ml_team_gpt_value": "Los Angeles Dodgers",
+        "_ml_team_support": 8,
+        "canonical_name": "derrel thomas"
+      },
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:30:30.037Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "derrel thomas",
+        "number": "493",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.65,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Derrel Thomas",
+          "brand": "Topps",
+          "team": "Los Angeles Dodgers",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "493",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; handwritten-style bio notes printed on card",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_ml_team_applied": true,
+        "_ml_team_confidence": 1,
+        "_ml_team_gpt_value": "Los Angeles Dodgers",
+        "_ml_team_support": 8,
+        "canonical_name": "derrel thomas"
+      },
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:30:37.800Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "derrel thomas",
+        "number": "493",
+        "team": "baltimore orioles",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.65,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Derrel Thomas",
+          "brand": "Topps",
+          "team": "Los Angeles Dodgers",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "493",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; handwritten-style bio notes printed on card",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_ml_team_applied": true,
+        "_ml_team_confidence": 1,
+        "_ml_team_gpt_value": "Los Angeles Dodgers",
+        "_ml_team_support": 8,
+        "canonical_name": "derrel thomas",
+        "_overall_confidence": 0.65,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:30:46.084Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "derrel thomas",
+        "number": "493",
+        "team": "san ",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.65,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Derrel Thomas",
+          "brand": "Topps",
+          "team": "Los Angeles Dodgers",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "493",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; handwritten-style bio notes printed on card",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_ml_team_applied": true,
+        "_ml_team_confidence": 1,
+        "_ml_team_gpt_value": "Los Angeles Dodgers",
+        "_ml_team_support": 8,
+        "canonical_name": "derrel thomas",
+        "_overall_confidence": 0.65,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:31:21.823Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "derrel thomas",
+        "number": "493",
+        "team": "san francisco giants",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.65,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Derrel Thomas",
+          "brand": "Topps",
+          "team": "Los Angeles Dodgers",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "493",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; handwritten-style bio notes printed on card",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_ml_team_applied": true,
+        "_ml_team_confidence": 1,
+        "_ml_team_gpt_value": "Los Angeles Dodgers",
+        "_ml_team_support": 8,
+        "canonical_name": "derrel thomas",
+        "_overall_confidence": 0.65,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:31:31.122Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:31:49.727Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:31:52.274Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "jackie brown",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:32:04.804Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:32:06.739Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "Poor to Fair (heavy wear, corner rounding, surface grime/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick waits",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:32:16.912Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:32:22.941Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "rico carty",
+        "number": "156",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "156",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back batting record layout",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rico carty",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:32:35.896Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:32:36.622Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "oakland athletics",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:33:30.940Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of grid position 3 (same card back visible)",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Duplicate card in the grid; standard base card"
+        },
+        "canonical_name": "jackie brown",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:33:43.732Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein"
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:33:47.089Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "john lowenstein",
+        "number": "646",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "John Lowenstein",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "646",
+          "condition": "Poor to Fair (heavy wear, corner rounding, staining/toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back stats; cartoon panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "john lowenstein",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:33:55.227Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson"
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:34:30.535Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:34:42.384Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "tribe adds pat dobson to wigman; pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "topps traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:34:47.586Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "tribe adds pat dobson to wigman; pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "topps traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:35:32.058Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "tribe adds pat dobson to wigman; pat dobson",
+        "number": "296T",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "topps traded",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "short print",
+        "notes": "traded/transaction card (number includes 't')",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Pat Dobson",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps Baseball (Traded)",
+          "copyright_year": "1977",
+          "number": "296T",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Topps Traded-style back with 'SPORTS EXTRA' headline and transaction/news text",
+          "value_estimate": "~$0.50–$2 (low grade traded card)",
+          "notes": "Traded/transaction card (number includes 'T'); more collectible than many commons but still low value in this condition"
+        },
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "pat dobson",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": false
+      },
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:35:39.617Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:35:52.408Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "baltimore orioles",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:35:55.434Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-24T20:35:56.406Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "eric raich",
+        "number": "484",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.62,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2461_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Eric Raich",
+          "brand": "Topps",
+          "team": "Baltimore Orioles",
+          "card_set": "1977 Topps Baseball",
+          "copyright_year": "1977",
+          "number": "484",
+          "condition": "Poor to Fair (heavy wear, corner/edge damage, toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Vintage Topps green-back pitching record layout; cartoon/notes panel",
+          "value_estimate": "~$0.25–$1 (low grade common)",
+          "notes": "Standard base card back; no clear variation noted from back"
+        },
+        "canonical_name": "eric raich",
+        "_overall_confidence": 0.62,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": true
+      }
+    ],
+    "afterData": null
+  }
+]

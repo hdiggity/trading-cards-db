@@ -317,12 +317,13 @@ def normalize_features(features_str):
     return ",".join(sorted(set(normalized)))
 
 
-def normalize_card_set(card_set_str):
-    """Normalize card_set - return 'n/a' for base cards, keep valid subset names."""
+def normalize_card_set(card_set_str, brand=None):
+    """Normalize card_set - return 'n/a' for base cards, keep valid subset names with brand prefix."""
     if not card_set_str:
         return "n/a"
 
     cs = str(card_set_str).lower().strip()
+    brand_lower = (brand or '').lower().strip()
 
     # Already n/a
     if cs in ("n/a", "na", "none", "null", "unknown", "base", "base set", ""):
@@ -339,6 +340,9 @@ def normalize_card_set(card_set_str):
     # Check if it's a valid subset
     for subset in valid_subsets:
         if subset in cs:
+            # Return brand + subset (e.g., "topps traded" not just "traded")
+            if brand_lower and brand_lower not in cs:
+                return f"{brand_lower} {subset}"
             return subset
 
     # Filter out year+brand combinations like "2012 topps baseball", "1975 topps", etc.
@@ -352,6 +356,9 @@ def normalize_card_set(card_set_str):
 
     # If it's short and doesn't look like a year+brand, keep it
     if len(cs) < 20 and not re.search(r'\d{4}', cs):
+        # Add brand prefix if not already included
+        if brand_lower and brand_lower not in cs:
+            return f"{brand_lower} {cs}"
         return cs
 
     return "n/a"
@@ -367,21 +374,30 @@ def normalize_notes(notes_str):
     if len(n) < 3 or n in ("none", "n/a", "na", "null", "unknown", ""):
         return "none"
 
-    # Reject unhelpful patterns - stats, bio info, generic descriptions
+    # Keep patterns that indicate collector value
+    keep_patterns = [
+        "rookie", "rc", "sp", "ssp", "short print", "error", "variation", "var",
+        "refractor", "chrome", "parallel", "insert", "chase", "limited", "serial",
+        "numbered", "#/", "/99", "/50", "/25", "/10", "/5", "/1", "auto", "relic",
+        "patch", "jersey", "bat", "game-used", "gem", "mint", "psa", "bgs", "sgc",
+        "rare", "scarce", "tough", "key", "hof", "hall of fame", "mvp", "all-star",
+        "first", "debut", "last", "final", "historic", "record", "milestone"
+    ]
+
+    # If note contains collector value keywords, keep it
+    for pattern in keep_patterns:
+        if pattern in n:
+            return notes_str.strip()[:80] if len(notes_str) > 80 else notes_str.strip()
+
+    # Reject if only generic descriptions or extraction metadata
     reject_patterns = [
-        "back shows", "back reads", "back text",
-        "standard topps", "standard design", "standard card",
-        "mlb logo", "mlbpa logo", "copyright",
-        "checklist card", "not a player", "not a single-player card",
-        "leaders list format", "multi-player card",
-        "bio notes", "biography", "personal info",
-        "team card", "team records", "pennant winners", "batting/pitching",
-        "summarizing", "historical", "career stats", "career highlights",
-        "batting record", "pitching record", "season stats",
-        "home runs", "runs batted", "earned run", "strikeouts",
-        "games played", "at bats", "batting average",
-        "full stats table", "complete statistics",
+        "back shows", "back reads", "back text", "standard card",
         "nothing special", "no special", "base card", "common card",
+        "regular card", "standard issue",
+        "number includes", "includes 't'", "includes t", "traded/transaction",
+        "transaction card", "card number contains", "card number includes",
+        "number starts with", "number ends with", "number format",
+        "typical", "typical card", "regular issue", "standard format"
     ]
 
     for pattern in reject_patterns:
@@ -575,7 +591,7 @@ Extract for each card:
 
 1. name (full name including last name)
 2. number
-3. team (most recent team only, ignore prior teams in career stats)
+3. team (full team name with city AND mascot, e.g. "chicago cubs" not just "chicago" - use most recent team only)
 4. copyright_year
 5. brand
 6. card_set
@@ -583,7 +599,7 @@ Extract for each card:
 8. condition (grade relative to card's age - yellowing, vintage print quality, old card stock are normal for pre-1990 cards, not damage)
 9. is_player_card: true/false
 10. features
-11. notes (card rarity/specialty: errors, variations, short prints, limited editions, photo variations, miscuts, or other collectible distinctions)
+11. notes (collector value: rookie card, serial #/print run, error, variation, short print, insert/chase card, refractor, autograph, relic, or "none" if standard base card)
 12. value_estimate
 
 IMPORTANT: Never return null or empty strings for name, number, brand, or sport fields.
@@ -801,7 +817,7 @@ Return JSON with "cards" array."""
             if 'features' in card:
                 card['features'] = normalize_features(card['features'])
             if 'card_set' in card:
-                card['card_set'] = normalize_card_set(card['card_set'])
+                card['card_set'] = normalize_card_set(card['card_set'], card.get('brand'))
             if 'notes' in card:
                 card['notes'] = normalize_notes(card['notes'])
             if 'value_estimate' in card:
@@ -900,13 +916,14 @@ Return JSON with "cards" array."""
                 card['_card_set_autocorrected'] = True
 
         # Rule 2: Team Name Completion
-        # Use learned corrections to add city prefixes
-        team = (card.get('team') or '').strip()
-        if team and team not in ('n/a', 'unknown', 'none'):
-            # Build team completion map from known corrections
+        # Use learned corrections to add city prefixes or team mascots
+        team = (card.get('team') or '').strip().lower()
+        if team and team not in ('n/a', 'unknown', 'none', 'multiple'):
+            # Team mascot to full name (mascot only -> city + mascot)
             team_completions = {
                 'brewers': 'milwaukee brewers',
                 'indians': 'cleveland indians',
+                'guardians': 'cleveland guardians',
                 'padres': 'san diego padres',
                 'rangers': 'texas rangers',
                 'red sox': 'boston red sox',
@@ -918,6 +935,7 @@ Return JSON with "cards" array."""
                 'dodgers': 'los angeles dodgers',
                 'giants': 'san francisco giants',
                 'athletics': 'oakland athletics',
+                "a's": 'oakland athletics',
                 'orioles': 'baltimore orioles',
                 'angels': 'los angeles angels',
                 'astros': 'houston astros',
@@ -928,10 +946,50 @@ Return JSON with "cards" array."""
                 'royals': 'kansas city royals',
                 'tigers': 'detroit tigers',
                 'twins': 'minnesota twins',
+                'mariners': 'seattle mariners',
+                'blue jays': 'toronto blue jays',
+                'rays': 'tampa bay rays',
+                'marlins': 'miami marlins',
+                'diamondbacks': 'arizona diamondbacks',
+                'rockies': 'colorado rockies',
+                'nationals': 'washington nationals',
+                'expos': 'montreal expos',
+            }
+
+            # City-only to full name (for cities with only one team)
+            city_completions = {
+                'boston': 'boston red sox',
+                'cleveland': 'cleveland guardians',
+                'cincinnati': 'cincinnati reds',
+                'detroit': 'detroit tigers',
+                'houston': 'houston astros',
+                'kansas city': 'kansas city royals',
+                'milwaukee': 'milwaukee brewers',
+                'minnesota': 'minnesota twins',
+                'oakland': 'oakland athletics',
+                'philadelphia': 'philadelphia phillies',
+                'pittsburgh': 'pittsburgh pirates',
+                'san diego': 'san diego padres',
+                'seattle': 'seattle mariners',
+                'st. louis': 'st. louis cardinals',
+                'st louis': 'st. louis cardinals',
+                'texas': 'texas rangers',
+                'toronto': 'toronto blue jays',
+                'tampa bay': 'tampa bay rays',
+                'miami': 'miami marlins',
+                'arizona': 'arizona diamondbacks',
+                'colorado': 'colorado rockies',
+                'washington': 'washington nationals',
+                'montreal': 'montreal expos',
+                'atlanta': 'atlanta braves',
+                'baltimore': 'baltimore orioles',
             }
 
             if team in team_completions:
                 corrections['team'] = team_completions[team]
+                card['_team_autocompleted'] = True
+            elif team in city_completions:
+                corrections['team'] = city_completions[team]
                 card['_team_autocompleted'] = True
 
         # Rule 3: Condition - no automatic adjustments

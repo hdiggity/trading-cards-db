@@ -15,6 +15,7 @@ from PIL import Image
 from pillow_heif import register_heif_opener
 
 from .correction_tracker import CorrectionTracker
+from .image_preprocessor import enhance_image
 from .utils import client
 
 register_heif_opener()
@@ -340,8 +341,8 @@ def normalize_card_set(card_set_str, brand=None):
     # Check if it's a valid subset
     for subset in valid_subsets:
         if subset in cs:
-            # Return brand + subset (e.g., "topps traded" not just "traded")
-            if brand_lower and brand_lower not in cs:
+            # Always return brand + subset (e.g., "topps traded" not just "traded")
+            if brand_lower:
                 return f"{brand_lower} {subset}"
             return subset
 
@@ -574,12 +575,16 @@ class GridProcessor:
         if feature_examples:
             f" Examples from database: {', '.join(feature_examples)}."
 
-        # Load and encode image
+        # Load and enhance image for better extraction
         img = Image.open(image_path)
+        img = enhance_image(img)  # Apply contrast, sharpening, denoising
+
+        # Resize if needed for API
         max_size = 4000
         if max(img.size) > max_size:
             ratio = max_size / max(img.size)
             img = img.resize((int(img.size[0] * ratio), int(img.size[1] * ratio)), Image.LANCZOS)
+
         buffer = BytesIO()
         img.save(buffer, format="JPEG", quality=95)
         img_b64 = base64.b64encode(buffer.getvalue()).decode("utf-8")
@@ -587,7 +592,7 @@ class GridProcessor:
         # Single-pass extraction prompt
         prompt = """Grid of trading card backs, left-to-right top-to-bottom.
 
-Extract for each card:
+Extract for each card INDEPENDENTLY (do not carry values from one card to the next):
 
 1. name (full name including last name)
 2. number
@@ -597,14 +602,16 @@ Extract for each card:
 6. card_set
 7. sport
 8. condition (grade relative to card's age - yellowing, vintage print quality, old card stock are normal for pre-1990 cards, not damage)
-9. is_player_card: true/false
+9. is_player_card: true if card features an individual player, false if checklist/team card/league leaders/multi-player card. EVALUATE EACH CARD SEPARATELY.
 10. features
 11. notes (collector value: rookie card, serial #/print run, error, variation, short print, insert/chase card, refractor, autograph, relic, or "none" if standard base card)
 12. value_estimate
 
-IMPORTANT: Never return null or empty strings for name, number, brand, or sport fields.
-If you cannot determine a value, use your best guess based on the card image.
-For sport, default to "baseball" if unclear.
+IMPORTANT:
+- Never return null or empty strings for name, number, brand, or sport fields.
+- If you cannot determine a value, use your best guess based on the card image.
+- For sport, default to "baseball" if unclear.
+- Evaluate is_player_card for EACH card independently - most cards are player cards (true).
 
 Return JSON with "cards" array."""
 

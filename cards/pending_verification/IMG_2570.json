@@ -1,0 +1,442 @@
+[
+  {
+    "grid_position": 1,
+    "name": "diego segui",
+    "number": "653",
+    "team": "seattle mariners",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.74,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "Diego Segui",
+      "brand": "Topps",
+      "team": "Seattle Mariners",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "653",
+      "condition": "Good (noticeable corner/edge wear, slight discoloration typical for 1970s stock)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Card back with pitching record/stat line and bio; Topps 1977 design (green/teal).",
+      "value_estimate": "$0.25\u2013$1.50",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
+    "_ml_value_estimate_support": 91,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "diego segui"
+  },
+  {
+    "grid_position": 2,
+    "name": "bob stinson",
+    "number": "638",
+    "team": "st. louis cardinals",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "Bob Stinson",
+      "brand": "Topps",
+      "team": "St. Louis Cardinals",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "638",
+      "condition": "Good (moderate corner wear, light surface/edge wear)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Card back with pitching record/stat line and short bio; Topps 1977 design.",
+      "value_estimate": "$0.25\u2013$1.50",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
+    "_ml_value_estimate_support": 91,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "bob stinson"
+  },
+  {
+    "grid_position": 3,
+    "name": "juan beniquez",
+    "number": "81",
+    "team": "texas rangers",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "Juan Beniquez",
+      "brand": "Topps",
+      "team": "Texas Rangers",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "81",
+      "condition": "Good (corner wear and slight toning consistent with age)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Card back with batting record/stat line and bio; Topps 1977 design.",
+      "value_estimate": "$0.25\u2013$2.00",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_learned_corrections": [
+      {
+        "field": "team",
+        "original": "Texas Rangers",
+        "corrected": "texas rangers",
+        "confidence": "pattern"
+      },
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "juan beniquez"
+  },
+  {
+    "grid_position": 4,
+    "name": "jim spencer",
+    "number": "648",
+    "team": "chicago white sox",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "Jim Spencer",
+      "brand": "Topps",
+      "team": "Chicago White Sox",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "648",
+      "condition": "Good (moderate corner/edge wear; typical 1970s print/stock)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Card back with batting record/stat line and bio; Topps 1977 design.",
+      "value_estimate": "$0.25\u2013$1.50",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
+    "_ml_value_estimate_support": 91,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "jim spencer"
+  },
+  {
+    "grid_position": 5,
+    "name": "eric soderholm",
+    "number": "273",
+    "team": "chicago white sox",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "Eric Soderholm",
+      "brand": "Topps",
+      "team": "Chicago White Sox",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "273",
+      "condition": "Good (edge/corner wear; slight discoloration)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Card back with batting record/stat line and bio; Topps 1977 design.",
+      "value_estimate": "$0.25\u2013$2.00",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "eric soderholm"
+  },
+  {
+    "grid_position": 6,
+    "name": "team checklist chicago white sox",
+    "number": "418",
+    "team": "multiple",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": false,
+    "features": "checklist",
+    "notes": "checklist card (team checklist); not a player card",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "Team Checklist Chicago White Sox",
+      "brand": "Topps",
+      "team": "Chicago White Sox",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "418",
+      "condition": "Good (corner wear; checklist back shows age toning)",
+      "sport": "baseball",
+      "is_player": false,
+      "features": "Team checklist listing Chicago White Sox players with positions and uniform numbers.",
+      "value_estimate": "$0.25\u2013$2.50",
+      "notes": "Checklist card (team checklist); not a player card"
+    },
+    "_card_set_autocorrected": true,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": null
+  },
+  {
+    "grid_position": 7,
+    "name": "jack kucek",
+    "number": "623",
+    "team": "chicago white sox",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "Jack Kucek",
+      "brand": "Topps",
+      "team": "Chicago White Sox",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "623",
+      "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Card back with pitching record/stat line and bio; Topps 1977 design.",
+      "value_estimate": "$0.25\u2013$1.50",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
+    "_ml_value_estimate_support": 91,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "jack kucek"
+  },
+  {
+    "grid_position": 8,
+    "name": "lamar johnson",
+    "number": "443",
+    "team": "chicago white sox",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "rookie",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "Lamar Johnson",
+      "brand": "Topps",
+      "team": "Chicago White Sox",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "443",
+      "condition": "Good (corner wear; light surface wear)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Card back with batting record/stat line and bio; Topps 1977 design.",
+      "value_estimate": "$0.25\u2013$1.50",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
+    "_ml_value_estimate_support": 91,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "lamar johnson"
+  },
+  {
+    "grid_position": 9,
+    "name": "eric soderholm",
+    "number": "273",
+    "team": "chicago white sox",
+    "copyright_year": "1976",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.58,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2570_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "Eric Soderholm",
+      "brand": "Topps",
+      "team": "Chicago White Sox",
+      "card_set": "1977 Topps",
+      "copyright_year": "1977",
+      "number": "273",
+      "condition": "Good (corner/edge wear; slight toning)",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Duplicate of Eric Soderholm #273 back; batting record/stat line and bio; Topps 1977 design.",
+      "value_estimate": "$0.25\u2013$2.00",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_learned_corrections": [
+      {
+        "field": "copyright_year",
+        "original": "1977",
+        "corrected": "1976",
+        "confidence": 51
+      }
+    ],
+    "canonical_name": "eric soderholm"
+  }
+]

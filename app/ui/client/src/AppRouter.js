@@ -5,13 +5,13 @@ import App from './App';
 import DatabaseBrowser from './DatabaseBrowser';
 import SystemLogs from './SystemLogs';
 import RawScanPreview from './RawScanPreview';
-import ProcessingStatusBar from './ProcessingStatusBar';
+import GlobalProgressBar from './GlobalProgressBar';
 
 function AppRouter() {
   return (
     <Router>
       {/* Global processing status bar - visible on all pages */}
-      <ProcessingStatusBar />
+      <GlobalProgressBar />
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/verification" element={<App />} />

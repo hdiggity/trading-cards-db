@@ -1157,15 +1157,52 @@ print("Transaction updated successfully")
                   console.error(`[pass-card] Warning: Failed to delete duplicate: ${delErr.message}`);
                 }
               } else {
-                // Not in verified yet, move it (rename = atomic move, no duplicate)
-                // Note: git pre-commit hook will compress and backup original to originals/
-                await fs.rename(sourceBulkPath, verifiedImagePath);
-                console.log(`[pass-card] Moved image to verified: ${verifiedImageName}`);
+                // Not in verified yet - handle original + compressed copies
+                const ORIGINALS_DIR = path.join(VERIFIED_ROOT_DIR, 'originals', 'verified_bulk_back');
+                await fs.mkdir(ORIGINALS_DIR, { recursive: true });
 
-                // Record bulk image movement
+                // 1. Copy original to originals folder (preserve original format)
+                const originalPath = path.join(ORIGINALS_DIR, verifiedImageName);
+                await fs.copyFile(sourceBulkPath, originalPath);
+                console.log(`[pass-card] Copied original to: ${originalPath}`);
+
+                // 2. Create compressed jpeg in verified_bulk_back
+                const baseNameNoExt = path.parse(verifiedImageName).name;
+                const compressedName = `${baseNameNoExt}.jpeg`;
+                const compressedPath = path.join(VERIFIED_IMAGES_DIR, compressedName);
+
+                // Use Python to convert and compress (handles HEIC)
+                const convertProcess = spawn('python', ['-c', `
+from PIL import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
+
+img = Image.open("${sourceBulkPath.replace(/\\/g, '\\\\')}")
+img.convert('RGB').save("${compressedPath.replace(/\\/g, '\\\\')}", 'JPEG', quality=80, optimize=True)
+print("Compressed successfully")
+                `], {
+                  cwd: path.join(__dirname, '../..'),
+                  stdio: ['pipe', 'pipe', 'pipe']
+                });
+
+                await new Promise((resolve, reject) => {
+                  let stderr = '';
+                  convertProcess.stderr.on('data', (d) => stderr += d.toString());
+                  convertProcess.on('close', (code) => {
+                    if (code === 0) resolve();
+                    else reject(new Error(`Compression failed: ${stderr}`));
+                  });
+                });
+                console.log(`[pass-card] Created compressed version: ${compressedName}`);
+
+                // 3. Delete source from pending (we have both copies now)
+                await fs.unlink(sourceBulkPath);
+                console.log(`[pass-card] Removed from pending: ${imageFile}`);
+
+                // Record file movements (use compressed path as main verified path)
                 fileMovements.push({
                   source: sourceBulkPath,
-                  dest: verifiedImagePath,
+                  dest: compressedPath,
                   file_type: 'bulk_back'
                 });
               }
@@ -4447,40 +4484,21 @@ team = ${JSON.stringify(team || '')}
 card_set = ${JSON.stringify(card_set || '')}
 
 with get_session() as session:
-    # Build filters for fields that have values
-    filters = []
-
-    if name and len(name) >= 2:
-        filters.append(func.lower(Card.name).like(func.lower(name) + '%'))
-    if brand and len(brand) >= 2:
-        filters.append(func.lower(Card.brand) == func.lower(brand))
-    if number and len(str(number)) >= 1:
-        filters.append(Card.number == str(number))
-    if copyright_year and len(str(copyright_year)) >= 4:
-        filters.append(Card.copyright_year == str(copyright_year))
-    if sport and len(sport) >= 3:
-        filters.append(func.lower(Card.sport) == func.lower(sport))
-    if team and len(team) >= 2:
-        filters.append(func.lower(Card.team).like('%' + func.lower(team) + '%'))
-    if card_set and len(card_set) >= 2:
-        filters.append(func.lower(Card.card_set).like('%' + func.lower(card_set) + '%'))
-
-    if len(filters) < 2:
-        # Need at least 2 matching fields to suggest
+    # Name match is REQUIRED for card suggestions
+    if not name or len(name) < 2:
         print(json.dumps({'cards': []}))
         sys.exit(0)
 
-    # Find cards matching at least 2 of the criteria
-    cards = session.query(Card).filter(
-        or_(*filters)
-    ).limit(50).all()
+    # Query cards that match the name prefix
+    name_filter = func.lower(Card.name).like(func.lower(name) + '%')
+    cards = session.query(Card).filter(name_filter).limit(30).all()
 
-    # Score each card by how many fields match
+    # Score each card by how many fields match (name already required by query)
     results = []
     for card in cards:
-        score = 0
-        if name and card.name and card.name.lower().startswith(name.lower()):
-            score += 2  # Name match is worth more
+        score = 1  # Base score for name match
+
+        # Bonus for other matching fields
         if brand and card.brand and card.brand.lower() == brand.lower():
             score += 1
         if number and card.number and str(card.number) == str(number):
@@ -4494,9 +4512,8 @@ with get_session() as session:
         if card_set and card.card_set and card_set.lower() in card.card_set.lower():
             score += 1
 
-        # Only include if at least 2 fields match
-        if score >= 2:
-            results.append({
+        # Include all name-matching cards (already filtered by name in query)
+        results.append({
                 'id': card.id,
                 'name': card.name,
                 'sport': card.sport,

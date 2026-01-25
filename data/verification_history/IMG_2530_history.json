@@ -1,0 +1,3502 @@
+[
+  {
+    "timestamp": "2026-01-25T04:08:31.411Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "pete broberg",
+        "number": "39",
+        "team": "texas rangers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Pete Broberg",
+          "brand": "Topps",
+          "team": "Texas Rangers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Texas Rangers",
+            "corrected": "texas rangers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "pete broberg"
+      },
+      {
+        "grid_position": 2,
+        "name": "tom murphy",
+        "number": "219",
+        "team": "california angels",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Murphy",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "219",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom murphy"
+      },
+      {
+        "grid_position": 3,
+        "name": "bill travers",
+        "number": "573",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Travers",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "573",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bill travers"
+      },
+      {
+        "grid_position": 4,
+        "name": "tom hausman",
+        "number": "452",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Hausman",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "452",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom hausman"
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby mitchell",
+        "number": "479",
+        "team": "minnesota twins",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Mitchell",
+          "brand": "Topps",
+          "team": "Minnesota Twins",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "479",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bobby mitchell"
+      },
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:08:50.310Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "tom murphy",
+        "number": "219",
+        "team": "california angels",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Murphy",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "219",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom murphy"
+      },
+      {
+        "grid_position": 3,
+        "name": "bill travers",
+        "number": "573",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Travers",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "573",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bill travers"
+      },
+      {
+        "grid_position": 4,
+        "name": "tom hausman",
+        "number": "452",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Hausman",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "452",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom hausman"
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby mitchell",
+        "number": "479",
+        "team": "minnesota twins",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Mitchell",
+          "brand": "Topps",
+          "team": "Minnesota Twins",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "479",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bobby mitchell"
+      },
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:08:52.610Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "tom murphy",
+        "number": "219",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Murphy",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "219",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom murphy",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "bill travers",
+        "number": "573",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Travers",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "573",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bill travers"
+      },
+      {
+        "grid_position": 4,
+        "name": "tom hausman",
+        "number": "452",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Hausman",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "452",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom hausman"
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby mitchell",
+        "number": "479",
+        "team": "minnesota twins",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Mitchell",
+          "brand": "Topps",
+          "team": "Minnesota Twins",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "479",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bobby mitchell"
+      },
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:09:08.821Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "bill travers",
+        "number": "573",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Travers",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "573",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bill travers"
+      },
+      {
+        "grid_position": 4,
+        "name": "tom hausman",
+        "number": "452",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Hausman",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "452",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom hausman"
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby mitchell",
+        "number": "479",
+        "team": "minnesota twins",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Mitchell",
+          "brand": "Topps",
+          "team": "Minnesota Twins",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "479",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bobby mitchell"
+      },
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:10:03.625Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "tom hausman",
+        "number": "452",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tom Hausman",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "452",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "tom hausman"
+      },
+      {
+        "grid_position": 5,
+        "name": "bobby mitchell",
+        "number": "479",
+        "team": "minnesota twins",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Mitchell",
+          "brand": "Topps",
+          "team": "Minnesota Twins",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "479",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bobby mitchell"
+      },
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:10:43.418Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "bobby mitchell",
+        "number": "479",
+        "team": "minnesota twins",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Mitchell",
+          "brand": "Topps",
+          "team": "Minnesota Twins",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "479",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bobby mitchell"
+      },
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:10:47.797Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "bobby mitchell",
+        "number": "479",
+        "team": "other",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Bobby Mitchell",
+          "brand": "Topps",
+          "team": "Minnesota Twins",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "479",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "bobby mitchell",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:11:38.912Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "gorman thomas",
+        "number": "139",
+        "team": "milwaukee brewers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.74,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gorman Thomas",
+          "brand": "Topps",
+          "team": "Milwaukee Brewers",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "139",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Milwaukee Brewers",
+            "corrected": "milwaukee brewers",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "gorman thomas"
+      },
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:12:13.072Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "san diego padres",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:12:31.842Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "george hendrick",
+        "number": "570",
+        "team": "los angeles dodgers",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "570",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "george hendrick",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:12:38.687Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas"
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:12:47.839Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:12:55.262Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "1976 record breaker; minnie rojas",
+        "number": "232",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "record breaker subset card (not a rookie/insert)",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Minnie Rojas",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "232",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back text highlights '1976 Record Breaker' (Minnie Rojas) with stats and write-up.",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "Record Breaker subset card (not a rookie/insert)"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 91,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "minnie rojas",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:13:04.542Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "336",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:13:21.167Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "536",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T04:13:23.460Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "vic albury",
+        "number": "536",
+        "team": "minnesota twins",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2530_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Vic Albury",
+          "brand": "Topps",
+          "team": "Montreal Expos",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "336",
+          "condition": "Poor to Fair (heavy wear, staining/toning, rounded corners)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; green/white 1977 Topps design.",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 51
+          }
+        ],
+        "canonical_name": "vic albury",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  }
+]

@@ -1,7 +1,10 @@
 {
   "active": true,
-  "pid": 55324,
+  "pid": 83557,
   "progress": 5,
-  "logFile": "/Users/harlan/Documents/personal/code/programs/trading_cards_db/logs/reprocess_2026-01-24T21-01-32-684Z.log",
-  "startedAt": "2026-01-24T21:01:32.688Z"
+  "total": 1,
+  "current": 0,
+  "currentFile": "IMG_2540.HEIC",
+  "logFile": "/Users/harlan/Documents/personal/code/programs/trading_cards_db/logs/reprocess_2026-01-25T04-20-03-011Z.log",
+  "startedAt": "2026-01-25T04:20:03.015Z"
 }

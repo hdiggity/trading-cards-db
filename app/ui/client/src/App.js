@@ -521,7 +521,11 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
         value={value || ''}
         onChange={handleInputChange}
         onFocus={() => {
-          if (suggestions.length > 0) {
+          // Fetch suggestions on focus if there's a value
+          if (value && value.length >= 2) {
+            const updatedCardData = cardData ? { ...cardData, [field]: value } : null;
+            fetchSuggestions(value, updatedCardData);
+          } else if (suggestions.length > 0 || similarCards.length > 0) {
             setShowSuggestions(true);
           }
         }}
@@ -752,9 +756,6 @@ function App() {
   const [fieldOptions, setFieldOptions] = useState(null);
   const [verificationMode, setVerificationMode] = useState('single'); // 'single' or 'entire'
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [cardSuggestions, setCardSuggestions] = useState({}); // { cardIndex: [suggestions] }
-  const [showSuggestions, setShowSuggestions] = useState({}); // { cardIndex: true/false }
-  const suggestionTimeoutRef = useRef(null);
 
   // Undo/Redo functionality
   const [verificationHistory, setVerificationHistory] = useState([]);
@@ -1043,62 +1044,6 @@ function App() {
       console.error('Error fetching pending cards:', error);
       setLoading(false);
     }
-  };
-
-  const fetchCardSuggestions = async (cardIndex, searchParams) => {
-    // Only search if we have some meaningful criteria
-    const { name, brand, number, copyright_year } = searchParams;
-    if (!name && !brand && !number && !copyright_year) {
-      setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
-      return;
-    }
-    // Need at least 2 chars for name search
-    if (name && name.length < 2 && !brand && !number && !copyright_year) {
-      setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
-      return;
-    }
-
-    try {
-      const response = await fetch('http://localhost:3001/api/card-suggestions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(searchParams)
-      });
-      if (response.ok) {
-        try {
-          const data = await response.json();
-          if (data.suggestions && data.suggestions.length > 0) {
-            setCardSuggestions(prev => ({ ...prev, [cardIndex]: data.suggestions }));
-            setShowSuggestions(prev => ({ ...prev, [cardIndex]: true }));
-          } else {
-            setCardSuggestions(prev => ({ ...prev, [cardIndex]: [] }));
-            setShowSuggestions(prev => ({ ...prev, [cardIndex]: false }));
-          }
-        } catch (_) {}
-      }
-    } catch (error) {
-      console.error('Error fetching card suggestions:', error);
-    }
-  };
-
-  const applySuggestion = (cardIndex, suggestion) => {
-    const newData = [...editedData];
-    newData[cardIndex] = {
-      ...newData[cardIndex],
-      name: suggestion.name || newData[cardIndex].name,
-      brand: suggestion.brand || newData[cardIndex].brand,
-      number: suggestion.number || newData[cardIndex].number,
-      copyright_year: suggestion.copyright_year || newData[cardIndex].copyright_year,
-      team: suggestion.team || newData[cardIndex].team,
-      card_set: suggestion.card_set || newData[cardIndex].card_set,
-      sport: suggestion.sport || newData[cardIndex].sport,
-      features: suggestion.features || newData[cardIndex].features,
-      is_player: suggestion.is_player !== undefined ? suggestion.is_player : newData[cardIndex].is_player
-    };
-    setEditedData(newData);
-    setShowSuggestions(prev => ({ ...prev, [cardIndex]: false }));
-    // Trigger auto-save
-    setTimeout(() => autoSaveProgress(newData), 500);
   };
 
   // Fetch verification history when card changes
@@ -1510,24 +1455,6 @@ function App() {
     autoSaveTimeoutRef.current = setTimeout(() => {
       autoSaveProgress(newData);
     }, 2000);
-
-    // Trigger suggestions when name changes (debounced)
-    const suggestionFields = ['name', 'brand', 'number', 'copyright_year'];
-    if (suggestionFields.includes(field)) {
-      if (suggestionTimeoutRef.current) {
-        clearTimeout(suggestionTimeoutRef.current);
-      }
-      suggestionTimeoutRef.current = setTimeout(() => {
-        const card = newData[cardIndex];
-        fetchCardSuggestions(cardIndex, {
-          name: card.name,
-          brand: card.brand,
-          number: card.number,
-          copyright_year: card.copyright_year,
-          sport: card.sport
-        }).catch(err => console.error('Suggestion fetch failed:', err));
-      }, 500);
-    }
   };
 
   const handleAutofill = (cardIndex, cardData) => {
@@ -2091,75 +2018,6 @@ function App() {
                           placeholder="player name"
                         />
                       </div>
-                      {showSuggestions[index] && cardSuggestions[index]?.length > 0 && (
-                        <div className="suggestions-container" style={{
-                          backgroundColor: '#f8f9fa',
-                          border: '2px solid #4a90e2',
-                          borderRadius: '8px',
-                          marginBottom: '15px',
-                          maxHeight: '200px',
-                          overflowY: 'auto',
-                          boxShadow: '0 2px 8px rgba(74, 144, 226, 0.2)'
-                        }}>
-                          <div style={{
-                            padding: '8px 12px',
-                            borderBottom: '2px solid #e0e0e0',
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            backgroundColor: '#4a90e2'
-                          }}>
-                            <span style={{ fontSize: '12px', color: '#fff', fontWeight: '600' }}>
-                              Matching cards from database ({cardSuggestions[index].length})
-                            </span>
-                            <button
-                              onClick={() => setShowSuggestions(prev => ({ ...prev, [index]: false }))}
-                              style={{
-                                background: 'none',
-                                border: 'none',
-                                color: '#fff',
-                                cursor: 'pointer',
-                                fontSize: '12px',
-                                fontWeight: '500'
-                              }}
-                            >
-                              ✕
-                            </button>
-                          </div>
-                          {cardSuggestions[index].map((suggestion, sIdx) => (
-                            <div
-                              key={sIdx}
-                              onClick={() => applySuggestion(index, suggestion)}
-                              style={{
-                                padding: '10px 12px',
-                                borderBottom: sIdx < cardSuggestions[index].length - 1 ? '1px solid #e0e0e0' : 'none',
-                                cursor: 'pointer',
-                                fontSize: '13px',
-                                backgroundColor: '#fff',
-                                transition: 'all 0.2s'
-                              }}
-                              onMouseEnter={(e) => {
-                                e.currentTarget.style.backgroundColor = '#e3f2fd';
-                                e.currentTarget.style.transform = 'translateX(4px)';
-                              }}
-                              onMouseLeave={(e) => {
-                                e.currentTarget.style.backgroundColor = '#fff';
-                                e.currentTarget.style.transform = 'translateX(0)';
-                              }}
-                            >
-                              <div style={{ color: '#2c3e50', fontWeight: '600', marginBottom: '4px' }}>
-                                {suggestion.name}
-                              </div>
-                              <div style={{ fontSize: '11px', color: '#7f8c8d' }}>
-                                {suggestion.brand} #{suggestion.number} ({suggestion.copyright_year})
-                                {suggestion.team && suggestion.team !== 'unknown' && (
-                                  <span style={{ color: '#e67e22', marginLeft: '8px' }}>{suggestion.team}</span>
-                                )}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
                       <div className="field-group">
                         <label><strong>{formatFieldName('sport')}:</strong></label>
                         <AutocompleteInput

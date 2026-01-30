@@ -10,7 +10,7 @@ from app.database import get_session
 def auto_merge_duplicates_for_card(card_id: int) -> int:
     """Automatically merge any duplicates for a given card.
 
-    Finds all cards with the same canonical_name, brand, number, and copyright_year,
+    Finds all cards with the same name (or canonical_name), brand, number, and copyright_year,
     then merges them into the card with the highest quantity.
 
     Args:
@@ -22,33 +22,53 @@ def auto_merge_duplicates_for_card(card_id: int) -> int:
     with get_session() as session:
         # Get the card details
         card = session.execute(
-            text("SELECT canonical_name, brand, number, copyright_year FROM cards WHERE id = :card_id"),
+            text("SELECT name, canonical_name, brand, number, copyright_year FROM cards WHERE id = :card_id"),
             {"card_id": card_id}
         ).fetchone()
 
-        if not card or not card[0]:  # No card or no canonical_name
+        if not card:
             return 0
 
-        canonical_name, brand, number, copyright_year = card
+        name, canonical_name, brand, number, copyright_year = card
 
-        # Find all duplicates (same canonical_name, brand, number, year)
-        duplicates = session.execute(
-            text("""
-                SELECT id, quantity
-                FROM cards
-                WHERE canonical_name = :canonical_name
-                AND brand = :brand
-                AND number = :number
-                AND copyright_year = :copyright_year
-                ORDER BY quantity DESC, id ASC
-            """),
-            {
-                "canonical_name": canonical_name,
-                "brand": brand,
-                "number": number,
-                "copyright_year": copyright_year
-            }
-        ).fetchall()
+        # Find all duplicates - use canonical_name if available, otherwise use name
+        if canonical_name:
+            duplicates = session.execute(
+                text("""
+                    SELECT id, quantity
+                    FROM cards
+                    WHERE canonical_name = :canonical_name
+                    AND brand = :brand
+                    AND number = :number
+                    AND copyright_year = :copyright_year
+                    ORDER BY quantity DESC, id ASC
+                """),
+                {
+                    "canonical_name": canonical_name,
+                    "brand": brand,
+                    "number": number,
+                    "copyright_year": copyright_year
+                }
+            ).fetchall()
+        else:
+            # Fallback to exact name match (case-insensitive)
+            duplicates = session.execute(
+                text("""
+                    SELECT id, quantity
+                    FROM cards
+                    WHERE LOWER(name) = LOWER(:name)
+                    AND brand = :brand
+                    AND number = :number
+                    AND copyright_year = :copyright_year
+                    ORDER BY quantity DESC, id ASC
+                """),
+                {
+                    "name": name,
+                    "brand": brand,
+                    "number": number,
+                    "copyright_year": copyright_year
+                }
+            ).fetchall()
 
         if len(duplicates) <= 1:
             return 0  # No duplicates

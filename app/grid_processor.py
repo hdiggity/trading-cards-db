@@ -330,6 +330,10 @@ def normalize_card_set(card_set_str, brand=None):
     if cs in ("n/a", "na", "none", "null", "unknown", "base", "base set", ""):
         return "n/a"
 
+    # If card_set is just the brand name, it's not a real subset
+    if brand_lower and cs == brand_lower:
+        return "n/a"
+
     # Valid subset names to keep
     valid_subsets = [
         "traded", "update", "chrome", "heritage", "opening day", "archives",
@@ -472,7 +476,7 @@ def normalize_team(team_str, card_data):
 
     t = str(team_str).lower().strip()
 
-    if t in ("n/a", "na", "null", "unknown", ""):
+    if t in ("n/a", "na", "null", "unknown", "", "none"):
         return None
 
     # Known MLB team names (for detecting team names in parentheses)
@@ -596,7 +600,7 @@ Extract for each card INDEPENDENTLY (do not carry values from one card to the ne
 
 1. name (full name including last name)
 2. number
-3. team (full team name with city AND mascot, e.g. "chicago cubs" not just "chicago" - use most recent team only)
+3. team (full team name with city and team name, e.g. "chicago cubs" not just "chicago", use most recent team only)
 4. copyright_year
 5. brand
 6. card_set
@@ -687,10 +691,10 @@ Return JSON with "cards" array."""
                 raw_data.append(self._create_default_card(len(raw_data)))
             raw_data = raw_data[:9]
 
-        # Add grid metadata
+        # Add grid metadata - always use 0-8 regardless of what GPT returned
         for i, card in enumerate(raw_data):
-            card.setdefault('grid_position', i)
-            card.setdefault('_grid_metadata', {"position": i, "row": i // 3, "col": i % 3})
+            card['grid_position'] = i  # Override GPT's 1-9 with 0-8
+            card['_grid_metadata'] = {"position": i, "row": i // 3, "col": i % 3}
 
         # Validate required fields - flag blanks for manual review
         required_fields = ['name', 'number', 'brand', 'sport']

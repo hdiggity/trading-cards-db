@@ -1,0 +1,5483 @@
+[
+  {
+    "timestamp": "2026-01-25T21:29:02.783Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "gary lavelle",
+        "number": "423",
+        "team": "san francisco giants",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Lavelle",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "423",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "gary lavelle"
+      },
+      {
+        "grid_position": 2,
+        "name": "alan ashby",
+        "number": "564",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Ashby",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "564",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "alan ashby"
+      },
+      {
+        "grid_position": 3,
+        "name": "chuck hartenstein",
+        "number": "416",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Hartenstein",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "416",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chuck hartenstein"
+      },
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "atlanta braves",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr"
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:29:03.841Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "gary lavelle",
+        "number": "423",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Lavelle",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "423",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "gary lavelle",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "alan ashby",
+        "number": "564",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Ashby",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "564",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "alan ashby"
+      },
+      {
+        "grid_position": 3,
+        "name": "chuck hartenstein",
+        "number": "416",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Hartenstein",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "416",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chuck hartenstein"
+      },
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "atlanta braves",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr"
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:29:10.184Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "alan ashby",
+        "number": "564",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Ashby",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "564",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "alan ashby"
+      },
+      {
+        "grid_position": 3,
+        "name": "chuck hartenstein",
+        "number": "416",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Hartenstein",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "416",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chuck hartenstein"
+      },
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "atlanta braves",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr"
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:29:13.540Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "alan ashby",
+        "number": "564",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Ashby",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "564",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "alan ashby",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "chuck hartenstein",
+        "number": "416",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Hartenstein",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "416",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chuck hartenstein"
+      },
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "atlanta braves",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr"
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:29:24.175Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "chuck hartenstein",
+        "number": "416",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Hartenstein",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "416",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chuck hartenstein"
+      },
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "atlanta braves",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr"
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:29:32.460Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "atlanta braves",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr"
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:29:35.427Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "chicago",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:29:37.709Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:30:45.641Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ralph garr",
+        "number": "133",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ralph Garr",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "133",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.75",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.75",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "ralph garr",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:30:50.919Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer"
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:30:55.674Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "jim spencer",
+        "number": "648",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Spencer",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "648",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "jim spencer",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:02.242Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone"
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:02.990Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "steve stone",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Stone",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "17",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 136,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "steve stone",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:14.130Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "st. louis cardinals",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan"
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:17.342Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "dave duncan",
+        "number": "338",
+        "team": "baltimore orioles",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Duncan",
+          "brand": "Topps",
+          "team": "St. Louis Cardinals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "338",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; batting record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "dave duncan",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:26.979Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "team checklist chicago white sox",
+        "number": "418",
+        "team": "multiple",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:30.474Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "chicago white sox ",
+        "number": "418",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.33,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Team Checklist Chicago White Sox",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "418",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "1977 Topps team checklist back listing players/positions/uniform numbers; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.25–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.00",
+        "_ml_value_estimate_support": 27,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": null,
+        "_overall_confidence": 0.33,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": false
+      },
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:35.443Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:40.753Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": true
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:31:41.291Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "chris knapp",
+        "number": "247",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2630_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "247",
+          "condition": "poor",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps baseball back; pitching record/stat lines; cartoon panel; Topps Chewing Gum copyright line",
+          "value_estimate": "$0.10–$0.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.954065045725288,
+        "_ml_condition_gpt_value": "poor",
+        "_ml_condition_support": 347,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$0.50",
+        "_ml_value_estimate_support": 135,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 78
+          }
+        ],
+        "canonical_name": "chris knapp",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": true
+      }
+    ],
+    "afterData": null
+  }
+]

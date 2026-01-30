@@ -180,7 +180,15 @@ async function recordCorrections(originalCard, modifiedCard) {
   // Otherwise fall back to comparing originalCard directly
   const aiExtraction = originalCard._original_extraction || originalCard;
 
+  // Get learned corrections that were auto-applied (so we don't re-log them as user corrections)
+  const learnedCorrections = originalCard._learned_corrections || [];
+  const learnedCorrectionsByField = {};
+  for (const lc of learnedCorrections) {
+    learnedCorrectionsByField[lc.field] = lc.corrected;
+  }
+
   console.log('[recordCorrections] Comparing cards - has _original_extraction:', !!originalCard._original_extraction);
+  console.log('[recordCorrections] Learned corrections applied:', JSON.stringify(learnedCorrectionsByField));
   console.log('[recordCorrections] Sample original name:', aiExtraction.name);
   console.log('[recordCorrections] Sample modified name:', modifiedCard.name);
 
@@ -191,6 +199,14 @@ async function recordCorrections(originalCard, modifiedCard) {
     const origNorm = orig?.toString().toLowerCase().trim() || '';
     const modNorm = modified?.toString().toLowerCase().trim() || '';
     if (origNorm !== modNorm && modNorm !== '') {
+      // Skip if this change was made by learned corrections and user didn't further modify
+      if (learnedCorrectionsByField[field]) {
+        const learnedNorm = learnedCorrectionsByField[field]?.toString().toLowerCase().trim() || '';
+        if (learnedNorm === modNorm) {
+          console.log(`[recordCorrections] Field ${field} skipped - matches learned correction (not a user edit)`);
+          continue;
+        }
+      }
       console.log(`[recordCorrections] Field ${field} changed: "${origNorm}" -> "${modNorm}"`);
       corrections.push({ field, original: orig, corrected: modified });
     }
@@ -858,7 +874,10 @@ for card_info in card_data:
 
 card_complete_ids = []
 with get_session() as session:
-    for card_info in card_data:
+    for idx, card_info in enumerate(card_data):
+        # Use savepoint so we can rollback just this card if something fails
+        # This prevents orphan Card records without matching CardComplete entries
+        savepoint = session.begin_nested()
         try:
             # Create CardCreate instance for validation
             card_create = CardCreate(**card_info)
@@ -876,11 +895,12 @@ with get_session() as session:
                     Card.copyright_year == card_info.get("copyright_year")
                 ).first()
             else:
-                # Fallback to exact name match for backwards compatibility
+                # Fallback to name match (case-insensitive)
+                from sqlalchemy import func
                 existing = session.query(Card).filter(
                     Card.brand == card_info.get("brand"),
                     Card.number == card_info.get("number"),
-                    Card.name == card_info.get("name"),
+                    func.lower(Card.name) == func.lower(card_info.get("name")),
                     Card.copyright_year == card_info.get("copyright_year")
                 ).first()
 
@@ -899,10 +919,11 @@ with get_session() as session:
             # Create CardComplete record for each physical card copy
             # Database triggers will automatically update cards table and quantity
             grid_meta = card_info.get('_grid_metadata', {})
+            from datetime import datetime
             card_complete = CardComplete(
                 card_id=card_id,
                 source_file=card_info.get('source_file') or card_info.get('original_filename'),
-                grid_position=str(grid_meta.get('position') or card_info.get('grid_position', '')),
+                grid_position=str(grid_meta.get('position') if grid_meta.get('position') is not None else card_info.get('grid_position', idx)),
                 original_filename=card_info.get('original_filename'),
                 notes=card_info.get('notes'),
                 name=card_info.get('name'),
@@ -916,14 +937,18 @@ with get_session() as session:
                 is_player=card_info.get('is_player'),
                 value_estimate=card_info.get('value_estimate'),
                 features=card_info.get('features'),
-                cropped_back_file=card_info.get('cropped_back_file')
+                cropped_back_file=card_info.get('cropped_back_file'),
+                last_updated=datetime.now(),
+                canonical_name=card_info.get('canonical_name')
             )
             session.add(card_complete)
             session.flush()
             card_complete_ids.append(card_complete.id)
+            savepoint.commit()
             print(f"Added cards_complete record for: {card_info.get('name')} (triggers will sync to cards)", file=sys.stderr)
 
         except Exception as e:
+            savepoint.rollback()
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}", file=sys.stderr)
             continue
 
@@ -1448,6 +1473,9 @@ for card_info in card_data:
 
 with get_session() as session:
     for idx, card_info in enumerate(card_data):
+        # Use savepoint so we can rollback just this card if something fails
+        # This prevents orphan Card records without matching CardComplete entries
+        savepoint = session.begin_nested()
         try:
             # Create CardCreate instance for validation
             card_create = CardCreate(**card_info)
@@ -1465,11 +1493,12 @@ with get_session() as session:
                     Card.copyright_year == card_info.get("copyright_year")
                 ).first()
             else:
-                # Fallback to exact name match for backwards compatibility
+                # Fallback to name match (case-insensitive)
+                from sqlalchemy import func
                 existing = session.query(Card).filter(
                     Card.brand == card_info.get("brand"),
                     Card.number == card_info.get("number"),
-                    Card.name == card_info.get("name"),
+                    func.lower(Card.name) == func.lower(card_info.get("name")),
                     Card.copyright_year == card_info.get("copyright_year")
                 ).first()
 
@@ -1509,9 +1538,12 @@ with get_session() as session:
                 cropped_back_file=card_info.get('cropped_back_file')
             )
             session.add(card_complete)
+            session.flush()
+            savepoint.commit()
             print(f"Added cards_complete record for: {card_info.get('name')} (triggers will sync to cards)")
 
         except Exception as e:
+            savepoint.rollback()
             print(f"Error processing card {card_info.get('name', 'n/a')}: {e}")
             continue
 
@@ -1852,10 +1884,42 @@ app.post('/api/reprocess/:id', async (req, res) => {
       const logStream = require('fs').createWriteStream(logFile, { flags: 'a' });
       child.stdout.pipe(logStream);
       child.stderr.pipe(logStream);
-      child.unref();
 
-      // Write status for polling
-      writeStatus({ active: true, pid: child.pid, progress: 5, total: 1, current: 0, currentFile: imageFile, logFile, startedAt: new Date().toISOString() });
+      // Write initial status for polling
+      const initialStatus = { active: true, pid: child.pid, progress: 5, total: 1, current: 0, currentFile: imageFile, logFile, startedAt: new Date().toISOString() };
+      writeStatus(initialStatus);
+
+      // Poll Python progress file to update status (since single image, we check frequently)
+      const progressTimer = setInterval(() => {
+        try {
+          const pythonProgress = readPythonProgress();
+          if (pythonProgress && typeof pythonProgress.percent === 'number') {
+            writeStatus({
+              ...initialStatus,
+              active: true,
+              progress: pythonProgress.percent,
+              substep: pythonProgress.substep || '',
+              substepDetail: pythonProgress.detail || ''
+            });
+          }
+        } catch {}
+      }, 1000);
+
+      child.on('close', (code, signal) => {
+        clearInterval(progressTimer);
+        writeStatus({
+          ...initialStatus,
+          active: false,
+          progress: 100,
+          finishedAt: new Date().toISOString(),
+          exitCode: code ?? null,
+          signal: signal ?? null
+        });
+        // Clean up file list
+        fs.unlink(fileListPath).catch(() => {});
+      });
+
+      child.unref();
 
       return res.json({ success: true, background: true, logFile, message: 'Reprocessing started in background' });
     }

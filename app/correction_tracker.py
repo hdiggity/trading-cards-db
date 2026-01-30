@@ -229,9 +229,10 @@ class CorrectionTracker:
         corrections_applied = []
 
         # Fields to check for corrections (name excluded - use canonical_names system instead)
+        # copyright_year excluded - year printed on card should always be trusted
         correctable_fields = [
             'team', 'brand', 'sport', 'condition',
-            'copyright_year', 'card_set'
+            'card_set'
         ]
 
         for field in correctable_fields:

@@ -1,10 +1,12 @@
 {
-  "active": true,
-  "pid": 83557,
-  "progress": 5,
-  "total": 1,
-  "current": 0,
-  "currentFile": "IMG_2540.HEIC",
-  "logFile": "/Users/harlan/Documents/personal/code/programs/trading_cards_db/logs/reprocess_2026-01-25T04-20-03-011Z.log",
-  "startedAt": "2026-01-25T04:20:03.015Z"
+  "active": false,
+  "pid": 8808,
+  "logFile": "/Users/harlan/Documents/personal/code/programs/trading_cards_db/logs/process_bulk_back_2026-01-30T04-44-08-301Z.log",
+  "startedAt": "2026-01-30T04:44:08.330Z",
+  "total": 5,
+  "remaining": 0,
+  "progress": 100,
+  "finishedAt": "2026-01-30T04:48:12.402Z",
+  "exitCode": 0,
+  "signal": null
 }

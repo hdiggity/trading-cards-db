@@ -1,0 +1,4308 @@
+[
+  {
+    "timestamp": "2026-01-26T02:25:23.668Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill lee",
+        "number": "295",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "295",
+          "condition": "Good (noticeable corner/edge wear and some toning typical for late-1970s Topps)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with season-by-season pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 1,
+        "name": "fergie jenkins",
+        "number": "720",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Fergie Jenkins",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "720",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 16,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "fergie jenkins"
+      },
+      {
+        "grid_position": 2,
+        "name": "chris knapp",
+        "number": "361",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "361",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "chris knapp"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian"
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:25:25.762Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bill lee",
+        "number": "295",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "295",
+          "condition": "Good (noticeable corner/edge wear and some toning typical for late-1970s Topps)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with season-by-season pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "bill lee",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 1,
+        "name": "fergie jenkins",
+        "number": "720",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Fergie Jenkins",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "720",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 16,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "fergie jenkins"
+      },
+      {
+        "grid_position": 2,
+        "name": "chris knapp",
+        "number": "361",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "361",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "chris knapp"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian"
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:25:33.109Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "fergie jenkins",
+        "number": "720",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Fergie Jenkins",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "720",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 16,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "fergie jenkins"
+      },
+      {
+        "grid_position": 2,
+        "name": "chris knapp",
+        "number": "361",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "361",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "chris knapp"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian"
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:25:35.329Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "fergie jenkins",
+        "number": "720",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Fergie Jenkins",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "720",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 16,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "fergie jenkins",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "chris knapp",
+        "number": "361",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "361",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "chris knapp"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian"
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:25:41.020Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "chris knapp",
+        "number": "361",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "361",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "chris knapp"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian"
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:25:43.874Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "chris knapp",
+        "number": "361",
+        "team": "chicago white sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Chris Knapp",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "361",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "chris knapp",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian"
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:25:52.302Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian"
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:25:53.263Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim essian",
+        "number": "98",
+        "team": "chicago white sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Essian",
+          "brand": "Topps",
+          "team": "Chicago White Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "98",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher card back with complete major league batting record and bio text; 'PLAY BALL' diagram",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim essian",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:26:04.746Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "barry bonnell",
+        "number": "496",
+        "team": "atlanta braves",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Barry Bonnell",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "496",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "barry bonnell"
+      },
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:26:20.033Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "multiple",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:26:29.928Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "phillies team checklist",
+        "number": "112",
+        "team": "philadelphia phillies",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.37,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Phillies Team Checklist",
+          "brand": "Topps",
+          "team": "Philadelphia Phillies",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "112",
+          "condition": "Good (moderate corner/edge wear; typical aging)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist back listing players/positions and uniform numbers",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 36,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": null,
+        "_overall_confidence": 0.37,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": false
+      },
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:26:37.246Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy"
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:26:45.380Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "junior kennedy",
+        "number": "501",
+        "team": "cincinnati reds",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Junior Kennedy",
+          "brand": "Topps",
+          "team": "Cincinnati Reds",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "501",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Infield card back with complete major & minor league batting record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "junior kennedy",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:26:54.348Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "435",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee"
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:27:02.113Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bill lee",
+        "number": "455",
+        "team": "boston red sox",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Lee",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "435",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 189,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bill lee",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-26T02:27:15.063Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "bob knepper",
+        "number": "486",
+        "team": "san francisco giants",
+        "copyright_year": "1979",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2706_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Knepper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1979 Topps",
+          "copyright_year": "1979",
+          "number": "486",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher card back with complete major & minor league pitching record; 'BASEBALL DATES' trivia box",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical aging)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "bob knepper"
+      }
+    ],
+    "afterData": null
+  }
+]

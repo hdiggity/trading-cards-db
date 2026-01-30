@@ -1,0 +1,5559 @@
+[
+  {
+    "timestamp": "2026-01-25T21:36:14.245Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 2,
+        "name": "rico carty",
+        "number": "635",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 3,
+        "name": "sal bando",
+        "number": "398",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Sal Bando",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "398",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "sal bando"
+      },
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:36:20.441Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "ken brett",
+        "number": "157",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "rico carty",
+        "number": "635",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 3,
+        "name": "sal bando",
+        "number": "398",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Sal Bando",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "398",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "sal bando"
+      },
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:36:28.980Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "rico carty",
+        "number": "635",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "rico carty"
+      },
+      {
+        "grid_position": 3,
+        "name": "sal bando",
+        "number": "398",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Sal Bando",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "398",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "sal bando"
+      },
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:36:34.474Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "rico carty",
+        "number": "465",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rico Carty",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "rico carty",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 3,
+        "name": "sal bando",
+        "number": "398",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Sal Bando",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "398",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "sal bando"
+      },
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:42:43.175Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "sal bando",
+        "number": "398",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Sal Bando",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "398",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "sal bando"
+      },
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:42:48.972Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "ken brett",
+        "number": "157",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0
+        },
+        "_original_extraction": {
+          "name": "Sal Bando",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "398",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 179,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett",
+        "is_player": true
+      },
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:42:55.449Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:42:57.672Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "ken brett",
+        "number": "157",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:08.278Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister"
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:11.614Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "chicago white sox",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:14.906Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "alan bannister",
+        "number": "559",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Alan Bannister",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "559",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "alan bannister",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:22.493Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett"
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:25.325Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "none",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:38.805Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "ken brett",
+        "number": "157",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Ken Brett",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "157",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Duplicate of Ken Brett #157 back; pitching record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "ken brett",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:47.422Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish"
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:50.247Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "montreal ",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:52.801Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "montreal expos",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:43:55.457Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "larry parrish",
+        "number": "526",
+        "team": "montreal expos",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Larry Parrish",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "526",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "larry parrish",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:44:00.151Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein"
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:44:06.012Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "none",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:44:08.105Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "bill stein",
+        "number": "334",
+        "team": "chicago white sox",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Stein",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "334",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "bill stein",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:44:18.140Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "none",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:44:23.527Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-25T21:44:25.855Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 9,
+        "name": "tommy smith",
+        "number": "14",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.77,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2650_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Smith",
+          "brand": "Topps",
+          "team": "none",
+          "card_set": "Topps (1977)",
+          "copyright_year": "1977",
+          "number": "14",
+          "condition": "good (light edge/corner wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1977 Topps card back with batting record/stat lines and cartoon/biographical text",
+          "value_estimate": "$0.25–$1",
+          "notes": "none"
+        },
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1",
+        "_ml_value_estimate_support": 55,
+        "_learned_corrections": [
+          {
+            "field": "copyright_year",
+            "original": "1977",
+            "corrected": "1976",
+            "confidence": 83
+          }
+        ],
+        "canonical_name": "tommy smith",
+        "_overall_confidence": 0.77,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  }
+]

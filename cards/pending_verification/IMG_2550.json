@@ -1,358 +1,6 @@
 [
   {
-    "grid_position": 1,
-    "name": "charlie williams",
-    "number": "73",
-    "team": "chicago cubs",
-    "copyright_year": "1976",
-    "brand": "topps",
-    "card_set": "n/a",
-    "sport": "baseball",
-    "condition": "good",
-    "is_player_card": true,
-    "features": "none",
-    "notes": "none",
-    "value_estimate": "$1.00",
-    "_grid_metadata": {
-      "position": 0,
-      "row": 0,
-      "col": 0,
-      "confidence": 0.58,
-      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos0.png"
-    },
-    "_original_extraction": {
-      "name": "Charlie Williams",
-      "brand": "Topps",
-      "team": "Chicago Cubs",
-      "card_set": "1977 Topps",
-      "copyright_year": "1977",
-      "number": "73",
-      "condition": "Good (noticeable corner/edge wear and some discoloration typical of age)",
-      "sport": "baseball",
-      "is_player": true,
-      "features": "Pitcher; card back with stats and bio; Topps 1977 green/blue back design",
-      "value_estimate": "$0.25\u2013$1.50",
-      "notes": "none"
-    },
-    "_card_set_autocorrected": true,
-    "_ml_value_estimate_applied": true,
-    "_ml_value_estimate_confidence": 1.0,
-    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
-    "_ml_value_estimate_support": 91,
-    "_learned_corrections": [
-      {
-        "field": "copyright_year",
-        "original": "1977",
-        "corrected": "1976",
-        "confidence": 51
-      }
-    ],
-    "canonical_name": "charlie williams"
-  },
-  {
-    "grid_position": 2,
-    "name": "derrel thomas",
-    "number": "266",
-    "team": "los angeles dodgers",
-    "copyright_year": "1976",
-    "brand": "topps",
-    "card_set": "n/a",
-    "sport": "baseball",
-    "condition": "good",
-    "is_player_card": true,
-    "features": "none",
-    "notes": "none",
-    "value_estimate": "$1.00",
-    "_grid_metadata": {
-      "position": 1,
-      "row": 0,
-      "col": 1,
-      "confidence": 0.58,
-      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos1.png"
-    },
-    "_original_extraction": {
-      "name": "Derrel Thomas",
-      "brand": "Topps",
-      "team": "Los Angeles Dodgers",
-      "card_set": "1977 Topps",
-      "copyright_year": "1977",
-      "number": "266",
-      "condition": "Good (moderate corner wear; some surface/print wear)",
-      "sport": "baseball",
-      "is_player": true,
-      "features": "Infielder; card back with stats and bio; Topps 1977 green/blue back design",
-      "value_estimate": "$0.25\u2013$1.50",
-      "notes": "none"
-    },
-    "_card_set_autocorrected": true,
-    "_ml_value_estimate_applied": true,
-    "_ml_value_estimate_confidence": 1.0,
-    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
-    "_ml_value_estimate_support": 91,
-    "_learned_corrections": [
-      {
-        "field": "copyright_year",
-        "original": "1977",
-        "corrected": "1976",
-        "confidence": 51
-      }
-    ],
-    "canonical_name": "derrel thomas"
-  },
-  {
-    "grid_position": 3,
-    "name": "dave heaverlo",
-    "number": "97",
-    "team": "san francisco giants",
-    "copyright_year": "1976",
-    "brand": "topps",
-    "card_set": "n/a",
-    "sport": "baseball",
-    "condition": "good",
-    "is_player_card": true,
-    "features": "none",
-    "notes": "none",
-    "value_estimate": "$1.00",
-    "_grid_metadata": {
-      "position": 2,
-      "row": 0,
-      "col": 2,
-      "confidence": 0.58,
-      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos2.png"
-    },
-    "_original_extraction": {
-      "name": "Dave Heaverlo",
-      "brand": "Topps",
-      "team": "San Francisco Giants",
-      "card_set": "1977 Topps",
-      "copyright_year": "1977",
-      "number": "97",
-      "condition": "Good (corner wear and light staining/toning)",
-      "sport": "baseball",
-      "is_player": true,
-      "features": "Pitcher; card back with stats and bio; Topps 1977 green/blue back design",
-      "value_estimate": "$0.25\u2013$1.50",
-      "notes": "none"
-    },
-    "_card_set_autocorrected": true,
-    "_ml_value_estimate_applied": true,
-    "_ml_value_estimate_confidence": 1.0,
-    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
-    "_ml_value_estimate_support": 91,
-    "_learned_corrections": [
-      {
-        "field": "copyright_year",
-        "original": "1977",
-        "corrected": "1976",
-        "confidence": 51
-      }
-    ],
-    "canonical_name": "dave heaverlo"
-  },
-  {
-    "grid_position": 4,
-    "name": "john montefusco",
-    "number": "370",
-    "team": "san francisco giants",
-    "copyright_year": "1976",
-    "brand": "topps",
-    "card_set": "n/a",
-    "sport": "baseball",
-    "condition": "good",
-    "is_player_card": true,
-    "features": "none",
-    "notes": "none",
-    "value_estimate": "$2.00",
-    "_grid_metadata": {
-      "position": 3,
-      "row": 1,
-      "col": 0,
-      "confidence": 0.58,
-      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos3.png"
-    },
-    "_original_extraction": {
-      "name": "John Montefusco",
-      "brand": "Topps",
-      "team": "San Francisco Giants",
-      "card_set": "1977 Topps",
-      "copyright_year": "1977",
-      "number": "370",
-      "condition": "Good (moderate corner/edge wear; slight discoloration)",
-      "sport": "baseball",
-      "is_player": true,
-      "features": "Pitcher; card back with stats and bio; Topps 1977 green/blue back design",
-      "value_estimate": "$0.50\u2013$3.00",
-      "notes": "none"
-    },
-    "_card_set_autocorrected": true,
-    "_ml_value_estimate_applied": true,
-    "_ml_value_estimate_confidence": 1.0,
-    "_ml_value_estimate_gpt_value": "$0.50\u2013$3.00",
-    "_ml_value_estimate_support": 9,
-    "_learned_corrections": [
-      {
-        "field": "copyright_year",
-        "original": "1977",
-        "corrected": "1976",
-        "confidence": 51
-      }
-    ],
-    "canonical_name": "john montefusco"
-  },
-  {
-    "grid_position": 5,
-    "name": "pete redfern",
-    "number": "249",
-    "team": "minnesota twins",
-    "copyright_year": "1976",
-    "brand": "topps",
-    "card_set": "n/a",
-    "sport": "baseball",
-    "condition": "good",
-    "is_player_card": true,
-    "features": "rookie",
-    "notes": "none",
-    "value_estimate": "$1.00",
-    "_grid_metadata": {
-      "position": 4,
-      "row": 1,
-      "col": 1,
-      "confidence": 0.46,
-      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos4.png"
-    },
-    "_original_extraction": {
-      "name": "Pete Redfern",
-      "brand": "Topps",
-      "team": "Minnesota Twins",
-      "card_set": "1977 Topps",
-      "copyright_year": "1977",
-      "number": "249",
-      "condition": "Good (corner wear; some surface wear)",
-      "sport": "baseball",
-      "is_player": true,
-      "features": "Pitcher; card back with stats and bio; Topps 1977 green/blue back design",
-      "value_estimate": "$0.25\u2013$1.50",
-      "notes": "none"
-    },
-    "_card_set_autocorrected": true,
-    "_ml_value_estimate_applied": true,
-    "_ml_value_estimate_confidence": 1.0,
-    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
-    "_ml_value_estimate_support": 91,
-    "_learned_corrections": [
-      {
-        "field": "copyright_year",
-        "original": "1977",
-        "corrected": "1976",
-        "confidence": 51
-      }
-    ],
-    "canonical_name": "pete redfern"
-  },
-  {
-    "grid_position": 6,
-    "name": "tom johnson",
-    "number": "202",
-    "team": "minnesota twins",
-    "copyright_year": "1976",
-    "brand": "topps",
-    "card_set": "n/a",
-    "sport": "baseball",
-    "condition": "good",
-    "is_player_card": true,
-    "features": "rookie",
-    "notes": "none",
-    "value_estimate": "$1.00",
-    "_grid_metadata": {
-      "position": 5,
-      "row": 1,
-      "col": 2,
-      "confidence": 0.58,
-      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos5.png"
-    },
-    "_original_extraction": {
-      "name": "Tom Johnson",
-      "brand": "Topps",
-      "team": "Minnesota Twins",
-      "card_set": "1977 Topps",
-      "copyright_year": "1977",
-      "number": "202",
-      "condition": "Good (moderate corner wear; light toning)",
-      "sport": "baseball",
-      "is_player": true,
-      "features": "Pitcher; card back with stats and bio; Topps 1977 green/blue back design",
-      "value_estimate": "$0.25\u2013$1.50",
-      "notes": "none"
-    },
-    "_card_set_autocorrected": true,
-    "_ml_value_estimate_applied": true,
-    "_ml_value_estimate_confidence": 1.0,
-    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50",
-    "_ml_value_estimate_support": 91,
-    "_learned_corrections": [
-      {
-        "field": "copyright_year",
-        "original": "1977",
-        "corrected": "1976",
-        "confidence": 51
-      }
-    ],
-    "canonical_name": "tom johnson"
-  },
-  {
-    "grid_position": 7,
-    "name": "craig kusick",
-    "number": "38",
-    "team": "milwaukee brewers",
-    "copyright_year": "1976",
-    "brand": "topps",
-    "card_set": "n/a",
-    "sport": "baseball",
-    "condition": "fair",
-    "is_player_card": true,
-    "features": "none",
-    "notes": "none",
-    "value_estimate": "$1.00",
-    "_grid_metadata": {
-      "position": 6,
-      "row": 2,
-      "col": 0,
-      "confidence": 0.61,
-      "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos6.png"
-    },
-    "_original_extraction": {
-      "name": "Craig Kusick",
-      "brand": "Topps",
-      "team": "Milwaukee Brewers",
-      "card_set": "1977 Topps",
-      "copyright_year": "1977",
-      "number": "38",
-      "condition": "Fair to Good (heavier wear and darker toning/staining visible)",
-      "sport": "baseball",
-      "is_player": true,
-      "features": "Outfielder; card back with stats and bio; Topps 1977 green/blue back design",
-      "value_estimate": "$0.10\u2013$1.00",
-      "notes": "none"
-    },
-    "_card_set_autocorrected": true,
-    "_learned_corrections": [
-      {
-        "field": "team",
-        "original": "Milwaukee Brewers",
-        "corrected": "milwaukee brewers",
-        "confidence": "pattern"
-      },
-      {
-        "field": "copyright_year",
-        "original": "1977",
-        "corrected": "1976",
-        "confidence": 51
-      }
-    ],
-    "canonical_name": "craig kusick"
-  },
-  {
-    "grid_position": 8,
+    "grid_position": 0,
     "name": "team checklist minnesota twins",
     "number": "228",
     "team": "multiple",
@@ -366,9 +14,9 @@
     "notes": "none",
     "value_estimate": "$1.00",
     "_grid_metadata": {
-      "position": 7,
-      "row": 2,
-      "col": 1,
+      "position": 0,
+      "row": 0,
+      "col": 0,
       "confidence": 0.58,
       "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos7.png"
     },
@@ -395,10 +43,21 @@
         "confidence": 51
       }
     ],
-    "canonical_name": null
+    "canonical_name": null,
+    "_overall_confidence": 0.58,
+    "_has_autocorrections": true,
+    "_has_warnings": false,
+    "_autocorrection_badges": [
+      {
+        "field": "card_set",
+        "label": "Auto-fixed"
+      }
+    ],
+    "_warning_badges": [],
+    "is_player": false
   },
   {
-    "grid_position": 9,
+    "grid_position": 1,
     "name": "bobby murcer",
     "number": "40",
     "team": "new york yankees",
@@ -412,9 +71,9 @@
     "notes": "none",
     "value_estimate": "$2.00",
     "_grid_metadata": {
-      "position": 8,
-      "row": 2,
-      "col": 2,
+      "position": 1,
+      "row": 0,
+      "col": 1,
       "confidence": 0.58,
       "cropped_back_alias": "pending_verification_cropped_backs/IMG_2550_pos8.png"
     },
@@ -434,7 +93,7 @@
     },
     "_card_set_autocorrected": true,
     "_ml_value_estimate_applied": true,
-    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_confidence": 1,
     "_ml_value_estimate_gpt_value": "$0.50\u2013$3.00",
     "_ml_value_estimate_support": 9,
     "_learned_corrections": [

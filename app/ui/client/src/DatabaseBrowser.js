@@ -68,8 +68,8 @@ function DatabaseBrowser() {
   const [fieldOptions, setFieldOptions] = useState({ sports: [], brands: [], conditions: [], teams: [], years: [], card_sets: [] });
   const [selectedCards, setSelectedCards] = useState(new Set());
   const [selectAll, setSelectAll] = useState(false);
-  const [sortBy, setSortBy] = useState('');
-  const [sortDir, setSortDir] = useState('asc');
+  const [sortBy, setSortBy] = useState('date_added');
+  const [sortDir, setSortDir] = useState('desc');
   const [modalCard, setModalCard] = useState(null);
   const [modalLoading, setModalLoading] = useState(false);
   const [modalEditMode, setModalEditMode] = useState(false);

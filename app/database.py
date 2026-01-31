@@ -21,7 +21,7 @@ def _set_sqlite_pragma(dbapi_connection, connection_record):
     try:
         cursor = dbapi_connection.cursor()
         # Write-Ahead Logging improves crash safety for concurrent readers
-        cursor.execute("PRAGMA journal_mode=WAL;")
+        cursor.execute("PRAGMA journal_mode=DELETE;")
         # FULL sync for maximum durability on power loss
         cursor.execute("PRAGMA synchronous=FULL;")
         # Enforce foreign key constraints

@@ -510,7 +510,7 @@ async function validateStartup() {
   console.log('\n✓ startup validation passed\n');
 }
 
-// Lightweight audit logger (JSON Lines)
+// Enhanced audit logger (JSON Lines) with detailed tracking
 async function audit(action, payload = {}) {
   try {
     const entry = {
@@ -521,6 +521,47 @@ async function audit(action, payload = {}) {
     await fs.appendFile(AUDIT_LOG, JSON.stringify(entry) + '\n');
   } catch (e) {
     // avoid failing API for audit errors
+  }
+}
+
+// Detailed database operation logger
+async function logDbOperation(operation, details = {}) {
+  const DB_OPS_LOG = path.join(__dirname, '../../logs/db_operations.log');
+  try {
+    const entry = {
+      ts: new Date().toISOString(),
+      operation,
+      ...details,
+    };
+    await fs.appendFile(DB_OPS_LOG, JSON.stringify(entry) + '\n');
+    console.log(`[DB] ${operation}: ${JSON.stringify(details)}`);
+  } catch (e) {
+    console.error(`[DB LOG ERROR] ${e.message}`);
+  }
+}
+
+// Card operation logger with before/after state
+async function logCardOperation(operation, cardInfo = {}) {
+  const CARD_OPS_LOG = path.join(__dirname, '../../logs/card_operations.log');
+  try {
+    const entry = {
+      ts: new Date().toISOString(),
+      operation,
+      card_name: cardInfo.name,
+      source_file: cardInfo.source_file,
+      grid_position: cardInfo.grid_position,
+      card_id: cardInfo.card_id,
+      before: cardInfo.before,
+      after: cardInfo.after,
+      success: cardInfo.success !== false,
+      error: cardInfo.error,
+    };
+    await fs.appendFile(CARD_OPS_LOG, JSON.stringify(entry) + '\n');
+
+    const status = cardInfo.success !== false ? 'SUCCESS' : 'FAILED';
+    console.log(`[CARD ${status}] ${operation}: ${cardInfo.name || 'unknown'} (${cardInfo.source_file || 'unknown'})`);
+  } catch (e) {
+    console.error(`[CARD LOG ERROR] ${e.message}`);
   }
 }
 

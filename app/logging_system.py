@@ -99,11 +99,30 @@ class ActionType(str, Enum):
     DB_UPDATE = "db_update"
     DB_DELETE = "db_delete"
     DB_QUERY = "db_query"
+    DB_COMMIT = "db_commit"
+    DB_ROLLBACK = "db_rollback"
+    DB_CHECKPOINT = "db_checkpoint"
+    DB_INTEGRITY_CHECK = "db_integrity_check"
+    DB_INTEGRITY_FIX = "db_integrity_fix"
 
     # System Operations
     SYSTEM_START = "system_start"
     SYSTEM_ERROR = "system_error"
     BACKUP_CREATE = "backup_create"
+    WAL_CHECKPOINT = "wal_checkpoint"
+
+    # Card Operations
+    CARD_PASS = "card_pass"
+    CARD_FAIL = "card_fail"
+    CARD_EDIT = "card_edit"
+    CARD_IMPORT = "card_import"
+    CARD_DELETE = "card_delete"
+
+    # Integrity Operations
+    INTEGRITY_CHECK_START = "integrity_check_start"
+    INTEGRITY_CHECK_COMPLETE = "integrity_check_complete"
+    INTEGRITY_ISSUE_FOUND = "integrity_issue_found"
+    INTEGRITY_ISSUE_FIXED = "integrity_issue_fixed"
 
     # Legacy support
     UPLOAD = "upload"
@@ -571,3 +590,111 @@ def log_warning(source: LogSource, message: str, **kwargs):
 
 def log_error(source: LogSource, message: str, **kwargs):
     logger.log(LogLevel.ERROR, source, message, **kwargs)
+
+
+def log_db_operation(operation: str, table: str, affected_rows: int = 0,
+                     card_id: int = None, source_file: str = None,
+                     details: str = None, success: bool = True):
+    """Log database operations with full context."""
+    action_map = {
+        "insert": ActionType.DB_INSERT,
+        "update": ActionType.DB_UPDATE,
+        "delete": ActionType.DB_DELETE,
+        "commit": ActionType.DB_COMMIT,
+        "rollback": ActionType.DB_ROLLBACK,
+        "checkpoint": ActionType.DB_CHECKPOINT
+    }
+
+    level = LogLevel.INFO if success else LogLevel.ERROR
+    action = action_map.get(operation, ActionType.DB_QUERY)
+
+    message = f"DB {operation.upper()}: {table}"
+    if affected_rows:
+        message += f" ({affected_rows} rows)"
+
+    meta = {
+        "table": table,
+        "operation": operation,
+        "affected_rows": affected_rows,
+        "card_id": card_id,
+        "source_file": source_file,
+        "success": success
+    }
+
+    logger.log(level, LogSource.DATABASE, message, action, details, meta, source_file)
+
+
+def log_card_operation(operation: str, card_name: str, source_file: str,
+                       grid_position: int = None, card_id: int = None,
+                       before_data: dict = None, after_data: dict = None,
+                       success: bool = True, error: str = None):
+    """Log card-level operations with full before/after state."""
+    action_map = {
+        "pass": ActionType.CARD_PASS,
+        "fail": ActionType.CARD_FAIL,
+        "edit": ActionType.CARD_EDIT,
+        "import": ActionType.CARD_IMPORT,
+        "delete": ActionType.CARD_DELETE
+    }
+
+    level = LogLevel.SUCCESS if success and operation == "pass" else \
+            LogLevel.WARNING if operation == "fail" else \
+            LogLevel.ERROR if not success else LogLevel.INFO
+
+    action = action_map.get(operation, ActionType.VERIFY_EDIT)
+
+    message = f"Card {operation.upper()}: {card_name}"
+    if grid_position is not None:
+        message += f" (pos {grid_position})"
+
+    details = error if error else None
+    if before_data and after_data:
+        changes = {k: {"before": before_data.get(k), "after": v}
+                   for k, v in after_data.items()
+                   if before_data.get(k) != v}
+        if changes:
+            details = f"Changes: {json.dumps(changes)}"
+
+    meta = {
+        "card_name": card_name,
+        "source_file": source_file,
+        "grid_position": grid_position,
+        "card_id": card_id,
+        "operation": operation,
+        "success": success,
+        "before_data": before_data,
+        "after_data": after_data
+    }
+
+    logger.log(level, LogSource.VERIFICATION, message, action, details, meta, source_file)
+
+
+def log_integrity_check(check_type: str, issues_found: list = None,
+                        issues_fixed: list = None, auto_fix: bool = False):
+    """Log integrity check results."""
+    if issues_found:
+        level = LogLevel.WARNING
+        action = ActionType.INTEGRITY_ISSUE_FOUND
+        message = f"Integrity check ({check_type}): {len(issues_found)} issues found"
+        details = "\n".join(issues_found[:10])
+        if len(issues_found) > 10:
+            details += f"\n... and {len(issues_found) - 10} more"
+    elif issues_fixed:
+        level = LogLevel.SUCCESS
+        action = ActionType.INTEGRITY_ISSUE_FIXED
+        message = f"Integrity fix ({check_type}): {len(issues_fixed)} issues fixed"
+        details = "\n".join(issues_fixed[:10])
+    else:
+        level = LogLevel.SUCCESS
+        action = ActionType.INTEGRITY_CHECK_COMPLETE
+        message = f"Integrity check ({check_type}): passed"
+        details = None
+
+    meta = {
+        "check_type": check_type,
+        "issues_found": len(issues_found) if issues_found else 0,
+        "issues_fixed": len(issues_fixed) if issues_fixed else 0,
+        "auto_fix": auto_fix
+    }
+
+    logger.log(level, LogSource.DATABASE, message, action, details, meta)

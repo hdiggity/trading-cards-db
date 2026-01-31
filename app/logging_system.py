@@ -212,7 +212,7 @@ class EnhancedLogger:
             format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
             handlers=[
                 logging.FileHandler(log_file),
-                logging.StreamHandler(sys.stdout)
+                logging.StreamHandler(sys.stderr)  # Use stderr to avoid corrupting JSON on stdout
             ]
         )
 

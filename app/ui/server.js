@@ -524,41 +524,35 @@ async function audit(action, payload = {}) {
   }
 }
 
-// Detailed database operation logger
+// Detailed database operation logger - uses existing backend.log
+const BACKEND_LOG = path.join(__dirname, '../../logs/backend.log');
+
 async function logDbOperation(operation, details = {}) {
-  const DB_OPS_LOG = path.join(__dirname, '../../logs/db_operations.log');
   try {
-    const entry = {
-      ts: new Date().toISOString(),
-      operation,
-      ...details,
-    };
-    await fs.appendFile(DB_OPS_LOG, JSON.stringify(entry) + '\n');
+    const ts = new Date().toISOString();
+    const logLine = `[${ts}] [DB] ${operation}: ${JSON.stringify(details)}\n`;
+    await fs.appendFile(BACKEND_LOG, logLine);
     console.log(`[DB] ${operation}: ${JSON.stringify(details)}`);
   } catch (e) {
     console.error(`[DB LOG ERROR] ${e.message}`);
   }
 }
 
-// Card operation logger with before/after state
+// Card operation logger - uses existing backend.log
 async function logCardOperation(operation, cardInfo = {}) {
-  const CARD_OPS_LOG = path.join(__dirname, '../../logs/card_operations.log');
   try {
-    const entry = {
-      ts: new Date().toISOString(),
-      operation,
-      card_name: cardInfo.name,
+    const ts = new Date().toISOString();
+    const status = cardInfo.success !== false ? 'SUCCESS' : 'FAILED';
+    const details = {
+      name: cardInfo.name,
       source_file: cardInfo.source_file,
       grid_position: cardInfo.grid_position,
       card_id: cardInfo.card_id,
-      before: cardInfo.before,
-      after: cardInfo.after,
       success: cardInfo.success !== false,
-      error: cardInfo.error,
+      error: cardInfo.error
     };
-    await fs.appendFile(CARD_OPS_LOG, JSON.stringify(entry) + '\n');
-
-    const status = cardInfo.success !== false ? 'SUCCESS' : 'FAILED';
+    const logLine = `[${ts}] [CARD ${status}] ${operation}: ${JSON.stringify(details)}\n`;
+    await fs.appendFile(BACKEND_LOG, logLine);
     console.log(`[CARD ${status}] ${operation}: ${cardInfo.name || 'unknown'} (${cardInfo.source_file || 'unknown'})`);
   } catch (e) {
     console.error(`[CARD LOG ERROR] ${e.message}`);

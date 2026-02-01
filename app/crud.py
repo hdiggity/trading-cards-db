@@ -74,6 +74,7 @@ def insert_card_complete(card_data: CardCreate, source_metadata: dict = None):
             grid_position=source_metadata.get('grid_position') or source_metadata.get('source_position'),
             original_filename=source_metadata.get('original_filename'),
             notes=source_metadata.get('notes'),
+            verification_date=datetime.now(),  # Use local time, not UTC
             # Card data fields
             name=data.get("name"),
             canonical_name=data.get("canonical_name"),

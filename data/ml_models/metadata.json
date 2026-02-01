@@ -1,6 +1,6 @@
 {
-  "version": "20260129_224805",
-  "last_train_time": "2026-01-29T22:48:05.458690",
+  "version": "20260131_175015",
+  "last_train_time": "2026-01-31T17:50:15.619857",
   "categorical_fields": [
     "sport",
     "condition",

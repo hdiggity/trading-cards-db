@@ -32,6 +32,7 @@ class CardComplete(Base):
 
     # Card data (denormalized for complete record) - matches cards table columns
     name = Column(String, nullable=False)
+    canonical_name = Column(String)
     sport = Column(String)
     brand = Column(String)
     number = Column(String)

@@ -28,6 +28,18 @@ const normalizeCondition = (val) => {
   return String(val).replace(/_/g, ' ').trim().toLowerCase();
 };
 
+// Coerce price input to $xx.xx format
+const coercePrice = (val) => {
+  if (!val || val === '' || val === 'n/a') return '';
+  const str = String(val).trim();
+  // Extract numeric value (handles $5, 5.00, $5.5, 5, etc.)
+  const match = str.match(/[\d.]+/);
+  if (!match) return str; // Return as-is if no number found
+  const num = parseFloat(match[0]);
+  if (isNaN(num)) return str;
+  return `$${num.toFixed(2)}`;
+};
+
 // Utility function to format field values for display
 const formatFieldValue = (fieldName, value) => {
   if (value === null || value === undefined) return 'N/A';
@@ -850,13 +862,14 @@ function App() {
     fetchPendingCards();
     fetchFieldOptions();
 
-    // Poll for newly processed cards every 10 seconds
+    // Poll for newly processed cards every 5 seconds
+    // Allow polling even during background processing so cards appear as they finish
     const pollInterval = setInterval(() => {
-      // Only poll if not currently processing an action
+      // Only skip if user is actively verifying a card (processing/reprocessing an action)
       if (!processing && !reprocessing) {
         fetchPendingCards();
       }
-    }, 10000);
+    }, 5000);
 
     // Add global unhandled rejection handler for debugging
     const handleUnhandledRejection = (event) => {
@@ -890,6 +903,9 @@ function App() {
           if (typeof status.current === 'number') setBgCurrent(status.current);
           if (typeof status.total === 'number') setBgTotal(status.total);
           if (status.substep) setBgSubstep(status.substepDetail ? `${status.substep}: ${status.substepDetail}` : status.substep);
+
+          // Refresh pending cards during processing so completed cards appear immediately
+          fetchPendingCards();
 
           // Continue polling while active
           pollTimeout = setTimeout(pollProcessingStatus, 1500);
@@ -1444,6 +1460,7 @@ function App() {
         .filter(Boolean)
         .join(',');
     }
+    // Note: value_estimate coercion happens on blur, not during typing
     newData[cardIndex] = { ...newData[cardIndex], [field]: processedValue };
     setEditedData(newData);
 
@@ -2121,7 +2138,8 @@ function App() {
                           type="text"
                           value={card.value_estimate || ''}
                           onChange={(e) => updateCardField(index, 'value_estimate', e.target.value)}
-                          placeholder="$1-5 or $12.34"
+                          onBlur={(e) => updateCardField(index, 'value_estimate', coercePrice(e.target.value))}
+                          placeholder="$12.34"
                         />
                       </div>
                       <div className="field-group">

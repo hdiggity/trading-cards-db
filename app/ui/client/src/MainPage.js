@@ -245,11 +245,9 @@ function MainPage() {
           setBgSubstep(substep);
           if (total > 0) setBgTotal(total);
 
-          // Refresh counts less frequently to reduce overhead
-          if (current % 3 === 0 || !active) {
-            await fetchPendingCount();
-            await fetchRawScanCount();
-          }
+          // Refresh counts on every card so verification becomes available immediately
+          await fetchPendingCount();
+          await fetchRawScanCount();
 
           const longTimeout = Date.now() - start >= 60 * 60 * 1000; // 60 min safety cap
 

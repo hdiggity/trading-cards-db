@@ -5,6 +5,18 @@ import './DatabaseBrowser.css';
 // Utility helpers for display normalization
 const normalizeCondition = (val) => (val ? String(val).replace(/_/g, ' ').trim().toLowerCase() : '');
 
+// Coerce price input to $xx.xx format
+const coercePrice = (val) => {
+  if (!val || val === '' || val === 'n/a') return '';
+  const str = String(val).trim();
+  // Extract numeric value (handles $5, 5.00, $5.5, 5, etc.)
+  const match = str.match(/[\d.]+/);
+  if (!match) return str; // Return as-is if no number found
+  const num = parseFloat(match[0]);
+  if (isNaN(num)) return str;
+  return `$${num.toFixed(2)}`;
+};
+
 // Utility function to format field values for display
 const formatFieldValue = (fieldName, value) => {
   // Price estimate: return empty string for null/empty, not N/A
@@ -425,6 +437,13 @@ function DatabaseBrowser() {
     }));
   };
 
+  // Coerce price on blur (when user leaves the field)
+  const handlePriceBlur = (field, value, setter) => {
+    if (field === 'value_estimate') {
+      setter(prev => ({ ...prev, [field]: coercePrice(value) }));
+    }
+  };
+
   const deleteCopy = async (copyId) => {
     if (!window.confirm('Are you sure you want to delete this individual copy?')) {
       return;
@@ -811,7 +830,7 @@ function DatabaseBrowser() {
                           </select>
                         </td>
                         <td><input type="text" value={editFormData.features || ''} onChange={(e) => updateFormField('features', e.target.value)} placeholder="e.g., rookie, autograph" /></td>
-                        <td><input type="text" value={editFormData.value_estimate || ''} onChange={(e) => updateFormField('value_estimate', e.target.value)} placeholder="$1-5 or $12.34" /></td>
+                        <td><input type="text" value={editFormData.value_estimate || ''} onChange={(e) => updateFormField('value_estimate', e.target.value)} onBlur={(e) => handlePriceBlur('value_estimate', e.target.value, setEditFormData)} placeholder="$1-5 or $12.34" /></td>
                         <td><input type="number" value={editFormData.quantity} onChange={(e) => updateFormField('quantity', parseInt(e.target.value))} /></td>
                         <td><span className="readonly-field">{formatFieldValue('date_added', card.date_added)}</span></td>
                         <td className="actions">
@@ -940,15 +959,15 @@ function DatabaseBrowser() {
                                 </div>
                                 <div className="form-row">
                                   <label>value:</label>
-                                  <input type="text" value={copyFormData.value_estimate} onChange={(e) => updateCopyField('value_estimate', e.target.value)} placeholder="$1-5 or $12.34" />
+                                  <input type="text" value={copyFormData.value_estimate} onChange={(e) => updateCopyField('value_estimate', e.target.value)} onBlur={(e) => handlePriceBlur('value_estimate', e.target.value, setCopyFormData)} onKeyDown={(e) => { if (e.key === 'Enter') saveCopyEdit(ic.id); }} placeholder="$1-5 or $12.34" />
                                 </div>
                                 <div className="form-row">
                                   <label>features:</label>
-                                  <input type="text" value={copyFormData.features} onChange={(e) => updateCopyField('features', e.target.value)} placeholder="e.g., rookie, autograph" />
+                                  <input type="text" value={copyFormData.features} onChange={(e) => updateCopyField('features', e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') saveCopyEdit(ic.id); }} placeholder="e.g., rookie, autograph" />
                                 </div>
                                 <div className="form-row">
                                   <label>notes:</label>
-                                  <input type="text" value={copyFormData.notes} onChange={(e) => updateCopyField('notes', e.target.value)} />
+                                  <input type="text" value={copyFormData.notes} onChange={(e) => updateCopyField('notes', e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter') saveCopyEdit(ic.id); }} />
                                 </div>
                                 <div className="copy-edit-actions">
                                   <button onClick={() => saveCopyEdit(ic.id)} className="save-btn">SAVE</button>
@@ -1027,7 +1046,7 @@ function DatabaseBrowser() {
                     </div>
                     <div className="form-row">
                       <label>value:</label>
-                      <input type="text" value={modalFormData.value_estimate || ''} onChange={(e) => updateModalField('value_estimate', e.target.value)} placeholder="$1-5 or $12.34" />
+                      <input type="text" value={modalFormData.value_estimate || ''} onChange={(e) => updateModalField('value_estimate', e.target.value)} onBlur={(e) => handlePriceBlur('value_estimate', e.target.value, setModalFormData)} placeholder="$1-5 or $12.34" />
                     </div>
                     <div className="form-row">
                       <label>quantity:</label>

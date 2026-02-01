@@ -8,6 +8,10 @@ corrections.
 
 Learning system for field corrections and automatic quality improvement.
 Enhanced with ML tracking for unsupervised correction learning.
+
+Visual context learning: For fields like copyright_year, corrections are
+only applied when visual context (brand + card_set pattern) matches,
+preventing false corrections across different card designs.
 """
 
 import sqlite3
@@ -51,6 +55,8 @@ class CorrectionTracker:
                     ml_prediction TEXT,
                     ml_confidence REAL,
                     correction_source TEXT DEFAULT 'user',
+                    design_signature TEXT,
+                    correction_reason TEXT,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
@@ -98,7 +104,9 @@ class CorrectionTracker:
         new_columns = [
             ("ml_prediction", "TEXT"),
             ("ml_confidence", "REAL"),
-            ("correction_source", "TEXT DEFAULT 'user'")
+            ("correction_source", "TEXT DEFAULT 'user'"),
+            ("design_signature", "TEXT"),  # brand|card_set pattern for visual context
+            ("correction_reason", "TEXT"),  # optional user-provided reason
         ]
 
         for col_name, col_type in new_columns:
@@ -135,7 +143,8 @@ class CorrectionTracker:
         card_set: Optional[str] = None,
         ml_prediction: Optional[str] = None,
         ml_confidence: Optional[float] = None,
-        correction_source: str = 'user'
+        correction_source: str = 'user',
+        correction_reason: Optional[str] = None
     ):
         """Log a manual correction for learning.
 
@@ -153,6 +162,7 @@ class CorrectionTracker:
             ml_confidence: ML confidence score if ML override was applied
             correction_source: 'user' or 'ml_override' indicating if user
                                corrected an ML prediction
+            correction_reason: Optional user-provided reason for the correction
         """
         # Skip if values are the same
         if gpt_value == corrected_value:
@@ -169,16 +179,27 @@ class CorrectionTracker:
             context_parts.append(f"file:{image_filename}")
         context = "|".join(context_parts) if context_parts else None
 
+        # Build design signature for visual context matching
+        # This helps prevent false corrections across different card designs
+        design_parts = []
+        if brand:
+            design_parts.append(brand.lower().strip())
+        if card_set and card_set.lower() not in ('n/a', 'base', 'base set', ''):
+            design_parts.append(card_set.lower().strip())
+        design_signature = "|".join(design_parts) if design_parts else None
+
         # Use actual database schema column names including ML columns
         cursor.execute("""
             INSERT INTO corrections (
                 field, original_value, corrected_value,
                 brand, year, sport, card_set, context,
-                ml_prediction, ml_confidence, correction_source
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ml_prediction, ml_confidence, correction_source,
+                design_signature, correction_reason
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (field_name, gpt_value, corrected_value,
               brand, copyright_year, sport, card_set, context,
-              ml_prediction, ml_confidence, correction_source))
+              ml_prediction, ml_confidence, correction_source,
+              design_signature, correction_reason))
 
         conn.commit()
         conn.close()
@@ -830,3 +851,120 @@ class CorrectionTracker:
         count = cursor.fetchone()[0]
         conn.close()
         return count
+
+    def get_design_aware_year_correction(
+        self,
+        gpt_year: str,
+        brand: Optional[str] = None,
+        card_set: Optional[str] = None,
+        min_occurrences: int = 3
+    ) -> Optional[Tuple[str, int, str]]:
+        """Get year correction only if design signature matches.
+
+        This prevents false corrections like:
+        - Batch A: 1982 Topps cards that look like 1983 -> correct to 1983
+        - Batch B: Actual 1982 Topps cards -> DON'T apply correction
+
+        The key insight is that year corrections should only apply when
+        the card DESIGN (brand + set pattern) matches, not just the year.
+
+        Args:
+            gpt_year: Year extracted by GPT
+            brand: Card brand
+            card_set: Card set name
+            min_occurrences: Minimum corrections to trust pattern
+
+        Returns:
+            Tuple of (corrected_year, occurrence_count, design_signature) or None
+        """
+        if not gpt_year:
+            return None
+
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        # Build current card's design signature
+        design_parts = []
+        if brand:
+            design_parts.append(brand.lower().strip())
+        if card_set and card_set.lower() not in ('n/a', 'base', 'base set', ''):
+            design_parts.append(card_set.lower().strip())
+        current_signature = "|".join(design_parts) if design_parts else None
+
+        # Look for year corrections with matching design signature
+        if current_signature:
+            cursor.execute("""
+                SELECT corrected_value, COUNT(*) as cnt, design_signature
+                FROM corrections
+                WHERE field = 'copyright_year'
+                AND original_value = ?
+                AND design_signature = ?
+                GROUP BY corrected_value, design_signature
+                HAVING cnt >= ?
+                ORDER BY cnt DESC
+                LIMIT 1
+            """, (gpt_year, current_signature, min_occurrences))
+        else:
+            # No design signature available, require higher threshold
+            cursor.execute("""
+                SELECT corrected_value, COUNT(*) as cnt, design_signature
+                FROM corrections
+                WHERE field = 'copyright_year'
+                AND original_value = ?
+                AND design_signature IS NULL
+                GROUP BY corrected_value
+                HAVING cnt >= ?
+                ORDER BY cnt DESC
+                LIMIT 1
+            """, (gpt_year, min_occurrences * 2))
+
+        result = cursor.fetchone()
+        conn.close()
+
+        if result:
+            return (result[0], result[1], result[2])
+        return None
+
+    def get_design_signatures_for_year(
+        self,
+        year: str
+    ) -> List[Dict]:
+        """Get all design signatures associated with year corrections.
+
+        Useful for understanding which card designs have been corrected
+        from a particular year.
+
+        Args:
+            year: The original GPT-extracted year
+
+        Returns:
+            List of dicts with design_signature, corrected_year, count
+        """
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        cursor.execute("""
+            SELECT
+                design_signature,
+                corrected_value,
+                COUNT(*) as cnt,
+                GROUP_CONCAT(DISTINCT correction_reason) as reasons
+            FROM corrections
+            WHERE field = 'copyright_year'
+            AND original_value = ?
+            AND design_signature IS NOT NULL
+            GROUP BY design_signature, corrected_value
+            ORDER BY cnt DESC
+        """, (year,))
+
+        results = []
+        for row in cursor.fetchall():
+            results.append({
+                'design_signature': row[0],
+                'corrected_year': row[1],
+                'count': row[2],
+                'reasons': row[3]
+            })
+
+        conn.close()
+        return results

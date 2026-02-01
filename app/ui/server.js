@@ -266,7 +266,8 @@ for corr in data['corrections']:
         card_set=data['context'].get('card_set'),
         ml_prediction=ml_meta.get('ml_gpt_value') if ml_meta.get('ml_applied') else None,
         ml_confidence=ml_meta.get('ml_confidence'),
-        correction_source='ml_override' if ml_meta.get('ml_applied') else 'user'
+        correction_source='ml_override' if ml_meta.get('ml_applied') else 'user',
+        correction_reason=corr.get('reason')  # Optional user-provided reason
     )
 
 print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)

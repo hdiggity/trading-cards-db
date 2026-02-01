@@ -1,0 +1,4702 @@
+[
+  {
+    "timestamp": "2026-01-31T23:47:48.328Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "good (noticeable corner/edge wear and slight discoloration typical of age)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 293,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jackie brown"
+      },
+      {
+        "grid_position": 1,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 293,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 2,
+        "name": "george hendrick",
+        "number": "330",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "330",
+          "condition": "good (corner wear; some surface/print wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder/first baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby"
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:47:57.587Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "jackie brown",
+        "number": "301",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Jackie Brown",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "301",
+          "condition": "good (noticeable corner/edge wear and slight discoloration typical of age)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 293,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jackie brown",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 1,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 293,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 2,
+        "name": "george hendrick",
+        "number": "330",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "330",
+          "condition": "good (corner wear; some surface/print wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder/first baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby"
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:48:04.176Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 293,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "rick waits"
+      },
+      {
+        "grid_position": 2,
+        "name": "george hendrick",
+        "number": "330",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "330",
+          "condition": "good (corner wear; some surface/print wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder/first baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby"
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:48:08.590Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "rick waits",
+        "number": "433",
+        "team": "cleveland indians",
+        "copyright_year": "1976",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Waits",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "433",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 293,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "rick waits",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "george hendrick",
+        "number": "330",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "330",
+          "condition": "good (corner wear; some surface/print wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder/first baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby"
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:48:20.847Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "george hendrick",
+        "number": "330",
+        "team": "san diego padres",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "330",
+          "condition": "good (corner wear; some surface/print wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder/first baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "george hendrick"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby"
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:48:28.641Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "george hendrick",
+        "number": "330",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Hendrick",
+          "brand": "Topps",
+          "team": "San Diego Padres",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "330",
+          "condition": "good (corner wear; some surface/print wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfielder/first baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "San Diego Padres",
+            "corrected": "san diego padres",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "george hendrick",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby"
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:48:39.594Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby"
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:48:43.753Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "cleve",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:48:48.142Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim bibby",
+        "number": "501",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Bibby",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "501",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "jim bibby",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:49:01.558Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "al fitzmorris",
+        "number": "449",
+        "team": "kansas city royals",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Al Fitzmorris",
+          "brand": "Topps",
+          "team": "Kansas City Royals",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "449",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "al fitzmorris"
+      },
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:49:12.775Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "san francisco giants",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper"
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:49:18.357Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "duane kuiper",
+        "number": "85",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Duane Kuiper",
+          "brand": "Topps",
+          "team": "San Francisco Giants",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "85",
+          "condition": "good (corner wear; slight surface wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Second baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "canonical_name": "duane kuiper",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:49:32.311Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:49:35.225Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "buddy bell",
+        "number": "590",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Buddy Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "590",
+          "condition": "good (corner/edge wear; mild toning)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; complete major and minor league batting record; cartoon back",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (corner/edge wear; mild toning)",
+            "corrected": "good",
+            "confidence": 5
+          }
+        ],
+        "canonical_name": "buddy bell",
+        "_overall_confidence": 0.58,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:49:48.174Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "jim kern",
+        "number": "41",
+        "team": "cleveland indians",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Kern",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1977 Topps",
+          "copyright_year": "1977",
+          "number": "41",
+          "condition": "good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; complete major and minor league pitching record; cartoon back",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 40,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good (moderate corner/edge wear)",
+            "corrected": "fair",
+            "confidence": 22
+          }
+        ],
+        "canonical_name": "jim kern"
+      },
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-01-31T23:49:59.991Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "david bell",
+        "number": "38",
+        "team": "cleveland indians",
+        "copyright_year": "1975",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "fair",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.46,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2787_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "David Gus Bell",
+          "brand": "Topps",
+          "team": "Cleveland Indians",
+          "card_set": "1975 Topps",
+          "copyright_year": "1975",
+          "number": "38",
+          "condition": "fair to good (heavier corner/edge wear; visible writing/ink on back)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Third baseman; major and minor league batting record; cartoon back",
+          "value_estimate": "$0.10–$1.00",
+          "notes": "writing on back (lowers collector value); otherwise standard base card"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.10–$1.00",
+        "_ml_value_estimate_support": 10,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Cleveland Indians",
+            "corrected": "cleveland indians",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "david bell"
+      }
+    ],
+    "afterData": null
+  }
+]

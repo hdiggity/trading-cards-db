@@ -1,5 +1,3 @@
-conda activate trading_cards_db
-
 #!/usr/bin/env zsh
 set -euo pipefail
 
@@ -8,6 +6,9 @@ set -euo pipefail
 # kills both on ctrl+c and prints where to open the app
 
 repo_root="$(cd "$(dirname "$0")" && pwd)"
+
+# Activate conda environment
+conda activate trading_cards_db
 ui_dir="$repo_root/app/ui"
 client_dir="$ui_dir/client"
 
@@ -74,15 +75,15 @@ kill_port 3000
 
 echo "starting backend..."
 cd "$ui_dir"
-npm start > "$repo_root/.backend.log" 2>&1 &
+npm start > "$repo_root/logs/backend.log" 2>&1 &
 backend_pid="$!"
-echo "backend pid: $backend_pid (log: $repo_root/.backend.log)"
+echo "backend pid: $backend_pid (log: $repo_root/logs/backend.log)"
 
 echo "starting frontend..."
 cd "$client_dir"
-npm start > "$repo_root/.frontend.log" 2>&1 &
+npm start > "$repo_root/logs/frontend.log" 2>&1 &
 frontend_pid="$!"
-echo "frontend pid: $frontend_pid (log: $repo_root/.frontend.log)"
+echo "frontend pid: $frontend_pid (log: $repo_root/logs/frontend.log)"
 echo ""
 
 echo "waiting for ports..."
@@ -111,12 +112,12 @@ echo ""
 while true; do
   if ! kill -0 "$backend_pid" 2>/dev/null; then
     echo "backend exited. tailing last 80 lines:"
-    tail -80 "$repo_root/.backend.log" || true
+    tail -80 "$repo_root/logs/backend.log" || true
     exit 1
   fi
   if ! kill -0 "$frontend_pid" 2>/dev/null; then
     echo "frontend exited. tailing last 80 lines:"
-    tail -80 "$repo_root/.frontend.log" || true
+    tail -80 "$repo_root/logs/frontend.log" || true
     exit 1
   fi
   sleep 1

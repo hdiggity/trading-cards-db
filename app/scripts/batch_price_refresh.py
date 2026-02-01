@@ -75,10 +75,13 @@ def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
         if force_all:
             cards = session.query(Card).all()
         else:
+            from sqlalchemy import or_
             cards = session.query(Card).filter(
-                (Card.value_estimate is None) |
-                (Card.value_estimate == '') |
-                (Card.value_estimate == '$1-5')
+                or_(
+                    Card.value_estimate.is_(None),
+                    Card.value_estimate == '',
+                    Card.value_estimate == '$1-5'
+                )
             ).all()
 
         total = len(cards)

@@ -1816,9 +1816,9 @@ function App() {
           </div>
           
           <div className="card-info">
-            <p>Photo {currentIndex + 1} of {pendingCards.length}</p>
+            <p>photo {currentIndex + 1} of {pendingCards.length}</p>
             {verificationMode === 'single' && currentCard.data.length > 1 && (
-              <p>Card {currentCardIndex + 1} of {currentCard.data.length}</p>
+              <p>card {currentCardIndex + 1} of {currentCard.data.length}</p>
             )}
           </div>
         </div>

@@ -605,7 +605,7 @@ Extract for each card INDEPENDENTLY (do not carry values from one card to the ne
 5. brand
 6. card_set
 7. sport
-8. condition (grade relative to card's age - yellowing, vintage print quality, old card stock are normal for pre-1990 cards, not damage)
+8. condition - EVALUATE EACH CARD SEPARATELY by examining corners, edges, surface, centering. Look for creases, stains, wear. Grade: gem_mint, mint, near_mint, excellent, very_good, good, fair, poor. Vintage yellowing/print quality is normal, not damage.
 9. is_player_card: true if card features an individual player, false if checklist/team card/league leaders/multi-player card. EVALUATE EACH CARD SEPARATELY.
 10. features
 11. notes (collector value: rookie card, serial #/print run, error, variation, short print, insert/chase card, refractor, autograph, relic, or "none" if standard base card)
@@ -615,7 +615,7 @@ IMPORTANT:
 - Never return null or empty strings for name, number, brand, or sport fields.
 - If you cannot determine a value, use your best guess based on the card image.
 - For sport, default to "baseball" if unclear.
-- Evaluate is_player_card for EACH card independently - most cards are player cards (true).
+- Evaluate condition and is_player_card for EACH card independently - cards in the same image can have different conditions.
 
 Return JSON with "cards" array."""
 

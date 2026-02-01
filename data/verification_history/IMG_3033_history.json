@@ -1,0 +1,4780 @@
+[
+  {
+    "timestamp": "2026-02-01T21:54:53.606Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "frank tanana",
+        "number": "600",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.56,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Frank Tanana",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "600",
+          "condition": "Good (noticeable corner/edge wear and some staining/toning typical of 1970s Topps)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back design; includes MLB pitching record/stat line and bio text",
+          "value_estimate": "~$0.50–$2 raw (higher if very clean/centered)",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "canonical_name": "frank tanana"
+      },
+      {
+        "grid_position": 1,
+        "name": "tony solaita",
+        "number": "557",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Tony Solaita",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "557",
+          "condition": "Good (corner/edge wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1st Base; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9151850282702814,
+        "_ml_condition_gpt_value": "Good (corner/edge wear; typical 1970s stock/print)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tony solaita"
+      },
+      {
+        "grid_position": 2,
+        "name": "ike hampton",
+        "number": "503",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Ike Hampton",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "503",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "ike hampton"
+      },
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller"
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:54:54.475Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "frank tanana",
+        "number": "600",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.56,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Frank Tanana",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "600",
+          "condition": "Good (noticeable corner/edge wear and some staining/toning typical of 1970s Topps)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back design; includes MLB pitching record/stat line and bio text",
+          "value_estimate": "~$0.50–$2 raw (higher if very clean/centered)",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "canonical_name": "frank tanana",
+        "_overall_confidence": 0.56,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 1,
+        "name": "tony solaita",
+        "number": "557",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Tony Solaita",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "557",
+          "condition": "Good (corner/edge wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1st Base; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9151850282702814,
+        "_ml_condition_gpt_value": "Good (corner/edge wear; typical 1970s stock/print)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tony solaita"
+      },
+      {
+        "grid_position": 2,
+        "name": "ike hampton",
+        "number": "503",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Ike Hampton",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "503",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "ike hampton"
+      },
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller"
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:55:04.554Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "tony solaita",
+        "number": "557",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Tony Solaita",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "557",
+          "condition": "Good (corner/edge wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1st Base; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9151850282702814,
+        "_ml_condition_gpt_value": "Good (corner/edge wear; typical 1970s stock/print)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tony solaita"
+      },
+      {
+        "grid_position": 2,
+        "name": "ike hampton",
+        "number": "503",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Ike Hampton",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "503",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "ike hampton"
+      },
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller"
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:55:13.380Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "tony solaita",
+        "number": "557",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Tony Solaita",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "557",
+          "condition": "Good (corner/edge wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1st Base; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9151850282702814,
+        "_ml_condition_gpt_value": "Good (corner/edge wear; typical 1970s stock/print)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tony solaita",
+        "_overall_confidence": 0.47,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "ike hampton",
+        "number": "503",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Ike Hampton",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "503",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "ike hampton"
+      },
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller"
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:55:22.298Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "ike hampton",
+        "number": "503",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Ike Hampton",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "503",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "ike hampton"
+      },
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller"
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:55:22.368Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "ike hampton",
+        "number": "503",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Ike Hampton",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "503",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "ike hampton",
+        "_overall_confidence": 0.5,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller"
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:55:28.222Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller"
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:55:46.307Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "39",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller",
+        "_overall_confidence": 0.47,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:55:48.342Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "dyar miller",
+        "number": "239",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dyar Miller",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "39",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "dyar miller",
+        "_overall_confidence": 0.47,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:00.966Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore"
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:04.214Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "balor moore",
+        "number": "368",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Balor Moore",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "368",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "balor moore",
+        "_overall_confidence": 0.5,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:11.881Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "gary ross",
+        "number": "291",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Gary Ross",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "291",
+          "condition": "Good (moderate wear; typical 1970s stock/print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Pitcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate wear; typical 1970s stock/print)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "gary ross"
+      },
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:16.738Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores"
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:22.863Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "gil flores",
+        "number": "268",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.5,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Gil Flores",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "268",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "gil flores",
+        "_overall_confidence": 0.5,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:29.182Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "terry humphrey",
+        "number": "71",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.47,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Terry Humphrey",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "71",
+          "condition": "Good (moderate corner/edge wear; typical 1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Catcher; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.25–$1.50 raw",
+          "notes": "none"
+        },
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (moderate corner/edge wear; typical 1970s stock)",
+            "corrected": "good",
+            "confidence": 4
+          }
+        ],
+        "canonical_name": "terry humphrey"
+      },
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:36.027Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1977",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T21:56:36.480Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "joe rudi",
+        "number": "635",
+        "team": "california angels",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.38,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3033_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Rudi",
+          "brand": "Topps",
+          "team": "California Angels",
+          "card_set": "Topps",
+          "copyright_year": "1977",
+          "number": "635",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Outfield; Angels; vintage 1970s Topps brown-back; stats and bio text",
+          "value_estimate": "~$0.50–$3 raw (star premium if clean)",
+          "notes": "none"
+        },
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9283074229086962,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 949,
+        "_ml_card_set_applied": true,
+        "_ml_card_set_confidence": 1,
+        "_ml_card_set_gpt_value": "Topps",
+        "_ml_card_set_support": 70,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "joe rudi",
+        "_overall_confidence": 0.38,
+        "_has_autocorrections": false,
+        "_has_warnings": false,
+        "_autocorrection_badges": [],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  }
+]

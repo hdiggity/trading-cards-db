@@ -183,7 +183,7 @@ def has_award_in_year(name, copyright_year, award_type):
     return False
 
 # Shared prompt text for value estimation
-VALUE_ESTIMATE_PROMPT = """Estimate the card's market value considering ALL factors: player name and reputation, copyright year, brand/manufacturer, card set, condition (most important for value), features (rookie, autograph, serial numbered, memorabilia, hall of fame, awards like season mvp/cy young season/triple crown season, etc.), and any special notes (error cards, variations, short prints). Popular players, older cards in good condition, and special features increase value. Format as $xx.xx (e.g., $0.50 for common cards, $2.00-$10.00 for solid players in good condition, $25.00-$100.00+ for rookie cards of stars or cards with multiple premium features)."""
+VALUE_ESTIMATE_PROMPT = """Estimate the card's market value considering ALL factors: player name and reputation, copyright year, brand/manufacturer, card set, condition (most important for value), features (rookie, autograph, serial numbered, memorabilia, hall of fame, awards like season mvp/cy young season/triple crown season, etc.), and any special notes (error cards, variations, short prints). Popular players, older cards in good condition, and special features increase value. Format as $xx.xx."""
 
 # Initialize correction tracker
 correction_tracker = CorrectionTracker(db_path="data/corrections.db")
@@ -729,6 +729,18 @@ Return JSON with "cards" array."""
 
         report("post_processing", "Starting post-processing")
 
+        # Detect non-player cards based on name keywords
+        NON_PLAYER_KEYWORDS = [
+            'team', 'checklist', 'league leaders', 'leaders', 'roster',
+            'team photo', 'stadium', 'logo', 'pennant', 'trophy',
+            'world series', 'all-star', 'all star', 'managers', 'coaches',
+            'trainers', 'front office', 'combo', 'multi-player'
+        ]
+        for card in raw_data:
+            name_lower = (card.get('name') or '').lower()
+            if any(kw in name_lower for kw in NON_PLAYER_KEYWORDS):
+                card['is_player_card'] = False
+
         # Initialize canonical name service (used after normalization)
         from app.player_canonical import CanonicalNameService
         canonical_service = CanonicalNameService()
@@ -804,6 +816,11 @@ Return JSON with "cards" array."""
         # Apply learned corrections from previous manual fixes
         for i, card in enumerate(raw_data):
             raw_data[i] = correction_tracker.apply_learned_corrections(card)
+
+        # Note: Visual corrections are applied during verification when we have
+        # individual cropped images. At this point we only have the grid image.
+        # Visual learning happens when users make corrections and those corrections
+        # are associated with visual features extracted from the cropped cards.
 
         # Apply learned condition predictions
         for i, card in enumerate(raw_data):

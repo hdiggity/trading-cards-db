@@ -942,9 +942,9 @@ function App() {
     };
   }, [bgProcessing]);
 
-  // Auto-start editing when card changes (isEditing intentionally excluded to prevent loops)
+  // Auto-start editing when card changes and update editedData when navigating between cards
   useEffect(() => {
-    if (pendingCards.length > 0 && !isEditing) {
+    if (pendingCards.length > 0) {
       const currentCard = pendingCards[currentIndex];
       if (currentCard && currentCard.data) {
         if (verificationMode === 'single') {
@@ -956,6 +956,7 @@ function App() {
             }
           });
           setEditedData([processedCard]);
+          setOriginalData([JSON.parse(JSON.stringify(processedCard))]);
         } else {
           const processedData = currentCard.data.map(card => {
             const processedCard = { ...card };
@@ -970,7 +971,9 @@ function App() {
           setEditedData(processedData);
           setOriginalData(JSON.parse(JSON.stringify(processedData))); // Deep copy for comparison
         }
-        setIsEditing(true);
+        if (!isEditing) {
+          setIsEditing(true);
+        }
         setHasUnsavedChanges(false); // Reset on new card
       }
     }
@@ -1714,49 +1717,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* Global processing progress bar */}
-      <div className={`top-progress ${bgProcessing ? 'show' : ''}`} role="status" aria-live="polite">
-        <div className="top-progress-inner">
-          <div className="top-progress-info">
-            <div className="top-progress-title">
-              <span className="progress-spinner"></span>
-              {bgTotal > 0 ? (
-                <>PROCESSING {Math.min(bgCurrent + 1, bgTotal)} OF {bgTotal}</>
-              ) : (
-                <>PROCESSING</>
-              )}
-            </div>
-            <div className="top-progress-file">
-              {bgCurrentFile || bgSubstep ? (
-                <>{bgCurrentFile}{bgSubstep ? ` · ${bgSubstep}` : ''}</>
-              ) : '\u00A0'}
-            </div>
-          </div>
-          <div className="top-progress-percent">{bgProgress}%</div>
-          <div className="top-progress-actions">
-            <button
-              className="cancel-processing"
-              type="button"
-              onClick={async () => {
-                try {
-                  await fetch('http://localhost:3001/api/cancel-processing', { method: 'POST' });
-                } catch (e) {
-                  console.error('cancel failed', e);
-                }
-                setBgProcessing(false);
-                setReprocessing(false);
-              }}
-              title="Cancel processing"
-            >
-              CANCEL
-            </button>
-          </div>
-          <div className="progress-track top">
-            <div className="progress-bar" style={{ width: `${bgProgress}%` }} />
-          </div>
-        </div>
-      </div>
-
       {/* Session recovery banner */}
       {showRecovery && recoverySession && (
         <div className="recovery-banner">
@@ -1983,11 +1943,12 @@ function App() {
               Re-process All
             </button>
             <div className="save-status">
-              {hasUnsavedChanges && (
-                <span className="unsaved-changes-indicator" title="You have unsaved changes">
-                  ● UNSAVED CHANGES
-                </span>
-              )}
+              <span
+                className={`unsaved-changes-indicator ${hasUnsavedChanges ? 'visible' : 'hidden'}`}
+                title="You have unsaved changes"
+              >
+                ● UNSAVED
+              </span>
               {autoSaving ? (
                 <span className="saving">Saving...</span>
               ) : lastSaved ? (

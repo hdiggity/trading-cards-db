@@ -4,6 +4,7 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
 from typing import Optional
 
 from dotenv import load_dotenv
@@ -15,6 +16,17 @@ from app.grid_processor import MODEL, VALUE_ESTIMATE_PROMPT
 from app.models import Card, CardComplete
 
 load_dotenv()
+
+# Progress file for UI status tracking
+PROGRESS_FILE = Path(__file__).parent.parent.parent / "logs" / "price_refresh_status.json"
+
+def write_progress(data: dict):
+    """Write progress to status file for UI polling."""
+    try:
+        PROGRESS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        PROGRESS_FILE.write_text(json.dumps(data, indent=2))
+    except Exception:
+        pass
 
 def normalize_price(price_str):
     """Validate and normalize price to $xx.xx format."""
@@ -51,11 +63,13 @@ def get_client() -> Optional[OpenAI]:
 def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
     client = get_client()
     if not client:
+        write_progress({"active": False, "error": "OPENAI_API_KEY not configured"})
         return {"error": "OPENAI_API_KEY not configured", "updated": 0, "total": 0, "batches": 0}
 
     updated = 0
     total = 0
     batches = 0
+    total_batches = 0
 
     with get_session() as session:
         if force_all:
@@ -69,11 +83,47 @@ def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
 
         total = len(cards)
         if total == 0:
+            write_progress({"active": False, "progress": 100, "updated": 0, "total": 0})
             return {"updated": 0, "total": 0, "batches": 0}
 
+        total_batches = (total + batch_size - 1) // batch_size
+
+        # Write initial progress
+        write_progress({
+            "active": True,
+            "progress": 0,
+            "current": 0,
+            "total": total,
+            "currentBatch": 0,
+            "totalBatches": total_batches,
+            "updated": 0
+        })
+
         for i in range(0, len(cards), batch_size):
+            # Check for cancellation
+            try:
+                if PROGRESS_FILE.exists():
+                    status = json.loads(PROGRESS_FILE.read_text())
+                    if status.get("cancelled"):
+                        write_progress({"active": False, "cancelled": True, "updated": updated, "total": total})
+                        return {"updated": updated, "total": total, "batches": batches, "cancelled": True}
+            except Exception:
+                pass
+
             batches += 1
             batch = cards[i:i + batch_size]
+
+            # Update progress
+            progress = min(99, int((i / total) * 100))
+            write_progress({
+                "active": True,
+                "progress": progress,
+                "current": i,
+                "total": total,
+                "currentBatch": batches,
+                "totalBatches": total_batches,
+                "updated": updated
+            })
             cards_data = []
             card_map = {}
 
@@ -141,5 +191,16 @@ Return only a JSON object with index as key and price as value (e.g., {{"0": "$5
                 print(f"Batch pricing error: {e}", file=sys.stderr)
 
         session.commit()
+
+    # Write final progress
+    write_progress({
+        "active": False,
+        "progress": 100,
+        "current": total,
+        "total": total,
+        "currentBatch": batches,
+        "totalBatches": total_batches,
+        "updated": updated
+    })
 
     return {"updated": updated, "total": total, "batches": batches}

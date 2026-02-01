@@ -9,15 +9,21 @@ corrections.
 Learning system for field corrections and automatic quality improvement.
 Enhanced with ML tracking for unsupervised correction learning.
 
-Visual context learning: For fields like copyright_year, corrections are
-only applied when visual context (brand + card_set pattern) matches,
-preventing false corrections across different card designs.
+Visual context learning: Uses actual visual features (perceptual hash,
+color histogram, edge density) extracted from card images to match
+corrections. Only applies corrections when the card's visual appearance
+matches previously corrected cards, preventing false corrections across
+different card designs.
 """
 
 import sqlite3
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+
+from .visual_features import (compute_visual_similarity,
+                              extract_visual_features, features_from_json,
+                              features_to_json, get_visual_signature)
 
 
 class CorrectionTracker:
@@ -105,8 +111,11 @@ class CorrectionTracker:
             ("ml_prediction", "TEXT"),
             ("ml_confidence", "REAL"),
             ("correction_source", "TEXT DEFAULT 'user'"),
-            ("design_signature", "TEXT"),  # brand|card_set pattern for visual context
+            ("design_signature", "TEXT"),  # legacy text-based signature (deprecated)
             ("correction_reason", "TEXT"),  # optional user-provided reason
+            ("visual_features", "TEXT"),  # JSON blob of visual features from card image
+            ("visual_signature", "TEXT"),  # compact visual signature for quick matching
+            ("image_path", "TEXT"),  # path to the card image for feature extraction
         ]
 
         for col_name, col_type in new_columns:
@@ -144,9 +153,10 @@ class CorrectionTracker:
         ml_prediction: Optional[str] = None,
         ml_confidence: Optional[float] = None,
         correction_source: str = 'user',
-        correction_reason: Optional[str] = None
+        correction_reason: Optional[str] = None,
+        image_path: Optional[str] = None
     ):
-        """Log a manual correction for learning.
+        """Log a manual correction for learning with visual features.
 
         Args:
             field_name: Name of the field being corrected
@@ -179,8 +189,7 @@ class CorrectionTracker:
             context_parts.append(f"file:{image_filename}")
         context = "|".join(context_parts) if context_parts else None
 
-        # Build design signature for visual context matching
-        # This helps prevent false corrections across different card designs
+        # Build legacy design signature (kept for backwards compatibility)
         design_parts = []
         if brand:
             design_parts.append(brand.lower().strip())
@@ -188,18 +197,29 @@ class CorrectionTracker:
             design_parts.append(card_set.lower().strip())
         design_signature = "|".join(design_parts) if design_parts else None
 
-        # Use actual database schema column names including ML columns
+        # Extract visual features from card image if path provided
+        visual_features_json = None
+        visual_sig = None
+        if image_path and Path(image_path).exists():
+            features = extract_visual_features(image_path)
+            if features:
+                visual_features_json = features_to_json(features)
+                visual_sig = get_visual_signature(features)
+
+        # Use actual database schema column names including visual features
         cursor.execute("""
             INSERT INTO corrections (
                 field, original_value, corrected_value,
                 brand, year, sport, card_set, context,
                 ml_prediction, ml_confidence, correction_source,
-                design_signature, correction_reason
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                design_signature, correction_reason,
+                visual_features, visual_signature, image_path
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (field_name, gpt_value, corrected_value,
               brand, copyright_year, sport, card_set, context,
               ml_prediction, ml_confidence, correction_source,
-              design_signature, correction_reason))
+              design_signature, correction_reason,
+              visual_features_json, visual_sig, image_path))
 
         conn.commit()
         conn.close()
@@ -968,3 +988,196 @@ class CorrectionTracker:
 
         conn.close()
         return results
+
+    def get_visual_aware_correction(
+        self,
+        field: str,
+        gpt_value: str,
+        image_path: str,
+        min_similarity: float = 0.85,
+        min_occurrences: int = 2
+    ) -> Optional[Tuple[str, float, int]]:
+        """Get correction based on visual similarity to previously corrected
+        cards.
+
+        This is the primary visual learning method. It extracts features from
+        the current card image and compares against stored corrections to find
+        visually similar cards that had the same GPT error.
+
+        Args:
+            field: Field name to get correction for
+            gpt_value: Original value from GPT extraction
+            image_path: Path to the current card's image
+            min_similarity: Minimum visual similarity score (0.0-1.0) to apply correction
+            min_occurrences: Minimum times this correction was made for similar cards
+
+        Returns:
+            Tuple of (corrected_value, similarity_score, occurrence_count) or None
+        """
+        if not gpt_value or not image_path or not Path(image_path).exists():
+            return None
+
+        # Extract visual features from current card
+        current_features = extract_visual_features(image_path)
+        if not current_features:
+            return None
+
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        # Get all corrections for this field and GPT value that have visual features
+        cursor.execute("""
+            SELECT corrected_value, visual_features, COUNT(*) as cnt
+            FROM corrections
+            WHERE field = ?
+            AND original_value = ?
+            AND visual_features IS NOT NULL
+            GROUP BY corrected_value, visual_features
+            ORDER BY cnt DESC
+        """, (field, gpt_value))
+
+        rows = cursor.fetchall()
+        conn.close()
+
+        if not rows:
+            return None
+
+        # Find best visual match
+        best_match = None
+        best_similarity = 0.0
+        best_count = 0
+
+        # Group corrections by corrected_value and accumulate similarity scores
+        correction_scores: Dict[str, List[Tuple[float, int]]] = {}
+
+        for corrected_value, features_json, count in rows:
+            stored_features = features_from_json(features_json)
+            if not stored_features:
+                continue
+
+            similarity = compute_visual_similarity(current_features, stored_features)
+
+            if corrected_value not in correction_scores:
+                correction_scores[corrected_value] = []
+            correction_scores[corrected_value].append((similarity, count))
+
+        # Find correction with best aggregate similarity
+        for corrected_value, scores in correction_scores.items():
+            # Use max similarity and total count
+            max_sim = max(s[0] for s in scores)
+            total_count = sum(s[1] for s in scores)
+
+            if max_sim >= min_similarity and total_count >= min_occurrences:
+                if max_sim > best_similarity:
+                    best_similarity = max_sim
+                    best_match = corrected_value
+                    best_count = total_count
+
+        if best_match:
+            return (best_match, best_similarity, best_count)
+
+        return None
+
+    def apply_visual_corrections(
+        self,
+        card_data: Dict,
+        image_path: str,
+        min_similarity: float = 0.85,
+        min_occurrences: int = 2
+    ) -> Dict:
+        """Apply learned visual corrections to card data.
+
+        Checks each field for visual corrections and applies them if
+        similarity threshold is met. Does NOT override GPT if no strong
+        visual match is found.
+
+        Args:
+            card_data: Dictionary of card fields from GPT
+            image_path: Path to the card's image
+            min_similarity: Minimum visual similarity to apply correction
+            min_occurrences: Minimum correction occurrences to trust
+
+        Returns:
+            Card data with visual corrections applied (if any)
+        """
+        if not image_path or not Path(image_path).exists():
+            return card_data
+
+        corrected_data = card_data.copy()
+        corrections_applied = []
+
+        # Fields that benefit from visual correction
+        # (fields where GPT errors correlate with card appearance)
+        visual_correctable_fields = [
+            'copyright_year',  # Year design changes visually
+            'brand',           # Brand logos/layouts are distinctive
+            'card_set',        # Set designs are visually distinct
+            'condition',       # Visual quality assessment
+        ]
+
+        for field in visual_correctable_fields:
+            gpt_value = card_data.get(field)
+            if not gpt_value:
+                continue
+
+            result = self.get_visual_aware_correction(
+                field=field,
+                gpt_value=str(gpt_value),
+                image_path=image_path,
+                min_similarity=min_similarity,
+                min_occurrences=min_occurrences
+            )
+
+            if result:
+                corrected_value, similarity, count = result
+
+                # Only apply if significantly confident
+                if similarity >= min_similarity:
+                    corrected_data[field] = corrected_value
+                    corrections_applied.append({
+                        'field': field,
+                        'original': gpt_value,
+                        'corrected': corrected_value,
+                        'visual_similarity': round(similarity, 3),
+                        'occurrence_count': count
+                    })
+
+        if corrections_applied:
+            corrected_data['_visual_corrections'] = corrections_applied
+
+        return corrected_data
+
+    def get_visual_correction_stats(self) -> Dict[str, Any]:
+        """Get statistics about visual correction data."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+
+        # Count corrections with visual features
+        cursor.execute("""
+            SELECT
+                COUNT(*) as total,
+                SUM(CASE WHEN visual_features IS NOT NULL THEN 1 ELSE 0 END) as with_visual
+            FROM corrections
+        """)
+        row = cursor.fetchone()
+        total = row[0] or 0
+        with_visual = row[1] or 0
+
+        # Count by field
+        cursor.execute("""
+            SELECT field, COUNT(*) as cnt
+            FROM corrections
+            WHERE visual_features IS NOT NULL
+            GROUP BY field
+            ORDER BY cnt DESC
+        """)
+        by_field = {r[0]: r[1] for r in cursor.fetchall()}
+
+        conn.close()
+
+        return {
+            'total_corrections': total,
+            'with_visual_features': with_visual,
+            'visual_coverage': round(with_visual / total, 3) if total > 0 else 0,
+            'by_field': by_field
+        }

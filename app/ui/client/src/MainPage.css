@@ -722,6 +722,11 @@
 }
 .cancel-processing:hover { border-color: #9ca3af; color: #374151; }
 
+/* Price refresh banner - same style as processing, just different z-index for stacking */
+.top-progress.price-refresh {
+  z-index: 999;
+}
+
 .learning-section h2 {
   text-align: center;
   margin-bottom: 32px;

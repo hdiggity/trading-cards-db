@@ -323,53 +323,6 @@ function MainPage() {
 
   return (
     <div className="main-page">
-      {/* Top drop-down progress bar */}
-      <div
-        className={`top-progress ${bgProcessing ? 'show' : ''}`}
-        role="status"
-        aria-live="polite"
-      >
-        <div className="top-progress-inner">
-          <div className="top-progress-info">
-            <div className="top-progress-title">
-              <span className="progress-spinner"></span>
-              {bgTotal > 0 ? (
-                <>PROCESSING {Math.min(bgCurrent + 1, bgTotal)} OF {bgTotal}</>
-              ) : (
-                <>PROCESSING</>
-              )}
-            </div>
-            <div className="top-progress-file">
-              {bgCurrentFile || bgSubstep ? (
-                <>{bgCurrentFile}{bgSubstep ? ` · ${bgSubstep}` : ''}</>
-              ) : '\u00A0'}
-            </div>
-          </div>
-          <div className="top-progress-percent">{bgProgress}%</div>
-          <div className="top-progress-actions">
-            <button
-              className="cancel-processing"
-              type="button"
-              onClick={async () => {
-                try {
-                  const r = await fetch('http://localhost:3001/api/cancel-processing', { method: 'POST' });
-                  if (!r.ok) throw new Error('request failed');
-                } catch (e) {
-                  console.error('cancel failed', e);
-                }
-                setBgProcessing(false);
-                setProcessing(false);
-              }}
-              title="Cancel background processing"
-            >
-              CANCEL
-            </button>
-          </div>
-          <div className="progress-track top">
-            <div className="progress-bar" style={{ width: `${bgProgress}%` }} />
-          </div>
-        </div>
-      </div>
       <header className="main-header">
         <h1>TRADING CARDS DATABASE</h1>
 

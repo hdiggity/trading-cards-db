@@ -7,8 +7,6 @@ set -euo pipefail
 
 repo_root="$(cd "$(dirname "$0")" && pwd)"
 
-# Activate conda environment
-conda activate trading_cards_db
 ui_dir="$repo_root/app/ui"
 client_dir="$ui_dir/client"
 
@@ -72,6 +70,8 @@ kill_port() {
 
 kill_port 3001
 kill_port 3000
+
+mkdir -p "$repo_root/logs"
 
 echo "starting backend..."
 cd "$ui_dir"

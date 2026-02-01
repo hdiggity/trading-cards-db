@@ -89,8 +89,6 @@ function DatabaseBrowser() {
   const [modalIndividualCards, setModalIndividualCards] = useState([]);
   const [editingCopyId, setEditingCopyId] = useState(null);
   const [copyFormData, setCopyFormData] = useState({});
-  const [refreshingPrices, setRefreshingPrices] = useState(false);
-  const [refreshResult, setRefreshResult] = useState(null);
   const scrollPositionRef = useRef(0);
 
   useEffect(() => {
@@ -170,9 +168,6 @@ function DatabaseBrowser() {
   };
 
   const handleRefreshPrices = async () => {
-    setRefreshingPrices(true);
-    setRefreshResult('Refreshing ALL card prices...');
-
     try {
       const response = await fetch('http://localhost:3001/api/refresh-prices', {
         method: 'POST',
@@ -181,29 +176,17 @@ function DatabaseBrowser() {
       });
       const result = await response.json();
 
-      if (result.success) {
-        const batchText = result.batches ? ` in ${result.batches} batches` : '';
-        setRefreshResult(`✓ Updated ${result.updated} of ${result.total} cards${batchText}`);
-
-        // Auto-clear after 10 seconds
-        setTimeout(() => setRefreshResult(null), 10000);
-
-        // Refresh the displayed cards to show new prices
-        try {
-          await fetchCards();
-        } catch (err) {
-          console.error('Error refreshing card display:', err);
-        }
-      } else {
-        setRefreshResult(`✗ Error: ${result.error || 'Failed to refresh prices'}`);
-        setTimeout(() => setRefreshResult(null), 10000);
+      if (result.error && result.error.includes('already in progress')) {
+        // Already running, that's fine - GlobalProgressBar will show it
+        return;
       }
+
+      if (!result.success) {
+        console.error('Failed to start price refresh:', result.error);
+      }
+      // GlobalProgressBar handles showing progress
     } catch (error) {
-      console.error('Error refreshing prices:', error);
-      setRefreshResult(`✗ Error: Failed to refresh prices`);
-      setTimeout(() => setRefreshResult(null), 10000);
-    } finally {
-      setRefreshingPrices(false);
+      console.error('Error starting price refresh:', error);
     }
   };
 
@@ -708,10 +691,9 @@ function DatabaseBrowser() {
             <button
               className="refresh-prices-button"
               onClick={handleRefreshPrices}
-              disabled={refreshingPrices}
               title="Refresh price estimates using AI (token-efficient batching)"
             >
-              {refreshingPrices ? 'REFRESHING...' : 'REFRESH PRICES'}
+              REFRESH PRICES
             </button>
 
             <button
@@ -737,9 +719,6 @@ function DatabaseBrowser() {
               RESET FILTERS
             </button>
 
-            {refreshResult && (
-              <span className="refresh-result">{refreshResult}</span>
-            )}
           </div>
         </div>
       </header>

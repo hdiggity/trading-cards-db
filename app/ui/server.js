@@ -267,7 +267,8 @@ for corr in data['corrections']:
         ml_prediction=ml_meta.get('ml_gpt_value') if ml_meta.get('ml_applied') else None,
         ml_confidence=ml_meta.get('ml_confidence'),
         correction_source='ml_override' if ml_meta.get('ml_applied') else 'user',
-        correction_reason=corr.get('reason')  # Optional user-provided reason
+        correction_reason=corr.get('reason'),  # Optional user-provided reason
+        image_path=data['context'].get('image_path')  # For visual feature extraction
     )
 
 print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
@@ -284,11 +285,17 @@ print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
       stderr += data.toString();
     });
 
-    // Add card_name and image_filename to context
+    // Add card_name, image_filename, and cropped back path to context
+    const croppedBackAlias = modifiedCard.cropped_back_alias || originalCard.cropped_back_alias;
+    const croppedBackPath = croppedBackAlias
+      ? path.join(__dirname, '../../cards/pending_verification', croppedBackAlias)
+      : null;
+
     const enrichedContext = {
       ...context,
       card_name: modifiedCard.name || originalCard.name,
-      image_filename: modifiedCard.source_file || originalCard.source_file
+      image_filename: modifiedCard.source_file || originalCard.source_file,
+      image_path: croppedBackPath  // Full path to cropped card image for visual learning
     };
 
     pythonProcess.stdin.write(JSON.stringify({ corrections, context: enrichedContext, ml_metadata: mlMetadata }));
@@ -1939,7 +1946,7 @@ app.post('/api/reprocess/:id', async (req, res) => {
             });
           }
         } catch {}
-      }, 1000);
+      }, 500);
 
       child.on('close', (code, signal) => {
         clearInterval(progressTimer);
@@ -2284,8 +2291,27 @@ with get_session() as session:
         'date_added': Card.date_added,
     }
 
+    # Special handling for number - extract numeric value for sorting
+    if sort_by == 'number':
+        import re
+        cards_all = query.all()
+        def extract_number(card):
+            val = card.number or ''
+            # Extract first sequence of digits from card number (e.g., "T-45" -> 45, "123a" -> 123)
+            nums = re.findall(r'\\d+', str(val))
+            if nums:
+                try:
+                    return int(nums[0])
+                except:
+                    pass
+            return 0 if sort_dir == 'desc' else float('inf')
+        cards_all.sort(key=extract_number, reverse=(sort_dir == 'desc'))
+        total = len(cards_all)
+        total_quantity = session.query(func.count(CardComplete.id)).scalar() or 0
+        offset = (page - 1) * limit
+        cards = cards_all[offset:offset + limit]
     # Special handling for value_estimate - extract numeric value for sorting
-    if sort_by == 'value_estimate':
+    elif sort_by == 'value_estimate':
         import re
         # Use SQL CAST with extracted number for proper numeric sorting
         # Extract first number from value_estimate string (e.g., "$1-5" -> 1, "$10-25" -> 10)
@@ -2773,17 +2799,24 @@ app.post('/api/process-raw-scans', async (req, res) => {
     const status = { active: true, pid: child.pid, logFile: logFile.replace(/\\/g, '/'), startedAt: new Date().toISOString(), total: toProcess, remaining: toProcess, progress: toProcess === 0 ? 100 : 10 };
     writeStatus(status);
 
-    // Periodically update remaining count and computed progress while process is active
+    // Periodically update progress from Python progress file for smooth updates
     const progressTimer = setInterval(async () => {
       try {
-        const files = await fs.readdir(BULK_BACK_DIR).catch(() => []);
-        const currentCount = files.filter((f) => ['.jpg', '.jpeg', '.png', '.heic'].includes(path.extname(f).toLowerCase())).length;
-        const remaining = Math.max(0, currentCount - (totalAvailable - toProcess));
-        const done = Math.max(0, toProcess - remaining);
-        const pct = Math.min(99, Math.max(10, Math.round((done / Math.max(toProcess, 1)) * 100)));
-        writeStatus({ ...status, active: true, remaining, progress: pct });
+        // Read Python's progress file for real-time substep updates
+        const pythonProgress = readPythonProgress();
+        if (pythonProgress && typeof pythonProgress.percent === 'number') {
+          writeStatus({
+            ...status,
+            active: true,
+            progress: pythonProgress.percent,
+            current: pythonProgress.current || 0,
+            currentFile: pythonProgress.current_file || '',
+            substep: pythonProgress.substep || '',
+            substepDetail: pythonProgress.detail || ''
+          });
+        }
       } catch {}
-    }, 4000);
+    }, 500);
 
     child.on('close', (code, signal) => {
       clearInterval(progressTimer);
@@ -3178,9 +3211,19 @@ with get_session() as session:
     results = query_obj.order_by(
         func.length(field_attr),
         field_attr
-    ).limit(search_limit).all()
+    ).limit(search_limit * 2).all()  # Fetch more to account for deduplication
 
-    suggestions = [r[0] for r in results if r[0]]
+    # Deduplicate case-insensitively, keeping first occurrence
+    seen = set()
+    suggestions = []
+    for r in results:
+        if r[0]:
+            key = r[0].lower().strip()
+            if key not in seen:
+                seen.add(key)
+                suggestions.append(r[0])
+                if len(suggestions) >= search_limit:
+                    break
 
     print(json.dumps({"suggestions": suggestions}))
 `], {
@@ -3957,10 +4000,53 @@ print(json.dumps(result))
   }
 });
 
-// Token-efficient batch refresh of price estimates using GPT
+// Price refresh status file
+const PRICE_REFRESH_STATUS_FILE = path.join(__dirname, '../../logs/price_refresh_status.json');
+let priceRefreshPid = null;
+
+function readPriceRefreshStatus() {
+  try {
+    if (fsSync.existsSync(PRICE_REFRESH_STATUS_FILE)) {
+      return JSON.parse(fsSync.readFileSync(PRICE_REFRESH_STATUS_FILE, 'utf8'));
+    }
+  } catch {}
+  return { active: false };
+}
+
+function writePriceRefreshStatus(status) {
+  try {
+    fsSync.mkdirSync(path.dirname(PRICE_REFRESH_STATUS_FILE), { recursive: true });
+    fsSync.writeFileSync(PRICE_REFRESH_STATUS_FILE, JSON.stringify(status, null, 2));
+  } catch (e) {
+    console.error('Failed to write price refresh status:', e);
+  }
+}
+
+// Token-efficient batch refresh of price estimates using GPT (runs in background)
 app.post('/api/refresh-prices', async (req, res) => {
   try {
+    // Check if already running
+    const currentStatus = readPriceRefreshStatus();
+    if (currentStatus.active && priceRefreshPid) {
+      try {
+        process.kill(priceRefreshPid, 0);
+        return res.status(400).json({ error: 'Price refresh already in progress' });
+      } catch {
+        // Process no longer exists, continue
+      }
+    }
+
     const { batchSize = 25, forceAll = false } = req.body || {};
+
+    // Write initial status
+    writePriceRefreshStatus({
+      active: true,
+      progress: 0,
+      current: 0,
+      total: 0,
+      startedAt: new Date().toISOString()
+    });
+
     const pythonProcess = spawn('python', ['-c', `
 from app.scripts.batch_price_refresh import refresh_prices
 import json
@@ -3968,34 +4054,80 @@ result = refresh_prices(batch_size=${batchSize}, force_all=${forceAll ? 'True' :
 print(json.dumps(result))
     `], {
       cwd: path.join(__dirname, '../..'),
-      stdio: ['pipe', 'pipe', 'pipe']
+      stdio: ['pipe', 'pipe', 'pipe'],
+      detached: false
     });
 
-    let output = '';
-    let error = '';
+    priceRefreshPid = pythonProcess.pid;
 
-    pythonProcess.stdout.on('data', (d) => output += d.toString());
-    pythonProcess.stderr.on('data', (d) => error += d.toString());
     pythonProcess.on('close', (code) => {
       console.log('[refresh-prices] Exit code:', code);
-      console.log('[refresh-prices] Output:', output);
-      console.log('[refresh-prices] Error:', error);
-
-      if (code === 0) {
-        try {
-          const result = JSON.parse(output);
-          console.log('[refresh-prices] Parsed result:', result);
-          res.json({ success: true, ...result });
-        } catch (e) {
-          console.log('[refresh-prices] JSON parse error:', e.message);
-          res.json({ success: true, message: output.trim() });
-        }
-      } else {
-        res.status(500).json({ error: 'Price refresh failed', details: error.trim() });
+      priceRefreshPid = null;
+      // Status is written by Python script, but ensure it's marked inactive
+      const status = readPriceRefreshStatus();
+      if (status.active) {
+        writePriceRefreshStatus({ ...status, active: false, finishedAt: new Date().toISOString() });
       }
     });
+
+    pythonProcess.on('error', (err) => {
+      console.error('[refresh-prices] Process error:', err);
+      priceRefreshPid = null;
+      writePriceRefreshStatus({ active: false, error: err.message });
+    });
+
+    // Respond immediately - client will poll for status
+    res.json({ success: true, message: 'Price refresh started', pid: pythonProcess.pid });
   } catch (e) {
+    writePriceRefreshStatus({ active: false, error: String(e) });
     res.status(500).json({ error: 'Failed to start price refresh', details: String(e) });
+  }
+});
+
+// Price refresh status endpoint
+app.get('/api/price-refresh-status', (req, res) => {
+  try {
+    const status = readPriceRefreshStatus();
+    // If we have a PID, verify process is still running
+    if (priceRefreshPid) {
+      try {
+        process.kill(priceRefreshPid, 0);
+        status.active = true;
+      } catch {
+        status.active = false;
+        priceRefreshPid = null;
+      }
+    }
+    res.json(status);
+  } catch (e) {
+    res.json({ active: false });
+  }
+});
+
+// Cancel price refresh
+app.post('/api/cancel-price-refresh', (req, res) => {
+  try {
+    if (!priceRefreshPid) {
+      return res.status(400).json({ error: 'No active price refresh to cancel' });
+    }
+
+    // Write cancelled flag for Python to detect
+    const status = readPriceRefreshStatus();
+    writePriceRefreshStatus({ ...status, cancelled: true });
+
+    // Give Python a moment to see the flag, then force kill if needed
+    setTimeout(() => {
+      if (priceRefreshPid) {
+        try {
+          process.kill(priceRefreshPid, 'SIGTERM');
+        } catch {}
+        priceRefreshPid = null;
+      }
+    }, 500);
+
+    res.json({ success: true, message: 'Price refresh cancellation requested' });
+  } catch (e) {
+    res.status(500).json({ error: 'Failed to cancel price refresh', details: String(e) });
   }
 });
 

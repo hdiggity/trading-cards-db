@@ -154,22 +154,6 @@
   background: #333;
 }
 
-.refresh-prices-button:disabled {
-  background: #737373;
-  cursor: not-allowed;
-}
-
-.refresh-result {
-  font-size: 13px;
-  font-weight: 600;
-  color: #15803d;
-  margin-left: 8px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  padding: 4px 8px;
-  background: #dcfce7;
-  border-radius: 4px;
-}
 
 .loading {
   text-align: center;

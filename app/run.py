@@ -18,20 +18,45 @@ BACK_IMAGES_DIR = Path("cards/unprocessed_bulk_back")
 PROGRESS_FILE = Path("logs/processing_progress.json")
 
 
+# Substep weights for smooth progress within a single image
+# GPT extraction is the slow part (~70% of processing time)
+SUBSTEP_PROGRESS = {
+    "gpt_extraction": 10,
+    "post_processing": 70,
+    "feature_detection": 75,
+    "ml_prediction": 80,
+    "learned_corrections": 85,
+    "normalization": 88,
+    "canonical_names": 91,
+    "name_standardization": 94,
+    "finalizing": 97,
+    "saving": 99,
+}
+
 def update_progress(current: int, total: int, current_file: str = "", status: str = "processing", substep: str = "", detail: str = ""):
     """Write progress to file for UI to read."""
     try:
         PROGRESS_FILE.parent.mkdir(parents=True, exist_ok=True)
-        # Calculate percent with smooth start (min 5% to avoid jump from server's initial 10%)
-        # This prevents the progress bar from jumping 10% -> 0% -> back up
-        raw_pct = int((current / max(total, 1)) * 100)
-        # For "starting" status, use 5% minimum; for active processing use 10% minimum
+
+        # Calculate base percent from completed images
         if status == "starting":
-            pct = max(5, raw_pct)
+            pct = 5
         elif status == "done":
             pct = 100
         else:
-            pct = max(10, raw_pct) if raw_pct < 10 else raw_pct
+            # Each image represents a portion of 100%
+            # current is 0-indexed during processing
+            image_portion = 100 / max(total, 1)
+            completed_pct = current * image_portion
+
+            # Add substep progress within current image
+            # Default to 5% (start of image) when no substep provided to avoid jumps
+            substep_pct = SUBSTEP_PROGRESS.get(substep, 5) if substep else 5
+            within_image_pct = (substep_pct / 100) * image_portion
+
+            pct = int(completed_pct + within_image_pct)
+            pct = max(5, min(99, pct))  # Keep between 5-99 during processing
+
         progress_data = {
             "current": current,
             "total": total,
@@ -313,10 +338,10 @@ def process_3x3_grid_backs(file_list_path=None):
     update_progress(0, total, "", "starting")
 
     for i, image_path in enumerate(back_images):
-        update_progress(i, total, image_path.name, "processing")
+        update_progress(i, total, image_path.name, "processing", "gpt_extraction", "Starting extraction")
         print(f"[{i+1}/{total}] Processing: {image_path.name}")
         process_and_move(image_path, use_grid_processing=True, current_idx=i, total_count=total)
-        update_progress(i + 1, total, image_path.name, "completed")
+        update_progress(i, total, image_path.name, "processing", "saving", "Complete")
 
     update_progress(total, total, "", "done")
 

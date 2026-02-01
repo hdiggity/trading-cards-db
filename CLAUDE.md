@@ -61,6 +61,8 @@ This is a trading card digitization system that uses GPT-5.2 Vision to extract s
 - Separates creation fields from database-only fields (quantity, pricing, timestamps)
 - Dynamic annotation system for consistent field handling
 
+**important to refer to system logs to help debug**
+
 ### Environment Requirements
 - `OPENAI_API_KEY` environment variable required for GPT-5.2 Vision API
 - `OPENAI_MODEL` (optional) - Model to use (default: "gpt-5.2")

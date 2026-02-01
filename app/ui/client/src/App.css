@@ -486,6 +486,8 @@
   background: white;
   transition: border-color 0.2s ease;
   color: #1a1a1a;
+  min-height: 28px;
+  box-sizing: border-box;
 }
 
 .field-group input:focus,
@@ -538,18 +540,19 @@
   border-radius: 6px;
   background: #fafafa;
   border: 1px solid #e5e5e5;
-  min-width: 140px;
-  min-height: 32px;
+  min-width: 200px;
+  height: 32px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: nowrap;
 }
 
 .saving {
   color: #737373;
   position: relative;
+  min-width: 100px;
 }
 
 .saving::before {
@@ -565,26 +568,38 @@
 
 .saved {
   color: #404040;
-  background: #f0f9f0;
-  border-color: #c0c0c0;
+  min-width: 100px;
 }
 
 .unsaved {
   color: #525252;
-  background: #f8f8f8;
-  border-color: #d4d4d4;
+  min-width: 100px;
 }
 
 .unsaved-changes-indicator {
   color: #dc2626;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.05em;
-  padding: 4px 8px;
+  padding: 2px 6px;
   background: #fef2f2;
   border-radius: 4px;
   border: 1px solid #fecaca;
-  animation: pulse-warning 2s ease-in-out infinite;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  white-space: nowrap;
+  min-width: 75px;
+  text-align: center;
+}
+
+.unsaved-changes-indicator.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.unsaved-changes-indicator.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @keyframes pulse-warning {

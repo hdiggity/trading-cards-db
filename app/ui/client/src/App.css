@@ -8,6 +8,7 @@
   background: #f5f5f5;
   min-height: 100vh;
   color: #1a1a1a;
+  transform: translateZ(0);
 }
 
 /* Prevent content from causing layout shift during data updates */
@@ -22,7 +23,7 @@
   background: white;
   border-radius: 8px;
   border: 1px solid #e5e5e5;
-  min-height: 80px;
+  height: 100px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
@@ -123,6 +124,7 @@
   margin-bottom: 8px;
   min-height: 500px;
   align-items: flex-start;
+  transform: translateZ(0);
 }
 
 .image-section {
@@ -136,10 +138,7 @@
   padding: 6px;
   border: 1px solid #e5e5e5;
   gap: 4px;
-  position: sticky;
-  top: 8px;
   max-height: calc(100vh - 150px);
-  overflow-y: auto;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   overflow: hidden;
 }
@@ -175,7 +174,7 @@
   flex: 1;
   text-align: left;
   min-width: 0;
-  overflow-y: auto;
+  overflow-y: scroll;
   max-height: calc(100vh - 200px);
 }
 
@@ -531,6 +530,7 @@
   margin-bottom: 8px;
   flex-wrap: wrap;
   gap: 8px;
+  min-height: 40px;
 }
 
 .save-status {
@@ -540,7 +540,8 @@
   border-radius: 6px;
   background: #fafafa;
   border: 1px solid #e5e5e5;
-  min-width: 200px;
+  width: 240px;
+  flex-shrink: 0;
   height: 32px;
   display: flex;
   align-items: center;
@@ -827,6 +828,7 @@
   background: #fafafa;
   border-radius: 6px;
   border: 1px solid #e5e5e5;
+  height: 52px;
 }
 
 .verification-mode {
@@ -863,7 +865,7 @@
   align-items: flex-end;
   gap: 4px;
   min-width: 150px;
-  min-height: 40px;
+  height: 44px;
 }
 
 .card-info p {

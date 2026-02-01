@@ -1,0 +1,2300 @@
+[
+  {
+    "timestamp": "2026-02-01T19:16:00.118Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "dave rosello",
+        "number": "423",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Rosello",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "423",
+          "condition": "Good (noticeable corner/edge wear, typical vintage stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and brief bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "canonical_name": "dave rosello"
+      },
+      {
+        "grid_position": 1,
+        "name": "paul reuschel",
+        "number": "663",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Reuschel",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "663",
+          "condition": "Good (corner/edge wear, typical vintage print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "canonical_name": "paul reuschel"
+      },
+      {
+        "grid_position": 2,
+        "name": "george mitterwald",
+        "number": "688",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Mitterwald",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "688",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and note about 3 HR/8 RBI vs Pirates (Apr 17, 1974); position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "george mitterwald"
+      },
+      {
+        "grid_position": 3,
+        "name": "dave roberts",
+        "number": "501",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Roberts",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "501",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "dave roberts"
+      },
+      {
+        "grid_position": 4,
+        "name": "steve swisher",
+        "number": "252",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Swisher",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "252",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "steve swisher"
+      },
+      {
+        "grid_position": 5,
+        "name": "joe wallis",
+        "number": "614",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Wallis",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "614",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Outfield; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "joe wallis"
+      },
+      {
+        "grid_position": 6,
+        "name": "mike krukow",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Krukow",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "17",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 83,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "mike krukow"
+      },
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:16:06.388Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "paul reuschel",
+        "number": "663",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Paul Reuschel",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "663",
+          "condition": "Good (corner/edge wear, typical vintage print)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "canonical_name": "paul reuschel"
+      },
+      {
+        "grid_position": 2,
+        "name": "george mitterwald",
+        "number": "688",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Mitterwald",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "688",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and note about 3 HR/8 RBI vs Pirates (Apr 17, 1974); position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "george mitterwald"
+      },
+      {
+        "grid_position": 3,
+        "name": "dave roberts",
+        "number": "501",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Roberts",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "501",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "dave roberts"
+      },
+      {
+        "grid_position": 4,
+        "name": "steve swisher",
+        "number": "252",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Swisher",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "252",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "steve swisher"
+      },
+      {
+        "grid_position": 5,
+        "name": "joe wallis",
+        "number": "614",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Wallis",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "614",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Outfield; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "joe wallis"
+      },
+      {
+        "grid_position": 6,
+        "name": "mike krukow",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Krukow",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "17",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 83,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "mike krukow"
+      },
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:16:15.003Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "george mitterwald",
+        "number": "688",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "George Mitterwald",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "688",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and note about 3 HR/8 RBI vs Pirates (Apr 17, 1974); position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "george mitterwald"
+      },
+      {
+        "grid_position": 3,
+        "name": "dave roberts",
+        "number": "501",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Roberts",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "501",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "dave roberts"
+      },
+      {
+        "grid_position": 4,
+        "name": "steve swisher",
+        "number": "252",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Swisher",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "252",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "steve swisher"
+      },
+      {
+        "grid_position": 5,
+        "name": "joe wallis",
+        "number": "614",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Wallis",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "614",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Outfield; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "joe wallis"
+      },
+      {
+        "grid_position": 6,
+        "name": "mike krukow",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Krukow",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "17",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 83,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "mike krukow"
+      },
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:16:19.767Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "dave roberts",
+        "number": "501",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Dave Roberts",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "501",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "dave roberts"
+      },
+      {
+        "grid_position": 4,
+        "name": "steve swisher",
+        "number": "252",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Swisher",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "252",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "steve swisher"
+      },
+      {
+        "grid_position": 5,
+        "name": "joe wallis",
+        "number": "614",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Wallis",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "614",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Outfield; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "joe wallis"
+      },
+      {
+        "grid_position": 6,
+        "name": "mike krukow",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Krukow",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "17",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 83,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "mike krukow"
+      },
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:16:24.938Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "steve swisher",
+        "number": "252",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Steve Swisher",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "252",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Catcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "steve swisher"
+      },
+      {
+        "grid_position": 5,
+        "name": "joe wallis",
+        "number": "614",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Wallis",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "614",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Outfield; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "joe wallis"
+      },
+      {
+        "grid_position": 6,
+        "name": "mike krukow",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Krukow",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "17",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 83,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "mike krukow"
+      },
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:16:35.035Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "joe wallis",
+        "number": "614",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Joe Wallis",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "614",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Outfield; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "joe wallis"
+      },
+      {
+        "grid_position": 6,
+        "name": "mike krukow",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Krukow",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "17",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 83,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "mike krukow"
+      },
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:16:46.904Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "mike krukow",
+        "number": "17",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Krukow",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "17",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 83,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "mike krukow"
+      },
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:16:52.752Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "ivan dejesus",
+        "number": "152",
+        "team": "chicago cubs",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Ivan DeJesus",
+          "brand": "Topps",
+          "team": "Chicago Cubs",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "152",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows batting record and bio; position: Shortstop; 'Play Ball' game box",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 72,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "ivan dejesus"
+      },
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:17:04.869Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "rick camp",
+        "number": "349",
+        "team": "atlanta braves",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3013_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Camp",
+          "brand": "Topps",
+          "team": "Atlanta Braves",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "349",
+          "condition": "Good (corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows pitching record and bio; position: Pitcher; 'Play Ball' game box",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 380,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "Good (corner/edge wear)",
+            "corrected": "good",
+            "confidence": 12
+          }
+        ],
+        "canonical_name": "rick camp"
+      }
+    ],
+    "afterData": null
+  }
+]

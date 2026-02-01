@@ -1,0 +1,3215 @@
+[
+  {
+    "timestamp": "2026-02-01T19:13:22.639Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "bob montgomery",
+        "number": "83",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Bob Montgomery",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "83",
+          "condition": "Good (noticeable corner/edge wear; typical aging for late-1970s stock)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: catcher; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw, depending on front/centering)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "bob montgomery"
+      },
+      {
+        "grid_position": 1,
+        "name": "rick wise",
+        "number": "572",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Wise",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "572",
+          "condition": "Good (corner/edge wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB pitching record; position: pitcher; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick wise"
+      },
+      {
+        "grid_position": 2,
+        "name": "bill campbell",
+        "number": "545",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Campbell",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "545",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB pitching record; position: pitcher; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bill campbell"
+      },
+      {
+        "grid_position": 3,
+        "name": "tommy helms",
+        "number": "618",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Helms",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "618",
+          "condition": "Good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: DH-2B; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9507581349536421,
+        "_ml_condition_gpt_value": "Good (moderate corner/edge wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tommy helms"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick miller",
+        "number": "482",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Miller",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "482",
+          "condition": "Good (moderate wear; typical for set)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick miller"
+      },
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "multiple",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:13:27.739Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "rick wise",
+        "number": "572",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Wise",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "572",
+          "condition": "Good (corner/edge wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB pitching record; position: pitcher; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick wise"
+      },
+      {
+        "grid_position": 2,
+        "name": "bill campbell",
+        "number": "545",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Campbell",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "545",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB pitching record; position: pitcher; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bill campbell"
+      },
+      {
+        "grid_position": 3,
+        "name": "tommy helms",
+        "number": "618",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Helms",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "618",
+          "condition": "Good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: DH-2B; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9507581349536421,
+        "_ml_condition_gpt_value": "Good (moderate corner/edge wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tommy helms"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick miller",
+        "number": "482",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Miller",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "482",
+          "condition": "Good (moderate wear; typical for set)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick miller"
+      },
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "multiple",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:13:32.021Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "bill campbell",
+        "number": "545",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Bill Campbell",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "545",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB pitching record; position: pitcher; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bill campbell"
+      },
+      {
+        "grid_position": 3,
+        "name": "tommy helms",
+        "number": "618",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Helms",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "618",
+          "condition": "Good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: DH-2B; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9507581349536421,
+        "_ml_condition_gpt_value": "Good (moderate corner/edge wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tommy helms"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick miller",
+        "number": "482",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Miller",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "482",
+          "condition": "Good (moderate wear; typical for set)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick miller"
+      },
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "multiple",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:13:38.141Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "tommy helms",
+        "number": "618",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Tommy Helms",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "618",
+          "condition": "Good (moderate corner/edge wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: DH-2B; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9507581349536421,
+        "_ml_condition_gpt_value": "Good (moderate corner/edge wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "tommy helms"
+      },
+      {
+        "grid_position": 4,
+        "name": "rick miller",
+        "number": "482",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Miller",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "482",
+          "condition": "Good (moderate wear; typical for set)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick miller"
+      },
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "multiple",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:13:44.239Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "rick miller",
+        "number": "482",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Rick Miller",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "482",
+          "condition": "Good (moderate wear; typical for set)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "rick miller"
+      },
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "multiple",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:13:56.615Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "multiple",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:13:59.138Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "boston",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null,
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": false
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:14:03.223Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "boston red sox team checklist",
+        "number": "424",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": false,
+        "features": "checklist",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Boston Red Sox Team Checklist",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "424",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": false,
+          "features": "Team checklist card listing players/positions/uniform numbers.",
+          "value_estimate": "~$0.25–$2.00 (raw; team checklist)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": null,
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": false
+      },
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:14:08.604Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer"
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:14:10.106Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "don zimmer",
+        "number": "63",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.52,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Don Zimmer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "63",
+          "condition": "Good (moderate wear; typical aging)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Manager card; back shows MLB batting record and manager bio; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$2.00 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.9777000229211537,
+        "_ml_condition_gpt_value": "Good (moderate wear; typical aging)",
+        "_ml_condition_support": 919,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "don zimmer",
+        "_overall_confidence": 0.52,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": [],
+        "is_player": true
+      },
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:14:15.289Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "bernie carbo",
+        "number": "524",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "very_good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.4,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Bernie Carbo",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "524",
+          "condition": "Good (moderate wear)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: outfield; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_condition_applied": true,
+        "_ml_condition_confidence": 0.966918888396976,
+        "_ml_condition_gpt_value": "Good (moderate wear)",
+        "_ml_condition_support": 919,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          },
+          {
+            "field": "condition",
+            "original": "good",
+            "corrected": "very_good",
+            "confidence": 42
+          }
+        ],
+        "canonical_name": "bernie carbo"
+      },
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-02-01T19:14:20.886Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "jack brohamer",
+        "number": "416",
+        "team": "boston red sox",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.58,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_2992_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Jack Brohamer",
+          "brand": "Topps",
+          "team": "Boston Red Sox",
+          "card_set": "1978 Topps",
+          "copyright_year": "1978",
+          "number": "416",
+          "condition": "Good (moderate wear; typical for 1978)",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "Back shows complete MLB batting record; position: 2nd base; 'Play Ball' game box on back.",
+          "value_estimate": "~$0.25–$1.50 (raw)",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "~$0.25–$1.50 (raw)",
+        "_ml_value_estimate_support": 33,
+        "_learned_corrections": [
+          {
+            "field": "team",
+            "original": "Boston Red Sox",
+            "corrected": "boston red sox",
+            "confidence": "pattern"
+          }
+        ],
+        "canonical_name": "jack brohamer"
+      }
+    ],
+    "afterData": null
+  }
+]

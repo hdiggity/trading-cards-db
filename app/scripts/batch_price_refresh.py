@@ -12,7 +12,7 @@ from openai import OpenAI
 from sqlalchemy import func
 
 from app.database import get_session
-from app.grid_processor import MODEL, VALUE_ESTIMATE_PROMPT
+from app.grid_processor import MODEL
 from app.models import Card, CardComplete
 
 load_dotenv()
@@ -140,18 +140,16 @@ def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
                 })
                 card_map[str(j)] = card
 
+            # Compact format: idx:name,brand,year,#num,cond
             card_summaries = []
             for idx, card in enumerate(cards_data):
-                summary = f"{idx}: {card.get('name', 'Unknown')} | {card.get('brand', '?')} {card.get('copyright_year', '?')} #{card.get('number', '?')} | {card.get('team', '?')} | {card.get('condition', '?')}"
+                summary = f"{idx}:{card.get('name', '?')},{card.get('brand', '?')},{card.get('copyright_year', '?')},#{card.get('number', '?')},{card.get('condition', '?')}"
                 card_summaries.append(summary)
 
             cards_text = "\n".join(card_summaries)
-            prompt = f"""{VALUE_ESTIMATE_PROMPT}
+            prompt = f"""Price these cards (format: idx:name,brand,year,#num,condition). Return JSON {{idx: "$X.XX"}}
 
-Cards to evaluate:
-{cards_text}
-
-Return only a JSON object with index as key and price as value (e.g., {{"0": "$5.00", "1": "$10.00"}})."""
+{cards_text}"""
 
             try:
                 response = client.chat.completions.create(

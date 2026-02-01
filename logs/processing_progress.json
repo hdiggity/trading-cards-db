@@ -1,1 +1,1 @@
-{"current": 0, "total": 2, "percent": 5, "current_file": "IMG_2931.HEIC", "status": "processing", "substep": "gpt_extraction", "detail": "Sending to GPT Vision: cards/unprocessed_bulk_back/IMG_2931.HEIC", "timestamp": "2026-01-31T22:45:23.229798"}
+{"current": 5, "total": 5, "percent": 100, "current_file": "", "status": "done", "substep": "", "detail": "", "timestamp": "2026-02-01T13:12:38.454382"}

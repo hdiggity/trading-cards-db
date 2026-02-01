@@ -89,7 +89,7 @@
 }
 
 .search-button {
-  background: #525252;
+  background: #1a1a1a;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -101,7 +101,7 @@
 }
 
 .search-button:hover {
-  background: #404040;
+  background: #333;
 }
 
 .filters {
@@ -177,34 +177,32 @@
 .cards-table table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: auto;
+  table-layout: fixed;
 }
 
 .cards-table th {
   background: #1a1a1a;
   color: white;
-  padding: 8px 4px;
+  padding: 10px 8px;
   text-align: left;
   font-weight: 500;
   font-size: 12px;
-  max-width: 75px;
   border-bottom: 1px solid #333333;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Specific column widths for narrower fields */
-.cards-table th:nth-child(2),  /* ID column */
-.cards-table td:nth-child(2) {
-  max-width: 45px;
+/* Checkbox column */
+.cards-table th:first-child,
+.cards-table td:first-child {
+  width: 40px;
 }
 
-/* Actions column - compact */
+/* Actions column */
 .cards-table th:last-child,
 .cards-table td:last-child {
-  max-width: 110px;
-  width: 110px;
+  width: 120px;
 }
 
 .cards-table th.sortable { cursor: pointer; user-select: none; }
@@ -212,10 +210,9 @@
 .cards-table td.sorted-cell { background: #f3f4f6; }
 
 .cards-table td {
-  padding: 6px 4px;
-  border-bottom: 1px solid #f0f0f0;
-  font-size: 12px;
-  max-width: 75px;
+  padding: 8px 6px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 13px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -223,12 +220,8 @@
   text-transform: none;
 }
 
-.cards-table tr:nth-child(even) {
-  background: #fafafa;
-}
-
 .cards-table tr:hover {
-  background: #f0f0f0;
+  background: #f8f8f8;
 }
 
 .cards-table input,
@@ -280,21 +273,21 @@
 }
 
 .edit-btn {
-  background: #525252;
+  background: #1a1a1a;
   color: white;
 }
 
 .edit-btn:hover {
-  background: #404040;
+  background: #333;
 }
 
 .delete-btn {
-  background: #737373;
+  background: #1a1a1a;
   color: white;
 }
 
 .delete-btn:hover {
-  background: #525252;
+  background: #333;
 }
 
 .save-btn {
@@ -303,16 +296,16 @@
 }
 
 .save-btn:hover {
-  background: #333333;
+  background: #333;
 }
 
 .cancel-btn {
-  background: #a3a3a3;
+  background: #1a1a1a;
   color: white;
 }
 
 .cancel-btn:hover {
-  background: #737373;
+  background: #333;
 }
 
 .pagination {
@@ -327,7 +320,7 @@
 }
 
 .page-btn {
-  background: #525252;
+  background: #1a1a1a;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -339,7 +332,7 @@
 }
 
 .page-btn:hover:not(:disabled) {
-  background: #404040;
+  background: #333;
 }
 
 .page-btn:disabled {
@@ -356,7 +349,7 @@
 }
 
 .bulk-delete-button {
-  background: #737373;
+  background: #1a1a1a;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -368,7 +361,7 @@
 }
 
 .bulk-delete-button:hover {
-  background: #525252;
+  background: #333;
 }
 
 /* Checkbox Styles */
@@ -469,7 +462,7 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #737373;
+  background: #1a1a1a;
   color: white;
   border: none;
   width: 32px;
@@ -486,7 +479,7 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 }
 
 .modal-close:hover {
-  background: #525252;
+  background: #333;
 }
 
 .modal-content {
@@ -695,19 +688,19 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 }
 
 .edit-copy-btn {
-  background: #737373;
+  background: #1a1a1a;
 }
 
 .edit-copy-btn:hover {
-  background: #525252;
+  background: #333;
 }
 
 .delete-copy-btn {
-  background: #dc2626;
+  background: #1a1a1a;
 }
 
 .delete-copy-btn:hover {
-  background: #b91c1c;
+  background: #333;
 }
 
 /* Copy edit form */

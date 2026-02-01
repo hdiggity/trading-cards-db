@@ -642,19 +642,6 @@ function DatabaseBrowser() {
             </datalist>
 
             <input
-              list="conditions-list"
-              value={filterCondition}
-              onChange={(e) => setFilterCondition(e.target.value)}
-              placeholder="condition"
-              className="filter-select"
-            />
-            <datalist id="conditions-list">
-              {fieldOptions.conditions.map((c) => (
-                <option key={c} value={c} />
-              ))}
-            </datalist>
-
-            <input
               type="text"
               value={filterName}
               onChange={(e) => setFilterName(e.target.value)}
@@ -670,24 +657,6 @@ function DatabaseBrowser() {
               className="filter-select"
             />
 
-            <input
-              type="text"
-              value={filterFeatures}
-              onChange={(e) => setFilterFeatures(e.target.value)}
-              placeholder="features"
-              className="filter-select"
-            />
-
-            <select
-              value={filterIsPlayer}
-              onChange={(e) => setFilterIsPlayer(e.target.value)}
-              className="filter-select"
-            >
-              <option value="">cards</option>
-              <option value="true">player cards</option>
-              <option value="false">non-player cards</option>
-            </select>
-
             <button
               className="refresh-prices-button"
               onClick={handleRefreshPrices}
@@ -701,14 +670,11 @@ function DatabaseBrowser() {
               onClick={() => {
                 setFilterSport('');
                 setFilterBrand('');
-                setFilterCondition('');
                 setFilterTeam('');
                 setFilterYear('');
                 setFilterSet('');
                 setFilterName('');
                 setFilterNumber('');
-                setFilterFeatures('');
-                setFilterIsPlayer('');
                 setSearchTerm('');
                 setSortBy('');
                 setSortDir('asc');
@@ -747,9 +713,6 @@ function DatabaseBrowser() {
                     ['copyright_year','YEAR'],
                     ['team','TEAM'],
                     ['card_set','SET'],
-                    ['condition','CONDITION'],
-                    ['is_player','PLAYER CARD'],
-                    ['features','FEATURES'],
                     ['value_estimate','PRICE ESTIMATE'],
                     ['quantity','QTY'],
                     ['date_added','DATE ADDED'],
@@ -790,25 +753,6 @@ function DatabaseBrowser() {
                         <td><input type="text" value={editFormData.copyright_year} onChange={(e) => updateFormField('copyright_year', e.target.value)} /></td>
                         <td><input type="text" value={editFormData.team} onChange={(e) => updateFormField('team', e.target.value)} /></td>
                         <td><input type="text" value={editFormData.card_set} onChange={(e) => updateFormField('card_set', e.target.value)} /></td>
-                        <td>
-                          <select value={normalizeCondition(editFormData.condition)} onChange={(e) => updateFormField('condition', e.target.value)}>
-                            <option value="gem mint">gem mint (10)</option>
-                            <option value="mint">mint (9)</option>
-                            <option value="near mint">near mint (8)</option>
-                            <option value="excellent">excellent (7)</option>
-                            <option value="very good">very good (6)</option>
-                            <option value="good">good (5)</option>
-                            <option value="fair">fair (4)</option>
-                            <option value="poor">poor (3)</option>
-                          </select>
-                        </td>
-                        <td>
-                          <select value={editFormData.is_player} onChange={(e) => updateFormField('is_player', e.target.value === 'true')}>
-                            <option value={true}>Yes</option>
-                            <option value={false}>No</option>
-                          </select>
-                        </td>
-                        <td><input type="text" value={editFormData.features || ''} onChange={(e) => updateFormField('features', e.target.value)} placeholder="e.g., rookie, autograph" /></td>
                         <td><input type="text" value={editFormData.value_estimate || ''} onChange={(e) => updateFormField('value_estimate', e.target.value)} onBlur={(e) => handlePriceBlur('value_estimate', e.target.value, setEditFormData)} placeholder="$1-5 or $12.34" /></td>
                         <td><input type="number" value={editFormData.quantity} onChange={(e) => updateFormField('quantity', parseInt(e.target.value))} /></td>
                         <td><span className="readonly-field">{formatFieldValue('date_added', card.date_added)}</span></td>
@@ -833,9 +777,6 @@ function DatabaseBrowser() {
                         <td className={`${sortBy==='copyright_year'?'sorted-cell':''} clickable-cell`} onClick={() => card.copyright_year && setFilterYear(card.copyright_year)}>{formatFieldValue('copyright_year', card.copyright_year)}</td>
                         <td className={`${sortBy==='team'?'sorted-cell':''} clickable-cell`} onClick={() => card.team && setFilterTeam(card.team)}>{formatFieldValue('team', card.team)}</td>
                         <td className={`${sortBy==='card_set'?'sorted-cell':''} clickable-cell`} onClick={() => card.card_set && setFilterSet(card.card_set)}>{formatFieldValue('card_set', card.card_set)}</td>
-                        <td className={`${sortBy==='condition'?'sorted-cell':''} clickable-cell`} onClick={() => card.condition && setFilterCondition(card.condition)}>{card.quantity > 1 ? 'multiple' : formatFieldValue('condition', card.condition)}</td>
-                        <td className={`${sortBy==='is_player'?'sorted-cell':''}`}>{formatFieldValue('is_player', card.is_player)}</td>
-                        <td className={`${sortBy==='features'?'sorted-cell':''}`}>{card.quantity > 1 ? 'multiple' : formatFieldValue('features', card.features)}</td>
                         <td className={`${sortBy==='value_estimate'?'sorted-cell':''}`}>{card.quantity > 1 ? 'multiple' : formatFieldValue('value_estimate', card.value_estimate)}</td>
                         <td className={`${sortBy==='quantity'?'sorted-cell':''}`}>{formatFieldValue('quantity', card.quantity)}</td>
                         <td className={`${sortBy==='date_added'?'sorted-cell':''}`}>{card.quantity > 1 ? 'multiple' : formatFieldValue('date_added', card.date_added)}</td>

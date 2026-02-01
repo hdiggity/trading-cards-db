@@ -754,6 +754,7 @@ function App() {
   const [processing, setProcessing] = useState(false);
   const [reprocessing, setReprocessing] = useState(false);
   const reprocessControllerRef = useRef(null);
+  const lastLoadedCardRef = useRef(null); // Track which card data was last loaded
   // Progress bar state for reprocessing
   const [bgProcessing, setBgProcessing] = useState(false);
   const [bgProgress, setBgProgress] = useState(0);
@@ -947,6 +948,14 @@ function App() {
     if (pendingCards.length > 0) {
       const currentCard = pendingCards[currentIndex];
       if (currentCard && currentCard.data) {
+        // Only reset editedData if we're viewing a different card
+        // This prevents polling from overwriting user's in-progress edits
+        const cardKey = `${currentCard.id}-${currentCardIndex}-${verificationMode}`;
+        if (lastLoadedCardRef.current === cardKey) {
+          return; // Same card, don't reset user's edits
+        }
+        lastLoadedCardRef.current = cardKey;
+
         if (verificationMode === 'single') {
           const processedCard = { ...currentCard.data[currentCardIndex] };
           const textFields = ['name', 'sport', 'brand', 'team', 'card_set'];
@@ -1324,6 +1333,9 @@ function App() {
         // Clear recovery flag so recovery banner can show for future unsaved work
         sessionStorage.removeItem('recoveryShown');
 
+        // Reset card ref so next card loads fresh data
+        lastLoadedCardRef.current = null;
+
         // Re-fetch pending cards from server to ensure sync
         try {
           const refreshResponse = await fetch('http://localhost:3001/api/pending-cards');
@@ -1641,6 +1653,7 @@ function App() {
         setPendingCards(updatedCards);
 
         // Reset edit state
+        lastLoadedCardRef.current = null; // Allow useEffect to load reprocessed data
         setIsEditing(false);
         setEditedData([]);
 
@@ -1942,23 +1955,6 @@ function App() {
             >
               Re-process All
             </button>
-            <div className="save-status">
-              <span
-                className={`unsaved-changes-indicator ${hasUnsavedChanges ? 'visible' : 'hidden'}`}
-                title="You have unsaved changes"
-              >
-                ● UNSAVED
-              </span>
-              {autoSaving ? (
-                <span className="saving">Saving...</span>
-              ) : lastSaved ? (
-                <span className="saved">
-                  Saved {new Date(lastSaved).toLocaleTimeString()}
-                </span>
-              ) : (
-                <span className="unsaved">Auto-save enabled</span>
-              )}
-            </div>
           </div>
           
           <div className="card-data">

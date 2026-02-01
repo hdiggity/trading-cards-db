@@ -730,8 +730,9 @@ Return JSON with "cards" array."""
         report("post_processing", "Starting post-processing")
 
         # Detect non-player cards based on name keywords
+        # Each card is evaluated independently - this does NOT affect other cards
         NON_PLAYER_KEYWORDS = [
-            'team', 'checklist', 'league leaders', 'leaders', 'roster',
+            'team checklist', 'checklist', 'league leaders', 'leaders', 'roster',
             'team photo', 'stadium', 'logo', 'pennant', 'trophy',
             'world series', 'all-star', 'all star', 'managers', 'coaches',
             'trainers', 'front office', 'combo', 'multi-player'

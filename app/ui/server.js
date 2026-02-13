@@ -3448,8 +3448,8 @@ with get_session() as session:
     unique_brands = session.query(func.count(func.distinct(Card.brand))).scalar()
     unique_sports = session.query(func.count(func.distinct(Card.sport))).scalar()
     
-    # Compute total value from value_estimate only (last_price removed)
-    cards = session.query(Card.name, Card.quantity, Card.value_estimate).all()
+    # Compute total value from each individual card (CardComplete) to account for condition differences
+    card_copies = session.query(CardComplete.value_estimate).all()
     def parse_estimate(s: str):
         try:
             import re
@@ -3460,10 +3460,8 @@ with get_session() as session:
             pass
         return 0.0
     total_value = 0.0
-    for name, qty, ve in cards:
-        v = parse_estimate(ve)
-        q = qty or 1
-        total_value += float(v) * float(q)
+    for (ve,) in card_copies:
+        total_value += parse_estimate(ve)
     
     # Summaries for tooltips (top 10)
     years_counts = session.query(Card.copyright_year, func.count(Card.id)).group_by(Card.copyright_year).all()

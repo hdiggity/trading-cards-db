@@ -285,7 +285,7 @@ def mark_transaction_reversed(transaction_id: str):
 
         if transaction:
             transaction.is_reversed = True
-            transaction.reversed_at = datetime.utcnow()
+            transaction.reversed_at = datetime.now()
             sess.commit()
 
             try:

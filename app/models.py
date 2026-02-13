@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from sqlalchemy import (JSON, Boolean, Column, DateTime, ForeignKey, Integer,
-                        String, Text, func)
+                        String, Text, func, text)
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
@@ -45,13 +45,13 @@ class CardComplete(Base):
     value_estimate = Column(String)
     notes = Column(Text)
     quantity = Column(Integer)
-    last_updated = Column(DateTime, server_default=func.now(), onupdate=func.now())
+    last_updated = Column(DateTime, server_default=text("(datetime('now', 'localtime'))"), onupdate=func.now())
 
     # Source/scan metadata columns specific to cards_complete
     source_file = Column(String, index=True)
     grid_position = Column(String)
     original_filename = Column(String)
-    verification_date = Column(DateTime, server_default=func.now())
+    verification_date = Column(DateTime, server_default=text("(datetime('now', 'localtime'))"))
     verified_by = Column(String, default="user")
     cropped_back_file = Column(String)
 

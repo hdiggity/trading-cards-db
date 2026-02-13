@@ -1,7 +1,7 @@
 from typing import Optional
 
 from pydantic import Field
-from sqlalchemy import Boolean, Column, DateTime, Integer, String, func
+from sqlalchemy import Boolean, Column, DateTime, Integer, String, func, text
 
 # fields shared between models and Pydantic
 shared_card_field_specs = [
@@ -36,13 +36,13 @@ db_only_field_specs = [
     (
         "date_added",
         str,
-        lambda: Column(DateTime, server_default=func.now()),
+        lambda: Column(DateTime, server_default=text("(datetime('now', 'localtime'))")),
         None,
     ),
     (
         "last_updated",
         Optional[str],
-        lambda: Column(DateTime, server_default=func.now(), onupdate=func.now()),
+        lambda: Column(DateTime, server_default=text("(datetime('now', 'localtime'))"), onupdate=func.now()),
         None,
     ),
 ]

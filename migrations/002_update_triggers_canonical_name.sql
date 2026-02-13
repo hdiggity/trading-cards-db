@@ -32,8 +32,8 @@ BEGIN
         NEW.value_estimate,
         NEW.notes,
         1,
-        CURRENT_TIMESTAMP,
-        CURRENT_TIMESTAMP
+        datetime('now', 'localtime'),
+        datetime('now', 'localtime')
     WHERE NOT EXISTS (SELECT 1 FROM cards WHERE id = NEW.card_id);
 
     UPDATE cards SET
@@ -51,7 +51,7 @@ BEGIN
         value_estimate = NEW.value_estimate,
         notes = NEW.notes,
         quantity = (SELECT COUNT(*) FROM cards_complete WHERE card_id = NEW.card_id),
-        last_updated = CURRENT_TIMESTAMP
+        last_updated = datetime('now', 'localtime')
     WHERE id = NEW.card_id;
 END;
 
@@ -73,6 +73,6 @@ BEGIN
         features = NEW.features,
         value_estimate = NEW.value_estimate,
         notes = NEW.notes,
-        last_updated = CURRENT_TIMESTAMP
+        last_updated = datetime('now', 'localtime')
     WHERE id = NEW.card_id;
 END;

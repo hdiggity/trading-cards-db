@@ -356,7 +356,7 @@ class EnhancedLogger:
                 image_filename=filename
             )
 
-    def log_processing_start(self, filename: str, method: str = "gpt-5.2-vision"):
+    def log_processing_start(self, filename: str, method: str = "claude-opus-4-6-vision"):
         self.update_upload_status(filename, "processing")
         self.log(
             LogLevel.INFO,

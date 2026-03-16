@@ -1,4 +1,4 @@
-"""Simple price refresh using ChatGPT."""
+"""Simple price refresh using Claude."""
 
 import json
 import os
@@ -7,8 +7,8 @@ import sys
 from pathlib import Path
 from typing import Optional
 
+import anthropic
 from dotenv import load_dotenv
-from openai import OpenAI
 from sqlalchemy import func
 
 from app.database import get_session
@@ -51,20 +51,20 @@ def normalize_price(price_str):
     # Format as $xx.xx without rounding to common price points
     return f"${val:.2f}"
 
-def get_client() -> Optional[OpenAI]:
-    api_key = os.getenv("OPENAI_API_KEY")
+def get_client() -> Optional[anthropic.Anthropic]:
+    api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
         return None
     try:
-        return OpenAI(api_key=api_key)
+        return anthropic.Anthropic(api_key=api_key)
     except Exception:
         return None
 
 def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
     client = get_client()
     if not client:
-        write_progress({"active": False, "error": "OPENAI_API_KEY not configured"})
-        return {"error": "OPENAI_API_KEY not configured", "updated": 0, "total": 0, "batches": 0}
+        write_progress({"active": False, "error": "ANTHROPIC_API_KEY not configured"})
+        return {"error": "ANTHROPIC_API_KEY not configured", "updated": 0, "total": 0, "batches": 0}
 
     updated = 0
     total = 0
@@ -155,14 +155,13 @@ def refresh_prices(batch_size: int = 25, force_all: bool = False) -> dict:
 {cards_text}"""
 
             try:
-                response = client.chat.completions.create(
+                response = client.messages.create(
                     model=MODEL,
-                    messages=[{"role": "user", "content": prompt}],
-                    max_completion_tokens=500,
-                    temperature=0.1
+                    max_tokens=500,
+                    messages=[{"role": "user", "content": prompt}]
                 )
 
-                result = response.choices[0].message.content.strip()
+                result = response.content[0].text.strip()
                 if result.startswith("```json"):
                     result = result[7:]
                 if result.startswith("```"):

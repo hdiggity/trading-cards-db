@@ -1,4 +1,4 @@
-"""Simplified single-pass GPT Vision extraction for 3x3 grid card backs."""
+"""Simplified single-pass Claude Vision extraction for 3x3 grid card backs."""
 
 import base64
 import json
@@ -19,7 +19,7 @@ from .image_preprocessor import enhance_image
 from .utils import client
 
 register_heif_opener()
-MODEL = os.getenv("OPENAI_MODEL", "gpt-5.2")
+MODEL = os.getenv("ANTHROPIC_MODEL", "claude-opus-4-6")
 
 # Load Hall of Fame list
 _hall_of_fame_cache = None
@@ -572,7 +572,7 @@ class GridProcessor:
                 progress_callback(substep, detail)
             print(f"[{substep}] {detail}", file=sys.stderr) if detail else print(f"[{substep}]", file=sys.stderr)
 
-        report("gpt_extraction", f"Sending to GPT Vision: {image_path}")
+        report("gpt_extraction", f"Sending to Claude Vision: {image_path}")
 
         # Get example features from database
         feature_examples = self._get_feature_examples()
@@ -620,65 +620,57 @@ IMPORTANT:
 Return JSON with "cards" array."""
 
         # Define structured output schema
-        response_schema = {
-            "type": "json_schema",
-            "json_schema": {
-                "name": "card_grid_extraction",
-                "strict": True,
-                "schema": {
-                    "type": "object",
-                    "properties": {
-                        "cards": {
-                            "type": "array",
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "grid_position": {"type": "integer"},
-                                    "name": {"type": "string"},
-                                    "number": {"type": ["string", "null"]},
-                                    "team": {"type": ["string", "null"]},
-                                    "copyright_year": {"type": ["string", "null"]},
-                                    "brand": {"type": ["string", "null"]},
-                                    "card_set": {"type": ["string", "null"]},
-                                    "sport": {"type": "string"},
-                                    "condition": {"type": ["string", "null"]},
-                                    "is_player_card": {"type": "boolean"},
-                                    "features": {"type": "string"},
-                                    "notes": {"type": "string"},
-                                    "value_estimate": {"type": "string"}
-                                },
-                                "required": [
-                                    "grid_position", "name", "number", "team",
-                                    "copyright_year", "brand", "card_set", "sport",
-                                    "condition", "is_player_card", "features",
-                                    "notes", "value_estimate"
-                                ],
-                                "additionalProperties": False
-                            }
-                        }
-                    },
-                    "required": ["cards"],
-                    "additionalProperties": False
+        output_schema = {
+            "type": "object",
+            "properties": {
+                "cards": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "grid_position": {"type": "integer"},
+                            "name": {"type": "string"},
+                            "number": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+                            "team": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+                            "copyright_year": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+                            "brand": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+                            "card_set": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+                            "sport": {"type": "string"},
+                            "condition": {"anyOf": [{"type": "string"}, {"type": "null"}]},
+                            "is_player_card": {"type": "boolean"},
+                            "features": {"type": "string"},
+                            "notes": {"type": "string"},
+                            "value_estimate": {"type": "string"}
+                        },
+                        "required": [
+                            "grid_position", "name", "number", "team",
+                            "copyright_year", "brand", "card_set", "sport",
+                            "condition", "is_player_card", "features",
+                            "notes", "value_estimate"
+                        ],
+                        "additionalProperties": False
+                    }
                 }
-            }
+            },
+            "required": ["cards"],
+            "additionalProperties": False
         }
 
-        # Call GPT Vision API with structured outputs
-        response = client.chat.completions.create(
+        # Call Claude Vision API with structured outputs
+        response = client.messages.create(
             model=MODEL,
+            max_tokens=2000,
+            system="You are a trading card expert. Extract data accurately from card backs.",
             messages=[
-                {"role": "system", "content": "You are a trading card expert. Extract data accurately from card backs."},
                 {"role": "user", "content": [
                     {"type": "text", "text": prompt},
-                    {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{img_b64}"}}
+                    {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": img_b64}}
                 ]}
             ],
-            response_format=response_schema,
-            max_completion_tokens=2000,
-            temperature=0.1
+            output_config={"format": {"type": "json_schema", "schema": output_schema}}
         )
 
-        result_text = response.choices[0].message.content.strip()
+        result_text = response.content[0].text.strip()
 
         # Parse structured output
         result_json = json.loads(result_text)

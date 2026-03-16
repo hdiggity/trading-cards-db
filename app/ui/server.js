@@ -24,6 +24,19 @@ const authRoutes = require('./routes/auth');
 app.use('/', healthRoutes);  // /health, /health/readiness, /health/liveness
 app.use('/api/auth', authRoutes);  // /api/auth/login, /api/auth/register, etc.
 
+// Proxy secret middleware — all non-health routes require X-Trading-Proxy-Secret when secret is configured
+app.use((req, res, next) => {
+  if (req.path.startsWith('/health')) return next();
+  const secret = process.env.TRADING_CARDS_PROXY_SECRET;
+  if (secret) {
+    if (req.get('X-Trading-Proxy-Secret') !== secret) {
+      console.warn(`[proxy-auth] denied ${req.ip} ${req.method} ${req.path}`);
+      return res.status(403).json({ error: 'forbidden' });
+    }
+  }
+  next();
+});
+
 // Canonicalize team names (JS side) for reprocess normalization
 const TEAM_CANON = {
   // MLB
@@ -452,11 +465,11 @@ async function validateStartup() {
   const errors = [];
   const warnings = [];
 
-  // check openai api key
-  if (!process.env.OPENAI_API_KEY) {
-    errors.push('OPENAI_API_KEY environment variable is required');
+  // check anthropic api key
+  if (!process.env.ANTHROPIC_API_KEY) {
+    errors.push('ANTHROPIC_API_KEY environment variable is required');
   } else {
-    console.log('✓ openai api key configured');
+    console.log('✓ anthropic api key configured');
   }
 
   // check jwt secret for production
@@ -4865,7 +4878,158 @@ with get_session() as session:
   }
 });
 
+// ── Storage Analysis ──────────────────────────────────────────────────────────
+
+const storageUpload = multer({
+  storage: multer.diskStorage({
+    destination: function (req, file, cb) {
+      const dir = path.join(__dirname, '../../cards/storage_temp');
+      fsSync.mkdirSync(dir, { recursive: true });
+      cb(null, dir);
+    },
+    filename: function (req, file, cb) {
+      const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+      const sanitized = file.originalname.replace(/['"\\]/g, '_');
+      cb(null, `${timestamp}_${sanitized}`);
+    }
+  }),
+  limits: { fileSize: 50 * 1024 * 1024 },
+  fileFilter: function (req, file, cb) {
+    const allowedExtensions = ['.jpg', '.jpeg', '.png', '.heic', '.heif', '.webp', '.tiff', '.tif', '.bmp'];
+    if (allowedExtensions.some(ext => file.originalname.toLowerCase().endsWith(ext))) {
+      cb(null, true);
+    } else {
+      cb(new Error(`Unsupported file type: ${file.originalname}`), false);
+    }
+  }
+});
+
+const STORAGE_PROMPT = `I upload photos of baseball cards, usually arranged in grids. You identify each card individually and treat them one by one, not as a group. For each card, you determine what type of card it is (player card, prospect, checklist, stat card, Bowman paper vs Chrome, etc.). You consider the player, career outcome, era, brand, year, condition visible in the photo, and typical market value. You assume my default storage is cards stored in boxes in rows, out of light, protected, for long term value preservation.
+
+For each card, you give a per-card storage recommendation, choosing only from:
+    •    no protection
+    •    penny sleeve
+    •    top loader
+    •    special storage (only for genuinely high-value cases)
+
+You do not overprotect low-value commons, even if the player had a good career. High-value may get top loaders.
+
+FORMAT YOUR RESPONSE AS ONE LINE PER CARD:
+Card [number]: [player name, year, brand, card type] | Storage: [recommendation] | Reason: [brief explanation] | Price: [estimated market value]
+
+Separate each card with a blank line.
+
+DO NOT include summary guidance, general recommendations, or offers for future analysis. Only provide the per-card recommendations in the format specified above.`;
+
+app.post('/api/storage-analysis', (req, res) => {
+  storageUpload.single('image')(req, res, async (err) => {
+    if (err) return res.status(400).json({ error: err.message });
+    if (!req.file) return res.status(400).json({ error: 'No image uploaded' });
+
+    const imagePath = req.file.path;
+    const filename = req.file.filename;
+
+    const pythonCode = `
+import base64, io, json, os, sys
+from pathlib import Path
+from dotenv import load_dotenv
+load_dotenv(Path('../../.env'))
+import anthropic
+import pillow_heif
+from PIL import Image
+
+image_path = sys.stdin.read().strip()
+ext = Path(image_path).suffix.lower()
+
+if ext in {'.heic', '.heif'}:
+    pillow_heif.register_heif_opener()
+    img = Image.open(image_path)
+    if img.mode != 'RGB':
+        img = img.convert('RGB')
+    buf = io.BytesIO()
+    img.save(buf, format='JPEG', quality=95)
+    buf.seek(0)
+    b64 = base64.b64encode(buf.read()).decode()
+    media_type = 'image/jpeg'
+else:
+    with open(image_path, 'rb') as f:
+        b64 = base64.b64encode(f.read()).decode()
+    media_type = {'.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png'}.get(ext, 'image/jpeg')
+
+prompt = ${JSON.stringify(STORAGE_PROMPT)}
+
+client = anthropic.Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
+resp = client.messages.create(
+    model=os.getenv('ANTHROPIC_MODEL', 'claude-opus-4-6'),
+    max_tokens=4000,
+    messages=[{'role': 'user', 'content': [
+        {'type': 'text', 'text': prompt},
+        {'type': 'image', 'source': {'type': 'base64', 'media_type': media_type, 'data': b64}}
+    ]}]
+)
+print(json.dumps({'recommendations': resp.content[0].text}))
+`;
+
+    const proc = spawn('python', ['-c', pythonCode], {
+      cwd: path.join(__dirname, '../..'),
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+
+    let out = '';
+    let errOut = '';
+    proc.stdout.on('data', (d) => { out += d.toString(); });
+    proc.stderr.on('data', (d) => { errOut += d.toString(); });
+    proc.stdin.write(imagePath);
+    proc.stdin.end();
+
+    proc.on('close', (code) => {
+      if (code !== 0) {
+        console.error('[storage-analysis] python error:', errOut);
+        return res.status(500).json({ error: 'Analysis failed', details: errOut });
+      }
+      try {
+        const result = JSON.parse(out);
+        res.json({ ...result, file: filename });
+      } catch {
+        res.status(500).json({ error: 'Failed to parse analysis result' });
+      }
+    });
+  });
+});
+
+app.post('/api/storage-add-to-pending', async (req, res) => {
+  const { file } = req.body;
+  if (!file) return res.status(400).json({ error: 'No file specified' });
+
+  const srcPath = path.join(__dirname, '../../cards/storage_temp', file);
+  const destDir = path.join(__dirname, '../../cards/unprocessed_bulk_back');
+  const destPath = path.join(destDir, file);
+
+  try {
+    await fs.mkdir(destDir, { recursive: true });
+    await fs.rename(srcPath, destPath);
+    res.json({ success: true, message: 'Added to pending processing' });
+  } catch (err) {
+    console.error('[storage-add-to-pending] error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Serve React production build (when client/build exists)
+const buildPath = path.join(__dirname, 'client/build');
+if (fsSync.existsSync(buildPath)) {
+  app.use(express.static(buildPath));
+  // SPA fallback: non-API, non-health routes serve index.html
+  app.get('*', (req, res) => {
+    if (!req.path.startsWith('/api/') && !req.path.startsWith('/health')) {
+      res.sendFile(path.join(buildPath, 'index.html'));
+    }
+  });
+}
+
 // Initialize and start server
+const HOST = process.env.HOST || '0.0.0.0';
+
 async function startServer() {
   try {
     console.log('🔍 validating startup configuration...\n');
@@ -4874,11 +5038,15 @@ async function startServer() {
     console.log('📁 ensuring required directories exist...');
     await ensureDirectories();
 
-    app.listen(PORT, () => {
-      console.log(`\n🚀 server running on http://localhost:${PORT}`);
-      console.log(`📁 frontend available at http://localhost:3000`);
-      console.log(`🏥 health check available at http://localhost:${PORT}/health`);
-      console.log(`🔐 auth endpoints available at http://localhost:${PORT}/api/auth`);
+    app.listen(PORT, HOST, () => {
+      console.log(`\n🚀 server running on ${HOST}:${PORT}`);
+      if (fsSync.existsSync(buildPath)) {
+        console.log(`📁 serving React build from ${buildPath}`);
+      } else {
+        console.log(`📁 frontend available at http://localhost:3000`);
+      }
+      console.log(`🏥 health check available at http://${HOST}:${PORT}/health`);
+      console.log(`🔐 auth endpoints available at http://${HOST}:${PORT}/api/auth`);
     });
   } catch (err) {
     console.error('failed to start server:', err);

@@ -22,20 +22,20 @@ router.get('/health', async (req, res) => {
 
   // check 1: environment configuration
   try {
-    if (!process.env.OPENAI_API_KEY) {
-      health.checks.openai_config = {
+    if (!process.env.ANTHROPIC_API_KEY) {
+      health.checks.anthropic_config = {
         status: 'unhealthy',
-        message: 'openai api key not configured'
+        message: 'anthropic api key not configured'
       };
       allHealthy = false;
     } else {
-      health.checks.openai_config = {
+      health.checks.anthropic_config = {
         status: 'healthy',
-        message: 'openai api key configured'
+        message: 'anthropic api key configured'
       };
     }
   } catch (err) {
-    health.checks.openai_config = {
+    health.checks.anthropic_config = {
       status: 'unhealthy',
       error: err.message
     };

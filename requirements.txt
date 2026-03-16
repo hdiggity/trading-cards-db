@@ -1,0 +1,9 @@
+numpy
+anthropic
+Pillow
+pillow-heif
+pydantic
+python-dotenv
+sqlalchemy
+sqlmodel
+mlb-statsapi

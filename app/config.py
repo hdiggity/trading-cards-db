@@ -27,8 +27,8 @@ class Config:
 
         # Core configuration
         self.environment = os.getenv('ENVIRONMENT', 'development')
-        self.openai_api_key = os.getenv('OPENAI_API_KEY')
-        self.openai_model = os.getenv('OPENAI_MODEL', 'gpt-5.2')
+        self.anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
+        self.anthropic_model = os.getenv('ANTHROPIC_MODEL', 'claude-opus-4-6')
         self.database_url = os.getenv('DATABASE_URL', 'sqlite:///cards/verified/trading_cards.db')
 
         # Security configuration
@@ -61,9 +61,9 @@ class Config:
         """
         errors = []
 
-        # OpenAI API key is always required
-        if not self.openai_api_key:
-            errors.append("OPENAI_API_KEY is required but not set")
+        # Anthropic API key is always required
+        if not self.anthropic_api_key:
+            errors.append("ANTHROPIC_API_KEY is required but not set")
 
         # JWT secret is required for production
         if self.environment == 'production':
@@ -100,8 +100,8 @@ class Config:
         """String representation (masks sensitive data)."""
         return f"""Config(
   environment={self.environment}
-  openai_api_key={'***' + self.openai_api_key[-8:] if self.openai_api_key else 'NOT SET'}
-  openai_model={self.openai_model}
+  anthropic_api_key={'***' + self.anthropic_api_key[-8:] if self.anthropic_api_key else 'NOT SET'}
+  anthropic_model={self.anthropic_model}
   database_url={self._mask_database_url()}
   jwt_secret={'***SET***' if self.jwt_secret else 'NOT SET'}
   server={self.server_host}:{self.server_port}

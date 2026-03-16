@@ -19,7 +19,7 @@ PROGRESS_FILE = Path("logs/processing_progress.json")
 
 
 # Substep weights for smooth progress within a single image
-# GPT extraction is the slow part (~70% of processing time)
+# Claude extraction is the slow part (~70% of processing time)
 SUBSTEP_PROGRESS = {
     "gpt_extraction": 10,
     "post_processing": 70,
@@ -286,7 +286,7 @@ def process_3x3_grid_backs(file_list_path=None):
     detection.
 
     INPUT: Card backs arranged in 3x3 grids (9 cards per image)
-    PROCESSING: Enhanced image preprocessing + GPT-5.2 analysis optimized for card backs
+    PROCESSING: Enhanced image preprocessing + Claude Vision analysis optimized for card backs
     BACKUP: Single front images used only to supplement missing data from backs
 
     Front images remain untouched - used only as reference for matching/supplementing.

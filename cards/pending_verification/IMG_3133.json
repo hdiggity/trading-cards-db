@@ -1,0 +1,468 @@
+[
+  {
+    "grid_position": 0,
+    "name": "bruce kison",
+    "number": "223",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 0,
+      "row": 0,
+      "col": 0,
+      "confidence": 0.52,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos0.png"
+    },
+    "_original_extraction": {
+      "name": "Bruce Kison",
+      "brand": "Topps",
+      "team": "Pittsburgh Pirates",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "223",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with pitching record and 'Play Ball' game panel.",
+      "value_estimate": "$0.25\u2013$1.50 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50 (raw)",
+    "_ml_value_estimate_support": 12,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "bruce kison"
+  },
+  {
+    "grid_position": 1,
+    "name": "jerry reuss",
+    "number": "255",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 1,
+      "row": 0,
+      "col": 1,
+      "confidence": 0.4,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos1.png"
+    },
+    "_original_extraction": {
+      "name": "Jerry Reuss",
+      "brand": "Topps",
+      "team": "Pittsburgh Pirates",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "255",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with pitching record and 'Play Ball' game panel.",
+      "value_estimate": "$0.25\u2013$2.00 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "jerry reuss"
+  },
+  {
+    "grid_position": 2,
+    "name": "fernando gonzalez",
+    "number": "433",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 2,
+      "row": 0,
+      "col": 2,
+      "confidence": 0.52,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos2.png"
+    },
+    "_original_extraction": {
+      "name": "Fernando Gonzalez",
+      "brand": "Topps",
+      "team": "Pittsburgh Pirates",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "433",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with batting record and 'Play Ball' game panel.",
+      "value_estimate": "$0.25\u2013$1.50 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50 (raw)",
+    "_ml_value_estimate_support": 12,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "fernando gonzalez"
+  },
+  {
+    "grid_position": 3,
+    "name": "phil garner",
+    "number": "53",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$2.00",
+    "_grid_metadata": {
+      "position": 3,
+      "row": 1,
+      "col": 0,
+      "confidence": 0.52,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos3.png"
+    },
+    "_original_extraction": {
+      "name": "Phil Garner",
+      "brand": "Topps",
+      "team": "Pittsburgh Pirates",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "53",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with batting record and 'Play Ball' game panel.",
+      "value_estimate": "$0.50\u2013$3.00 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "phil garner"
+  },
+  {
+    "grid_position": 4,
+    "name": "larry demery",
+    "number": "138",
+    "team": "pittsburgh pirates",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 4,
+      "row": 1,
+      "col": 1,
+      "confidence": 0.52,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos4.png"
+    },
+    "_original_extraction": {
+      "name": "Larry Demery",
+      "brand": "Topps",
+      "team": "Pittsburgh Pirates",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "138",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with pitching record and 'Play Ball' game panel.",
+      "value_estimate": "$0.25\u2013$1.50 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50 (raw)",
+    "_ml_value_estimate_support": 12,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "larry demery"
+  },
+  {
+    "grid_position": 5,
+    "name": "twins team checklist",
+    "number": "451",
+    "team": "multiple",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": false,
+    "features": "checklist",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 5,
+      "row": 1,
+      "col": 2,
+      "confidence": 0.49,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos5.png"
+    },
+    "_original_extraction": {
+      "name": "Twins Team Checklist",
+      "brand": "Topps",
+      "team": "Minnesota Twins",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "451",
+      "condition": "good",
+      "sport": "baseball",
+      "is_player": false,
+      "features": "Team checklist back listing players and positions; labeled 'Twins \u2022 TEAM CHECKLIST'.",
+      "value_estimate": "$0.25\u2013$2.00 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": null
+  },
+  {
+    "grid_position": 6,
+    "name": "roy smalley",
+    "number": "471",
+    "team": "minnesota twins",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 6,
+      "row": 2,
+      "col": 0,
+      "confidence": 0.52,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos6.png"
+    },
+    "_original_extraction": {
+      "name": "Roy Smalley",
+      "brand": "Topps",
+      "team": "Minnesota Twins",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "471",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with batting record and 'Play Ball' game panel.",
+      "value_estimate": "$0.25\u2013$2.00 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "roy smalley"
+  },
+  {
+    "grid_position": 7,
+    "name": "dave johnson",
+    "number": "627",
+    "team": "minnesota twins",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "rookie",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 7,
+      "row": 2,
+      "col": 1,
+      "confidence": 0.52,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos7.png"
+    },
+    "_original_extraction": {
+      "name": "Dave Johnson",
+      "brand": "Topps",
+      "team": "Minnesota Twins",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "627",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with pitching record and 'Play Ball' game panel.",
+      "value_estimate": "$0.25\u2013$1.50 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50 (raw)",
+    "_ml_value_estimate_support": 12,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "dave johnson"
+  },
+  {
+    "grid_position": 8,
+    "name": "tom burgmeier",
+    "number": "678",
+    "team": "minnesota twins",
+    "copyright_year": "1978",
+    "brand": "topps",
+    "card_set": "n/a",
+    "sport": "baseball",
+    "condition": "very_good",
+    "is_player_card": true,
+    "features": "none",
+    "notes": "none",
+    "value_estimate": "$1.00",
+    "_grid_metadata": {
+      "position": 8,
+      "row": 2,
+      "col": 2,
+      "confidence": 0.52,
+      "cropped_back_alias": "pending_verification_cropped_backs/IMG_3133_pos8.png"
+    },
+    "_original_extraction": {
+      "name": "Tom Burgmeier",
+      "brand": "Topps",
+      "team": "Minnesota Twins",
+      "card_set": "1978 Topps",
+      "copyright_year": "1978",
+      "number": "678",
+      "condition": "very_good",
+      "sport": "baseball",
+      "is_player": true,
+      "features": "Standard base card back with pitching record and 'Play Ball' game panel.",
+      "value_estimate": "$0.25\u2013$1.50 (raw)",
+      "notes": "none"
+    },
+    "_card_set_autocorrected": true,
+    "_ml_condition_applied": true,
+    "_ml_condition_confidence": 0.995848052699958,
+    "_ml_condition_gpt_value": "very_good",
+    "_ml_condition_support": 1040,
+    "_ml_value_estimate_applied": true,
+    "_ml_value_estimate_confidence": 1.0,
+    "_ml_value_estimate_gpt_value": "$0.25\u2013$1.50 (raw)",
+    "_ml_value_estimate_support": 12,
+    "_learned_corrections": [
+      {
+        "field": "condition",
+        "original": "good",
+        "corrected": "very_good",
+        "confidence": 42
+      }
+    ],
+    "canonical_name": "tom burgmeier"
+  }
+]

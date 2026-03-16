@@ -1,0 +1,5052 @@
+[
+  {
+    "timestamp": "2026-03-01T00:27:14.767Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "rodney scott",
+        "number": "191",
+        "team": "oakland athletics",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Rodney Scott",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "191",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rodney scott"
+      },
+      {
+        "grid_position": 1,
+        "name": "mike jorgensen",
+        "number": "406",
+        "team": "oakland athletics",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.3,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Jorgensen",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "406",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "mike jorgensen"
+      },
+      {
+        "grid_position": 2,
+        "name": "manny sanguillen",
+        "number": "658",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Manny Sanguillen",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "658",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "manny sanguillen"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:15.504Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 0,
+        "name": "rodney scott",
+        "number": "191",
+        "team": "oakland athletics",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 0,
+          "row": 0,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos0.png"
+        },
+        "_original_extraction": {
+          "name": "Rodney Scott",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "191",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rodney scott",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 1,
+        "name": "mike jorgensen",
+        "number": "406",
+        "team": "oakland athletics",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.3,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Jorgensen",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "406",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "mike jorgensen"
+      },
+      {
+        "grid_position": 2,
+        "name": "manny sanguillen",
+        "number": "658",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Manny Sanguillen",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "658",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "manny sanguillen"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:22.443Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "mike jorgensen",
+        "number": "406",
+        "team": "oakland athletics",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.3,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Jorgensen",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "406",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "mike jorgensen"
+      },
+      {
+        "grid_position": 2,
+        "name": "manny sanguillen",
+        "number": "658",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Manny Sanguillen",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "658",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "manny sanguillen"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:28.448Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 1,
+        "name": "mike jorgensen",
+        "number": "406",
+        "team": "oakland athletics",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 1,
+          "row": 0,
+          "col": 1,
+          "confidence": 0.3,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos1.png"
+        },
+        "_original_extraction": {
+          "name": "Mike Jorgensen",
+          "brand": "Topps",
+          "team": "Oakland Athletics",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "406",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "mike jorgensen",
+        "_overall_confidence": 0.3,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 2,
+        "name": "manny sanguillen",
+        "number": "658",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Manny Sanguillen",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "658",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "manny sanguillen"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:36.811Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "manny sanguillen",
+        "number": "658",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Manny Sanguillen",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "658",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "manny sanguillen"
+      },
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:44.740Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "manny sanguillen",
+        "number": "658",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Manny Sanguillen",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "658",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "manny sanguillen",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:47.152Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 2,
+        "name": "manny sanguillen",
+        "number": "658",
+        "team": "oakland athletics",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 2,
+          "row": 0,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos2.png"
+        },
+        "_original_extraction": {
+          "name": "Manny Sanguillen",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "658",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "manny sanguillen",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:53.749Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:27:57.133Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 3,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 3,
+          "row": 1,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos3.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:04.293Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner"
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:06.115Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 4,
+        "name": "chuck tanner",
+        "number": "494",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$2.00",
+        "_grid_metadata": {
+          "position": 4,
+          "row": 1,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos4.png"
+        },
+        "_original_extraction": {
+          "name": "Chuck Tanner",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "494",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; manager card; managerial highlights and batting record panel; Play Ball game panel",
+          "value_estimate": "$0.50–$3.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.50–$3.00",
+        "_ml_value_estimate_support": 94,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "chuck tanner",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:15.312Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell"
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:17.417Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 5,
+        "name": "willie stargell",
+        "number": "510",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "hall of fame",
+        "notes": "none",
+        "value_estimate": "$5.00",
+        "_grid_metadata": {
+          "position": 5,
+          "row": 1,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos5.png"
+        },
+        "_original_extraction": {
+          "name": "Willie Stargell",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "510",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$2.00–$10.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "willie stargell",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:22.905Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett"
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:31.568Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 6,
+        "name": "rennie stennett",
+        "number": "165",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "rookie",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 6,
+          "row": 2,
+          "col": 0,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos6.png"
+        },
+        "_original_extraction": {
+          "name": "Rennie Stennett",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "165",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 2B; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "rennie stennett",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:37.749Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi"
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:42.301Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 7,
+        "name": "jim fregosi",
+        "number": "323",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 7,
+          "row": 2,
+          "col": 1,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos7.png"
+        },
+        "_original_extraction": {
+          "name": "Jim Fregosi",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "323",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: 1B; batting record/stat line; Play Ball game panel",
+          "value_estimate": "$0.25–$1.50",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$1.50",
+        "_ml_value_estimate_support": 447,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "jim fregosi",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      },
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:50.259Z",
+    "action": "edit",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1972",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott"
+      }
+    ],
+    "afterData": null
+  },
+  {
+    "timestamp": "2026-03-01T00:28:58.683Z",
+    "action": "pass_card",
+    "cardIndex": 0,
+    "beforeData": [
+      {
+        "grid_position": 8,
+        "name": "ed ott",
+        "number": "28",
+        "team": "pittsburgh pirates",
+        "copyright_year": "1978",
+        "brand": "topps",
+        "card_set": "n/a",
+        "sport": "baseball",
+        "condition": "good",
+        "is_player_card": true,
+        "features": "none",
+        "notes": "none",
+        "value_estimate": "$1.00",
+        "_grid_metadata": {
+          "position": 8,
+          "row": 2,
+          "col": 2,
+          "confidence": 0.49,
+          "cropped_back_alias": "pending_verification_cropped_backs/IMG_3123_pos8.png"
+        },
+        "_original_extraction": {
+          "name": "Ed Ott",
+          "brand": "Topps",
+          "team": "Pittsburgh Pirates",
+          "card_set": "1972 Topps",
+          "copyright_year": "1972",
+          "number": "28",
+          "condition": "very_good",
+          "sport": "baseball",
+          "is_player": true,
+          "features": "1972 Topps base card back; position: C; batting record/stat line and bio text; Play Ball game panel",
+          "value_estimate": "$0.25–$2.00",
+          "notes": "none"
+        },
+        "_card_set_autocorrected": true,
+        "_ml_value_estimate_applied": true,
+        "_ml_value_estimate_confidence": 1,
+        "_ml_value_estimate_gpt_value": "$0.25–$2.00",
+        "_ml_value_estimate_support": 89,
+        "_learned_corrections": [
+          {
+            "field": "condition",
+            "original": "very_good",
+            "corrected": "good",
+            "confidence": 117
+          }
+        ],
+        "canonical_name": "ed ott",
+        "_overall_confidence": 0.49,
+        "_has_autocorrections": true,
+        "_has_warnings": false,
+        "_autocorrection_badges": [
+          {
+            "field": "card_set",
+            "label": "Auto-fixed"
+          }
+        ],
+        "_warning_badges": []
+      }
+    ],
+    "afterData": null
+  }
+]

@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import './UploadDropZone.css';
+import apiBase from './utils/apiBase';
 
 function UploadDropZone({ onUploadComplete }) {
   const [isDragOver, setIsDragOver] = useState(false);
@@ -88,7 +89,7 @@ function UploadDropZone({ onUploadComplete }) {
         formData.append('images', file);
       });
 
-      const response = await fetch('http://localhost:3001/api/upload-raw-scans', {
+      const response = await fetch(`${apiBase}/api/upload-raw-scans`, {
         method: 'POST',
         body: formData,
       });

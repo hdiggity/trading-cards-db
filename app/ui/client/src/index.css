@@ -1,57 +1,66 @@
-* {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+:root {
+  --bg:          #f4f1eb;
+  --bg-raised:   #edeae3;
+  --bg-sunken:   #ece8e1;
+  --ink:         #1a1a1a;
+  --ink-muted:   #888;
+  --ink-faint:   #bbb;
+  --rule:        rgba(26,26,26,0.12);
+  --rule-strong: rgba(26,26,26,0.35);
+  --font:        'DM Mono', monospace;
+  --radius:      0;
+  --success:     #3a6b3a;
+  --error:       #8b2a2a;
+  --warning:     #7a5a1a;
 }
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafbfc;
-  color: #1a202c;
   line-height: 1.6;
+  font-size: 13px;
+}
+
+code { font-family: var(--font); }
+
+input, select, textarea, button { font-family: var(--font); }
+
+h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 400;
 }
 
-code {
-  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-input, select, textarea {
-  font-family: inherit;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Focus styles */
 *:focus {
-  outline: 2px solid #667eea;
+  outline: 1px solid var(--ink);
   outline-offset: 2px;
 }
 
-/* Button styles - all buttons uppercase */
-button {
-  font-family: inherit;
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-}
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-sunken); }
+::-webkit-scrollbar-thumb { background: var(--rule-strong); }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-muted); }
 
-/* Headers should be uppercase */
-h1, h2, h3, h4, h5, h6 {
-  text-transform: uppercase;
-}
-
-/* Action labels should be uppercase */
-.action-label, .image-label {
-  text-transform: uppercase;
-}
-
-/* Card data should NOT be uppercase - keep original case */
+/* card data should NOT be uppercase */
 input, textarea, select,
 .card-data, .card-value, .card-field-value,
 .edit-input, .field-value,

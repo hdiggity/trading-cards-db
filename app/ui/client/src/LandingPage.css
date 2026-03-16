@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+.landing-page {
+  min-height: 100vh;
+  background: #f4f1eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+}
+
+.landing-main {
+  text-align: center;
+  padding: 40px 24px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.landing-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(72px, 14vw, 180px);
+  line-height: 0.88;
+  letter-spacing: 0.03em;
+  color: #1a1a1a;
+  margin: 0 0 28px 0;
+  font-weight: 400;
+}
+
+.landing-rule {
+  height: 1px;
+  background: #1a1a1a;
+  width: 100%;
+  margin: 0 0 20px 0;
+  opacity: 0.2;
+}
+
+.landing-sub {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 44px 0;
+  font-weight: 300;
+}
+
+.landing-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.landing-login {
+  background: #1a1a1a;
+  color: #f4f1eb;
+  border: none;
+  padding: 13px 48px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.landing-login:hover {
+  background: #333;
+}
+
+.landing-continue {
+  background: transparent;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  padding: 9px 28px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.landing-continue:hover {
+  background: #1a1a1a;
+  color: #f4f1eb;
+}
+
+/* login modal */
+
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.login-modal {
+  background: #fff;
+  padding: 44px 40px 36px;
+  min-width: 320px;
+  max-width: 380px;
+  width: 100%;
+}
+
+.login-modal h2 {
+  margin: 0 0 28px 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+.login-modal input {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  padding: 11px 13px;
+  margin-bottom: 12px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  outline: none;
+  color: #1a1a1a;
+  background: #fafafa;
+  transition: border-color 0.1s;
+}
+
+.login-modal input:focus {
+  border-color: #1a1a1a;
+  background: #fff;
+}
+
+.login-modal button[type="submit"] {
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 11px 0;
+  width: 100%;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.15s;
+}
+
+.login-modal button[type="submit"]:hover {
+  background: #333;
+}
+
+.login-error {
+  color: #b00;
+  font-size: 0.72rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+}

@@ -1,11 +1,11 @@
-/* Minimal, sleek design for database browser */
+/* Archival collector's ledger theme for database browser */
 
 .database-browser {
   max-width: 100%;
   margin: 0 auto;
   padding: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
-  background: #fafafa;
+  font-family: var(--font);
+  background: var(--bg);
   min-height: 100vh;
   font-size: 14px;
 }
@@ -13,9 +13,9 @@
 .browser-header {
   margin-bottom: 16px;
   padding: 16px;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid #e5e5e5;
+  background: var(--bg-raised);
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
 }
 
 .header-top {
@@ -26,22 +26,26 @@
 }
 
 .header-top h1 {
-  color: #1a1a1a;
+  color: var(--ink);
   margin: 0;
   font-size: 1.75rem;
   font-weight: 600;
-  letter-spacing: -0.025em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .back-button {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   border: none;
   padding: 10px 18px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   cursor: pointer;
+  font-family: var(--font);
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   transition: background-color 0.2s ease;
 }
 
@@ -58,8 +62,10 @@
 .total-count {
   font-size: 14px;
   font-weight: 600;
-  color: #525252;
+  color: var(--ink-muted);
   padding: 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .search-form {
@@ -71,37 +77,43 @@
 .search-input {
   flex: 1;
   padding: 10px 14px;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
+  border: 1px solid rgba(26,26,26,0.25);
+  border-radius: var(--radius);
+  font-family: var(--font);
   font-size: 14px;
-  background: white;
+  background: var(--bg-sunken);
+  color: var(--ink);
   transition: border-color 0.2s ease;
   text-transform: none;
 }
 
 .search-input::placeholder {
   text-transform: none;
+  color: var(--ink-faint);
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #525252;
+  border-color: var(--ink);
 }
 
 .search-button {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   border: none;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   cursor: pointer;
+  font-family: var(--font);
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   transition: background-color 0.2s ease;
 }
 
 .search-button:hover {
-  background: #333;
+  background: #333333;
 }
 
 .filters {
@@ -115,10 +127,12 @@
 
 .filter-select {
   padding: 4px 6px;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  border: 1px solid rgba(26,26,26,0.25);
+  border-radius: var(--radius);
+  font-family: var(--font);
   font-size: 12px;
-  background: white;
+  background: var(--bg-sunken);
+  color: var(--ink);
   transition: border-color 0.2s ease;
   width: 90px;
   flex-shrink: 0;
@@ -131,18 +145,21 @@
 
 .filter-select:focus {
   outline: none;
-  border-color: #525252;
+  border-color: var(--ink);
 }
 
 .refresh-prices-button,
 .reset-filters-button {
   padding: 4px 8px;
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   border: none;
-  border-radius: 4px;
+  border-radius: var(--radius);
+  font-family: var(--font);
   font-size: 11px;
   font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.2s ease;
   white-space: nowrap;
@@ -151,26 +168,26 @@
 
 .refresh-prices-button:hover:not(:disabled),
 .reset-filters-button:hover {
-  background: #333;
+  background: #333333;
 }
 
 
 .loading {
   text-align: center;
   font-size: 18px;
-  color: #737373;
+  color: var(--ink-muted);
   margin-top: 64px;
   padding: 48px;
-  background: white;
-  border-radius: 8px;
-  border: 1px solid #e5e5e5;
+  background: var(--bg-raised);
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
 }
 
 .cards-table {
-  background: white;
-  border-radius: 8px;
+  background: var(--bg-raised);
+  border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--rule);
   margin-bottom: 24px;
 }
 
@@ -181,16 +198,19 @@
 }
 
 .cards-table th {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   padding: 10px 8px;
   text-align: left;
   font-weight: 500;
+  font-family: var(--font);
   font-size: 12px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid var(--rule-strong);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 /* Checkbox column */
@@ -207,44 +227,46 @@
 
 .cards-table th.sortable { cursor: pointer; user-select: none; }
 .cards-table th.sorted { background: #242424; }
-.cards-table td.sorted-cell { background: #f3f4f6; }
+.cards-table td.sorted-cell { background: var(--bg-sunken); }
 
 .cards-table td {
   padding: 8px 6px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid var(--rule);
   font-size: 13px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #1a1a1a;
+  color: var(--ink);
   text-transform: none;
 }
 
 .cards-table tr:hover {
-  background: #f8f8f8;
+  background: var(--bg-sunken);
 }
 
 .cards-table input,
 .cards-table select {
   width: 100%;
   padding: 3px 4px;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;
+  border: 1px solid rgba(26,26,26,0.25);
+  border-radius: var(--radius);
+  font-family: var(--font);
   font-size: 12px;
   box-sizing: border-box;
-  background: white;
+  background: var(--bg-sunken);
+  color: var(--ink);
   text-transform: none;
 }
 
 .cards-table input:focus,
 .cards-table select:focus {
   outline: none;
-  border-color: #525252;
+  border-color: var(--ink);
 }
 
 .readonly-field {
   font-size: 12px;
-  color: #737373;
+  color: var(--ink-muted);
   font-style: italic;
 }
 
@@ -255,14 +277,17 @@
 .edit-btn, .delete-btn, .save-btn, .cancel-btn {
   padding: 4px 7px;
   border: none;
-  border-radius: 3px;
+  border-radius: var(--radius);
   cursor: pointer;
+  font-family: var(--font);
   font-size: 11px;
   font-weight: 500;
   margin-right: 3px;
   transition: background-color 0.2s ease;
   white-space: nowrap;
   display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .edit-btn:last-child,
@@ -273,39 +298,39 @@
 }
 
 .edit-btn {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
 }
 
 .edit-btn:hover {
-  background: #333;
+  background: #333333;
 }
 
 .delete-btn {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
 }
 
 .delete-btn:hover {
-  background: #333;
+  background: #333333;
 }
 
 .save-btn {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
 }
 
 .save-btn:hover {
-  background: #333;
+  background: #333333;
 }
 
 .cancel-btn {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
 }
 
 .cancel-btn:hover {
-  background: #333;
+  background: #333333;
 }
 
 .pagination {
@@ -314,30 +339,33 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background: #fafafa;
-  border-radius: 8px;
-  border: 1px solid #e5e5e5;
+  background: var(--bg-sunken);
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
 }
 
 .page-btn {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   border: none;
   padding: 8px 16px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   cursor: pointer;
+  font-family: var(--font);
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   transition: background-color 0.2s ease;
 }
 
 .page-btn:hover:not(:disabled) {
-  background: #333;
+  background: #333333;
 }
 
 .page-btn:disabled {
-  background: #e5e5e5;
-  color: #a3a3a3;
+  background: var(--rule);
+  color: var(--ink-faint);
   cursor: not-allowed;
 }
 
@@ -349,19 +377,22 @@
 }
 
 .bulk-delete-button {
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   border: none;
   padding: 8px 16px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   cursor: pointer;
+  font-family: var(--font);
   font-size: 14px;
   font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   transition: background-color 0.2s ease;
 }
 
 .bulk-delete-button:hover {
-  background: #333;
+  background: #333333;
 }
 
 /* Checkbox Styles */
@@ -382,17 +413,19 @@ table td:first-child {
 
 /* Selection highlighting */
 table tbody tr:has(input[type="checkbox"]:checked) {
-  background: #f0f9f0 !important;
+  background: var(--bg-sunken) !important;
 }
 
 table tbody tr:has(input[type="checkbox"]:checked):hover {
-  background: #e8f5e8 !important;
+  background: var(--bg-raised) !important;
 }
 
 .page-info {
   font-size: 14px;
-  color: #525252;
+  color: var(--ink-muted);
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 @media (max-width: 1600px) {
@@ -439,7 +472,7 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -448,26 +481,26 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 }
 
 .card-modal {
-  background: white;
-  border-radius: 12px;
+  background: var(--bg);
+  border-radius: var(--radius);
   max-width: 900px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--rule-strong);
 }
 
 .modal-close {
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #1a1a1a;
-  color: white;
+  background: var(--ink);
+  color: var(--bg);
   border: none;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
+  border-radius: var(--radius);
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
@@ -479,7 +512,7 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 }
 
 .modal-close:hover {
-  background: #333;
+  background: #333333;
 }
 
 .modal-content {
@@ -496,8 +529,8 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f5f5f5;
-  border-radius: 8px;
+  background: var(--bg-sunken);
+  border-radius: var(--radius);
   padding: 16px;
 }
 
@@ -505,12 +538,12 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   max-width: 100%;
   max-height: 500px;
   object-fit: contain;
-  border-radius: 4px;
+  border-radius: var(--radius);
 }
 
 .modal-loading,
 .modal-no-image {
-  color: #737373;
+  color: var(--ink-muted);
   font-size: 14px;
   text-align: center;
   padding: 40px;
@@ -525,7 +558,9 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   margin: 0 0 20px 0;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .modal-card-details {
@@ -537,14 +572,16 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 .detail-row {
   display: flex;
   font-size: 14px;
-  color: #1a1a1a;
+  color: var(--ink);
   text-transform: none;
 }
 
 .detail-label {
-  color: #737373;
+  color: var(--ink-muted);
   min-width: 100px;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .modal-actions {
@@ -577,25 +614,29 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 .modal-edit-form label {
   min-width: 80px;
   font-size: 14px;
-  color: #737373;
+  color: var(--ink-muted);
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .modal-edit-form input,
 .modal-edit-form select {
   flex: 1;
   padding: 8px 12px;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
+  border: 1px solid rgba(26,26,26,0.25);
+  border-radius: var(--radius);
+  font-family: var(--font);
   font-size: 14px;
-  background: white;
+  background: var(--bg-sunken);
+  color: var(--ink);
   text-transform: none;
 }
 
 .modal-edit-form input:focus,
 .modal-edit-form select:focus {
   outline: none;
-  border-color: #525252;
+  border-color: var(--ink);
 }
 
 @media (max-width: 768px) {
@@ -617,20 +658,22 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 .individual-cards-section {
   margin-top: 20px;
   padding-top: 16px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--rule);
 }
 
 .individual-cards-section h3 {
   margin: 0 0 12px 0;
   font-size: 14px;
   font-weight: 600;
-  color: #525252;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .individual-card-entry {
-  background: #f9f9f9;
-  border: 1px solid #e5e5e5;
-  border-radius: 6px;
+  background: var(--bg-sunken);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
   padding: 12px;
   margin-bottom: 10px;
 }
@@ -653,8 +696,8 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 .cropped-back-thumbnail {
   max-width: 150px;
   max-height: 200px;
-  border-radius: 4px;
-  border: 1px solid #e5e5e5;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
   object-fit: contain;
 }
 
@@ -665,10 +708,10 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
   justify-content: space-between;
   font-weight: 600;
   font-size: 13px;
-  color: #1a1a1a;
+  color: var(--ink);
   margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.12em;
 }
 
 .copy-actions {
@@ -680,27 +723,29 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 .delete-copy-btn {
   font-size: 11px;
   padding: 3px 8px;
-  color: white;
+  color: var(--bg);
   border: none;
-  border-radius: 4px;
+  border-radius: var(--radius);
   cursor: pointer;
-  text-transform: lowercase;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font);
 }
 
 .edit-copy-btn {
-  background: #1a1a1a;
+  background: var(--ink);
 }
 
 .edit-copy-btn:hover {
-  background: #333;
+  background: #333333;
 }
 
 .delete-copy-btn {
-  background: #1a1a1a;
+  background: var(--ink);
 }
 
 .delete-copy-btn:hover {
-  background: #333;
+  background: #333333;
 }
 
 /* Copy edit form */
@@ -720,25 +765,29 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 .copy-edit-form label {
   min-width: 70px;
   font-size: 12px;
-  color: #737373;
+  color: var(--ink-muted);
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .copy-edit-form input,
 .copy-edit-form select {
   flex: 1;
   padding: 6px 10px;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  border: 1px solid rgba(26,26,26,0.25);
+  border-radius: var(--radius);
+  font-family: var(--font);
   font-size: 12px;
-  background: white;
+  background: var(--bg-sunken);
+  color: var(--ink);
   text-transform: none;
 }
 
 .copy-edit-form input:focus,
 .copy-edit-form select:focus {
   outline: none;
-  border-color: #525252;
+  border-color: var(--ink);
 }
 
 .copy-edit-actions {
@@ -760,6 +809,6 @@ table tbody tr:has(input[type="checkbox"]:checked):hover {
 }
 
 .clickable-cell:hover {
-  background-color: #f0f0f0;
+  background-color: var(--bg-sunken);
   text-decoration: underline;
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 import ConfirmDialog from './components/ConfirmDialog';
+import apiBase from './utils/apiBase';
 
 // Utility function to format field names for display
 const formatFieldName = (fieldName) => {
@@ -453,7 +454,7 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
     setLoading(true);
     try {
       // Always fetch field-specific suggestions
-      const fieldResponse = await fetch('http://localhost:3001/api/field-autocomplete', {
+      const fieldResponse = await fetch(`${apiBase}/api/field-autocomplete`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ field, query, limit: 5 })
@@ -466,7 +467,7 @@ function AutocompleteInput({ field, value, onChange, placeholder, className, onA
 
       // Also search for similar cards if we have card data and onAutofill
       if (onAutofill && updatedCardData) {
-        const similarResponse = await fetch('http://localhost:3001/api/find-similar-cards', {
+        const similarResponse = await fetch(`${apiBase}/api/find-similar-cards`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(updatedCardData)
@@ -814,7 +815,7 @@ function App() {
           }
 
           // Fetch current pending cards to validate recovery
-          const response = await fetch('http://localhost:3001/api/pending-cards');
+          const response = await fetch(`${apiBase}/api/pending-cards`);
           if (!response.ok) return;
           const currentPendingCards = await response.json();
 
@@ -894,7 +895,7 @@ function App() {
       if (cancelled) return;
 
       try {
-        const response = await fetch('http://localhost:3001/api/processing-status');
+        const response = await fetch(`${apiBase}/api/processing-status`);
         const status = await response.json();
 
         if (status.active) {
@@ -991,7 +992,7 @@ function App() {
 
   const fetchFieldOptions = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/field-options');
+      const response = await fetch(`${apiBase}/api/field-options`);
       if (response.ok) {
         try {
           const data = await response.json();
@@ -1008,7 +1009,7 @@ function App() {
     const team = card.team || '';
     if (team.toLowerCase() === 'unknown' || team === '') {
       try {
-        const response = await fetch('http://localhost:3001/api/team-lookup', {
+        const response = await fetch(`${apiBase}/api/team-lookup`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -1059,7 +1060,7 @@ function App() {
 
   const fetchPendingCards = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/pending-cards');
+      const response = await fetch(`${apiBase}/api/pending-cards`);
       if (response.ok) {
         try {
           const data = await response.json();
@@ -1087,7 +1088,7 @@ function App() {
       if (!currentCard?.id) return;
 
       try {
-        const response = await fetch(`http://localhost:3001/api/verification-history/${currentCard.id}`);
+        const response = await fetch(`${apiBase}/api/verification-history/${currentCard.id}`);
         if (response.ok) {
           const data = await response.json();
           setVerificationHistory(data.history || []);
@@ -1125,7 +1126,7 @@ function App() {
 
     try {
       console.log('Calling undo API for card:', currentCard.id);
-      const response = await fetch(`http://localhost:3001/api/undo/${currentCard.id}`, {
+      const response = await fetch(`${apiBase}/api/undo/${currentCard.id}`, {
         method: 'POST'
       });
 
@@ -1313,11 +1314,11 @@ function App() {
       if (actionMode === 'single') {
         // Single card verification
         const modifiedCardData = isEditing ? editedData[0] : currentCard.data[currentCardIndex];
-        endpoint = `http://localhost:3001/api/${action}-card/${currentCard.id}/${currentCardIndex}`;
+        endpoint = `${apiBase}/api/${action}-card/${currentCard.id}/${currentCardIndex}`;
         requestBody = action === 'pass' && isEditing ? { modifiedData: modifiedCardData } : {};
       } else {
         // Entire photo verification
-        endpoint = `http://localhost:3001/api/${action}/${currentCard.id}`;
+        endpoint = `${apiBase}/api/${action}/${currentCard.id}`;
         requestBody = action === 'pass' && isEditing ? { modifiedData: editedData } : {};
       }
 
@@ -1338,7 +1339,7 @@ function App() {
 
         // Re-fetch pending cards from server to ensure sync
         try {
-          const refreshResponse = await fetch('http://localhost:3001/api/pending-cards');
+          const refreshResponse = await fetch(`${apiBase}/api/pending-cards`);
           if (refreshResponse.ok) {
             const freshData = await refreshResponse.json();
             setPendingCards(freshData);
@@ -1417,7 +1418,7 @@ function App() {
         ? { data: saveData, cardIndex: currentCardIndex }
         : { data: saveData };
 
-      const response = await fetch(`http://localhost:3001/api/save-progress/${currentCard.id}`, {
+      const response = await fetch(`${apiBase}/api/save-progress/${currentCard.id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1552,7 +1553,7 @@ function App() {
     if (mode === 'all') {
       setReprocessing(true);
       try {
-        const response = await fetch(`http://localhost:3001/api/reprocess/${currentCard.id}`, {
+        const response = await fetch(`${apiBase}/api/reprocess/${currentCard.id}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ mode, background: true }),
@@ -1577,7 +1578,7 @@ function App() {
             let substep = '';
 
             try {
-              const rs = await fetch('http://localhost:3001/api/processing-status');
+              const rs = await fetch(`${apiBase}/api/processing-status`);
               const st = await rs.json();
               active = !!st.active;
               if (typeof st.progress === 'number') serverProgress = st.progress;
@@ -1624,7 +1625,7 @@ function App() {
     reprocessControllerRef.current = controller;
 
     try {
-      const response = await fetch(`http://localhost:3001/api/reprocess/${currentCard.id}`, {
+      const response = await fetch(`${apiBase}/api/reprocess/${currentCard.id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -1676,7 +1677,7 @@ function App() {
   const cancelReprocess = async () => {
     try {
       const currentCard = pendingCards[currentIndex];
-      await fetch(`http://localhost:3001/api/cancel-reprocess/${currentCard.id}`, { method: 'POST' });
+      await fetch(`${apiBase}/api/cancel-reprocess/${currentCard.id}`, { method: 'POST' });
     } catch (_) {}
     try { reprocessControllerRef.current?.abort(); } catch (_) {}
     setReprocessing(false);
@@ -1789,6 +1790,7 @@ function App() {
       )}
 
       <header className="App-header">
+        <a href="https://harlanswitzer.com" className="main-home-link">harlanswitzer.com</a>
         <div className="header-top">
           <h1>trading card verification</h1>
           <button 
@@ -1844,7 +1846,7 @@ function App() {
                 const cardNumber = (sel?.number || 'no_num').replace(/[^a-zA-Z0-9]/g, '_');
                 croppedFilename = `${stem}_pos${pos}_${cardName}_${cardNumber}.png`;
               }
-              const backCropUrl = croppedFilename ? `http://localhost:3001/api/cropped-back-image/${croppedFilename}` : null;
+              const backCropUrl = croppedFilename ? `${apiBase}/api/cropped-back-image/${croppedFilename}` : null;
 
               return (
                 <div className="unified-image-container">
@@ -1852,7 +1854,7 @@ function App() {
                     <div className="image-with-label">
                       <div className="image-label">FULL SCAN</div>
                       <ZoomableImage
-                        src={`http://localhost:3001/api/bulk-back-image/${currentCard.imageFile}`}
+                        src={`${apiBase}/api/bulk-back-image/${currentCard.imageFile}`}
                         alt="Full scan"
                         className="card-image"
                       />
@@ -1875,7 +1877,7 @@ function App() {
             <div className="main-image-block">
               <div className="main-image-title">Original Scan</div>
               <ZoomableImage
-                src={`http://localhost:3001/api/bulk-back-image/${currentCard.imageFile}`}
+                src={`${apiBase}/api/bulk-back-image/${currentCard.imageFile}`}
                 alt="Trading card"
                 className="card-image"
               />

@@ -1,4 +1,5 @@
 // Centralized error handling utility
+const apiBase = process.env.REACT_APP_API_BASE || '';
 
 class ErrorHandler {
   static contexts = {
@@ -124,7 +125,7 @@ class ErrorHandler {
    */
   static async logToServer(logData) {
     try {
-      await fetch('http://localhost:3001/api/log-error', {
+      await fetch(`${apiBase}/api/log-error`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(logData)

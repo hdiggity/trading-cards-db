@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RawScanPreview.css';
+import apiBase from './utils/apiBase';
 
 function RawScanPreview() {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ function RawScanPreview() {
   useEffect(() => {
     (async () => {
       try {
-        const r = await fetch('http://localhost:3001/api/raw-scans');
+        const r = await fetch(`${apiBase}/api/raw-scans`);
         const data = await r.json();
         setFiles(data.files || []);
       } catch (e) {
@@ -35,7 +36,7 @@ function RawScanPreview() {
         <div className="grid">
           {files.map((f, idx) => (
             <figure key={idx} className="tile">
-              <img src={`http://localhost:3001${f.url}`} alt={f.name} />
+              <img src={`${apiBase}${f.url}`} alt={f.name} />
               <figcaption>
                 <div className="name">{f.name}</div>
                 <div className="meta">{f.size ? `${(f.size/1024).toFixed(0)} KB` : ''}</div>

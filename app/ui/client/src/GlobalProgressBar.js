@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './MainPage.css'; // Use same styles as MainPage
+import apiBase from './utils/apiBase';
 
 function GlobalProgressBar() {
   // Card processing state
@@ -26,7 +27,7 @@ function GlobalProgressBar() {
       if (cancelled) return;
 
       try {
-        const response = await fetch('http://localhost:3001/api/processing-status');
+        const response = await fetch(`${apiBase}/api/processing-status`);
         const status = await response.json();
 
         if (status.active) {
@@ -74,7 +75,7 @@ function GlobalProgressBar() {
       if (cancelled) return;
 
       try {
-        const response = await fetch('http://localhost:3001/api/price-refresh-status');
+        const response = await fetch(`${apiBase}/api/price-refresh-status`);
         const status = await response.json();
 
         if (status.active) {
@@ -114,7 +115,7 @@ function GlobalProgressBar() {
 
   const handleCancelProcessing = async () => {
     try {
-      await fetch('http://localhost:3001/api/cancel-processing', { method: 'POST' });
+      await fetch(`${apiBase}/api/cancel-processing`, { method: 'POST' });
     } catch (e) {
       console.error('cancel failed', e);
     }
@@ -123,7 +124,7 @@ function GlobalProgressBar() {
 
   const handleCancelPriceRefresh = async () => {
     try {
-      await fetch('http://localhost:3001/api/cancel-price-refresh', { method: 'POST' });
+      await fetch(`${apiBase}/api/cancel-price-refresh`, { method: 'POST' });
     } catch (e) {
       console.error('cancel price refresh failed', e);
     }

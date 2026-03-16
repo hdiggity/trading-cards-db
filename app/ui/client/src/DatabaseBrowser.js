@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DatabaseBrowser.css';
+import apiBase from './utils/apiBase';
 
 // Utility helpers for display normalization
 const normalizeCondition = (val) => (val ? String(val).replace(/_/g, ' ').trim().toLowerCase() : '');
@@ -107,7 +108,7 @@ function DatabaseBrowser() {
   useEffect(() => {
     (async () => {
       try {
-        const r = await fetch('http://localhost:3001/api/field-options');
+        const r = await fetch(`${apiBase}/api/field-options`);
         const data = await r.json();
         setFieldOptions({
           sports: (data.sports || []).map((s) => String(s).toLowerCase()),
@@ -144,7 +145,7 @@ function DatabaseBrowser() {
         ...(sortBy && { sortDir })
       });
 
-      const response = await fetch(`http://localhost:3001/api/cards?${params}`);
+      const response = await fetch(`${apiBase}/api/cards?${params}`);
       const data = await response.json();
 
       setCards(data.cards || []);
@@ -169,7 +170,7 @@ function DatabaseBrowser() {
 
   const handleRefreshPrices = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/refresh-prices', {
+      const response = await fetch(`${apiBase}/api/refresh-prices`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ batchSize: 25, forceAll: true })
@@ -222,7 +223,7 @@ function DatabaseBrowser() {
 
   const handleSave = async (cardId) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/cards/${cardId}`, {
+      const response = await fetch(`${apiBase}/api/cards/${cardId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
@@ -249,7 +250,7 @@ function DatabaseBrowser() {
     }
 
     try {
-      const response = await fetch(`http://localhost:3001/api/cards/${cardId}`, {
+      const response = await fetch(`${apiBase}/api/cards/${cardId}`, {
         method: 'DELETE'
       });
 
@@ -315,7 +316,7 @@ function DatabaseBrowser() {
 
     try {
       const deletePromises = Array.from(selectedCards).map(cardId =>
-        fetch(`http://localhost:3001/api/cards/${cardId}`, {
+        fetch(`${apiBase}/api/cards/${cardId}`, {
           method: 'DELETE'
         })
       );
@@ -354,7 +355,7 @@ function DatabaseBrowser() {
     setModalIndividualCards([]);
 
     try {
-      const response = await fetch(`http://localhost:3001/api/card-cropped-back/${card.id}`);
+      const response = await fetch(`${apiBase}/api/card-cropped-back/${card.id}`);
       const data = await response.json();
       if (data.found && data.individualCards) {
         setModalIndividualCards(data.individualCards);
@@ -391,7 +392,7 @@ function DatabaseBrowser() {
 
   const saveCopyEdit = async (copyId) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/individual-card/${copyId}`, {
+      const response = await fetch(`${apiBase}/api/individual-card/${copyId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(copyFormData)
@@ -432,7 +433,7 @@ function DatabaseBrowser() {
       return;
     }
     try {
-      const response = await fetch(`http://localhost:3001/api/individual-card/${copyId}`, {
+      const response = await fetch(`${apiBase}/api/individual-card/${copyId}`, {
         method: 'DELETE'
       });
       const result = await response.json();
@@ -497,7 +498,7 @@ function DatabaseBrowser() {
 
   const saveModalEdit = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/api/cards/${modalCard.id}`, {
+      const response = await fetch(`${apiBase}/api/cards/${modalCard.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(modalFormData)
@@ -521,7 +522,7 @@ function DatabaseBrowser() {
       return;
     }
     try {
-      const response = await fetch(`http://localhost:3001/api/cards/${modalCard.id}`, {
+      const response = await fetch(`${apiBase}/api/cards/${modalCard.id}`, {
         method: 'DELETE'
       });
       if (response.ok) {
@@ -554,7 +555,7 @@ function DatabaseBrowser() {
               className="back-button"
               onClick={() => navigate('/')}
             >
-              ← BACK TO MAIN
+              ← HOME
             </button>
           </div>
         </div>
@@ -852,12 +853,12 @@ function DatabaseBrowser() {
                             {ic.cropped_back_file && (
                               <div className="individual-card-image">
                                 <img
-                                  src={`http://localhost:3001/api/cropped-back-image/${encodeURIComponent(ic.cropped_back_file)}`}
+                                  src={`${apiBase}/api/cropped-back-image/${encodeURIComponent(ic.cropped_back_file)}`}
                                   alt={`${ic.name || 'card'} back`}
                                   className="cropped-back-thumbnail"
                                   onError={(e) => {
                                     // Try verified directory if pending fails
-                                    e.target.src = `http://localhost:3001/api/verified-cropped-back-image/${encodeURIComponent(ic.cropped_back_file)}`;
+                                    e.target.src = `${apiBase}/api/verified-cropped-back-image/${encodeURIComponent(ic.cropped_back_file)}`;
                                   }}
                                 />
                               </div>

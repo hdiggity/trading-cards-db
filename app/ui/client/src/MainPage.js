@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MainPage.css';
+import apiBase from './utils/apiBase';
+import StorageUpload from './StorageUpload';
 
 function MainPage() {
   const navigate = useNavigate();
@@ -50,7 +52,7 @@ function MainPage() {
 
       // Detect background processing if page reloads mid-run
       try {
-        const r = await fetch('http://localhost:3001/api/processing-status');
+        const r = await fetch(`${apiBase}/api/processing-status`);
         const s = await r.json();
         if (s.active) {
           setBgProcessing(true);
@@ -76,7 +78,7 @@ function MainPage() {
             let total = 0;
             let substep = '';
             try {
-              const rs = await fetch('http://localhost:3001/api/processing-status');
+              const rs = await fetch(`${apiBase}/api/processing-status`);
               const st = await rs.json();
               active = !!st.active;
               if (typeof st.progress === 'number') serverProgress = st.progress;
@@ -124,7 +126,7 @@ function MainPage() {
 
   const fetchStats = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/database-stats');
+      const response = await fetch(`${apiBase}/api/database-stats`);
       if (!response.ok) throw new Error(`Stats fetch failed: ${response.status}`);
       const data = await response.json();
       setStats(data);
@@ -136,7 +138,7 @@ function MainPage() {
 
   const fetchPendingCount = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/pending-cards');
+      const response = await fetch(`${apiBase}/api/pending-cards`);
       if (!response.ok) throw new Error(`Pending cards fetch failed: ${response.status}`);
       const data = await response.json();
       setPendingCount(data.length);
@@ -151,7 +153,7 @@ function MainPage() {
 
   const fetchRawScanCount = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/raw-scan-count');
+      const response = await fetch(`${apiBase}/api/raw-scan-count`);
       if (!response.ok) throw new Error(`Raw scan count fetch failed: ${response.status}`);
       const data = await response.json();
       setRawScanCount(data.count);
@@ -165,7 +167,7 @@ function MainPage() {
 
   const fetchSystemHealth = async () => {
     try {
-      const response = await fetch('http://localhost:3001/health');
+      const response = await fetch(`${apiBase}/health`);
       if (!response.ok) throw new Error(`Health check failed: ${response.status}`);
       const data = await response.json();
       setSystemHealth(data);
@@ -178,7 +180,7 @@ function MainPage() {
 
   const fetchRecentActivity = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/recent-activity?limit=10');
+      const response = await fetch(`${apiBase}/api/recent-activity?limit=10`);
       if (!response.ok) throw new Error(`Recent activity fetch failed: ${response.status}`);
       const data = await response.json();
       setRecentActivity(data.activity || []);
@@ -200,7 +202,7 @@ function MainPage() {
 
     setProcessing(true);
     try {
-      const response = await fetch('http://localhost:3001/api/process-raw-scans', {
+      const response = await fetch(`${apiBase}/api/process-raw-scans`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ count: countToProcess })
@@ -226,7 +228,7 @@ function MainPage() {
           let total = 0;
           let substep = '';
           try {
-            const rs = await fetch('http://localhost:3001/api/processing-status');
+            const rs = await fetch(`${apiBase}/api/processing-status`);
             const st = await rs.json();
             active = !!st.active;
             if (typeof st.progress === 'number') serverProgress = st.progress;
@@ -301,7 +303,7 @@ function MainPage() {
       const formData = new FormData();
       files.forEach(file => formData.append('images', file));
 
-      const response = await fetch('http://localhost:3001/api/upload', {
+      const response = await fetch(`${apiBase}/api/upload`, {
         method: 'POST',
         body: formData
       });
@@ -323,7 +325,11 @@ function MainPage() {
 
   return (
     <div className="main-page">
+      <div className="main-back-nav">
+        <button className="main-back-button" onClick={() => navigate('/')}>← HOME</button>
+      </div>
       <header className="main-header">
+        <a href="https://harlanswitzer.com" className="main-home-link">harlanswitzer.com</a>
         <h1>TRADING CARDS DATABASE</h1>
 
         {/* Collection totals banner */}
@@ -488,6 +494,8 @@ function MainPage() {
             style={{ display: 'none' }}
             onChange={handleFileSelect}
           />
+
+          <StorageUpload onAddedToPending={fetchRawScanCount} />
 
           {/* Upload history removed for streamlined UI */}
         </div>

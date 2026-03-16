@@ -1,5 +1,6 @@
 import React from 'react';
 import './ErrorBoundary.css';
+import apiBase from '../utils/apiBase';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class ErrorBoundary extends React.Component {
 
     // Log to server for monitoring
     try {
-      fetch('http://localhost:3001/api/log-error', {
+      fetch(`${apiBase}/api/log-error`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import apiBase from './utils/apiBase';
 
 // Autocomplete input component with real-time suggestions from database
 function AutocompleteInput({ field, value, onChange, placeholder, className }) {
@@ -17,7 +18,7 @@ function AutocompleteInput({ field, value, onChange, placeholder, className }) {
 
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:3001/api/field-autocomplete', {
+      const response = await fetch(`${apiBase}/api/field-autocomplete`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ field, query, limit: 8 })

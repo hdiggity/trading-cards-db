@@ -54,7 +54,8 @@ app/cache/
 .ruff_cache/
 *.pyc
 
-# backup files
+# backup files - only keep latest.db snapshot, not timestamped copies
+backups/trading_cards_2*.db
 *.backup
 *.bak
 
@@ -95,5 +96,8 @@ Thumbs.db
 .temp/
 .tmp/
 
-# keep verified originals local only (untouched, not in git)
+# raw/original scans (large) — stay local only
+cards/**/*.HEIC
+cards/**/*.heic
+# keep verified originals local only (uncompressed, not in git)
 cards/verified/originals/

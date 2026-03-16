@@ -1,0 +1,22 @@
+[Unit]
+Description=Trading Cards UI Server
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=harlan
+WorkingDirectory=/opt/trading_cards_db
+EnvironmentFile=/opt/trading_cards_db/.env
+Environment=HOST=127.0.0.1
+Environment=PORT=3001
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node app/ui/server.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=trading-cards
+
+[Install]
+WantedBy=multi-user.target

@@ -43,9 +43,9 @@ if [[ ! -d "$ui_dir" ]] || [[ ! -d "$client_dir" ]]; then
 fi
 
 # if you want conda env enforced, uncomment:
-# if [[ "${CONDA_DEFAULT_ENV:-}" != "trading_cards_db" ]]; then
-#   echo "warning: conda env is not trading_cards_db (current: ${CONDA_DEFAULT_ENV:-none})"
-# fi
+if [[ "${CONDA_DEFAULT_ENV:-}" != "trading_cards_db" ]]; then
+  echo "warning: conda env is not trading_cards_db (current: ${CONDA_DEFAULT_ENV:-none})"
+fi
 
 echo "repo: $repo_root"
 echo "backend: $ui_dir"

@@ -33,4 +33,4 @@ echo "==> restarting service on VM..."
 gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \
   "sudo systemctl restart trading-cards && sudo systemctl status trading-cards --no-pager"
 
-echo "==> done. health: curl https://cards-origin.harlanswitzer.com/health"
+echo "==> done. health: curl https://trading-cards.harlanswitzer.com/health"

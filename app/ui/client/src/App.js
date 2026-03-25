@@ -1477,7 +1477,18 @@ function App() {
         .join(',');
     }
     // Note: value_estimate coercion happens on blur, not during typing
-    newData[cardIndex] = { ...newData[cardIndex], [field]: processedValue };
+    const updatedCard = { ...newData[cardIndex], [field]: processedValue };
+
+    // Auto-clear player card if team is multiple or checklist feature is detected
+    const team = field === 'team' ? processedValue : updatedCard.team;
+    const features = field === 'features' ? processedValue : updatedCard.features;
+    const hasChecklist = typeof features === 'string' && features.toLowerCase().split(',').map(f => f.trim()).includes('checklist');
+    const isMultipleTeams = typeof team === 'string' && team.trim().toLowerCase() === 'multiple';
+    if (hasChecklist || isMultipleTeams) {
+      updatedCard.is_player = false;
+    }
+
+    newData[cardIndex] = updatedCard;
     setEditedData(newData);
 
     // Auto-save with debouncing (save 2 seconds after last edit)

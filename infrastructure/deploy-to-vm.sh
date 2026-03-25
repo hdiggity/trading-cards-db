@@ -12,15 +12,8 @@ LOCAL_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 SERVER_ONLY=0
 [[ ${1:-} == "--server-only" ]] && SERVER_ONLY=1
 
-if [[ $SERVER_ONLY -eq 0 ]]; then
-  echo "==> building React production bundle locally..."
-  (cd "$LOCAL_DIR/app/ui/client" && npm run build)
-  echo "==> pushing to origin (includes React build)..."
-  git -C "$LOCAL_DIR" push origin main
-else
-  echo "==> pushing to origin..."
-  git -C "$LOCAL_DIR" push origin main
-fi
+echo "==> pushing to origin..."
+git -C "$LOCAL_DIR" push origin main
 
 echo "==> pulling on VM..."
 gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \
@@ -29,6 +22,12 @@ gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \
 echo "==> installing/updating npm deps on VM..."
 gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \
   "cd $APP_DIR/app/ui && npm ci --omit=dev --silent"
+
+if [[ $SERVER_ONLY -eq 0 ]]; then
+  echo "==> building React production bundle on VM..."
+  gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \
+    "cd $APP_DIR/app/ui/client && npm ci --silent && npm run build"
+fi
 
 echo "==> restarting service on VM..."
 gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \

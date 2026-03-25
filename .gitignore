@@ -54,8 +54,10 @@ app/cache/
 .ruff_cache/
 *.pyc
 
-# backup files - only keep latest.db snapshot, not timestamped copies
-backups/trading_cards_2*.db
+# runtime data — VM only, never in git
+cards/
+data/
+backups/
 *.backup
 *.bak
 
@@ -78,8 +80,7 @@ package-lock.json.bak
 
 # logs
 *.log
-logs/*
-!logs/.gitkeep
+logs/
 
 # os
 .DS_Store
@@ -96,8 +97,5 @@ Thumbs.db
 .temp/
 .tmp/
 
-# raw/original scans (large) — stay local only
-cards/**/*.HEIC
-cards/**/*.heic
-# keep verified originals local only (uncompressed, not in git)
-cards/verified/originals/
+# archive databases
+archive/**/*.db

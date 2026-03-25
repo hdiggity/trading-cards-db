@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
-# Sync unprocessed card photos to VM for pipeline processing.
-# Pipeline runs on VM — local only stores original unprocessed HEICs.
+# Sync unprocessed card photos to VM and run the pipeline there.
 # Usage: ./infrastructure/sync-cards-to-vm.sh
 set -euo pipefail
 
@@ -12,14 +11,17 @@ LOCAL_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 BULK_BACK="$LOCAL_DIR/cards/unprocessed_bulk_back"
 
 if [[ -z "$(ls -A "$BULK_BACK" 2>/dev/null)" ]]; then
-  echo "==> nothing in unprocessed_bulk_back, nothing to sync"
+  echo "==> nothing in unprocessed_bulk_back, nothing to process"
   exit 0
 fi
 
-echo "==> syncing unprocessed_bulk_back to VM..."
+echo "==> syncing $(ls "$BULK_BACK" | wc -l | tr -d ' ') photos to VM..."
 tar -czf - -C "$LOCAL_DIR/cards" unprocessed_bulk_back \
   | gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" --ssh-flag="-T" -- \
     "tar -xzf - -C $VM_CARDS_DIR" 2>&1 | grep -v 'Ignoring unknown' || true
 
-echo "==> done. SSH to VM and run: python -m app.run --grid"
-echo "    then open https://trading-cards.harlanswitzer.com to verify."
+echo "==> running pipeline on VM..."
+gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \
+  "cd /opt/trading_cards_db && source .venv/bin/activate && python -m app.run --grid"
+
+echo "==> done. open https://trading-cards.harlanswitzer.com to verify cards."

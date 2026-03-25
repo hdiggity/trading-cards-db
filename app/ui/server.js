@@ -334,8 +334,9 @@ print(f"Recorded {len(data['corrections'])} corrections", file=sys.stderr)
 // Configure multer for file uploads
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    const rawScansPath = path.join(__dirname, '../../cards/raw_scans');
-    cb(null, rawScansPath);
+    const dest = path.join(__dirname, '../../cards/unprocessed_bulk_back');
+    require('fs').mkdirSync(dest, { recursive: true });
+    cb(null, dest);
   },
   filename: function (req, file, cb) {
     // Keep original filename with timestamp prefix to avoid conflicts

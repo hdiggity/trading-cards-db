@@ -99,3 +99,4 @@ Thumbs.db
 
 # archive databases
 archive/**/*.db
+workers/migrate/data/

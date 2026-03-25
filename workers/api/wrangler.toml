@@ -1,0 +1,20 @@
+name = "trading-cards-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "trading-cards"
+database_id = "c18881df-35b9-46b6-8ed8-90beacb61a00"
+
+[[r2_buckets]]
+binding = "STORAGE"
+bucket_name = "trading-cards"
+
+[[queues.producers]]
+binding = "PIPELINE_QUEUE"
+queue = "pipeline-jobs"
+
+[vars]
+ENVIRONMENT = "production"

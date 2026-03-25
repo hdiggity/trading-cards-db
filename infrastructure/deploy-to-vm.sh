@@ -24,7 +24,7 @@ fi
 
 echo "==> pulling on VM..."
 gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \
-  "cd $APP_DIR && GIT_LFS_SKIP_SMUDGE=1 git pull origin main"
+  "cd $APP_DIR && git pull origin main"
 
 echo "==> installing/updating npm deps on VM..."
 gcloud compute ssh "harlan@$VM_INSTANCE" --zone="$VM_ZONE" -- \

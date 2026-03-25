@@ -1238,16 +1238,7 @@ print("Transaction updated successfully")
                   console.error(`[pass-card] Warning: Failed to delete duplicate: ${delErr.message}`);
                 }
               } else {
-                // Not in verified yet - handle original + compressed copies
-                const ORIGINALS_DIR = path.join(VERIFIED_ROOT_DIR, 'originals', 'verified_bulk_back');
-                await fs.mkdir(ORIGINALS_DIR, { recursive: true });
-
-                // 1. Copy original to originals folder (preserve original format)
-                const originalPath = path.join(ORIGINALS_DIR, verifiedImageName);
-                await fs.copyFile(sourceBulkPath, originalPath);
-                console.log(`[pass-card] Copied original to: ${originalPath}`);
-
-                // 2. Create compressed jpeg in verified_bulk_back
+                // Not in verified yet - compress to jpeg and delete source
                 const baseNameNoExt = path.parse(verifiedImageName).name;
                 const compressedName = `${baseNameNoExt}.jpeg`;
                 const compressedPath = path.join(VERIFIED_IMAGES_DIR, compressedName);
@@ -1696,9 +1687,25 @@ print("Database import completed successfully")
               console.error(`[pass-all] Warning: Failed to delete duplicate: ${delErr.message}`);
             }
           } else {
-            // Note: git pre-commit hook will compress and backup original to originals/
-            await fs.rename(sourceBulkPath, verifiedImagePath);
-            console.log(`[pass-all] Moved image to verified: ${verifiedImageName}`);
+            // Compress to JPEG and delete source
+            const baseNameNoExt = path.parse(verifiedImageName).name;
+            const compressedName = `${baseNameNoExt}.jpeg`;
+            const compressedPath = path.join(VERIFIED_IMAGES_DIR, compressedName);
+            const convertProcess = spawn('python', ['-c', `
+from PIL import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
+img = Image.open("${sourceBulkPath.replace(/\\/g, '\\\\')}")
+img.convert('RGB').save("${compressedPath.replace(/\\/g, '\\\\')}", 'JPEG', quality=80, optimize=True)
+print("Compressed successfully")
+            `], { cwd: path.join(__dirname, '../..'), stdio: ['pipe', 'pipe', 'pipe'] });
+            await new Promise((resolve, reject) => {
+              let stderr = '';
+              convertProcess.stderr.on('data', (d) => stderr += d.toString());
+              convertProcess.on('close', (code) => { if (code === 0) resolve(); else reject(new Error(`Compression failed: ${stderr}`)); });
+            });
+            await fs.unlink(sourceBulkPath);
+            console.log(`[pass-all] Compressed and removed source: ${verifiedImageName}`);
           }
 
           // Move all cropped back images to verified cropped backs folder

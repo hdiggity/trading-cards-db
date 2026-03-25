@@ -2295,7 +2295,7 @@ with get_session() as session:
     if name:
         filters.append(Card.name.ilike(f"%{name}%"))
     if number:
-        filters.append(Card.number.ilike(f"%{number}%"))
+        filters.append(Card.number == number)
     if features:
         filters.append(Card.features.ilike(f"%{features}%"))
     if is_player:

@@ -1717,18 +1717,8 @@ function App() {
   }
 
   if (pendingCards.length === 0) {
-    return (
-      <div className="no-cards">
-        <h2>verification complete</h2>
-        <p>no pending cards for verification</p>
-        <button 
-          className="return-home-button" 
-          onClick={() => navigate('/')}
-        >
-          return to main page
-        </button>
-      </div>
-    );
+    navigate('/');
+    return null;
   }
 
   const currentCard = pendingCards[currentIndex];

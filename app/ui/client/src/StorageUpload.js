@@ -2,27 +2,55 @@ import React, { useState, useRef } from 'react';
 import apiBase from './utils/apiBase';
 import './StorageUpload.css';
 
-function StorageUpload({ onAddedToPending }) {
-  const [state, setState] = useState('idle'); // idle | analyzing | done | error
+function StorageUpload({ onUploaded }) {
+  const [state, setState] = useState('idle'); // idle | uploading | uploaded | analyzing | done | error
   const [recommendations, setRecommendations] = useState('');
-  const [savedFile, setSavedFile] = useState(null);
+  const [savedFilename, setSavedFilename] = useState(null);
   const [errorMsg, setErrorMsg] = useState('');
-  const [addedToPending, setAddedToPending] = useState(false);
   const fileInputRef = useRef(null);
 
-  const analyze = async (file) => {
-    setState('analyzing');
-    setRecommendations('');
+  const handleFileSelect = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    e.target.value = '';
+
+    setState('uploading');
     setErrorMsg('');
-    setAddedToPending(false);
 
     const formData = new FormData();
     formData.append('image', file);
 
     try {
-      const response = await fetch(`${apiBase}/api/storage-analysis`, {
+      const response = await fetch(`${apiBase}/api/upload`, {
         method: 'POST',
         body: formData,
+      });
+      const result = await response.json();
+      if (!response.ok) {
+        setErrorMsg(result.error || 'Upload failed');
+        setState('error');
+        return;
+      }
+      setSavedFilename(result.filename);
+      setState('uploaded');
+      if (onUploaded) onUploaded();
+    } catch (err) {
+      setErrorMsg(`Upload failed: ${err.message}`);
+      setState('error');
+    }
+  };
+
+  const analyze = async () => {
+    if (!savedFilename) return;
+    setState('analyzing');
+    setRecommendations('');
+    setErrorMsg('');
+
+    try {
+      const response = await fetch(`${apiBase}/api/storage-analysis`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ filename: savedFilename }),
       });
       const result = await response.json();
       if (!response.ok) {
@@ -31,7 +59,6 @@ function StorageUpload({ onAddedToPending }) {
         return;
       }
       setRecommendations(result.recommendations);
-      setSavedFile(result.file);
       setState('done');
     } catch (err) {
       setErrorMsg(`Analysis failed: ${err.message}`);
@@ -39,35 +66,11 @@ function StorageUpload({ onAddedToPending }) {
     }
   };
 
-  const handleFileSelect = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    e.target.value = '';
-    analyze(file);
-  };
-
-  const handleRedo = () => {
-    fileInputRef.current?.click();
-  };
-
-  const handleAddToPending = async () => {
-    if (!savedFile) return;
-    try {
-      const response = await fetch(`${apiBase}/api/storage-add-to-pending`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ file: savedFile }),
-      });
-      const result = await response.json();
-      if (!response.ok) {
-        setErrorMsg(result.error || 'Failed to add to pending');
-        return;
-      }
-      setAddedToPending(true);
-      if (onAddedToPending) onAddedToPending();
-    } catch (err) {
-      setErrorMsg(`Failed: ${err.message}`);
-    }
+  const reset = () => {
+    setState('idle');
+    setSavedFilename(null);
+    setRecommendations('');
+    setErrorMsg('');
   };
 
   const renderRecommendations = (text) => {
@@ -104,14 +107,37 @@ function StorageUpload({ onAddedToPending }) {
       />
 
       {state === 'idle' && (
-        <button
-          className="action-button storage"
-          onClick={() => fileInputRef.current?.click()}
-        >
+        <button className="action-button storage" onClick={() => fileInputRef.current?.click()}>
           <div className="button-content">
             <h3>UPLOAD + STORAGE</h3>
           </div>
         </button>
+      )}
+
+      {state === 'uploading' && (
+        <div className="storage-analyzing">
+          <div className="storage-spinner" />
+          <span>uploading...</span>
+        </div>
+      )}
+
+      {state === 'uploaded' && (
+        <div className="storage-results">
+          <div className="storage-results-header">
+            <span className="storage-results-title">UPLOADED</span>
+            <div className="storage-results-actions">
+              <button className="storage-action-btn primary" onClick={analyze}>
+                GET STORAGE RECOMMENDATIONS
+              </button>
+              <button className="storage-action-btn" onClick={reset}>
+                CLOSE
+              </button>
+            </div>
+          </div>
+          <div className="storage-recs-body">
+            <div className="storage-card-row">{savedFilename} added to processing queue.</div>
+          </div>
+        </div>
       )}
 
       {state === 'analyzing' && (
@@ -126,26 +152,10 @@ function StorageUpload({ onAddedToPending }) {
           <div className="storage-results-header">
             <span className="storage-results-title">STORAGE RECOMMENDATIONS</span>
             <div className="storage-results-actions">
-              <button className="storage-action-btn" onClick={handleRedo}>
-                REDO
-              </button>
-              {state === 'done' && !addedToPending && (
-                <button className="storage-action-btn primary" onClick={handleAddToPending}>
-                  ADD TO PENDING PROCESSING
-                </button>
-              )}
-              {addedToPending && (
-                <span className="storage-added-label">ADDED TO PENDING</span>
-              )}
-              <button
-                className="storage-action-btn"
-                onClick={() => { setState('idle'); setSavedFile(null); setAddedToPending(false); }}
-              >
-                CLOSE
-              </button>
+              <button className="storage-action-btn" onClick={analyze}>REDO</button>
+              <button className="storage-action-btn" onClick={reset}>CLOSE</button>
             </div>
           </div>
-
           {state === 'error' ? (
             <div className="storage-error">{errorMsg}</div>
           ) : (

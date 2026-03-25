@@ -720,6 +720,15 @@ print("OK")
   });
 });
 
+// Single-file upload to unprocessed_bulk_back (used by StorageUpload component)
+app.post('/api/upload', (req, res) => {
+  upload.single('image')(req, res, (err) => {
+    if (err) return res.status(400).json({ error: err.message });
+    if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
+    res.json({ success: true, filename: req.file.filename });
+  });
+});
+
 // Handle Pass action for single card
 app.post('/api/pass-card/:id/:cardIndex', async (req, res) => {
   let id;
@@ -4929,35 +4938,33 @@ Separate each card with a blank line.
 
 DO NOT include summary guidance, general recommendations, or offers for future analysis. Only provide the per-card recommendations in the format specified above.`;
 
-app.post('/api/storage-analysis', (req, res) => {
-  storageUpload.single('image')(req, res, async (err) => {
-    if (err) return res.status(400).json({ error: err.message });
-    if (!req.file) return res.status(400).json({ error: 'No image uploaded' });
+// Accepts a filename already saved in unprocessed_bulk_back
+app.post('/api/storage-analysis', async (req, res) => {
+  const { filename } = req.body;
+  if (!filename) return res.status(400).json({ error: 'No filename provided' });
 
-    const imagePath = req.file.path;
-    const filename = req.file.filename;
+  const imagePath = path.join(__dirname, '../../cards/unprocessed_bulk_back', filename);
+  if (!fsSync.existsSync(imagePath)) {
+    return res.status(404).json({ error: 'File not found in unprocessed_bulk_back' });
+  }
 
-    const pythonCode = `
+  const pythonCode = `
 import base64, io, json, os, sys
 from pathlib import Path
 from dotenv import load_dotenv
-load_dotenv(Path('../../.env'))
+load_dotenv(Path('.env'))
 import anthropic
 import pillow_heif
 from PIL import Image
-sys.path.insert(0, str(Path(os.getcwd())))
-from scripts.bulk_back_optimize import load_image, optimize_for_vision
 
 image_path = sys.stdin.read().strip()
 
-img = load_image(Path(image_path))
-img = optimize_for_vision(img, strength='medium')
-
+pillow_heif.register_heif_opener()
+img = Image.open(image_path).convert('RGB')
 buf = io.BytesIO()
 img.save(buf, format='JPEG', quality=95)
 buf.seek(0)
 b64 = base64.b64encode(buf.read()).decode()
-media_type = 'image/jpeg'
 
 prompt = ${JSON.stringify(STORAGE_PROMPT)}
 
@@ -4967,36 +4974,34 @@ resp = client.messages.create(
     max_tokens=4000,
     messages=[{'role': 'user', 'content': [
         {'type': 'text', 'text': prompt},
-        {'type': 'image', 'source': {'type': 'base64', 'media_type': media_type, 'data': b64}}
+        {'type': 'image', 'source': {'type': 'base64', 'media_type': 'image/jpeg', 'data': b64}}
     ]}]
 )
 print(json.dumps({'recommendations': resp.content[0].text}))
 `;
 
-    const proc = spawn('python', ['-c', pythonCode], {
-      cwd: path.join(__dirname, '../..'),
-      stdio: ['pipe', 'pipe', 'pipe']
-    });
+  const proc = spawn('python', ['-c', pythonCode], {
+    cwd: path.join(__dirname, '../..'),
+    stdio: ['pipe', 'pipe', 'pipe']
+  });
 
-    let out = '';
-    let errOut = '';
-    proc.stdout.on('data', (d) => { out += d.toString(); });
-    proc.stderr.on('data', (d) => { errOut += d.toString(); });
-    proc.stdin.write(imagePath);
-    proc.stdin.end();
+  let out = '';
+  let errOut = '';
+  proc.stdout.on('data', (d) => { out += d.toString(); });
+  proc.stderr.on('data', (d) => { errOut += d.toString(); });
+  proc.stdin.write(imagePath);
+  proc.stdin.end();
 
-    proc.on('close', (code) => {
-      if (code !== 0) {
-        console.error('[storage-analysis] python error:', errOut);
-        return res.status(500).json({ error: 'Analysis failed', details: errOut });
-      }
-      try {
-        const result = JSON.parse(out);
-        res.json({ ...result, file: filename });
-      } catch {
-        res.status(500).json({ error: 'Failed to parse analysis result' });
-      }
-    });
+  proc.on('close', (code) => {
+    if (code !== 0) {
+      console.error('[storage-analysis] python error:', errOut);
+      return res.status(500).json({ error: 'Analysis failed', details: errOut });
+    }
+    try {
+      res.json(JSON.parse(out));
+    } catch {
+      res.status(500).json({ error: 'Failed to parse analysis result' });
+    }
   });
 });
 

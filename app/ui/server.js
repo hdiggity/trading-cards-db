@@ -4937,24 +4937,19 @@ load_dotenv(Path('../../.env'))
 import anthropic
 import pillow_heif
 from PIL import Image
+sys.path.insert(0, str(Path(os.getcwd())))
+from scripts.bulk_back_optimize import load_image, optimize_for_vision
 
 image_path = sys.stdin.read().strip()
-ext = Path(image_path).suffix.lower()
 
-if ext in {'.heic', '.heif'}:
-    pillow_heif.register_heif_opener()
-    img = Image.open(image_path)
-    if img.mode != 'RGB':
-        img = img.convert('RGB')
-    buf = io.BytesIO()
-    img.save(buf, format='JPEG', quality=95)
-    buf.seek(0)
-    b64 = base64.b64encode(buf.read()).decode()
-    media_type = 'image/jpeg'
-else:
-    with open(image_path, 'rb') as f:
-        b64 = base64.b64encode(f.read()).decode()
-    media_type = {'.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png'}.get(ext, 'image/jpeg')
+img = load_image(Path(image_path))
+img = optimize_for_vision(img, strength='medium')
+
+buf = io.BytesIO()
+img.save(buf, format='JPEG', quality=95)
+buf.seek(0)
+b64 = base64.b64encode(buf.read()).decode()
+media_type = 'image/jpeg'
 
 prompt = ${JSON.stringify(STORAGE_PROMPT)}
 

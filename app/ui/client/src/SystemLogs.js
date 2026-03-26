@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import apiBase from './utils/apiBase';
 import './SystemLogs.css';
 
 function SystemLogs() {
@@ -18,7 +19,7 @@ function SystemLogs() {
   useEffect(() => {
     let interval;
     if (autoRefresh) {
-      interval = setInterval(fetchLogs, 5000); // Refresh every 5 seconds
+      interval = setInterval(fetchLogs, 5000);
     }
     return () => {
       if (interval) clearInterval(interval);
@@ -28,19 +29,19 @@ function SystemLogs() {
   const fetchLogs = async () => {
     try {
       setLoading(true);
-      const response = await fetch('/api/system-logs');
-      
+      const response = await fetch(`${apiBase}/api/system-logs`);
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      
+
       const data = await response.json();
       setLogs(data.logs || []);
       setTotals(data.totals || null);
       setError(null);
     } catch (err) {
       console.error('Error fetching logs:', err);
-      setError(`Failed to fetch logs: ${err.message}`);
+      setError(`FAILED TO FETCH LOGS: ${err.message}`);
     } finally {
       setLoading(false);
     }
@@ -50,7 +51,7 @@ function SystemLogs() {
     try {
       return new Date(timestamp).toLocaleString();
     } catch {
-      return timestamp || 'Unknown time';
+      return timestamp || 'UNKNOWN TIME';
     }
   };
 
@@ -78,16 +79,14 @@ function SystemLogs() {
 
   const copyLogToClipboard = (log) => {
     const logText = `[${formatTimestamp(log.timestamp)}] ${log.level}: ${log.message}\n${log.details || ''}`;
-    navigator.clipboard.writeText(logText).then(() => {
-      alert('Log copied to clipboard');
-    });
+    navigator.clipboard.writeText(logText);
   };
 
   const exportAllLogs = () => {
-    const allLogsText = logs.map(log => 
+    const allLogsText = logs.map(log =>
       `[${formatTimestamp(log.timestamp)}] ${log.level}: ${log.message}\n${log.details || ''}\n---`
     ).join('\n');
-    
+
     const blob = new Blob([allLogsText], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -103,12 +102,12 @@ function SystemLogs() {
     return (
       <div className="system-logs">
         <div className="logs-header">
-          <h2>system logs</h2>
+          <h2>SYSTEM LOGS</h2>
           <button onClick={() => navigate('/')} className="back-button">
-            ← Back to Main
+            ← BACK
           </button>
         </div>
-        <div className="loading">Loading system logs...</div>
+        <div className="loading">LOADING SYSTEM LOGS...</div>
       </div>
     );
   }
@@ -116,7 +115,7 @@ function SystemLogs() {
   return (
     <div className="system-logs">
       <div className="logs-header">
-        <h2>system logs</h2>
+        <h2>SYSTEM LOGS</h2>
         <div className="logs-controls">
           <label>
             <input
@@ -124,56 +123,56 @@ function SystemLogs() {
               checked={autoRefresh}
               onChange={(e) => setAutoRefresh(e.target.checked)}
             />
-            Auto-refresh (5s)
+            AUTO-REFRESH (5S)
           </label>
           <button onClick={fetchLogs} disabled={loading}>
-            {loading ? 'Refreshing...' : 'Refresh'}
+            {loading ? 'REFRESHING...' : 'REFRESH'}
           </button>
           <button onClick={exportAllLogs} disabled={logs.length === 0}>
-            Export All
+            EXPORT ALL
           </button>
           <button onClick={() => navigate('/')} className="back-button">
-            ← Back to Main
+            ← BACK
           </button>
         </div>
       </div>
 
       {error && (
         <div className="error-banner">
-          <strong>Error:</strong> {error}
+          <strong>ERROR:</strong> {error}
         </div>
       )}
 
       <div className="logs-content">
         <div className="logs-stats">
           <div className="stats-item">
-            <span className="stats-label">Total Logs:</span>
+            <span className="stats-label">TOTAL LOGS:</span>
             <span className="stats-value">{logs.length}</span>
           </div>
           {totals && (
             <>
               <div className="stats-item">
-                <span className="stats-label">Uploads in DB:</span>
+                <span className="stats-label">UPLOADS IN DB:</span>
                 <span className="stats-value">{totals.uploadsTotal}</span>
               </div>
               <div className="stats-item">
-                <span className="stats-label">Verified:</span>
+                <span className="stats-label">VERIFIED:</span>
                 <span className="stats-value">{totals.uploadsVerified}</span>
               </div>
               <div className="stats-item">
-                <span className="stats-label">Pending:</span>
+                <span className="stats-label">PENDING:</span>
                 <span className="stats-value">{totals.uploadsPending}</span>
               </div>
             </>
           )}
           <div className="stats-item">
-            <span className="stats-label">Errors:</span>
+            <span className="stats-label">ERRORS:</span>
             <span className="stats-value error-count">
               {logs.filter(log => log.level?.toLowerCase() === 'error').length}
             </span>
           </div>
           <div className="stats-item">
-            <span className="stats-label">Warnings:</span>
+            <span className="stats-label">WARNINGS:</span>
             <span className="stats-value warning-count">
               {logs.filter(log => log.level?.toLowerCase() === 'warning' || log.level?.toLowerCase() === 'warn').length}
             </span>
@@ -182,14 +181,14 @@ function SystemLogs() {
 
         {logs.length === 0 ? (
           <div className="no-logs">
-            <p>No system logs found.</p>
-            <p>Logs will appear here when the system processes cards or encounters errors.</p>
+            <p>NO SYSTEM LOGS FOUND.</p>
+            <p>LOGS WILL APPEAR HERE WHEN THE SYSTEM PROCESSES CARDS OR ENCOUNTERS ERRORS.</p>
           </div>
         ) : (
           <div className="logs-list">
             {logs.map((log, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`log-entry ${getLogLevelClass(log.level)} ${selectedLog === index ? 'selected' : ''}`}
                 onClick={() => setSelectedLog(selectedLog === index ? null : index)}
               >
@@ -197,27 +196,27 @@ function SystemLogs() {
                   <span className="log-icon">{getLogLevelIcon(log.level)}</span>
                   <span className="log-level">{(log.level || 'INFO').toUpperCase()}</span>
                   <span className="log-timestamp">{formatTimestamp(log.timestamp)}</span>
-                  <button 
+                  <button
                     className="copy-log-button"
                     onClick={(e) => {
                       e.stopPropagation();
                       copyLogToClipboard(log);
                     }}
-                    title="Copy log to clipboard"
+                    title="COPY LOG TO CLIPBOARD"
                   >
-                    Copy
+                    COPY
                   </button>
                 </div>
                 <div className="log-message">{log.message}</div>
                 {selectedLog === index && log.details && (
                   <div className="log-details">
-                    <strong>Details:</strong>
+                    <strong>DETAILS:</strong>
                     <pre>{log.details}</pre>
                   </div>
                 )}
                 {selectedLog === index && log.stackTrace && (
                   <div className="log-stack-trace">
-                    <strong>Stack Trace:</strong>
+                    <strong>STACK TRACE:</strong>
                     <pre>{log.stackTrace}</pre>
                   </div>
                 )}
@@ -228,12 +227,12 @@ function SystemLogs() {
       </div>
 
       <div className="logs-help">
-        <h3>how to use system logs</h3>
+        <h3>HOW TO USE SYSTEM LOGS</h3>
         <ul>
-          <li><strong>For Claude:</strong> Copy error logs and paste them when reporting issues for more accurate debugging</li>
-          <li><strong>Debug Processing:</strong> Check logs when card processing fails to understand what went wrong</li>
-          <li><strong>Monitor Performance:</strong> Watch for warnings about slow operations or API issues</li>
-          <li><strong>Export Data:</strong> Use "Export All" to save logs for detailed analysis</li>
+          <li><strong>DEBUGGING:</strong> COPY ERROR LOGS AND PASTE THEM WHEN REPORTING ISSUES</li>
+          <li><strong>PROCESSING:</strong> CHECK LOGS WHEN CARD PROCESSING FAILS</li>
+          <li><strong>MONITORING:</strong> WATCH FOR WARNINGS ABOUT SLOW OPERATIONS OR API ISSUES</li>
+          <li><strong>EXPORT:</strong> USE "EXPORT ALL" TO SAVE LOGS FOR ANALYSIS</li>
         </ul>
       </div>
     </div>

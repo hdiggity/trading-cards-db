@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { Env } from '../index'
+import { runBackup } from '../backup'
 
 const misc = new Hono<{ Bindings: Env }>()
 
@@ -19,25 +20,42 @@ misc.get('/field-options', async (c) => {
 })
 
 misc.get('/database-stats', async (c) => {
-  const [cards, copies] = await Promise.all([
+  const [totalQty, totalCards, copies, years, brands, sports, totalValue] = await Promise.all([
+    c.env.DB.prepare("SELECT COALESCE(SUM(quantity), 0) as n FROM cards").first<{ n: number }>(),
     c.env.DB.prepare("SELECT COUNT(*) as n FROM cards").first<{ n: number }>(),
     c.env.DB.prepare("SELECT COUNT(*) as n FROM cards_complete").first<{ n: number }>(),
+    c.env.DB.prepare("SELECT copyright_year as year, SUM(quantity) as count FROM cards WHERE copyright_year IS NOT NULL GROUP BY copyright_year ORDER BY count DESC LIMIT 5").all(),
+    c.env.DB.prepare("SELECT brand, SUM(quantity) as count FROM cards WHERE brand IS NOT NULL GROUP BY brand ORDER BY count DESC LIMIT 5").all(),
+    c.env.DB.prepare("SELECT sport, SUM(quantity) as count FROM cards WHERE sport IS NOT NULL GROUP BY sport ORDER BY count DESC LIMIT 5").all(),
+    c.env.DB.prepare("SELECT ROUND(SUM(CAST(REPLACE(value_estimate, '$', '') AS REAL) * quantity), 2) as total FROM cards WHERE value_estimate IS NOT NULL AND value_estimate != ''").first<{ total: number }>(),
   ])
-  return c.json({ total_cards: cards?.n ?? 0, total_copies: copies?.n ?? 0 })
+  return c.json({
+    total_cards: totalCards?.n ?? 0,
+    total_copies: copies?.n ?? 0,
+    total_quantity: totalQty?.n ?? 0,
+    unique_years: (years.results as any[]).length,
+    years_summary: years.results,
+    unique_brands: (brands.results as any[]).length,
+    brands_summary: brands.results,
+    unique_sports: (sports.results as any[]).length,
+    sports_summary: sports.results,
+    total_value: totalValue?.total ?? 0,
+  })
 })
 
 misc.get('/system-logs', async (c) => {
+  const { limit = '200' } = c.req.query()
   const rows = await c.env.DB.prepare(
-    "SELECT * FROM system_logs ORDER BY created_at DESC LIMIT 100"
+    `SELECT id, event_type as level, details as message, filename, created_at as timestamp FROM system_logs ORDER BY created_at DESC LIMIT ${parseInt(limit)}`
   ).all()
-  return c.json(rows.results)
+  return c.json({ logs: rows.results, totals: null })
 })
 
 misc.get('/recent-activity', async (c) => {
   const rows = await c.env.DB.prepare(
-    "SELECT * FROM system_logs ORDER BY created_at DESC LIMIT 20"
+    "SELECT id, event_type as action, filename, details, created_at as timestamp FROM system_logs ORDER BY created_at DESC LIMIT 20"
   ).all()
-  return c.json(rows.results)
+  return c.json({ activity: rows.results })
 })
 
 misc.get('/verification-sessions', async (c) => {
@@ -68,6 +86,10 @@ misc.post('/undo/:id', async (c) => {
   await c.env.DB.prepare("DELETE FROM cards WHERE id = ? AND quantity = 0").bind(tx.card_id).run()
   await c.env.DB.prepare("DELETE FROM undo_transactions WHERE id = ?").bind(id).run()
 
+  await c.env.DB.prepare(
+    "INSERT INTO system_logs (event_type, filename, details) VALUES ('undo', ?, ?)"
+  ).bind(String(tx.card_id), `Undone card #${tx.card_id}`).run()
+
   return c.json({ success: true })
 })
 
@@ -81,35 +103,59 @@ misc.get('/search-cards', async (c) => {
 })
 
 misc.post('/storage-analysis', async (c) => {
-  const { filename } = await c.req.json<{ filename: string }>()
-  if (!filename) return c.json({ error: 'No filename provided' }, 400)
+  const body = await c.req.json<{ base64?: string; mediaType?: string; filename?: string }>()
 
-  const obj = await c.env.STORAGE.get(`unprocessed/${filename}`)
-  if (!obj) return c.json({ error: 'File not found in storage' }, 404)
+  let b64: string
+  let mediaType: string
 
-  const bytes = await obj.arrayBuffer()
-  const uint8 = new Uint8Array(bytes)
-  let b64 = ''
-  const chunkSize = 32768
-  for (let i = 0; i < uint8.length; i += chunkSize) {
-    b64 += String.fromCharCode(...uint8.subarray(i, i + chunkSize))
+  if (body.base64) {
+    b64 = body.base64
+    mediaType = body.mediaType ?? 'image/jpeg'
+  } else if (body.filename) {
+    const obj = await c.env.STORAGE.get(`unprocessed/${body.filename}`)
+    if (!obj) return c.json({ error: 'File not found in storage' }, 404)
+    const bytes = await obj.arrayBuffer()
+    if (bytes.byteLength > 4.9 * 1024 * 1024) {
+      return c.json({ error: 'Image too large (>5MB). Please resize before analyzing.' }, 400)
+    }
+    const uint8 = new Uint8Array(bytes)
+    let s = ''
+    for (let i = 0; i < uint8.length; i += 32768) s += String.fromCharCode(...uint8.subarray(i, i + 32768))
+    b64 = btoa(s)
+    const lower = body.filename.toLowerCase()
+    mediaType = lower.endsWith('.png') ? 'image/png' : 'image/jpeg'
+  } else {
+    return c.json({ error: 'Provide base64 or filename' }, 400)
   }
-  b64 = btoa(b64)
 
-  const prompt = `I upload photos of baseball cards, usually arranged in grids. You identify each card individually and treat them one by one, not as a group. For each card, you determine what type of card it is (player card, prospect, checklist, stat card, Bowman paper vs Chrome, etc.). You consider the player, career outcome, era, brand, year, condition visible in the photo, and typical market value. You assume my default storage is cards stored in boxes in rows, out of light, protected, for long term value preservation.
+  const prompt = `You are analyzing trading card photos. Cards may be arranged in grids or shown individually. Examine each card carefully and treat them one at a time.
 
-For each card, you give a per-card storage recommendation, choosing only from:
-    •    no protection
-    •    penny sleeve
-    •    top loader
-    •    special storage (only for genuinely high-value cases)
+For each card, read the text directly on the card to extract:
+- Player name (REQUIRED — printed on the card front or back. On backs, the name is at the top above the stats. On fronts, it is on the nameplate. Read it carefully character by character.)
+- Year (copyright year or set year, found on the card back near the copyright symbol or card number)
+- Brand (Topps, Donruss, Fleer, Bowman, Upper Deck, Leaf, Score, O-Pee-Chee, etc.)
+- Card number (the # printed on the card, e.g. #137)
+- Card type (base, rookie, prospect, highlight, checklist, error, chrome, refractor, etc.)
 
-FORMAT YOUR RESPONSE AS ONE LINE PER CARD:
-Card [number]: [player name, year, brand, card type] | Storage: [recommendation] | Reason: [brief explanation] | Price: [estimated market value]
+CRITICAL: Every card has a player name or subject printed on it. You MUST identify it. Look at:
+1. The top of the card back for the player name in large/bold text
+2. The stats table header
+3. The biographical info section
+4. The front nameplate
+If text is hard to read, zoom in mentally and decode letter by letter. Never output "unnamed" or "unknown player".
 
-Separate each card with a blank line.
+Assess storage based on: player significance, career outcome, card rarity, condition, era, and typical market value.
 
-DO NOT include summary guidance, general recommendations, or offers for future analysis.`
+Storage options (pick one per card):
+- no protection (common junk wax era commons, bulk filler)
+- penny sleeve (minor names, some collectible value)
+- top loader (notable players, rookies, better condition cards worth $1+)
+- special storage (genuinely high-value cards only, $20+)
+
+FORMAT — one line per card, pipe-separated:
+Card [number]: [player name], [year] [brand] #[card number], [card type] | Storage: [recommendation] | Reason: [1 sentence] | Price: [estimated market value]
+
+DO NOT include summaries, group recommendations, or offers for further analysis.`
 
   const resp = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -123,7 +169,7 @@ DO NOT include summary guidance, general recommendations, or offers for future a
       max_tokens: 4000,
       messages: [{ role: 'user', content: [
         { type: 'text', text: prompt },
-        { type: 'image', source: { type: 'base64', media_type: 'image/jpeg', data: b64 } }
+        { type: 'image', source: { type: 'base64', media_type: mediaType, data: b64 } }
       ]}]
     })
   })
@@ -134,7 +180,42 @@ DO NOT include summary guidance, general recommendations, or offers for future a
   }
 
   const result = await resp.json<any>()
-  return c.json({ recommendations: result.content[0].text })
+  const recommendations = result.content[0].text
+  const filename = body.filename ?? null
+  const cardCount = (recommendations.match(/^Card \d+:/gm) || []).length
+  await c.env.DB.prepare(
+    "INSERT INTO storage_recommendations (filename, recommendations) VALUES (?, ?)"
+  ).bind(filename, recommendations).run()
+  // Log the analysis
+  await c.env.DB.prepare(
+    "INSERT INTO system_logs (event_type, filename, details) VALUES (?, ?, ?)"
+  ).bind('storage_analysis', filename, `Generated storage recommendations for ${cardCount} card(s)`).run()
+  return c.json({ recommendations })
+})
+
+misc.post('/backup-now', async (c) => {
+  const result = await runBackup(c.env)
+  return c.json({ success: true, ...result })
+})
+
+misc.get('/backups', async (c) => {
+  const list = await c.env.STORAGE.list({ prefix: 'backups/' })
+  // Collect unique date prefixes from manifest files
+  const dates: Record<string, any> = {}
+  for (const obj of list.objects) {
+    if (!obj.key.endsWith('manifest.json')) continue
+    const parts = obj.key.split('/')
+    const date = parts[1]
+    dates[date] = { date, size: obj.size, uploaded: obj.uploaded }
+  }
+  return c.json(Object.values(dates).sort((a: any, b: any) => b.date.localeCompare(a.date)))
+})
+
+misc.get('/storage-recommendations', async (c) => {
+  const rows = await c.env.DB.prepare(
+    "SELECT id, filename, recommendations, created_at FROM storage_recommendations ORDER BY created_at DESC LIMIT 50"
+  ).all()
+  return c.json(rows.results)
 })
 
 misc.post('/card-suggestions', async (c) => {

@@ -34,6 +34,17 @@ async function decodeToJpeg(bytes: ArrayBuffer, filename: string): Promise<Array
   return bytes
 }
 
+// Anthropic limit is 5MB on the base64 string (~3.75MB raw). Resize proportionally if needed.
+async function ensureUnderLimit(jpegBytes: ArrayBuffer): Promise<ArrayBuffer> {
+  const MAX_RAW = 3.75 * 1024 * 1024
+  if (jpegBytes.byteLength <= MAX_RAW) return jpegBytes
+  const img = await Jimp.fromBuffer(Buffer.from(jpegBytes))
+  const scale = Math.sqrt(MAX_RAW / jpegBytes.byteLength)
+  img.resize({ w: Math.floor(img.width * scale), h: Math.floor(img.height * scale) })
+  const buf = await img.getBuffer('image/jpeg', { quality: 90 })
+  return buf.buffer as ArrayBuffer
+}
+
 async function cropGrid(jpegBytes: ArrayBuffer): Promise<ArrayBuffer[]> {
   const img = await Jimp.fromBuffer(Buffer.from(jpegBytes))
   const w = img.width
@@ -112,7 +123,8 @@ async function processFile(filename: string, env: Env): Promise<void> {
 
   const rawBytes = await obj.arrayBuffer()
   const jpegBytes = await decodeToJpeg(rawBytes, filename)
-  const b64 = toBase64(jpegBytes)
+  const sizedBytes = await ensureUnderLimit(jpegBytes)
+  const b64 = toBase64(sizedBytes)
 
   const cards = await callVision(b64, env.ANTHROPIC_API_KEY)
   const crops = await cropGrid(jpegBytes)

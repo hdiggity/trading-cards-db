@@ -142,11 +142,6 @@ async function processFile(filename: string, env: Env): Promise<void> {
     if (cards[i]) cards[i].source_file = filename
   }
 
-  await env.STORAGE.put(`pending/bulk-back/${filename}`, rawBytes, {
-    httpMetadata: { contentType: obj.httpMetadata?.contentType ?? 'image/jpeg' }
-  })
-  await env.STORAGE.delete(key)
-
   const jsonPayload = { source_file: filename, grid_id: gridId, cards, processed_at: new Date().toISOString() }
   await env.STORAGE.put(`pending/json/${gridId}.json`, JSON.stringify(jsonPayload), {
     httpMetadata: { contentType: 'application/json' }
@@ -155,6 +150,12 @@ async function processFile(filename: string, env: Env): Promise<void> {
   await env.DB.prepare(
     "INSERT INTO system_logs (event_type, filename, details) VALUES ('processed', ?, ?)"
   ).bind(filename, JSON.stringify({ cards_found: cards.length })).run()
+
+  // Move to bulk-back and remove from unprocessed only after everything else succeeds
+  await env.STORAGE.put(`pending/bulk-back/${filename}`, rawBytes, {
+    httpMetadata: { contentType: obj.httpMetadata?.contentType ?? 'image/jpeg' }
+  })
+  await env.STORAGE.delete(key)
 }
 
 export default {
@@ -176,6 +177,15 @@ export default {
           ).bind(processed, jobId).run()
         } catch (err) {
           console.error(`Failed ${filename}:`, err)
+          // If the file was removed from unprocessed before the error, restore it
+          const stillThere = await env.STORAGE.head(`unprocessed/${filename}`)
+          if (!stillThere) {
+            const backup = await env.STORAGE.get(`pending/bulk-back/${filename}`)
+            if (backup) {
+              await env.STORAGE.put(`unprocessed/${filename}`, backup.body, { httpMetadata: backup.httpMetadata })
+              await env.STORAGE.delete(`pending/bulk-back/${filename}`)
+            }
+          }
           await env.DB.prepare(
             "UPDATE processing_jobs SET error = ?, updated_at = datetime('now') WHERE id = ?"
           ).bind(String(err), jobId).run()

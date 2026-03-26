@@ -34,23 +34,27 @@ async function decodeToJpeg(bytes: ArrayBuffer, filename: string): Promise<Array
   return bytes
 }
 
-// Anthropic limit is 5MB on the base64 string (~3.75MB raw). Resize proportionally if needed.
-async function ensureUnderLimit(jpegBytes: ArrayBuffer): Promise<ArrayBuffer> {
-  const MAX_RAW = 3.75 * 1024 * 1024
-  if (jpegBytes.byteLength <= MAX_RAW) return jpegBytes
-  const img = await Jimp.fromBuffer(Buffer.from(jpegBytes))
-  const scale = Math.sqrt(MAX_RAW / jpegBytes.byteLength)
-  img.resize({ w: Math.floor(img.width * scale), h: Math.floor(img.height * scale) })
-  const buf = await img.getBuffer('image/jpeg', { quality: 90 })
-  return buf.buffer as ArrayBuffer
-}
+const MAX_VISION_BYTES = 3.75 * 1024 * 1024 // Anthropic base64 limit is 5MB → raw must be <3.75MB
 
-async function cropGrid(jpegBytes: ArrayBuffer): Promise<ArrayBuffer[]> {
+// Load Jimp once, return vision bytes (resized if needed) and crops at original resolution.
+async function decodeAndProcess(jpegBytes: ArrayBuffer): Promise<{ visionBytes: ArrayBuffer; crops: ArrayBuffer[] }> {
   const img = await Jimp.fromBuffer(Buffer.from(jpegBytes))
-  const w = img.width
-  const h = img.height
-  const cellW = Math.floor(w / 3)
-  const cellH = Math.floor(h / 3)
+
+  // Get bytes for Anthropic — resize only if needed
+  let visionBytes: ArrayBuffer
+  if (jpegBytes.byteLength > MAX_VISION_BYTES) {
+    const scale = Math.sqrt(MAX_VISION_BYTES / jpegBytes.byteLength)
+    const resized = img.clone()
+    resized.resize({ w: Math.floor(img.width * scale), h: Math.floor(img.height * scale) })
+    const buf = await resized.getBuffer('image/jpeg', { quality: 90 })
+    visionBytes = buf.buffer as ArrayBuffer
+  } else {
+    visionBytes = jpegBytes
+  }
+
+  // Crop 9 cells from the original resolution image
+  const cellW = Math.floor(img.width / 3)
+  const cellH = Math.floor(img.height / 3)
   const crops: ArrayBuffer[] = []
   for (let row = 0; row < 3; row++) {
     for (let col = 0; col < 3; col++) {
@@ -59,7 +63,8 @@ async function cropGrid(jpegBytes: ArrayBuffer): Promise<ArrayBuffer[]> {
       crops.push(buf.buffer as ArrayBuffer)
     }
   }
-  return crops
+
+  return { visionBytes, crops }
 }
 
 async function callVision(b64: string, apiKey: string): Promise<any[]> {
@@ -123,11 +128,10 @@ async function processFile(filename: string, env: Env): Promise<void> {
 
   const rawBytes = await obj.arrayBuffer()
   const jpegBytes = await decodeToJpeg(rawBytes, filename)
-  const sizedBytes = await ensureUnderLimit(jpegBytes)
-  const b64 = toBase64(sizedBytes)
+  const { visionBytes, crops } = await decodeAndProcess(jpegBytes)
+  const b64 = toBase64(visionBytes)
 
   const cards = await callVision(b64, env.ANTHROPIC_API_KEY)
-  const crops = await cropGrid(jpegBytes)
 
   const gridId = filename.replace(/\.[^.]+$/, '')
 
